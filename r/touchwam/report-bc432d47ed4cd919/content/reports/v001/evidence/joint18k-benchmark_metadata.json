@@ -1,0 +1,113 @@
+{
+  "robot_key": "multi_iiwa7_with_sharpa",
+  "source_manifest_sha256": "445f1c1416a1ac298b0542755d76a070da9133d7a319c46339f8217ac446ff48",
+  "task_prompts": {
+    "26_canned_food_tray_line_arrangement": "Use left hand to place the master chef can and MSG onto the tray, use right hand to place the milk box and potted meat can onto the tray.",
+    "32_baking_tray_prep_with_tools": "Use the left hand to place the brush and spatula onto the tray, use the right hand to place the small pudding box then the large gelatin box onto the tray in sequence.",
+    "73_jigsaw_puzzle_assembly": "Right hand and left hand in turn assemble the green, red, blue, yellow puzzle pieces onto the fixed white puzzle piece in the center of the table, forming a rectangle."
+  },
+  "arm_command_limits": {
+    "A1": [
+      -2.96705972839,
+      2.96705972839
+    ],
+    "A2": [
+      -3.66519142918489,
+      0.5235987755
+    ],
+    "A3": [
+      -2.96705972839,
+      2.96705972839
+    ],
+    "A4": [
+      -2.701857566833496,
+      2.09439510239
+    ],
+    "A5": [
+      -2.96705972839,
+      2.96705972839
+    ],
+    "A6": [
+      -2.09439510239,
+      2.09439510239
+    ],
+    "A7": [
+      -3.05432619099,
+      3.05432619099
+    ],
+    "multi_A1": [
+      -2.96705972839,
+      2.96705972839
+    ],
+    "multi_A2": [
+      -3.66519142918489,
+      0.5235987755
+    ],
+    "multi_A3": [
+      -2.96705972839,
+      2.96705972839
+    ],
+    "multi_A4": [
+      -2.5938501358032227,
+      2.09439510239
+    ],
+    "multi_A5": [
+      -2.96705972839,
+      2.96705972839
+    ],
+    "multi_A6": [
+      -2.09439510239,
+      2.09439510239
+    ],
+    "multi_A7": [
+      -3.05432619099,
+      3.05432619099
+    ]
+  },
+  "ik_adapter": "reconstruct_train_commands_then_clip_v1",
+  "arm_command_limits_fit_split": "train",
+  "arm_command_limits_source_manifest_sha256": "445f1c1416a1ac298b0542755d76a070da9133d7a319c46339f8217ac446ff48",
+  "schema": "bench2dex-touchwam-export-v1",
+  "model_version": "touchwam_v1",
+  "model_family": "touchwam_v1",
+  "training_mode": "joint_finetune",
+  "base_checkpoint": "/data_all/share/checkpoints/OpenWAM/OpenWAM-Alpha-Pretrain-Foundation-Model/checkpoint_step_154000.safetensors",
+  "base_checkpoint_sha256": "180a02653118b0f96da28a9cae9ec7b4c1c1e6cd0e4608b56c7b4884f8001d3d",
+  "checkpoint_filename": "checkpoint_step_18000.safetensors",
+  "checkpoint_bytes": 24819377788,
+  "checkpoint_sha256": "cb3a3f876b6cded9b255cef9a0b116e4eb216c95b2547495a17955c6a47e40c1",
+  "training_step": 18000,
+  "training_microsteps": 18000,
+  "training_optimizer_steps": 9000,
+  "training_source": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/bench2dex_sharpa3_touchwam_v1_from_alpha/2026-10-05_09-26-29",
+  "exported_at": "2026-10-06T22:56:20.421442+08:00",
+  "last_training_metrics": {
+    "step": 18000,
+    "optimizer_step": 9000,
+    "epoch": 12,
+    "rank": 7,
+    "batch_per_gpu": 16,
+    "steps_per_sec": 0.14604550549549178,
+    "loss_total": 0.05383457988500595,
+    "loss_video": 0.05212274566292763,
+    "loss_action": 0.0017118301475420594,
+    "grad_norm": 0.22195318341255188,
+    "model_version": "touchwam_v1",
+    "training_mode": "joint_finetune",
+    "touch_gate_tanh": {
+      "4": 6.246566772460938e-05,
+      "9": 0.000209808349609375,
+      "14": 0.00018310546875,
+      "19": 8.487701416015625e-05,
+      "24": 0.0006980894831940532,
+      "29": 0.0007743833702988923
+    },
+    "touch_gate_mean_abs": 0.0003354548825882375,
+    "touch_kv_lora_up_l2": 0.05202474072575569,
+    "allocated_gib": 31.61338996887207,
+    "reserved_gib": 56.875,
+    "peak_allocated_gib": 41.14680862426758,
+    "peak_reserved_gib": 56.875
+  },
+  "code_commit": "f9f9359d27685510029a4b98d6adf1d79cdaa92a"
+}

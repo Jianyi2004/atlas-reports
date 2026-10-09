@@ -1,0 +1,3010 @@
+{
+  "pid": 3305287,
+  "state": "complete",
+  "exported": 150,
+  "errors": [],
+  "suite_state": "complete",
+  "updated_at": 1791331614.564057,
+  "videos": [
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 1,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000001.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0001/attempt_01/recordings/success/episode_000001.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 232,
+      "duration_s": 34.8,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 2,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000002.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0002/attempt_01/recordings/failure/episode_000002.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 3,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000003.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0003/attempt_01/recordings/failure/episode_000003.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 4,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000004.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0004/attempt_01/recordings/failure/episode_000004.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 5,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000005.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0005/attempt_01/recordings/failure/episode_000005.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 6,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000006.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0006/attempt_01/recordings/failure/episode_000006.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 7,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000007.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0007/attempt_01/recordings/success/episode_000007.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 215,
+      "duration_s": 32.25,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 8,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000008.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0008/attempt_01/recordings/failure/episode_000008.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 9,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000009.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0009/attempt_01/recordings/success/episode_000009.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 197,
+      "duration_s": 29.549999999999997,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 10,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000010.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0010/attempt_01/recordings/failure/episode_000010.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 11,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000011.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0011/attempt_01/recordings/failure/episode_000011.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 12,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000012.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0012/attempt_01/recordings/success/episode_000012.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 208,
+      "duration_s": 31.2,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 13,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000013.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0013/attempt_01/recordings/failure/episode_000013.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 14,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000014.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0014/attempt_01/recordings/failure/episode_000014.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 15,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000015.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0015/attempt_01/recordings/failure/episode_000015.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 16,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000016.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0016/attempt_01/recordings/failure/episode_000016.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 17,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000017.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0017/attempt_01/recordings/success/episode_000017.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 216,
+      "duration_s": 32.4,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 18,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000018.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0018/attempt_01/recordings/failure/episode_000018.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 19,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000019.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0019/attempt_01/recordings/success/episode_000019.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 194,
+      "duration_s": 29.099999999999998,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 20,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000020.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0020/attempt_01/recordings/failure/episode_000020.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 21,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000021.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0021/attempt_01/recordings/success/episode_000021.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 203,
+      "duration_s": 30.45,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 22,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000022.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0022/attempt_01/recordings/failure/episode_000022.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 23,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000023.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0023/attempt_01/recordings/success/episode_000023.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 204,
+      "duration_s": 30.599999999999998,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 24,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000024.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0024/attempt_01/recordings/success/episode_000024.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 204,
+      "duration_s": 30.599999999999998,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": false,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 25,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000025.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0025/attempt_01/recordings/success/episode_000025.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 194,
+      "duration_s": 29.099999999999998,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 26,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000026.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0026/attempt_01/recordings/success/episode_000026.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 212,
+      "duration_s": 31.799999999999997,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 27,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000027.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0027/attempt_01/recordings/success/episode_000027.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 206,
+      "duration_s": 30.9,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 28,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000028.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0028/attempt_01/recordings/success/episode_000028.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 198,
+      "duration_s": 29.7,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 29,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000029.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0029/attempt_01/recordings/success/episode_000029.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 196,
+      "duration_s": 29.4,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 30,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000030.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0030/attempt_01/recordings/failure/episode_000030.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 31,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000031.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0031/attempt_01/recordings/failure/episode_000031.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 32,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000032.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0032/attempt_01/recordings/success/episode_000032.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 204,
+      "duration_s": 30.599999999999998,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 33,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000033.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0033/attempt_01/recordings/success/episode_000033.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 203,
+      "duration_s": 30.45,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 34,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000034.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0034/attempt_01/recordings/failure/episode_000034.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 35,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000035.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0035/attempt_01/recordings/success/episode_000035.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 211,
+      "duration_s": 31.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 36,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000036.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0036/attempt_01/recordings/failure/episode_000036.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 37,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000037.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0037/attempt_01/recordings/success/episode_000037.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 228,
+      "duration_s": 34.199999999999996,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 38,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000038.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0038/attempt_01/recordings/success/episode_000038.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 204,
+      "duration_s": 30.599999999999998,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 39,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000039.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0039/attempt_01/recordings/success/episode_000039.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 210,
+      "duration_s": 31.5,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 40,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000040.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0040/attempt_01/recordings/failure/episode_000040.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 41,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000041.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0041/attempt_01/recordings/success/episode_000041.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 194,
+      "duration_s": 29.099999999999998,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 42,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000042.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0042/attempt_01/recordings/failure/episode_000042.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 43,
+      "outcome": "success",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/success/episode_000043.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0043/attempt_01/recordings/success/episode_000043.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 197,
+      "duration_s": 29.549999999999997,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 44,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000044.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0044/attempt_01/recordings/failure/episode_000044.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 45,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000045.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0045/attempt_01/recordings/failure/episode_000045.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 46,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000046.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0046/attempt_01/recordings/failure/episode_000046.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 47,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000047.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0047/attempt_01/recordings/failure/episode_000047.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 48,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000048.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0048/attempt_01/recordings/failure/episode_000048.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 49,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000049.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0049/attempt_01/recordings/failure/episode_000049.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "episode_index": 50,
+      "outcome": "failure",
+      "video": "videos/26_canned_food_tray_line_arrangement/none/failure/episode_000050.mp4",
+      "recording": "26_canned_food_tray_line_arrangement/none/episodes/0050/attempt_01/recordings/failure/episode_000050.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 291,
+      "duration_s": 43.65,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 1,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000001.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0001/attempt_01/recordings/failure/episode_000001.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 2,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000002.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0002/attempt_01/recordings/success/episode_000002.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 204,
+      "duration_s": 30.599999999999998,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 3,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000003.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0003/attempt_01/recordings/failure/episode_000003.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 4,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000004.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0004/attempt_01/recordings/success/episode_000004.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 223,
+      "duration_s": 33.449999999999996,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 5,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000005.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0005/attempt_01/recordings/failure/episode_000005.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 6,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000006.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0006/attempt_01/recordings/success/episode_000006.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 205,
+      "duration_s": 30.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 7,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000007.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0007/attempt_01/recordings/success/episode_000007.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 203,
+      "duration_s": 30.45,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 8,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000008.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0008/attempt_01/recordings/success/episode_000008.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 212,
+      "duration_s": 31.799999999999997,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 9,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000009.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0009/attempt_01/recordings/failure/episode_000009.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 10,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000010.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0010/attempt_01/recordings/failure/episode_000010.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 11,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000011.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0011/attempt_01/recordings/success/episode_000011.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 192,
+      "duration_s": 28.799999999999997,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 12,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000012.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0012/attempt_01/recordings/failure/episode_000012.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 13,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000013.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0013/attempt_01/recordings/failure/episode_000013.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 14,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000014.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0014/attempt_01/recordings/failure/episode_000014.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 15,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000015.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0015/attempt_01/recordings/success/episode_000015.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 204,
+      "duration_s": 30.599999999999998,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 16,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000016.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0016/attempt_01/recordings/failure/episode_000016.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 17,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000017.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0017/attempt_01/recordings/success/episode_000017.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 216,
+      "duration_s": 32.4,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 18,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000018.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0018/attempt_01/recordings/failure/episode_000018.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 19,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000019.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0019/attempt_01/recordings/failure/episode_000019.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 20,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000020.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0020/attempt_01/recordings/success/episode_000020.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 190,
+      "duration_s": 28.5,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 21,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000021.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0021/attempt_01/recordings/failure/episode_000021.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 22,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000022.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0022/attempt_01/recordings/success/episode_000022.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 209,
+      "duration_s": 31.349999999999998,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 23,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000023.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0023/attempt_01/recordings/success/episode_000023.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 196,
+      "duration_s": 29.4,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 24,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000024.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0024/attempt_01/recordings/failure/episode_000024.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 25,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000025.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0025/attempt_01/recordings/success/episode_000025.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 197,
+      "duration_s": 29.549999999999997,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 26,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000026.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0026/attempt_01/recordings/success/episode_000026.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 210,
+      "duration_s": 31.5,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 27,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000027.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0027/attempt_01/recordings/failure/episode_000027.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 28,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000028.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0028/attempt_01/recordings/failure/episode_000028.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 29,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000029.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0029/attempt_01/recordings/failure/episode_000029.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 30,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000030.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0030/attempt_01/recordings/success/episode_000030.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 194,
+      "duration_s": 29.099999999999998,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 31,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000031.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0031/attempt_01/recordings/failure/episode_000031.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 32,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000032.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0032/attempt_01/recordings/success/episode_000032.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 197,
+      "duration_s": 29.549999999999997,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 33,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000033.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0033/attempt_01/recordings/failure/episode_000033.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 34,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000034.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0034/attempt_01/recordings/success/episode_000034.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 214,
+      "duration_s": 32.1,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 35,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000035.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0035/attempt_01/recordings/success/episode_000035.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 199,
+      "duration_s": 29.849999999999998,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 36,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000036.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0036/attempt_01/recordings/failure/episode_000036.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 37,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000037.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0037/attempt_01/recordings/success/episode_000037.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 195,
+      "duration_s": 29.25,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 38,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000038.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0038/attempt_01/recordings/success/episode_000038.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 198,
+      "duration_s": 29.7,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 39,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000039.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0039/attempt_01/recordings/failure/episode_000039.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 40,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000040.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0040/attempt_01/recordings/failure/episode_000040.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 41,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000041.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0041/attempt_01/recordings/success/episode_000041.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 205,
+      "duration_s": 30.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 42,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000042.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0042/attempt_01/recordings/failure/episode_000042.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 43,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000043.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0043/attempt_01/recordings/failure/episode_000043.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 44,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000044.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0044/attempt_01/recordings/success/episode_000044.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 189,
+      "duration_s": 28.349999999999998,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 45,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000045.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0045/attempt_01/recordings/failure/episode_000045.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 46,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000046.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0046/attempt_01/recordings/success/episode_000046.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 205,
+      "duration_s": 30.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 47,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000047.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0047/attempt_01/recordings/failure/episode_000047.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 48,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000048.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0048/attempt_01/recordings/failure/episode_000048.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 49,
+      "outcome": "failure",
+      "video": "videos/32_baking_tray_prep_with_tools/none/failure/episode_000049.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0049/attempt_01/recordings/failure/episode_000049.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 284,
+      "duration_s": 42.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "episode_index": 50,
+      "outcome": "success",
+      "video": "videos/32_baking_tray_prep_with_tools/none/success/episode_000050.mp4",
+      "recording": "32_baking_tray_prep_with_tools/none/episodes/0050/attempt_01/recordings/success/episode_000050.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 208,
+      "duration_s": 31.2,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 1,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000001.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0001/attempt_01/recordings/failure/episode_000001.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 2,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000002.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0002/attempt_01/recordings/failure/episode_000002.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 3,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000003.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0003/attempt_01/recordings/failure/episode_000003.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 4,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000004.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0004/attempt_01/recordings/failure/episode_000004.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 5,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000005.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0005/attempt_01/recordings/failure/episode_000005.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 6,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000006.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0006/attempt_01/recordings/failure/episode_000006.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 7,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000007.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0007/attempt_01/recordings/failure/episode_000007.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 8,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000008.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0008/attempt_01/recordings/failure/episode_000008.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 9,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000009.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0009/attempt_01/recordings/failure/episode_000009.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 10,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000010.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0010/attempt_01/recordings/failure/episode_000010.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 11,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000011.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0011/attempt_01/recordings/failure/episode_000011.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 12,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000012.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0012/attempt_01/recordings/failure/episode_000012.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 13,
+      "outcome": "success",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/success/episode_000013.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0013/attempt_01/recordings/success/episode_000013.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 306,
+      "duration_s": 45.9,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 14,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000014.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0014/attempt_01/recordings/failure/episode_000014.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 15,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000015.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0015/attempt_01/recordings/failure/episode_000015.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 16,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000016.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0016/attempt_01/recordings/failure/episode_000016.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 17,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000017.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0017/attempt_01/recordings/failure/episode_000017.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 18,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000018.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0018/attempt_01/recordings/failure/episode_000018.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 19,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000019.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0019/attempt_01/recordings/failure/episode_000019.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 20,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000020.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0020/attempt_01/recordings/failure/episode_000020.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 21,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000021.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0021/attempt_01/recordings/failure/episode_000021.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 22,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000022.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0022/attempt_01/recordings/failure/episode_000022.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 23,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000023.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0023/attempt_01/recordings/failure/episode_000023.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 24,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000024.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0024/attempt_01/recordings/failure/episode_000024.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 25,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000025.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0025/attempt_01/recordings/failure/episode_000025.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 26,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000026.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0026/attempt_01/recordings/failure/episode_000026.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 27,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000027.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0027/attempt_01/recordings/failure/episode_000027.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 28,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000028.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0028/attempt_01/recordings/failure/episode_000028.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 29,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000029.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0029/attempt_01/recordings/failure/episode_000029.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 30,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000030.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0030/attempt_01/recordings/failure/episode_000030.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 31,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000031.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0031/attempt_01/recordings/failure/episode_000031.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 32,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000032.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0032/attempt_01/recordings/failure/episode_000032.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 33,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000033.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0033/attempt_01/recordings/failure/episode_000033.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 34,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000034.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0034/attempt_01/recordings/failure/episode_000034.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 35,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000035.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0035/attempt_01/recordings/failure/episode_000035.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 36,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000036.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0036/attempt_01/recordings/failure/episode_000036.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 37,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000037.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0037/attempt_01/recordings/failure/episode_000037.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 38,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000038.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0038/attempt_01/recordings/failure/episode_000038.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 39,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000039.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0039/attempt_01/recordings/failure/episode_000039.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 40,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000040.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0040/attempt_01/recordings/failure/episode_000040.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 41,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000041.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0041/attempt_01/recordings/failure/episode_000041.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 42,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000042.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0042/attempt_01/recordings/failure/episode_000042.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 43,
+      "outcome": "success",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/success/episode_000043.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0043/attempt_01/recordings/success/episode_000043.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 312,
+      "duration_s": 46.8,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 44,
+      "outcome": "success",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/success/episode_000044.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0044/attempt_01/recordings/success/episode_000044.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 259,
+      "duration_s": 38.85,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 45,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000045.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0045/attempt_01/recordings/failure/episode_000045.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 46,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000046.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0046/attempt_01/recordings/failure/episode_000046.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 47,
+      "outcome": "success",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/success/episode_000047.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0047/attempt_01/recordings/success/episode_000047.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 264,
+      "duration_s": 39.6,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 48,
+      "outcome": "success",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/success/episode_000048.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0048/attempt_01/recordings/success/episode_000048.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 328,
+      "duration_s": 49.199999999999996,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 49,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000049.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0049/attempt_01/recordings/failure/episode_000049.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "episode_index": 50,
+      "outcome": "failure",
+      "video": "videos/73_jigsaw_puzzle_assembly/none/failure/episode_000050.mp4",
+      "recording": "73_jigsaw_puzzle_assembly/none/episodes/0050/attempt_01/recordings/failure/episode_000050.hdf5",
+      "camera_order": [
+        "cam_stereo_left",
+        "cam_wrist_left",
+        "cam_wrist_right"
+      ],
+      "fps": 6.666666666666667,
+      "frames": 405,
+      "duration_s": 60.75,
+      "width": 720,
+      "height": 204,
+      "robot_constraint_violation": true,
+      "note": "Native recorded JPEG resolution; playback follows simulation time, not inference wall time."
+    }
+  ]
+}

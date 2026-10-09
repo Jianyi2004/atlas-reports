@@ -1,0 +1,155 @@
+model:
+  video_backbone:
+    encoder:
+      name: wan22_vae
+      model_path: /path/to/Wan2.2-TI2V-5B
+    name: wan22_ti2v_5b
+    model_path: /path/to/Wan2.2-TI2V-5B
+    from_scratch: false
+    shift_video: 5.0
+    components:
+    - attr: dit
+      model_class: openwam.model.video_backbone.wan.models.dit.WanModel
+      extra_kwargs:
+        has_image_input: false
+        patch_size:
+        - 1
+        - 2
+        - 2
+        in_dim: 48
+        dim: 3072
+        ffn_dim: 14336
+        freq_dim: 256
+        text_dim: 4096
+        out_dim: 48
+        num_heads: 24
+        num_layers: 30
+        eps: 1.0e-06
+        seperated_timestep: true
+        require_clip_embedding: false
+        require_vae_embedding: false
+        fuse_vae_embedding_in_latents: true
+    - attr: vae
+      model_class: openwam.model.video_backbone.wan.models.vae.WanVideoVAE38
+      extra_kwargs: {}
+    - attr: text_encoder
+      model_class: openwam.model.video_backbone.wan.models.text_encoder.WanTextEncoder
+      extra_kwargs: {}
+    tokenizer:
+      class: openwam.model.video_backbone.wan.models.text_encoder.HuggingfaceTokenizer
+      attr: tokenizer
+      subdir: tokenizer/google/umt5-xxl
+      path_kwarg: name
+      kwargs:
+        seq_len: 512
+        clean: whitespace
+  action_backbone:
+    dim: 1024
+    ffn_dim: 4096
+    shift_action: 5.0
+  freeze:
+  - video_backbone.text_encoder
+  - video_backbone.reason1
+  - video_backbone.vae
+  - video_backbone.image_encoder
+  - video_backbone.video_encoder
+  architecture:
+    framework: dual_system
+    variant: touchwam_v1
+    action_dim: 80
+    use_proprioception: true
+    state_dim: 80
+    bridge_layers: null
+    bridge_interval: 1
+    mot_checkpoint_mixed_attn: true
+    attention_mask_mode: mutual
+    video_attention_mask_mode: first_frame_causal
+    detach_bridge: false
+    idm_video_cond_noise_prob: 0.5
+    training_mode: joint_finetune
+    tactile:
+      history: 4
+      map_size: 32
+      width: 256
+      temporal_layers: 2
+      heads: 8
+      distance_scale_m: 0.015
+      adapter_layers: null
+      adapter_interval: 5
+      lora_rank: 16
+dataloader:
+  type: bench2dex_sharpa_tactile_v1
+  manifest_path: assets/benchmark_data/bench2dex_sharpa3_alpha/manifest.json
+  source_root: null
+  seed: 42
+  action_mode: eef
+  normalize_mode: min-max
+  unify_action: true
+  unify_dim: 80
+  unify_action_map:
+  - 0-8
+  - 10-29
+  - 34-42
+  - 44-63
+  unify_state_map: null
+  num_frames: 33
+  video_stride: 4
+  window_stride: 1
+  height: 384
+  width: 320
+  multiview: true
+  camera_layout:
+  - cam_stereo_left
+  - cam_wrist_left
+  - cam_wrist_right
+  target_camera: cam_stereo_left
+  tactile_history: ${model.architecture.tactile.history}
+  tactile_map_size: ${model.architecture.tactile.map_size}
+  tactile_cache_root: assets/benchmark_data/bench2dex_sharpa3_tactile_v1
+training:
+  debug: false
+  learning_rate: 1.0e-05
+  adam_betas:
+  - 0.9
+  - 0.95
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  num_epochs: null
+  max_steps: 18000
+  run_forever: false
+  batch_size: 16
+  gradient_accumulation_steps: 2
+  lr_scheduler: null
+  warmup_ratio: 0.05
+  lr_min_ratio: 0.01
+  action_lr: null
+  video_lr: null
+  mixed_precision: bf16
+  zero_stage: 2
+  use_gradient_checkpointing: true
+  use_gradient_checkpointing_offload: false
+  initialize_model_on_cpu: true
+  handoff_ready_dir: null
+  offload_optimizer_device: none
+  lambda_video: 1.0
+  lambda_action: 1.0
+  max_timestep_boundary: 1.0
+  min_timestep_boundary: 0.0
+  output_path: outputs/bench2dex_sharpa3_touchwam_v1_from_alpha
+  save_steps: 1000
+  save_full_states_for_resume: false
+  keep_last_k_ckpts: 10
+  finetune_ckpt_path: /data_all/share/checkpoints/OpenWAM/OpenWAM-Alpha-Pretrain-Foundation-Model/checkpoint_step_154000.safetensors
+  reset_action_io_on_dim_mismatch: false
+  initialize_touch_from_openwam: true
+  resume_ckpt_path: null
+  dataset_num_workers: 2
+  performance_log_steps: 10
+project:
+  name: touchwam_v1_from_alpha
+  output_dir: outputs/${now:%Y-%m-%d_%H-%M-%S}
+  seed: 42
+  wandb:
+    project: openwam
+    run_name: null
+    entity: null

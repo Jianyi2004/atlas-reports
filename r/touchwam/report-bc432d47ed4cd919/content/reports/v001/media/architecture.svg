@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="570" viewBox="0 0 1160 570"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="#59796e"/></marker></defs><rect width="1160" height="570" rx="16" fill="#f3f7f3"/><style>text{font-family:Arial,sans-serif;fill:#193f35;text-anchor:middle}.t{font-size:20px;font-weight:bold}.s{font-size:16px}.box{fill:white;stroke:#94b2a2;stroke-width:2}.flow{fill:none;stroke:#59796e;stroke-width:2;marker-end:url(#arrow)}</style>
+<text x="580" y="38" class="t">TouchWAM V1 · joint_finetune · 18k microsteps</text>
+<rect class="box" x="25" y="65" width="330" height="76" rx="10"/><text x="190" y="96" class="t">RGB · 9 × 384 × 320</text><text x="190" y="123" class="s">3 cameras / 33 source frames</text>
+<rect class="box" x="415" y="65" width="330" height="76" rx="10"/><text x="580" y="96" class="t">Language + state [1, 80]</text><text x="580" y="123" class="s">Text encoder frozen; state trainable</text>
+<rect class="box" x="805" y="65" width="330" height="76" rx="10"/><text x="970" y="96" class="t">Touch [4, 10, 2, 32, 32]</text><text x="970" y="123" class="s">Distance + mask / validity [4, 10]</text>
+<path class="flow" d="M190 141V180"/><path class="flow" d="M580 141V278"/><path class="flow" d="M970 141V180"/>
+<rect class="box" x="25" y="181" width="330" height="72" rx="10"/><text x="190" y="211" class="t">Wan VAE · frozen</text><text x="190" y="239" class="s">Observed + noisy future latents</text>
+<rect class="box" x="805" y="181" width="330" height="72" rx="10"/><text x="970" y="211" class="t">Shared CNN + causal Transformer</text><text x="970" y="239" class="s">40 × 256 tokens → 1024</text>
+<path class="flow" d="M190 253V294"/><path class="flow" d="M970 253V294"/>
+<rect x="25" y="294" width="720" height="111" rx="10" fill="#e5edf9" stroke="#648ab1" stroke-width="2"/><text x="385" y="325" class="t">Video + action dual streams · trainable</text><text x="385" y="356" class="s">30 shared-attention layers · original flow matching losses</text><text x="385" y="386" class="s">Original language / state conditioning retained</text>
+<rect x="805" y="294" width="330" height="111" rx="10" fill="#e0efdf" stroke="#629268" stroke-width="2"/><text x="970" y="325" class="t">Gated tactile cross-attention</text><text x="970" y="356" class="s">Layers 4, 9, 14, 19, 24, 29</text><text x="970" y="386" class="s">KV LoRA r=16 · tanh(g), g starts at 0</text>
+<path class="flow" d="M805 350H747"/><path class="flow" d="M385 405V446"/>
+<rect class="box" x="190" y="446" width="550" height="72" rx="10"/><text x="465" y="477" class="t">Action chunk [32, 80] · 58 valid dimensions</text><text x="465" y="504" class="s">Execute 16 steps → IK + joint clipping → Bench2Dex</text>
+<text x="580" y="549" class="s">Joint training updates video / action / state / touch; VAE and text encoder stay frozen.</text></svg>

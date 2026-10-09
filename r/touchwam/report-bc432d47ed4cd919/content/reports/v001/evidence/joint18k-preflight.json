@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-05T09:19:12.324481+08:00",
+  "source_checkpoint": "/data_all/share/checkpoints/OpenWAM/OpenWAM-Alpha-Pretrain-Foundation-Model/checkpoint_step_154000.safetensors",
+  "source_checkpoint_sha256": "180a02653118b0f96da28a9cae9ec7b4c1c1e6cd0e4608b56c7b4884f8001d3d",
+  "source_bytes": 24813767464,
+  "dataset_manifest_sha256": "445f1c1416a1ac298b0542755d76a070da9133d7a319c46339f8217ac446ff48",
+  "tactile_cache_manifest_sha256": "020cd5f86eec077dd11f5e414df2bb4e59d55aa0f421074976d9ae2cef68de55",
+  "episodes": 216,
+  "split_counts": {
+    "train": 194,
+    "val": 22
+  },
+  "samples": [
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "split": "train",
+      "valid_sensor_frames": 40
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "split": "train",
+      "valid_sensor_frames": 40
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "split": "train",
+      "valid_sensor_frames": 40
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "split": "val",
+      "valid_sensor_frames": 40
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "split": "val",
+      "valid_sensor_frames": 40
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "split": "val",
+      "valid_sensor_frames": 40
+    }
+  ],
+  "matches_baseline_training_fields": [
+    "learning_rate",
+    "adam_betas",
+    "weight_decay",
+    "max_grad_norm",
+    "num_epochs",
+    "max_steps",
+    "run_forever",
+    "batch_size",
+    "gradient_accumulation_steps",
+    "lr_scheduler",
+    "action_lr",
+    "video_lr",
+    "mixed_precision",
+    "zero_stage",
+    "use_gradient_checkpointing",
+    "offload_optimizer_device",
+    "lambda_video",
+    "lambda_action",
+    "max_timestep_boundary",
+    "min_timestep_boundary",
+    "save_steps",
+    "keep_last_k_ckpts",
+    "save_full_states_for_resume"
+  ],
+  "baseline_data_settings_match": true,
+  "training_mode": "joint_finetune",
+  "resume_ckpt_path": null,
+  "official_download_hash_verified": true,
+  "huggingface_revision": "52df4e66c82c5c8b480adcc8d01f4db7415dfb56"
+}
