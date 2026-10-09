@@ -1,0 +1,112 @@
+{
+  "paper_source": "https://arxiv.org/html/2609.15726v1#S6",
+  "groot_default": {
+    "updates": 20000,
+    "global_batch": 64,
+    "task_specific": true,
+    "peak_lr": 0.0001,
+    "warmup_ratio": 0.05,
+    "scheduler": "cosine"
+  },
+  "ours": {
+    "gpus": 8,
+    "per_gpu_batch": 16,
+    "accumulation": 2,
+    "task_count": 3,
+    "task_sampling": "equal",
+    "learning_rate": 1e-05,
+    "scheduler": null
+  },
+  "budget_rows": [
+    [
+      "论文 GR00T：20k，单任务",
+      "已报告默认预算",
+      "20,000",
+      "128 万",
+      "100%"
+    ],
+    [
+      "我们：11k，三任务",
+      "已有 checkpoint",
+      "5,500",
+      "46.9 万",
+      "36.7%"
+    ],
+    [
+      "我们：13k，三任务",
+      "已有 checkpoint",
+      "6,500",
+      "55.5 万",
+      "43.3%"
+    ],
+    [
+      "我们：18k，三任务",
+      "已有 checkpoint",
+      "9,000",
+      "76.8 万",
+      "60.0%"
+    ],
+    [
+      "我们：30k，三任务",
+      "预算换算，尚未训练",
+      "15,000",
+      "128.0 万",
+      "100.0%"
+    ],
+    [
+      "我们：40k，三任务",
+      "预算换算，尚未训练",
+      "20,000",
+      "170.7 万",
+      "133.3%"
+    ]
+  ],
+  "action_loss_mean_last_1000_microsteps": {
+    "11000": 0.002345555651700124,
+    "13000": 0.0020612064795568585,
+    "18000": 0.0015866126550827175
+  },
+  "performance_log_sha256": "b86f79f264f9ba85af13a4ea0ae9c658d1583573e58ca4b6bfe0d866891d3fae",
+  "additional_13k_results": {
+    "OpenWAM 13k": [
+      {
+        "task": "26_canned_food_tray_line_arrangement",
+        "successes": 15,
+        "source": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_openwam_step13000_none50_20261008/26_canned_food_tray_line_arrangement/none/summary.json",
+        "sha256": "e82d17455b1651db63c9ad162e51d2aa6017fb259d113906beb77a0369a4982d"
+      },
+      {
+        "task": "32_baking_tray_prep_with_tools",
+        "successes": 17,
+        "source": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_openwam_step13000_none50_20261008/32_baking_tray_prep_with_tools/none/summary.json",
+        "sha256": "57823fdb5895dc498a1a82daf1c2e40d7feddc4753ea33ac3f29363b0988af56"
+      },
+      {
+        "task": "73_jigsaw_puzzle_assembly",
+        "successes": 1,
+        "source": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_openwam_step13000_none50_20261008/73_jigsaw_puzzle_assembly/none/summary.json",
+        "sha256": "fad2a7bc71e9dc700d9fcde6225d7e3bb6385360e70ab31b0f9dc6c95ee13c12"
+      }
+    ],
+    "TouchWAM 13k": [
+      {
+        "task": "26_canned_food_tray_line_arrangement",
+        "successes": 19,
+        "source": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_touchwam_v1_from_alpha_step13000_none50_20261008/26_canned_food_tray_line_arrangement/none/summary.json",
+        "sha256": "1a104eea46adc60b86b08b04214341a336abc0498f12a2eef5948df82dc0fe12"
+      },
+      {
+        "task": "32_baking_tray_prep_with_tools",
+        "successes": 14,
+        "source": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_touchwam_v1_from_alpha_step13000_none50_20261008/32_baking_tray_prep_with_tools/none/summary.json",
+        "sha256": "1fcb7b7fed7b66f12916bfcc4c8e33fbda5965f9d35efc8a7d7b8226b7527b18"
+      },
+      {
+        "task": "73_jigsaw_puzzle_assembly",
+        "successes": 1,
+        "source": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_touchwam_v1_from_alpha_step13000_none50_20261008/73_jigsaw_puzzle_assembly/none/summary.json",
+        "sha256": "94e29e6ca8b1b85804f850e42311ef3607973e05343b0d03fe0ae79a97676e3c"
+      }
+    ]
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "checkpoint": "checkpoint_step_11000.safetensors",
+  "checkpoint_sha256": "bdf654b8852cb5fa0b668586c06f6e9e7f902b0d3f86ce39a0b842177b402b86",
+  "state": "complete",
+  "complete": true,
+  "completed": 150,
+  "target": 150,
+  "successes": 44,
+  "tasks": [
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "profile": "none",
+      "target_episodes": 50,
+      "completed": 50,
+      "successes": 24,
+      "stable_success_rate": 0.48,
+      "wilson_95_interval": [
+        0.34797135286578046,
+        0.6148825510995539
+      ],
+      "complete": true,
+      "errors": 0,
+      "termination_counts": {
+        "stable_success": 24,
+        "max_steps": 26
+      },
+      "robot_constraint_violation_episodes": 45,
+      "ik_failed_arm_targets": 0,
+      "ik_projected_arm_targets": 9053,
+      "by_training_split": {
+        "train": {
+          "completed": 45,
+          "successes": 22,
+          "stable_success_rate": 0.4888888888888889
+        },
+        "val": {
+          "completed": 5,
+          "successes": 2,
+          "stable_success_rate": 0.4
+        }
+      },
+      "scope": "One generalization profile with fixed benchmark anchors; not the paper's four-profile macro SR.",
+      "state": "complete",
+      "updated_at": "2026-10-07T07:32:04.858683+00:00",
+      "elapsed_s": 1733.7
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "profile": "none",
+      "target_episodes": 50,
+      "completed": 50,
+      "successes": 17,
+      "stable_success_rate": 0.34,
+      "wilson_95_interval": [
+        0.2243694922250009,
+        0.478461739497674
+      ],
+      "complete": true,
+      "errors": 0,
+      "termination_counts": {
+        "max_steps": 33,
+        "stable_success": 17
+      },
+      "robot_constraint_violation_episodes": 50,
+      "ik_failed_arm_targets": 241,
+      "ik_projected_arm_targets": 33712,
+      "by_training_split": {
+        "not_used_for_training": {
+          "completed": 34,
+          "successes": 10,
+          "stable_success_rate": 0.29411764705882354
+        },
+        "train": {
+          "completed": 14,
+          "successes": 5,
+          "stable_success_rate": 0.35714285714285715
+        },
+        "val": {
+          "completed": 2,
+          "successes": 2,
+          "stable_success_rate": 1.0
+        }
+      },
+      "scope": "One generalization profile with fixed benchmark anchors; not the paper's four-profile macro SR.",
+      "state": "complete",
+      "updated_at": "2026-10-07T08:01:18.946860+00:00",
+      "elapsed_s": 1754.0
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "profile": "none",
+      "target_episodes": 50,
+      "completed": 50,
+      "successes": 3,
+      "stable_success_rate": 0.06,
+      "wilson_95_interval": [
+        0.02061497034897397,
+        0.16217091688838173
+      ],
+      "complete": true,
+      "errors": 0,
+      "termination_counts": {
+        "max_steps": 47,
+        "stable_success": 3
+      },
+      "robot_constraint_violation_episodes": 47,
+      "ik_failed_arm_targets": 0,
+      "ik_projected_arm_targets": 3018,
+      "by_training_split": {
+        "not_used_for_training": {
+          "completed": 8,
+          "successes": 0,
+          "stable_success_rate": 0.0
+        },
+        "train": {
+          "completed": 38,
+          "successes": 3,
+          "stable_success_rate": 0.07894736842105263
+        },
+        "val": {
+          "completed": 4,
+          "successes": 0,
+          "stable_success_rate": 0.0
+        }
+      },
+      "scope": "One generalization profile with fixed benchmark anchors; not the paper's four-profile macro SR.",
+      "state": "complete",
+      "updated_at": "2026-10-07T08:43:04.198838+00:00",
+      "elapsed_s": 2505.2
+    }
+  ],
+  "updated_at": "2026-10-07T08:43:04.230782+00:00",
+  "infrastructure_errors": [],
+  "macro_stable_success_rate": 0.2933333333333334
+}

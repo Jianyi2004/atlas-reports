@@ -1,0 +1,88 @@
+{
+  "report_version": "v003",
+  "model_version": "touchwam_v1",
+  "date": "2026-10-09",
+  "previous_report_sha256": "58f06b9eb187c455a52ad37b9a9b2b6e04d0575362f406bd9de3d33943508253",
+  "main_table_evidence": [
+    {
+      "model": "OpenWAM 11k",
+      "task": "26_canned_food_tray_line_arrangement",
+      "path": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_sharpa3_step11000_none50_ikfix_20261004_163307/26_canned_food_tray_line_arrangement/none/summary.json",
+      "sha256": "d364a518297fa3c3b4c5b9a410ce7edb92901089820d00e05e260f8600b6e8e9",
+      "successes": 26,
+      "completed": 50
+    },
+    {
+      "model": "OpenWAM 11k",
+      "task": "32_baking_tray_prep_with_tools",
+      "path": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_sharpa3_step11000_none50_ikfix_20261004_163307/32_baking_tray_prep_with_tools/none/summary.json",
+      "sha256": "1716320e3bb9483502e3d880f5bf131d05f61fa01022575f28b46da53cfb9a64",
+      "successes": 20,
+      "completed": 50
+    },
+    {
+      "model": "OpenWAM 11k",
+      "task": "73_jigsaw_puzzle_assembly",
+      "path": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_sharpa3_step11000_none50_ikfix_20261004_163307/73_jigsaw_puzzle_assembly/none/summary.json",
+      "sha256": "865dca5f59c3433b3345ec3167b588011851b9ccac483063ddb15878eb6321b6",
+      "successes": 2,
+      "completed": 50
+    },
+    {
+      "model": "TouchWAM 11k",
+      "task": "26_canned_food_tray_line_arrangement",
+      "path": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_touchwam_v1_from_alpha_step11000_none50_20261007/26_canned_food_tray_line_arrangement/none/summary.json",
+      "sha256": "9490b24eee40c3f159aec5d171f71e6b97151e92200e8d796e991174e0226cc2",
+      "successes": 24,
+      "completed": 50
+    },
+    {
+      "model": "TouchWAM 11k",
+      "task": "32_baking_tray_prep_with_tools",
+      "path": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_touchwam_v1_from_alpha_step11000_none50_20261007/32_baking_tray_prep_with_tools/none/summary.json",
+      "sha256": "51a2f686d5718afa82e00f7881e7d5c07cd32eb61c4c2779121cebb2b58a345e",
+      "successes": 17,
+      "completed": 50
+    },
+    {
+      "model": "TouchWAM 11k",
+      "task": "73_jigsaw_puzzle_assembly",
+      "path": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_touchwam_v1_from_alpha_step11000_none50_20261007/73_jigsaw_puzzle_assembly/none/summary.json",
+      "sha256": "456f7440c0cedb88f1530bf5152052f72b7a149766f456541fd52590e9eb8464",
+      "successes": 3,
+      "completed": 50
+    },
+    {
+      "model": "TouchWAM 18k",
+      "task": "26_canned_food_tray_line_arrangement",
+      "path": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_touchwam_v1_from_alpha_step18000_none50_20261006/26_canned_food_tray_line_arrangement/none/summary.json",
+      "sha256": "c37fbb107e7f647d91d6b9b78752968bdb74c9d8d6269e87ee4ecb0821efb455",
+      "successes": 22,
+      "completed": 50
+    },
+    {
+      "model": "TouchWAM 18k",
+      "task": "32_baking_tray_prep_with_tools",
+      "path": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_touchwam_v1_from_alpha_step18000_none50_20261006/32_baking_tray_prep_with_tools/none/summary.json",
+      "sha256": "2e2bd2e9e3b0821be92cb3730d0e79403e8cd44b6530ea269290f096c19b168b",
+      "successes": 23,
+      "completed": 50
+    },
+    {
+      "model": "TouchWAM 18k",
+      "task": "73_jigsaw_puzzle_assembly",
+      "path": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_touchwam_v1_from_alpha_step18000_none50_20261006/73_jigsaw_puzzle_assembly/none/summary.json",
+      "sha256": "06906b115dd387e05a2773613d1e208d124eeaf948bcc16fe99771a25e15a15a",
+      "successes": 5,
+      "completed": 50
+    }
+  ],
+  "architecture_mode": "joint_finetune",
+  "architecture_sources": [
+    "OpenWAM/configs/train_touchwam_v1_from_alpha.yaml",
+    "OpenWAM/configs/model/touchwam_v1.yaml",
+    "OpenWAM/docs/touchwam/bench2dex_report_zh.md"
+  ],
+  "video_selection": "First successful and first failed episode by index per task at 18k; first successful episode at 11k.",
+  "demos": 9
+}

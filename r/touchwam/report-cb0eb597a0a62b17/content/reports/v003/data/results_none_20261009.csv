@@ -1,0 +1,8 @@
+model,source,task26_successes,task32_successes,task73_successes,episodes_per_task,mean_sr_percent,profile
+ACT,Bench2Dex 论文,17,9,0,50,17.33,none
+Diffusion Policy,Bench2Dex 论文,0,2,0,50,1.33,none
+π0.5,Bench2Dex 论文,7,7,0,50,9.33,none
+GR00T N1.5,Bench2Dex 论文,17,12,10,50,26.00,none
+OpenWAM 11k，无触觉,我们复现,26,20,2,50,32.00,none
+TouchWAM 11k,我们的方法,24,17,3,50,29.33,none
+TouchWAM 18k,我们的方法,22,23,5,50,33.33,none

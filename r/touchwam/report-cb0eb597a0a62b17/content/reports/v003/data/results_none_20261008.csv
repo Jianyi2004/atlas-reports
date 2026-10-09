@@ -1,0 +1,22 @@
+source,model,task,profile,successes,episodes,sr_percent
+Bench2Dex Table 2,ACT,26_canned_food_tray_line_arrangement,none,17,50,34
+Bench2Dex Table 2,ACT,32_baking_tray_prep_with_tools,none,9,50,18
+Bench2Dex Table 2,ACT,73_jigsaw_puzzle_assembly,none,0,50,0
+Bench2Dex Table 2,DP,26_canned_food_tray_line_arrangement,none,0,50,0
+Bench2Dex Table 2,DP,32_baking_tray_prep_with_tools,none,2,50,4
+Bench2Dex Table 2,DP,73_jigsaw_puzzle_assembly,none,0,50,0
+Bench2Dex Table 2,pi0.5,26_canned_food_tray_line_arrangement,none,7,50,14
+Bench2Dex Table 2,pi0.5,32_baking_tray_prep_with_tools,none,7,50,14
+Bench2Dex Table 2,pi0.5,73_jigsaw_puzzle_assembly,none,0,50,0
+Bench2Dex Table 2,GR00T N1.5,26_canned_food_tray_line_arrangement,none,17,50,34
+Bench2Dex Table 2,GR00T N1.5,32_baking_tray_prep_with_tools,none,12,50,24
+Bench2Dex Table 2,GR00T N1.5,73_jigsaw_puzzle_assembly,none,10,50,20
+local evaluation,OpenWAM 11000,26_canned_food_tray_line_arrangement,none,26,50,52
+local evaluation,OpenWAM 11000,32_baking_tray_prep_with_tools,none,20,50,40
+local evaluation,OpenWAM 11000,73_jigsaw_puzzle_assembly,none,2,50,4
+local evaluation,TouchWAM 11000,26_canned_food_tray_line_arrangement,none,24,50,48
+local evaluation,TouchWAM 11000,32_baking_tray_prep_with_tools,none,17,50,34
+local evaluation,TouchWAM 11000,73_jigsaw_puzzle_assembly,none,3,50,6
+local evaluation,TouchWAM 18000,26_canned_food_tray_line_arrangement,none,22,50,44
+local evaluation,TouchWAM 18000,32_baking_tray_prep_with_tools,none,23,50,46
+local evaluation,TouchWAM 18000,73_jigsaw_puzzle_assembly,none,5,50,10

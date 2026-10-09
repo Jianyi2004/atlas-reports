@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>TouchWAM v003｜论文对照、当前架构与训练预算</title><style>@font-face{font-display:block;font-family:KaTeX_AMS;font-style:normal;font-weight:400;src:url(fonts/0cdd387c9590a1a9f979.woff2) format("woff2"),url(fonts/30da91e84c893f875e25.woff) format("woff"),url(fonts/68534840bcfdd2bffb6f.ttf) format("truetype")}@font-face{font-display:block;font-family:KaTeX_Caligraphic;font-style:normal;font-weight:700;src:url(fonts/de7701e42cf1f4cf0b76.woff2) format("woff2"),url(fonts/1ae6bd7475590e97e7f1.woff) format("woff"),url(fonts/07d8e303ce4fc12b4bb5.ttf) format("truetype")}@font-face{font-display:block;font-family:KaTeX_Caligraphic;font-style:normal;font-weight:400;src:url(fonts/5d53e70ad607c2352162.woff2) format("woff2"),url(fonts/3398dd02302557a793f2.woff) format("woff"),url(fonts/ed0b74372feefcbb9c06.ttf) format("truetype")}@font-face{font-display:block;font-family:KaTeX_Fraktur;font-style:normal;font-weight:700;src:url(fonts/74444efd593c005e3f45.woff2) format("woff2"),url(fonts/9be7ceb88004ab8ad124.woff) format("woff"),url(fonts/9163df9c7122432e6495.ttf) format("truetype")}@font-face{font-display:block;font-family:KaTeX_Fraktur;font-style:normal;font-weight:400;src:url(fonts/51814d270d06ff0255db.woff2) format("woff2"),url(fonts/5e28753be717dac97f55.woff) format("woff"),url(fonts/1e6f9579e90e2cac37f8.ttf) format("truetype")}@font-face{font-display:block;font-family:KaTeX_Main;font-style:normal;font-weight:700;src:url(fonts/0f60d1b897938ec918c8.woff2) format("woff2"),url(fonts/c76c5d696297d51b9cb1.woff) format("woff"),url(fonts/138ac28d1663b3037e9c.ttf) format("truetype")}@font-face{font-display:block;font-family:KaTeX_Main;font-style:italic;font-weight:700;src:url(fonts/99cd42a3c072d918f2f4.woff2) format("woff2"),url(fonts/a6f7ec0d846ac7ad975a.woff) format("woff"),url(fonts/70ee1f64a20f2048c219.ttf) format("truetype")}@font-face{font-display:block;font-family:KaTeX_Main;font-style:italic;font-weight:400;src:url(fonts/97479ca6cce906abc961.woff2) format("woff2"),url(fonts/f1d6ef86f3b11a528bd5.woff) format("woff"),url(fonts/0d85ae7cc30f23790a7f.ttf) format("truetype")}@font-face{font-display:block;font-family:KaTeX_Main;font-style:normal;font-weight:400;src:url(fonts/c2342cd8b869e01752a9.woff2) format("woff2"),url(fonts/c6368d87e8a1a3a5d337.woff) format("woff"),url(fonts/d0332f52868370fd83ae.ttf) format("truetype")}@font-face{font-display:block;font-family:KaTeX_Math;font-style:italic;font-weight:700;src:url(fonts/dc47344dbb6cb5b655c8.woff2) format("woff2"),url(fonts/850c0af5c2238497feba.woff) format("woff"),url(fonts/f9377ab0271cda59af24.ttf) format("truetype")}@font-face{font-display:block;font-family:KaTeX_Math;font-style:italic;font-weight:400;src:url(fonts/7af58c5ec8f132a2ddde.woff2) format("woff2"),url(fonts/8a8d244581371912b8f3.woff) format("woff"),url(fonts/08ce98e51b04d58945a3.ttf) format("truetype")}@font-face{font-display:block;font-family:"KaTeX_SansSerif";font-style:normal;font-weight:700;src:url(fonts/e99ae51144bf1232efcc.woff2) format("woff2"),url(fonts/ece03cfd83e22c212cde.woff) format("woff"),url(fonts/1ece03f79f95277d57dc.ttf) format("truetype")}@font-face{font-display:block;font-family:"KaTeX_SansSerif";font-style:italic;font-weight:400;src:url(fonts/00b26ac825e209505639.woff2) format("woff2"),url(fonts/91ee67500cc0129aa0ac.woff) format("woff"),url(fonts/3931dd81faed86ba021b.ttf) format("truetype")}@font-face{font-display:block;font-family:"KaTeX_SansSerif";font-style:normal;font-weight:400;src:url(fonts/68e8c73ef42afd3ccec5.woff2) format("woff2"),url(fonts/11e4dc8a6471ff6d6ee5.woff) format("woff"),url(fonts/f36ea897e19f4a2e571d.ttf) format("truetype")}@font-face{font-display:block;font-family:KaTeX_Script;font-style:normal;font-weight:400;src:url(fonts/036d4e95149b69ff9bcc.woff2) format("woff2"),url(fonts/d96cdf2b3bdd4d64a8fd.woff) format("woff"),url(fonts/1c67f068fea8bb09bf09.ttf) format("truetype")}@font-face{font-display:block;font-family:KaTeX_Size1;font-style:normal;font-weight:400;src:url(fonts/6b47c40166b6dbe21a5d.woff2) format("woff2"),url(fonts/c943cc986384f59e86be.woff) format("woff"),url(fonts/95b6d2f1a50173bfedb8.ttf) format("truetype")}@font-face{font-display:block;font-family:KaTeX_Size2;font-style:normal;font-weight:400;src:url(fonts/d04c54219f9eaec6d4d4.woff2) format("woff2"),url(fonts/2014c523c3210bcc1666.woff) format("woff"),url(fonts/a6b2099fb555c60e3a0d.ttf) format("truetype")}@font-face{font-display:block;font-family:KaTeX_Size3;font-style:normal;font-weight:400;src:url(fonts/73d591271b1604960cb1.woff2) format("woff2"),url(fonts/6ab6b62e9b62dae2c00d.woff) format("woff"),url(fonts/500e04d54f0d51666332.ttf) format("truetype")}@font-face{font-display:block;font-family:KaTeX_Size4;font-style:normal;font-weight:400;src:url(fonts/a4af7d414440a1c17908.woff2) format("woff2"),url(fonts/99f9c6750b489c9462bf.woff) format("woff"),url(fonts/c647367d1dd4e1624687.ttf) format("truetype")}@font-face{font-display:block;font-family:KaTeX_Typewriter;font-style:normal;font-weight:400;src:url(fonts/71d517d67827787cfabd.woff2) format("woff2"),url(fonts/e14fed02b1aba7ce9f5a.woff) format("woff"),url(fonts/f01f3e87d9c6a61c0c08.ttf) format("truetype")}.katex{font:normal 1.21em KaTeX_Main,math,Times New Roman,serif;line-height:1.2;position:relative;text-indent:0;text-rendering:auto}.katex *{-ms-high-contrast-adjust:none!important;border-color:currentColor}.katex .katex-version:after{content:"0.19.0"}.katex .katex-mathml{border:0;-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;overflow:hidden;padding:0;position:absolute;width:1px}.katex .katex-html>.katex-newline{display:block}.katex .katex-base{position:relative;white-space:nowrap;width:-webkit-min-content;width:-moz-min-content;width:min-content}.katex .katex-base,.katex .katex-strut{display:inline-block}.katex .textbf{font-weight:700}.katex .textit{font-style:italic}.katex .textrm{font-family:KaTeX_Main}.katex .textsf{font-family:KaTeX_SansSerif}.katex .texttt{font-family:KaTeX_Typewriter}.katex .mathnormal{font-family:KaTeX_Math;font-style:italic}.katex .mathit{font-family:KaTeX_Main;font-style:italic}.katex .mathrm{font-style:normal}.katex .mathbf{font-family:KaTeX_Main;font-weight:700}.katex .boldsymbol{font-family:KaTeX_Math;font-style:italic;font-weight:700}.katex .amsrm,.katex .mathbb,.katex .textbb{font-family:KaTeX_AMS}.katex .mathcal{font-family:KaTeX_Caligraphic}.katex .mathfrak,.katex .textfrak{font-family:KaTeX_Fraktur}.katex .mathboldfrak,.katex .textboldfrak{font-family:KaTeX_Fraktur;font-weight:700}.katex .mathtt{font-family:KaTeX_Typewriter}.katex .mathscr,.katex .textscr{font-family:KaTeX_Script}.katex .mathsf,.katex .textsf{font-family:KaTeX_SansSerif}.katex .mathboldsf,.katex .textboldsf{font-family:KaTeX_SansSerif;font-weight:700}.katex .mathitsf,.katex .mathsfit,.katex .textitsf{font-family:KaTeX_SansSerif;font-style:italic}.katex .mainrm{font-family:KaTeX_Main;font-style:normal}.katex .vlist-t{border-collapse:collapse;display:inline-table;table-layout:fixed}.katex .vlist-r{display:table-row}.katex .vlist{display:table-cell;position:relative;vertical-align:bottom}.katex .vlist>span{display:block;height:0;position:relative}.katex .vlist>span>span{display:inline-block}.katex .vlist>span>.pstrut{overflow:hidden;width:0}.katex .vlist-t2{margin-right:-2px}.katex .vlist-s{display:table-cell;font-size:1px;min-width:2px;vertical-align:bottom;width:2px}.katex .katex-vbox{align-items:baseline;display:inline-flex;flex-direction:column}.katex .katex-thinbox{display:inline-flex;flex-direction:row;max-width:0;width:0}.katex .msupsub{text-align:left}.katex .mfrac>span>span{text-align:center}.katex .mfrac .frac-line{border-bottom-style:solid;display:inline-block;width:100%}.katex .katex-hdashline,.katex .katex-hline,.katex .katex-overline .overline-line,.katex .katex-rule,.katex .katex-underline .underline-line,.katex .mfrac .frac-line{min-height:1px}.katex .mspace{display:inline-block}.katex .katex-smash{display:inline;line-height:0}.katex .clap,.katex .llap,.katex .rlap{position:relative;width:0}.katex .clap>.katex-inner,.katex .llap>.katex-inner,.katex .rlap>.katex-inner{position:absolute}.katex .clap>.katex-fix,.katex .llap>.katex-fix,.katex .rlap>.katex-fix{display:inline-block}.katex .llap>.katex-inner{right:0}.katex .clap>.katex-inner,.katex .rlap>.katex-inner{left:0}.katex .clap>.katex-inner>span{margin-left:-50%;margin-right:50%}.katex .katex-rule{border:0 solid;display:inline-block;position:relative}.katex .katex-hline,.katex .katex-overline .overline-line,.katex .katex-underline .underline-line{border-bottom-style:solid;display:inline-block;width:100%}.katex .katex-hdashline{border-bottom-style:dashed;display:inline-block;width:100%}.katex .sqrt>.katex-root{margin-left:.2777777778em;margin-right:-.5555555556em}.katex .fontsize-ensurer.reset-size1.size1,.katex .katex-sizing.reset-size1.size1{font-size:1em}.katex .fontsize-ensurer.reset-size1.size2,.katex .katex-sizing.reset-size1.size2{font-size:1.2em}.katex .fontsize-ensurer.reset-size1.size3,.katex .katex-sizing.reset-size1.size3{font-size:1.4em}.katex .fontsize-ensurer.reset-size1.size4,.katex .katex-sizing.reset-size1.size4{font-size:1.6em}.katex .fontsize-ensurer.reset-size1.size5,.katex .katex-sizing.reset-size1.size5{font-size:1.8em}.katex .fontsize-ensurer.reset-size1.size6,.katex .katex-sizing.reset-size1.size6{font-size:2em}.katex .fontsize-ensurer.reset-size1.size7,.katex .katex-sizing.reset-size1.size7{font-size:2.4em}.katex .fontsize-ensurer.reset-size1.size8,.katex .katex-sizing.reset-size1.size8{font-size:2.88em}.katex .fontsize-ensurer.reset-size1.size9,.katex .katex-sizing.reset-size1.size9{font-size:3.456em}.katex .fontsize-ensurer.reset-size1.size10,.katex .katex-sizing.reset-size1.size10{font-size:4.148em}.katex .fontsize-ensurer.reset-size1.size11,.katex .katex-sizing.reset-size1.size11{font-size:4.976em}.katex .fontsize-ensurer.reset-size2.size1,.katex .katex-sizing.reset-size2.size1{font-size:.8333333333em}.katex .fontsize-ensurer.reset-size2.size2,.katex .katex-sizing.reset-size2.size2{font-size:1em}.katex .fontsize-ensurer.reset-size2.size3,.katex .katex-sizing.reset-size2.size3{font-size:1.1666666667em}.katex .fontsize-ensurer.reset-size2.size4,.katex .katex-sizing.reset-size2.size4{font-size:1.3333333333em}.katex .fontsize-ensurer.reset-size2.size5,.katex .katex-sizing.reset-size2.size5{font-size:1.5em}.katex .fontsize-ensurer.reset-size2.size6,.katex .katex-sizing.reset-size2.size6{font-size:1.6666666667em}.katex .fontsize-ensurer.reset-size2.size7,.katex .katex-sizing.reset-size2.size7{font-size:2em}.katex .fontsize-ensurer.reset-size2.size8,.katex .katex-sizing.reset-size2.size8{font-size:2.4em}.katex .fontsize-ensurer.reset-size2.size9,.katex .katex-sizing.reset-size2.size9{font-size:2.88em}.katex .fontsize-ensurer.reset-size2.size10,.katex .katex-sizing.reset-size2.size10{font-size:3.4566666667em}.katex .fontsize-ensurer.reset-size2.size11,.katex .katex-sizing.reset-size2.size11{font-size:4.1466666667em}.katex .fontsize-ensurer.reset-size3.size1,.katex .katex-sizing.reset-size3.size1{font-size:.7142857143em}.katex .fontsize-ensurer.reset-size3.size2,.katex .katex-sizing.reset-size3.size2{font-size:.8571428571em}.katex .fontsize-ensurer.reset-size3.size3,.katex .katex-sizing.reset-size3.size3{font-size:1em}.katex .fontsize-ensurer.reset-size3.size4,.katex .katex-sizing.reset-size3.size4{font-size:1.1428571429em}.katex .fontsize-ensurer.reset-size3.size5,.katex .katex-sizing.reset-size3.size5{font-size:1.2857142857em}.katex .fontsize-ensurer.reset-size3.size6,.katex .katex-sizing.reset-size3.size6{font-size:1.4285714286em}.katex .fontsize-ensurer.reset-size3.size7,.katex .katex-sizing.reset-size3.size7{font-size:1.7142857143em}.katex .fontsize-ensurer.reset-size3.size8,.katex .katex-sizing.reset-size3.size8{font-size:2.0571428571em}.katex .fontsize-ensurer.reset-size3.size9,.katex .katex-sizing.reset-size3.size9{font-size:2.4685714286em}.katex .fontsize-ensurer.reset-size3.size10,.katex .katex-sizing.reset-size3.size10{font-size:2.9628571429em}.katex .fontsize-ensurer.reset-size3.size11,.katex .katex-sizing.reset-size3.size11{font-size:3.5542857143em}.katex .fontsize-ensurer.reset-size4.size1,.katex .katex-sizing.reset-size4.size1{font-size:.625em}.katex .fontsize-ensurer.reset-size4.size2,.katex .katex-sizing.reset-size4.size2{font-size:.75em}.katex .fontsize-ensurer.reset-size4.size3,.katex .katex-sizing.reset-size4.size3{font-size:.875em}.katex .fontsize-ensurer.reset-size4.size4,.katex .katex-sizing.reset-size4.size4{font-size:1em}.katex .fontsize-ensurer.reset-size4.size5,.katex .katex-sizing.reset-size4.size5{font-size:1.125em}.katex .fontsize-ensurer.reset-size4.size6,.katex .katex-sizing.reset-size4.size6{font-size:1.25em}.katex .fontsize-ensurer.reset-size4.size7,.katex .katex-sizing.reset-size4.size7{font-size:1.5em}.katex .fontsize-ensurer.reset-size4.size8,.katex .katex-sizing.reset-size4.size8{font-size:1.8em}.katex .fontsize-ensurer.reset-size4.size9,.katex .katex-sizing.reset-size4.size9{font-size:2.16em}.katex .fontsize-ensurer.reset-size4.size10,.katex .katex-sizing.reset-size4.size10{font-size:2.5925em}.katex .fontsize-ensurer.reset-size4.size11,.katex .katex-sizing.reset-size4.size11{font-size:3.11em}.katex .fontsize-ensurer.reset-size5.size1,.katex .katex-sizing.reset-size5.size1{font-size:.5555555556em}.katex .fontsize-ensurer.reset-size5.size2,.katex .katex-sizing.reset-size5.size2{font-size:.6666666667em}.katex .fontsize-ensurer.reset-size5.size3,.katex .katex-sizing.reset-size5.size3{font-size:.7777777778em}.katex .fontsize-ensurer.reset-size5.size4,.katex .katex-sizing.reset-size5.size4{font-size:.8888888889em}.katex .fontsize-ensurer.reset-size5.size5,.katex .katex-sizing.reset-size5.size5{font-size:1em}.katex .fontsize-ensurer.reset-size5.size6,.katex .katex-sizing.reset-size5.size6{font-size:1.1111111111em}.katex .fontsize-ensurer.reset-size5.size7,.katex .katex-sizing.reset-size5.size7{font-size:1.3333333333em}.katex .fontsize-ensurer.reset-size5.size8,.katex .katex-sizing.reset-size5.size8{font-size:1.6em}.katex .fontsize-ensurer.reset-size5.size9,.katex .katex-sizing.reset-size5.size9{font-size:1.92em}.katex .fontsize-ensurer.reset-size5.size10,.katex .katex-sizing.reset-size5.size10{font-size:2.3044444444em}.katex .fontsize-ensurer.reset-size5.size11,.katex .katex-sizing.reset-size5.size11{font-size:2.7644444444em}.katex .fontsize-ensurer.reset-size6.size1,.katex .katex-sizing.reset-size6.size1{font-size:.5em}.katex .fontsize-ensurer.reset-size6.size2,.katex .katex-sizing.reset-size6.size2{font-size:.6em}.katex .fontsize-ensurer.reset-size6.size3,.katex .katex-sizing.reset-size6.size3{font-size:.7em}.katex .fontsize-ensurer.reset-size6.size4,.katex .katex-sizing.reset-size6.size4{font-size:.8em}.katex .fontsize-ensurer.reset-size6.size5,.katex .katex-sizing.reset-size6.size5{font-size:.9em}.katex .fontsize-ensurer.reset-size6.size6,.katex .katex-sizing.reset-size6.size6{font-size:1em}.katex .fontsize-ensurer.reset-size6.size7,.katex .katex-sizing.reset-size6.size7{font-size:1.2em}.katex .fontsize-ensurer.reset-size6.size8,.katex .katex-sizing.reset-size6.size8{font-size:1.44em}.katex .fontsize-ensurer.reset-size6.size9,.katex .katex-sizing.reset-size6.size9{font-size:1.728em}.katex .fontsize-ensurer.reset-size6.size10,.katex .katex-sizing.reset-size6.size10{font-size:2.074em}.katex .fontsize-ensurer.reset-size6.size11,.katex .katex-sizing.reset-size6.size11{font-size:2.488em}.katex .fontsize-ensurer.reset-size7.size1,.katex .katex-sizing.reset-size7.size1{font-size:.4166666667em}.katex .fontsize-ensurer.reset-size7.size2,.katex .katex-sizing.reset-size7.size2{font-size:.5em}.katex .fontsize-ensurer.reset-size7.size3,.katex .katex-sizing.reset-size7.size3{font-size:.5833333333em}.katex .fontsize-ensurer.reset-size7.size4,.katex .katex-sizing.reset-size7.size4{font-size:.6666666667em}.katex .fontsize-ensurer.reset-size7.size5,.katex .katex-sizing.reset-size7.size5{font-size:.75em}.katex .fontsize-ensurer.reset-size7.size6,.katex .katex-sizing.reset-size7.size6{font-size:.8333333333em}.katex .fontsize-ensurer.reset-size7.size7,.katex .katex-sizing.reset-size7.size7{font-size:1em}.katex .fontsize-ensurer.reset-size7.size8,.katex .katex-sizing.reset-size7.size8{font-size:1.2em}.katex .fontsize-ensurer.reset-size7.size9,.katex .katex-sizing.reset-size7.size9{font-size:1.44em}.katex .fontsize-ensurer.reset-size7.size10,.katex .katex-sizing.reset-size7.size10{font-size:1.7283333333em}.katex .fontsize-ensurer.reset-size7.size11,.katex .katex-sizing.reset-size7.size11{font-size:2.0733333333em}.katex .fontsize-ensurer.reset-size8.size1,.katex .katex-sizing.reset-size8.size1{font-size:.3472222222em}.katex .fontsize-ensurer.reset-size8.size2,.katex .katex-sizing.reset-size8.size2{font-size:.4166666667em}.katex .fontsize-ensurer.reset-size8.size3,.katex .katex-sizing.reset-size8.size3{font-size:.4861111111em}.katex .fontsize-ensurer.reset-size8.size4,.katex .katex-sizing.reset-size8.size4{font-size:.5555555556em}.katex .fontsize-ensurer.reset-size8.size5,.katex .katex-sizing.reset-size8.size5{font-size:.625em}.katex .fontsize-ensurer.reset-size8.size6,.katex .katex-sizing.reset-size8.size6{font-size:.6944444444em}.katex .fontsize-ensurer.reset-size8.size7,.katex .katex-sizing.reset-size8.size7{font-size:.8333333333em}.katex .fontsize-ensurer.reset-size8.size8,.katex .katex-sizing.reset-size8.size8{font-size:1em}.katex .fontsize-ensurer.reset-size8.size9,.katex .katex-sizing.reset-size8.size9{font-size:1.2em}.katex .fontsize-ensurer.reset-size8.size10,.katex .katex-sizing.reset-size8.size10{font-size:1.4402777778em}.katex .fontsize-ensurer.reset-size8.size11,.katex .katex-sizing.reset-size8.size11{font-size:1.7277777778em}.katex .fontsize-ensurer.reset-size9.size1,.katex .katex-sizing.reset-size9.size1{font-size:.2893518519em}.katex .fontsize-ensurer.reset-size9.size2,.katex .katex-sizing.reset-size9.size2{font-size:.3472222222em}.katex .fontsize-ensurer.reset-size9.size3,.katex .katex-sizing.reset-size9.size3{font-size:.4050925926em}.katex .fontsize-ensurer.reset-size9.size4,.katex .katex-sizing.reset-size9.size4{font-size:.462962963em}.katex .fontsize-ensurer.reset-size9.size5,.katex .katex-sizing.reset-size9.size5{font-size:.5208333333em}.katex .fontsize-ensurer.reset-size9.size6,.katex .katex-sizing.reset-size9.size6{font-size:.5787037037em}.katex .fontsize-ensurer.reset-size9.size7,.katex .katex-sizing.reset-size9.size7{font-size:.6944444444em}.katex .fontsize-ensurer.reset-size9.size8,.katex .katex-sizing.reset-size9.size8{font-size:.8333333333em}.katex .fontsize-ensurer.reset-size9.size9,.katex .katex-sizing.reset-size9.size9{font-size:1em}.katex .fontsize-ensurer.reset-size9.size10,.katex .katex-sizing.reset-size9.size10{font-size:1.2002314815em}.katex .fontsize-ensurer.reset-size9.size11,.katex .katex-sizing.reset-size9.size11{font-size:1.4398148148em}.katex .fontsize-ensurer.reset-size10.size1,.katex .katex-sizing.reset-size10.size1{font-size:.2410800386em}.katex .fontsize-ensurer.reset-size10.size2,.katex .katex-sizing.reset-size10.size2{font-size:.2892960463em}.katex .fontsize-ensurer.reset-size10.size3,.katex .katex-sizing.reset-size10.size3{font-size:.337512054em}.katex .fontsize-ensurer.reset-size10.size4,.katex .katex-sizing.reset-size10.size4{font-size:.3857280617em}.katex .fontsize-ensurer.reset-size10.size5,.katex .katex-sizing.reset-size10.size5{font-size:.4339440694em}.katex .fontsize-ensurer.reset-size10.size6,.katex .katex-sizing.reset-size10.size6{font-size:.4821600771em}.katex .fontsize-ensurer.reset-size10.size7,.katex .katex-sizing.reset-size10.size7{font-size:.5785920926em}.katex .fontsize-ensurer.reset-size10.size8,.katex .katex-sizing.reset-size10.size8{font-size:.6943105111em}.katex .fontsize-ensurer.reset-size10.size9,.katex .katex-sizing.reset-size10.size9{font-size:.8331726133em}.katex .fontsize-ensurer.reset-size10.size10,.katex .katex-sizing.reset-size10.size10{font-size:1em}.katex .fontsize-ensurer.reset-size10.size11,.katex .katex-sizing.reset-size10.size11{font-size:1.1996142719em}.katex .fontsize-ensurer.reset-size11.size1,.katex .katex-sizing.reset-size11.size1{font-size:.2009646302em}.katex .fontsize-ensurer.reset-size11.size2,.katex .katex-sizing.reset-size11.size2{font-size:.2411575563em}.katex .fontsize-ensurer.reset-size11.size3,.katex .katex-sizing.reset-size11.size3{font-size:.2813504823em}.katex .fontsize-ensurer.reset-size11.size4,.katex .katex-sizing.reset-size11.size4{font-size:.3215434084em}.katex .fontsize-ensurer.reset-size11.size5,.katex .katex-sizing.reset-size11.size5{font-size:.3617363344em}.katex .fontsize-ensurer.reset-size11.size6,.katex .katex-sizing.reset-size11.size6{font-size:.4019292605em}.katex .fontsize-ensurer.reset-size11.size7,.katex .katex-sizing.reset-size11.size7{font-size:.4823151125em}.katex .fontsize-ensurer.reset-size11.size8,.katex .katex-sizing.reset-size11.size8{font-size:.578778135em}.katex .fontsize-ensurer.reset-size11.size9,.katex .katex-sizing.reset-size11.size9{font-size:.6945337621em}.katex .fontsize-ensurer.reset-size11.size10,.katex .katex-sizing.reset-size11.size10{font-size:.8336012862em}.katex .fontsize-ensurer.reset-size11.size11,.katex .katex-sizing.reset-size11.size11{font-size:1em}.katex .delimsizing.size1{font-family:KaTeX_Size1}.katex .delimsizing.size2{font-family:KaTeX_Size2}.katex .delimsizing.size3{font-family:KaTeX_Size3}.katex .delimsizing.size4{font-family:KaTeX_Size4}.katex .delimsizing.mult .delim-size1>span{font-family:KaTeX_Size1}.katex .delimsizing.mult .delim-size4>span{font-family:KaTeX_Size4}.katex .nulldelimiter{display:inline-block;width:.12em}.katex .delimcenter,.katex .op-symbol{position:relative}.katex .op-symbol.small-op{font-family:KaTeX_Size1}.katex .op-symbol.large-op{font-family:KaTeX_Size2}.katex .katex-accent>.vlist-t,.katex .op-limits>.vlist-t{text-align:center}.katex .katex-accent .accent-body{position:relative}.katex .katex-accent .accent-body:not(.accent-full){width:0}.katex .katex-overlay{display:block}.katex .mtable .vertical-separator{display:inline-block;min-width:1px}.katex .mtable .arraycolsep{display:inline-block}.katex .mtable .col-align-c>.vlist-t{text-align:center}.katex .mtable .col-align-l>.vlist-t{text-align:left}.katex .mtable .col-align-r>.vlist-t{text-align:right}.katex .svg-align{text-align:left}.katex svg{fill:currentColor;stroke:currentColor;display:block;height:inherit;position:absolute;width:100%}.katex svg path{stroke:none}.katex svg{fill-rule:nonzero;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1}.katex img{border-style:none;max-height:none;max-width:none;min-height:0;min-width:0}.katex .katex-stretchy{display:block;overflow:hidden;position:relative;width:100%}.katex .katex-stretchy:after,.katex .katex-stretchy:before{content:""}.katex .hide-tail{overflow:hidden;position:relative;width:100%}.katex .halfarrow-left{left:0;overflow:hidden;position:absolute;width:50.2%}.katex .halfarrow-right{overflow:hidden;position:absolute;right:0;width:50.2%}.katex .brace-left{left:0;overflow:hidden;position:absolute;width:25.1%}.katex .brace-center{left:25%;overflow:hidden;position:absolute;width:50%}.katex .brace-right{overflow:hidden;position:absolute;right:0;width:25.1%}.katex .x-arrow-pad{padding:0 .5em}.katex .cd-arrow-pad{padding:0 .55556em 0 .27778em}.katex .mover,.katex .munder,.katex .x-arrow{text-align:center}.katex .boxpad{padding:0 .3em}.katex .fbox,.katex .fcolorbox{border:.04em solid;box-sizing:border-box}.katex .cancel-pad{padding:0 .2em}.katex .cancel-lap{margin-left:-.2em;margin-right:-.2em}.katex .katex-sout{border-bottom-style:solid;border-bottom-width:.08em}.katex .angl{border-right:.049em solid;border-top:.049em solid;box-sizing:border-box;margin-right:.03889em}.katex .anglpad{padding:0 .03889em}.katex .reflectbox{display:inline-block;transform:scaleX(-1)}.katex .eqn-num:before{content:"(" counter(katexEqnNo) ")";counter-increment:katexEqnNo}.katex .mml-eqn-num:before{content:"(" counter(mmlEqnNo) ")";counter-increment:mmlEqnNo}.katex .mtr-glue{width:50%}.katex .cd-vert-arrow{display:inline-block;position:relative}.katex .cd-label-left{display:inline-block;position:absolute;right:calc(50% + .3em);text-align:left}.katex .cd-label-right{display:inline-block;left:calc(50% + .3em);position:absolute;text-align:right}.katex-display{display:block;margin:1em 0;text-align:center}.katex-display>.katex{display:block;text-align:center;white-space:nowrap}.katex-display>.katex>.katex-html{display:block;position:relative}.katex-display>.katex>.katex-html>.katex-tag{position:absolute;right:0}.katex-display.leqno>.katex>.katex-html>.katex-tag{left:0;right:auto}.katex-display.fleqn>.katex{padding-left:2em;text-align:left}body{counter-reset:katexEqnNo mmlEqnNo}
+
+:root{color-scheme:light;--ink:#182d3a;--muted:#536575;--accent:#24634c;--line:#d8e2e6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#edf2f4;color:var(--ink);font-family:'Noto Sans CJK SC','Microsoft YaHei',sans-serif;font-size:16px;line-height:1.85}
+main{max-width:1120px;margin:36px auto;padding:54px 64px;background:white;box-shadow:0 8px 40px #1026380b}
+.eyebrow{font:12px/1.5 sans-serif;letter-spacing:.14em;color:var(--accent);font-weight:700}
+h1{font-size:34px;line-height:1.45;margin:12px 0 20px}h2{font-size:25px;line-height:1.4;border-top:2px solid var(--line);padding-top:24px;margin:46px 0 18px}h3{font-size:19px;margin:30px 0 12px;line-height:1.5}
+p{margin:12px 0}a{color:#1d6655;text-decoration-thickness:1px;text-underline-offset:3px}strong{font-weight:700}
+table{border-collapse:collapse;width:100%;table-layout:auto;margin:20px 0;font-size:13px;line-height:1.65}th,td{border:1px solid var(--line);padding:9px 10px;vertical-align:top;overflow-wrap:anywhere}th{background:#eaf2ef;text-align:left}tr:nth-child(even) td{background:#f8fafb}
+figure{margin:24px 0}figure img{display:block;width:100%;height:auto;border:1px solid var(--line);cursor:zoom-in}figcaption{font-size:13px;line-height:1.65;color:var(--muted);margin:8px 0 0}
+code{font-family:'DejaVu Sans Mono',monospace;font-size:.86em;background:#f1f4f6;border-radius:3px;padding:1px 3px;overflow-wrap:anywhere;word-break:break-word}pre{padding:18px;background:#f3f6f8;border-left:3px solid #83a798;white-space:pre-wrap;font-size:14px;line-height:1.6;overflow-wrap:anywhere}pre code{background:none;padding:0}
+li{margin:8px 0}.math-block{margin:22px 0;overflow-x:auto;text-align:center}.katex{font-size:1.07em}.katex-display{margin:0}
+nav{margin:26px 0;padding:18px 24px;background:#f3f7f5;border-left:3px solid var(--accent);font-size:14px}nav ol{columns:2;margin:8px 0;padding-left:20px}nav li{break-inside:avoid;margin:6px 0}
+.actions{display:flex;gap:12px;justify-content:flex-end}.actions button{border:1px solid var(--line);background:white;padding:8px 14px;border-radius:4px;cursor:pointer;color:var(--accent)}dialog{max-width:96vw;max-height:95vh;border:0;padding:12px;box-shadow:0 12px 50px #0005}dialog img{display:block;max-width:92vw;max-height:86vh;object-fit:contain}dialog::backdrop{background:#102638bb}
+@media(max-width:760px){main{margin:0;padding:26px 18px}h1{font-size:26px}h2{font-size:22px}nav ol{columns:1}table{font-size:10px}th,td{padding:6px 4px}.math-block{font-size:12px}}
+@page{size:A4;margin:16mm 14mm 18mm}
+@media print{body{background:white;font-size:10pt;line-height:1.7}main{margin:0;padding:0;max-width:none;box-shadow:none}.actions,nav,dialog{display:none}h1{font-size:24pt}h2{font-size:16pt;margin:22pt 0 10pt;padding-top:12pt;break-after:avoid}h3{font-size:12pt;margin:14pt 0 7pt;break-after:avoid}p{orphans:3;widows:3}table{font-size:8pt;line-height:1.55;margin:12pt 0}th,td{padding:5pt 6pt}thead{display:table-header-group}tr,figure,pre{break-inside:avoid}figcaption{font-size:8.5pt}figure{margin:12pt 0}pre{font-size:8.5pt;padding:10pt}a{color:inherit;text-decoration:none}.math-block{font-size:9pt;overflow:visible;break-inside:avoid;margin:14pt 0}code{font-size:.82em}.chapter-page{break-before:page}}
+</style><style>.lead{font-size:19px;font-weight:600}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}.metrics>div{background:#edf4f0;padding:16px 20px;border-top:3px solid #2b6a52}.metrics b{display:block;font-size:30px;line-height:1.2}.metrics span{display:block;font-size:13px;margin-top:8px}.scope{font-size:13px;color:#536575}.demo-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.demo{border:1px solid #d8e2e6;background:#f8fafb;padding:12px}.demo video{width:100%;height:auto;display:block;background:#15202a}.demo p{font-size:12px;line-height:1.6;margin:8px 0 0}.demo-label{font-size:14px;font-weight:700;margin-bottom:8px}.success{color:#24634c}.failure{color:#94502e}.atlas-report-nav{display:flex;gap:8px 20px;flex-wrap:wrap;padding:16px;font-size:13px}.source-ref{font-weight:500}figure img{cursor:default}#demos h2{margin-top:20px;border-top:0;padding-top:0}@media(max-width:760px){.demo-grid{grid-template-columns:1fr}.metrics{gap:5px}.metrics>div{padding:10px}.metrics b{font-size:22px}.metrics span{font-size:11px}}@media print{.demo-grid{display:none}.atlas-report-nav{display:none}}</style><style>.table-scroll{overflow-x:auto;max-width:100%}.table-scroll table{min-width:640px}#main-results h2{margin-top:24px}#results-table th,#results-table td{padding:11px 9px}#results-table td:nth-child(n+3){text-align:right;white-space:nowrap}#results-table tr:nth-last-child(-n+3) td:first-child{font-weight:600}.legacy-figure{padding:14px 18px;background:#f5f7f8;border:1px solid #d8e2e6;margin:18px 0}.legacy-figure summary{cursor:pointer;font-weight:600}.demo-grid{align-items:start}#demos h2{border-top:2px solid var(--line);padding-top:24px;margin-top:46px}.atlas-report-nav{position:static}figure a{display:block}@media(max-width:760px){.table-scroll table{font-size:12px}#results-table th,#results-table td{padding:8px}.metrics{grid-template-columns:1fr}.metrics>div{display:flex;align-items:center;justify-content:space-between}.metrics span{margin:0}}</style></head><body><main><h1 id="touchwam-v1bench2dex">TouchWAM · v003 项目报告</h1>
+<p>更新：2026-10-09（北京时间） · TouchWAM V1 · 三任务结果、当前架构、GR00T 训练预算与执行视频</p>
+<nav aria-label="报告导航" class="atlas-report-nav"><a href="#main-results">七模型结果表</a><a href="#2">当前模型架构</a><a href="#4">触觉接入细节</a><a href="#training-budget">GR00T 训练预算</a><a href="#training-records">实际训练曲线</a><a href="#7-4090">测评协议</a><a href="#demos">推理视频</a><a href="#downloads">证据与下载</a></nav><section class="overview"><p class="lead">三个 checkpoint 各完成 150 回合。相同训练预算下，触觉版暂未超过无触觉基线；18k 的小幅提升尚不能归因于触觉。</p><div class="metrics"><div><b>32.00%</b><span>OpenWAM 11k · 48/150</span></div><div><b>29.33%</b><span>TouchWAM 11k · 44/150</span></div><div><b>33.33%</b><span>TouchWAM 18k · 50/150</span></div></div><p class="scope">口径：3 个完整 IIWA7 + Sharpa 任务，各 50 次，None profile。三组权重均从官方 Alpha 初始化；11k / 18k 表示本轮微调 microsteps。</p></section><section id="main-results"><h2>论文基线与我们的三任务结果</h2><p>统一使用 <strong>None 配置</strong>：恢复参考场景，不额外施加泛化扰动；与是否输入触觉无关。每个模型在每个任务测试 50 回合，共 150 回合。主表展示 OpenWAM 11k、TouchWAM 11k / 18k；13k 补充结果见训练预算分析。</p><div class="table-scroll"><table id="results-table"><thead><tr><th scope="col">模型</th><th scope="col">来源</th><th scope="col">罐头摆盘（26）</th><th scope="col">烤盘准备（32）</th><th scope="col">完整拼图（73）</th><th scope="col">三任务平均成功率</th></tr></thead><tbody><tr><td>ACT</td><td>Bench2Dex 论文</td><td>34%（17/50）</td><td>18%（9/50）</td><td>0%（0/50）</td><td>17.33%</td></tr><tr><td>Diffusion Policy</td><td>Bench2Dex 论文</td><td>0%（0/50）</td><td>4%（2/50）</td><td>0%（0/50）</td><td>1.33%</td></tr><tr><td>π0.5</td><td>Bench2Dex 论文</td><td>14%（7/50）</td><td>14%（7/50）</td><td>0%（0/50）</td><td>9.33%</td></tr><tr><td>GR00T N1.5</td><td>Bench2Dex 论文</td><td>34%（17/50）</td><td>24%（12/50）</td><td><strong>20%（10/50）</strong></td><td>26.00%</td></tr><tr><td>OpenWAM 11k，无触觉</td><td>我们复现</td><td><strong>52%（26/50）</strong></td><td>40%（20/50）</td><td>4%（2/50）</td><td>32.00%</td></tr><tr><td>TouchWAM 11k</td><td>我们的方法</td><td>48%（24/50）</td><td>34%（17/50）</td><td>6%（3/50）</td><td>29.33%</td></tr><tr><td>TouchWAM 18k</td><td>我们的方法</td><td>44%（22/50）</td><td><strong>46%（23/50）</strong></td><td>10%（5/50）</td><td><strong>33.33%</strong></td></tr></tbody></table></div><p>粗体表示本表对应列的最高值。论文行来自 <a href="https://arxiv.org/html/2609.15726v1#S4.T2">Bench2Dex Table 2 的 None 列</a>，已将成功次数换算成百分比。这里的三任务平均不是论文四配置 SR，也不是 26 任务总平均。</p><p>TouchWAM 18k 为 50/150，OpenWAM 11k 为 48/150；训练预算不同且仅相差 2 回合，当前结果尚不能证明触觉带来稳定收益。</p><p><a href="data/results_none_20261009.csv">下载此表 CSV</a></p></section><h2 id="1">1. 当前实验结论</h2>
+<p>我们在同一份 Bench2Dex 三任务混合数据上，分别微调无触觉 OpenWAM 和带触觉的 TouchWAM V1，并在 RTX 4090 上完成三个任务各 50 回合的 <code>none</code> 配置测评。三组本地实验均已完成 <strong>150/150 回合</strong>，各保存 150 个 MP4，结果和视频均已回传 A100。</p>
+<table>
+<thead>
+<tr>
+<th>本地模型</th>
+<th style="text-align: right;">Bench2Dex 微调 microsteps</th>
+<th style="text-align: right;">优化器更新次数</th>
+<th style="text-align: right;">成功 / 总回合</th>
+<th style="text-align: right;">三任务平均成功率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenWAM，无触觉</td>
+<td style="text-align: right;">11,000</td>
+<td style="text-align: right;">5,500</td>
+<td style="text-align: right;">48/150</td>
+<td style="text-align: right;">32.00%</td>
+</tr>
+<tr>
+<td>TouchWAM V1，从官方 Alpha 初始化</td>
+<td style="text-align: right;">11,000</td>
+<td style="text-align: right;">5,500</td>
+<td style="text-align: right;">44/150</td>
+<td style="text-align: right;">29.33%</td>
+</tr>
+<tr>
+<td>TouchWAM V1，同一次训练的后期权重</td>
+<td style="text-align: right;">18,000</td>
+<td style="text-align: right;">9,000</td>
+<td style="text-align: right;">50/150</td>
+<td style="text-align: right;">33.33%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>相同训练步数下，当前触觉方案的总体成功率比无触觉基线低 2.67 个百分点；尚未证明加入触觉带来稳定收益。</strong> 将 TouchWAM 从 11,000 继续训练到 18,000 microsteps 后，总体提高 4 个百分点，但与无触觉 11,000 的比较混入了训练预算差异。18,000 版本只比无触觉基线多成功 2 回合，也不足以支持“触觉显著提升性能”的结论。</p>
+<p>本报告中的论文成绩来自 <strong>Bench2Dex 论文 Table 2</strong>，不是 OpenWAM 论文中的 Bench2Dex 实验；OpenWAM 原论文没有报告该 benchmark 的这组三任务成绩。论文数字、我们复现的无触觉基线和 TouchWAM 实验分别注明来源。[1–3]</p>
+<h2 class="chapter-page" id="2">2. 模型架构图与实际训练方式</h2><p>当前实验采用 <strong>TouchWAM V1 / joint_finetune</strong>：保留 OpenWAM-Alpha 视频与动作双流，并新增历史触觉条件支路。视频 DiT、动作 DiT、状态投影与触觉模块联合训练；VAE 和文本预处理编码器冻结。</p><figure id="current-architecture"><a href="media/architecture_joint_finetune.svg" rel="noopener" target="_blank"><img alt="当前 TouchWAM V1 联合微调架构：复用视频动作双流，因果触觉编码器在六个动作层注入门控残差" decoding="async" src="media/architecture_joint_finetune.svg"/></a><figcaption>图 1：按当前训练配置与实现重绘。蓝色为视频流，紫色为动作流，绿色为新增触觉支路。点击打开可缩放的 SVG 原图。v003 是报告版本，模型仍为 TouchWAM V1。</figcaption></figure><p>原始视频—动作联合注意力结构保留；其原有参数在本轮继续更新。触觉使用当前及前三帧的十指二通道地图，经共享 CNN、两层因果 Transformer 得到 40×256 token，再投影到 40×1024，注入第 5、10、15、20、25、30 个动作层。</p><p>每个触觉分支复用原条件注意力的 Q/K/V/O，并仅对触觉 K/V 增加 rank-16 LoRA；输出通过零初始化标量 gate 加到动作残差中。语言/状态注意力与触觉注意力读取同一份归一化动作特征，分别计算 softmax，随后进入原动作 FFN。</p><details class="legacy-figure"><summary>查看早期 adapter_only 架构图及训练方式差异</summary><figure><img alt="TouchWAM V1：触觉条件编码器和门控触觉适配器" decoding="async" loading="lazy" src="media/architecture.png"/><figcaption>图 1：用户提供的 TouchWAM V1 架构图，按原图保留。蓝色为视频流，紫色为动作流，绿色为新增触觉条件支路，灰色为原有视频—动作联合注意力。</figcaption></figure><p><strong>阅读图例时需要区分“架构”与“训练策略”。</strong> 这张图绘制的是早期 <code>adapter_only</code> 方案，所以写有 <code>reused / frozen</code>、<code>frozen K,V</code> 和“只训练紧凑触觉适配器”。本报告的 11,000 / 18,000 两个触觉 checkpoint 实际采用 <strong><code>joint_finetune</code></strong>：复用原预训练权重，随后联合更新视频 DiT、动作 DiT、状态投影及触觉模块；VAE、文本等预处理编码器继续冻结。触觉支路的位置、token 组织和门控结构与图一致，但不能把图中的冻结标注当作本轮实验配置。</p><p>图中 40 个 256 维触觉 token 之后，代码还包含一个 <code>LayerNorm + Linear(256,1024)</code> 投影，才进入原动作条件注意力的特征空间。<code>Shared Attention: unchanged</code> 指联合注意力的结构和交互方式沿用原版；在联合微调中，其中可训练的原参数仍会更新。</p></details>
+
+
+
+<h2 id="3-openwam-alpha">3. 原始 OpenWAM-Alpha 如何工作</h2>
+<h3 id="31">3.1 双流联合生成</h3>
+<p>本轮使用 OpenWAM-Alpha 的 <code>dual_system / joint_self_attn</code> 架构。视频流采用 Wan2.2 TI2V-5B，动作流采用独立 ActionDiT。视频残差特征宽度为 3,072，动作残差特征宽度为 1,024，两者共进行 30 层交互。各流独立生成 Q/K/V，再在每层把视频和动作的 Q/K/V 拼接，计算一次联合注意力，最后拆回两条流继续各自的条件注意力和 FFN。所谓“共享注意力”不表示两条流共用全部权重或具有相同残差宽度。</p>
+<p>语言指令经原文本编码器形成条件，本体状态经原状态投影加入条件 token。视频与动作分别有噪声时间及相应的 AdaLN 调制。配置采用 <code>attention_mask_mode=mutual</code>，允许动作与视频交互；视频侧采用 <code>first_frame_causal</code>，保留当前观测作为干净条件。[3,4]</p>
+<p>训练时，未来视频潜变量和动作被加噪，模型学习对应的流速度场。当前观测潜变量保持干净，不作为未来预测目标计算视频损失。推理时，模型以当前 RGB、任务指令和状态为条件，从噪声生成动作 chunk，并可解码预测视频。训练样本中的未来 RGB 是监督目标，部署时不提供未来真实图像。</p>
+<h3 id="32">3.2 这次保留的模块</h3>
+<table>
+<thead>
+<tr>
+<th>原版部分</th>
+<th>TouchWAM V1 的处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wan VAE 与视频编码 / 解码</td>
+<td>保留原结构和权重；VAE 冻结</td>
+</tr>
+<tr>
+<td>文本编码与任务指令条件</td>
+<td>保留；文本预处理编码器冻结</td>
+</tr>
+<tr>
+<td>本体状态投影与条件 token</td>
+<td>保留；本轮联合微调</td>
+</tr>
+<tr>
+<td>30 层视频—动作 MoT 联合注意力</td>
+<td>保留原交互方式和 attention mask</td>
+</tr>
+<tr>
+<td>视频 / 动作各自的 AdaLN、FFN、输出投影</td>
+<td>保留；DiT 部分本轮联合微调</td>
+</tr>
+<tr>
+<td>Alpha 80 维动作槽位</td>
+<td>保留；本体有 58 个有效维度</td>
+</tr>
+<tr>
+<td>视频和动作的 flow-matching 损失</td>
+<td>保留原计算及有效维度 mask</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4">4. 我们具体怎样加入触觉</h2>
+<h3 id="41">4.1 增加观测条件支路</h3>
+<p>V1 增加的是“当前与历史触觉 → 条件 token → 动作流残差”这条支路。没有新增触觉 VAE、第三条大型生成 DiT、未来触觉生成头、接触预测头或额外触觉损失。原来的视频、动作生成接口和预训练动作输出头得以保留。</p>
+<p>每次决策读取当前及过去三帧的十个指尖触觉，即 <code>t−3,t−2,t−1,t</code>。控制观测频率为 20 Hz，最早与当前帧相隔 0.15 秒。单条样本输入为 <code>[4,10,2,32,32]</code>，两个通道分别为原始法向射线距离和接触 mask，另有 <code>[4,10]</code> 的传感器有效性 mask。</p>
+<h3 id="42">4.2 共享空间编码器与因果时序编码器</h3>
+<p>每个指尖、每个时刻的二通道地图经过同一个小 CNN，共享参数，不为十根手指分别训练十套编码器：</p>
+<pre><code class="language-text">2×32×32
+  → Conv(2→32, kernel=5, stride=2) + SiLU
+  → Conv(32→64, kernel=3, stride=2) + SiLU
+  → Conv(64→256, kernel=3, stride=2) + SiLU
+  → AdaptiveAvgPool + Flatten
+  → 256 维指尖特征
+</code></pre>
+<p>为特征加入左右手 ID、手指 ID 和历史帧 ID 后，四帧十指形成 <strong>40×256</strong> token。随后经过两层 Transformer encoder（8 个头、FFN 宽度 1,024、dropout=0），输出仍为 40×256，再经 LayerNorm 和线性层投影为 <strong>40×1,024</strong>。</p>
+<p>因果 mask 允许某个时刻的 token 读取同一时刻及更早时刻的指尖信息，禁止读取更晚时刻。编码器内部临时加入一个零值 null token，避免缺失历史导致一整行 attention 被 mask；该 token 在输出前移除，因此对外仍是 40 个 token。无效指尖最终被屏蔽，真实“无接触”帧仍作为有效观测保留。[5]</p>
+<h3 id="43">4.3 在六个动作层增加并行触觉注意力</h3>
+<p>触觉支路只直接注入动作流的六层：零基编号 <strong>[4,9,14,19,24,29]</strong>，即通常说的第 5、10、15、20、25、30 层。位置在原联合注意力之后、原动作 FFN 之前，与语言 / 本体状态条件注意力并行。</p>
+<p>令 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>l</mi></msub></mrow><annotation encoding="application/x-tex">h_l</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="katex-base"><span class="katex-strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">h</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 为该层联合注意力更新后的动作特征，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span></span></span></span> 为原条件，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Z</mi><mi>T</mi></msub></mrow><annotation encoding="application/x-tex">Z_T</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0715em;">Z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.1389em;">T</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 为投影后的触觉 token，则：</p>
+<div class="math-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>h</mi><mo stretchy="true">~</mo></mover><mi>l</mi></msub><mo>=</mo><msub><mrow><mi mathvariant="normal">LN</mi><mo>⁡</mo></mrow><mi>l</mi></msub><mo stretchy="false">(</mo><msub><mi>h</mi><mi>l</mi></msub><mo stretchy="false">)</mo><mo separator="true">,</mo><mspace width="2em"></mspace><msubsup><mi>h</mi><mi>l</mi><mo lspace="0em" mathvariant="normal" rspace="0em">′</mo></msubsup><mo>=</mo><msub><mi>h</mi><mi>l</mi></msub><mo>+</mo><msub><mrow><mi mathvariant="normal">CA</mi><mo>⁡</mo></mrow><mrow><mi>C</mi><mo separator="true">,</mo><mi>l</mi></mrow></msub><mo stretchy="false">(</mo><msub><mover accent="true"><mi>h</mi><mo stretchy="true">~</mo></mover><mi>l</mi></msub><mo separator="true">,</mo><mi>C</mi><mo stretchy="false">)</mo><mo>+</mo><mi>tanh</mi><mo>⁡</mo><mo stretchy="false">(</mo><msub><mi>g</mi><mi>l</mi></msub><mo stretchy="false">)</mo><msub><mrow><mi mathvariant="normal">CA</mi><mo>⁡</mo></mrow><mrow><mi>T</mi><mo separator="true">,</mo><mi>l</mi></mrow></msub><mo stretchy="false">(</mo><msub><mover accent="true"><mi>h</mi><mo stretchy="true">~</mo></mover><mi>l</mi></msub><mo separator="true">,</mo><msub><mi>Z</mi><mi>T</mi></msub><mo stretchy="false">)</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+\widetilde h_l=\operatorname{LN}_l(h_l),
+\qquad
+h'_l=h_l+\operatorname{CA}_{C,l}(\widetilde h_l,C)
+       +\tanh(g_l)\operatorname{CA}_{T,l}(\widetilde h_l,Z_T).
+</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="katex-base"><span class="katex-strut" style="height:1.1044em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord katex-accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9544em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">h</span></span><span class="svg-align" style="top:-3.6944em;"><span class="pstrut" style="height:3em;"></span><span style="height:0.26em;"><svg height="0.26em" preserveaspectratio="none" viewbox="0 0 600 260" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="M200 55.538c-77 0-168 73.953-177 73.953-3 0-7
+-2.175-9-5.437L2 97c-1-2-2-4-2-6 0-4 2-7 5-9l20-12C116 12 171 0 207 0c86 0
+ 114 68 191 68 78 0 168-68 177-68 4 0 7 2 9 5l12 19c1 2.175 2 4.35 2 6.525 0
+ 4.35-2 7.613-5 9.788l-19 13.05c-92 63.077-116.937 75.308-183 76.128
+-68.267.847-113-73.952-191-73.952z"></path></svg></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.0519em;vertical-align:-0.25em;"></span><span class="mop"><span class="mop"><span class="mord mathrm">LN</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">h</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">h</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8019em;"><span style="top:-2.453em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">h</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.2405em;vertical-align:-0.2861em;"></span><span class="mop"><span class="mop"><span class="mord mathrm">CA</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0715em;">C</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord katex-accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9544em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">h</span></span><span class="svg-align" style="top:-3.6944em;"><span class="pstrut" style="height:3em;"></span><span style="height:0.26em;"><svg height="0.26em" preserveaspectratio="none" viewbox="0 0 600 260" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="M200 55.538c-77 0-168 73.953-177 73.953-3 0-7
+-2.175-9-5.437L2 97c-1-2-2-4-2-6 0-4 2-7 5-9l20-12C116 12 171 0 207 0c86 0
+ 114 68 191 68 78 0 168-68 177-68 4 0 7 2 9 5l12 19c1 2.175 2 4.35 2 6.525 0
+ 4.35-2 7.613-5 9.788l-19 13.05c-92 63.077-116.937 75.308-183 76.128
+-68.267.847-113-73.952-191-73.952z"></path></svg></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.2405em;vertical-align:-0.2861em;"></span><span class="mop">tanh</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mop"><span class="mord mathrm">CA</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.1389em;">T</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord katex-accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9544em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">h</span></span><span class="svg-align" style="top:-3.6944em;"><span class="pstrut" style="height:3em;"></span><span style="height:0.26em;"><svg height="0.26em" preserveaspectratio="none" viewbox="0 0 600 260" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="M200 55.538c-77 0-168 73.953-177 73.953-3 0-7
+-2.175-9-5.437L2 97c-1-2-2-4-2-6 0-4 2-7 5-9l20-12C116 12 171 0 207 0c86 0
+ 114 68 191 68 78 0 168-68 177-68 4 0 7 2 9 5l12 19c1 2.175 2 4.35 2 6.525 0
+ 4.35-2 7.613-5 9.788l-19 13.05c-92 63.077-116.937 75.308-183 76.128
+-68.267.847-113-73.952-191-73.952z"></path></svg></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0715em;">Z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.1389em;">T</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mord">.</span></span></span></span></span></div>
+<p>然后，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>h</mi><mi>l</mi><mo lspace="0em" mathvariant="normal" rspace="0em">′</mo></msubsup></mrow><annotation encoding="application/x-tex">h'_l</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="katex-base"><span class="katex-strut" style="height:1.035em;vertical-align:-0.2831em;"></span><span class="mord"><span class="mord mathnormal">h</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-2.4169em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2831em;"><span></span></span></span></span></span></span></span></span></span> 进入原 AdaLN / FFN 与残差路径。<strong>两条条件 attention 都读取同一份进入条件注意力前的动作特征</strong>；不是先让语言支路更新 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span></span></span></span>，再让触觉支路读取更新后的特征。</p>
+<p>原条件和触觉分别计算 softmax，没有把四十个触觉 token 直接拼到原语言 token 后共用一个 softmax。这样可以沿用原语言条件分支，同时用独立的有效性 mask 和门控控制触觉贡献。</p>
+<h3 id="44-qkvo-kv-lora">4.4 复用 Q/K/V/O，并只为触觉 K/V 新增 LoRA 增量</h3>
+<p>每个触觉 adapter 复用该动作层原有条件注意力的 Q 投影、输出投影 O、K/V 投影及 Q/K 归一化。额外学习两个 rank=16 的低秩增量：</p>
+<div class="math-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><msubsup><mi>W</mi><mi>l</mi><mi>K</mi></msubsup><mo>=</mo><msubsup><mi>B</mi><mi>l</mi><mi>K</mi></msubsup><msubsup><mi>A</mi><mi>l</mi><mi>K</mi></msubsup><mo separator="true">,</mo><mspace width="2em"></mspace><mi mathvariant="normal">Δ</mi><msubsup><mi>W</mi><mi>l</mi><mi>V</mi></msubsup><mo>=</mo><msubsup><mi>B</mi><mi>l</mi><mi>V</mi></msubsup><msubsup><mi>A</mi><mi>l</mi><mi>V</mi></msubsup><mo separator="true">,</mo><mspace width="2em"></mspace><mi mathvariant="normal">rank</mi><mo>⁡</mo><mo>≤</mo><mn>16.</mn></mrow><annotation encoding="application/x-tex">
+\Delta W^K_l=B^K_lA^K_l,\qquad
+\Delta W^V_l=B^V_lA^V_l,
+\qquad \operatorname{rank}\leq16.
+</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="katex-base"><span class="katex-strut" style="height:1.1383em;vertical-align:-0.247em;"></span><span class="mord">Δ</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1389em;">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8913em;"><span style="top:-2.453em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0715em;">K</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.1383em;vertical-align:-0.247em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8913em;"><span style="top:-2.453em;margin-left:-0.0502em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0715em;">K</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8913em;"><span style="top:-2.453em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0715em;">K</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">Δ</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1389em;">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8913em;"><span style="top:-2.453em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.2222em;">V</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.1383em;vertical-align:-0.247em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8913em;"><span style="top:-2.453em;margin-left:-0.0502em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.2222em;">V</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8913em;"><span style="top:-2.453em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.2222em;">V</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mord mathrm">rank</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">16.</span></span></span></span></span></div>
+<p>触觉分支使用 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>W</mi><mi>l</mi><mi>K</mi></msubsup><mo>+</mo><mi mathvariant="normal">Δ</mi><msubsup><mi>W</mi><mi>l</mi><mi>K</mi></msubsup></mrow><annotation encoding="application/x-tex">W^K_l+\Delta W^K_l</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="katex-base"><span class="katex-strut" style="height:1.1244em;vertical-align:-0.2831em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1389em;">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8413em;"><span style="top:-2.4169em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0715em;">K</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2831em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.1244em;vertical-align:-0.2831em;"></span><span class="mord">Δ</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1389em;">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8413em;"><span style="top:-2.4169em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0715em;">K</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2831em;"><span></span></span></span></span></span></span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>W</mi><mi>l</mi><mi>V</mi></msubsup><mo>+</mo><mi mathvariant="normal">Δ</mi><msubsup><mi>W</mi><mi>l</mi><mi>V</mi></msubsup></mrow><annotation encoding="application/x-tex">W^V_l+\Delta W^V_l</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="katex-base"><span class="katex-strut" style="height:1.1244em;vertical-align:-0.2831em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1389em;">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8413em;"><span style="top:-2.4169em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.2222em;">V</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2831em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.1244em;vertical-align:-0.2831em;"></span><span class="mord">Δ</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1389em;">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8413em;"><span style="top:-2.4169em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.2222em;">V</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2831em;"><span></span></span></span></span></span></span></span></span></span>；原语言分支仍使用原投影。LoRA 的 up 矩阵初始化为零，缩放采用 <code>alpha=rank</code>，即单位额外缩放。复用投影时通过函数传入原模块，不重复注册大模块，避免同一原权重出现多个 checkpoint 路径。</p>
+<p>在图对应的 <code>adapter_only</code> 模式中，原 Q/K/V/O 冻结；在本次 <code>joint_finetune</code> 中，它们是从预训练权重复用并继续更新。<strong>“只在触觉 K/V 增加 LoRA”不等于“本轮只训练 LoRA”。</strong></p>
+<h3 id="45">4.5 零门控为什么能保护初始化</h3>
+<p>每层新增一个标量 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>g</mi><mi>l</mi></msub></mrow><annotation encoding="application/x-tex">g_l</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，初始化为零，因此最初 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>tanh</mi><mo>⁡</mo><mo stretchy="false">(</mo><msub><mi>g</mi><mi>l</mi></msub><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\tanh(g_l)=0</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">tanh</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span>，触觉残差为零。在相同原参数、相同输入与相同噪声下，模型初始函数与原 OpenWAM 路径一致；随机初始化的触觉编码器不会一开始就扰乱动作输出。</p>
+<p>初始更新中 gate 先获得学习信号，gate 打开后触觉编码器、投影和 K/V 增量逐步获得梯度。在联合微调模式中，原主干同时按原视频和动作目标更新；零门控不保证训练后的主干仍与无触觉模型相同。</p>
+<p>在 <code>adapter_only</code> 模式下，代码仅对原参数设置 <code>requires_grad=False</code>，不对整段主干使用 <code>no_grad</code>，以便损失梯度能够经过冻结层回到触觉模块。触觉改变动作特征后，还可能经后续 mutual attention 间接影响未来视频；冻结视频参数不等于触觉对视频没有影响。</p>
+<h3 id="46">4.6 新增参数量与权重兼容</h3>
+<p>以下数量来自实际导出 checkpoint 的 tensor header，未通过模型名称估算：</p>
+<table>
+<thead>
+<tr>
+<th>新增部分</th>
+<th style="text-align: right;">参数量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>共享 CNN、手 / 指 / 时间 ID、两层时序编码器、归一化</td>
+<td style="text-align: right;">1,750,688</td>
+</tr>
+<tr>
+<td>触觉条件投影：LayerNorm + Linear(256,1024)</td>
+<td style="text-align: right;">263,680</td>
+</tr>
+<tr>
+<td>六层 K/V LoRA 与六个 gate</td>
+<td style="text-align: right;">786,438</td>
+</tr>
+<tr>
+<td><strong>合计新增</strong></td>
+<td style="text-align: right;"><strong>2,800,806</strong></td>
+</tr>
+</tbody>
+</table>
+<p>“新增 280 万”描述架构增量，不是本轮全部可训练参数量。联合微调仍更新原 DiT 主干，保存的也是包含原权重的完整模型，每份约 24.82 GB。</p>
+<p>OpenWAM → TouchWAM 的迁移只允许这三类新增参数缺失：<code>touch_v1_encoder.*</code>、<code>touch_v1_projection.*</code>、<code>action_backbone.touch_v1_adapters.*</code>。原权重名称及形状必须完整匹配。TouchWAM 自身加载则严格校验 <code>model_version</code>、<code>tactile_schema</code>、<code>tactile_spec</code> 和全部权重。[4,5]</p>
+<h2 id="5-bench2dex">5. Bench2Dex 数据与模型输入输出</h2>
+<h3 id="51">5.1 三个任务及混合数据</h3>
+<table>
+<thead>
+<tr>
+<th>任务 ID</th>
+<th>论文任务名 / 本地含义</th>
+<th>任务目标</th>
+<th style="text-align: right;">原始回放文件</th>
+<th style="text-align: right;">终态核验通过</th>
+<th style="text-align: right;">train / val</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>26</td>
+<td>Canned Food Tray Arrangement / 罐头摆盘</td>
+<td>将四件食品放上托盘并满足姿态、静止条件</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">90 / 10</td>
+</tr>
+<tr>
+<td>32</td>
+<td>Baking Tray Prep / 烤盘准备</td>
+<td>将刷子、铲子、布丁盒、明胶盒放上托盘</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">28 / 4</td>
+</tr>
+<tr>
+<td>73</td>
+<td>Jigsaw Puzzle Assembly / 完整拼图</td>
+<td>四块活动拼图围绕固定白块组装，并满足位置、静止条件</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">76 / 8</td>
+</tr>
+<tr>
+<td><strong>总计</strong></td>
+<td><strong>一个共享本体、一个三任务模型</strong></td>
+<td>语言指令区分任务</td>
+<td style="text-align: right;"><strong>300</strong></td>
+<td style="text-align: right;"><strong>216</strong></td>
+<td style="text-align: right;"><strong>194 / 22</strong></td>
+</tr>
+</tbody>
+</table>
+<p>task73 是论文中的完整四块活动拼图，不是先前用于接口验证的 task86 简化拼图。</p>
+<p>这些数字是本轮本地回放和筛选数量。<code>episode_000000</code> 与 <code>episode_000000_1</code> 等同源轨迹按组划分，216 个接收文件对应 108 个同源组：97 train / 11 val，不能把回放文件数当作独立人类示范数。旧成功标记与现行场景检查不一致，因此用原任务终态检查器进行离线核验；没有放宽成功容差，也未据此重写原始成功标签。</p>
+<p>训练按任务等概率采样。三任务真实训练窗口数分别为 54,730、16,238、60,834；每个虚拟 epoch 各采 60,834，共 182,502。较小任务会重复采样，每个 epoch 重新打乱。三个模型沿用同一份轨迹筛选、同源分组、归一化和任务采样规则。[6]</p>
+<h3 id="52-eef">5.2 动作是 EEF 与手指关节的混合表示</h3>
+<p>Bench2Dex 原始本体含双臂 14 个关节及双手 40 个主动关节，共 54 个。为了复用 Alpha 预训练动作空间，转换时并未直接将原 54 维关节角塞入模型：</p>
+<ol>
+<li><code>robot/qpos</code> 通过 URDF 正向运动学得到末端实际位姿，作为状态的一部分。</li>
+<li><code>action/commanded</code> 通过同一套 FK 得到末端命令位姿，作为动作标签的一部分。</li>
+<li>每侧保留 EEF 位置 3 维、旋转矩阵前两列 rot6d 6 维、Sharpa 手指关节 20 维，共 29 维。</li>
+<li>左右合计 58 维，散布到原 Alpha80 槽位，其他 22 维置 padding mask，不计动作损失。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Alpha80 槽位，含端点</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0–8</td>
+<td>左侧 EEF xyz + rot6d</td>
+</tr>
+<tr>
+<td>10–29</td>
+<td>左手 20 个关节</td>
+</tr>
+<tr>
+<td>34–42</td>
+<td>右侧 EEF xyz + rot6d</td>
+</tr>
+<tr>
+<td>44–63</td>
+<td>右手 20 个关节</td>
+</tr>
+<tr>
+<td>其余 22 维</td>
+<td>未使用，占位并 mask</td>
+</tr>
+</tbody>
+</table>
+<p>EEF 使用共同的 <code>link_0</code> 坐标系，末端 link 为 <code>left_hand_C_MC</code> 与 <code>multi_right_hand_C_MC</code>；位置单位为米，手指角单位为弧度。本轮表示为<strong>绝对末端位姿 + 绝对手指关节目标</strong>，不是 EEF 增量，也不是全关节输出。推理时将 EEF 经 IK 转回机械臂关节，手指维直接对应关节目标。</p>
+<h3 id="53">5.3 单条样本的时间与张量规格</h3>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>形状 / 规格</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>多视角 RGB</td>
+<td>9 帧拼图，每帧 H×W=384×320</td>
+<td>正面、左腕、右腕三视角；第一帧观测，其余为视频监督</td>
+</tr>
+<tr>
+<td>任务文本</td>
+<td>对应场景任务指令</td>
+<td>区分三项任务</td>
+</tr>
+<tr>
+<td>proprio</td>
+<td><code>[1,80]</code></td>
+<td>当前 EEF + 手指状态及占位</td>
+</tr>
+<tr>
+<td>action target / 生成 chunk</td>
+<td><code>[32,80]</code></td>
+<td>20 Hz 下 32 步，约 1.6 秒预测范围</td>
+</tr>
+<tr>
+<td>tactile_maps</td>
+<td><code>[4,10,2,32,32]</code></td>
+<td>当前及过去三帧触觉</td>
+</tr>
+<tr>
+<td>tactile_valid</td>
+<td><code>[4,10]</code> bool</td>
+<td>历史 / 传感器数据是否存在且数值有效</td>
+</tr>
+</tbody>
+</table>
+<p>batch 时增加最前面的 B 维。RGB 在连续 33 个原始帧中 stride=4 采样，即索引 <code>t,t+4,…,t+32</code>；动作取 <code>commanded[t:t+32]</code>，状态为 <code>qpos[t]</code> 转换后的表示。当前转换保留 HDF5 索引对应关系，没有额外把动作整体移位。</p>
+<p>无效帧、非有限值、时间断点和 homing 边界会切开 segment，训练窗口及触觉历史不跨越边界。归一化只从训练划分拟合；rot6d 不按经验最大最小值重新缩放。训练目标中的未来 RGB 与当前触觉条件有不同作用，不能把两者都称作“当前模型观测”。</p>
+<h3 id="54">5.4 触觉预处理</h3>
+<p>读取 <code>robot/tactile/distance_along_normal_m/&lt;site&gt;</code> 和 <code>robot/tactile/contact_mask/&lt;site&gt;</code>，不是把量化后的 <code>tacmap</code> 灰度直接作为压力。指尖顺序固定为右手 thumb/index/middle/ring/pinky，然后左手同序五指。</p>
+<p>原生 240×240 地图降为 32×32。距离通道在每个输出单元中取<strong>接触像素距离均值</strong>，接触通道取最大池化，避免稀疏接触被普通平均池化抹掉。进入编码器后，距离除以 0.015 m 并裁剪至 [-1,1]，非接触像素距离置零。</p>
+<p>这里的距离是仿真表面的射线几何量，不能直接解释成标定接触力。<code>contact_mask</code> 是像素级接触信息，<code>tactile_valid</code> 是整张指尖地图的可用性，两者不可混用：传感器正常、没有接触时仍 <code>valid=True</code>；历史不足或缺传感器时才填零并 <code>valid=False</code>。[7]</p>
+<h2 id="6">6. 训练设置与实验身份</h2>
+<h3 id="61">6.1 当前比较使用共同的官方初始化</h3>
+<p>无触觉 OpenWAM 与本报告两个 TouchWAM checkpoint 均从官方 <code>OpenWAM-Alpha-Pretrain-Foundation-Model/checkpoint_step_154000.safetensors</code> 初始化。154,000 是官方预训练计数，不是 Bench2Dex 微调步数。TouchWAM 新模块重新初始化，Bench2Dex microstep 从 0 计数，优化器重新创建。</p>
+<p>早期另有“从已完成 Bench2Dex 13,000 步的主干出发，只训练触觉模块 6,000 步”的实验。它与当前官方初始化的联合微调实验不是同一训练路径，未混入下面的主结果表。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>本轮 OpenWAM / TouchWAM 主比较</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPU</td>
+<td>8×A100 80GB</td>
+</tr>
+<tr>
+<td>每卡 batch / 梯度累积</td>
+<td>16 / 2</td>
+</tr>
+<tr>
+<td>每个 microstep 的样本数</td>
+<td>8×16=128</td>
+</tr>
+<tr>
+<td>每次参数更新的有效 batch</td>
+<td>8×16×2=256</td>
+</tr>
+<tr>
+<td>学习率</td>
+<td>统一 1e−5；constant，无单独触觉学习率</td>
+</tr>
+<tr>
+<td>优化器</td>
+<td>AdamW；betas=(0.9,0.95)，weight decay=0.01</td>
+</tr>
+<tr>
+<td>梯度裁剪</td>
+<td>max norm=1.0</td>
+</tr>
+<tr>
+<td>精度 / 分片</td>
+<td>BF16 / DeepSpeed ZeRO2</td>
+</tr>
+<tr>
+<td>梯度检查点</td>
+<td>开启</td>
+</tr>
+<tr>
+<td>数据 / seed</td>
+<td>同一三任务数据、划分、统计及采样；seed=42</td>
+</tr>
+<tr>
+<td>损失权重</td>
+<td>video=1.0，action=1.0</td>
+</tr>
+<tr>
+<td>TouchWAM 训练模式</td>
+<td><code>joint_finetune</code></td>
+</tr>
+<tr>
+<td>TouchWAM 预算</td>
+<td>18,000 microsteps=9,000 次优化器更新</td>
+</tr>
+<tr>
+<td>保存</td>
+<td>每 1,000 microsteps；最近 10 份；结束时保存</td>
+</tr>
+<tr>
+<td>保存内容</td>
+<td>完整模型权重；未保存优化器 / RNG 的完整恢复状态</td>
+</tr>
+</tbody>
+</table>
+<p>配置里虽然继承了 <code>warmup_ratio=0.05</code> 字段，但本轮 <code>lr_scheduler=null</code>，不能把这次运行描述为“5% warmup + cosine”；那是早期 adapter-only 预设。11,000 步权重已经独立导出，不依赖后续滚动保留策略。</p>
+<h3 id="62-flow-matching">6.2 沿用原视频与动作 flow-matching 目标</h3>
+<p>对视频和动作分别抽取噪声级别。简化写为：</p>
+<div class="math-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>σ</mi></msub><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>σ</mi><mo stretchy="false">)</mo><mi>x</mi><mo>+</mo><mi>σ</mi><mi>ϵ</mi><mo separator="true">,</mo><mspace width="2em"></mspace><msup><mi>u</mi><mo>∗</mo></msup><mo>=</mo><mi>ϵ</mi><mo>−</mo><mi>x</mi><mo separator="true">,</mo><mspace width="2em"></mspace><mi mathvariant="script">L</mi><mo>=</mo><msub><mi mathvariant="script">L</mi><mrow><mi mathvariant="normal">v</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">o</mi></mrow></msub><mo>+</mo><msub><mi mathvariant="script">L</mi><mrow><mi mathvariant="normal">a</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi></mrow></msub><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+x_{\sigma}=(1-\sigma)x+\sigma\epsilon,
+\qquad u^*=\epsilon-x,
+\qquad
+\mathcal L=\mathcal L_{\mathrm{video}}+\mathcal L_{\mathrm{action}}.
+</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="katex-base"><span class="katex-strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0359em;">σ</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">σ</span><span class="mclose">)</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.9331em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">σ</span><span class="mord mathnormal">ϵ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7387em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mbin mtight">∗</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">ϵ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathcal">L</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathcal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathrm mtight">video</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathcal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3175em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathrm mtight">action</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">.</span></span></span></span></span></div>
+<p>实际 loss 沿用原 scheduler 的时间权重、padding / 动作维度 mask，干净观测前缀不计入未来视频损失。触觉始终作为当前 / 历史观测条件，不对它添加扩散噪声，也不提供未来真实触觉。模型通过视频和动作目标间接学习如何使用接触信息。</p>
+<p>因此，训练 loss 下降只能说明这些监督目标拟合改善，不能直接换算成任务成功率；没有一个已验证的 loss 阈值能保证模型“可用”。</p>
+<section id="training-budget"><h2>与论文 GR00T N1.5 的训练预算对比</h2><p><a href="https://arxiv.org/html/2609.15726v1#S6">Bench2Dex 附录 F</a>明确报告：GR00T N1.5 默认每个任务单独微调 <strong>20,000 steps，global batch 64</strong>。附录说明这些是公开 launcher 的默认值，个别任务覆盖配置随 checkpoint 记录。</p><div class="table-scroll"><table><thead><tr><th scope="col">项目</th><th scope="col">论文 GR00T N1.5</th><th scope="col">我们的 OpenWAM / TouchWAM</th></tr></thead><tbody><tr><td>任务组织</td><td>默认每个任务—本体单独训练</td><td>三任务混合，等概率采样</td></tr><tr><td>初始化与训练方式</td><td>GR00T 公共权重，全参数微调，无 LoRA</td><td>官方 Alpha；视频/动作主干联合微调，触觉版新增模块同步训练</td></tr><tr><td>硬件 / 精度</td><td>单张 H100 / BF16</td><td>8×A100 80GB / BF16</td></tr><tr><td>有效 global batch</td><td>64</td><td>256＝8×16×2</td></tr><tr><td>学习率</td><td>峰值 1e−4；5% warmup + cosine decay</td><td>1e−5 constant；本轮没有启用 scheduler</td></tr><tr><td>训练步数定义</td><td>20,000 次优化器更新</td><td>checkpoint step 为 microstep；累积 2 步更新一次</td></tr><tr><td>18k 时更新次数</td><td>默认训练总计 20,000 次</td><td>9,000 次</td></tr></tbody></table></div><p><strong>我们的 18k 不是 18,000 次参数更新。</strong>实际日志最后记录为 step=18000、optimizer_step=9000。每个 microstep 处理 128 个样本，累积两步得到有效 batch 256。11k / 13k 分别对应 5,500 / 6,500 次更新。</p><p>论文单任务累计样本使用次数约为 <code>20,000 × 64 = 128 万</code>。我们三任务等概率混合，平均每任务为 <code>microsteps × 128 ÷ 3</code>。</p><div class="table-scroll"><table><thead><tr><th scope="col">训练预算</th><th scope="col">状态</th><th scope="col">参数更新次数</th><th scope="col">平均每任务累计采样次数</th><th scope="col">相对 GR00T 单任务</th></tr></thead><tbody><tr><td>论文 GR00T：20k，单任务</td><td>已报告默认预算</td><td>20,000</td><td>128 万</td><td>100%</td></tr><tr><td>我们：11k，三任务</td><td>已有 checkpoint</td><td>5,500</td><td>46.9 万</td><td>36.7%</td></tr><tr><td>我们：13k，三任务</td><td>已有 checkpoint</td><td>6,500</td><td>55.5 万</td><td>43.3%</td></tr><tr><td>我们：18k，三任务</td><td>已有 checkpoint</td><td>9,000</td><td>76.8 万</td><td>60.0%</td></tr><tr><td>我们：30k，三任务</td><td>预算换算，尚未训练</td><td>15,000</td><td>128.0 万</td><td>100.0%</td></tr><tr><td>我们：40k，三任务</td><td>预算换算，尚未训练</td><td>20,000</td><td>170.7 万</td><td>133.3%</td></tr></tbody></table></div><p>这里统计包含重复采样的训练窗口使用次数，不是独立轨迹数量。模型结构、窗口长度、预训练和目标函数不同；样本次数相当不代表计算量或收敛程度相同。我们当前 18k 的每任务采样量约为论文预算的 <strong>60%</strong>；30k 是有依据的下一档预算，但不能保证训练充分或成功率提高。</p><h3>训练 loss 与闭环成功率并不单调对应</h3><div class="table-scroll"><table><thead><tr><th scope="col">Checkpoint</th><th scope="col">前 1,000 microsteps 的平均训练 action loss</th><th scope="col">三任务 None 成功率</th></tr></thead><tbody><tr><td>TouchWAM 11k</td><td>0.002346</td><td>29.33%（44/150）</td></tr><tr><td>TouchWAM 13k</td><td>0.002061</td><td>22.67%（34/150）</td></tr><tr><td>TouchWAM 18k</td><td>0.001587</td><td>33.33%（50/150）</td></tr></tbody></table></div><p>loss 均值来自 rank 0 每 10 microsteps 的记录点，不是验证 loss。补充测评中，OpenWAM 13k 为 33/150（22.00%），低于 11k 的 48/150（32.00%）；TouchWAM 13k 为 34/150（22.67%）。因此当前不能将性能差距简单归因于训练不足，也不能证明已经收敛。</p><p>建议后续为两个模型设置相同的 30k 预算，在独立验证场景比较 11k、18k、24k、30k；若表现仍改善，再扩展到 40k。学习率调度作为单独的成对实验。以上为实验建议，30k / 40k 没有被计入已完成结果。</p><p><a href="data/training_budget_20261009.json">预算换算、loss 均值与 13k 补充结果来源</a></p></section><section id="training-records"><h2>实际训练记录与耗时</h2><p>本轮 TouchWAM 从官方 Alpha 初始化，在 8×A100 80GB 上完成 18,000 microsteps / 9,000 次参数更新。以下是运行记录，不是按每步速度外推的估计。</p><table><thead><tr><th>记录</th><th>实际值</th></tr></thead><tbody><tr><td>启动（北京时间）</td><td>2026-10-05 09:20:33</td></tr><tr><td>完成（北京时间）</td><td>2026-10-06 19:37:28</td></tr><tr><td>记录的总墙钟耗时</td><td>34 小时 16 分 55 秒；包含初始化和保存开销</td></tr><tr><td>11k 中间 checkpoint 的独立耗时</td><td>未单独记录精确时间；不按步数比例冒充实测</td></tr><tr><td>最后记录的 epoch</td><td>索引 12，不能写成已完整训练 13 个 epoch</td></tr><tr><td>最后记录的总 / 视频 / 动作 loss</td><td>0.053835 / 0.052123 / 0.001712</td></tr><tr><td>4090 测评耗时（含服务加载和预检查）</td><td>OpenWAM 11k：7.53 h；TouchWAM 11k：8.05 h；TouchWAM 18k：8.05 h</td></tr></tbody></table><figure><img alt="实际训练日志的损失和六层触觉 gate 曲线" loading="lazy" src="media/training_curves.png"/><figcaption>rank 0 每约 10 microsteps 记录一次。损失淡线为原始记录，实线为 20 个记录点的滑动均值；gate 使用原始记录。虚线标出 11k 与 18k，loss 下降不等于成功率提升。</figcaption></figure><p><a href="data/training_config.yaml.txt">实际训练配置</a> · <a href="data/training_record.json">耗时与来源记录</a> · <a href="data/training_curve.csv">曲线原始数值</a></p></section><h2 id="7-4090">7. 4090 闭环测评协议</h2>
+<p>每个任务 50 个 anchor 初始化，使用原始记录 main 0–24 与 <code>_1</code> 25–49，只恢复场景元数据，不给模型专家动作或未来观测。三组本地结果的 episode seed、完整场景参数、anchor、控制预算和成功判定已逐回合核对一致。</p>
+<table>
+<thead>
+<tr>
+<th>配置</th>
+<th>当前设置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>profile</td>
+<td><code>none</code>：恢复 anchor 场景；不等于场景完全没有复杂背景</td>
+</tr>
+<tr>
+<td>成功判定</td>
+<td>原任务 terminal predicate，连续满足 0.5 秒，reach-and-stop</td>
+</tr>
+<tr>
+<td>控制 / 物理频率</td>
+<td>20 Hz / 60 Hz</td>
+</tr>
+<tr>
+<td>任务 26 / 32 / 73 控制步上限</td>
+<td>871 / 852 / 1,213</td>
+</tr>
+<tr>
+<td>时间预算来源</td>
+<td>官方任务 expert horizon 的 1.5 倍</td>
+</tr>
+<tr>
+<td>生成 / 执行 chunk</td>
+<td>生成 32 步；执行前 16 步后重新规划</td>
+</tr>
+<tr>
+<td>去噪</td>
+<td>10 步</td>
+</tr>
+<tr>
+<td>触觉历史</td>
+<td>每个 20 Hz 观测帧更新；每个 episode 重置</td>
+</tr>
+<tr>
+<td>实际传感器检查</td>
+<td>三任务各 32 步预检查；正式回合记录有效帧与接触帧</td>
+</tr>
+<tr>
+<td>录像</td>
+<td>真实仿真相机画面，三视角 MP4；不是模型预测视频</td>
+</tr>
+</tbody>
+</table>
+<p>执行 chunk 的 16 步期间也会采集触觉并更新缓冲，但模型只在下一次重新规划时读取新的历史。因此虽然采集频率是 20 Hz，当前动作计划的触觉反馈间隔可达 <strong>0.8 秒</strong>；不能将其描述为每 0.05 秒都重新根据触觉修正动作。</p>
+<p>部署按 checkpoint 配置选择版本，握手返回实际文件 SHA256 和触觉 schema。正式 TouchWAM 测评缺少触觉传感器时会报错，不会静默降级为无触觉。两组触觉实验各 150 回合的有效性检查均通过。</p>
+<h3 id="71-eef">7.1 EEF 到关节的执行适配</h3>
+<p>训练动作来自原始 <code>commanded</code> 关节的 FK；部分原始机械臂命令超过物理限位。测评先在正常物理范围求 IK，失败时在训练集命令范围内求解，再把输出裁剪回 URDF 物理限位。仍不可解则保持原位。三组模型使用相同的 <code>reconstruct_train_commands_then_clip_v1</code> 适配器和命令范围。</p>
+<p>此策略使模型预测可以执行，但冗余 IK 和关节裁剪不保证重现原专家关节轨迹。该适配属于本地 EEF 模型测评的重要限制，不应隐藏在论文成绩对比中。[8]</p>
+<h3 id="72">7.2 泛化口径</h3>
+<p>三个任务的 50 个 anchor 中，来自训练组 / 验证组 / 未参与本轮训练验证组的数量分别是：26 为 45/5/0，32 为 14/2/34，73 为 38/4/8。这符合当前恢复 anchor 的测试方式，但整体成功率不是严格独立未见场景泛化分数。</p>
+<p>Bench2Dex 论文另外评测 Equi.、Inv.、Full：分别改变任务几何、无关外观因素、以及同时改变两者。我们当前只完成 None，三任务共 150 回合；完成四配置需每模型 <strong>600 回合</strong>。未运行的泛化成绩必须保持“未测”，不能用 None 代替。</p>
+<h2 class="chapter-page" id="8">8. 论文基线与我们的结果</h2>
+<h3 id="81-none">8.1 主表：统一使用 None 配置</h3>
+<p>前部主表列出了七个模型的 None 成功率及成功次数；本节保留论文完整四配置结果和比较条件。</p>
+<p><a href="#main-results">返回七模型三任务对照表</a></p>
+<p>“三任务 None 均值”由上面三项重新计算，<strong>不是论文最后一行的 26 任务均值</strong>。论文原表数字如 <code>17</code>、<code>12</code>、<code>10</code> 是成功次数，分别对应 34%、24%、20%，不能直接写成 17%、12%、10%。</p>
+<p>从这些已报告数字看，我们的三个模型在罐头和烤盘上的 None 成绩高于论文 GR00T N1.5，但完整拼图仍低于其 20%。这可作为实验定位，尚不能视为在完全相同训练和执行条件下超过论文基线。</p>
+<h3 id="82">8.2 论文完整四配置成绩</h3>
+<p>以下四个配置列都是<strong>成功次数，分母均为 50</strong>；SR 和 LSCR 是论文报告的百分比。SR 为四配置成功率均值，LSCR 为四配置平均的锁存阶段完成率，不能将其解释为完整任务成功率。</p>
+<table>
+<thead>
+<tr>
+<th>任务</th>
+<th>论文模型</th>
+<th style="text-align: right;">None /50</th>
+<th style="text-align: right;">Equi. /50</th>
+<th style="text-align: right;">Inv. /50</th>
+<th style="text-align: right;">Full /50</th>
+<th style="text-align: right;">四配置 SR</th>
+<th style="text-align: right;">四配置 LSCR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>26 罐头</td>
+<td>ACT</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">9.5%</td>
+<td style="text-align: right;">34.6%</td>
+</tr>
+<tr>
+<td>26 罐头</td>
+<td>DP</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.0%</td>
+<td style="text-align: right;">14.8%</td>
+</tr>
+<tr>
+<td>26 罐头</td>
+<td>π0.5</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">12.0%</td>
+<td style="text-align: right;">33.9%</td>
+</tr>
+<tr>
+<td>26 罐头</td>
+<td>GR00T N1.5</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">12.5%</td>
+<td style="text-align: right;">37.3%</td>
+</tr>
+<tr>
+<td>32 烤盘</td>
+<td>ACT</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6.0%</td>
+<td style="text-align: right;">11.6%</td>
+</tr>
+<tr>
+<td>32 烤盘</td>
+<td>DP</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2.0%</td>
+<td style="text-align: right;">7.9%</td>
+</tr>
+<tr>
+<td>32 烤盘</td>
+<td>π0.5</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">7.5%</td>
+<td style="text-align: right;">11.0%</td>
+</tr>
+<tr>
+<td>32 烤盘</td>
+<td>GR00T N1.5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">10.0%</td>
+<td style="text-align: right;">29.3%</td>
+</tr>
+<tr>
+<td>73 拼图</td>
+<td>ACT</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.0%</td>
+<td style="text-align: right;">12.5%</td>
+</tr>
+<tr>
+<td>73 拼图</td>
+<td>DP</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.0%</td>
+<td style="text-align: right;">6.3%</td>
+</tr>
+<tr>
+<td>73 拼图</td>
+<td>π0.5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.0%</td>
+<td style="text-align: right;">7.4%</td>
+</tr>
+<tr>
+<td>73 拼图</td>
+<td>GR00T N1.5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5.0%</td>
+<td style="text-align: right;">30.3%</td>
+</tr>
+</tbody>
+</table>
+<p>我们的三个 checkpoint 尚未测 Equi.、Inv.、Full，四配置 SR / LSCR 均为<strong>未测</strong>。不能把 TouchWAM 的 29.33% 或 33.33% 与上述 5.0%、10.0% 等四配置 SR 直接相减。</p>
+<h3 id="83">8.3 与论文比较时必须披露的条件</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>Bench2Dex 论文基线</th>
+<th>我们的 OpenWAM / TouchWAM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>训练范围</td>
+<td>附录 F 默认每个 task–embodiment 单独训练</td>
+<td>同本体三个任务混合训练一个模型</td>
+</tr>
+<tr>
+<td>训练数据</td>
+<td>论文演示及其各模型处理流程</td>
+<td>当前下载回放经终态核验后 216 条，194 train / 22 val</td>
+</tr>
+<tr>
+<td>视觉观测</td>
+<td>ACT、π0.5、GR00T 明确使用双腕 + 双目四视角</td>
+<td>正面单目 + 双腕三视角拼图</td>
+</tr>
+<tr>
+<td>触觉使用</td>
+<td>表 2 的基线配置列出 RGB / 本体状态；不等同仓库额外触觉变体</td>
+<td>OpenWAM 无触觉；TouchWAM 额外使用几何距离 / 接触地图</td>
+</tr>
+<tr>
+<td>预训练与训练预算</td>
+<td>ACT/DP 从头训练；π0.5/GR00T 从各自公开权重微调</td>
+<td>从官方 OpenWAM Alpha 初始化；同预算 11,000 与追加 18,000</td>
+</tr>
+<tr>
+<td>动作表示与执行</td>
+<td>各基线按本体动作维度适配</td>
+<td>EEF + 手指，经本地 IK 与裁剪接口执行</td>
+</tr>
+<tr>
+<td>规划频率</td>
+<td>ACT 每步；DP 执行 6 步；π0.5 执行 20 步；GR00T 执行 16 步</td>
+<td>两种 WAM 都执行 16 步后重新规划</td>
+</tr>
+<tr>
+<td>扰动配置</td>
+<td>None / Equi. / Inv. / Full 全部</td>
+<td>当前只有 None</td>
+</tr>
+</tbody>
+</table>
+<p>论文公开表格没有逐回合预测记录，无法像本地三个模型一样逐条验证它们与我们的 anchor 完全相同。模型规模、训练范围、视觉输入和数据筛选也不同。因此主表是有来源标注的结果对照，不是完全控制变量的模型排名。[1,2]</p>
+<h2 id="9">9. 结果分析：已经证实什么，尚未证实什么</h2>
+<h3 id="91">9.1 当前变化主要来自哪些任务</h3>
+<table>
+<thead>
+<tr>
+<th>比较</th>
+<th style="text-align: right;">罐头变化</th>
+<th style="text-align: right;">烤盘变化</th>
+<th style="text-align: right;">拼图变化</th>
+<th style="text-align: right;">总体变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TouchWAM 11k − OpenWAM 11k</td>
+<td style="text-align: right;">−4 个百分点</td>
+<td style="text-align: right;">−6 个百分点</td>
+<td style="text-align: right;">+2 个百分点</td>
+<td style="text-align: right;">−2.67 个百分点</td>
+</tr>
+<tr>
+<td>TouchWAM 18k − OpenWAM 11k</td>
+<td style="text-align: right;">−8 个百分点</td>
+<td style="text-align: right;">+6 个百分点</td>
+<td style="text-align: right;">+6 个百分点</td>
+<td style="text-align: right;">+1.33 个百分点</td>
+</tr>
+<tr>
+<td>TouchWAM 18k − TouchWAM 11k</td>
+<td style="text-align: right;">−4 个百分点</td>
+<td style="text-align: right;">+12 个百分点</td>
+<td style="text-align: right;">+4 个百分点</td>
+<td style="text-align: right;">+4.00 个百分点</td>
+</tr>
+</tbody>
+</table>
+<p>继续训练带来的改善主要在烤盘与拼图，罐头反而下降。不能简单认为训练更久会同时改善所有任务。</p>
+<h3 id="92">9.2 配对结果与统计不确定性</h3>
+<p>我们按相同初始化对齐了每一回合。OpenWAM 11k 与 TouchWAM 11k 同时成功 33 回合、同时失败 91 回合；只有 OpenWAM 成功 15 回合，只有 TouchWAM 成功 11 回合。双侧精确 McNemar 检验 p≈0.557。</p>
+<p>OpenWAM 11k 与 TouchWAM 18k 的独有成功分别为 20 和 22 回合，p≈0.878；TouchWAM 11k 与 18k 的独有成功分别为 13 和 19 回合，p≈0.377。这些探索性配对统计未提供显著改善的证据。它们也不证明两种模型等价；当前只有单个训练 seed、每任务 50 个固定初始化，跨训练随机种子的稳定性尚未验证。</p>
+<h3 id="93">9.3 触觉确实接入，但是否被有效利用仍需消融</h3>
+<p>两个触觉 checkpoint 的正式 150 回合均通过有效性检查：每个观测都有 10 个有效指尖帧，未静默使用无触觉路径。11k 中 149/150 回合记录到实际接触，18k 中为 150/150；无接触回合不等于传感器缺失。11k 首个正式回合记录了 680 次观测、6,800 个有效传感器帧、909 个接触传感器帧，可作为具体链路核验例子。</p>
+<table>
+<thead>
+<tr>
+<th>触觉链路审计</th>
+<th style="text-align: right;">TouchWAM 11k</th>
+<th style="text-align: right;">TouchWAM 18k</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核验回合数</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">150</td>
+</tr>
+<tr>
+<td>累计观测帧</td>
+<td style="text-align: right;">135,941</td>
+<td style="text-align: right;">133,920</td>
+</tr>
+<tr>
+<td>有效指尖传感器帧</td>
+<td style="text-align: right;">1,359,410</td>
+<td style="text-align: right;">1,339,200</td>
+</tr>
+<tr>
+<td>有接触的指尖传感器帧</td>
+<td style="text-align: right;">133,210</td>
+<td style="text-align: right;">136,029</td>
+</tr>
+</tbody>
+</table>
+<p>上述“传感器帧”按指尖逐一计数，一次十指观测对应十个传感器帧；接触帧数量不是成功次数，也不是接触力积分。</p>
+<p>实际 checkpoint 中六层的 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>tanh</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\tanh(g)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">tanh</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0359em;">g</span><span class="mclose">)</span></span></span></span> 如下。它们已经离开零点，但量级较小：</p>
+<table>
+<thead>
+<tr>
+<th>动作层，零基</th>
+<th style="text-align: right;">TouchWAM 11k</th>
+<th style="text-align: right;">TouchWAM 18k</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td style="text-align: right;">0.00003886</td>
+<td style="text-align: right;">0.00006247</td>
+</tr>
+<tr>
+<td>9</td>
+<td style="text-align: right;">0.00021172</td>
+<td style="text-align: right;">0.00020981</td>
+</tr>
+<tr>
+<td>14</td>
+<td style="text-align: right;">0.00022221</td>
+<td style="text-align: right;">0.00018311</td>
+</tr>
+<tr>
+<td>19</td>
+<td style="text-align: right;">0.00003672</td>
+<td style="text-align: right;">0.00008488</td>
+</tr>
+<tr>
+<td>24</td>
+<td style="text-align: right;">0.00072861</td>
+<td style="text-align: right;">0.00069809</td>
+</tr>
+<tr>
+<td>29</td>
+<td style="text-align: right;">0.00074387</td>
+<td style="text-align: right;">0.00077438</td>
+</tr>
+</tbody>
+</table>
+<p>gate 数值本身不足以衡量触觉实际贡献，还需要测量门控后触觉残差与主干 / 原条件残差的范数比，并在同一 checkpoint 上做触觉置空、错配、打乱等消融。当前不能因为 gate 非零就认定模型学会了有用触觉，也不能只因其很小就断言支路无效。</p>
+<h3 id="94">9.4 动作执行与约束诊断</h3>
+<table>
+<thead>
+<tr>
+<th>诊断</th>
+<th style="text-align: right;">OpenWAM 11k</th>
+<th style="text-align: right;">TouchWAM 11k</th>
+<th style="text-align: right;">TouchWAM 18k</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>罐头：出现关节约束违规标记的回合</td>
+<td style="text-align: right;">46/50</td>
+<td style="text-align: right;">45/50</td>
+<td style="text-align: right;">49/50</td>
+</tr>
+<tr>
+<td>烤盘：出现关节约束违规标记的回合</td>
+<td style="text-align: right;">49/50</td>
+<td style="text-align: right;">50/50</td>
+<td style="text-align: right;">50/50</td>
+</tr>
+<tr>
+<td>拼图：出现关节约束违规标记的回合</td>
+<td style="text-align: right;">46/50</td>
+<td style="text-align: right;">47/50</td>
+<td style="text-align: right;">50/50</td>
+</tr>
+<tr>
+<td>烤盘：累计无法求解的机械臂目标</td>
+<td style="text-align: right;">77</td>
+<td style="text-align: right;">241</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+<p>这些是辅助诊断，与模型服务异常、完整任务失败或任务定义中的硬安全违规不是同一指标。三组测评基础设施错误均为零。上述现象提示 EEF 标签、IK 与关节限制仍值得改进，但仅凭聚合数字不能认定它们是触觉版下降的唯一原因。</p>
+<h3 id="95">9.5 下一轮最有信息量的实验</h3>
+<ol><li><strong>补齐训练预算曲线。</strong>以相同官方 Alpha 初始化、相同三任务数据和优化设置，为 OpenWAM / TouchWAM 做到 30k 的成对实验；按独立验证表现决定是否扩展到 40k。详见训练预算对比。</li><li><strong>完成同预算与触觉消融。</strong>补齐无触觉 18k，并对固定 TouchWAM checkpoint 做正常、旁路和错配触觉对比，同时记录残差范数，验证触觉是否真正贡献决策。</li><li><strong>优先处理时间对齐和执行反馈。</strong>核对动作 / 观测记录语义及 IK 限位，再对两种模型同步缩短执行 chunk。控制变量结论稳定后补四配置泛化测评。</li></ol>
+<p>以上为后续实验建议，本报告没有启动这些新训练或测评，也没有将它们写成已经取得的结果。</p>
+<h2 id="10">10. 实现定位、版本与结果文件</h2>
+<h3 id="101">10.1 代码改动怎样组织</h3>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>openwam/model/architectures/touchwam/v1.py</code></td>
+<td>独立注册 V1；构建触觉模块；控制训练策略；严格迁移与加载；推理时每次观测只编码一次触觉</td>
+</tr>
+<tr>
+<td><code>openwam/model/architectures/touchwam/modules_v1.py</code></td>
+<td>CNN / 时序编码器、触觉 K/V LoRA、零门控及动作层扩展</td>
+</tr>
+<tr>
+<td><code>openwam/model/action_backbone/separate_action_dit.py</code></td>
+<td>原条件注意力提取为可扩展方法；每次 forward 的 payload 携带新增条件</td>
+</tr>
+<tr>
+<td><code>openwam/model/architectures/dual_system/joint_self_attn.py</code></td>
+<td>接收并向动作流传递 <code>action_condition</code>，原 MoT 交互结构保留</td>
+</tr>
+<tr>
+<td><code>openwam/tactile/sharpa_v1.py</code></td>
+<td>训练 / 推理共用的池化、传感器顺序和 20 Hz 历史缓冲</td>
+</tr>
+<tr>
+<td><code>openwam/dataloader/bench2dex_alpha.py</code></td>
+<td>FK、坐标、Alpha80 映射、原 RGB / 动作窗口</td>
+</tr>
+<tr>
+<td><code>openwam/dataloader/bench2dex_tactile.py</code></td>
+<td>在原混合数据上补充因果触觉历史及缓存读取</td>
+</tr>
+<tr>
+<td><code>configs/model/touchwam_v1.yaml</code></td>
+<td>模型版本与历史、宽度、层位置、LoRA rank</td>
+</tr>
+<tr>
+<td><code>configs/train_touchwam_v1_from_alpha.yaml</code></td>
+<td>本轮官方初始化与联合微调预设</td>
+</tr>
+<tr>
+<td><code>benchmarks/bench2dex/policy.py</code></td>
+<td>仿真观察、实时触觉、服务请求与动作执行适配</td>
+</tr>
+</tbody>
+</table>
+<p>原版仍通过 <code>dual_system / joint_self_attn</code> 选择；TouchWAM 通过 <code>touchwam_v1</code> 选择，未把两者合并成无法区分的模型。<code>adapter_only</code> 和 <code>joint_finetune</code> 是同一 V1 架构的训练策略，不是两个互不兼容的架构版本。后续若改变输入语义或前向结构，新增 V2 的注册名、配置及迁移规则，保留 V1。</p>
+<p>本轮测评代码提交：<code>f9f9359d27685510029a4b98d6adf1d79cdaa92a</code>。模型版本管理见 <span class="source-ref">MODEL_VERSIONS.md</span>，运行说明见 <span class="source-ref">TOUCHWAM_V1.md</span>。</p>
+<h3 id="102">10.2 固定权重身份</h3>
+<table>
+<thead>
+<tr>
+<th>checkpoint</th>
+<th>SHA256</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>官方 Alpha 154000 初始化</td>
+<td><code>180a02653118b0f96da28a9cae9ec7b4c1c1e6cd0e4608b56c7b4884f8001d3d</code></td>
+</tr>
+<tr>
+<td>OpenWAM Bench2Dex 11000</td>
+<td><code>e6c774b0e747dc3447c5a4e170795edc5393c62080b06632b140f6db10958298</code></td>
+</tr>
+<tr>
+<td>TouchWAM 11000</td>
+<td><code>bdf654b8852cb5fa0b668586c06f6e9e7f902b0d3f86ce39a0b842177b402b86</code></td>
+</tr>
+<tr>
+<td>TouchWAM 18000</td>
+<td><code>cb3a3f876b6cded9b255cef9a0b116e4eb216c95b2547495a17955c6a47e40c1</code></td>
+</tr>
+</tbody>
+</table>
+<p>三个结果目录均位于 <code>/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/</code>：</p>
+<ul>
+<li>无触觉 11k：<code>eval_sharpa3_step11000_none50_ikfix_20261004_163307/</code>。</li>
+<li>触觉 11k：<code>eval_touchwam_v1_from_alpha_step11000_none50_20261007/</code>。</li>
+<li>触觉 18k：<code>eval_touchwam_v1_from_alpha_step18000_none50_20261006/</code>。</li>
+</ul>
+<p>各目录的 <code>summary.json</code> 为最终统计，<code>&lt;task&gt;/none/per_episode.jsonl</code> 为逐回合记录，<code>videos/&lt;task&gt;/none/{success,failure}/</code> 为视频。11k 于北京时间 <strong>2026-10-07 16:43</strong> 完成，18k 于 <strong>2026-10-07 08:06</strong> 完成；截至本报告更新日两组均已完整回传。</p>
+<p>本报告的 <a href="data/report_evidence_20261008.json">证据快照</a> 保存论文表格转录、三组最终 summary、输入审计、配对统计和 gate 数值；<a href="data/results_none_20261008.csv">CSV 主表</a> 可直接用于后续作图。<code>collect_report_evidence.py</code> 可重新从本地论文缓存与实验记录生成这两份文件，不会重新运行模型。</p>
+<section id="demos"><h2>模型推理执行视频：三任务成功与失败</h2><p>以下为模型在 RTX 4090 上控制 Bench2Dex 的真实仿真相机录像，画面依次为正面、左腕、右腕。视频不是世界模型生成的未来画面。全部采用主表相同的 None50 测评协议。</p><p>18k 每任务按 episode 编号选第一条成功和第一条失败；11k 每任务选第一条成功。标签来自评测器的连续 0.5 秒稳定成功判断。示例是确定性挑选的行为展示，整体成功率以上方完整 50 回合统计为准。</p><h3>TouchWAM 18k · 每任务成功与失败各一例</h3><div class="demo-grid"><article class="demo"><div class="demo-label success">罐头摆盘（26） · 成功</div><video aria-label="TouchWAM 18k 罐头摆盘（26） 成功 episode 0001" controls="" playsinline="" poster="media/touchwam_18k_26_success_0001.jpg" preload="none"><source src="media/touchwam_18k_26_success_0001.mp4" type="video/mp4"/></video><p>TouchWAM 18k · episode 0001 · seed 102600000 · 34.8s<br/>稳定成功判定：stable_success</p></article><article class="demo"><div class="demo-label failure">罐头摆盘（26） · 失败</div><video aria-label="TouchWAM 18k 罐头摆盘（26） 失败 episode 0002" controls="" playsinline="" poster="media/touchwam_18k_26_failure_0002.jpg" preload="none"><source src="media/touchwam_18k_26_failure_0002.mp4" type="video/mp4"/></video><p>TouchWAM 18k · episode 0002 · seed 102600001 · 43.6s<br/>稳定成功判定：max_steps</p></article><article class="demo"><div class="demo-label success">烤盘准备（32） · 成功</div><video aria-label="TouchWAM 18k 烤盘准备（32） 成功 episode 0002" controls="" playsinline="" poster="media/touchwam_18k_32_success_0002.jpg" preload="none"><source src="media/touchwam_18k_32_success_0002.mp4" type="video/mp4"/></video><p>TouchWAM 18k · episode 0002 · seed 103200001 · 30.6s<br/>稳定成功判定：stable_success</p></article><article class="demo"><div class="demo-label failure">烤盘准备（32） · 失败</div><video aria-label="TouchWAM 18k 烤盘准备（32） 失败 episode 0001" controls="" playsinline="" poster="media/touchwam_18k_32_failure_0001.jpg" preload="none"><source src="media/touchwam_18k_32_failure_0001.mp4" type="video/mp4"/></video><p>TouchWAM 18k · episode 0001 · seed 103200000 · 42.6s<br/>稳定成功判定：max_steps</p></article><article class="demo"><div class="demo-label success">完整拼图（73） · 成功</div><video aria-label="TouchWAM 18k 完整拼图（73） 成功 episode 0013" controls="" playsinline="" poster="media/touchwam_18k_73_success_0013.jpg" preload="none"><source src="media/touchwam_18k_73_success_0013.mp4" type="video/mp4"/></video><p>TouchWAM 18k · episode 0013 · seed 107300012 · 45.9s<br/>稳定成功判定：stable_success</p></article><article class="demo"><div class="demo-label failure">完整拼图（73） · 失败</div><video aria-label="TouchWAM 18k 完整拼图（73） 失败 episode 0001" controls="" playsinline="" poster="media/touchwam_18k_73_failure_0001.jpg" preload="none"><source src="media/touchwam_18k_73_failure_0001.mp4" type="video/mp4"/></video><p>TouchWAM 18k · episode 0001 · seed 107300000 · 60.7s<br/>稳定成功判定：max_steps</p></article></div><h3>TouchWAM 11k · 每任务成功一例</h3><div class="demo-grid"><article class="demo"><div class="demo-label success">罐头摆盘（26） · 成功</div><video aria-label="TouchWAM 11k 罐头摆盘（26） 成功 episode 0001" controls="" playsinline="" poster="media/touchwam_11k_26_success_0001.jpg" preload="none"><source src="media/touchwam_11k_26_success_0001.mp4" type="video/mp4"/></video><p>TouchWAM 11k · episode 0001 · seed 102600000 · 34.0s<br/>稳定成功判定：stable_success</p></article><article class="demo"><div class="demo-label success">烤盘准备（32） · 成功</div><video aria-label="TouchWAM 11k 烤盘准备（32） 成功 episode 0002" controls="" playsinline="" poster="media/touchwam_11k_32_success_0002.jpg" preload="none"><source src="media/touchwam_11k_32_success_0002.mp4" type="video/mp4"/></video><p>TouchWAM 11k · episode 0002 · seed 103200001 · 30.9s<br/>稳定成功判定：stable_success</p></article><article class="demo"><div class="demo-label success">完整拼图（73） · 成功</div><video aria-label="TouchWAM 11k 完整拼图（73） 成功 episode 0003" controls="" playsinline="" poster="media/touchwam_11k_73_success_0003.jpg" preload="none"><source src="media/touchwam_11k_73_success_0003.mp4" type="video/mp4"/></video><p>TouchWAM 11k · episode 0003 · seed 107300002 · 59.1s<br/>稳定成功判定：stable_success</p></article></div><p><a href="data/demos.json">视频来源、回合编号、seed 与 SHA256</a></p></section><h2 id="_1">参考与核对来源</h2>
+<ol>
+<li><strong>Bench2Dex 论文，Table 2 与 §4.1</strong>：<a href="https://arxiv.org/html/2609.15726v1#S4.T2">arXiv:2609.15726v1</a>。用于四模型成绩、每配置 50 回合、SR / LSCR 口径。</li>
+<li><strong>Bench2Dex 论文，Appendix F / G</strong>：<a href="https://arxiv.org/html/2609.15726v1">全文</a>。用于基线训练范围、输入、执行 chunk 和泛化配置。原文缓存及来源哈希：工作区 <code>research/bench2dex_paper/</code>。</li>
+<li><strong>OpenWAM 原论文</strong>：<a href="https://arxiv.org/abs/2609.07398v1">arXiv:2609.07398v1</a>。原文与本地阅读笔记：工作区 <code>research/openwam_paper/</code>。</li>
+<li><strong>当前模型与训练实现</strong>：<span class="source-ref">TouchWAM 架构</span>、<span class="source-ref">原双流架构</span>、<span class="source-ref">原损失计算</span>。</li>
+<li><strong>新增模块源码</strong>：<span class="source-ref">modules_v1.py</span>。参数数量和 gate 数值另由实际 checkpoint 读取。</li>
+<li><strong>三任务适配记录</strong>：<span class="source-ref">BENCH2DEX_SHARPA3_ALPHA.md</span>。包括数据筛选、同源分组、动作语义及混合采样。</li>
+<li><strong>触觉输入规范</strong>：<span class="source-ref">sharpa_v1.py</span>、<span class="source-ref">触觉 dataloader</span>。</li>
+<li><strong>测评与 IK 适配</strong>：<span class="source-ref">BENCH2DEX_SHARPA3_EVAL.md</span>。该文保留早期实验时间线；本报告的最终完成状态以随附证据快照为准。</li>
+</ol><section id="downloads"><h2>结果、配置与复现入口</h2><p><a href="#atlas-not-shared" title="此链接未包含在本次分享中" aria-disabled="true" onclick="return false">使用 README：安装 / 训练 / 测试 / 可视化命令</a></p><ul><li><a href="data/openwam_11000_summary.json">OpenWAM 11000 最终原始 summary.json</a></li><li><a href="data/touchwam_11000_summary.json">TouchWAM 11000 最终原始 summary.json</a></li><li><a href="data/touchwam_18000_summary.json">TouchWAM 18000 最终原始 summary.json</a></li><li><a href="data/episode_results.csv">450 回合逐回合摘要 CSV（非完整原始日志）</a></li><li><a href="data/report_evidence_20261008.json">论文转录、配对统计及输入审计快照</a></li><li><a href="data/results_none_20261008.csv">论文与本地 None 主表 CSV</a></li></ul><p>本轮训练代码：f9f9359d27685510029a4b98d6adf1d79cdaa92a。v003 新增七模型对照主表、当前联合微调架构图、GR00T 预算换算及 18k 执行视频；历史 v001 / v002 保留。</p><p><a href="data/report_update_20261009.json">本次报告更新与来源审计</a> · <a href="media/architecture_joint_finetune.svg">当前架构 SVG</a></p></section></main></body></html>

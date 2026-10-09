@@ -1,0 +1,15 @@
+{
+  "start": "2026-10-05T09:20:33.594624+08:00",
+  "end": "2026-10-06T19:37:28.794877+08:00",
+  "elapsed_seconds": 123415.200253,
+  "duration_definition": "recorded launcher start to recorded completed_at; includes setup/checkpoint overhead",
+  "performance_source": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/bench2dex_sharpa3_touchwam_v1_from_alpha/2026-10-05_09-26-29/performance_rank_0.jsonl",
+  "performance_sha256": "b86f79f264f9ba85af13a4ea0ae9c658d1583573e58ca4b6bfe0d866891d3fae",
+  "logged_points": 1801,
+  "last_epoch_index": 12,
+  "microsteps": 18000,
+  "optimizer_updates": 9000,
+  "rank": 0,
+  "training_commit": "f9f9359d27685510029a4b98d6adf1d79cdaa92a",
+  "config_sha256": "7f16e4c6b4295a5d8c65c474bbc792a31b0a1583b87f051e7343c81255fc3910"
+}

@@ -1,0 +1,218 @@
+[
+  {
+    "model": "TouchWAM 18k",
+    "task": "26_canned_food_tray_line_arrangement",
+    "outcome": "success",
+    "episode_index": 1,
+    "seed": 102600000,
+    "path": "media/touchwam_18k_26_success_0001.mp4",
+    "source": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_touchwam_v1_from_alpha_step18000_none50_20261006/videos/26_canned_food_tray_line_arrangement/none/success/episode_000001.mp4",
+    "sha256": "49774bebbf00c951d20db5e173414052c8b50e2a3c6f92888eaf9545c22da482",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 204
+        }
+      ],
+      "format": {
+        "duration": "34.783000"
+      }
+    },
+    "terminated_reason": "stable_success"
+  },
+  {
+    "model": "TouchWAM 18k",
+    "task": "26_canned_food_tray_line_arrangement",
+    "outcome": "failure",
+    "episode_index": 2,
+    "seed": 102600001,
+    "path": "media/touchwam_18k_26_failure_0002.mp4",
+    "source": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_touchwam_v1_from_alpha_step18000_none50_20261006/videos/26_canned_food_tray_line_arrangement/none/failure/episode_000002.mp4",
+    "sha256": "8f6fa3851cd989acf48ab0849c4bf923b2ee2fbeb8cfba9a6dce1b591a31d3af",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 204
+        }
+      ],
+      "format": {
+        "duration": "43.629000"
+      }
+    },
+    "terminated_reason": "max_steps"
+  },
+  {
+    "model": "TouchWAM 18k",
+    "task": "32_baking_tray_prep_with_tools",
+    "outcome": "success",
+    "episode_index": 2,
+    "seed": 103200001,
+    "path": "media/touchwam_18k_32_success_0002.mp4",
+    "source": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_touchwam_v1_from_alpha_step18000_none50_20261006/videos/32_baking_tray_prep_with_tools/none/success/episode_000002.mp4",
+    "sha256": "9081845e093ca7d3e18f973a3eb30accce3b2c848a60d0cf209494f595b04f1a",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 204
+        }
+      ],
+      "format": {
+        "duration": "30.585000"
+      }
+    },
+    "terminated_reason": "stable_success"
+  },
+  {
+    "model": "TouchWAM 18k",
+    "task": "32_baking_tray_prep_with_tools",
+    "outcome": "failure",
+    "episode_index": 1,
+    "seed": 103200000,
+    "path": "media/touchwam_18k_32_failure_0001.mp4",
+    "source": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_touchwam_v1_from_alpha_step18000_none50_20261006/videos/32_baking_tray_prep_with_tools/none/failure/episode_000001.mp4",
+    "sha256": "63eb095a9be2812ec1720df453d9f9d66d07c5f3bc0da4f605c491652044e36a",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 204
+        }
+      ],
+      "format": {
+        "duration": "42.579000"
+      }
+    },
+    "terminated_reason": "max_steps"
+  },
+  {
+    "model": "TouchWAM 18k",
+    "task": "73_jigsaw_puzzle_assembly",
+    "outcome": "success",
+    "episode_index": 13,
+    "seed": 107300012,
+    "path": "media/touchwam_18k_73_success_0013.mp4",
+    "source": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_touchwam_v1_from_alpha_step18000_none50_20261006/videos/73_jigsaw_puzzle_assembly/none/success/episode_000013.mp4",
+    "sha256": "379d46b62e1a57fc288d5835695acd9f770653ba55380194b95d30dda83b9c72",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 204
+        }
+      ],
+      "format": {
+        "duration": "45.878000"
+      }
+    },
+    "terminated_reason": "stable_success"
+  },
+  {
+    "model": "TouchWAM 18k",
+    "task": "73_jigsaw_puzzle_assembly",
+    "outcome": "failure",
+    "episode_index": 1,
+    "seed": 107300000,
+    "path": "media/touchwam_18k_73_failure_0001.mp4",
+    "source": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_touchwam_v1_from_alpha_step18000_none50_20261006/videos/73_jigsaw_puzzle_assembly/none/failure/episode_000001.mp4",
+    "sha256": "ef39170c392462faf2151ff266f39223819e03fc4e079844d2ea4a8683fd3b1b",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 204
+        }
+      ],
+      "format": {
+        "duration": "60.720000"
+      }
+    },
+    "terminated_reason": "max_steps"
+  },
+  {
+    "model": "TouchWAM 11k",
+    "task": "26_canned_food_tray_line_arrangement",
+    "outcome": "success",
+    "episode_index": 1,
+    "seed": 102600000,
+    "path": "media/touchwam_11k_26_success_0001.mp4",
+    "source": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_touchwam_v1_from_alpha_step11000_none50_20261007/videos/26_canned_food_tray_line_arrangement/none/success/episode_000001.mp4",
+    "sha256": "702037bc853f3768123be93a959d2f41f21b0cf413f8c632e721b6d9263e9015",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 204
+        }
+      ],
+      "format": {
+        "duration": "34.033000"
+      }
+    },
+    "terminated_reason": "stable_success"
+  },
+  {
+    "model": "TouchWAM 11k",
+    "task": "32_baking_tray_prep_with_tools",
+    "outcome": "success",
+    "episode_index": 2,
+    "seed": 103200001,
+    "path": "media/touchwam_11k_32_success_0002.mp4",
+    "source": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_touchwam_v1_from_alpha_step11000_none50_20261007/videos/32_baking_tray_prep_with_tools/none/success/episode_000002.mp4",
+    "sha256": "a5a93317e31fd534df12a02c8baf794abc898e4447c986a2c4d0386412028e7d",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 204
+        }
+      ],
+      "format": {
+        "duration": "30.885000"
+      }
+    },
+    "terminated_reason": "stable_success"
+  },
+  {
+    "model": "TouchWAM 11k",
+    "task": "73_jigsaw_puzzle_assembly",
+    "outcome": "success",
+    "episode_index": 3,
+    "seed": 107300002,
+    "path": "media/touchwam_11k_73_success_0003.mp4",
+    "source": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/4090_results/eval_touchwam_v1_from_alpha_step11000_none50_20261007/videos/73_jigsaw_puzzle_assembly/none/success/episode_000003.mp4",
+    "sha256": "089a851fb7388da0f6808dc08ab2f3424989bf8fc06f762bc42b25560c0a7990",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 204
+        }
+      ],
+      "format": {
+        "duration": "59.071000"
+      }
+    },
+    "terminated_reason": "stable_success"
+  }
+]
