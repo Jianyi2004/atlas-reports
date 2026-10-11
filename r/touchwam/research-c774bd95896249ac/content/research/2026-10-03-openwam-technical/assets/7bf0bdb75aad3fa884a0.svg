@@ -1,0 +1,251 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="485" viewBox="0 0 1120 485"><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#53697b"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text x="28" y="35" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#183046" text-anchor="start" font-weight="700">
+<tspan x="28" dy="0">四种跨模态可见性：行是查询，列是被读取的信息</tspan>
+</text>
+<text x="156" y="91" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="17" fill="#183046" text-anchor="middle" font-weight="700">
+<tspan x="156" dy="0">isolated</tspan>
+</text>
+<text x="83" y="148" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="14" fill="#183046" text-anchor="end" font-weight="400">
+<tspan x="83" dy="0">当前 V₀</tspan>
+</text>
+<text x="115" y="120" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="115" dy="0">当前 V₀</tspan>
+</text>
+<rect x="89" y="129" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="115" y="161" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="115" dy="0">✓</tspan>
+</text>
+<rect x="146" y="129" width="52" height="52" fill="#d9e3ed" fill-opacity="1"/>
+<text x="172" y="161" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="172" dy="0">×</tspan>
+</text>
+<rect x="203" y="129" width="52" height="52" fill="#d9e3ed" fill-opacity="1"/>
+<text x="229" y="161" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="229" dy="0">×</tspan>
+</text>
+<text x="83" y="207" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="14" fill="#183046" text-anchor="end" font-weight="400">
+<tspan x="83" dy="0">未来 Vƒ</tspan>
+</text>
+<text x="172" y="120" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="172" dy="0">未来 Vƒ</tspan>
+</text>
+<rect x="89" y="188" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="115" y="220" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="115" dy="0">✓</tspan>
+</text>
+<rect x="146" y="188" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="172" y="220" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="172" dy="0">✓</tspan>
+</text>
+<rect x="203" y="188" width="52" height="52" fill="#d9e3ed" fill-opacity="1"/>
+<text x="229" y="220" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="229" dy="0">×</tspan>
+</text>
+<text x="83" y="266" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="14" fill="#183046" text-anchor="end" font-weight="400">
+<tspan x="83" dy="0">动作 A</tspan>
+</text>
+<text x="229" y="120" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="229" dy="0">动作 A</tspan>
+</text>
+<rect x="89" y="247" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="115" y="279" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="115" dy="0">✓</tspan>
+</text>
+<rect x="146" y="247" width="52" height="52" fill="#d9e3ed" fill-opacity="1"/>
+<text x="172" y="279" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="172" dy="0">×</tspan>
+</text>
+<rect x="203" y="247" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="229" y="279" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="229" dy="0">✓</tspan>
+</text>
+<text x="156" y="337" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="15" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="156" dy="0">3 × 3 是分组示意</tspan>
+</text>
+<text x="433" y="91" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="17" fill="#183046" text-anchor="middle" font-weight="700">
+<tspan x="433" dy="0">video_sees_action</tspan>
+</text>
+<text x="360" y="148" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="14" fill="#183046" text-anchor="end" font-weight="400">
+<tspan x="360" dy="0">当前 V₀</tspan>
+</text>
+<text x="392" y="120" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="392" dy="0">当前 V₀</tspan>
+</text>
+<rect x="366" y="129" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="392" y="161" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="392" dy="0">✓</tspan>
+</text>
+<rect x="423" y="129" width="52" height="52" fill="#d9e3ed" fill-opacity="1"/>
+<text x="449" y="161" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="449" dy="0">×</tspan>
+</text>
+<rect x="480" y="129" width="52" height="52" fill="#d9e3ed" fill-opacity="1"/>
+<text x="506" y="161" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="506" dy="0">×</tspan>
+</text>
+<text x="360" y="207" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="14" fill="#183046" text-anchor="end" font-weight="400">
+<tspan x="360" dy="0">未来 Vƒ</tspan>
+</text>
+<text x="449" y="120" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="449" dy="0">未来 Vƒ</tspan>
+</text>
+<rect x="366" y="188" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="392" y="220" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="392" dy="0">✓</tspan>
+</text>
+<rect x="423" y="188" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="449" y="220" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="449" dy="0">✓</tspan>
+</text>
+<rect x="480" y="188" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="506" y="220" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="506" dy="0">✓</tspan>
+</text>
+<text x="360" y="266" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="14" fill="#183046" text-anchor="end" font-weight="400">
+<tspan x="360" dy="0">动作 A</tspan>
+</text>
+<text x="506" y="120" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="506" dy="0">动作 A</tspan>
+</text>
+<rect x="366" y="247" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="392" y="279" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="392" dy="0">✓</tspan>
+</text>
+<rect x="423" y="247" width="52" height="52" fill="#d9e3ed" fill-opacity="1"/>
+<text x="449" y="279" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="449" dy="0">×</tspan>
+</text>
+<rect x="480" y="247" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="506" y="279" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="506" dy="0">✓</tspan>
+</text>
+<text x="433" y="337" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="15" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="433" dy="0">3 × 3 是分组示意</tspan>
+</text>
+<text x="710" y="91" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="17" fill="#183046" text-anchor="middle" font-weight="700">
+<tspan x="710" dy="0">action_sees_video</tspan>
+</text>
+<text x="637" y="148" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="14" fill="#183046" text-anchor="end" font-weight="400">
+<tspan x="637" dy="0">当前 V₀</tspan>
+</text>
+<text x="669" y="120" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="669" dy="0">当前 V₀</tspan>
+</text>
+<rect x="643" y="129" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="669" y="161" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="669" dy="0">✓</tspan>
+</text>
+<rect x="700" y="129" width="52" height="52" fill="#d9e3ed" fill-opacity="1"/>
+<text x="726" y="161" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="726" dy="0">×</tspan>
+</text>
+<rect x="757" y="129" width="52" height="52" fill="#d9e3ed" fill-opacity="1"/>
+<text x="783" y="161" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="783" dy="0">×</tspan>
+</text>
+<text x="637" y="207" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="14" fill="#183046" text-anchor="end" font-weight="400">
+<tspan x="637" dy="0">未来 Vƒ</tspan>
+</text>
+<text x="726" y="120" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="726" dy="0">未来 Vƒ</tspan>
+</text>
+<rect x="643" y="188" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="669" y="220" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="669" dy="0">✓</tspan>
+</text>
+<rect x="700" y="188" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="726" y="220" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="726" dy="0">✓</tspan>
+</text>
+<rect x="757" y="188" width="52" height="52" fill="#d9e3ed" fill-opacity="1"/>
+<text x="783" y="220" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="783" dy="0">×</tspan>
+</text>
+<text x="637" y="266" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="14" fill="#183046" text-anchor="end" font-weight="400">
+<tspan x="637" dy="0">动作 A</tspan>
+</text>
+<text x="783" y="120" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="783" dy="0">动作 A</tspan>
+</text>
+<rect x="643" y="247" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="669" y="279" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="669" dy="0">✓</tspan>
+</text>
+<rect x="700" y="247" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="726" y="279" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="726" dy="0">✓</tspan>
+</text>
+<rect x="757" y="247" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="783" y="279" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="783" dy="0">✓</tspan>
+</text>
+<text x="710" y="337" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="15" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="710" dy="0">3 × 3 是分组示意</tspan>
+</text>
+<text x="987" y="91" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="17" fill="#183046" text-anchor="middle" font-weight="700">
+<tspan x="987" dy="0">mutual（α）</tspan>
+</text>
+<text x="914" y="148" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="14" fill="#183046" text-anchor="end" font-weight="400">
+<tspan x="914" dy="0">当前 V₀</tspan>
+</text>
+<text x="946" y="120" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="946" dy="0">当前 V₀</tspan>
+</text>
+<rect x="920" y="129" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="946" y="161" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="946" dy="0">✓</tspan>
+</text>
+<rect x="977" y="129" width="52" height="52" fill="#d9e3ed" fill-opacity="1"/>
+<text x="1003" y="161" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="1003" dy="0">×</tspan>
+</text>
+<rect x="1034" y="129" width="52" height="52" fill="#d9e3ed" fill-opacity="1"/>
+<text x="1060" y="161" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="1060" dy="0">×</tspan>
+</text>
+<text x="914" y="207" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="14" fill="#183046" text-anchor="end" font-weight="400">
+<tspan x="914" dy="0">未来 Vƒ</tspan>
+</text>
+<text x="1003" y="120" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="1003" dy="0">未来 Vƒ</tspan>
+</text>
+<rect x="920" y="188" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="946" y="220" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="946" dy="0">✓</tspan>
+</text>
+<rect x="977" y="188" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="1003" y="220" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="1003" dy="0">✓</tspan>
+</text>
+<rect x="1034" y="188" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="1060" y="220" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="1060" dy="0">✓</tspan>
+</text>
+<text x="914" y="266" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="14" fill="#183046" text-anchor="end" font-weight="400">
+<tspan x="914" dy="0">动作 A</tspan>
+</text>
+<text x="1060" y="120" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="1060" dy="0">动作 A</tspan>
+</text>
+<rect x="920" y="247" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="946" y="279" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="946" dy="0">✓</tspan>
+</text>
+<rect x="977" y="247" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="1003" y="279" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="1003" dy="0">✓</tspan>
+</text>
+<rect x="1034" y="247" width="52" height="52" fill="#0f8b8d" fill-opacity="1"/>
+<text x="1060" y="279" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="1060" dy="0">✓</tspan>
+</text>
+<text x="987" y="337" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="15" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="987" dy="0">3 × 3 是分组示意</tspan>
+</text>
+<text x="30" y="391" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="19" fill="#183046" text-anchor="start" font-weight="700">
+<tspan x="30" dy="0">四种模式中，动作都能读取当前干净首帧。变化的是未来视频与动作之间的两条边。</tspan>
+</text>
+<text x="30" y="433" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="17" fill="#53697b" text-anchor="start" font-weight="400">
+<tspan x="30" dy="0">实际矩阵有 392 × 392 个位置；当前/未来/动作三组分别有 120 / 240 / 32 个 token。</tspan>
+</text>
+</svg>

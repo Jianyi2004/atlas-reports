@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="395" viewBox="0 0 1120 395"><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#53697b"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text x="28" y="35" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#183046" text-anchor="start" font-weight="700">
+<tspan x="28" dy="0">首帧为什么不会被未来噪声污染：三处处理协同工作</tspan>
+</text>
+<rect x="30" y="100" width="328" height="150" rx="12" fill="#2563eb" fill-opacity=".07" stroke="#2563eb" stroke-width="1.6"/>
+<text x="194.0" y="153.91" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="19" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="194.0" dy="0">输入</tspan>
+<tspan x="194.0" dy="27.55">首帧 latent 保留真实观测</tspan>
+<tspan x="194.0" dy="27.55">未来 latent 才加噪</tspan>
+</text>
+<path d="M358,177 L395,177" stroke="#53697b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="395" y="100" width="328" height="150" rx="12" fill="#0f8b8d" fill-opacity=".07" stroke="#0f8b8d" stroke-width="1.6"/>
+<text x="559.0" y="153.91" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="19" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="559.0" dy="0">Transformer</tspan>
+<tspan x="559.0" dy="27.55">首帧噪声时间固定为干净端</tspan>
+<tspan x="559.0" dy="27.55">首帧只能读自己与条件</tspan>
+</text>
+<path d="M723,177 L760,177" stroke="#53697b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="760" y="100" width="328" height="150" rx="12" fill="#7c3aed" fill-opacity=".07" stroke="#7c3aed" stroke-width="1.6"/>
+<text x="924.0" y="153.91" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="19" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="924.0" dy="0">输出与损失</tspan>
+<tspan x="924.0" dy="27.55">首帧不计视频预测损失</tspan>
+<tspan x="924.0" dy="27.55">每次 Euler 后重新固定</tspan>
+</text>
+<text x="30" y="305" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="19" fill="#183046" text-anchor="start" font-weight="400">
+<tspan x="30" dy="0">仅仅不对首帧加噪仍不够：如果它能注意未来噪声，它的层内表示仍可能受到污染。</tspan>
+</text>
+<text x="30" y="347" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="17" fill="#53697b" text-anchor="start" font-weight="400">
+<tspan x="30" dy="0">“first-frame causal”仅保护首帧；未来帧之间互相可见。它不等于所有时刻都使用严格自回归掩码。</tspan>
+</text>
+</svg>

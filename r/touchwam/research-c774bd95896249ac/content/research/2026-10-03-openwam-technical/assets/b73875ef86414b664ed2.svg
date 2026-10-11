@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="400" viewBox="0 0 1120 400"><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#53697b"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text x="28" y="35" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#183046" text-anchor="start" font-weight="700">
+<tspan x="28" dy="0">动作块的预测长度与实际执行长度</tspan>
+</text>
+<text x="30" y="89" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="20" fill="#183046" text-anchor="start" font-weight="400">
+<tspan x="30" dy="0">模型一次生成 H=32 步动作；只执行前 n 步，再用新观测生成下一块</tspan>
+</text>
+<rect x="30" y="121" width="29" height="43" fill="#7c3aed" fill-opacity="0.85"/>
+<text x="44.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="44.5" dy="0">1</tspan>
+</text>
+<rect x="63" y="121" width="29" height="43" fill="#7c3aed" fill-opacity="0.85"/>
+<text x="77.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="77.5" dy="0">2</tspan>
+</text>
+<rect x="96" y="121" width="29" height="43" fill="#7c3aed" fill-opacity="0.85"/>
+<text x="110.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="110.5" dy="0">3</tspan>
+</text>
+<rect x="129" y="121" width="29" height="43" fill="#7c3aed" fill-opacity="0.85"/>
+<text x="143.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="143.5" dy="0">4</tspan>
+</text>
+<rect x="162" y="121" width="29" height="43" fill="#7c3aed" fill-opacity="0.85"/>
+<text x="176.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="176.5" dy="0">5</tspan>
+</text>
+<rect x="195" y="121" width="29" height="43" fill="#7c3aed" fill-opacity="0.85"/>
+<text x="209.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="209.5" dy="0">6</tspan>
+</text>
+<rect x="228" y="121" width="29" height="43" fill="#7c3aed" fill-opacity="0.85"/>
+<text x="242.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="242.5" dy="0">7</tspan>
+</text>
+<rect x="261" y="121" width="29" height="43" fill="#7c3aed" fill-opacity="0.85"/>
+<text x="275.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="400">
+<tspan x="275.5" dy="0">8</tspan>
+</text>
+<rect x="294" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="308.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="308.5" dy="0">9</tspan>
+</text>
+<rect x="327" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="341.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="341.5" dy="0">10</tspan>
+</text>
+<rect x="360" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="374.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="374.5" dy="0">11</tspan>
+</text>
+<rect x="393" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="407.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="407.5" dy="0">12</tspan>
+</text>
+<rect x="426" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="440.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="440.5" dy="0">13</tspan>
+</text>
+<rect x="459" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="473.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="473.5" dy="0">14</tspan>
+</text>
+<rect x="492" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="506.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="506.5" dy="0">15</tspan>
+</text>
+<rect x="525" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="539.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="539.5" dy="0">16</tspan>
+</text>
+<rect x="558" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="572.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="572.5" dy="0">17</tspan>
+</text>
+<rect x="591" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="605.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="605.5" dy="0">18</tspan>
+</text>
+<rect x="624" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="638.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="638.5" dy="0">19</tspan>
+</text>
+<rect x="657" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="671.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="671.5" dy="0">20</tspan>
+</text>
+<rect x="690" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="704.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="704.5" dy="0">21</tspan>
+</text>
+<rect x="723" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="737.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="737.5" dy="0">22</tspan>
+</text>
+<rect x="756" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="770.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="770.5" dy="0">23</tspan>
+</text>
+<rect x="789" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="803.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="803.5" dy="0">24</tspan>
+</text>
+<rect x="822" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="836.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="836.5" dy="0">25</tspan>
+</text>
+<rect x="855" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="869.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="869.5" dy="0">26</tspan>
+</text>
+<rect x="888" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="902.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="902.5" dy="0">27</tspan>
+</text>
+<rect x="921" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="935.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="935.5" dy="0">28</tspan>
+</text>
+<rect x="954" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="968.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="968.5" dy="0">29</tspan>
+</text>
+<rect x="987" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="1001.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="1001.5" dy="0">30</tspan>
+</text>
+<rect x="1020" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="1034.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="1034.5" dy="0">31</tspan>
+</text>
+<rect x="1053" y="121" width="29" height="43" fill="#d9e3ed" fill-opacity="0.85"/>
+<text x="1067.5" y="150" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="13" fill="#53697b" text-anchor="middle" font-weight="400">
+<tspan x="1067.5" dy="0">32</tspan>
+</text>
+<text x="30" y="202" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="18" fill="#7c3aed" text-anchor="start" font-weight="400">
+<tspan x="30" dy="0">示例 n=8（教学选择，不是论文固定设置）</tspan>
+</text>
+<path d="M280,217 L280,259" stroke="#53697b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="125" y="268" width="310" height="65" rx="12" fill="#2563eb" fill-opacity=".07" stroke="#2563eb" stroke-width="1.6"/>
+<text x="280.0" y="306.44" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="18" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="280.0" dy="0">采集执行 8 步后的新观测</tspan>
+</text>
+<path d="M435,300 L551,300" stroke="#53697b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="558" y="268" width="497" height="65" rx="12" fill="#0f8b8d" fill-opacity=".07" stroke="#0f8b8d" stroke-width="1.6"/>
+<text x="806.5" y="293.48" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="18" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="806.5" dy="0">从新观测再生成 32 步动作</tspan>
+<tspan x="806.5" dy="26.099999999999998">控制反馈频率由执行策略与推理延迟共同决定</tspan>
+</text>
+<text x="30" y="379" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="17" fill="#53697b" text-anchor="start" font-weight="400">
+<tspan x="30" dy="0">inference_horizon 改变消耗多少步；不会把训练 action chunk 的32个token直接改成8个。</tspan>
+</text>
+</svg>

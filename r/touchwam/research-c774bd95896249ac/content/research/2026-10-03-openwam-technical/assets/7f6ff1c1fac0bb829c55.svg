@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="610" viewBox="0 0 1120 610"><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#53697b"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text x="28" y="35" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#183046" text-anchor="start" font-weight="700">
+<tspan x="28" dy="0">从观测到执行：同一个世界—动作模型的训练与部署</tspan>
+</text>
+<text x="30" y="78" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="19" fill="#0f8b8d" text-anchor="start" font-weight="700">
+<tspan x="30" dy="0">训练时：未来图像与动作是监督目标</tspan>
+</text>
+<rect x="30" y="100" width="225" height="112" rx="12" fill="#2563eb" fill-opacity=".07" stroke="#2563eb" stroke-width="1.6"/>
+<text x="142.5" y="137.13000000000002" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="17" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="142.5" dy="0">当前图像 + 未来图像</tspan>
+<tspan x="142.5" dy="24.65">VAE 编码 → 视频 latent</tspan>
+<tspan x="142.5" dy="24.65">为未来部分添加噪声</tspan>
+</text>
+<rect x="30" y="245" width="225" height="100" rx="12" fill="#7c3aed" fill-opacity=".07" stroke="#7c3aed" stroke-width="1.6"/>
+<text x="142.5" y="276.13" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="17" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="142.5" dy="0">真实动作块 32 × 80</tspan>
+<tspan x="142.5" dy="24.65">独立采样噪声时间</tspan>
+<tspan x="142.5" dy="24.65">添加动作噪声</tspan>
+</text>
+<rect x="345" y="125" width="355" height="190" rx="12" fill="#0f8b8d" fill-opacity=".07" stroke="#0f8b8d" stroke-width="1.6"/>
+<text x="522.5" y="183.4" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="20" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="522.5" dy="0">视频 DiT  ⇄  ActionDiT</tspan>
+<tspan x="522.5" dy="29.0">30 层共享注意力交互</tspan>
+<tspan x="522.5" dy="29.0">文字 + 当前状态作为条件</tspan>
+<tspan x="522.5" dy="29.0">预测两路 flow 速度</tspan>
+</text>
+<path d="M255,158 L345,182" stroke="#53697b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M255,290 L345,256" stroke="#53697b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="790" y="150" width="295" height="140" rx="12" fill="#c86c15" fill-opacity=".07" stroke="#c86c15" stroke-width="1.6"/>
+<text x="937.5" y="201.13000000000002" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="17" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="937.5" dy="0">视频速度误差 + 动作速度误差</tspan>
+<tspan x="937.5" dy="24.65">排除条件帧和无效动作维度</tspan>
+<tspan x="937.5" dy="24.65">反向传播 → 更新可训练参数</tspan>
+</text>
+<path d="M700,220 L790,220" stroke="#53697b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M30,375 L1085,375" stroke="#d9e3ed" stroke-width="1.5" fill="none" />
+<text x="30" y="414" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="19" fill="#0f8b8d" text-anchor="start" font-weight="700">
+<tspan x="30" dy="0">部署时：条件是真实当前观测，未来从噪声开始</tspan>
+</text>
+<rect x="30" y="445" width="220" height="105" rx="12" fill="#2563eb" fill-opacity=".07" stroke="#2563eb" stroke-width="1.6"/>
+<text x="140.0" y="490.87" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="17" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="140.0" dy="0">当前图像 / 指令 / 状态</tspan>
+<tspan x="140.0" dy="24.65">干净首帧 + 两路噪声</tspan>
+</text>
+<rect x="333" y="445" width="225" height="105" rx="12" fill="#0f8b8d" fill-opacity=".07" stroke="#0f8b8d" stroke-width="1.6"/>
+<text x="445.5" y="490.48" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="18" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="445.5" dy="0">联合去噪 10 步</tspan>
+<tspan x="445.5" dy="26.099999999999998">每一步调用 30 层模型</tspan>
+</text>
+<rect x="642" y="445" width="198" height="105" rx="12" fill="#7c3aed" fill-opacity=".07" stroke="#7c3aed" stroke-width="1.6"/>
+<text x="741.0" y="490.87" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="17" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="741.0" dy="0">80D → 原生维度</tspan>
+<tspan x="741.0" dy="24.65">反归一化 → 动作块</tspan>
+</text>
+<rect x="910" y="445" width="175" height="105" rx="12" fill="#c86c15" fill-opacity=".07" stroke="#c86c15" stroke-width="1.6"/>
+<text x="997.5" y="490.48" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="18" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="997.5" dy="0">执行若干步</tspan>
+<tspan x="997.5" dy="26.099999999999998">获取新观测</tspan>
+</text>
+<path d="M250,495 L333,495" stroke="#53697b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M558,495 L642,495" stroke="#53697b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M840,495 L910,495" stroke="#53697b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+</svg>

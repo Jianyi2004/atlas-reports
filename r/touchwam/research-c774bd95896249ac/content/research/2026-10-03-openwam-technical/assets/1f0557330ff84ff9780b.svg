@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="440" viewBox="0 0 1120 440"><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#53697b"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text x="28" y="35" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#183046" text-anchor="start" font-weight="700">
+<tspan x="28" dy="0">执行异步与去噪异步是两个独立的开关</tspan>
+</text>
+<text x="25" y="85" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="19" fill="#183046" text-anchor="start" font-weight="700">
+<tspan x="25" dy="0">同步执行</tspan>
+</text>
+<text x="25" y="206" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="19" fill="#183046" text-anchor="start" font-weight="700">
+<tspan x="25" dy="0">异步预取</tspan>
+</text>
+<path d="M160,99 L160,325" stroke="#d9e3ed" stroke-width="1.5" fill="none" stroke-dasharray="6 5"/>
+<path d="M250,99 L250,325" stroke="#d9e3ed" stroke-width="1.5" fill="none" stroke-dasharray="6 5"/>
+<path d="M340,99 L340,325" stroke="#d9e3ed" stroke-width="1.5" fill="none" stroke-dasharray="6 5"/>
+<path d="M430,99 L430,325" stroke="#d9e3ed" stroke-width="1.5" fill="none" stroke-dasharray="6 5"/>
+<path d="M520,99 L520,325" stroke="#d9e3ed" stroke-width="1.5" fill="none" stroke-dasharray="6 5"/>
+<path d="M610,99 L610,325" stroke="#d9e3ed" stroke-width="1.5" fill="none" stroke-dasharray="6 5"/>
+<path d="M700,99 L700,325" stroke="#d9e3ed" stroke-width="1.5" fill="none" stroke-dasharray="6 5"/>
+<path d="M790,99 L790,325" stroke="#d9e3ed" stroke-width="1.5" fill="none" stroke-dasharray="6 5"/>
+<path d="M880,99 L880,325" stroke="#d9e3ed" stroke-width="1.5" fill="none" stroke-dasharray="6 5"/>
+<path d="M970,99 L970,325" stroke="#d9e3ed" stroke-width="1.5" fill="none" stroke-dasharray="6 5"/>
+<path d="M1060,99 L1060,325" stroke="#d9e3ed" stroke-width="1.5" fill="none" stroke-dasharray="6 5"/>
+<rect x="160" y="110" width="110" height="50" fill="#c86c15" fill-opacity="0.25"/>
+<text x="215" y="143" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="18" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="215" dy="0">生成</tspan>
+</text>
+<rect x="270" y="110" width="360" height="50" fill="#2563eb" fill-opacity="0.25"/>
+<text x="450" y="143" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="18" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="450" dy="0">执行动作块</tspan>
+</text>
+<rect x="630" y="110" width="110" height="50" fill="#c86c15" fill-opacity="0.25"/>
+<text x="685" y="143" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="18" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="685" dy="0">生成</tspan>
+</text>
+<rect x="740" y="110" width="340" height="50" fill="#2563eb" fill-opacity="0.25"/>
+<text x="910" y="143" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="18" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="910" dy="0">执行下一块</tspan>
+</text>
+<rect x="160" y="230" width="470" height="40" fill="#2563eb" fill-opacity="0.25"/>
+<text x="350" y="257" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="18" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="350" dy="0">继续执行旧动作块</tspan>
+</text>
+<rect x="470" y="284" width="160" height="40" fill="#c86c15" fill-opacity="0.25"/>
+<text x="550" y="311" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="18" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="550" dy="0">后台生成</tspan>
+</text>
+<rect x="630" y="230" width="450" height="40" fill="#7c3aed" fill-opacity="0.25"/>
+<text x="855" y="257" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="18" fill="#183046" text-anchor="middle" font-weight="400">
+<tspan x="855" dy="0">跳过过时前缀，采用新动作块</tspan>
+</text>
+<path d="M630,284 L630,272" stroke="#53697b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="25" y="375" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="18" fill="#183046" text-anchor="start" font-weight="700">
+<tspan x="25" dy="0">上图横轴是机器人执行时间。单次“生成”内部，两条流仍可以选择同步的 10 步去噪。</tspan>
+</text>
+<text x="25" y="413" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="16" fill="#53697b" text-anchor="start" font-weight="400">
+<tspan x="25" dy="0">源码按生成期间实际已发出的动作步数裁掉新块前缀；若旧缓冲耗尽、后台还未完成，仍需等待。</tspan>
+</text>
+</svg>
