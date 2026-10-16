@@ -1,0 +1,1698 @@
+[
+  {
+    "id": "E01",
+    "name": "ActionSense",
+    "year": 2022,
+    "group": "E",
+    "evidence": "B",
+    "license": "CC BY-NC-SA 4.0",
+    "scale": "官方说明页：10 位参与者；778.0 分钟录制，其中543.5分钟为厨房活动；20类活动。完整可穿戴数据涉及9人。",
+    "signals": "第一视角眼动相机、双手导电织物触觉手套、身体IMU、手指跟踪、EMG、外部RGB/深度及声音；各流有时间信息。",
+    "actions": "有人体运动和活动标签；不是机器人控制命令。",
+    "uses": "厨房连续接触动态、跨模态预训练、长序列事件预测。",
+    "caveat": "官方注明一名参与者只有相机数据，初期参与者的Manus手指跟踪不可靠。不能把778分钟全部当成完整同步视频—姿态—触觉有效时长；网页目标25人不是已发布人数。",
+    "links": [
+      [
+        "项目",
+        "https://action-sense.csail.mit.edu/"
+      ],
+      [
+        "数据下载",
+        "https://action-sense.csail.mit.edu/data.html"
+      ],
+      [
+        "字段与质量说明",
+        "https://action-sense.csail.mit.edu/dataset_info.html"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "E02",
+    "name": "EgoPressure",
+    "year": 2025,
+    "group": "E",
+    "evidence": "A",
+    "license": "CC BY-NC-SA 4.0；MANO另受其许可约束",
+    "scale": "当前官方数据卡：21人、1,344序列、32手势×双手；每路约630K帧、8路合计约5M相机帧；约1.96TB。",
+    "signals": "头戴RGB-D与7个固定RGB-D视角，30Hz；Sensel Morph桌面压力板105×185原始网格，UV压力、MANO手网格、逐帧ego相机位姿。",
+    "actions": "手部姿态/网格是运动监督，没有机器人动作。",
+    "uses": "压力估计、接触区域与几何联合建模；适合做有计量依据的压力预测基准。",
+    "caveat": "压力来自手接触桌面压力板，不是全手戴手套操作任意物体；不能把多相机帧数视作独立接触状态。论文与新版数据卡规模口径不同，本文以现有发布卡为准。",
+    "links": [
+      [
+        "官方数据",
+        "https://huggingface.co/datasets/eth-siplab/EgoPressure"
+      ],
+      [
+        "工具/字段",
+        "https://github.com/eth-siplab/EgoPressure"
+      ],
+      [
+        "论文",
+        "https://arxiv.org/abs/2409.02224"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "E03",
+    "name": "OpenTouch",
+    "year": 2025,
+    "group": "E",
+    "evidence": "B",
+    "license": "本次未确认数据专用许可证",
+    "scale": "论文：5.1小时同步录制、2,900精选片段（约3小时），14种环境。",
+    "signals": "Aria第一视角视频、169触点全手压力、Rokoko手姿态，30Hz同步；动作、物体、抓型和自然语言标注。",
+    "actions": "硬件跟踪的人手运动轨迹；语义动作标签不是低层控制动作。",
+    "uses": "第一版人手触觉时序模型的优先来源，可研究视频—姿态—触觉联合预测。",
+    "caveat": "已核实官方脚本列27个Drive文件ID，未完成大文件下载。论文表中约800 object types与正文/网页8,000 objects不能混用，故不把两者当成同一个物体数量指标。",
+    "links": [
+      [
+        "项目",
+        "https://opentouch-tactile.github.io/"
+      ],
+      [
+        "官方数据脚本",
+        "https://github.com/OpenTouch-MIT/opentouch/blob/main/scripts/download_data.sh"
+      ],
+      [
+        "论文",
+        "https://arxiv.org/abs/2512.16842"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "E04",
+    "name": "EgoTouch（TouchAnything数据）",
+    "year": 2026,
+    "group": "E",
+    "evidence": "A",
+    "license": "数据许可未确认；代码MIT不自动等于数据MIT",
+    "scale": "作者当前README：208任务、1,891 episodes、约2M帧、1,000+物体；发布说明仍保留“上传中/可能不完整”。",
+    "signals": "ego+双腕3路视频、双手压力、人手姿态与相机位姿。代码中的处理格式为30FPS、21×21压力网格、WiLoR双手21关节点及有效掩码。",
+    "actions": "人手运动估计和相机位姿；不能直接作为机器人关节控制标签。",
+    "uses": "双手接触、遮挡下多视角预测、跨视角和跨本体预训练。",
+    "caveat": "原始传感器、16×16采集说明和21×21处理网格须区分；不能把WiLoR估计称作全量动捕真值。数据目录有Home/Office/Outdoor/Retail/Workbench和split.json，但未证明覆盖论文全部样本。",
+    "links": [
+      [
+        "官方数据",
+        "https://huggingface.co/datasets/zhouzhoujy/EgoTouch"
+      ],
+      [
+        "项目/格式",
+        "https://github.com/Jianyi2004/TouchAnything"
+      ],
+      [
+        "论文",
+        "https://arxiv.org/abs/2605.13083"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "E05",
+    "name": "EgoTactile",
+    "year": 2026,
+    "group": "E",
+    "evidence": "A",
+    "license": "CC BY-NC 4.0",
+    "scale": "12位参与者、63种日常物体、7物体类别；本次未确认可用于总量相加的完整时长。",
+    "signals": "1280×720 ego视频、162位置压力，视觉与压力对齐15Hz；戴手套与裸手两子集。",
+    "actions": "数据卡未给连续机器人动作；主要是视频到压力监督。",
+    "uses": "抓握压力预测、跨参与者和跨物体泛化、压力时序表征。",
+    "caveat": "裸手子集可见手没有戴手套：参考压力来自画面外另一只戴手套的手，以节拍器协调动作。裸手子集不应标成“可见手直接测量压力真值”。",
+    "links": [
+      [
+        "官方数据",
+        "https://huggingface.co/datasets/HustleHard/EgoTactile"
+      ],
+      [
+        "项目",
+        "https://egotactile.github.io/"
+      ],
+      [
+        "论文",
+        "https://arxiv.org/abs/2606.09243"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "E06",
+    "name": "OpenGraph Ego-Tactile Manipulation",
+    "year": 2026,
+    "group": "E",
+    "evidence": "A",
+    "license": "CC BY 4.0",
+    "scale": "公开样例72 episodes、1.28小时、138,629帧。",
+    "signals": "1920×1080头戴视频；OGLO每手80、双手160压力通道；30Hz对齐并保留90Hz原始触觉，头/双腕IMU；LeRobot v3。",
+    "actions": "语义分段、物体/抓型标签；未见连续机器人action或完整手关节位姿字段。",
+    "uses": "小规模快速跑通时序数据管线；允许商业用途的ego压力样本。",
+    "caveat": "公开的是样例，不能推算其商业全库规模。动作边界由接触信号自动生成，数据卡明确不是人工真值；腕部IMU不等于腕部6DoF位置。",
+    "links": [
+      [
+        "官方数据及格式",
+        "https://huggingface.co/datasets/OpenGraphLabs-Research/ego-tactile-manipulation"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "E07",
+    "name": "Touch and Go",
+    "year": 2022,
+    "group": "E",
+    "evidence": "B",
+    "license": "CC BY 4.0",
+    "scale": "自然环境中的视觉—触觉录制；包括原始视频、接触片段与材质标签。不同预处理版帧数不同，本文不混用250K/262K等训练子集数字。",
+    "signals": "人类手持GelSight探测器触碰物体，同时记录第一视角视频；提供接触起始/材质信息。",
+    "actions": "没有可直接执行的机器人控制动作；也没有全手压力分布。",
+    "uses": "自然材质、跨模态编码器、视频条件未来触觉预测。",
+    "caveat": "ego指相机视角，不代表测到人类皮肤或手套压力；触觉是探头局部接触。与Sparsh/FoTa/AnyTouch中的Touch and Go去重。",
+    "links": [
+      [
+        "官方项目/许可",
+        "https://touch-and-go.github.io/"
+      ],
+      [
+        "官方数据",
+        "https://drive.google.com/drive/folders/1NDasyshDCL9aaQzxjn_-Q5MBURRT360B"
+      ],
+      [
+        "论文",
+        "https://arxiv.org/abs/2211.12498"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "E08",
+    "name": "VTDexManip（真实人类预训练数据）",
+    "year": 2025,
+    "group": "E",
+    "evidence": "B",
+    "license": "归档内有License.txt，本次未解包确认条款",
+    "scale": "官方项目确认10种日常操作、182物体；机器人评测另有6项仿真任务。",
+    "signals": "人类第一视角操作视频与稀疏触觉接触信号；官方采集示意图明确展示头戴设备及ego样例。真实预训练录制与仿真RL基准须分开。",
+    "actions": "不应把仿真RL的动作字段当成人类原始录制所附的机器人控制标签。",
+    "uses": "人类到灵巧手的表征迁移、接触有无和多指接触模式。",
+    "caveat": "部分实验对触觉二值化，不能当作稠密连续力分布。官方OneDrive下载密码为vtdexmanip；只计真实人类数据一次，不把6个任务算6个数据集。",
+    "links": [
+      [
+        "项目",
+        "https://lqts.github.io/VTDexManip/"
+      ],
+      [
+        "官方采集图",
+        "https://lqts.github.io/VTDexManip/resources/dataset.jpg"
+      ],
+      [
+        "官方数据下载说明",
+        "https://github.com/LQTS/VTDexManipPretraining"
+      ],
+      [
+        "论文",
+        "https://openreview.net/forum?id=jf7C7EGw21"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R01",
+    "name": "VisGel",
+    "year": 2019,
+    "group": "R",
+    "evidence": "B",
+    "license": "本次未确认数据专用许可",
+    "scale": "官方代码提供data_seen约328GB、data_unseen约83.2GB、数据列表及演示集。",
+    "signals": "机器人GelSight接触视频与外部视觉视频，包含接触前后变化。",
+    "actions": "官方主要任务是视觉↔触觉预测；本次未确认发布中可用的控制action字段。",
+    "uses": "触觉生成、视觉—触觉时序对齐与表征预训练。",
+    "caveat": "项目主页本次403，但作者仓库的下载说明可读；FoTa的VisGel-small是抽样/去平坦图版，不能与原库重复计数或拿其帧数代表原库。",
+    "links": [
+      [
+        "作者仓库/下载脚本",
+        "https://github.com/YunzhuLi/VisGel"
+      ],
+      [
+        "项目",
+        "https://visgel.csail.mit.edu/"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R02",
+    "name": "Calandra抓取数据 / The Feeling of Success",
+    "year": 2017,
+    "group": "R",
+    "evidence": "B",
+    "license": "原始数据许可本次未确认",
+    "scale": "多物体抓取试验；不同论文/预处理版的trial与双指image计数不同，本文不合并成一个未经核对的总数。",
+    "signals": "机器人夹爪双GelSight图像、视觉、抓取成功/失败标签。",
+    "actions": "主要监督是抓取结果；不能默认每例具有长时程完整动作。",
+    "uses": "抓取稳定性、接触状态、触觉编码器及成功预测。",
+    "caveat": "Calandra17、后续抓取版本及FoTa/Sparsh重打包按一个来源家族计，避免版本膨胀。FoTa源码表确认收录该来源。",
+    "links": [
+      [
+        "原项目",
+        "https://sites.google.com/view/the-feeling-of-success/"
+      ],
+      [
+        "可用汇编入口",
+        "https://huggingface.co/datasets/alanz-mit/FoundationTactile"
+      ],
+      [
+        "Sparsh下载说明",
+        "https://github.com/facebookresearch/sparsh"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R03",
+    "name": "ObjectFolder-Real",
+    "year": 2023,
+    "group": "R",
+    "evidence": "B",
+    "license": "本次未确认数据专用许可",
+    "scale": "100个真实家居物体；每物体约30–50个接触位置；多分辨率mesh、视觉、声音和触觉。",
+    "signals": "GelSight系光学触觉视频、手上相机和第三视角接触视频；另有敲击声及敲击接触力。",
+    "actions": "接触位置/物体几何提供条件；非通用机器人操作action轨迹。",
+    "uses": "几何—材质—触觉对齐、局部形变过程和多模态预训练。",
+    "caveat": "与ObjectFolder 1.0/2.0的合成数据区别；声学敲击实验的力曲线不能自动当成触觉按压实验的力真值。官方明确触觉读数是视频，不能误写成只有静态图。",
+    "links": [
+      [
+        "官方数据与结构",
+        "https://objectfolder.stanford.edu/objectfolder-real-download"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R04",
+    "name": "Eagle Shoal / Visual-Tactile Dataset",
+    "year": 2019,
+    "group": "R",
+    "evidence": "B",
+    "license": "CDLA-Permissive 1.0",
+    "scale": "Intel Eagle Shoal机器人手采集的多模态抓取数据；本次未重新统计总样本数。",
+    "signals": "视觉、非光学触觉读数及抓取相关数据；官方仓库说明数据文件格式。",
+    "actions": "机器人抓取上下文；是否具备目标控制命令应以文件字段为准。",
+    "uses": "数值式触觉与视觉融合、抓取识别。",
+    "caveat": "不是GelSight图像库，不能直接套用只处理光学图像的加载器。",
+    "links": [
+      [
+        "数据仓库/许可",
+        "https://github.com/tsinghua-rll/Visual-Tactile_Dataset"
+      ],
+      [
+        "论文",
+        "https://doi.org/10.1177/1729881418821571"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R05",
+    "name": "PoseIt",
+    "year": 2022,
+    "group": "R",
+    "evidence": "B",
+    "license": "数据CC BY-SA 4.0；代码MIT",
+    "scale": "1,840次抓取数据点、26物体、16种持握姿态。",
+    "signals": "UR5e+WSG50，GelSight和WSG-DSA触觉、RGB-D、六维力/力矩、关节位置/速度和夹爪力；抓取—变姿态—晃动检验。",
+    "actions": "有机器人状态和稳定性相关标签；控制命令须再核对。",
+    "uses": "持握稳定性、姿态变化与滑移风险。",
+    "caveat": "16×26不是总trial数；不要把单次抓取样本直接视为长任务轨迹。",
+    "links": [
+      [
+        "官方数据说明/Drive",
+        "https://github.com/Robo-Touch/PoseIt"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R06",
+    "name": "YCB-Sight（真实部分）",
+    "year": 2021,
+    "group": "R",
+    "evidence": "B",
+    "license": "数据CC BY-SA 4.0；代码MIT",
+    "scale": "官方列30个仿真物体、6个真实物体；主计数只纳入真实部分。",
+    "signals": "GelSight触觉、Azure Kinect RGB-D、物体模型和接触几何。",
+    "actions": "几何与位姿条件，非通用操作动作数据。",
+    "uses": "视觉—触觉几何对齐、位姿与sim-to-real研究。",
+    "caveat": "与YCB-Slide是不同采集项目；真实与仿真文件必须分开，不把全部30物体都写成真机。",
+    "links": [
+      [
+        "官方数据/逐物体下载",
+        "https://github.com/Robo-Touch/YCB-Sight"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R07",
+    "name": "RH20T（触觉配置）",
+    "year": 2023,
+    "group": "R",
+    "evidence": "A",
+    "license": "原始条款以官方数据申请/下载说明为准；本次未确认独立数据许可",
+    "scale": "RH20T全库规模不能当作触觉子集规模；本报告仅将有触觉的配置计一次。",
+    "signals": "Cfg7的uSkin阵列触觉与腕部F/T、视觉和机器人状态；Cfg5/6主要是关节力矩/腕力。",
+    "actions": "机器人操作时序、状态与相应动作信息；应按配置读取。",
+    "uses": "阵列触觉机器人后训练、接触丰富操作；与人手压力编码器适配。",
+    "caveat": "FTP公开包中RH20TCfg7Tactile有归档；Cfg5/6不是额外两个触觉数据集。不能把所有RH20T视频/人类示范都声称带触觉。",
+    "links": [
+      [
+        "官方项目/下载",
+        "https://rh20t.github.io/"
+      ],
+      [
+        "配置/API",
+        "https://github.com/rh20t/rh20t_api"
+      ],
+      [
+        "公开转换包",
+        "https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset/tree/main/RH20TCfg7Tactile"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R08",
+    "name": "Reactive Diffusion Policy（RDP）数据",
+    "year": 2025,
+    "group": "R",
+    "evidence": "A",
+    "license": "MIT",
+    "scale": "公开full/mini和触觉表征采集子集；任务含peeling、wiping、lifting。",
+    "signals": "GelSight Mini/MCTac图像与marker位移、外部/腕部RGB、TCP姿态/速度、夹爪力/宽度、腕部wrench和时间戳。",
+    "actions": "公开Zarr示例明确有action、target、状态；不同任务/重采样频率须保持一致。",
+    "uses": "优先：动作条件触觉预测、快慢时序建模、接触反应控制。",
+    "caveat": "单臂/双臂、raw/processed、mini/full都按一个来源家族；PCA采集时长不是操作示范总时长。",
+    "links": [
+      [
+        "官方数据",
+        "https://huggingface.co/datasets/WendiChen/reactive_diffusion_policy_dataset"
+      ],
+      [
+        "代码/字段",
+        "https://github.com/xiaoxiaoxh/reactive_diffusion_policy"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R09",
+    "name": "UniT数据",
+    "year": 2024,
+    "group": "R",
+    "evidence": "A",
+    "license": "原始数据许可本次未确认",
+    "scale": "原作者README：挂鸡腿200、薯片抓取180、六角扳手插入170示范；另有表征和手内姿态子集。",
+    "signals": "带markers的GelSight Mini、视觉和真实机器人操作数据。",
+    "actions": "有操作策略学习轨迹；不是只有单物体触觉表征图。",
+    "uses": "小规模动作条件动态基准，插装/易损物体操作。",
+    "caveat": "FTP Unit/Unit_Bimanual不再额外计数。原表征“单物体20分钟内”等描述不能套到全部策略数据。",
+    "links": [
+      [
+        "作者仓库/原始Drive",
+        "https://github.com/ZhengtongXu/UniT"
+      ],
+      [
+        "公开转换包",
+        "https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset/tree/main/Unit"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R10",
+    "name": "VLA-Touch数据",
+    "year": 2025,
+    "group": "R",
+    "evidence": "A",
+    "license": "代码MIT；数据专用许可本次未确认",
+    "scale": "官方提供原始Drive及HF processed数据；本次未重新计算轨迹总数。",
+    "signals": "Franka机器人视觉、GelSight Mini触觉/marker信息和控制轨迹。",
+    "actions": "用于触觉反馈策略的机器人动作与观测。",
+    "uses": "机器人动作修正、接触阶段条件建模。",
+    "caveat": "不要与Tactile-VLA混名。FTP中VLA_touch是重打包；其时间戳/物理FPS应单独审计。",
+    "links": [
+      [
+        "官方数据",
+        "https://huggingface.co/datasets/AllenBi21/VLA-Touch"
+      ],
+      [
+        "原作者仓库",
+        "https://github.com/jxbi1010/VLA-Touch"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R11",
+    "name": "OmniViTac（OmniVTA数据）",
+    "year": 2026,
+    "group": "R",
+    "evidence": "A",
+    "license": "CC BY-NC 4.0",
+    "scale": "公开目录有多个操作任务，未从目录推断全论文训练小时数。",
+    "signals": "多类光学触觉传感器、机器人视觉与操作轨迹；论文框架支持跨传感器触觉策略。",
+    "actions": "机器人操作数据；具体每任务字段按公开文件核对。",
+    "uses": "跨传感器接触建模、策略与世界模型联合训练候选。",
+    "caveat": "OmniVTA、OmniVTLA和OmniViTac三个名字有区别；数据已发布不代表全部模型代码也已完整发布。",
+    "links": [
+      [
+        "官方数据",
+        "https://huggingface.co/datasets/tars-robotics/OmniVitac"
+      ],
+      [
+        "论文",
+        "https://arxiv.org/abs/2603.19201"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R12",
+    "name": "HapTile",
+    "year": 2026,
+    "group": "R",
+    "evidence": "A",
+    "license": "CC BY 4.0",
+    "scale": "HF有按任务打包的ZIP；涵盖折叠、插入、移动、按压、放置、移除、堆叠、旋转和擦拭。",
+    "signals": "UR5e+Robotiq 2F-85双指光学触觉，外部/腕部视觉、语言指令、marker运动、机器人状态。",
+    "actions": "HDF5 frames/control为6维delta pose+夹爪控制；逐示范freq.txt与时间戳。",
+    "uses": "优先：有明确动作字段的接触动态/策略模型训练。",
+    "caveat": "HDF5中的frames/videos是组而非普通目录；频率读取元数据，不能把任务ZIP个数当成示范个数。",
+    "links": [
+      [
+        "数据",
+        "https://huggingface.co/datasets/HapTile2026/HapTile"
+      ],
+      [
+        "字段定义",
+        "https://haptile-dataset.github.io/"
+      ],
+      [
+        "下载可视化工具",
+        "https://github.com/HapTile-dataset/Dataset_quickstart"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R13",
+    "name": "LET-Dex Dataset",
+    "year": 2025,
+    "group": "R",
+    "evidence": "A",
+    "license": "CC BY-NC-SA 4.0",
+    "scale": "官方首批真机灵巧手力触觉数据；本次以可见文件为发布证据，不把整个LET平台总量纳入。",
+    "signals": "Kuavo 4 Pro/轮式平台、Linker Hand L6；5指6×12触觉阵列、六维力/力矩、RGB-D、关节及任务标注。",
+    "actions": "ROSbag原始流和转换工具；机器人控制/状态须按topic区分。",
+    "uses": "优先：分布式指尖触觉、灵巧手动作后训练。",
+    "caveat": "LET全库和LET-Dex触觉子库不能重复计数；数据卡部分旧下载别名与现仓库名不同，优先使用本条HF地址。",
+    "links": [
+      [
+        "官方数据",
+        "https://huggingface.co/datasets/LejuRobotics/LET-Dex-Dataset"
+      ],
+      [
+        "转换工具",
+        "https://github.com/LejuRobotics/kuavo_data_challenge"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R14",
+    "name": "Humanoid Everyday（触觉部分）",
+    "year": 2025,
+    "group": "R",
+    "evidence": "A",
+    "license": "Apache 2.0",
+    "scale": "作者数据卡：260+任务、7大类，30Hz多模态；仅触觉可用部分应进入触觉训练。",
+    "signals": "人形机器人遥操作；RGB、depth、LiDAR、触觉与IMU；FTP引用Unitree Dex3相关信号。",
+    "actions": "机器人操作序列，提供LeRobot及原始下载表。",
+    "uses": "人形/灵巧手本体多样性、触觉与全身操作关联。",
+    "caveat": "不能假设每条、每个平台都含同一触觉字段；数据卡使用过USC-GVL旧命名，现发布方为USC-PSI-Lab。",
+    "links": [
+      [
+        "官方数据",
+        "https://huggingface.co/datasets/USC-PSI-Lab/humanoid-everyday"
+      ],
+      [
+        "论文",
+        "https://arxiv.org/abs/2510.08807"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R15",
+    "name": "白虎-VTouch / OpenLoong visuo-tactile",
+    "year": 2026,
+    "group": "R",
+    "evidence": "A",
+    "license": "CC BY-NC-SA 4.0",
+    "scale": "官方ModelScope条目标示约16TB；含青龙、D-WHEEL及手持PIKA平台，100+原子技能（不是已核实任务数）。",
+    "signals": "多路真实视触觉、头/腕RGB-D、关节位姿与HDF5操作序列。",
+    "actions": "机器人与手持工具子集分别有运动字段，需按平台处理。",
+    "uses": "大规模视触觉操作候选；可用于跨本体动作条件模型。",
+    "caveat": "这里按一个跨本体来源家族计入R；PIKA部分不再计入U。FTP的VisuoTactile_D-WHEEL/QINGLOONG也是该家族，不能再加两个；16TB不是小时数。",
+    "links": [
+      [
+        "官方数据",
+        "https://www.modelscope.cn/datasets/OpenLoong-Community/visuo-tactile"
+      ],
+      [
+        "官方可读数据卡",
+        "https://www.modelscope.cn/datasets/OpenLoong-Community/visuo-tactile.md"
+      ],
+      [
+        "可见归档",
+        "https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset/tree/main/VisuoTactile_D-WHEEL"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R16",
+    "name": "Sharpa North-FTP-1",
+    "year": 2026,
+    "group": "R",
+    "evidence": "A",
+    "license": "汇编平台标MIT；独立原始数据授权仍需核对",
+    "scale": "FTP-1论文报告约4,000条长时程灵巧操作示范；公开包有sharpa分卷。",
+    "signals": "Sharpa North灵巧手、DTC视触觉及机器人视觉/状态/动作。",
+    "actions": "灵巧手操作轨迹；具体控制坐标与触觉时间轴应读取解包schema。",
+    "uses": "光学指尖触觉灵巧手的动作条件建模和长任务学习。",
+    "caveat": "这是FTP作者新增采集来源，计一次；不额外计FTP汇编。4,000是论文报告，不是本次解包后的完整轨迹统计。",
+    "links": [
+      [
+        "公开数据",
+        "https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset/tree/main/sharpa"
+      ],
+      [
+        "论文及来源表",
+        "https://arxiv.org/abs/2606.13102"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R17",
+    "name": "Tactile MNIST（Real）",
+    "year": 2025,
+    "group": "R",
+    "evidence": "A",
+    "license": "CC BY 2.0（真实序列数据卡）；代码MIT",
+    "scale": "Franka在3D打印MNIST数字上采集；真实单帧/序列和不同分辨率是同一来源的不同表示。",
+    "signals": "真实光学触觉图像/序列、数字形状分类标签；套件还含独立仿真任务。",
+    "actions": "适合主动感知/形状识别；不等于多任务操作指令数据。",
+    "uses": "受控几何感知基准、主动触摸与接触覆盖。",
+    "caveat": "仅Real计数；synthetic、ABC mesh、Starstruck和缩放图像版不增加真实数据集数量。",
+    "links": [
+      [
+        "真实序列数据",
+        "https://huggingface.co/datasets/TimSchneider42/tactile-mnist-touch-real-seq-t256-320x240"
+      ],
+      [
+        "官方工具",
+        "https://github.com/TimSchneider42/tactile-mnist"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R18",
+    "name": "ARQ-CRISP Slip Detection Dataset",
+    "year": 2021,
+    "group": "R",
+    "evidence": "B",
+    "license": "本次未确认数据专用许可",
+    "scale": "3物体×3摆放姿态×10次，合计90次抓取。",
+    "signals": "真实自主pick-and-place中的触觉与滑移标签，官方HDF5按物体组织。",
+    "actions": "抓取过程时序；公开读取脚本可分离各试验。",
+    "uses": "滑移事件预测、接触状态切换和稳定性评估。",
+    "caveat": "物体多样性较小，不适合作为通用操作世界模型唯一来源。",
+    "links": [
+      [
+        "数据及协议",
+        "https://github.com/ARQ-CRISP/slip_detection_dataset_2021"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R19",
+    "name": "iCub Hybrid Touch Texture Dataset",
+    "year": 2019,
+    "group": "R",
+    "evidence": "B",
+    "license": "本次未确认数据专用许可",
+    "scale": "23种材质，提供touch和slide试验。",
+    "signals": "iCub前臂触觉皮肤、15DoF机械臂编码器、skin_events力相关信号。",
+    "actions": "机器人状态与探索过程；主要面向材质识别。",
+    "uses": "非光学触觉动态、静态接触与滑动联合建模。",
+    "caveat": "与后续加工后的iCub材质数据需按原始采集来源去重。",
+    "links": [
+      [
+        "官方数据",
+        "https://github.com/clear-nus/TactileLearning"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R20",
+    "name": "Doro/Jaco OptoForce Object Classification",
+    "year": 2021,
+    "group": "R",
+    "evidence": "B",
+    "license": "数据许可未明确；作者说明允许使用/修改代码不能替代数据许可",
+    "scale": "作者仓库Test目录提供real-life dataset；本次未确认总试验数。",
+    "signals": "Doro平台Jaco机械臂、3个OptoForce传感器的物体触觉分类数据。",
+    "actions": "触觉物体识别；不默认具有长序列控制命令。",
+    "uses": "少通道/力式触觉的跨传感器表征补充。",
+    "caveat": "规模与标注粒度需读取manual.py和数据；优先级低于有完整动作的操作库。",
+    "links": [
+      [
+        "原作者数据仓库",
+        "https://github.com/philipmaus/Tactile_Object_Classification"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R21",
+    "name": "BioTac_slide_20_50",
+    "year": 2021,
+    "group": "R",
+    "evidence": "B",
+    "license": "本次未确认数据专用许可",
+    "scale": "20种材料，每类50条，合计1,000条滑动试验；预处理单例400×44。",
+    "signals": "BioTac原始传感通道，机械臂笛卡尔位置/速度/wrench、关节位置/速度/力矩CSV；并有预切分训练数据。",
+    "actions": "包含机器人状态与控制实验上下文；不应把状态/力矩直接等同目标action。",
+    "uses": "传统多物理触觉、滑动材质建模、跨传感器预训练。",
+    "caveat": "BioTac原始44字段不都是同一种力学量；与其compiled_data和后续论文预处理包合并为一个来源。",
+    "links": [
+      [
+        "官方数据",
+        "https://github.com/dexrob/BioTac_slide_20_50"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R22",
+    "name": "Active Clothing Material Perception（Yuan18）",
+    "year": 2018,
+    "group": "R",
+    "evidence": "B",
+    "license": "本次未确认数据专用许可",
+    "scale": "Sparsh官方说明其使用版有4,467段短片、每段10–25帧、20类衣物材质。",
+    "signals": "机器人GelSight抓取衣物的触觉短视频、材料/属性相关标签。",
+    "actions": "短程抓取过程；并非通用任务动作库。",
+    "uses": "柔性物体与材质表征，接触形变辨识。",
+    "caveat": "本条合并Yuan18/Clothing处理版本；不把未核实的GelFabric、ViTac Cloth一概当成其别名。FoTa可作为已发布数据的补充入口。",
+    "links": [
+      [
+        "原始数据归档",
+        "http://data.csail.mit.edu/active_clothing/Data_ICRA18.tar"
+      ],
+      [
+        "公开汇编",
+        "https://huggingface.co/datasets/alanz-mit/FoundationTactile"
+      ],
+      [
+        "下游数据说明",
+        "https://github.com/facebookresearch/sparsh"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "R23",
+    "name": "SSVTP",
+    "year": 2023,
+    "group": "R",
+    "evidence": "A",
+    "license": "原始数据专用许可本次未确认",
+    "scale": "4,587组image-touch pairs（TVL论文明确说明其上游SSVTP部分）。",
+    "signals": "UR5机器人、DIGIT触觉与台面RGB；机器人先拍视觉再到对应位置接触。",
+    "actions": "主要是单次触碰的视觉—触觉对，不是同步动态操作序列。",
+    "uses": "视觉与局部触觉表征对齐。",
+    "caveat": "图像与触觉并非同时拍摄；TVL包内ssvtp目录是该来源，单独计源后不把TVL全包另计。",
+    "links": [
+      [
+        "公开数据（TVL内ssvtp）",
+        "https://huggingface.co/datasets/mlfu7/Touch-Vision-Language-Dataset"
+      ],
+      [
+        "来源与采集协议",
+        "https://arxiv.org/abs/2402.13232"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "U01",
+    "name": "FreeTacMan",
+    "year": 2025,
+    "group": "U",
+    "evidence": "A",
+    "license": "数据MIT；代码仓库Apache 2.0",
+    "scale": "3M+视触觉图像对、10K+轨迹、50任务。",
+    "signals": "人操持的双指视触觉采集装置；腕视角与双指触觉视频，TCP位姿/四元数/夹爪距离和时间戳。",
+    "actions": "工具轨迹与夹爪开合；可映射到机器人，但不是机器人本体实际执行数据。",
+    "uses": "优先：规模较大的动作/运动条件触觉动态预训练。",
+    "caveat": "每路、每帧、pair的计数不可直接换算小时；FTP内的同名包不再计数。",
+    "links": [
+      [
+        "官方数据",
+        "https://huggingface.co/datasets/OpenDriveLab/FreeTacMan"
+      ],
+      [
+        "官方代码",
+        "https://github.com/OpenDriveLab/FreeTacMan"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "U02",
+    "name": "Touch in the Wild",
+    "year": 2025,
+    "group": "U",
+    "evidence": "A",
+    "license": "MIT",
+    "scale": "官方发布示范与预训练Zarr包；本次未核实统一总时长。",
+    "signals": "人手持触觉夹爪、GoPro、数值式触觉阵列、SLAM工具位姿；有完整SLAM和仅视觉—触觉两种处理管线。",
+    "actions": "完整操作包有运动/夹爪信息；visuo-tactile-only预训练包没有相同动作监督。",
+    "uses": "优先：阵列触觉运动条件建模、自然场景操作泛化。",
+    "caveat": "不是自由人手全手压力录制；只含视觉触觉的预训练子集不能冒充动作条件样本。",
+    "links": [
+      [
+        "官方数据",
+        "https://huggingface.co/datasets/binghaohuang-robot/touch_in_the_wild-dataset"
+      ],
+      [
+        "代码/数据管线",
+        "https://github.com/XinyueZhuXY/touch_in_the_wild"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "U03",
+    "name": "exUMI",
+    "year": 2025,
+    "group": "U",
+    "evidence": "A",
+    "license": "本次未确认数据专用许可",
+    "scale": "论文表征采集约5小时、480K触觉帧；公开任务Zarr覆盖范围与这两个数字不可默认相同。",
+    "signals": "扩展式人操持工具、GoPro、视触觉传感器；camera0_rgb、EEF位置/轴角、夹爪宽度、tactile_combined。",
+    "actions": "工具运动与抓口轨迹，episode_ends保存序列边界。",
+    "uses": "动作/运动条件触觉表示和工具到机器人迁移。",
+    "caveat": "示例shape仅代表某文件；控制目标与观测位姿的时间差仍需审计。",
+    "links": [
+      [
+        "官方数据",
+        "https://huggingface.co/datasets/silicx/exUMI"
+      ],
+      [
+        "代码",
+        "https://github.com/silicx/exUMI"
+      ],
+      [
+        "论文",
+        "https://arxiv.org/abs/2509.14688"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "U04",
+    "name": "ViTaMIn",
+    "year": 2025,
+    "group": "U",
+    "evidence": "A",
+    "license": "MIT（作者HF数据卡）",
+    "scale": "作者HF提供8个文件条目；数据规模/时长本文不根据文件数推断。",
+    "signals": "robot-free视触觉操控夹爪，视觉、触觉与工具运动信息。",
+    "actions": "工具演示轨迹用于策略学习。",
+    "uses": "接触丰富任务运动条件模型、UMI到机器人迁移。",
+    "caveat": "项目页Code coming soon不等于数据未公开：HF及FTP均有数据。ViTaMIn-B/后续版本需按新旧采集部分另审，本文不额外计数。",
+    "links": [
+      [
+        "作者数据",
+        "https://huggingface.co/datasets/chuanyune/ViTaMIn_dataset"
+      ],
+      [
+        "项目",
+        "https://chuanyune.github.io/ViTaMIn_page/"
+      ],
+      [
+        "论文",
+        "https://arxiv.org/abs/2504.06156"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "U05",
+    "name": "Daimon-Infinity",
+    "year": 2026,
+    "group": "U",
+    "evidence": "B",
+    "license": "CC BY-NC-SA 4.0",
+    "scale": "作者README称首批发布1,000小时，另用约1,209小时已采集数据做统计；10,000小时是后续开放目标。",
+    "signals": "主要DM-DataClaw手持夹爪，少量DM-DataDex外骨骼；视觉、指尖触觉形变/剪切/深度、运动和语言，LeRobot式格式。",
+    "actions": "工具/外骨骼运动轨迹；按设备解释，不能统称自主机器人执行。",
+    "uses": "大规模接触动态预训练的重点候选，先抽样核对原始触觉编码。",
+    "caveat": "官方ModelScope页面存在但本次未取得完整文件manifest；1,000小时是作者发布声明，未经本次逐轨迹验证。Lite不再算一个数据集。",
+    "links": [
+      [
+        "官方说明/许可",
+        "https://github.com/dmrobot-admin/Daimon-Infinity"
+      ],
+      [
+        "数据入口",
+        "https://modelscope.cn/datasets/daimonrobotics/Daimon-Infinity"
+      ],
+      [
+        "样例",
+        "https://modelscope.cn/datasets/daimonrobotics/Daimon-Infinity-Lite"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "H01",
+    "name": "STAG",
+    "year": 2019,
+    "group": "H",
+    "evidence": "B",
+    "license": "本次未确认数据专用许可",
+    "scale": "548传感点、135,000帧、26物体；另有蒙眼、重量预测和手姿态子集。",
+    "signals": "真实人类全手压阻织物手套触觉。",
+    "actions": "没有已核实的ego视频与机器人动作组合。",
+    "uses": "全手压力空间结构、抓型/物体识别、压力编码器。",
+    "caveat": "不能因采集者是人就算ego视频数据；同站多个任务ZIP按一个来源家族计。",
+    "links": [
+      [
+        "官方项目与下载",
+        "https://stag.csail.mit.edu/"
+      ],
+      [
+        "数据轻量版",
+        "https://stag.csail.mit.edu/datasets/classification_lite.zip"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "H02",
+    "name": "PressureVisionDB",
+    "year": 2022,
+    "group": "H",
+    "evidence": "B",
+    "license": "MIT（明确覆盖数据与代码）",
+    "scale": "36人、4相机、16小时；全版15FPS约960GB，小版3FPS约140GB。",
+    "signals": "固定外部RGB与桌面压力传感器测得的压力图。",
+    "actions": "人手压力估计数据，非机器人控制示范。",
+    "uses": "皮肤外观—压力关系、压力图预测与校准基准。",
+    "caveat": "不是ego；PressureVision++另有弱标签采集，不能将++所有样本当作压力传感器真值。",
+    "links": [
+      [
+        "官方代码/下载器/许可",
+        "https://github.com/facebookresearch/PressureVision"
+      ],
+      [
+        "论文",
+        "https://arxiv.org/abs/2203.10385"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "H03",
+    "name": "PX OmniSharing DB SampleData",
+    "year": 2026,
+    "group": "H",
+    "evidence": "A",
+    "license": "CC BY-NC-SA 4.0（数据卡正文）",
+    "scale": "公开样例；任务表列9项各100，正文又称10任务，且目录有1,002个文件条目，不据此给出未经核实的episode总数。",
+    "signals": "人类数据手套：双手29维关节、7维handpose、每手3465长度触觉字段、多视角RGB/RGB-D、音频/文字、物体位姿；DF-2 HDF5。",
+    "actions": "有action/observation结构和重定向工具；action的时序语义需核查。",
+    "uses": "优先：双手运动与触觉联合建模、重定向管线原型。",
+    "caveat": "当前可读卡只明确multi-view，没有明确证明公开样例全为头戴ego，因此保守列H，不加到严格ego数。3465是存储向量长度，不等于3465独立taxels；样例不等于商业全库。",
+    "links": [
+      [
+        "官方样例数据",
+        "https://huggingface.co/datasets/paxini/Omnisharing_DB_SampleData"
+      ],
+      [
+        "处理和重定向工具",
+        "https://github.com/px-DataCollection/px_omnisharing_dataprocess_kit"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "H04",
+    "name": "FusionX Multimodal Sample Dataset V3",
+    "year": 2026,
+    "group": "H",
+    "evidence": "A",
+    "license": "CC BY 4.0",
+    "scale": "11项任务的公开样例。",
+    "signals": "双目灰度640×400、720p RGB、OAK IMU、同步触觉手套、calib.json与frames.parquet。",
+    "actions": "数据卡未确认连续可执行动作/完整手关节。",
+    "uses": "双目视觉与手套触觉融合、标定和时间对齐原型。",
+    "caveat": "卡片未明言相机安装为头戴ego，本条不放入严格E。另一个zhicao/egoforce录制库虽写ego，但来源重叠与授权未厘清，不能据其说明改变本条分类或直接重复加数。",
+    "links": [
+      [
+        "发布方数据",
+        "https://huggingface.co/datasets/touchtronix/FusionX-Multimodal-Sample-Data-V3"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "H05",
+    "name": "Tachin Fixed Viewpoint Tactile Dataset",
+    "year": 2026,
+    "group": "H",
+    "evidence": "A",
+    "license": "Apache 2.0",
+    "scale": "160 episodes、59,158帧，20FPS。",
+    "signals": "固定机位RGB/深度、20路触觉、20个动捕点位置与四元数；LeRobot v3。",
+    "actions": "action[140]明确等于当前帧动捕位置60⊕四元数80。",
+    "uses": "人手空间触觉与运动关系、时序预测。",
+    "caveat": "字段叫action不代表控制命令；没有单独的未来控制目标。robot_type字符串也不能证明是机器人采集，按实际动捕说明列人手非ego。",
+    "links": [
+      [
+        "发布方数据/字段定义",
+        "https://huggingface.co/datasets/Tachintech/Fixed_Viewpoint_Tactile_Dataset"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "H06",
+    "name": "Tactile Gesture Language",
+    "year": 2026,
+    "group": "H",
+    "evidence": "A",
+    "license": "GPL 3.0（数据卡）",
+    "scale": "10位参与者、10类接触手势。",
+    "signals": "平面32×32触觉阵列；抚摸、敲击、按压、抓挠等时序，按参与者/手势组织。",
+    "actions": "手势分类与触觉动态，没有ego视频/机器人动作声明。",
+    "uses": "触觉事件、接触类型和时间模式预训练。",
+    "caveat": "名称含Language不等于逐帧自然语言指令；可读数据卡主要定义手势类别。",
+    "links": [
+      [
+        "发布方数据",
+        "https://huggingface.co/datasets/Tachintech/Tactile_Gesture_Language"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "P01",
+    "name": "TVL-HCT（TVL新增人采部分）",
+    "year": 2024,
+    "group": "P",
+    "evidence": "A",
+    "license": "代码Apache 2.0；数据独立许可本次未确认",
+    "scale": "原论文：39,154组接触图像对、169,292组无接触对；另复用SSVTP的4,587组。",
+    "signals": "人手持DIGIT与RGB采集装置，同步视觉—触觉，触觉形容词/文本。",
+    "actions": "没有机器人动作；多数接触语言标签由GPT-4V生成。",
+    "uses": "触觉—视觉—语言编码器、接触语义对齐。",
+    "caveat": "本条只为新增HCT采集计数，SSVTP已列R23，TVL全包不再加1。官方提示原版视觉/触觉文件夹交换问题并链接修正版；人采相机不直接等同头戴ego。",
+    "links": [
+      [
+        "官方数据及修复说明",
+        "https://huggingface.co/datasets/mlfu7/Touch-Vision-Language-Dataset"
+      ],
+      [
+        "论文",
+        "https://arxiv.org/abs/2402.13232"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "P02",
+    "name": "TacQuad（AnyTouch）",
+    "year": 2025,
+    "group": "P",
+    "evidence": "A",
+    "license": "MIT",
+    "scale": "精细时空对齐：25物体/17,524接触帧；粗空间对齐：99物体/55,082接触帧。",
+    "signals": "GelSight Mini、DIGIT、DuraGel、Tac3D四种传感器，视觉与文本。",
+    "actions": "有对应接触位置/过程，非通用机器人动作序列。",
+    "uses": "优先：跨传感器对齐、传感器迁移和统一触觉编码。",
+    "caveat": "粗对齐子集不保证时间对齐；不要把四种传感器的同一接触视为4条独立行为。text_other.zip是其他数据的派生标注，不是新的原始采集。",
+    "links": [
+      [
+        "官方数据",
+        "https://huggingface.co/datasets/xxuan01/TacQuad"
+      ],
+      [
+        "方法/加载器",
+        "https://github.com/GeWu-Lab/AnyTouch"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "P03",
+    "name": "HPT / HTT Dataset",
+    "year": 2026,
+    "group": "P",
+    "evidence": "A",
+    "license": "CC BY-NC 4.0",
+    "scale": "卡片称约1.59M frames；pretrain 1,789 episodes、classification 599；static/sliding各401/405。",
+    "signals": "GelSight Mini、9DTact图像，Xela uSkin 72维、TAC-02 66维阵列；力/滑移标签、同步配对。",
+    "actions": "静态探测与滑动试验，无通用操作控制动作声明。",
+    "uses": "优先：光学与数值阵列统一表示、6D力估计与滑移识别。",
+    "caveat": "卡片的frame合计跨光学/阵列采样率，且force统计含sliding、slip也统计该sliding；1.59M不是独立接触事件或唯一同步时间点，必须去重。",
+    "links": [
+      [
+        "官方数据/manifest",
+        "https://huggingface.co/datasets/AllenBi21/HTT-dataset"
+      ],
+      [
+        "代码",
+        "https://github.com/jxbi1010/HTT"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "P04",
+    "name": "TaF-Dataset",
+    "year": 2026,
+    "group": "P",
+    "evidence": "A",
+    "license": "MIT",
+    "scale": "数据卡：10,053,265同步帧、3,592 episodes、408 object/sensor sequences、6传感器配置。",
+    "signals": "240×320触觉图像、12×12压力矩阵、ATI六维F/T和时间戳；LeRobot v3。",
+    "actions": "卡片列出的核心字段没有外部场景RGB/robot action；不是自动可用的完整VLA轨迹。",
+    "uses": "优先：触觉与真实力学信号对齐，跨传感器触觉编码与物理辅助损失。",
+    "caveat": "408是物体/传感器序列组合，不是408个独立物体；observation.image是触觉传感器内部图，不是场景相机。",
+    "links": [
+      [
+        "官方数据/字段/许可",
+        "https://huggingface.co/datasets/jiamig/taf-dataset"
+      ],
+      [
+        "方法代码",
+        "https://github.com/mrHuangyz/TaF-VLA"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "P05",
+    "name": "Touch-Slide",
+    "year": 2024,
+    "group": "P",
+    "evidence": "A",
+    "license": "CC BY-NC 4.0",
+    "scale": "9物体×5轨迹，约180K帧。",
+    "signals": "人手操持多个DIGIT在厨房玩具物体表面滑动的触觉图像。",
+    "actions": "官方明确无标签，主要做SSL。",
+    "uses": "触觉时序/表征预训练、传感器背景鲁棒性。",
+    "caveat": "不是YCB-Slide的另一名称；是Sparsh新增独立采集，但Sparsh汇编不再重复计。",
+    "links": [
+      [
+        "官方数据",
+        "https://huggingface.co/datasets/facebook/touch-slide"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "P06",
+    "name": "YCB-Slide（Real）",
+    "year": 2022,
+    "group": "P",
+    "evidence": "B",
+    "license": "MIT",
+    "scale": "10个YCB物体、每物体5条，合计50次真实滑动交互。",
+    "signals": "DIGIT触觉、RGB视频、OptiTrack传感器位姿、物体mesh；另有TACTO仿真部分。",
+    "actions": "真实传感器运动轨迹；不等同于机器人控制命令。",
+    "uses": "运动条件触觉预测、触觉定位/建图。",
+    "caveat": "真实数据为传感器在固定物体上移动；仿真heightmap/contact mask不是真实采集额外测量。只计Real来源一次。",
+    "links": [
+      [
+        "官方数据/下载",
+        "https://github.com/rpl-cmu/YCB-Slide"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "P07",
+    "name": "Sparsh / TacBench原创监督数据",
+    "year": 2024,
+    "group": "P",
+    "evidence": "A",
+    "license": "CC BY-NC 4.0",
+    "scale": "原创DIGIT/GelSight力—滑移试验与DIGIT手内姿态试验，按同一发布家族计1。",
+    "signals": "3种探针形状、ATI nano17力真值、法向/剪切/滑移；三指DIGIT+物体SE(3)位姿、机器人手关节。",
+    "actions": "受控施力与人扰动物体的序列；姿态变化/力监督不等于可执行动作。",
+    "uses": "优先：力、滑移和姿态探针任务，验证编码器是否保留控制相关信息。",
+    "caveat": "TacBench还复用抓取/衣物数据，不把整个6项任务各算新数据；本条只计作者新增采集，两种sensor不是两个独立家族。",
+    "links": [
+      [
+        "DIGIT力/滑移",
+        "https://huggingface.co/datasets/facebook/digit-force-estimation"
+      ],
+      [
+        "GelSight力/滑移",
+        "https://huggingface.co/datasets/facebook/gelsight-force-estimation"
+      ],
+      [
+        "DIGIT姿态",
+        "https://huggingface.co/datasets/facebook/digit-pose-estimation"
+      ],
+      [
+        "采集协议",
+        "https://github.com/facebookresearch/sparsh"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "P08",
+    "name": "TactileTracking / NormalFlow Dataset",
+    "year": 2024,
+    "group": "P",
+    "evidence": "A",
+    "license": "MIT",
+    "scale": "12物体、84次试验、每物体7次，平均每次10.2秒。",
+    "signals": "无marker GelSight Mini触觉视频、外部webcam、动捕逐帧6DoF传感器位姿、派生接触mask/梯度。",
+    "actions": "有真实位姿轨迹；无通用机器人控制动作。",
+    "uses": "局部触觉运动预测、接触跟踪与几何表示。",
+    "caveat": "目标是短程连续重叠接触；mask/梯度由触觉图像计算，不是第二套独立传感器真值。",
+    "links": [
+      [
+        "官方数据",
+        "https://huggingface.co/datasets/joehjhuang/TactileTracking"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "P09",
+    "name": "GelSLAM Dataset",
+    "year": 2025,
+    "group": "P",
+    "evidence": "A",
+    "license": "MIT",
+    "scale": "长程跟踪20物体/140 episodes，平均约21秒；重建另有15物体扫描。",
+    "signals": "GelSight Mini视频、跟踪部分的动捕6DoF轨迹、背景/标定；重建部分人手持物体与传感器扫描。",
+    "actions": "跟踪部分有位姿；重建部分不能默认有相同运动真值。",
+    "uses": "长程触觉预测、跨接触断开重初始化、触觉几何记忆。",
+    "caveat": "重建子集官方明确不提供GT mesh；跟踪和重建按一个发布家族计，NormalFlow是另一采集来源。",
+    "links": [
+      [
+        "官方数据及局限",
+        "https://huggingface.co/datasets/joehjhuang/GelSLAM_dataset"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "P10",
+    "name": "GelSight Sim2Real（真实A域）",
+    "year": 2022,
+    "group": "P",
+    "evidence": "B",
+    "license": "本次未确认数据专用许可",
+    "scale": "每物体真实/仿真各1,200触觉图，作者提供完整归档。",
+    "signals": "真实GelSight系图像和仿真图像，支持CycleGAN域转换及深度重建。",
+    "actions": "不是操作动作轨迹库。",
+    "uses": "传感器域适配、光照/背景鲁棒性、sim-to-real。",
+    "caveat": "归档A为真实、B为仿真；CycleGAN不要求样本逐一配对，不能把它称作精确同姿态真实—仿真真值对。",
+    "links": [
+      [
+        "官方数据/协议",
+        "https://github.com/RVSATHU/GelSight-Sim2Real"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "P11",
+    "name": "PhysiCLeAR（Octopi 1.0/1.5）",
+    "year": 2024,
+    "group": "P",
+    "evidence": "B",
+    "license": "本次未确认数据专用许可",
+    "scale": "日常物体接触视频及物理属性/语言任务；本文不把抽帧数当原始接触数。",
+    "signals": "人手持GelSight Mini按压/旋转，硬度、粗糙度、凹凸等物理标签；后续含不同表面marker版本。",
+    "actions": "无通用机器人动作监督。",
+    "uses": "触觉语言语义、物理属性辨识与多物体比较。",
+    "caveat": "原Octopi README主要列模型权重；本次以Octopi1.5明确标为tactile datasets的Drive入口确认数据，合并版本不重复计数。",
+    "links": [
+      [
+        "官方数据下载说明",
+        "https://github.com/clear-nus/octopi-1.5"
+      ],
+      [
+        "数据归档",
+        "https://drive.google.com/file/d/1ckSzE4DxSiq4U34gWBIUGreImryLw94c/view"
+      ],
+      [
+        "原项目",
+        "https://octopi-tactile-lvlm.github.io/"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "P12",
+    "name": "Touch-Ex",
+    "year": 2026,
+    "group": "P",
+    "evidence": "A",
+    "license": "CC BY 4.0",
+    "scale": "135K+触觉帧、1,128接触、23家居物体；14训练物体、9未见测试物体。",
+    "signals": "人手持DIGIT，背面FSR402测施加力，滑动/旋转序列，区域/材质/硬度/文字标注。",
+    "actions": "没有机器人控制轨迹，也不含外部物体RGB。",
+    "uses": "区域级材质语义、触觉力等级、短序列预测。",
+    "caveat": "标题visuo-tactile指传感器内部图像；背面FSR提供按压力估计，不能当物体接触面全分布力或精确6D wrench。",
+    "links": [
+      [
+        "发布方数据及采集说明",
+        "https://huggingface.co/datasets/gemixin/touch-ex"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "P13",
+    "name": "Tactile Deformation Response",
+    "year": 2026,
+    "group": "P",
+    "evidence": "A",
+    "license": "GPL 3.0",
+    "scale": "32×32阵列，每样本64时刻；任务为rigid/deformable分类；未报未经核对的独立物体数。",
+    "signals": "去基线、归一化触觉响应时序，NPZ+JSON metadata，官方提供train/validation/test。",
+    "actions": "无动作或场景视频声明。",
+    "uses": "数值触觉序列编码、刚柔响应辨识。",
+    "caveat": "归一化响应不等于牛顿/帕斯卡物理量；stiffness为人工估计/实验参考，非标定刚度真值。64×32×32第一维是时间，不是64个传感器。",
+    "links": [
+      [
+        "发布方数据",
+        "https://huggingface.co/datasets/Tachintech/tactile-deformation-response"
+      ]
+    ],
+    "counted": true
+  },
+  {
+    "id": "C01",
+    "name": "TouchScale",
+    "year": 2026,
+    "group": "E",
+    "evidence": "C",
+    "license": "CC BY-NC 4.0；HF自动条款门控",
+    "scale": "2026-10-09数据卡：当前100小时；完整500小时计划2026年11月前发布。卡片并列15,324 episodes、929任务、22场景，应进一步确认这些总量与100小时子集的对应关系。",
+    "signals": "头戴RGB-D、双腕RGB、双手各880taxels；30Hz视频；自然语言任务。",
+    "actions": "人类演示；不能因论文有机器人后训练就认为公开100小时全为机器人动作轨迹。",
+    "uses": "高优先级条件开放候选：扩大人类视觉—触觉预训练。",
+    "caveat": "API gated=auto；公共README经blob/resolve路径可读，不代表payload无门控。仅核实卡片/文件目录，未接受条款或下载受限数据。论文/网页500小时不能写成当前开放500小时。",
+    "links": [
+      [
+        "发布状态及数据",
+        "https://huggingface.co/datasets/2077AIDataFoundation/TouchScale"
+      ],
+      [
+        "项目",
+        "https://touch-scale.github.io/"
+      ]
+    ],
+    "counted": false
+  },
+  {
+    "id": "C02",
+    "name": "ToucHD（AnyTouch 2，真实Force/Mani）",
+    "year": 2026,
+    "group": "P",
+    "evidence": "C",
+    "license": "MIT；HF自动条款门控，要求联系方式/单位/国家",
+    "scale": "全套2,426,174 contact samples包含仿真；Force为722,436 touch-force pairs，Mani约585K；其余约1,119K为Sim。",
+    "signals": "多类光学触觉、力、动态操控序列；Force涉及71种压头及受控滑动。",
+    "actions": "Force是受控物理过程；Mani的动作字段要逐文件确认。",
+    "uses": "高优先级：动态触觉/力对齐与跨传感器预训练。",
+    "caveat": "Force/Mani按一个数据集家族计；不能把包含Sim的2.43M全部当真实触觉。匿名raw为401，仅条件开放统计加1。",
+    "links": [
+      [
+        "Force",
+        "https://huggingface.co/datasets/BAAI/ToucHD-Force"
+      ],
+      [
+        "Mani",
+        "https://huggingface.co/datasets/BAAI/ToucHD-Mani"
+      ],
+      [
+        "项目",
+        "https://gewu-lab.github.io/AnyTouch2/"
+      ]
+    ],
+    "counted": false
+  },
+  {
+    "id": "F01",
+    "name": "REASSEMBLE",
+    "year": 2025,
+    "group": "F",
+    "evidence": "A",
+    "license": "代码MIT；数据以TUData页面条款为准",
+    "scale": "4,551示范、4,035成功、781分钟；17物体，pick/insert/remove/place。",
+    "signals": "机器人RGB、多视角、事件相机、麦克风、六维F/T、本体状态。",
+    "actions": "机器人时序、分段、成败和语言标签。",
+    "uses": "接触丰富装配的力觉世界模型。",
+    "caveat": "腕部六维力/力矩不等于指尖触觉阵列/触觉图像，故不进入主触觉计数；与FTP内重打包去重。",
+    "links": [
+      [
+        "官方数据",
+        "https://researchdata.tuwien.ac.at/records/0ewrv-8cb44"
+      ],
+      [
+        "字段/作者说明",
+        "https://github.com/TUWIEN-ASL/REASSEMBLE"
+      ]
+    ],
+    "counted": false
+  },
+  {
+    "id": "F02",
+    "name": "MotionTrans（FTP公开机器人部分）",
+    "year": 2025,
+    "group": "F",
+    "evidence": "A",
+    "license": "原始数据许可本次未确认",
+    "scale": "论文3,213条为人类/机器人混合示范；不能作为公开触觉轨迹数量。",
+    "signals": "跨本体动作；FTP收录InspireHand state类型力学信号。",
+    "actions": "有运动迁移轨迹；触觉/力字段物理含义需看Inspire接口。",
+    "uses": "动作空间迁移、力学状态辅助。",
+    "caveat": "未在本次证据中确认公开部分为可与压力阵列等同的直接触觉，保守列扩展力觉类，不混入R。",
+    "links": [
+      [
+        "项目",
+        "https://motiontrans.github.io/"
+      ],
+      [
+        "公开包",
+        "https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset/tree/main/MotionTrans"
+      ]
+    ],
+    "counted": false
+  },
+  {
+    "id": "A01",
+    "name": "Foundation Tactile / FoTa",
+    "year": 2024,
+    "group": "A",
+    "evidence": "A",
+    "license": "汇编卡MIT；原始来源许可仍须逐项保留",
+    "scale": "3M+图像、13种传感器、11任务。",
+    "signals": "多种光学触觉与任务标签，WebDataset tar格式。",
+    "actions": "主要表征数据；各来源动作和时序信息不一致。",
+    "uses": "统一加载/编码器基线。",
+    "caveat": "汇编VisGel、TVL、Touch and Go、Calandra、Yuan18、YCB-Sight、ObjectFolder等，并含作者新增采集。主统计不把整个包再加1；新增部分未单独审计为完整来源，故暂不加数。",
+    "links": [
+      [
+        "官方数据",
+        "https://huggingface.co/datasets/alanz-mit/FoundationTactile"
+      ],
+      [
+        "论文/代码",
+        "https://github.com/alanzjl/t3"
+      ]
+    ],
+    "counted": false
+  },
+  {
+    "id": "A02",
+    "name": "Sparsh预训练混合与TacBench",
+    "year": 2024,
+    "group": "A",
+    "evidence": "A",
+    "license": "分来源：部分CC BY-NC 4.0；须保留上游条款",
+    "scale": "多来源光学触觉预训练与6项下游任务。",
+    "signals": "DIGIT/GelSight图像；力、滑移、姿态、抓取和衣物标签。",
+    "actions": "任务特定监督。",
+    "uses": "成熟自监督触觉编码器和评价基线。",
+    "caveat": "Touch-Slide与TacBench原创子集已经单列；借用数据不新增计数。Sparsh代码许可不是所有数据的统一许可。",
+    "links": [
+      [
+        "官方来源清单/下载",
+        "https://github.com/facebookresearch/sparsh"
+      ]
+    ],
+    "counted": false
+  },
+  {
+    "id": "A03",
+    "name": "FTP-1 Dataset",
+    "year": 2026,
+    "group": "A",
+    "evidence": "A",
+    "license": "ModelScope汇编标MIT；HF卡无统一许可字段；保留各上游许可",
+    "scale": "论文约3,000小时、26来源；本次HF根目录仍有15个一级来源目录；数据卡声称18 archives。",
+    "signals": "图像/阵列/state混合，人类/灵巧手/夹爪/UMI。",
+    "actions": "统一转换后的操作数据。",
+    "uses": "多来源操作数据入口和格式参考。",
+    "caveat": "26论文来源≠已公开26个独立集；15目录≠15个独立来源（RDP/RH20T/Unit拆配置）。不把3,000小时当已开放小时；EgoTac/OpenTouch等在根目录未见同名归档。",
+    "links": [
+      [
+        "HF公开目录",
+        "https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset"
+      ],
+      [
+        "官方仓库",
+        "https://github.com/michaelyuancb/ftp1-policy"
+      ],
+      [
+        "论文",
+        "https://arxiv.org/abs/2606.13102"
+      ]
+    ],
+    "counted": false
+  },
+  {
+    "id": "A04",
+    "name": "Touch100k",
+    "year": 2024,
+    "group": "A",
+    "evidence": "B",
+    "license": "本次未确认各上游与派生文本许可",
+    "scale": "约100K触觉—语言—视觉配对/标注规模。",
+    "signals": "触觉、视觉、多粒度文字描述。",
+    "actions": "主要是语言/表征监督。",
+    "uses": "触觉语义对齐、指令理解补充。",
+    "caveat": "此类派生标注包不应直接作为100K条全新实测接触，也不再增加独立原始采集数；原始来源应逐项去重。",
+    "links": [
+      [
+        "官方项目/数据",
+        "https://cocacola-lab.github.io/Touch100k/"
+      ],
+      [
+        "代码",
+        "https://github.com/cocacola-lab/TLV-Link"
+      ]
+    ],
+    "counted": false
+  },
+  {
+    "id": "A05",
+    "name": "Tactile Video Pretrain（yxma）",
+    "year": 2026,
+    "group": "A",
+    "evidence": "A",
+    "license": "按源保留MIT/CC BY及NC-SA等原始条款",
+    "scale": "主卡报告47.65小时视频流；NC兄弟库含VTouch子集。",
+    "signals": "FreeTacMan、Touch and Go、GelSLAM等重新编码视频，tactile_only/tactile_rgb配置。",
+    "actions": "训练方便但不保证保留全部原始动作/高频触觉字段。",
+    "uses": "快速搭建视频触觉预训练加载器。",
+    "caveat": "两配置共享视频，双指/多视角stream-hour不能当行为小时；主卡整体MIT不能覆盖Touch and Go的署名义务；不另加独立数据源。",
+    "links": [
+      [
+        "主库",
+        "https://huggingface.co/datasets/yxma/tactile-video-pretrain"
+      ],
+      [
+        "NC库",
+        "https://huggingface.co/datasets/yxma/tactile-video-pretrain-nc"
+      ]
+    ],
+    "counted": false
+  },
+  {
+    "id": "X01",
+    "name": "DexUMI",
+    "year": 2025,
+    "group": "X",
+    "evidence": "D",
+    "license": "代码MIT；数据许可/完整下载待核实",
+    "scale": "本次已读官方项目与仓库，未确认与论文匹配的公开完整原始触觉数据入口。",
+    "signals": "人手外骨骼、手指力/触觉与视觉转换。",
+    "actions": "系统能采集并重定向动作，但能力描述不等于数据已发布。",
+    "uses": "采集系统/人手到灵巧手迁移参考。",
+    "caveat": "FTP论文使用DexumiInspire/XHand不证明对应归档已发布；暂不进入公开数据主计数。",
+    "links": [
+      [
+        "官方项目",
+        "https://dex-umi.github.io/"
+      ],
+      [
+        "官方仓库",
+        "https://github.com/real-stanford/DexUMI"
+      ]
+    ],
+    "counted": false
+  },
+  {
+    "id": "X02",
+    "name": "EgoTac-Open / Kitchen / Hotel及EgoTac-SC",
+    "year": 2026,
+    "group": "X",
+    "evidence": "D",
+    "license": "EgoTac-SC卡Apache 2.0；三项FTP来源授权未确认",
+    "scale": "FTP论文使用AetherGlove三域；另找到wkzhang/EgoTac-SC，卡称857个Zarr录制、45ZIP、约458GB。",
+    "signals": "SC卡只说明aether_v1归档，未充分公开传感器字段/视频视角/与FTP三域的对应关系。",
+    "actions": "未验证。",
+    "uses": "值得后续追溯的新线索。",
+    "caveat": "不能将SC自动等同三个FTP来源，也不能依据名称直接加入ego数。公开SC文件存在与“三域全量已经开源”是两个不同结论。",
+    "links": [
+      [
+        "新发现的公开包",
+        "https://huggingface.co/datasets/wkzhang/EgoTac-SC"
+      ],
+      [
+        "FTP原始来源依据",
+        "https://arxiv.org/abs/2606.13102"
+      ]
+    ],
+    "counted": false
+  },
+  {
+    "id": "X03",
+    "name": "3D-ViTac",
+    "year": 2024,
+    "group": "X",
+    "evidence": "D",
+    "license": "代码开放；数据下载本次未确认",
+    "scale": "官方有硬件/训练代码和真实实验。",
+    "signals": "机器人3D视觉与数值触觉阵列。",
+    "actions": "方法需要动作示范，但本次未确认独立完整数据释放。",
+    "uses": "统一3D触觉表示的直接参考。",
+    "caveat": "Touch in the Wild使用相关触觉硬件不意味着3D-ViTac论文数据已经公开；不重复/推断计数。",
+    "links": [
+      [
+        "官方项目",
+        "https://binghao-huang.github.io/3D-ViTac/"
+      ],
+      [
+        "训练代码",
+        "https://github.com/binghao-huang/3d-vitac-training-code"
+      ]
+    ],
+    "counted": false
+  },
+  {
+    "id": "X04",
+    "name": "Tactile Grasp and Move / Action-Conditioned Tactile Prediction",
+    "year": 2022,
+    "group": "X",
+    "evidence": "D",
+    "license": "待确认",
+    "scale": "作者说明包含有意制造滑移的人遥操作机器人运动数据；本次未核实可下载payload。",
+    "signals": "双指触觉、机器人本体和任务空间运动、物体相对腕部位姿。",
+    "actions": "对动作条件预测很相关。",
+    "uses": "后续数据获取优先核查。",
+    "caveat": "仓库README真实存在，但本次未确认数据文件/下载归档，故不加主数量。",
+    "links": [
+      [
+        "作者仓库",
+        "https://github.com/WillMandil001/Tactile_Grasp_and_Move_Dataset"
+      ]
+    ],
+    "counted": false
+  },
+  {
+    "id": "X05",
+    "name": "Touch-GS Dataset",
+    "year": 2024,
+    "group": "X",
+    "evidence": "D",
+    "license": "待确认",
+    "scale": "官方数据仓库描述imgs、touches、poses等目录。",
+    "signals": "DenseTact真实触觉图/深度、相机与几何。",
+    "actions": "主要重建视角/触点，不是连续操作控制。",
+    "uses": "几何世界表示候选。",
+    "caveat": "本次仅核实README字段描述，未确认实际数据文件目录；不把“Official Dataset”字样当下载完成。",
+    "links": [
+      [
+        "作者数据仓库",
+        "https://github.com/armlabstanford/touch-gs-data"
+      ]
+    ],
+    "counted": false
+  },
+  {
+    "id": "X06",
+    "name": "HUST-Tactile",
+    "year": 2025,
+    "group": "X",
+    "evidence": "D",
+    "license": "待确认",
+    "scale": "作者README：3,949样本，正常/凸点/凹坑/划痕4类。",
+    "signals": "GelSight微缺陷接触图像。",
+    "actions": "无动作监督声明。",
+    "uses": "触觉精细纹理/表面异常补充。",
+    "caveat": "本次核实统计说明但没有完成payload入口核实，保守不计主数量。",
+    "links": [
+      [
+        "作者仓库",
+        "https://github.com/HUSTOROP/Hust-Tac-Dataset"
+      ]
+    ],
+    "counted": false
+  },
+  {
+    "id": "X07",
+    "name": "zhicao/egoforce（FusionX录制）",
+    "year": 2026,
+    "group": "X",
+    "evidence": "D",
+    "license": "未见数据专用许可",
+    "scale": "公开MCAP及可视化资源；本次未统计独立有效录制小时。",
+    "signals": "头/腕相机、FusionX双手压力与IMU；卡片列死通道、偏置、部分录制缺腕相机等问题。",
+    "actions": "有人手姿态/语义topic，覆盖度未审计。",
+    "uses": "进一步扩大ego来源的候选。",
+    "caveat": "作者身份/来源授权、与FusionX V3样本是否重叠仍不清；不进入已确认独立来源数。不要与DFKI的EgoForce姿态模型数据混淆。",
+    "links": [
+      [
+        "候选录制库",
+        "https://huggingface.co/datasets/zhicao/egoforce"
+      ]
+    ],
+    "counted": false
+  }
+]

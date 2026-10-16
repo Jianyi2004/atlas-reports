@@ -1,4 +1,5 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>公开触觉数据集调研 · 2026-10-09</title><style>
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>公开触觉数据集调研 · 2026-10-09</title><style>
 :root{--ink:#172c3d;--sub:#526979;--line:#d8e2e8;--paper:#fff;--bg:#f1f5f7;--accent:#126873}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.85 system-ui,-apple-system,"Noto Sans CJK SC","Microsoft YaHei",sans-serif}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}header{background:#173642;color:#fff;padding:30px 5vw}header p{margin:4px 0;color:#c6e0e5}header a{color:#bcf3ed}
@@ -6,7 +7,11 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}hea
 main{min-width:0}article,.explorer{background:white;border:1px solid var(--line);border-radius:12px;padding:32px;margin-bottom:24px}h1{font-size:30px;line-height:1.45}h2{font-size:23px;border-top:1px solid var(--line);padding-top:25px;margin-top:45px}h3{font-size:19px;margin-top:35px}p{margin:14px 0}table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;margin:22px 0;overflow-wrap:anywhere}th,td{padding:11px 12px;border:1px solid var(--line);vertical-align:top}th{background:#ecf4f5;text-align:left}tbody tr:nth-child(even){background:#fafcfd}td:first-child{min-width:76px}pre{background:#edf3f5;padding:18px;overflow:auto;border-radius:8px;font-size:13px}code{font-family:ui-monospace,monospace}li{margin:9px 0}.filters{display:flex;gap:10px;flex-wrap:wrap}input,select{font:inherit;font-size:14px;border:1px solid #acc2cc;border-radius:6px;padding:8px;max-width:100%}input{flex:1;min-width:180px}.scroll{max-height:570px;overflow:auto}.scroll thead{position:sticky;top:0}.counter{color:var(--sub);font-size:13px}.stamp{font-size:13px}strong{font-weight:650}
 @media(max-width:1000px){.layout{grid-template-columns:1fr}aside{position:static;max-height:280px;border-bottom:1px solid var(--line)}article,.explorer{padding:20px}.scroll{max-height:430px}}
 @media print{body{background:white;font-size:10pt}header,aside,.explorer{display:none}.layout{display:block;max-width:none;margin:0;padding:0}article{border:none;padding:0}h2,h3{break-after:avoid}tr{break-inside:avoid}table{font-size:8.5pt}a{color:inherit}pre{white-space:pre-wrap}h1{font-size:22pt}}
-</style><style>.atlas-missing-attachment{opacity:.65}.atlas-missing-attachment small{font-size:.8em}</style></head><body><header><h1>公开触觉数据集调研</h1><p>面向触觉世界模型 · 人类ego / 机器人 / 人操持工具 / 实物实验</p><p class="stamp">截至2026-10-09 · 55个公开发布来源家族＋2个条件开放 · <span class="atlas-missing-attachment" title="原始附件未提供">下载CSV <small>（附件未提供）</small></span> · <span class="atlas-missing-attachment" title="原始附件未提供">Markdown <small>（附件未提供）</small></span> · <span class="atlas-missing-attachment" title="原始附件未提供">统计口径 <small>（附件未提供）</small></span></p></header><div class="layout"><aside><div class="toc">
+</style><style>
+.visual-intro{background:#eef7f6;border:1px solid #bfdbd8;border-radius:10px;padding:20px;margin:22px 0}.visual-intro p{margin:0 0 12px}.visual-lead{font-size:17px}.visual-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.visual-card{display:block;background:white;border:1px solid #d2e3e2;border-radius:8px;padding:10px;color:var(--ink)}.visual-card img{display:block;width:100%;height:120px;object-fit:contain;background:white}.visual-card span{display:block;font-size:13px;margin-top:7px}.visual-foot{font-size:12px;color:#526979;margin-top:12px!important}.dataset-figures{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:22px 0 38px}.dataset-figure{min-width:0;margin:0;border:1px solid #d5e2e7;border-radius:10px;background:#fff;overflow:hidden;break-inside:avoid}.dataset-figure.wide{grid-column:1/-1}.figure-type{display:flex;gap:10px;align-items:center;padding:10px 14px;color:#38606a;background:#f0f6f7;font-size:12px}.figure-type strong{font-weight:650}.figure-type small{margin-left:auto;color:#6b7e86}.figure-open{display:block;padding:12px;cursor:zoom-in;background:#fff}.figure-open img{display:block;margin:auto;width:100%;height:auto;max-height:620px;object-fit:contain}.dataset-figure figcaption{padding:0 14px 14px;font-size:13px;line-height:1.8}.figure-links{display:block;margin-top:6px;font-size:12px}.figure-links a{margin-right:14px}.media-count{white-space:nowrap}.illustrated-toggle{display:flex;align-items:center;gap:5px;font-size:13px}.illustrated-toggle input{flex:none;min-width:0}.image-dialog{border:0;border-radius:10px;padding:0;width:min(95vw,1600px);max-width:95vw;max-height:94vh;background:white;box-shadow:0 20px 80px #0006}.image-dialog::backdrop{background:#071923cc}.dialog-bar{position:sticky;top:0;display:flex;gap:14px;align-items:center;justify-content:space-between;background:#173642;color:white;padding:12px 18px;z-index:1}.dialog-bar button{font:inherit;background:transparent;color:white;border:1px solid #b9d5d9;padding:5px 12px;border-radius:5px;cursor:pointer}.dialog-title{font-size:14px}.image-dialog img{display:block;max-width:100%;max-height:73vh;object-fit:contain;margin:auto;padding:16px}.dialog-caption{margin:0;padding:0 18px 18px;color:#324b59;font-size:13px;line-height:1.8}.image-dialog a{color:#156c76}.media-coverage{margin-top:20px;padding:14px;background:#f1f5f7;border-radius:8px;font-size:13px}.media-coverage summary{cursor:pointer;font-weight:650}.media-coverage li{margin:5px 0}article{overflow-wrap:anywhere}a[id]{scroll-margin-top:18px}#inventory th{white-space:nowrap}
+@media(max-width:650px){.visual-cards{grid-template-columns:1fr}.visual-card{display:flex;gap:12px;align-items:center}.visual-card img{width:38%;height:85px}.visual-card span{flex:1}.dataset-figures{grid-template-columns:1fr}.dataset-figure.wide{grid-column:auto}.figure-open{padding:6px}.figure-open img{max-height:480px}.figure-type{padding:8px 10px;flex-wrap:wrap}.figure-type small{display:none}.dataset-figure figcaption{padding:5px 10px 12px}.image-dialog{width:97vw;max-width:97vw}.image-dialog img{padding:8px;max-height:67vh}.dialog-caption{padding:0 12px 14px}.visual-intro{padding:14px}table{font-size:12px}th,td{padding:7px 8px}td:first-child{min-width:40px}article{padding:16px}.layout{padding:0 10px}.explorer{padding:16px}.scroll table{min-width:750px}}
+@media print{.visual-intro,.image-dialog,.figure-type small{display:none}.dataset-figures{display:block}.dataset-figure{margin:16px 0;break-inside:avoid}.figure-open img{max-height:380px}.dataset-figure figcaption{font-size:9pt}.figure-links{font-size:8pt}}
+</style></head><body><header><h1>公开触觉数据集调研</h1><p>面向触觉世界模型 · 人类ego / 机器人 / 人操持工具 / 实物实验</p><p class="stamp">截至2026-10-09 · 55个公开发布来源家族＋2个条件开放 · <a href="datasets.csv">下载CSV</a> · <a href="report.md">Markdown</a> · <a href="summary.json">统计口径</a></p></header><div class="layout"><aside><div class="toc">
 <ul>
 <li><a href="#_1">公开触觉数据集调研报告</a><ul>
 <li><a href="#1">1. 结论与数量</a></li>
@@ -26,10 +31,10 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <li><a href="#15">15. 交付文件与结论边界</a></li>
 </ul>
 </li>
-</ul>
+<li><a href="#media-sources">16. 配图来源与覆盖</a></li></ul>
 </div>
-</aside><main><section class="explorer"><h2 style="margin-top:0;border:0;padding-top:0">全部条目筛选</h2><p class="counter">A＝已见文件目录，B＝已见官方入口，C＝条件开放，D＝待核实。筛选器仅筛选本表；点击编号查看正文详情。</p><div class="filters"><input id="query" type="search" aria-label="搜索数据集" placeholder="搜索名称、编号或许可"><select id="group" aria-label="分类"><option value="">所有类别</option><option value="E">E · 人类ego＋实测触觉</option><option value="R">R · 机器人真机触觉</option><option value="U">U · 人操持工具／UMI</option><option value="H">H · 其他人类实测（非ego或视角未确认）</option><option value="P">P · 实物探测／标定／混合实验台</option><option value="A">A · 汇编／再处理包（不重复计数）</option><option value="F">F · 力觉扩展（不计主触觉数量）</option><option value="X">X · 待核实（不计数）</option></select><select id="evidence" aria-label="证据等级"><option value="">所有证据等级</option><option>A</option><option>B</option><option>C</option><option>D</option></select><select id="counted" aria-label="统计口径"><option value="">所有条目</option><option value="1">仅计入主统计</option><option value="0">未计入主统计</option></select></div><p id="result-count" class="counter"></p><div class="scroll"><table id="inventory"><thead><tr><th>编号</th><th>数据集</th><th>类别</th><th>证据</th><th>数据许可</th><th>入口</th></tr></thead><tbody><tr data-group="E" data-evidence="B" data-counted="1"><td><a href="#E01">E01</a></td><td>ActionSense</td><td>人类ego＋实测触觉</td><td>B</td><td>CC BY-NC-SA 4.0</td><td><a href="https://action-sense.csail.mit.edu/">项目</a></td></tr><tr data-group="E" data-evidence="A" data-counted="1"><td><a href="#E02">E02</a></td><td>EgoPressure</td><td>人类ego＋实测触觉</td><td>A</td><td>CC BY-NC-SA 4.0；MANO另受其许可约束</td><td><a href="https://huggingface.co/datasets/eth-siplab/EgoPressure">官方数据</a></td></tr><tr data-group="E" data-evidence="B" data-counted="1"><td><a href="#E03">E03</a></td><td>OpenTouch</td><td>人类ego＋实测触觉</td><td>B</td><td>本次未确认数据专用许可证</td><td><a href="https://opentouch-tactile.github.io/">项目</a></td></tr><tr data-group="E" data-evidence="A" data-counted="1"><td><a href="#E04">E04</a></td><td>EgoTouch（TouchAnything数据）</td><td>人类ego＋实测触觉</td><td>A</td><td>数据许可未确认；代码MIT不自动等于数据MIT</td><td><a href="https://huggingface.co/datasets/zhouzhoujy/EgoTouch">官方数据</a></td></tr><tr data-group="E" data-evidence="A" data-counted="1"><td><a href="#E05">E05</a></td><td>EgoTactile</td><td>人类ego＋实测触觉</td><td>A</td><td>CC BY-NC 4.0</td><td><a href="https://huggingface.co/datasets/HustleHard/EgoTactile">官方数据</a></td></tr><tr data-group="E" data-evidence="A" data-counted="1"><td><a href="#E06">E06</a></td><td>OpenGraph Ego-Tactile Manipulation</td><td>人类ego＋实测触觉</td><td>A</td><td>CC BY 4.0</td><td><a href="https://huggingface.co/datasets/OpenGraphLabs-Research/ego-tactile-manipulation">官方数据及格式</a></td></tr><tr data-group="E" data-evidence="B" data-counted="1"><td><a href="#E07">E07</a></td><td>Touch and Go</td><td>人类ego＋实测触觉</td><td>B</td><td>CC BY 4.0</td><td><a href="https://touch-and-go.github.io/">官方项目/许可</a></td></tr><tr data-group="E" data-evidence="B" data-counted="1"><td><a href="#E08">E08</a></td><td>VTDexManip（真实人类预训练数据）</td><td>人类ego＋实测触觉</td><td>B</td><td>归档内有License.txt，本次未解包确认条款</td><td><a href="https://lqts.github.io/VTDexManip/">项目</a></td></tr><tr data-group="R" data-evidence="B" data-counted="1"><td><a href="#R01">R01</a></td><td>VisGel</td><td>机器人真机触觉</td><td>B</td><td>本次未确认数据专用许可</td><td><a href="https://github.com/YunzhuLi/VisGel">作者仓库/下载脚本</a></td></tr><tr data-group="R" data-evidence="B" data-counted="1"><td><a href="#R02">R02</a></td><td>Calandra抓取数据 / The Feeling of Success</td><td>机器人真机触觉</td><td>B</td><td>原始数据许可本次未确认</td><td><a href="https://sites.google.com/view/the-feeling-of-success/">原项目</a></td></tr><tr data-group="R" data-evidence="B" data-counted="1"><td><a href="#R03">R03</a></td><td>ObjectFolder-Real</td><td>机器人真机触觉</td><td>B</td><td>本次未确认数据专用许可</td><td><a href="https://objectfolder.stanford.edu/objectfolder-real-download">官方数据与结构</a></td></tr><tr data-group="R" data-evidence="B" data-counted="1"><td><a href="#R04">R04</a></td><td>Eagle Shoal / Visual-Tactile Dataset</td><td>机器人真机触觉</td><td>B</td><td>CDLA-Permissive 1.0</td><td><a href="https://github.com/tsinghua-rll/Visual-Tactile_Dataset">数据仓库/许可</a></td></tr><tr data-group="R" data-evidence="B" data-counted="1"><td><a href="#R05">R05</a></td><td>PoseIt</td><td>机器人真机触觉</td><td>B</td><td>数据CC BY-SA 4.0；代码MIT</td><td><a href="https://github.com/Robo-Touch/PoseIt">官方数据说明/Drive</a></td></tr><tr data-group="R" data-evidence="B" data-counted="1"><td><a href="#R06">R06</a></td><td>YCB-Sight（真实部分）</td><td>机器人真机触觉</td><td>B</td><td>数据CC BY-SA 4.0；代码MIT</td><td><a href="https://github.com/Robo-Touch/YCB-Sight">官方数据/逐物体下载</a></td></tr><tr data-group="R" data-evidence="A" data-counted="1"><td><a href="#R07">R07</a></td><td>RH20T（触觉配置）</td><td>机器人真机触觉</td><td>A</td><td>原始条款以官方数据申请/下载说明为准；本次未确认独立数据许可</td><td><a href="https://rh20t.github.io/">官方项目/下载</a></td></tr><tr data-group="R" data-evidence="A" data-counted="1"><td><a href="#R08">R08</a></td><td>Reactive Diffusion Policy（RDP）数据</td><td>机器人真机触觉</td><td>A</td><td>MIT</td><td><a href="https://huggingface.co/datasets/WendiChen/reactive_diffusion_policy_dataset">官方数据</a></td></tr><tr data-group="R" data-evidence="A" data-counted="1"><td><a href="#R09">R09</a></td><td>UniT数据</td><td>机器人真机触觉</td><td>A</td><td>原始数据许可本次未确认</td><td><a href="https://github.com/ZhengtongXu/UniT">作者仓库/原始Drive</a></td></tr><tr data-group="R" data-evidence="A" data-counted="1"><td><a href="#R10">R10</a></td><td>VLA-Touch数据</td><td>机器人真机触觉</td><td>A</td><td>代码MIT；数据专用许可本次未确认</td><td><a href="https://huggingface.co/datasets/AllenBi21/VLA-Touch">官方数据</a></td></tr><tr data-group="R" data-evidence="A" data-counted="1"><td><a href="#R11">R11</a></td><td>OmniViTac（OmniVTA数据）</td><td>机器人真机触觉</td><td>A</td><td>CC BY-NC 4.0</td><td><a href="https://huggingface.co/datasets/tars-robotics/OmniVitac">官方数据</a></td></tr><tr data-group="R" data-evidence="A" data-counted="1"><td><a href="#R12">R12</a></td><td>HapTile</td><td>机器人真机触觉</td><td>A</td><td>CC BY 4.0</td><td><a href="https://huggingface.co/datasets/HapTile2026/HapTile">数据</a></td></tr><tr data-group="R" data-evidence="A" data-counted="1"><td><a href="#R13">R13</a></td><td>LET-Dex Dataset</td><td>机器人真机触觉</td><td>A</td><td>CC BY-NC-SA 4.0</td><td><a href="https://huggingface.co/datasets/LejuRobotics/LET-Dex-Dataset">官方数据</a></td></tr><tr data-group="R" data-evidence="A" data-counted="1"><td><a href="#R14">R14</a></td><td>Humanoid Everyday（触觉部分）</td><td>机器人真机触觉</td><td>A</td><td>Apache 2.0</td><td><a href="https://huggingface.co/datasets/USC-PSI-Lab/humanoid-everyday">官方数据</a></td></tr><tr data-group="R" data-evidence="A" data-counted="1"><td><a href="#R15">R15</a></td><td>白虎-VTouch / OpenLoong visuo-tactile</td><td>机器人真机触觉</td><td>A</td><td>CC BY-NC-SA 4.0</td><td><a href="https://www.modelscope.cn/datasets/OpenLoong-Community/visuo-tactile">官方数据</a></td></tr><tr data-group="R" data-evidence="A" data-counted="1"><td><a href="#R16">R16</a></td><td>Sharpa North-FTP-1</td><td>机器人真机触觉</td><td>A</td><td>汇编平台标MIT；独立原始数据授权仍需核对</td><td><a href="https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset/tree/main/sharpa">公开数据</a></td></tr><tr data-group="R" data-evidence="A" data-counted="1"><td><a href="#R17">R17</a></td><td>Tactile MNIST（Real）</td><td>机器人真机触觉</td><td>A</td><td>CC BY 2.0（真实序列数据卡）；代码MIT</td><td><a href="https://huggingface.co/datasets/TimSchneider42/tactile-mnist-touch-real-seq-t256-320x240">真实序列数据</a></td></tr><tr data-group="R" data-evidence="B" data-counted="1"><td><a href="#R18">R18</a></td><td>ARQ-CRISP Slip Detection Dataset</td><td>机器人真机触觉</td><td>B</td><td>本次未确认数据专用许可</td><td><a href="https://github.com/ARQ-CRISP/slip_detection_dataset_2021">数据及协议</a></td></tr><tr data-group="R" data-evidence="B" data-counted="1"><td><a href="#R19">R19</a></td><td>iCub Hybrid Touch Texture Dataset</td><td>机器人真机触觉</td><td>B</td><td>本次未确认数据专用许可</td><td><a href="https://github.com/clear-nus/TactileLearning">官方数据</a></td></tr><tr data-group="R" data-evidence="B" data-counted="1"><td><a href="#R20">R20</a></td><td>Doro/Jaco OptoForce Object Classification</td><td>机器人真机触觉</td><td>B</td><td>数据许可未明确；作者说明允许使用/修改代码不能替代数据许可</td><td><a href="https://github.com/philipmaus/Tactile_Object_Classification">原作者数据仓库</a></td></tr><tr data-group="R" data-evidence="B" data-counted="1"><td><a href="#R21">R21</a></td><td>BioTac_slide_20_50</td><td>机器人真机触觉</td><td>B</td><td>本次未确认数据专用许可</td><td><a href="https://github.com/dexrob/BioTac_slide_20_50">官方数据</a></td></tr><tr data-group="R" data-evidence="B" data-counted="1"><td><a href="#R22">R22</a></td><td>Active Clothing Material Perception（Yuan18）</td><td>机器人真机触觉</td><td>B</td><td>本次未确认数据专用许可</td><td><a href="http://data.csail.mit.edu/active_clothing/Data_ICRA18.tar">原始数据归档</a></td></tr><tr data-group="R" data-evidence="A" data-counted="1"><td><a href="#R23">R23</a></td><td>SSVTP</td><td>机器人真机触觉</td><td>A</td><td>原始数据专用许可本次未确认</td><td><a href="https://huggingface.co/datasets/mlfu7/Touch-Vision-Language-Dataset">公开数据（TVL内ssvtp）</a></td></tr><tr data-group="U" data-evidence="A" data-counted="1"><td><a href="#U01">U01</a></td><td>FreeTacMan</td><td>人操持工具／UMI</td><td>A</td><td>数据MIT；代码仓库Apache 2.0</td><td><a href="https://huggingface.co/datasets/OpenDriveLab/FreeTacMan">官方数据</a></td></tr><tr data-group="U" data-evidence="A" data-counted="1"><td><a href="#U02">U02</a></td><td>Touch in the Wild</td><td>人操持工具／UMI</td><td>A</td><td>MIT</td><td><a href="https://huggingface.co/datasets/binghaohuang-robot/touch_in_the_wild-dataset">官方数据</a></td></tr><tr data-group="U" data-evidence="A" data-counted="1"><td><a href="#U03">U03</a></td><td>exUMI</td><td>人操持工具／UMI</td><td>A</td><td>本次未确认数据专用许可</td><td><a href="https://huggingface.co/datasets/silicx/exUMI">官方数据</a></td></tr><tr data-group="U" data-evidence="A" data-counted="1"><td><a href="#U04">U04</a></td><td>ViTaMIn</td><td>人操持工具／UMI</td><td>A</td><td>MIT（作者HF数据卡）</td><td><a href="https://huggingface.co/datasets/chuanyune/ViTaMIn_dataset">作者数据</a></td></tr><tr data-group="U" data-evidence="B" data-counted="1"><td><a href="#U05">U05</a></td><td>Daimon-Infinity</td><td>人操持工具／UMI</td><td>B</td><td>CC BY-NC-SA 4.0</td><td><a href="https://github.com/dmrobot-admin/Daimon-Infinity">官方说明/许可</a></td></tr><tr data-group="H" data-evidence="B" data-counted="1"><td><a href="#H01">H01</a></td><td>STAG</td><td>其他人类实测（非ego或视角未确认）</td><td>B</td><td>本次未确认数据专用许可</td><td><a href="https://stag.csail.mit.edu/">官方项目与下载</a></td></tr><tr data-group="H" data-evidence="B" data-counted="1"><td><a href="#H02">H02</a></td><td>PressureVisionDB</td><td>其他人类实测（非ego或视角未确认）</td><td>B</td><td>MIT（明确覆盖数据与代码）</td><td><a href="https://github.com/facebookresearch/PressureVision">官方代码/下载器/许可</a></td></tr><tr data-group="H" data-evidence="A" data-counted="1"><td><a href="#H03">H03</a></td><td>PX OmniSharing DB SampleData</td><td>其他人类实测（非ego或视角未确认）</td><td>A</td><td>CC BY-NC-SA 4.0（数据卡正文）</td><td><a href="https://huggingface.co/datasets/paxini/Omnisharing_DB_SampleData">官方样例数据</a></td></tr><tr data-group="H" data-evidence="A" data-counted="1"><td><a href="#H04">H04</a></td><td>FusionX Multimodal Sample Dataset V3</td><td>其他人类实测（非ego或视角未确认）</td><td>A</td><td>CC BY 4.0</td><td><a href="https://huggingface.co/datasets/touchtronix/FusionX-Multimodal-Sample-Data-V3">发布方数据</a></td></tr><tr data-group="H" data-evidence="A" data-counted="1"><td><a href="#H05">H05</a></td><td>Tachin Fixed Viewpoint Tactile Dataset</td><td>其他人类实测（非ego或视角未确认）</td><td>A</td><td>Apache 2.0</td><td><a href="https://huggingface.co/datasets/Tachintech/Fixed_Viewpoint_Tactile_Dataset">发布方数据/字段定义</a></td></tr><tr data-group="H" data-evidence="A" data-counted="1"><td><a href="#H06">H06</a></td><td>Tactile Gesture Language</td><td>其他人类实测（非ego或视角未确认）</td><td>A</td><td>GPL 3.0（数据卡）</td><td><a href="https://huggingface.co/datasets/Tachintech/Tactile_Gesture_Language">发布方数据</a></td></tr><tr data-group="P" data-evidence="A" data-counted="1"><td><a href="#P01">P01</a></td><td>TVL-HCT（TVL新增人采部分）</td><td>实物探测／标定／混合实验台</td><td>A</td><td>代码Apache 2.0；数据独立许可本次未确认</td><td><a href="https://huggingface.co/datasets/mlfu7/Touch-Vision-Language-Dataset">官方数据及修复说明</a></td></tr><tr data-group="P" data-evidence="A" data-counted="1"><td><a href="#P02">P02</a></td><td>TacQuad（AnyTouch）</td><td>实物探测／标定／混合实验台</td><td>A</td><td>MIT</td><td><a href="https://huggingface.co/datasets/xxuan01/TacQuad">官方数据</a></td></tr><tr data-group="P" data-evidence="A" data-counted="1"><td><a href="#P03">P03</a></td><td>HPT / HTT Dataset</td><td>实物探测／标定／混合实验台</td><td>A</td><td>CC BY-NC 4.0</td><td><a href="https://huggingface.co/datasets/AllenBi21/HTT-dataset">官方数据/manifest</a></td></tr><tr data-group="P" data-evidence="A" data-counted="1"><td><a href="#P04">P04</a></td><td>TaF-Dataset</td><td>实物探测／标定／混合实验台</td><td>A</td><td>MIT</td><td><a href="https://huggingface.co/datasets/jiamig/taf-dataset">官方数据/字段/许可</a></td></tr><tr data-group="P" data-evidence="A" data-counted="1"><td><a href="#P05">P05</a></td><td>Touch-Slide</td><td>实物探测／标定／混合实验台</td><td>A</td><td>CC BY-NC 4.0</td><td><a href="https://huggingface.co/datasets/facebook/touch-slide">官方数据</a></td></tr><tr data-group="P" data-evidence="B" data-counted="1"><td><a href="#P06">P06</a></td><td>YCB-Slide（Real）</td><td>实物探测／标定／混合实验台</td><td>B</td><td>MIT</td><td><a href="https://github.com/rpl-cmu/YCB-Slide">官方数据/下载</a></td></tr><tr data-group="P" data-evidence="A" data-counted="1"><td><a href="#P07">P07</a></td><td>Sparsh / TacBench原创监督数据</td><td>实物探测／标定／混合实验台</td><td>A</td><td>CC BY-NC 4.0</td><td><a href="https://huggingface.co/datasets/facebook/digit-force-estimation">DIGIT力/滑移</a></td></tr><tr data-group="P" data-evidence="A" data-counted="1"><td><a href="#P08">P08</a></td><td>TactileTracking / NormalFlow Dataset</td><td>实物探测／标定／混合实验台</td><td>A</td><td>MIT</td><td><a href="https://huggingface.co/datasets/joehjhuang/TactileTracking">官方数据</a></td></tr><tr data-group="P" data-evidence="A" data-counted="1"><td><a href="#P09">P09</a></td><td>GelSLAM Dataset</td><td>实物探测／标定／混合实验台</td><td>A</td><td>MIT</td><td><a href="https://huggingface.co/datasets/joehjhuang/GelSLAM_dataset">官方数据及局限</a></td></tr><tr data-group="P" data-evidence="B" data-counted="1"><td><a href="#P10">P10</a></td><td>GelSight Sim2Real（真实A域）</td><td>实物探测／标定／混合实验台</td><td>B</td><td>本次未确认数据专用许可</td><td><a href="https://github.com/RVSATHU/GelSight-Sim2Real">官方数据/协议</a></td></tr><tr data-group="P" data-evidence="B" data-counted="1"><td><a href="#P11">P11</a></td><td>PhysiCLeAR（Octopi 1.0/1.5）</td><td>实物探测／标定／混合实验台</td><td>B</td><td>本次未确认数据专用许可</td><td><a href="https://github.com/clear-nus/octopi-1.5">官方数据下载说明</a></td></tr><tr data-group="P" data-evidence="A" data-counted="1"><td><a href="#P12">P12</a></td><td>Touch-Ex</td><td>实物探测／标定／混合实验台</td><td>A</td><td>CC BY 4.0</td><td><a href="https://huggingface.co/datasets/gemixin/touch-ex">发布方数据及采集说明</a></td></tr><tr data-group="P" data-evidence="A" data-counted="1"><td><a href="#P13">P13</a></td><td>Tactile Deformation Response</td><td>实物探测／标定／混合实验台</td><td>A</td><td>GPL 3.0</td><td><a href="https://huggingface.co/datasets/Tachintech/tactile-deformation-response">发布方数据</a></td></tr><tr data-group="E" data-evidence="C" data-counted="0"><td><a href="#C01">C01</a></td><td>TouchScale</td><td>人类ego＋实测触觉</td><td>C</td><td>CC BY-NC 4.0；HF自动条款门控</td><td><a href="https://huggingface.co/datasets/2077AIDataFoundation/TouchScale">发布状态及数据</a></td></tr><tr data-group="P" data-evidence="C" data-counted="0"><td><a href="#C02">C02</a></td><td>ToucHD（AnyTouch 2，真实Force/Mani）</td><td>实物探测／标定／混合实验台</td><td>C</td><td>MIT；HF自动条款门控，要求联系方式/单位/国家</td><td><a href="https://huggingface.co/datasets/BAAI/ToucHD-Force">Force</a></td></tr><tr data-group="F" data-evidence="A" data-counted="0"><td><a href="#F01">F01</a></td><td>REASSEMBLE</td><td>力觉扩展（不计主触觉数量）</td><td>A</td><td>代码MIT；数据以TUData页面条款为准</td><td><a href="https://researchdata.tuwien.ac.at/records/0ewrv-8cb44">官方数据</a></td></tr><tr data-group="F" data-evidence="A" data-counted="0"><td><a href="#F02">F02</a></td><td>MotionTrans（FTP公开机器人部分）</td><td>力觉扩展（不计主触觉数量）</td><td>A</td><td>原始数据许可本次未确认</td><td><a href="https://motiontrans.github.io/">项目</a></td></tr><tr data-group="A" data-evidence="A" data-counted="0"><td><a href="#A01">A01</a></td><td>Foundation Tactile / FoTa</td><td>汇编／再处理包（不重复计数）</td><td>A</td><td>汇编卡MIT；原始来源许可仍须逐项保留</td><td><a href="https://huggingface.co/datasets/alanz-mit/FoundationTactile">官方数据</a></td></tr><tr data-group="A" data-evidence="A" data-counted="0"><td><a href="#A02">A02</a></td><td>Sparsh预训练混合与TacBench</td><td>汇编／再处理包（不重复计数）</td><td>A</td><td>分来源：部分CC BY-NC 4.0；须保留上游条款</td><td><a href="https://github.com/facebookresearch/sparsh">官方来源清单/下载</a></td></tr><tr data-group="A" data-evidence="A" data-counted="0"><td><a href="#A03">A03</a></td><td>FTP-1 Dataset</td><td>汇编／再处理包（不重复计数）</td><td>A</td><td>ModelScope汇编标MIT；HF卡无统一许可字段；保留各上游许可</td><td><a href="https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset">HF公开目录</a></td></tr><tr data-group="A" data-evidence="B" data-counted="0"><td><a href="#A04">A04</a></td><td>Touch100k</td><td>汇编／再处理包（不重复计数）</td><td>B</td><td>本次未确认各上游与派生文本许可</td><td><a href="https://cocacola-lab.github.io/Touch100k/">官方项目/数据</a></td></tr><tr data-group="A" data-evidence="A" data-counted="0"><td><a href="#A05">A05</a></td><td>Tactile Video Pretrain（yxma）</td><td>汇编／再处理包（不重复计数）</td><td>A</td><td>按源保留MIT/CC BY及NC-SA等原始条款</td><td><a href="https://huggingface.co/datasets/yxma/tactile-video-pretrain">主库</a></td></tr><tr data-group="X" data-evidence="D" data-counted="0"><td><a href="#X01">X01</a></td><td>DexUMI</td><td>待核实（不计数）</td><td>D</td><td>代码MIT；数据许可/完整下载待核实</td><td><a href="https://dex-umi.github.io/">官方项目</a></td></tr><tr data-group="X" data-evidence="D" data-counted="0"><td><a href="#X02">X02</a></td><td>EgoTac-Open / Kitchen / Hotel及EgoTac-SC</td><td>待核实（不计数）</td><td>D</td><td>EgoTac-SC卡Apache 2.0；三项FTP来源授权未确认</td><td><a href="https://huggingface.co/datasets/wkzhang/EgoTac-SC">新发现的公开包</a></td></tr><tr data-group="X" data-evidence="D" data-counted="0"><td><a href="#X03">X03</a></td><td>3D-ViTac</td><td>待核实（不计数）</td><td>D</td><td>代码开放；数据下载本次未确认</td><td><a href="https://binghao-huang.github.io/3D-ViTac/">官方项目</a></td></tr><tr data-group="X" data-evidence="D" data-counted="0"><td><a href="#X04">X04</a></td><td>Tactile Grasp and Move / Action-Conditioned Tactile Prediction</td><td>待核实（不计数）</td><td>D</td><td>待确认</td><td><a href="https://github.com/WillMandil001/Tactile_Grasp_and_Move_Dataset">作者仓库</a></td></tr><tr data-group="X" data-evidence="D" data-counted="0"><td><a href="#X05">X05</a></td><td>Touch-GS Dataset</td><td>待核实（不计数）</td><td>D</td><td>待确认</td><td><a href="https://github.com/armlabstanford/touch-gs-data">作者数据仓库</a></td></tr><tr data-group="X" data-evidence="D" data-counted="0"><td><a href="#X06">X06</a></td><td>HUST-Tactile</td><td>待核实（不计数）</td><td>D</td><td>待确认</td><td><a href="https://github.com/HUSTOROP/Hust-Tac-Dataset">作者仓库</a></td></tr><tr data-group="X" data-evidence="D" data-counted="0"><td><a href="#X07">X07</a></td><td>zhicao/egoforce（FusionX录制）</td><td>待核实（不计数）</td><td>D</td><td>未见数据专用许可</td><td><a href="https://huggingface.co/datasets/zhicao/egoforce">候选录制库</a></td></tr></tbody></table></div></section><article><h1 id="_1">公开触觉数据集调研报告</h1>
-<p><strong>面向：自建触觉世界模型｜检索截止：2026年10月9日｜版本：1.0</strong></p>
+</aside><main><section class="explorer"><h2 style="margin-top:0;border:0;padding-top:0">全部条目筛选</h2><p class="counter">A＝已见文件目录，B＝已见官方入口，C＝条件开放，D＝待核实。筛选器仅筛选本表；点击编号查看正文详情。</p><div class="filters"><input aria-label="搜索数据集" id="query" placeholder="搜索名称、编号或许可" type="search"/><select aria-label="分类" id="group"><option value="">所有类别</option><option value="E">E · 人类ego＋实测触觉</option><option value="R">R · 机器人真机触觉</option><option value="U">U · 人操持工具／UMI</option><option value="H">H · 其他人类实测（非ego或视角未确认）</option><option value="P">P · 实物探测／标定／混合实验台</option><option value="A">A · 汇编／再处理包（不重复计数）</option><option value="F">F · 力觉扩展（不计主触觉数量）</option><option value="X">X · 待核实（不计数）</option></select><select aria-label="证据等级" id="evidence"><option value="">所有证据等级</option><option>A</option><option>B</option><option>C</option><option>D</option></select><select aria-label="统计口径" id="counted"><option value="">所有条目</option><option value="1">仅计入主统计</option><option value="0">未计入主统计</option></select><label class="illustrated-toggle"><input id="only-illustrated" type="checkbox"/>仅有配图</label></div><p class="counter" id="result-count"></p><div class="scroll"><table id="inventory"><thead><tr><th>编号</th><th>数据集</th><th>类别</th><th>证据</th><th>数据许可</th><th>入口</th><th>配图</th></tr></thead><tbody><tr data-counted="1" data-evidence="B" data-figures="2" data-group="E"><td><a href="#E01">E01</a></td><td>ActionSense</td><td>人类ego＋实测触觉</td><td>B</td><td>CC BY-NC-SA 4.0</td><td><a href="https://action-sense.csail.mit.edu/">项目</a></td><td class="media-count"><a href="#fig-e01-01">2张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="2" data-group="E"><td><a href="#E02">E02</a></td><td>EgoPressure</td><td>人类ego＋实测触觉</td><td>A</td><td>CC BY-NC-SA 4.0；MANO另受其许可约束</td><td><a href="https://huggingface.co/datasets/eth-siplab/EgoPressure">官方数据</a></td><td class="media-count"><a href="#fig-e02-01">2张</a></td></tr><tr data-counted="1" data-evidence="B" data-figures="2" data-group="E"><td><a href="#E03">E03</a></td><td>OpenTouch</td><td>人类ego＋实测触觉</td><td>B</td><td>本次未确认数据专用许可证</td><td><a href="https://opentouch-tactile.github.io/">项目</a></td><td class="media-count"><a href="#fig-e03-01">2张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="2" data-group="E"><td><a href="#E04">E04</a></td><td>EgoTouch（TouchAnything数据）</td><td>人类ego＋实测触觉</td><td>A</td><td>数据许可未确认；代码MIT不自动等于数据MIT</td><td><a href="https://huggingface.co/datasets/zhouzhoujy/EgoTouch">官方数据</a></td><td class="media-count"><a href="#fig-e04-01">2张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="2" data-group="E"><td><a href="#E05">E05</a></td><td>EgoTactile</td><td>人类ego＋实测触觉</td><td>A</td><td>CC BY-NC 4.0</td><td><a href="https://huggingface.co/datasets/HustleHard/EgoTactile">官方数据</a></td><td class="media-count"><a href="#fig-e05-01">2张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="2" data-group="E"><td><a href="#E06">E06</a></td><td>OpenGraph Ego-Tactile Manipulation</td><td>人类ego＋实测触觉</td><td>A</td><td>CC BY 4.0</td><td><a href="https://huggingface.co/datasets/OpenGraphLabs-Research/ego-tactile-manipulation">官方数据及格式</a></td><td class="media-count"><a href="#fig-e06-01">2张</a></td></tr><tr data-counted="1" data-evidence="B" data-figures="1" data-group="E"><td><a href="#E07">E07</a></td><td>Touch and Go</td><td>人类ego＋实测触觉</td><td>B</td><td>CC BY 4.0</td><td><a href="https://touch-and-go.github.io/">官方项目/许可</a></td><td class="media-count"><a href="#fig-e07-01">1张</a></td></tr><tr data-counted="1" data-evidence="B" data-figures="1" data-group="E"><td><a href="#E08">E08</a></td><td>VTDexManip（真实人类预训练数据）</td><td>人类ego＋实测触觉</td><td>B</td><td>归档内有License.txt，本次未解包确认条款</td><td><a href="https://lqts.github.io/VTDexManip/">项目</a></td><td class="media-count"><a href="#fig-e08-01">1张</a></td></tr><tr data-counted="1" data-evidence="B" data-figures="1" data-group="R"><td><a href="#R01">R01</a></td><td>VisGel</td><td>机器人真机触觉</td><td>B</td><td>本次未确认数据专用许可</td><td><a href="https://github.com/YunzhuLi/VisGel">作者仓库/下载脚本</a></td><td class="media-count"><a href="#fig-r01-01">1张</a></td></tr><tr data-counted="1" data-evidence="B" data-figures="2" data-group="R"><td><a href="#R02">R02</a></td><td>Calandra抓取数据 / The Feeling of Success</td><td>机器人真机触觉</td><td>B</td><td>原始数据许可本次未确认</td><td><a href="https://sites.google.com/view/the-feeling-of-success/">原项目</a></td><td class="media-count"><a href="#fig-r02-01">2张</a></td></tr><tr data-counted="1" data-evidence="B" data-figures="1" data-group="R"><td><a href="#R03">R03</a></td><td>ObjectFolder-Real</td><td>机器人真机触觉</td><td>B</td><td>本次未确认数据专用许可</td><td><a href="https://objectfolder.stanford.edu/objectfolder-real-download">官方数据与结构</a></td><td class="media-count"><a href="#fig-r03-01">1张</a></td></tr><tr data-counted="1" data-evidence="B" data-figures="0" data-group="R"><td><a href="#R04">R04</a></td><td>Eagle Shoal / Visual-Tactile Dataset</td><td>机器人真机触觉</td><td>B</td><td>CDLA-Permissive 1.0</td><td><a href="https://github.com/tsinghua-rll/Visual-Tactile_Dataset">数据仓库/许可</a></td><td class="media-count">—</td></tr><tr data-counted="1" data-evidence="B" data-figures="2" data-group="R"><td><a href="#R05">R05</a></td><td>PoseIt</td><td>机器人真机触觉</td><td>B</td><td>数据CC BY-SA 4.0；代码MIT</td><td><a href="https://github.com/Robo-Touch/PoseIt">官方数据说明/Drive</a></td><td class="media-count"><a href="#fig-r05-01">2张</a></td></tr><tr data-counted="1" data-evidence="B" data-figures="1" data-group="R"><td><a href="#R06">R06</a></td><td>YCB-Sight（真实部分）</td><td>机器人真机触觉</td><td>B</td><td>数据CC BY-SA 4.0；代码MIT</td><td><a href="https://github.com/Robo-Touch/YCB-Sight">官方数据/逐物体下载</a></td><td class="media-count"><a href="#fig-r06-01">1张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="1" data-group="R"><td><a href="#R07">R07</a></td><td>RH20T（触觉配置）</td><td>机器人真机触觉</td><td>A</td><td>原始条款以官方数据申请/下载说明为准；本次未确认独立数据许可</td><td><a href="https://rh20t.github.io/">官方项目/下载</a></td><td class="media-count"><a href="#fig-r07-pdf-fig5">1张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="3" data-group="R"><td><a href="#R08">R08</a></td><td>Reactive Diffusion Policy（RDP）数据</td><td>机器人真机触觉</td><td>A</td><td>MIT</td><td><a href="https://huggingface.co/datasets/WendiChen/reactive_diffusion_policy_dataset">官方数据</a></td><td class="media-count"><a href="#fig-r08-01">3张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="1" data-group="R"><td><a href="#R09">R09</a></td><td>UniT数据</td><td>机器人真机触觉</td><td>A</td><td>原始数据许可本次未确认</td><td><a href="https://github.com/ZhengtongXu/UniT">作者仓库/原始Drive</a></td><td class="media-count"><a href="#fig-r09-01">1张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="1" data-group="R"><td><a href="#R10">R10</a></td><td>VLA-Touch数据</td><td>机器人真机触觉</td><td>A</td><td>代码MIT；数据专用许可本次未确认</td><td><a href="https://huggingface.co/datasets/AllenBi21/VLA-Touch">官方数据</a></td><td class="media-count"><a href="#fig-r10-01">1张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="2" data-group="R"><td><a href="#R11">R11</a></td><td>OmniViTac（OmniVTA数据）</td><td>机器人真机触觉</td><td>A</td><td>CC BY-NC 4.0</td><td><a href="https://huggingface.co/datasets/tars-robotics/OmniVitac">官方数据</a></td><td class="media-count"><a href="#fig-r11-01">2张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="2" data-group="R"><td><a href="#R12">R12</a></td><td>HapTile</td><td>机器人真机触觉</td><td>A</td><td>CC BY 4.0</td><td><a href="https://huggingface.co/datasets/HapTile2026/HapTile">数据</a></td><td class="media-count"><a href="#fig-r12-collection">2张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="2" data-group="R"><td><a href="#R13">R13</a></td><td>LET-Dex Dataset</td><td>机器人真机触觉</td><td>A</td><td>CC BY-NC-SA 4.0</td><td><a href="https://huggingface.co/datasets/LejuRobotics/LET-Dex-Dataset">官方数据</a></td><td class="media-count"><a href="#fig-r13-01">2张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="1" data-group="R"><td><a href="#R14">R14</a></td><td>Humanoid Everyday（触觉部分）</td><td>机器人真机触觉</td><td>A</td><td>Apache 2.0</td><td><a href="https://huggingface.co/datasets/USC-PSI-Lab/humanoid-everyday">官方数据</a></td><td class="media-count"><a href="#fig-r14-01">1张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="2" data-group="R"><td><a href="#R15">R15</a></td><td>白虎-VTouch / OpenLoong visuo-tactile</td><td>机器人真机触觉</td><td>A</td><td>CC BY-NC-SA 4.0</td><td><a href="https://www.modelscope.cn/datasets/OpenLoong-Community/visuo-tactile">官方数据</a></td><td class="media-count"><a href="#fig-r15-01">2张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="1" data-group="R"><td><a href="#R16">R16</a></td><td>Sharpa North-FTP-1</td><td>机器人真机触觉</td><td>A</td><td>汇编平台标MIT；独立原始数据授权仍需核对</td><td><a href="https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset/tree/main/sharpa">公开数据</a></td><td class="media-count"><a href="#fig-r16-01">1张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="1" data-group="R"><td><a href="#R17">R17</a></td><td>Tactile MNIST（Real）</td><td>机器人真机触觉</td><td>A</td><td>CC BY 2.0（真实序列数据卡）；代码MIT</td><td><a href="https://huggingface.co/datasets/TimSchneider42/tactile-mnist-touch-real-seq-t256-320x240">真实序列数据</a></td><td class="media-count"><a href="#fig-r17-01">1张</a></td></tr><tr data-counted="1" data-evidence="B" data-figures="0" data-group="R"><td><a href="#R18">R18</a></td><td>ARQ-CRISP Slip Detection Dataset</td><td>机器人真机触觉</td><td>B</td><td>本次未确认数据专用许可</td><td><a href="https://github.com/ARQ-CRISP/slip_detection_dataset_2021">数据及协议</a></td><td class="media-count">—</td></tr><tr data-counted="1" data-evidence="B" data-figures="1" data-group="R"><td><a href="#R19">R19</a></td><td>iCub Hybrid Touch Texture Dataset</td><td>机器人真机触觉</td><td>B</td><td>本次未确认数据专用许可</td><td><a href="https://github.com/clear-nus/TactileLearning">官方数据</a></td><td class="media-count"><a href="#fig-r19-01">1张</a></td></tr><tr data-counted="1" data-evidence="B" data-figures="1" data-group="R"><td><a href="#R20">R20</a></td><td>Doro/Jaco OptoForce Object Classification</td><td>机器人真机触觉</td><td>B</td><td>数据许可未明确；作者说明允许使用/修改代码不能替代数据许可</td><td><a href="https://github.com/philipmaus/Tactile_Object_Classification">原作者数据仓库</a></td><td class="media-count"><a href="#fig-r20-01">1张</a></td></tr><tr data-counted="1" data-evidence="B" data-figures="1" data-group="R"><td><a href="#R21">R21</a></td><td>BioTac_slide_20_50</td><td>机器人真机触觉</td><td>B</td><td>本次未确认数据专用许可</td><td><a href="https://github.com/dexrob/BioTac_slide_20_50">官方数据</a></td><td class="media-count"><a href="#fig-r21-01">1张</a></td></tr><tr data-counted="1" data-evidence="B" data-figures="0" data-group="R"><td><a href="#R22">R22</a></td><td>Active Clothing Material Perception（Yuan18）</td><td>机器人真机触觉</td><td>B</td><td>本次未确认数据专用许可</td><td><a href="http://data.csail.mit.edu/active_clothing/Data_ICRA18.tar">原始数据归档</a></td><td class="media-count">—</td></tr><tr data-counted="1" data-evidence="A" data-figures="1" data-group="R"><td><a href="#R23">R23</a></td><td>SSVTP</td><td>机器人真机触觉</td><td>A</td><td>原始数据专用许可本次未确认</td><td><a href="https://huggingface.co/datasets/mlfu7/Touch-Vision-Language-Dataset">公开数据（TVL内ssvtp）</a></td><td class="media-count"><a href="#fig-r23-01">1张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="1" data-group="U"><td><a href="#U01">U01</a></td><td>FreeTacMan</td><td>人操持工具／UMI</td><td>A</td><td>数据MIT；代码仓库Apache 2.0</td><td><a href="https://huggingface.co/datasets/OpenDriveLab/FreeTacMan">官方数据</a></td><td class="media-count"><a href="#fig-u01-01">1张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="1" data-group="U"><td><a href="#U02">U02</a></td><td>Touch in the Wild</td><td>人操持工具／UMI</td><td>A</td><td>MIT</td><td><a href="https://huggingface.co/datasets/binghaohuang-robot/touch_in_the_wild-dataset">官方数据</a></td><td class="media-count"><a href="#fig-u02-01">1张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="1" data-group="U"><td><a href="#U03">U03</a></td><td>exUMI</td><td>人操持工具／UMI</td><td>A</td><td>本次未确认数据专用许可</td><td><a href="https://huggingface.co/datasets/silicx/exUMI">官方数据</a></td><td class="media-count"><a href="#fig-u03-01">1张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="1" data-group="U"><td><a href="#U04">U04</a></td><td>ViTaMIn</td><td>人操持工具／UMI</td><td>A</td><td>MIT（作者HF数据卡）</td><td><a href="https://huggingface.co/datasets/chuanyune/ViTaMIn_dataset">作者数据</a></td><td class="media-count"><a href="#fig-u04-01">1张</a></td></tr><tr data-counted="1" data-evidence="B" data-figures="1" data-group="U"><td><a href="#U05">U05</a></td><td>Daimon-Infinity</td><td>人操持工具／UMI</td><td>B</td><td>CC BY-NC-SA 4.0</td><td><a href="https://github.com/dmrobot-admin/Daimon-Infinity">官方说明/许可</a></td><td class="media-count"><a href="#fig-u05-02">1张</a></td></tr><tr data-counted="1" data-evidence="B" data-figures="2" data-group="H"><td><a href="#H01">H01</a></td><td>STAG</td><td>其他人类实测（非ego或视角未确认）</td><td>B</td><td>本次未确认数据专用许可</td><td><a href="https://stag.csail.mit.edu/">官方项目与下载</a></td><td class="media-count"><a href="#fig-h01-01">2张</a></td></tr><tr data-counted="1" data-evidence="B" data-figures="1" data-group="H"><td><a href="#H02">H02</a></td><td>PressureVisionDB</td><td>其他人类实测（非ego或视角未确认）</td><td>B</td><td>MIT（明确覆盖数据与代码）</td><td><a href="https://github.com/facebookresearch/PressureVision">官方代码/下载器/许可</a></td><td class="media-count"><a href="#fig-h02-01">1张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="1" data-group="H"><td><a href="#H03">H03</a></td><td>PX OmniSharing DB SampleData</td><td>其他人类实测（非ego或视角未确认）</td><td>A</td><td>CC BY-NC-SA 4.0（数据卡正文）</td><td><a href="https://huggingface.co/datasets/paxini/Omnisharing_DB_SampleData">官方样例数据</a></td><td class="media-count"><a href="#fig-h03-01">1张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="2" data-group="H"><td><a href="#H04">H04</a></td><td>FusionX Multimodal Sample Dataset V3</td><td>其他人类实测（非ego或视角未确认）</td><td>A</td><td>CC BY 4.0</td><td><a href="https://huggingface.co/datasets/touchtronix/FusionX-Multimodal-Sample-Data-V3">发布方数据</a></td><td class="media-count"><a href="#fig-h04-rgb">2张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="1" data-group="H"><td><a href="#H05">H05</a></td><td>Tachin Fixed Viewpoint Tactile Dataset</td><td>其他人类实测（非ego或视角未确认）</td><td>A</td><td>Apache 2.0</td><td><a href="https://huggingface.co/datasets/Tachintech/Fixed_Viewpoint_Tactile_Dataset">发布方数据/字段定义</a></td><td class="media-count"><a href="#fig-h05-sample">1张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="1" data-group="H"><td><a href="#H06">H06</a></td><td>Tactile Gesture Language</td><td>其他人类实测（非ego或视角未确认）</td><td>A</td><td>GPL 3.0（数据卡）</td><td><a href="https://huggingface.co/datasets/Tachintech/Tactile_Gesture_Language">发布方数据</a></td><td class="media-count"><a href="#fig-h06-sample">1张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="2" data-group="P"><td><a href="#P01">P01</a></td><td>TVL-HCT（TVL新增人采部分）</td><td>实物探测／标定／混合实验台</td><td>A</td><td>代码Apache 2.0；数据独立许可本次未确认</td><td><a href="https://huggingface.co/datasets/mlfu7/Touch-Vision-Language-Dataset">官方数据及修复说明</a></td><td class="media-count"><a href="#fig-p01-01">2张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="1" data-group="P"><td><a href="#P02">P02</a></td><td>TacQuad（AnyTouch）</td><td>实物探测／标定／混合实验台</td><td>A</td><td>MIT</td><td><a href="https://huggingface.co/datasets/xxuan01/TacQuad">官方数据</a></td><td class="media-count"><a href="#fig-p02-01">1张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="2" data-group="P"><td><a href="#P03">P03</a></td><td>HPT / HTT Dataset</td><td>实物探测／标定／混合实验台</td><td>A</td><td>CC BY-NC 4.0</td><td><a href="https://huggingface.co/datasets/AllenBi21/HTT-dataset">官方数据/manifest</a></td><td class="media-count"><a href="#fig-p03-01">2张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="1" data-group="P"><td><a href="#P04">P04</a></td><td>TaF-Dataset</td><td>实物探测／标定／混合实验台</td><td>A</td><td>MIT</td><td><a href="https://huggingface.co/datasets/jiamig/taf-dataset">官方数据/字段/许可</a></td><td class="media-count"><a href="#fig-p04-01">1张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="2" data-group="P"><td><a href="#P05">P05</a></td><td>Touch-Slide</td><td>实物探测／标定／混合实验台</td><td>A</td><td>CC BY-NC 4.0</td><td><a href="https://huggingface.co/datasets/facebook/touch-slide">官方数据</a></td><td class="media-count"><a href="#fig-p05-01">2张</a></td></tr><tr data-counted="1" data-evidence="B" data-figures="1" data-group="P"><td><a href="#P06">P06</a></td><td>YCB-Slide（Real）</td><td>实物探测／标定／混合实验台</td><td>B</td><td>MIT</td><td><a href="https://github.com/rpl-cmu/YCB-Slide">官方数据/下载</a></td><td class="media-count"><a href="#fig-p06-01">1张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="1" data-group="P"><td><a href="#P07">P07</a></td><td>Sparsh / TacBench原创监督数据</td><td>实物探测／标定／混合实验台</td><td>A</td><td>CC BY-NC 4.0</td><td><a href="https://huggingface.co/datasets/facebook/digit-force-estimation">DIGIT力/滑移</a></td><td class="media-count"><a href="#fig-p07-01">1张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="2" data-group="P"><td><a href="#P08">P08</a></td><td>TactileTracking / NormalFlow Dataset</td><td>实物探测／标定／混合实验台</td><td>A</td><td>MIT</td><td><a href="https://huggingface.co/datasets/joehjhuang/TactileTracking">官方数据</a></td><td class="media-count"><a href="#fig-p08-01">2张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="2" data-group="P"><td><a href="#P09">P09</a></td><td>GelSLAM Dataset</td><td>实物探测／标定／混合实验台</td><td>A</td><td>MIT</td><td><a href="https://huggingface.co/datasets/joehjhuang/GelSLAM_dataset">官方数据及局限</a></td><td class="media-count"><a href="#fig-p09-01">2张</a></td></tr><tr data-counted="1" data-evidence="B" data-figures="0" data-group="P"><td><a href="#P10">P10</a></td><td>GelSight Sim2Real（真实A域）</td><td>实物探测／标定／混合实验台</td><td>B</td><td>本次未确认数据专用许可</td><td><a href="https://github.com/RVSATHU/GelSight-Sim2Real">官方数据/协议</a></td><td class="media-count">—</td></tr><tr data-counted="1" data-evidence="B" data-figures="2" data-group="P"><td><a href="#P11">P11</a></td><td>PhysiCLeAR（Octopi 1.0/1.5）</td><td>实物探测／标定／混合实验台</td><td>B</td><td>本次未确认数据专用许可</td><td><a href="https://github.com/clear-nus/octopi-1.5">官方数据下载说明</a></td><td class="media-count"><a href="#fig-p11-01">2张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="2" data-group="P"><td><a href="#P12">P12</a></td><td>Touch-Ex</td><td>实物探测／标定／混合实验台</td><td>A</td><td>CC BY 4.0</td><td><a href="https://huggingface.co/datasets/gemixin/touch-ex">发布方数据及采集说明</a></td><td class="media-count"><a href="#fig-p12-01">2张</a></td></tr><tr data-counted="1" data-evidence="A" data-figures="1" data-group="P"><td><a href="#P13">P13</a></td><td>Tactile Deformation Response</td><td>实物探测／标定／混合实验台</td><td>A</td><td>GPL 3.0</td><td><a href="https://huggingface.co/datasets/Tachintech/tactile-deformation-response">发布方数据</a></td><td class="media-count"><a href="#fig-p13-sample">1张</a></td></tr><tr data-counted="0" data-evidence="C" data-figures="2" data-group="E"><td><a href="#C01">C01</a></td><td>TouchScale</td><td>人类ego＋实测触觉</td><td>C</td><td>CC BY-NC 4.0；HF自动条款门控</td><td><a href="https://huggingface.co/datasets/2077AIDataFoundation/TouchScale">发布状态及数据</a></td><td class="media-count"><a href="#fig-c01-01">2张</a></td></tr><tr data-counted="0" data-evidence="C" data-figures="2" data-group="P"><td><a href="#C02">C02</a></td><td>ToucHD（AnyTouch 2，真实Force/Mani）</td><td>实物探测／标定／混合实验台</td><td>C</td><td>MIT；HF自动条款门控，要求联系方式/单位/国家</td><td><a href="https://huggingface.co/datasets/BAAI/ToucHD-Force">Force</a></td><td class="media-count"><a href="#fig-c02-01">2张</a></td></tr><tr data-counted="0" data-evidence="A" data-figures="0" data-group="F"><td><a href="#F01">F01</a></td><td>REASSEMBLE</td><td>力觉扩展（不计主触觉数量）</td><td>A</td><td>代码MIT；数据以TUData页面条款为准</td><td><a href="https://researchdata.tuwien.ac.at/records/0ewrv-8cb44">官方数据</a></td><td class="media-count">—</td></tr><tr data-counted="0" data-evidence="A" data-figures="0" data-group="F"><td><a href="#F02">F02</a></td><td>MotionTrans（FTP公开机器人部分）</td><td>力觉扩展（不计主触觉数量）</td><td>A</td><td>原始数据许可本次未确认</td><td><a href="https://motiontrans.github.io/">项目</a></td><td class="media-count">—</td></tr><tr data-counted="0" data-evidence="A" data-figures="1" data-group="A"><td><a href="#A01">A01</a></td><td>Foundation Tactile / FoTa</td><td>汇编／再处理包（不重复计数）</td><td>A</td><td>汇编卡MIT；原始来源许可仍须逐项保留</td><td><a href="https://huggingface.co/datasets/alanz-mit/FoundationTactile">官方数据</a></td><td class="media-count"><a href="#fig-a01-01">1张</a></td></tr><tr data-counted="0" data-evidence="A" data-figures="0" data-group="A"><td><a href="#A02">A02</a></td><td>Sparsh预训练混合与TacBench</td><td>汇编／再处理包（不重复计数）</td><td>A</td><td>分来源：部分CC BY-NC 4.0；须保留上游条款</td><td><a href="https://github.com/facebookresearch/sparsh">官方来源清单/下载</a></td><td class="media-count">—</td></tr><tr data-counted="0" data-evidence="A" data-figures="1" data-group="A"><td><a href="#A03">A03</a></td><td>FTP-1 Dataset</td><td>汇编／再处理包（不重复计数）</td><td>A</td><td>ModelScope汇编标MIT；HF卡无统一许可字段；保留各上游许可</td><td><a href="https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset">HF公开目录</a></td><td class="media-count"><a href="#fig-a03-01">1张</a></td></tr><tr data-counted="0" data-evidence="B" data-figures="1" data-group="A"><td><a href="#A04">A04</a></td><td>Touch100k</td><td>汇编／再处理包（不重复计数）</td><td>B</td><td>本次未确认各上游与派生文本许可</td><td><a href="https://cocacola-lab.github.io/Touch100k/">官方项目/数据</a></td><td class="media-count"><a href="#fig-a04-01">1张</a></td></tr><tr data-counted="0" data-evidence="A" data-figures="0" data-group="A"><td><a href="#A05">A05</a></td><td>Tactile Video Pretrain（yxma）</td><td>汇编／再处理包（不重复计数）</td><td>A</td><td>按源保留MIT/CC BY及NC-SA等原始条款</td><td><a href="https://huggingface.co/datasets/yxma/tactile-video-pretrain">主库</a></td><td class="media-count">—</td></tr><tr data-counted="0" data-evidence="D" data-figures="0" data-group="X"><td><a href="#X01">X01</a></td><td>DexUMI</td><td>待核实（不计数）</td><td>D</td><td>代码MIT；数据许可/完整下载待核实</td><td><a href="https://dex-umi.github.io/">官方项目</a></td><td class="media-count">—</td></tr><tr data-counted="0" data-evidence="D" data-figures="0" data-group="X"><td><a href="#X02">X02</a></td><td>EgoTac-Open / Kitchen / Hotel及EgoTac-SC</td><td>待核实（不计数）</td><td>D</td><td>EgoTac-SC卡Apache 2.0；三项FTP来源授权未确认</td><td><a href="https://huggingface.co/datasets/wkzhang/EgoTac-SC">新发现的公开包</a></td><td class="media-count">—</td></tr><tr data-counted="0" data-evidence="D" data-figures="0" data-group="X"><td><a href="#X03">X03</a></td><td>3D-ViTac</td><td>待核实（不计数）</td><td>D</td><td>代码开放；数据下载本次未确认</td><td><a href="https://binghao-huang.github.io/3D-ViTac/">官方项目</a></td><td class="media-count">—</td></tr><tr data-counted="0" data-evidence="D" data-figures="0" data-group="X"><td><a href="#X04">X04</a></td><td>Tactile Grasp and Move / Action-Conditioned Tactile Prediction</td><td>待核实（不计数）</td><td>D</td><td>待确认</td><td><a href="https://github.com/WillMandil001/Tactile_Grasp_and_Move_Dataset">作者仓库</a></td><td class="media-count">—</td></tr><tr data-counted="0" data-evidence="D" data-figures="0" data-group="X"><td><a href="#X05">X05</a></td><td>Touch-GS Dataset</td><td>待核实（不计数）</td><td>D</td><td>待确认</td><td><a href="https://github.com/armlabstanford/touch-gs-data">作者数据仓库</a></td><td class="media-count">—</td></tr><tr data-counted="0" data-evidence="D" data-figures="0" data-group="X"><td><a href="#X06">X06</a></td><td>HUST-Tactile</td><td>待核实（不计数）</td><td>D</td><td>待确认</td><td><a href="https://github.com/HUSTOROP/Hust-Tac-Dataset">作者仓库</a></td><td class="media-count">—</td></tr><tr data-counted="0" data-evidence="D" data-figures="0" data-group="X"><td><a href="#X07">X07</a></td><td>zhicao/egoforce（FusionX录制）</td><td>待核实（不计数）</td><td>D</td><td>未见数据专用许可</td><td><a href="https://huggingface.co/datasets/zhicao/egoforce">候选录制库</a></td><td class="media-count">—</td></tr></tbody></table></div></section><article><h1 id="_1">公开触觉数据集调研报告</h1>
+<p><strong>面向：自建触觉世界模型｜检索截止：2026年10月9日｜版本：1.0</strong></p><section class="visual-intro" id="visual-overview"><p class="visual-lead"><strong>先看数据长什么样</strong></p><p>配图更新：2026-10-16。本版新增81张图片，覆盖56个目录条目，其中51个属于主统计来源，8个人类ego来源均已配图。4组数值触觉样例由本报告读取公开数据后绘制。数据规模与开放状态仍沿用2026-10-09核验口径。</p><div class="visual-cards"><a class="visual-card" href="#E03"><img alt="人类ego：头戴视频＋全手触觉" loading="lazy" src="figures/e03-01.webp"/><span>人类ego：头戴视频＋全手触觉 →</span></a><a class="visual-card" href="#R12"><img alt="机器人真机：视觉＋双指触觉" loading="lazy" src="figures/r12-markers.webp"/><span>机器人真机：视觉＋双指触觉 →</span></a><a class="visual-card" href="#U02"><img alt="人操持工具：夹爪＋运动轨迹" loading="lazy" src="figures/u02-01.webp"/><span>人操持工具：夹爪＋运动轨迹 →</span></a></div><p class="visual-foot">图片版权归原作者；各图附来源与中文说明。点击图片可放大，按 Esc 关闭。数据介绍图中的论文总量、仿真和预测结果按图注区分。</p></section>
 <h2 id="1">1. 结论与数量</h2>
 <p>本次登记 <strong>71 个条目</strong>，其中 <strong>55 个独立真实触觉采集来源家族</strong>有可核实的数据文件目录或官方数据发布入口：<strong>人类 ego 8 个、机器人真机 23 个、人操持工具／UMI 5 个、其他人类实测 6 个、实物探测／标定／混合实验台 13 个</strong>。此外，TouchScale 和 ToucHD 是 <strong>2 个条件开放家族</strong>，单独计入时合计 <strong>57 个</strong>。</p>
 <p>这个结论回答的是“本轮检索发现了多少有公开发布证据的来源”，<strong>不是全网已经穷尽的绝对总量，也不是55个均已成功匿名下载、均有无用途限制的开源许可证</strong>。主数中的34个看到实际数据文件目录，另外21个确认了官方入口／脚本但没有验证大归档。需要最严格的可核实文件目录口径时，请使用A列。</p>
@@ -624,7 +629,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>官方注明一名参与者只有相机数据，初期参与者的Manus手指跟踪不可靠。不能把778分钟全部当成完整同步视频—姿态—触觉有效时长；网页目标25人不是已发布人数。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure" id="fig-e01-01">
+<div class="figure-type"><strong>E01 · 图1</strong><span>采集装置</span><small>点击图片放大</small></div>
+<a aria-label="放大：ActionSense官方可穿戴采集装置：第一视角相机、双手触觉手套及人体运动传感器。各模态有效覆盖仍须按参与者核对。" class="figure-open" href="figures/e01-01.webp" rel="noopener" target="_blank"><img alt="ActionSense官方可穿戴采集装置：第一视角相机、双手触觉手套及人体运动传感器。各模态有效覆盖仍须按参与者核对。" decoding="async" height="1469" loading="lazy" src="figures/e01-01.webp" width="1500"/></a>
+<figcaption>ActionSense官方可穿戴采集装置：第一视角相机、双手触觉手套及人体运动传感器。各模态有效覆盖仍须按参与者核对。<span class="figure-links"><a href="https://action-sense.csail.mit.edu/" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://action-sense.csail.mit.edu/images/wearable_sensors_v0.jpg" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure wide" id="fig-e01-02">
+<div class="figure-type"><strong>E01 · 图2</strong><span>数据概览</span><small>点击图片放大</small></div>
+<a aria-label="放大：ActionSense多模态厨房活动录制概览；展示视觉、人体运动及触觉的互补观测。" class="figure-open" href="figures/e01-02.webp" rel="noopener" target="_blank"><img alt="ActionSense多模态厨房活动录制概览；展示视觉、人体运动及触觉的互补观测。" decoding="async" height="899" loading="lazy" src="figures/e01-02.webp" width="2400"/></a>
+<figcaption>ActionSense多模态厨房活动录制概览；展示视觉、人体运动及触觉的互补观测。<span class="figure-links"><a href="https://action-sense.csail.mit.edu/" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://action-sense.csail.mit.edu/images/overview.jpg" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="E02"></a></p>
 <h3 id="e02-egopressure">E02 · EgoPressure</h3>
 <p><strong>分类：</strong>人类ego＋实测触觉　<strong>参考年份：</strong>2025　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -662,7 +678,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>压力来自手接触桌面压力板，不是全手戴手套操作任意物体；不能把多相机帧数视作独立接触状态。论文与新版数据卡规模口径不同，本文以现有发布卡为准。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-e02-01">
+<div class="figure-type"><strong>E02 · 图1</strong><span>采集装置</span><small>点击图片放大</small></div>
+<a aria-label="放大：EgoPressure论文图3：7个固定视角与1个ego相机组成的采集系统；接触压力来自桌面压力板。" class="figure-open" href="figures/e02-01.webp" rel="noopener" target="_blank"><img alt="EgoPressure论文图3：7个固定视角与1个ego相机组成的采集系统；接触压力来自桌面压力板。" decoding="async" height="1122" loading="lazy" src="figures/e02-01.webp" width="2024"/></a>
+<figcaption>EgoPressure论文图3：7个固定视角与1个ego相机组成的采集系统；接触压力来自桌面压力板。<span class="figure-links"><a href="https://arxiv.org/html/2409.02224" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2409.02224v2/camera_setup.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure wide" id="fig-e02-02">
+<div class="figure-type"><strong>E02 · 图2</strong><span>数据样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：EgoPressure论文标注样例（右手）：视觉、手部几何和压力监督。此处展示数据标注，不是将预测压力当传感器实测。" class="figure-open" href="figures/e02-02.webp" rel="noopener" target="_blank"><img alt="EgoPressure论文标注样例（右手）：视觉、手部几何和压力监督。此处展示数据标注，不是将预测压力当传感器实测。" decoding="async" height="1097" loading="lazy" src="figures/e02-02.webp" width="2039"/></a>
+<figcaption>EgoPressure论文标注样例（右手）：视觉、手部几何和压力监督。此处展示数据标注，不是将预测压力当传感器实测。<span class="figure-links"><a href="https://arxiv.org/html/2409.02224" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2409.02224v2/F2.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="E03"></a></p>
 <h3 id="e03-opentouch">E03 · OpenTouch</h3>
 <p><strong>分类：</strong>人类ego＋实测触觉　<strong>参考年份：</strong>2025　<strong>证据：</strong>B（已核实官方下载入口／脚本，归档未验证；计入主统计）</p>
@@ -700,7 +727,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>已核实官方脚本列27个Drive文件ID，未完成大文件下载。论文表中约800 object types与正文/网页8,000 objects不能混用，故不把两者当成同一个物体数量指标。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-e03-01">
+<div class="figure-type"><strong>E03 · 图1</strong><span>采集装置</span><small>点击图片放大</small></div>
+<a aria-label="放大：OpenTouch论文图4：Aria眼镜、手部跟踪与全手触觉采集及标注流程。语言标签来自后续自动标注。" class="figure-open" href="figures/e03-01.webp" rel="noopener" target="_blank"><img alt="OpenTouch论文图4：Aria眼镜、手部跟踪与全手触觉采集及标注流程。语言标签来自后续自动标注。" decoding="async" height="552" loading="lazy" src="figures/e03-01.webp" width="2040"/></a>
+<figcaption>OpenTouch论文图4：Aria眼镜、手部跟踪与全手触觉采集及标注流程。语言标签来自后续自动标注。<span class="figure-links"><a href="https://arxiv.org/html/2512.16842v1" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2512.16842v1/opentouch_hardware.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure wide" id="fig-e03-02">
+<div class="figure-type"><strong>E03 · 图2</strong><span>数据样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：OpenTouch论文图3：视频、手姿态与触觉对照。接触压力补充了遮挡、透明物体及仅看外观难以辨别的交互信息。" class="figure-open" href="figures/e03-02.webp" rel="noopener" target="_blank"><img alt="OpenTouch论文图3：视频、手姿态与触觉对照。接触压力补充了遮挡、透明物体及仅看外观难以辨别的交互信息。" decoding="async" height="912" loading="lazy" src="figures/e03-02.webp" width="2040"/></a>
+<figcaption>OpenTouch论文图3：视频、手姿态与触觉对照。接触压力补充了遮挡、透明物体及仅看外观难以辨别的交互信息。<span class="figure-links"><a href="https://arxiv.org/html/2512.16842v1" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2512.16842v1/opentouch_dataexample.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="E04"></a></p>
 <h3 id="e04-egotouchtouchanything">E04 · EgoTouch（TouchAnything数据）</h3>
 <p><strong>分类：</strong>人类ego＋实测触觉　<strong>参考年份：</strong>2026　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -738,7 +776,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>原始传感器、16×16采集说明和21×21处理网格须区分；不能把WiLoR估计称作全量动捕真值。数据目录有Home/Office/Outdoor/Retail/Workbench和split.json，但未证明覆盖论文全部样本。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-e04-01">
+<div class="figure-type"><strong>E04 · 图1</strong><span>采集装置</span><small>点击图片放大</small></div>
+<a aria-label="放大：EgoTouch论文图2：头戴和双腕相机、压力手套以及对齐后的多模态样例。公开处理代码中的手姿态包含WiLoR估计，应保留其有效掩码。" class="figure-open" href="figures/e04-01.webp" rel="noopener" target="_blank"><img alt="EgoTouch论文图2：头戴和双腕相机、压力手套以及对齐后的多模态样例。公开处理代码中的手姿态包含WiLoR估计，应保留其有效掩码。" decoding="async" height="850" loading="lazy" src="figures/e04-01.webp" width="1579"/></a>
+<figcaption>EgoTouch论文图2：头戴和双腕相机、压力手套以及对齐后的多模态样例。公开处理代码中的手姿态包含WiLoR估计，应保留其有效掩码。<span class="figure-links"><a href="https://arxiv.org/html/2605.13083" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2605.13083v1/data_collection.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure wide" id="fig-e04-02">
+<div class="figure-type"><strong>E04 · 图2</strong><span>数据样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：EgoTouch论文图3：多场景操作中的视角、手部姿态与接触压力示例。采集读数和模型估计字段需按正文区分。" class="figure-open" href="figures/e04-02.webp" rel="noopener" target="_blank"><img alt="EgoTouch论文图3：多场景操作中的视角、手部姿态与接触压力示例。采集读数和模型估计字段需按正文区分。" decoding="async" height="670" loading="lazy" src="figures/e04-02.webp" width="1937"/></a>
+<figcaption>EgoTouch论文图3：多场景操作中的视角、手部姿态与接触压力示例。采集读数和模型估计字段需按正文区分。<span class="figure-links"><a href="https://arxiv.org/html/2605.13083" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2605.13083v1/example_of_touchanything.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="E05"></a></p>
 <h3 id="e05-egotactile">E05 · EgoTactile</h3>
 <p><strong>分类：</strong>人类ego＋实测触觉　<strong>参考年份：</strong>2026　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -776,7 +825,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>裸手子集可见手没有戴手套：参考压力来自画面外另一只戴手套的手，以节拍器协调动作。裸手子集不应标成“可见手直接测量压力真值”。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-e05-01">
+<div class="figure-type"><strong>E05 · 图1</strong><span>采集装置</span><small>点击图片放大</small></div>
+<a aria-label="放大：EgoTactile论文图2：戴手套与裸手设置及数据分布。裸手设置的参考压力由画面外另一只戴手套的手提供，不能当成可见裸手的直接压力真值。" class="figure-open" href="figures/e05-01.webp" rel="noopener" target="_blank"><img alt="EgoTactile论文图2：戴手套与裸手设置及数据分布。裸手设置的参考压力由画面外另一只戴手套的手提供，不能当成可见裸手的直接压力真值。" decoding="async" height="603" loading="lazy" src="figures/e05-01.webp" width="1590"/></a>
+<figcaption>EgoTactile论文图2：戴手套与裸手设置及数据分布。裸手设置的参考压力由画面外另一只戴手套的手提供，不能当成可见裸手的直接压力真值。<span class="figure-links"><a href="https://arxiv.org/html/2606.09243v1" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2606.09243v1/dataset_overview.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure" id="fig-e05-02">
+<div class="figure-type"><strong>E05 · 图2</strong><span>触觉表示</span><small>点击图片放大</small></div>
+<a aria-label="放大：EgoTactile论文图7：稀疏触点序列与标准手形热图的映射；热图是传感器读数的派生表示，并非独立的稠密压力测量。" class="figure-open" href="figures/e05-02.webp" rel="noopener" target="_blank"><img alt="EgoTactile论文图7：稀疏触点序列与标准手形热图的映射；热图是传感器读数的派生表示，并非独立的稠密压力测量。" decoding="async" height="519" loading="lazy" src="figures/e05-02.webp" width="678"/></a>
+<figcaption>EgoTactile论文图7：稀疏触点序列与标准手形热图的映射；热图是传感器读数的派生表示，并非独立的稠密压力测量。<span class="figure-links"><a href="https://arxiv.org/html/2606.09243v1" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2606.09243v1/pressure_representation.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="E06"></a></p>
 <h3 id="e06-opengraph-ego-tactile-manipulation">E06 · OpenGraph Ego-Tactile Manipulation</h3>
 <p><strong>分类：</strong>人类ego＋实测触觉　<strong>参考年份：</strong>2026　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -814,7 +874,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>公开的是样例，不能推算其商业全库规模。动作边界由接触信号自动生成，数据卡明确不是人工真值；腕部IMU不等于腕部6DoF位置。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-e06-01">
+<div class="figure-type"><strong>E06 · 图1</strong><span>采集装置</span><small>点击图片放大</small></div>
+<a aria-label="放大：OpenGraph官方数据卡中的OGLO触觉手套；每手80个压力通道，传感器分布应与原始字段映射一起使用。" class="figure-open" href="figures/e06-01.webp" rel="noopener" target="_blank"><img alt="OpenGraph官方数据卡中的OGLO触觉手套；每手80个压力通道，传感器分布应与原始字段映射一起使用。" decoding="async" height="1348" loading="lazy" src="figures/e06-01.webp" width="2400"/></a>
+<figcaption>OpenGraph官方数据卡中的OGLO触觉手套；每手80个压力通道，传感器分布应与原始字段映射一起使用。<span class="figure-links"><a href="https://huggingface.co/datasets/OpenGraphLabs-Research/ego-tactile-manipulation/raw/main/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://huggingface.co/datasets/OpenGraphLabs-Research/ego-tactile-manipulation/resolve/main/assets/oglo_gloves.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure wide" id="fig-e06-02">
+<div class="figure-type"><strong>E06 · 图2</strong><span>数据样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：OpenGraph官方动作分段示例。接触边界由触觉信号自动生成，图中分段不等于人工逐帧标注。" class="figure-open" href="figures/e06-02.webp" rel="noopener" target="_blank"><img alt="OpenGraph官方动作分段示例。接触边界由触觉信号自动生成，图中分段不等于人工逐帧标注。" decoding="async" height="481" loading="lazy" src="figures/e06-02.webp" width="2400"/></a>
+<figcaption>OpenGraph官方动作分段示例。接触边界由触觉信号自动生成，图中分段不等于人工逐帧标注。<span class="figure-links"><a href="https://huggingface.co/datasets/OpenGraphLabs-Research/ego-tactile-manipulation/raw/main/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://huggingface.co/datasets/OpenGraphLabs-Research/ego-tactile-manipulation/resolve/main/assets/action_seg_storyboard.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="E07"></a></p>
 <h3 id="e07-touch-and-go">E07 · Touch and Go</h3>
 <p><strong>分类：</strong>人类ego＋实测触觉　<strong>参考年份：</strong>2022　<strong>证据：</strong>B（已核实官方下载入口／脚本，归档未验证；计入主统计）</p>
@@ -852,7 +923,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>ego指相机视角，不代表测到人类皮肤或手套压力；触觉是探头局部接触。与Sparsh/FoTa/AnyTouch中的Touch and Go去重。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-e07-01">
+<div class="figure-type"><strong>E07 · 图1</strong><span>采集装置</span><small>点击图片放大</small></div>
+<a aria-label="放大：Touch and Go官方项目展示的自然环境采集：人操持GelSight探头，记录局部触觉与第一视角视觉。它不是全手皮肤压力录制。" class="figure-open" href="figures/e07-01.webp" rel="noopener" target="_blank"><img alt="Touch and Go官方项目展示的自然环境采集：人操持GelSight探头，记录局部触觉与第一视角视觉。它不是全手皮肤压力录制。" decoding="async" height="2400" loading="lazy" src="figures/e07-01.webp" width="1800"/></a>
+<figcaption>Touch and Go官方项目展示的自然环境采集：人操持GelSight探头，记录局部触觉与第一视角视觉。它不是全手皮肤压力录制。<span class="figure-links"><a href="https://touch-and-go.github.io/" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://touch-and-go.github.io/resources/images/human_collect2.jpg" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="E08"></a></p>
 <h3 id="e08-vtdexmanip">E08 · VTDexManip（真实人类预训练数据）</h3>
 <p><strong>分类：</strong>人类ego＋实测触觉　<strong>参考年份：</strong>2025　<strong>证据：</strong>B（已核实官方下载入口／脚本，归档未验证；计入主统计）</p>
@@ -890,7 +967,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>部分实验对触觉二值化，不能当作稠密连续力分布。官方OneDrive下载密码为vtdexmanip；只计真实人类数据一次，不把6个任务算6个数据集。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-e08-01">
+<div class="figure-type"><strong>E08 · 图1</strong><span>采集与样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：VTDexManip官方数据介绍图：头戴采集、触觉手套、10种操作样例与数据统计。图中的真实人类数据与另行发布的仿真机器人评测需分开。" class="figure-open" href="figures/e08-01.webp" rel="noopener" target="_blank"><img alt="VTDexManip官方数据介绍图：头戴采集、触觉手套、10种操作样例与数据统计。图中的真实人类数据与另行发布的仿真机器人评测需分开。" decoding="async" height="1213" loading="lazy" src="figures/e08-01.webp" width="2400"/></a>
+<figcaption>VTDexManip官方数据介绍图：头戴采集、触觉手套、10种操作样例与数据统计。图中的真实人类数据与另行发布的仿真机器人评测需分开。<span class="figure-links"><a href="https://lqts.github.io/VTDexManip/" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://lqts.github.io/VTDexManip/resources/dataset.jpg" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <h2 id="5-23">5. 机器人真机触觉（23个）</h2>
 <p><a id="R01"></a></p>
 <h3 id="r01-visgel">R01 · VisGel</h3>
@@ -929,7 +1012,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>项目主页本次403，但作者仓库的下载说明可读；FoTa的VisGel-small是抽样/去平坦图版，不能与原库重复计数或拿其帧数代表原库。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-r01-01">
+<div class="figure-type"><strong>R01 · 图1</strong><span>官方示例（含预测）</span><small>点击图片放大</small></div>
+<a aria-label="放大：VisGel官方视觉到触觉演示截帧：原图包含真实输入／目标与模型生成结果，须按图内标签区分；预测列不作为真实触觉数据。" class="figure-open" href="figures/r01-01.webp" rel="noopener" target="_blank"><img alt="VisGel官方视觉到触觉演示截帧：原图包含真实输入／目标与模型生成结果，须按图内标签区分；预测列不作为真实触觉数据。" decoding="async" height="228" loading="lazy" src="figures/r01-01.webp" width="400"/></a>
+<figcaption>VisGel官方视觉到触觉演示截帧：原图包含真实输入／目标与模型生成结果，须按图内标签区分；预测列不作为真实触觉数据。<span class="figure-links"><a href="https://github.com/YunzhuLi/VisGel/blob/master/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://github.com/YunzhuLi/VisGel/blob/master/imgs/vision2touch_0.gif" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="R02"></a></p>
 <h3 id="r02-calandra-the-feeling-of-success">R02 · Calandra抓取数据 / The Feeling of Success</h3>
 <p><strong>分类：</strong>机器人真机触觉　<strong>参考年份：</strong>2017　<strong>证据：</strong>B（已核实官方下载入口／脚本，归档未验证；计入主统计）</p>
@@ -967,7 +1056,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>Calandra17、后续抓取版本及FoTa/Sparsh重打包按一个来源家族计，避免版本膨胀。FoTa源码表确认收录该来源。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure" id="fig-r02-01">
+<div class="figure-type"><strong>R02 · 图1</strong><span>采集装置</span><small>点击图片放大</small></div>
+<a aria-label="放大：The Feeling of Success论文图1：Sawyer机械臂与双GelSight平行夹爪。" class="figure-open" href="figures/r02-01.webp" rel="noopener" target="_blank"><img alt="The Feeling of Success论文图1：Sawyer机械臂与双GelSight平行夹爪。" decoding="async" height="1024" loading="lazy" src="figures/r02-01.webp" width="683"/></a>
+<figcaption>The Feeling of Success论文图1：Sawyer机械臂与双GelSight平行夹爪。<span class="figure-links"><a href="https://arxiv.org/html/1710.05512v2" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/1710.05512v2/fig/sawyer_gelsight.jpg" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure wide" id="fig-r02-pdf-fig2">
+<div class="figure-type"><strong>R02 · 图2</strong><span>论文真实触觉样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：The Feeling of Success论文图2（PDF第2页裁图）：不同物体在GelSight上产生的原始接触图像。只裁去页边和无关正文，图像内容未改写。" class="figure-open" href="figures/r02-pdf-fig2.webp" rel="noopener" target="_blank"><img alt="The Feeling of Success论文图2（PDF第2页裁图）：不同物体在GelSight上产生的原始接触图像。只裁去页边和无关正文，图像内容未改写。" decoding="async" height="346" loading="lazy" src="figures/r02-pdf-fig2.webp" width="977"/></a>
+<figcaption>The Feeling of Success论文图2（PDF第2页裁图）：不同物体在GelSight上产生的原始接触图像。只裁去页边和无关正文，图像内容未改写。<span class="figure-links"><a href="https://arxiv.org/abs/1710.05512" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/pdf/1710.05512" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="R03"></a></p>
 <h3 id="r03-objectfolder-real">R03 · ObjectFolder-Real</h3>
 <p><strong>分类：</strong>机器人真机触觉　<strong>参考年份：</strong>2023　<strong>证据：</strong>B（已核实官方下载入口／脚本，归档未验证；计入主统计）</p>
@@ -1005,7 +1105,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>与ObjectFolder 1.0/2.0的合成数据区别；声学敲击实验的力曲线不能自动当成触觉按压实验的力真值。官方明确触觉读数是视频，不能误写成只有静态图。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-r03-01">
+<div class="figure-type"><strong>R03 · 图1</strong><span>数据概览</span><small>点击图片放大</small></div>
+<a aria-label="放大：ObjectFolder官方ObjectFolder-Real物体集合图。该库另有视觉、声音和真实触觉视频；这里展示采集对象，不是三种模态的同步样例。" class="figure-open" href="figures/r03-01.webp" rel="noopener" target="_blank"><img alt="ObjectFolder官方ObjectFolder-Real物体集合图。该库另有视觉、声音和真实触觉视频；这里展示采集对象，不是三种模态的同步样例。" decoding="async" height="1349" loading="lazy" src="figures/r03-01.webp" width="2400"/></a>
+<figcaption>ObjectFolder官方ObjectFolder-Real物体集合图。该库另有视觉、声音和真实触觉视频；这里展示采集对象，不是三种模态的同步样例。<span class="figure-links"><a href="https://objectfolder.stanford.edu/" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://objectfolder.stanford.edu/assets/img/objectfolder/ObjectFolder-Real.jpg" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="R04"></a></p>
 <h3 id="r04-eagle-shoal-visual-tactile-dataset">R04 · Eagle Shoal / Visual-Tactile Dataset</h3>
 <p><strong>分类：</strong>机器人真机触觉　<strong>参考年份：</strong>2019　<strong>证据：</strong>B（已核实官方下载入口／脚本，归档未验证；计入主统计）</p>
@@ -1081,7 +1187,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>16×26不是总trial数；不要把单次抓取样本直接视为长任务轨迹。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-r05-01">
+<div class="figure-type"><strong>R05 · 图1</strong><span>数据模态</span><small>点击图片放大</small></div>
+<a aria-label="放大：PoseIt官方仓库的多模态观测图：机器人抓取中结合视觉、光学／阵列触觉与力学信息。" class="figure-open" href="figures/r05-01.webp" rel="noopener" target="_blank"><img alt="PoseIt官方仓库的多模态观测图：机器人抓取中结合视觉、光学／阵列触觉与力学信息。" decoding="async" height="926" loading="lazy" src="figures/r05-01.webp" width="1715"/></a>
+<figcaption>PoseIt官方仓库的多模态观测图：机器人抓取中结合视觉、光学／阵列触觉与力学信息。<span class="figure-links"><a href="https://github.com/Robo-Touch/PoseIt/blob/main/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://github.com/CMURoboTouch/PoseIt/blob/main/figures/data_modalities-1-1.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure" id="fig-r05-02">
+<div class="figure-type"><strong>R05 · 图2</strong><span>采集对象</span><small>点击图片放大</small></div>
+<a aria-label="放大：PoseIt官方物体集合；用于比较不同材质、几何与持握稳定性。" class="figure-open" href="figures/r05-02.webp" rel="noopener" target="_blank"><img alt="PoseIt官方物体集合；用于比较不同材质、几何与持握稳定性。" decoding="async" height="324" loading="lazy" src="figures/r05-02.webp" width="481"/></a>
+<figcaption>PoseIt官方物体集合；用于比较不同材质、几何与持握稳定性。<span class="figure-links"><a href="https://github.com/Robo-Touch/PoseIt/blob/main/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://github.com/CMURoboTouch/PoseIt/blob/main/figures/object_set.PNG" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="R06"></a></p>
 <h3 id="r06-ycb-sight">R06 · YCB-Sight（真实部分）</h3>
 <p><strong>分类：</strong>机器人真机触觉　<strong>参考年份：</strong>2021　<strong>证据：</strong>B（已核实官方下载入口／脚本，归档未验证；计入主统计）</p>
@@ -1119,7 +1236,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>与YCB-Slide是不同采集项目；真实与仿真文件必须分开，不把全部30物体都写成真机。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-r06-01">
+<div class="figure-type"><strong>R06 · 图1</strong><span>真实数据样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：YCB-Sight作者仓库明确标为real的演示截帧；与同仓库的仿真展示分开。" class="figure-open" href="figures/r06-01.webp" rel="noopener" target="_blank"><img alt="YCB-Sight作者仓库明确标为real的演示截帧；与同仓库的仿真展示分开。" decoding="async" height="203" loading="lazy" src="figures/r06-01.webp" width="600"/></a>
+<figcaption>YCB-Sight作者仓库明确标为real的演示截帧；与同仓库的仿真展示分开。<span class="figure-links"><a href="https://github.com/Robo-Touch/YCB-Sight" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://github.com/Robo-Touch/YCB-Sight/blob/main/media/YCBSight-real.gif" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="R07"></a></p>
 <h3 id="r07-rh20t">R07 · RH20T（触觉配置）</h3>
 <p><strong>分类：</strong>机器人真机触觉　<strong>参考年份：</strong>2023　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -1157,7 +1280,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>FTP公开包中RH20TCfg7Tactile有归档；Cfg5/6不是额外两个触觉数据集。不能把所有RH20T视频/人类示范都声称带触觉。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-r07-pdf-fig5">
+<div class="figure-type"><strong>R07 · 图1</strong><span>采集平台概览</span><small>点击图片放大</small></div>
+<a aria-label="放大：RH20T论文图5（PDF第5页裁图）：多视角视觉、机器人与力反馈采集平台。此图说明整套采集方式，不能用它推断所有配置都带指尖触觉；本报告只统计Cfg7触觉部分。" class="figure-open" href="figures/r07-pdf-fig5.webp" rel="noopener" target="_blank"><img alt="RH20T论文图5（PDF第5页裁图）：多视角视觉、机器人与力反馈采集平台。此图说明整套采集方式，不能用它推断所有配置都带指尖触觉；本报告只统计Cfg7触觉部分。" decoding="async" height="528" loading="lazy" src="figures/r07-pdf-fig5.webp" width="600"/></a>
+<figcaption>RH20T论文图5（PDF第5页裁图）：多视角视觉、机器人与力反馈采集平台。此图说明整套采集方式，不能用它推断所有配置都带指尖触觉；本报告只统计Cfg7触觉部分。<span class="figure-links"><a href="https://rh20t.github.io/" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://rh20t.github.io/static/RH20T_paper_compressed.pdf" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="R08"></a></p>
 <h3 id="r08-reactive-diffusion-policyrdp">R08 · Reactive Diffusion Policy（RDP）数据</h3>
 <p><strong>分类：</strong>机器人真机触觉　<strong>参考年份：</strong>2025　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -1195,7 +1324,23 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>单臂/双臂、raw/processed、mini/full都按一个来源家族；PCA采集时长不是操作示范总时长。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-r08-01">
+<div class="figure-type"><strong>R08 · 图1</strong><span>采集装置</span><small>点击图片放大</small></div>
+<a aria-label="放大：RDP论文图2：TactAR遥操作采集系统及触觉／力反馈。用于理解真实机器人状态、动作与触觉流的采集关系。" class="figure-open" href="figures/r08-01.webp" rel="noopener" target="_blank"><img alt="RDP论文图2：TactAR遥操作采集系统及触觉／力反馈。用于理解真实机器人状态、动作与触觉流的采集关系。" decoding="async" height="600" loading="lazy" src="figures/r08-01.webp" width="2043"/></a>
+<figcaption>RDP论文图2：TactAR遥操作采集系统及触觉／力反馈。用于理解真实机器人状态、动作与触觉流的采集关系。<span class="figure-links"><a href="https://arxiv.org/html/2503.02881v3" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2503.02881v3/system_layout.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure wide" id="fig-r08-02">
+<div class="figure-type"><strong>R08 · 图2</strong><span>触觉样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：RDP论文图3：不同接触模式下GelSight Mini的marker形变；形变场是触觉图像中的运动观测，不直接等同于标定力值。" class="figure-open" href="figures/r08-02.webp" rel="noopener" target="_blank"><img alt="RDP论文图3：不同接触模式下GelSight Mini的marker形变；形变场是触觉图像中的运动观测，不直接等同于标定力值。" decoding="async" height="346" loading="lazy" src="figures/r08-02.webp" width="1115"/></a>
+<figcaption>RDP论文图3：不同接触模式下GelSight Mini的marker形变；形变场是触觉图像中的运动观测，不直接等同于标定力值。<span class="figure-links"><a href="https://arxiv.org/html/2503.02881v3" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2503.02881v3/marker_motion.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure" id="fig-r08-03">
+<div class="figure-type"><strong>R08 · 图3</strong><span>任务样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：RDP论文图7：剥离、擦拭与双臂搬运三类接触丰富任务。" class="figure-open" href="figures/r08-03.webp" rel="noopener" target="_blank"><img alt="RDP论文图7：剥离、擦拭与双臂搬运三类接触丰富任务。" decoding="async" height="747" loading="lazy" src="figures/r08-03.webp" width="985"/></a>
+<figcaption>RDP论文图7：剥离、擦拭与双臂搬运三类接触丰富任务。<span class="figure-links"><a href="https://arxiv.org/html/2503.02881v3" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2503.02881v3/task.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="R09"></a></p>
 <h3 id="r09-unit">R09 · UniT数据</h3>
 <p><strong>分类：</strong>机器人真机触觉　<strong>参考年份：</strong>2024　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -1233,7 +1378,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>FTP Unit/Unit_Bimanual不再额外计数。原表征“单物体20分钟内”等描述不能套到全部策略数据。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-r09-01">
+<div class="figure-type"><strong>R09 · 图1</strong><span>数据可视化</span><small>点击图片放大</small></div>
+<a aria-label="放大：UniT官方Rerun数据可视化截帧，用于展示多路视觉、触觉与运动数据的共同时间轴。" class="figure-open" href="figures/r09-01.webp" rel="noopener" target="_blank"><img alt="UniT官方Rerun数据可视化截帧，用于展示多路视觉、触觉与运动数据的共同时间轴。" decoding="async" height="360" loading="lazy" src="figures/r09-01.webp" width="640"/></a>
+<figcaption>UniT官方Rerun数据可视化截帧，用于展示多路视觉、触觉与运动数据的共同时间轴。<span class="figure-links"><a href="https://github.com/ZhengtongXu/UniT/blob/main/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://github.com/ZhengtongXu/UniT/blob/main/teasers/rerun_example.gif" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="R10"></a></p>
 <h3 id="r10-vla-touch">R10 · VLA-Touch数据</h3>
 <p><strong>分类：</strong>机器人真机触觉　<strong>参考年份：</strong>2025　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -1271,7 +1422,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>不要与Tactile-VLA混名。FTP中VLA_touch是重打包；其时间戳/物理FPS应单独审计。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-r10-01">
+<div class="figure-type"><strong>R10 · 图1</strong><span>触觉样例与文本</span><small>点击图片放大</small></div>
+<a aria-label="放大：VLA-Touch论文图3：原始触觉图、生成的语言描述及规划响应。原图同时含模型输出，文字描述不是物理传感器真值。" class="figure-open" href="figures/r10-01.webp" rel="noopener" target="_blank"><img alt="VLA-Touch论文图3：原始触觉图、生成的语言描述及规划响应。原图同时含模型输出，文字描述不是物理传感器真值。" decoding="async" height="918" loading="lazy" src="figures/r10-01.webp" width="2400"/></a>
+<figcaption>VLA-Touch论文图3：原始触觉图、生成的语言描述及规划响应。原图同时含模型输出，文字描述不是物理传感器真值。<span class="figure-links"><a href="https://arxiv.org/html/2507.17294v2" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2507.17294v2/4_planning.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="R11"></a></p>
 <h3 id="r11-omnivitacomnivta">R11 · OmniViTac（OmniVTA数据）</h3>
 <p><strong>分类：</strong>机器人真机触觉　<strong>参考年份：</strong>2026　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -1309,7 +1466,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>OmniVTA、OmniVTLA和OmniViTac三个名字有区别；数据已发布不代表全部模型代码也已完整发布。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-r11-01">
+<div class="figure-type"><strong>R11 · 图1</strong><span>采集装置</span><small>点击图片放大</small></div>
+<a aria-label="放大：OmniViTac论文图2：机器人／TacUMI采集平台、可更换触觉末端与数据概览。图示包含不同本体，不能把所有轨迹一概视为机器人自主执行。" class="figure-open" href="figures/r11-01.webp" rel="noopener" target="_blank"><img alt="OmniViTac论文图2：机器人／TacUMI采集平台、可更换触觉末端与数据概览。图示包含不同本体，不能把所有轨迹一概视为机器人自主执行。" decoding="async" height="1109" loading="lazy" src="figures/r11-01.webp" width="2400"/></a>
+<figcaption>OmniViTac论文图2：机器人／TacUMI采集平台、可更换触觉末端与数据概览。图示包含不同本体，不能把所有轨迹一概视为机器人自主执行。<span class="figure-links"><a href="https://arxiv.org/html/2603.19201v3" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2603.19201v3/fig/dataset_teaser_0630.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure wide" id="fig-r11-02">
+<div class="figure-type"><strong>R11 · 图2</strong><span>数据样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：OmniViTac论文图3：装配、切割、调整、剥离、抓取和擦拭六类视觉—触觉交互样例。" class="figure-open" href="figures/r11-02.webp" rel="noopener" target="_blank"><img alt="OmniViTac论文图3：装配、切割、调整、剥离、抓取和擦拭六类视觉—触觉交互样例。" decoding="async" height="969" loading="lazy" src="figures/r11-02.webp" width="2048"/></a>
+<figcaption>OmniViTac论文图3：装配、切割、调整、剥离、抓取和擦拭六类视觉—触觉交互样例。<span class="figure-links"><a href="https://arxiv.org/html/2603.19201v3" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2603.19201v3/OmniVTA-6pattern.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="R12"></a></p>
 <h3 id="r12-haptile">R12 · HapTile</h3>
 <p><strong>分类：</strong>机器人真机触觉　<strong>参考年份：</strong>2026　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -1347,7 +1515,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>HDF5中的frames/videos是组而非普通目录；频率读取元数据，不能把任务ZIP个数当成示范个数。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-r12-collection">
+<div class="figure-type"><strong>R12 · 图1</strong><span>官方采集视频截帧</span><small>点击图片放大</small></div>
+<a aria-label="放大：HapTile官方datacollection_process视频第4秒截帧：多次机器人搬放瓶子的采集过程。画面展示不同演示的动作差异。" class="figure-open" href="figures/r12-collection.webp" rel="noopener" target="_blank"><img alt="HapTile官方datacollection_process视频第4秒截帧：多次机器人搬放瓶子的采集过程。画面展示不同演示的动作差异。" decoding="async" height="1080" loading="lazy" src="figures/r12-collection.webp" width="1920"/></a>
+<figcaption>HapTile官方datacollection_process视频第4秒截帧：多次机器人搬放瓶子的采集过程。画面展示不同演示的动作差异。<span class="figure-links"><a href="https://haptile-dataset.github.io/" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://haptile-dataset.github.io/static/videos/datacollection_process.mov" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure" id="fig-r12-markers">
+<div class="figure-type"><strong>R12 · 图2</strong><span>真实触觉与派生特征</span><small>点击图片放大</small></div>
+<a aria-label="放大：HapTile官方marker_tracking视频第2秒截帧：场景视觉、左右指原始触觉与marker追踪并列。右侧箭头是计算的运动特征，不是额外力传感器真值。" class="figure-open" href="figures/r12-markers.webp" rel="noopener" target="_blank"><img alt="HapTile官方marker_tracking视频第2秒截帧：场景视觉、左右指原始触觉与marker追踪并列。右侧箭头是计算的运动特征，不是额外力传感器真值。" decoding="async" height="950" loading="lazy" src="figures/r12-markers.webp" width="1250"/></a>
+<figcaption>HapTile官方marker_tracking视频第2秒截帧：场景视觉、左右指原始触觉与marker追踪并列。右侧箭头是计算的运动特征，不是额外力传感器真值。<span class="figure-links"><a href="https://haptile-dataset.github.io/" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://haptile-dataset.github.io/static/videos/marker_tracking.mov" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="R13"></a></p>
 <h3 id="r13-let-dex-dataset">R13 · LET-Dex Dataset</h3>
 <p><strong>分类：</strong>机器人真机触觉　<strong>参考年份：</strong>2025　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -1385,7 +1564,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>LET全库和LET-Dex触觉子库不能重复计数；数据卡部分旧下载别名与现仓库名不同，优先使用本条HF地址。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure" id="fig-r13-01">
+<div class="figure-type"><strong>R13 · 图1</strong><span>采集硬件</span><small>点击图片放大</small></div>
+<a aria-label="放大：LET-Dex官方数据卡中的Linker Hand灵巧手硬件。触觉阵列与六维力传感器应按各自topic读取。" class="figure-open" href="figures/r13-01.webp" rel="noopener" target="_blank"><img alt="LET-Dex官方数据卡中的Linker Hand灵巧手硬件。触觉阵列与六维力传感器应按各自topic读取。" decoding="async" height="483" loading="lazy" src="figures/r13-01.webp" width="508"/></a>
+<figcaption>LET-Dex官方数据卡中的Linker Hand灵巧手硬件。触觉阵列与六维力传感器应按各自topic读取。<span class="figure-links"><a href="https://huggingface.co/datasets/LejuRobotics/LET-Dex-Dataset/raw/main/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://huggingface.co/datasets/LejuRobotics/LET-Dex-Dataset/resolve/main/docs/images/linker_hand.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure wide" id="fig-r13-02">
+<div class="figure-type"><strong>R13 · 图2</strong><span>数据可视化</span><small>点击图片放大</small></div>
+<a aria-label="放大：LET-Dex官方数据可视化示例；用来了解机器人、相机和触觉流的布局，不代表所有录制均包含完整模态。" class="figure-open" href="figures/r13-02.webp" rel="noopener" target="_blank"><img alt="LET-Dex官方数据可视化示例；用来了解机器人、相机和触觉流的布局，不代表所有录制均包含完整模态。" decoding="async" height="924" loading="lazy" src="figures/r13-02.webp" width="1872"/></a>
+<figcaption>LET-Dex官方数据可视化示例；用来了解机器人、相机和触觉流的布局，不代表所有录制均包含完整模态。<span class="figure-links"><a href="https://huggingface.co/datasets/LejuRobotics/LET-Dex-Dataset/raw/main/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://huggingface.co/datasets/LejuRobotics/LET-Dex-Dataset/resolve/main/docs/images/Visualize+Datasets.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="R14"></a></p>
 <h3 id="r14-humanoid-everyday">R14 · Humanoid Everyday（触觉部分）</h3>
 <p><strong>分类：</strong>机器人真机触觉　<strong>参考年份：</strong>2025　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -1423,7 +1613,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>不能假设每条、每个平台都含同一触觉字段；数据卡使用过USC-GVL旧命名，现发布方为USC-PSI-Lab。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-r14-01">
+<div class="figure-type"><strong>R14 · 图1</strong><span>采集装置</span><small>点击图片放大</small></div>
+<a aria-label="放大：Humanoid Everyday论文的数据采集设置。整库含多种模态，本报告仅将实际含触觉的部分作为触觉训练候选。" class="figure-open" href="figures/r14-01.webp" rel="noopener" target="_blank"><img alt="Humanoid Everyday论文的数据采集设置。整库含多种模态，本报告仅将实际含触觉的部分作为触觉训练候选。" decoding="async" height="1732" loading="lazy" src="figures/r14-01.webp" width="2400"/></a>
+<figcaption>Humanoid Everyday论文的数据采集设置。整库含多种模态，本报告仅将实际含触觉的部分作为触觉训练候选。<span class="figure-links"><a href="https://arxiv.org/html/2510.08807v3" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2510.08807v3/images/datacollection-1.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="R15"></a></p>
 <h3 id="r15-vtouch-openloong-visuo-tactile">R15 · 白虎-VTouch / OpenLoong visuo-tactile</h3>
 <p><strong>分类：</strong>机器人真机触觉　<strong>参考年份：</strong>2026　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -1461,7 +1657,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>这里按一个跨本体来源家族计入R；PIKA部分不再计入U。FTP的VisuoTactile_D-WHEEL/QINGLOONG也是该家族，不能再加两个；16TB不是小时数。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure" id="fig-r15-01">
+<div class="figure-type"><strong>R15 · 图1</strong><span>场景分布</span><small>点击图片放大</small></div>
+<a aria-label="放大：白虎-VTouch官方数据卡的采集场景分布图；这是场景统计，不是逐条轨迹质量或完整触觉覆盖的证明。" class="figure-open" href="figures/r15-01.webp" rel="noopener" target="_blank"><img alt="白虎-VTouch官方数据卡的采集场景分布图；这是场景统计，不是逐条轨迹质量或完整触觉覆盖的证明。" decoding="async" height="1880" loading="lazy" src="figures/r15-01.webp" width="2096"/></a>
+<figcaption>白虎-VTouch官方数据卡的采集场景分布图；这是场景统计，不是逐条轨迹质量或完整触觉覆盖的证明。<span class="figure-links"><a href="https://www.modelscope.cn/datasets/OpenLoong-Community/visuo-tactile.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://openloong-apps-dev-public.obs.cn-east-3.myhuaweicloud.com/videos/visuo_tactile_readme/scenario.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure" id="fig-r15-02">
+<div class="figure-type"><strong>R15 · 图2</strong><span>触觉样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：VTouch官方左手左指光学触觉视频的截帧；这是传感器内部接触图像，不能当成外部场景RGB。" class="figure-open" href="figures/r15-02.webp" rel="noopener" target="_blank"><img alt="VTouch官方左手左指光学触觉视频的截帧；这是传感器内部接触图像，不能当成外部场景RGB。" decoding="async" height="320" loading="lazy" src="figures/r15-02.webp" width="320"/></a>
+<figcaption>VTouch官方左手左指光学触觉视频的截帧；这是传感器内部接触图像，不能当成外部场景RGB。<span class="figure-links"><a href="https://www.modelscope.cn/datasets/OpenLoong-Community/visuo-tactile.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://openloong-apps-dev-public.obs.cn-east-3.myhuaweicloud.com/videos/visuo_tactile_readme/hand_left_left.gif" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="R16"></a></p>
 <h3 id="r16-sharpa-north-ftp-1">R16 · Sharpa North-FTP-1</h3>
 <p><strong>分类：</strong>机器人真机触觉　<strong>参考年份：</strong>2026　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -1499,7 +1706,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>这是FTP作者新增采集来源，计一次；不额外计FTP汇编。4,000是论文报告，不是本次解包后的完整轨迹统计。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-r16-01">
+<div class="figure-type"><strong>R16 · 图1</strong><span>Sharpa平台与触觉样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：FTP-1论文图5的左侧Sharpa North面板：真实灵巧手平台、DTC触觉外观及任务展示。裁去了其他本体和仿真面板；图中的评测任务不自动等于公开包的训练轨迹。" class="figure-open" href="figures/r16-01.webp" rel="noopener" target="_blank"><img alt="FTP-1论文图5的左侧Sharpa North面板：真实灵巧手平台、DTC触觉外观及任务展示。裁去了其他本体和仿真面板；图中的评测任务不自动等于公开包的训练轨迹。" decoding="async" height="1178" loading="lazy" src="figures/r16-01.webp" width="668"/></a>
+<figcaption>FTP-1论文图5的左侧Sharpa North面板：真实灵巧手平台、DTC触觉外观及任务展示。裁去了其他本体和仿真面板；图中的评测任务不自动等于公开包的训练轨迹。<span class="figure-links"><a href="https://arxiv.org/html/2606.13102v2" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2606.13102v2/hardware_settings_0519_seen.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="R17"></a></p>
 <h3 id="r17-tactile-mnistreal">R17 · Tactile MNIST（Real）</h3>
 <p><strong>分类：</strong>机器人真机触觉　<strong>参考年份：</strong>2025　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -1537,7 +1750,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>仅Real计数；synthetic、ABC mesh、Starstruck和缩放图像版不增加真实数据集数量。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-r17-01">
+<div class="figure-type"><strong>R17 · 图1</strong><span>真实采集装置</span><small>点击图片放大</small></div>
+<a aria-label="放大：Tactile MNIST官方标为Real Interactions的采集图：机器人探测3D打印数字，下方展示触觉观测。未将同项目的模拟环境或CycleGAN生成图冒充真实录制。" class="figure-open" href="figures/r17-01.webp" rel="noopener" target="_blank"><img alt="Tactile MNIST官方标为Real Interactions的采集图：机器人探测3D打印数字，下方展示触觉观测。未将同项目的模拟环境或CycleGAN生成图冒充真实录制。" decoding="async" height="1425" loading="lazy" src="figures/r17-01.webp" width="1280"/></a>
+<figcaption>Tactile MNIST官方标为Real Interactions的采集图：机器人探测3D打印数字，下方展示触觉观测。未将同项目的模拟环境或CycleGAN生成图冒充真实录制。<span class="figure-links"><a href="https://timschneider42.github.io/tactile-mnist/" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://timschneider42.github.io/tactile-mnist/img/dataset/data_collection.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="R18"></a></p>
 <h3 id="r18-arq-crisp-slip-detection-dataset">R18 · ARQ-CRISP Slip Detection Dataset</h3>
 <p><strong>分类：</strong>机器人真机触觉　<strong>参考年份：</strong>2021　<strong>证据：</strong>B（已核实官方下载入口／脚本，归档未验证；计入主统计）</p>
@@ -1613,7 +1832,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>与后续加工后的iCub材质数据需按原始采集来源去重。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-r19-01">
+<div class="figure-type"><strong>R19 · 图1</strong><span>采集对象</span><small>点击图片放大</small></div>
+<a aria-label="放大：iCub Hybrid Touch官方材料与编号图，覆盖23种纹理；编号对应触碰／滑动试验目录。" class="figure-open" href="figures/r19-01.webp" rel="noopener" target="_blank"><img alt="iCub Hybrid Touch官方材料与编号图，覆盖23种纹理；编号对应触碰／滑动试验目录。" decoding="async" height="332" loading="lazy" src="figures/r19-01.webp" width="1504"/></a>
+<figcaption>iCub Hybrid Touch官方材料与编号图，覆盖23种纹理；编号对应触碰／滑动试验目录。<span class="figure-links"><a href="https://github.com/clear-nus/TactileLearning" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://raw.githubusercontent.com/crslab/TactileLearning/master/materials_with_id.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="R20"></a></p>
 <h3 id="r20-dorojaco-optoforce-object-classification">R20 · Doro/Jaco OptoForce Object Classification</h3>
 <p><strong>分类：</strong>机器人真机触觉　<strong>参考年份：</strong>2021　<strong>证据：</strong>B（已核实官方下载入口／脚本，归档未验证；计入主统计）</p>
@@ -1651,7 +1876,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>规模与标注粒度需读取manual.py和数据；优先级低于有完整动作的操作库。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-r20-01">
+<div class="figure-type"><strong>R20 · 图1</strong><span>采集装置</span><small>点击图片放大</small></div>
+<a aria-label="放大：Doro/Jaco官方仓库采集装置：Jaco机械臂和3个OptoForce接触传感器。" class="figure-open" href="figures/r20-01.webp" rel="noopener" target="_blank"><img alt="Doro/Jaco官方仓库采集装置：Jaco机械臂和3个OptoForce接触传感器。" decoding="async" height="365" loading="lazy" src="figures/r20-01.webp" width="540"/></a>
+<figcaption>Doro/Jaco官方仓库采集装置：Jaco机械臂和3个OptoForce接触传感器。<span class="figure-links"><a href="https://github.com/philipmaus/Tactile_Object_Classification/blob/main/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://github.com/philipmaus/Tactile_Object_Classification/blob/main/doro_setup.PNG" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="R21"></a></p>
 <h3 id="r21-biotac_slide_20_50">R21 · BioTac_slide_20_50</h3>
 <p><strong>分类：</strong>机器人真机触觉　<strong>参考年份：</strong>2021　<strong>证据：</strong>B（已核实官方下载入口／脚本，归档未验证；计入主统计）</p>
@@ -1689,7 +1920,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>BioTac原始44字段不都是同一种力学量；与其compiled_data和后续论文预处理包合并为一个来源。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-r21-01">
+<div class="figure-type"><strong>R21 · 图1</strong><span>采集对象</span><small>点击图片放大</small></div>
+<a aria-label="放大：BioTac_slide_20_50官方材料集合图；数据由机器人在这些材料上执行滑动接触获得。" class="figure-open" href="figures/r21-01.webp" rel="noopener" target="_blank"><img alt="BioTac_slide_20_50官方材料集合图；数据由机器人在这些材料上执行滑动接触获得。" decoding="async" height="1136" loading="lazy" src="figures/r21-01.webp" width="1156"/></a>
+<figcaption>BioTac_slide_20_50官方材料集合图；数据由机器人在这些材料上执行滑动接触获得。<span class="figure-links"><a href="https://github.com/dexrob/BioTac_slide_20_50/blob/master/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://github.com/dexrob/BioTac_slide_20_50/blob/master/matx_collage.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="R22"></a></p>
 <h3 id="r22-active-clothing-material-perceptionyuan18">R22 · Active Clothing Material Perception（Yuan18）</h3>
 <p><strong>分类：</strong>机器人真机触觉　<strong>参考年份：</strong>2018　<strong>证据：</strong>B（已核实官方下载入口／脚本，归档未验证；计入主统计）</p>
@@ -1765,7 +2002,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>图像与触觉并非同时拍摄；TVL包内ssvtp目录是该来源，单独计源后不把TVL全包另计。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-r23-01">
+<div class="figure-type"><strong>R23 · 图1</strong><span>数据来源对照</span><small>点击图片放大</small></div>
+<a aria-label="放大：TVL论文图3：上游SSVTP的人工语言标注样例与新增HCT的GPT-4V标注样例，后者还展示标注错误。两种采集来源已在正文分别计数。" class="figure-open" href="figures/r23-01.webp" rel="noopener" target="_blank"><img alt="TVL论文图3：上游SSVTP的人工语言标注样例与新增HCT的GPT-4V标注样例，后者还展示标注错误。两种采集来源已在正文分别计数。" decoding="async" height="1066" loading="lazy" src="figures/r23-01.webp" width="2033"/></a>
+<figcaption>TVL论文图3：上游SSVTP的人工语言标注样例与新增HCT的GPT-4V标注样例，后者还展示标注错误。两种采集来源已在正文分别计数。<span class="figure-links"><a href="https://arxiv.org/html/2402.13232" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2402.13232v1/dataset_figure_new.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <h2 id="6-umi5">6. 人操持工具／UMI触觉（5个）</h2>
 <p><a id="U01"></a></p>
 <h3 id="u01-freetacman">U01 · FreeTacMan</h3>
@@ -1804,7 +2047,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>每路、每帧、pair的计数不可直接换算小时；FTP内的同名包不再计数。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-u01-01">
+<div class="figure-type"><strong>U01 · 图1</strong><span>采集与样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：FreeTacMan官方系统演示截帧：人操持触觉夹爪的多模态采集与任务示例。该图包含系统／部署展示，不将全部画面当成原始训练样本。" class="figure-open" href="figures/u01-01.webp" rel="noopener" target="_blank"><img alt="FreeTacMan官方系统演示截帧：人操持触觉夹爪的多模态采集与任务示例。该图包含系统／部署展示，不将全部画面当成原始训练样本。" decoding="async" height="538" loading="lazy" src="figures/u01-01.webp" width="960"/></a>
+<figcaption>FreeTacMan官方系统演示截帧：人操持触觉夹爪的多模态采集与任务示例。该图包含系统／部署展示，不将全部画面当成原始训练样本。<span class="figure-links"><a href="https://github.com/OpenDriveLab/FreeTacMan" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://github.com/OpenDriveLab/FreeTacMan/blob/main/figure/FreeTacMan_teaser.gif" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="U02"></a></p>
 <h3 id="u02-touch-in-the-wild">U02 · Touch in the Wild</h3>
 <p><strong>分类：</strong>人操持工具／UMI　<strong>参考年份：</strong>2025　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -1842,7 +2091,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>不是自由人手全手压力录制；只含视觉触觉的预训练子集不能冒充动作条件样本。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-u02-01">
+<div class="figure-type"><strong>U02 · 图1</strong><span>采集与样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：Touch in the Wild论文图2：便携式夹爪、相机、双指阵列触觉与真实场景样例。" class="figure-open" href="figures/u02-01.webp" rel="noopener" target="_blank"><img alt="Touch in the Wild论文图2：便携式夹爪、相机、双指阵列触觉与真实场景样例。" decoding="async" height="540" loading="lazy" src="figures/u02-01.webp" width="1356"/></a>
+<figcaption>Touch in the Wild论文图2：便携式夹爪、相机、双指阵列触觉与真实场景样例。<span class="figure-links"><a href="https://arxiv.org/html/2507.15062v2" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2507.15062v2/system.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="U03"></a></p>
 <h3 id="u03-exumi">U03 · exUMI</h3>
 <p><strong>分类：</strong>人操持工具／UMI　<strong>参考年份：</strong>2025　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -1880,7 +2135,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>示例shape仅代表某文件；控制目标与观测位姿的时间差仍需审计。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-u03-01">
+<div class="figure-type"><strong>U03 · 图1</strong><span>采集装置</span><small>点击图片放大</small></div>
+<a aria-label="放大：exUMI官方硬件系统图，展示工具位姿、夹爪开合和视触觉采集所用部件。" class="figure-open" href="figures/u03-01.webp" rel="noopener" target="_blank"><img alt="exUMI官方硬件系统图，展示工具位姿、夹爪开合和视触觉采集所用部件。" decoding="async" height="840" loading="lazy" src="figures/u03-01.webp" width="2384"/></a>
+<figcaption>exUMI官方硬件系统图，展示工具位姿、夹爪开合和视触觉采集所用部件。<span class="figure-links"><a href="https://github.com/silicx/exUMI/blob/main/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://github.com/silicx/exUMI/blob/main/assets/exUMI-system.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="U04"></a></p>
 <h3 id="u04-vitamin">U04 · ViTaMIn</h3>
 <p><strong>分类：</strong>人操持工具／UMI　<strong>参考年份：</strong>2025　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -1918,7 +2179,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>项目页Code coming soon不等于数据未公开：HF及FTP均有数据。ViTaMIn-B/后续版本需按新旧采集部分另审，本文不额外计数。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-u04-01">
+<div class="figure-type"><strong>U04 · 图1</strong><span>采集装置</span><small>点击图片放大</small></div>
+<a aria-label="放大：ViTaMIn论文图1：手持装置、GoPro、双触觉传感器与同步相机。该图展示采集硬件，机器人部署平台是另一个阶段。" class="figure-open" href="figures/u04-01.webp" rel="noopener" target="_blank"><img alt="ViTaMIn论文图1：手持装置、GoPro、双触觉传感器与同步相机。该图展示采集硬件，机器人部署平台是另一个阶段。" decoding="async" height="636" loading="lazy" src="figures/u04-01.webp" width="1332"/></a>
+<figcaption>ViTaMIn论文图1：手持装置、GoPro、双触觉传感器与同步相机。该图展示采集硬件，机器人部署平台是另一个阶段。<span class="figure-links"><a href="https://arxiv.org/html/2504.06156v2" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2504.06156v2/system-8.0.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="U05"></a></p>
 <h3 id="u05-daimon-infinity">U05 · Daimon-Infinity</h3>
 <p><strong>分类：</strong>人操持工具／UMI　<strong>参考年份：</strong>2026　<strong>证据：</strong>B（已核实官方下载入口／脚本，归档未验证；计入主统计）</p>
@@ -1956,7 +2223,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>官方ModelScope页面存在但本次未取得完整文件manifest；1,000小时是作者发布声明，未经本次逐轨迹验证。Lite不再算一个数据集。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-u05-02">
+<div class="figure-type"><strong>U05 · 图1</strong><span>数据样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：Daimon-Infinity官方DataClaw多模态样例；发布小时数仍以正文所列的发布口径为准。" class="figure-open" href="figures/u05-02.webp" rel="noopener" target="_blank"><img alt="Daimon-Infinity官方DataClaw多模态样例；发布小时数仍以正文所列的发布口径为准。" decoding="async" height="962" loading="lazy" src="figures/u05-02.webp" width="1609"/></a>
+<figcaption>Daimon-Infinity官方DataClaw多模态样例；发布小时数仍以正文所列的发布口径为准。<span class="figure-links"><a href="https://github.com/dmrobot-admin/Daimon-Infinity/blob/main/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://github.com/dmrobot-admin/Daimon-Infinity/blob/main/assets/images/DataClawSample.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <h2 id="7-6">7. 其他人类真实触觉（6个）</h2>
 <p><a id="H01"></a></p>
 <h3 id="h01-stag">H01 · STAG</h3>
@@ -1995,7 +2268,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>不能因采集者是人就算ego视频数据；同站多个任务ZIP按一个来源家族计。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure" id="fig-h01-01">
+<div class="figure-type"><strong>H01 · 图1</strong><span>采集与样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：STAG官方概览：可伸缩触觉手套、物体抓握与压力读数。人类采集不自动意味着同步ego视频。" class="figure-open" href="figures/h01-01.webp" rel="noopener" target="_blank"><img alt="STAG官方概览：可伸缩触觉手套、物体抓握与压力读数。人类采集不自动意味着同步ego视频。" decoding="async" height="531" loading="lazy" src="figures/h01-01.webp" width="800"/></a>
+<figcaption>STAG官方概览：可伸缩触觉手套、物体抓握与压力读数。人类采集不自动意味着同步ego视频。<span class="figure-links"><a href="https://stag.csail.mit.edu/" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://stag.csail.mit.edu/assets/teaser3_800.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure" id="fig-h01-02">
+<div class="figure-type"><strong>H01 · 图2</strong><span>手姿态样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：STAG官方手姿态演示图，展示手部姿态与触觉分布之间的关系。" class="figure-open" href="figures/h01-02.webp" rel="noopener" target="_blank"><img alt="STAG官方手姿态演示图，展示手部姿态与触觉分布之间的关系。" decoding="async" height="777" loading="lazy" src="figures/h01-02.webp" width="919"/></a>
+<figcaption>STAG官方手姿态演示图，展示手部姿态与触觉分布之间的关系。<span class="figure-links"><a href="https://stag.csail.mit.edu/" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://stag.csail.mit.edu/assets/demo_poses.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="H02"></a></p>
 <h3 id="h02-pressurevisiondb">H02 · PressureVisionDB</h3>
 <p><strong>分类：</strong>其他人类实测（非ego或视角未确认）　<strong>参考年份：</strong>2022　<strong>证据：</strong>B（已核实官方下载入口／脚本，归档未验证；计入主统计）</p>
@@ -2033,7 +2317,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>不是ego；PressureVision++另有弱标签采集，不能将++所有样本当作压力传感器真值。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-h02-01">
+<div class="figure-type"><strong>H02 · 图1</strong><span>采集与样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：PressureVisionDB论文图3：固定多相机采集装置、压力平面与投影到图像的压力标注；这里是真实压力板监督，不是网络预测效果图。" class="figure-open" href="figures/h02-01.webp" rel="noopener" target="_blank"><img alt="PressureVisionDB论文图3：固定多相机采集装置、压力平面与投影到图像的压力标注；这里是真实压力板监督，不是网络预测效果图。" decoding="async" height="791" loading="lazy" src="figures/h02-01.webp" width="2047"/></a>
+<figcaption>PressureVisionDB论文图3：固定多相机采集装置、压力平面与投影到图像的压力标注；这里是真实压力板监督，不是网络预测效果图。<span class="figure-links"><a href="https://arxiv.org/html/2203.10385v3" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2203.10385v3/DatasetMultifig.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="H03"></a></p>
 <h3 id="h03-px-omnisharing-db-sampledata">H03 · PX OmniSharing DB SampleData</h3>
 <p><strong>分类：</strong>其他人类实测（非ego或视角未确认）　<strong>参考年份：</strong>2026　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -2071,7 +2361,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>当前可读卡只明确multi-view，没有明确证明公开样例全为头戴ego，因此保守列H，不加到严格ego数。3465是存储向量长度，不等于3465独立taxels；样例不等于商业全库。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-h03-01">
+<div class="figure-type"><strong>H03 · 图1</strong><span>数据处理流程</span><small>点击图片放大</small></div>
+<a aria-label="放大：PX官方数据处理流程：原始HDF5、触觉／姿态解析、重定向及LeRobot转换。重定向后的动作标签与原始人手观测需区分。" class="figure-open" href="figures/h03-01.webp" rel="noopener" target="_blank"><img alt="PX官方数据处理流程：原始HDF5、触觉／姿态解析、重定向及LeRobot转换。重定向后的动作标签与原始人手观测需区分。" decoding="async" height="597" loading="lazy" src="figures/h03-01.webp" width="2400"/></a>
+<figcaption>PX官方数据处理流程：原始HDF5、触觉／姿态解析、重定向及LeRobot转换。重定向后的动作标签与原始人手观测需区分。<span class="figure-links"><a href="https://github.com/px-DataCollection/px_omnisharing_dataprocess_kit" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://github.com/px-DataCollection/px_omnisharing_dataprocess_kit/blob/main/images/data_flow.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="H04"></a></p>
 <h3 id="h04-fusionx-multimodal-sample-dataset-v3">H04 · FusionX Multimodal Sample Dataset V3</h3>
 <p><strong>分类：</strong>其他人类实测（非ego或视角未确认）　<strong>参考年份：</strong>2026　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -2109,7 +2405,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>卡片未明言相机安装为头戴ego，本条不放入严格E。另一个zhicao/egoforce录制库虽写ego，但来源重叠与授权未厘清，不能据其说明改变本条分类或直接重复加数。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-h04-rgb">
+<div class="figure-type"><strong>H04 · 图1</strong><span>真实RGB样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：FusionX V3公开firstaid1/rgb/000580.jpg原始RGB帧，对应本条下方压力曲线所用的frame_idx=580。当前分类仍按已核实的发布说明保守列为人类实测。" class="figure-open" href="figures/h04-rgb.webp" rel="noopener" target="_blank"><img alt="FusionX V3公开firstaid1/rgb/000580.jpg原始RGB帧，对应本条下方压力曲线所用的frame_idx=580。当前分类仍按已核实的发布说明保守列为人类实测。" decoding="async" height="720" loading="lazy" src="figures/h04-rgb.webp" width="1280"/></a>
+<figcaption>FusionX V3公开firstaid1/rgb/000580.jpg原始RGB帧，对应本条下方压力曲线所用的frame_idx=580。当前分类仍按已核实的发布说明保守列为人类实测。<span class="figure-links"><a href="https://huggingface.co/datasets/touchtronix/FusionX-Multimodal-Sample-Data-V3" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://huggingface.co/datasets/touchtronix/FusionX-Multimodal-Sample-Data-V3/resolve/main/firstaid1/rgb/000580.jpg" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure wide" id="fig-h04-sample">
+<div class="figure-type"><strong>H04 · 图2</strong><span>本报告据实测数据绘制</span><small>点击图片放大</small></div>
+<a aria-label="放大：本报告从FusionX V3的firstaid1/frames.parquet第580行绘制双手压力字段（frame_idx=580）。横轴按拇指、食指、中指、无名指、小指、手掌的存储顺序拼接，不是手掌几何坐标；_cal字段保留原数值，未换算成力。" class="figure-open" href="figures/h04-sample.webp" rel="noopener" target="_blank"><img alt="本报告从FusionX V3的firstaid1/frames.parquet第580行绘制双手压力字段（frame_idx=580）。横轴按拇指、食指、中指、无名指、小指、手掌的存储顺序拼接，不是手掌几何坐标；_cal字段保留原数值，未换算成力。" decoding="async" height="738" loading="lazy" src="figures/h04-sample.webp" width="1938"/></a>
+<figcaption>本报告从FusionX V3的firstaid1/frames.parquet第580行绘制双手压力字段（frame_idx=580）。横轴按拇指、食指、中指、无名指、小指、手掌的存储顺序拼接，不是手掌几何坐标；_cal字段保留原数值，未换算成力。<span class="figure-links"><a href="https://huggingface.co/datasets/touchtronix/FusionX-Multimodal-Sample-Data-V3/resolve/main/firstaid1/frames.parquet" rel="noopener" target="_blank">来源：公开数据文件</a><a href="https://huggingface.co/datasets/touchtronix/FusionX-Multimodal-Sample-Data-V3/resolve/main/firstaid1/frames.parquet" rel="noopener" target="_blank">查看原始数据</a></span></figcaption>
+</figure>
+</div>
 <p><a id="H05"></a></p>
 <h3 id="h05-tachin-fixed-viewpoint-tactile-dataset">H05 · Tachin Fixed Viewpoint Tactile Dataset</h3>
 <p><strong>分类：</strong>其他人类实测（非ego或视角未确认）　<strong>参考年份：</strong>2026　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -2147,7 +2454,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>字段叫action不代表控制命令；没有单独的未来控制目标。robot_type字符串也不能证明是机器人采集，按实际动捕说明列人手非ego。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-h05-sample">
+<div class="figure-type"><strong>H05 · 图1</strong><span>本报告据实测数据绘制</span><small>点击图片放大</small></div>
+<a aria-label="放大：本报告依据file-0000.parquet第100行绘制（episode=0，frame=100）。按官方info.json恢复4路触觉的二维形状；各子图使用各自色标，没有推断未提供的手部空间布局或物理单位。" class="figure-open" href="figures/h05-sample.webp" rel="noopener" target="_blank"><img alt="本报告依据file-0000.parquet第100行绘制（episode=0，frame=100）。按官方info.json恢复4路触觉的二维形状；各子图使用各自色标，没有推断未提供的手部空间布局或物理单位。" decoding="async" height="594" loading="lazy" src="figures/h05-sample.webp" width="1875"/></a>
+<figcaption>本报告依据file-0000.parquet第100行绘制（episode=0，frame=100）。按官方info.json恢复4路触觉的二维形状；各子图使用各自色标，没有推断未提供的手部空间布局或物理单位。<span class="figure-links"><a href="https://huggingface.co/datasets/Tachintech/Fixed_Viewpoint_Tactile_Dataset/resolve/main/data/chunk-000/file-0000.parquet" rel="noopener" target="_blank">来源：公开数据文件</a><a href="https://huggingface.co/datasets/Tachintech/Fixed_Viewpoint_Tactile_Dataset/resolve/main/data/chunk-000/file-0000.parquet" rel="noopener" target="_blank">查看原始数据</a></span></figcaption>
+</figure>
+</div>
 <p><a id="H06"></a></p>
 <h3 id="h06-tactile-gesture-language">H06 · Tactile Gesture Language</h3>
 <p><strong>分类：</strong>其他人类实测（非ego或视角未确认）　<strong>参考年份：</strong>2026　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -2185,7 +2498,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>名称含Language不等于逐帧自然语言指令；可读数据卡主要定义手势类别。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-h06-sample">
+<div class="figure-type"><strong>H06 · 图1</strong><span>本报告据实测数据绘制</span><small>点击图片放大</small></div>
+<a aria-label="放大：本报告从stroking_man0.npy的首个试验绘制。通过HTTP Range读取文件开头，得到前127帧，展示帧0, 94, 110, 118, 126；这是32×32实测阵列响应，不是ego视频。保留存储数值，未将其解释为已标定力。" class="figure-open" href="figures/h06-sample.webp" rel="noopener" target="_blank"><img alt="本报告从stroking_man0.npy的首个试验绘制。通过HTTP Range读取文件开头，得到前127帧，展示帧0, 94, 110, 118, 126；这是32×32实测阵列响应，不是ego视频。保留存储数值，未将其解释为已标定力。" decoding="async" height="477" loading="lazy" src="figures/h06-sample.webp" width="2093"/></a>
+<figcaption>本报告从stroking_man0.npy的首个试验绘制。通过HTTP Range读取文件开头，得到前127帧，展示帧0, 94, 110, 118, 126；这是32×32实测阵列响应，不是ego视频。保留存储数值，未将其解释为已标定力。<span class="figure-links"><a href="https://huggingface.co/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man0/stroking_man0.npy" rel="noopener" target="_blank">来源：公开数据文件</a><a href="https://huggingface.co/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man0/stroking_man0.npy" rel="noopener" target="_blank">查看原始数据</a></span></figcaption>
+</figure>
+</div>
 <h2 id="8-13">8. 实物探测、标定和实验台触觉（13个）</h2>
 <p><a id="P01"></a></p>
 <h3 id="p01-tvl-hcttvl">P01 · TVL-HCT（TVL新增人采部分）</h3>
@@ -2224,7 +2543,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>本条只为新增HCT采集计数，SSVTP已列R23，TVL全包不再加1。官方提示原版视觉/触觉文件夹交换问题并链接修正版；人采相机不直接等同头戴ego。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-p01-01">
+<div class="figure-type"><strong>P01 · 图1</strong><span>采集装置</span><small>点击图片放大</small></div>
+<a aria-label="放大：TVL论文图2：DIGIT与webcam组合的手持装置，用于同步采集HCT视觉—触觉接触样本。" class="figure-open" href="figures/p01-01.webp" rel="noopener" target="_blank"><img alt="TVL论文图2：DIGIT与webcam组合的手持装置，用于同步采集HCT视觉—触觉接触样本。" decoding="async" height="853" loading="lazy" src="figures/p01-01.webp" width="2046"/></a>
+<figcaption>TVL论文图2：DIGIT与webcam组合的手持装置，用于同步采集HCT视觉—触觉接触样本。<span class="figure-links"><a href="https://arxiv.org/html/2402.13232" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2402.13232v1/sensor_device.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure" id="fig-p01-02">
+<div class="figure-type"><strong>P01 · 图2</strong><span>数据与模型概览</span><small>点击图片放大</small></div>
+<a aria-label="放大：TVL论文图1展示视觉、触觉和语言对齐目标；图内模型响应属于任务展示，HCT大部分语言标签由模型生成。" class="figure-open" href="figures/p01-02.webp" rel="noopener" target="_blank"><img alt="TVL论文图1展示视觉、触觉和语言对齐目标；图内模型响应属于任务展示，HCT大部分语言标签由模型生成。" decoding="async" height="892" loading="lazy" src="figures/p01-02.webp" width="1457"/></a>
+<figcaption>TVL论文图1展示视觉、触觉和语言对齐目标；图内模型响应属于任务展示，HCT大部分语言标签由模型生成。<span class="figure-links"><a href="https://arxiv.org/html/2402.13232" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2402.13232v1/splash_figure_alt.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="P02"></a></p>
 <h3 id="p02-tacquadanytouch">P02 · TacQuad（AnyTouch）</h3>
 <p><strong>分类：</strong>实物探测／标定／混合实验台　<strong>参考年份：</strong>2025　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -2262,7 +2592,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>粗对齐子集不保证时间对齐；不要把四种传感器的同一接触视为4条独立行为。text_other.zip是其他数据的派生标注，不是新的原始采集。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-p02-01">
+<div class="figure-type"><strong>P02 · 图1</strong><span>采集与样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：TacQuad论文图1：GelSight Mini、DIGIT、DuraGel、Tac3D四类传感器及对齐样例。精细与粗对齐子集的同步保证不同。" class="figure-open" href="figures/p02-01.webp" rel="noopener" target="_blank"><img alt="TacQuad论文图1：GelSight Mini、DIGIT、DuraGel、Tac3D四类传感器及对齐样例。精细与粗对齐子集的同步保证不同。" decoding="async" height="972" loading="lazy" src="figures/p02-01.webp" width="2001"/></a>
+<figcaption>TacQuad论文图1：GelSight Mini、DIGIT、DuraGel、Tac3D四类传感器及对齐样例。精细与粗对齐子集的同步保证不同。<span class="figure-links"><a href="https://arxiv.org/html/2502.12191v3" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2502.12191v3/DATASET.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="P03"></a></p>
 <h3 id="p03-hpt-htt-dataset">P03 · HPT / HTT Dataset</h3>
 <p><strong>分类：</strong>实物探测／标定／混合实验台　<strong>参考年份：</strong>2026　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -2300,7 +2636,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>卡片的frame合计跨光学/阵列采样率，且force统计含sliding、slip也统计该sliding；1.59M不是独立接触事件或唯一同步时间点，必须去重。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-p03-01">
+<div class="figure-type"><strong>P03 · 图1</strong><span>采集装置</span><small>点击图片放大</small></div>
+<a aria-label="放大：HPT／HTT论文图2：真实力／滑移数据采集和统计。图中不同频率、任务重用的帧量仍需按正文去重解释。" class="figure-open" href="figures/p03-01.webp" rel="noopener" target="_blank"><img alt="HPT／HTT论文图2：真实力／滑移数据采集和统计。图中不同频率、任务重用的帧量仍需按正文去重解释。" decoding="async" height="242" loading="lazy" src="figures/p03-01.webp" width="785"/></a>
+<figcaption>HPT／HTT论文图2：真实力／滑移数据采集和统计。图中不同频率、任务重用的帧量仍需按正文去重解释。<span class="figure-links"><a href="https://arxiv.org/html/2606.29948v2" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2606.29948v2/dataset.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure wide" id="fig-p03-02">
+<div class="figure-type"><strong>P03 · 图2</strong><span>真实触觉样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：HPT论文图6：GelSight Mini与9DTact上的物体分类和受控施力触觉图。" class="figure-open" href="figures/p03-02.webp" rel="noopener" target="_blank"><img alt="HPT论文图6：GelSight Mini与9DTact上的物体分类和受控施力触觉图。" decoding="async" height="405" loading="lazy" src="figures/p03-02.webp" width="1184"/></a>
+<figcaption>HPT论文图6：GelSight Mini与9DTact上的物体分类和受控施力触觉图。<span class="figure-links"><a href="https://arxiv.org/html/2606.29948v2" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2606.29948v2/data_samples.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="P04"></a></p>
 <h3 id="p04-taf-dataset">P04 · TaF-Dataset</h3>
 <p><strong>分类：</strong>实物探测／标定／混合实验台　<strong>参考年份：</strong>2026　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -2338,7 +2685,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>408是物体/传感器序列组合，不是408个独立物体；observation.image是触觉传感器内部图，不是场景相机。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-p04-01">
+<div class="figure-type"><strong>P04 · 图1</strong><span>采集装置</span><small>点击图片放大</small></div>
+<a aria-label="放大：TaF论文图2：自动触觉—力采集平台及其运动机构、触觉传感器和ATI力传感器。" class="figure-open" href="figures/p04-01.webp" rel="noopener" target="_blank"><img alt="TaF论文图2：自动触觉—力采集平台及其运动机构、触觉传感器和ATI力传感器。" decoding="async" height="1167" loading="lazy" src="figures/p04-01.webp" width="2400"/></a>
+<figcaption>TaF论文图2：自动触觉—力采集平台及其运动机构、触觉传感器和ATI力传感器。<span class="figure-links"><a href="https://arxiv.org/html/2601.20321v2" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2601.20321v2/figures/fig2-hardware.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="P05"></a></p>
 <h3 id="p05-touch-slide">P05 · Touch-Slide</h3>
 <p><strong>分类：</strong>实物探测／标定／混合实验台　<strong>参考年份：</strong>2024　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -2376,7 +2729,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>不是YCB-Slide的另一名称；是Sparsh新增独立采集，但Sparsh汇编不再重复计。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-p05-01">
+<div class="figure-type"><strong>P05 · 图1</strong><span>采集对象</span><small>点击图片放大</small></div>
+<a aria-label="放大：Touch-Slide官方对象集合；主要用于滑动触觉自监督，物体展示不代表公开了机器人action。" class="figure-open" href="figures/p05-01.webp" rel="noopener" target="_blank"><img alt="Touch-Slide官方对象集合；主要用于滑动触觉自监督，物体展示不代表公开了机器人action。" decoding="async" height="287" loading="lazy" src="figures/p05-01.webp" width="2400"/></a>
+<figcaption>Touch-Slide官方对象集合；主要用于滑动触觉自监督，物体展示不代表公开了机器人action。<span class="figure-links"><a href="https://huggingface.co/datasets/facebook/touch-slide/raw/main/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://huggingface.co/datasets/facebook/touch-slide/resolve/main/assets/touch_slide_objs.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure" id="fig-p05-02">
+<div class="figure-type"><strong>P05 · 图2</strong><span>真实触觉样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：Touch-Slide官方bread-digit接触序列截帧，展示DIGIT内部的表面形变图像。" class="figure-open" href="figures/p05-02.webp" rel="noopener" target="_blank"><img alt="Touch-Slide官方bread-digit接触序列截帧，展示DIGIT内部的表面形变图像。" decoding="async" height="320" loading="lazy" src="figures/p05-02.webp" width="240"/></a>
+<figcaption>Touch-Slide官方bread-digit接触序列截帧，展示DIGIT内部的表面形变图像。<span class="figure-links"><a href="https://huggingface.co/datasets/facebook/touch-slide/raw/main/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://huggingface.co/datasets/facebook/touch-slide/resolve/main/assets/bread-digit.gif" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="P06"></a></p>
 <h3 id="p06-ycb-slidereal">P06 · YCB-Slide（Real）</h3>
 <p><strong>分类：</strong>实物探测／标定／混合实验台　<strong>参考年份：</strong>2022　<strong>证据：</strong>B（已核实官方下载入口／脚本，归档未验证；计入主统计）</p>
@@ -2414,7 +2778,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>真实数据为传感器在固定物体上移动；仿真heightmap/contact mask不是真实采集额外测量。只计Real来源一次。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-p06-01">
+<div class="figure-type"><strong>P06 · 图1</strong><span>真实数据样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：YCB-Slide官方dataset_real_full图：真实物体上的滑动轨迹／接触覆盖可视化。图中的物体模型渲染用于定位接触，不应误认成原始RGB或真实触觉图。" class="figure-open" href="figures/p06-01.webp" rel="noopener" target="_blank"><img alt="YCB-Slide官方dataset_real_full图：真实物体上的滑动轨迹／接触覆盖可视化。图中的物体模型渲染用于定位接触，不应误认成原始RGB或真实触觉图。" decoding="async" height="1119" loading="lazy" src="figures/p06-01.webp" width="2400"/></a>
+<figcaption>YCB-Slide官方dataset_real_full图：真实物体上的滑动轨迹／接触覆盖可视化。图中的物体模型渲染用于定位接触，不应误认成原始RGB或真实触觉图。<span class="figure-links"><a href="https://github.com/rpl-cmu/YCB-Slide/blob/master/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://github.com/rpl-cmu/YCB-Slide/blob/master/media/dataset_real_full.jpg " rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="P07"></a></p>
 <h3 id="p07-sparsh-tacbench">P07 · Sparsh / TacBench原创监督数据</h3>
 <p><strong>分类：</strong>实物探测／标定／混合实验台　<strong>参考年份：</strong>2024　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -2452,7 +2822,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>TacBench还复用抓取/衣物数据，不把整个6项任务各算新数据；本条只计作者新增采集，两种sensor不是两个独立家族。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-p07-01">
+<div class="figure-type"><strong>P07 · 图1</strong><span>采集装置</span><small>点击图片放大</small></div>
+<a aria-label="放大：Sparsh／TacBench论文图3：力估计、滑移和位姿等监督采集装置。任务数不等于新增独立数据来源数。" class="figure-open" href="figures/p07-01.webp" rel="noopener" target="_blank"><img alt="Sparsh／TacBench论文图3：力估计、滑移和位姿等监督采集装置。任务数不等于新增独立数据来源数。" decoding="async" height="366" loading="lazy" src="figures/p07-01.webp" width="1319"/></a>
+<figcaption>Sparsh／TacBench论文图3：力估计、滑移和位姿等监督采集装置。任务数不等于新增独立数据来源数。<span class="figure-links"><a href="https://arxiv.org/html/2410.24090v1" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2410.24090v1/figB_data_benchmark.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="P08"></a></p>
 <h3 id="p08-tactiletracking-normalflow-dataset">P08 · TactileTracking / NormalFlow Dataset</h3>
 <p><strong>分类：</strong>实物探测／标定／混合实验台　<strong>参考年份：</strong>2024　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -2490,7 +2866,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>目标是短程连续重叠接触；mask/梯度由触觉图像计算，不是第二套独立传感器真值。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure" id="fig-p08-01">
+<div class="figure-type"><strong>P08 · 图1</strong><span>采集装置</span><small>点击图片放大</small></div>
+<a aria-label="放大：NormalFlow／TactileTracking官方采集设置：GelSight Mini触觉、外部视觉与动捕位姿。" class="figure-open" href="figures/p08-01.webp" rel="noopener" target="_blank"><img alt="NormalFlow／TactileTracking官方采集设置：GelSight Mini触觉、外部视觉与动捕位姿。" decoding="async" height="1850" loading="lazy" src="figures/p08-01.webp" width="2400"/></a>
+<figcaption>NormalFlow／TactileTracking官方采集设置：GelSight Mini触觉、外部视觉与动捕位姿。<span class="figure-links"><a href="https://huggingface.co/datasets/joehjhuang/TactileTracking/raw/main/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://huggingface.co/datasets/joehjhuang/TactileTracking/resolve/main/assets/setup.jpg" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure" id="fig-p08-02">
+<div class="figure-type"><strong>P08 · 图2</strong><span>接触样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：TactileTracking官方接触位置图；有助于理解物体表面局部接触和跟踪轨迹的覆盖范围。" class="figure-open" href="figures/p08-02.webp" rel="noopener" target="_blank"><img alt="TactileTracking官方接触位置图；有助于理解物体表面局部接触和跟踪轨迹的覆盖范围。" decoding="async" height="950" loading="lazy" src="figures/p08-02.webp" width="1206"/></a>
+<figcaption>TactileTracking官方接触位置图；有助于理解物体表面局部接触和跟踪轨迹的覆盖范围。<span class="figure-links"><a href="https://huggingface.co/datasets/joehjhuang/TactileTracking/raw/main/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://huggingface.co/datasets/joehjhuang/TactileTracking/resolve/main/assets/contact_locations.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="P09"></a></p>
 <h3 id="p09-gelslam-dataset">P09 · GelSLAM Dataset</h3>
 <p><strong>分类：</strong>实物探测／标定／混合实验台　<strong>参考年份：</strong>2025　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -2528,7 +2915,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>重建子集官方明确不提供GT mesh；跟踪和重建按一个发布家族计，NormalFlow是另一采集来源。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure" id="fig-p09-01">
+<div class="figure-type"><strong>P09 · 图1</strong><span>采集装置</span><small>点击图片放大</small></div>
+<a aria-label="放大：GelSLAM官方跟踪数据采集装置，包含触觉与动捕；重建子集的真值覆盖与此不同。" class="figure-open" href="figures/p09-01.webp" rel="noopener" target="_blank"><img alt="GelSLAM官方跟踪数据采集装置，包含触觉与动捕；重建子集的真值覆盖与此不同。" decoding="async" height="1141" loading="lazy" src="figures/p09-01.webp" width="1865"/></a>
+<figcaption>GelSLAM官方跟踪数据采集装置，包含触觉与动捕；重建子集的真值覆盖与此不同。<span class="figure-links"><a href="https://huggingface.co/datasets/joehjhuang/GelSLAM_dataset/resolve/main/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://huggingface.co/datasets/joehjhuang/GelSLAM_dataset/resolve/main/assets/tracking_setup.jpg" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure wide" id="fig-p09-02">
+<div class="figure-type"><strong>P09 · 图2</strong><span>接触样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：GelSLAM官方跟踪物体与初始接触位置。图中物体展示不能视为重建子集提供了GT mesh。" class="figure-open" href="figures/p09-02.webp" rel="noopener" target="_blank"><img alt="GelSLAM官方跟踪物体与初始接触位置。图中物体展示不能视为重建子集提供了GT mesh。" decoding="async" height="1220" loading="lazy" src="figures/p09-02.webp" width="2400"/></a>
+<figcaption>GelSLAM官方跟踪物体与初始接触位置。图中物体展示不能视为重建子集提供了GT mesh。<span class="figure-links"><a href="https://huggingface.co/datasets/joehjhuang/GelSLAM_dataset/resolve/main/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://huggingface.co/datasets/joehjhuang/GelSLAM_dataset/resolve/main/assets/tracking_objects.jpg" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="P10"></a></p>
 <h3 id="p10-gelsight-sim2reala">P10 · GelSight Sim2Real（真实A域）</h3>
 <p><strong>分类：</strong>实物探测／标定／混合实验台　<strong>参考年份：</strong>2022　<strong>证据：</strong>B（已核实官方下载入口／脚本，归档未验证；计入主统计）</p>
@@ -2604,7 +3002,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>原Octopi README主要列模型权重；本次以Octopi1.5明确标为tactile datasets的Drive入口确认数据，合并版本不重复计数。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure" id="fig-p11-01">
+<div class="figure-type"><strong>P11 · 图1</strong><span>采集对象</span><small>点击图片放大</small></div>
+<a aria-label="放大：PhysiCLeAR／Octopi官方物体集合，用于触觉物理属性和语言任务。" class="figure-open" href="figures/p11-01.webp" rel="noopener" target="_blank"><img alt="PhysiCLeAR／Octopi官方物体集合，用于触觉物理属性和语言任务。" decoding="async" height="552" loading="lazy" src="figures/p11-01.webp" width="826"/></a>
+<figcaption>PhysiCLeAR／Octopi官方物体集合，用于触觉物理属性和语言任务。<span class="figure-links"><a href="https://octopi-tactile-lvlm.github.io/" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://octopi-tactile-lvlm.github.io/media/items.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure" id="fig-p11-02">
+<div class="figure-type"><strong>P11 · 图2</strong><span>真实触觉样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：Octopi官方egg触觉图像：GelSight接触鸡蛋表面的局部形变。" class="figure-open" href="figures/p11-02.webp" rel="noopener" target="_blank"><img alt="Octopi官方egg触觉图像：GelSight接触鸡蛋表面的局部形变。" decoding="async" height="240" loading="lazy" src="figures/p11-02.webp" width="320"/></a>
+<figcaption>Octopi官方egg触觉图像：GelSight接触鸡蛋表面的局部形变。<span class="figure-links"><a href="https://octopi-tactile-lvlm.github.io/" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://octopi-tactile-lvlm.github.io/media/tactile_images/egg.jpg" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="P12"></a></p>
 <h3 id="p12-touch-ex">P12 · Touch-Ex</h3>
 <p><strong>分类：</strong>实物探测／标定／混合实验台　<strong>参考年份：</strong>2026　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -2642,7 +3051,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>标题visuo-tactile指传感器内部图像；背面FSR提供按压力估计，不能当物体接触面全分布力或精确6D wrench。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure" id="fig-p12-01">
+<div class="figure-type"><strong>P12 · 图1</strong><span>真实触觉样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：Touch-Ex官方hammer_handle_sliding_fl3样例：锤柄局部滑动接触。图像来自DIGIT内部，不是外部物体相机。" class="figure-open" href="figures/p12-01.webp" rel="noopener" target="_blank"><img alt="Touch-Ex官方hammer_handle_sliding_fl3样例：锤柄局部滑动接触。图像来自DIGIT内部，不是外部物体相机。" decoding="async" height="320" loading="lazy" src="figures/p12-01.webp" width="240"/></a>
+<figcaption>Touch-Ex官方hammer_handle_sliding_fl3样例：锤柄局部滑动接触。图像来自DIGIT内部，不是外部物体相机。<span class="figure-links"><a href="https://huggingface.co/datasets/gemixin/touch-ex/raw/main/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://huggingface.co/datasets/gemixin/touch-ex/resolve/main/images/examples/hammer_handle_sliding_fl3.jpg" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure" id="fig-p12-02">
+<div class="figure-type"><strong>P12 · 图2</strong><span>采集对象</span><small>点击图片放大</small></div>
+<a aria-label="放大：Touch-Ex官方训练集物体及区域标记；未见物体测试集合另列，正文保留训练／测试划分。" class="figure-open" href="figures/p12-02.webp" rel="noopener" target="_blank"><img alt="Touch-Ex官方训练集物体及区域标记；未见物体测试集合另列，正文保留训练／测试划分。" decoding="async" height="1873" loading="lazy" src="figures/p12-02.webp" width="2400"/></a>
+<figcaption>Touch-Ex官方训练集物体及区域标记；未见物体测试集合另列，正文保留训练／测试划分。<span class="figure-links"><a href="https://huggingface.co/datasets/gemixin/touch-ex/raw/main/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://huggingface.co/datasets/gemixin/touch-ex/resolve/main/images/objects/labelled_objects.jpg" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="P13"></a></p>
 <h3 id="p13-tactile-deformation-response">P13 · Tactile Deformation Response</h3>
 <p><strong>分类：</strong>实物探测／标定／混合实验台　<strong>参考年份：</strong>2026　<strong>证据：</strong>A（已核实实际数据文件目录；计入主统计）</p>
@@ -2680,7 +3100,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>归一化响应不等于牛顿/帕斯卡物理量；stiffness为人工估计/实验参考，非标定刚度真值。64×32×32第一维是时间，不是64个传感器。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-p13-sample">
+<div class="figure-type"><strong>P13 · 图1</strong><span>本报告据实测数据绘制</span><small>点击图片放大</small></div>
+<a aria-label="放大：本报告依据公开NPZ绘制的真实样例：测试文件20260712_103545_027153_rigid_70中第0、16、32、48、63帧，所有子图共用色标。颜色是数据存储的去基线归一化响应，不是牛顿／帕斯卡，也不是材料刚度真值。" class="figure-open" href="figures/p13-sample.webp" rel="noopener" target="_blank"><img alt="本报告依据公开NPZ绘制的真实样例：测试文件20260712_103545_027153_rigid_70中第0、16、32、48、63帧，所有子图共用色标。颜色是数据存储的去基线归一化响应，不是牛顿／帕斯卡，也不是材料刚度真值。" decoding="async" height="478" loading="lazy" src="figures/p13-sample.webp" width="2093"/></a>
+<figcaption>本报告依据公开NPZ绘制的真实样例：测试文件20260712_103545_027153_rigid_70中第0、16、32、48、63帧，所有子图共用色标。颜色是数据存储的去基线归一化响应，不是牛顿／帕斯卡，也不是材料刚度真值。<span class="figure-links"><a href="https://huggingface.co/datasets/Tachintech/tactile-deformation-response/resolve/main/data/test/20260712_103545_027153_rigid_70.npz" rel="noopener" target="_blank">来源：公开数据文件</a><a href="https://huggingface.co/datasets/Tachintech/tactile-deformation-response/resolve/main/data/test/20260712_103545_027153_rigid_70.npz" rel="noopener" target="_blank">查看原始数据</a></span></figcaption>
+</figure>
+</div>
 <h2 id="9-2">9. 条件开放（另列2个）</h2>
 <p>此处公开卡片可见不等于原始归档可匿名读取；不混入A+B主数。</p>
 <p><a id="C01"></a></p>
@@ -2720,7 +3146,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>API gated=auto；公共README经blob/resolve路径可读，不代表payload无门控。仅核实卡片/文件目录，未接受条款或下载受限数据。论文/网页500小时不能写成当前开放500小时。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-c01-01">
+<div class="figure-type"><strong>C01 · 图1</strong><span>采集与样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：TouchScale官方完整采集图：头戴RGB-D、双腕相机、全手触觉与拧布过程。配图来自公开项目，不表示受门控原始数据已下载；发布规模仍采用2026-10-09核查口径。" class="figure-open" href="figures/c01-01.webp" rel="noopener" target="_blank"><img alt="TouchScale官方完整采集图：头戴RGB-D、双腕相机、全手触觉与拧布过程。配图来自公开项目，不表示受门控原始数据已下载；发布规模仍采用2026-10-09核查口径。" decoding="async" height="1320" loading="lazy" src="figures/c01-01.webp" width="2400"/></a>
+<figcaption>TouchScale官方完整采集图：头戴RGB-D、双腕相机、全手触觉与拧布过程。配图来自公开项目，不表示受门控原始数据已下载；发布规模仍采用2026-10-09核查口径。<span class="figure-links"><a href="https://touch-scale.github.io/" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://touch-scale.github.io/assets/images/paper/data-collection.svg?v=public-release-1" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure wide" id="fig-c01-02">
+<div class="figure-type"><strong>C01 · 图2</strong><span>传感器布局</span><small>点击图片放大</small></div>
+<a aria-label="放大：TouchScale官方右手触点布局图，标出880taxels及手部区域索引；双手对应字段仍须分别读取。" class="figure-open" href="figures/c01-02.webp" rel="noopener" target="_blank"><img alt="TouchScale官方右手触点布局图，标出880taxels及手部区域索引；双手对应字段仍须分别读取。" decoding="async" height="1240" loading="lazy" src="figures/c01-02.webp" width="2100"/></a>
+<figcaption>TouchScale官方右手触点布局图，标出880taxels及手部区域索引；双手对应字段仍须分别读取。<span class="figure-links"><a href="https://huggingface.co/datasets/2077AIDataFoundation/TouchScale/blob/main/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://huggingface.co/datasets/SingleBicycle/TouchScale-assets/resolve/main/glove_layout.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="C02"></a></p>
 <h3 id="c02-touchdanytouch-2forcemani">C02 · ToucHD（AnyTouch 2，真实Force/Mani）</h3>
 <p><strong>分类：</strong>实物探测／标定／混合实验台　<strong>参考年份：</strong>2026　<strong>证据：</strong>C（条件开放，已见卡片／目录但数据需接受条款；不计入主统计）</p>
@@ -2758,7 +3195,18 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>Force/Mani按一个数据集家族计；不能把包含Sim的2.43M全部当真实触觉。匿名raw为401，仅条件开放统计加1。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure" id="fig-c02-01">
+<div class="figure-type"><strong>C02 · 图1</strong><span>真实数据样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：ToucHD论文图6：真实操作部分的视觉—触觉时间序列，包括套笔帽与放置试管等。这里展示Mani真实部分，不把Sim数量算入真实触觉。" class="figure-open" href="figures/c02-01.webp" rel="noopener" target="_blank"><img alt="ToucHD论文图6：真实操作部分的视觉—触觉时间序列，包括套笔帽与放置试管等。这里展示Mani真实部分，不把Sim数量算入真实触觉。" decoding="async" height="2028" loading="lazy" src="figures/c02-01.webp" width="1317"/></a>
+<figcaption>ToucHD论文图6：真实操作部分的视觉—触觉时间序列，包括套笔帽与放置试管等。这里展示Mani真实部分，不把Sim数量算入真实触觉。<span class="figure-links"><a href="https://arxiv.org/html/2602.09617v1" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2602.09617v1/mani-time.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+<figure class="dataset-figure wide" id="fig-c02-02">
+<div class="figure-type"><strong>C02 · 图2</strong><span>数据层级</span><small>点击图片放大</small></div>
+<a aria-label="放大：ToucHD论文图1：动态触觉数据层级。原图包含真实与仿真数据；它描述整套框架，不是全部公开真实样本的数量证明。" class="figure-open" href="figures/c02-02.webp" rel="noopener" target="_blank"><img alt="ToucHD论文图1：动态触觉数据层级。原图包含真实与仿真数据；它描述整套框架，不是全部公开真实样本的数量证明。" decoding="async" height="870" loading="lazy" src="figures/c02-02.webp" width="2030"/></a>
+<figcaption>ToucHD论文图1：动态触觉数据层级。原图包含真实与仿真数据；它描述整套框架，不是全部公开真实样本的数量证明。<span class="figure-links"><a href="https://arxiv.org/html/2602.09617v1" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2602.09617v1/data2_cropped.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <h2 id="10-5">10. 汇编与再处理包（5个，不新增独立采集数）</h2>
 <p>这些包能节省工程时间，但首先要建立与上游来源的对应关系；转换可能丢失时间戳、动作或高频信号。</p>
 <p><a id="A01"></a></p>
@@ -2798,7 +3246,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>汇编VisGel、TVL、Touch and Go、Calandra、Yuan18、YCB-Sight、ObjectFolder等，并含作者新增采集。主统计不把整个包再加1；新增部分未单独审计为完整来源，故暂不加数。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-a01-01">
+<div class="figure-type"><strong>A01 · 图1</strong><span>汇编数据概览</span><small>点击图片放大</small></div>
+<a aria-label="放大：FoTa论文图2：汇编来源、传感器与任务分布及触觉外观。图中的原始来源已经分别计数，FoTa不再新增一个采集来源。" class="figure-open" href="figures/a01-01.webp" rel="noopener" target="_blank"><img alt="FoTa论文图2：汇编来源、传感器与任务分布及触觉外观。图中的原始来源已经分别计数，FoTa不再新增一个采集来源。" decoding="async" height="1194" loading="lazy" src="figures/a01-01.webp" width="2031"/></a>
+<figcaption>FoTa论文图2：汇编来源、传感器与任务分布及触觉外观。图中的原始来源已经分别计数，FoTa不再新增一个采集来源。<span class="figure-links"><a href="https://arxiv.org/html/2406.13640v3" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2406.13640v3/data_pie_plots.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="A02"></a></p>
 <h3 id="a02-sparshtacbench">A02 · Sparsh预训练混合与TacBench</h3>
 <p><strong>分类：</strong>汇编／再处理包（不重复计数）　<strong>参考年份：</strong>2024　<strong>证据：</strong>A（已核实实际数据文件目录；不计入主统计）</p>
@@ -2874,7 +3328,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>26论文来源≠已公开26个独立集；15目录≠15个独立来源（RDP/RH20T/Unit拆配置）。不把3,000小时当已开放小时；EgoTac/OpenTouch等在根目录未见同名归档。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-a03-01">
+<div class="figure-type"><strong>A03 · 图1</strong><span>汇编数据概览</span><small>点击图片放大</small></div>
+<a aria-label="放大：FTP-1论文图4：论文使用的26个来源和不同触觉模态。此为论文全量概览，不代表当前可下载目录覆盖全部26个来源。" class="figure-open" href="figures/a03-01.webp" rel="noopener" target="_blank"><img alt="FTP-1论文图4：论文使用的26个来源和不同触觉模态。此为论文全量概览，不代表当前可下载目录覆盖全部26个来源。" decoding="async" height="819" loading="lazy" src="figures/a03-01.webp" width="2041"/></a>
+<figcaption>FTP-1论文图4：论文使用的26个来源和不同触觉模态。此为论文全量概览，不代表当前可下载目录覆盖全部26个来源。<span class="figure-links"><a href="https://arxiv.org/html/2606.13102v2" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://arxiv.org/html/2606.13102v2/datasets_main_0520_v1.png" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="A04"></a></p>
 <h3 id="a04-touch100k">A04 · Touch100k</h3>
 <p><strong>分类：</strong>汇编／再处理包（不重复计数）　<strong>参考年份：</strong>2024　<strong>证据：</strong>B（已核实官方下载入口／脚本，归档未验证；不计入主统计）</p>
@@ -2912,7 +3372,13 @@ main{min-width:0}article,.explorer{background:white;border:1px solid var(--line)
 <td>此类派生标注包不应直接作为100K条全新实测接触，也不再增加独立原始采集数；原始来源应逐项去重。</td>
 </tr>
 </tbody>
-</table>
+</table><div class="dataset-figures">
+<figure class="dataset-figure wide" id="fig-a04-01">
+<div class="figure-type"><strong>A04 · 图1</strong><span>汇编样例</span><small>点击图片放大</small></div>
+<a aria-label="放大：Touch100k官方数据展示图：视觉、触觉与不同粒度语言描述。派生语言／汇编不增加原始采集来源数。" class="figure-open" href="figures/a04-01.webp" rel="noopener" target="_blank"><img alt="Touch100k官方数据展示图：视觉、触觉与不同粒度语言描述。派生语言／汇编不增加原始采集来源数。" decoding="async" height="900" loading="lazy" src="figures/a04-01.webp" width="1800"/></a>
+<figcaption>Touch100k官方数据展示图：视觉、触觉与不同粒度语言描述。派生语言／汇编不增加原始采集来源数。<span class="figure-links"><a href="https://github.com/cocacola-lab/TLV-Link/blob/main/README.md" rel="noopener" target="_blank">来源：作者项目／论文</a><a href="https://github.com/cocacola-lab/TLV-Link/blob/main/assets/data_present.svg" rel="noopener" target="_blank">原图／视频／PDF</a></span></figcaption>
+</figure>
+</div>
 <p><a id="A05"></a></p>
 <h3 id="a05-tactile-video-pretrainyxma">A05 · Tactile Video Pretrain（yxma）</h3>
 <p><strong>分类：</strong>汇编／再处理包（不重复计数）　<strong>参考年份：</strong>2026　<strong>证据：</strong>A（已核实实际数据文件目录；不计入主统计）</p>
@@ -3480,30 +3946,56 @@ camera_calibration, sensor_extrinsics, contact_labels, label_origin
 <td>便于阅读、带目录和筛选索引的完整报告，可由浏览器打印</td>
 </tr>
 <tr>
-<td><span class="atlas-missing-attachment" title="原始附件未提供">report.md <small>（附件未提供）</small></span></td>
+<td><a href="report.md">report.md</a></td>
 <td>中文报告源文档，适合版本管理和继续修订</td>
 </tr>
 <tr>
-<td><span class="atlas-missing-attachment" title="原始附件未提供">datasets.csv <small>（附件未提供）</small></span></td>
+<td><a href="datasets.csv">datasets.csv</a></td>
 <td>UTF-8 BOM表格，含全部71条、链接、分类、规模、模态、动作、许可、证据与限制</td>
 </tr>
 <tr>
-<td><span class="atlas-missing-attachment" title="原始附件未提供">datasets.json <small>（附件未提供）</small></span></td>
+<td><a href="datasets.json">datasets.json</a></td>
 <td>同一条目库的机器可读版本</td>
 </tr>
 <tr>
-<td><span class="atlas-missing-attachment" title="原始附件未提供">summary.json <small>（附件未提供）</small></span></td>
+<td><a href="summary.json">summary.json</a></td>
 <td>从条目库自动计算的统计，避免正文与总表手算不一致</td>
 </tr>
 <tr>
-<td><span class="atlas-missing-attachment" title="原始附件未提供">source_index.csv <small>（附件未提供）</small></span></td>
+<td><a href="source_index.csv">source_index.csv</a></td>
 <td>请求URL、检查时间、状态、访问路径与本地缓存路径；含失败请求</td>
 </tr>
 <tr>
-<td><span class="atlas-missing-attachment" title="原始附件未提供">hub_audit.json <small>（附件未提供）</small></span></td>
+<td><a href="hub_audit.json">hub_audit.json</a></td>
 <td>HF仓库SHA、门控状态、许可、文件目录及样例路径快照</td>
 </tr>
 </tbody>
 </table>
 <p><strong>最终统计：人类ego 8个，机器人真机23个，UMI／人操持工具5个，其他真实触觉19个，共55个具有公开发布证据的独立来源家族；另有2个条件开放，共57个。</strong> 如果只接受已经看到实际文件目录的主类条目，则为34个；如果只接受本次确认数据许可且无非商业限制的主类条目，则为23个。这两个23和34分别来自不同筛选条件，不能互相替代。</p>
-<p>检索无法证明全网穷尽；历史站点失联、新库持续发布、同源版本关系和部分数据许可仍有缺口。数字应与2026-10-09日期、A／B／C证据口径及来源家族去重规则一起引用。后续补核应修改同一目录并重算统计，不把尚未确认的条目提前纳入。</p></article></main></div><script>const controls=['query','group','evidence','counted'].map(id=>document.getElementById(id));const rows=[...document.querySelectorAll('#inventory tbody tr')];function filter(){const [q,g,e,c]=controls.map(x=>x.value.toLowerCase().trim());let n=0;for(const r of rows){const show=(!q||r.textContent.toLowerCase().includes(q))&&(!g||r.dataset.group.toLowerCase()===g)&&(!e||r.dataset.evidence.toLowerCase()===e)&&(!c||r.dataset.counted===c);r.hidden=!show;if(show)n++;}document.getElementById('result-count').textContent=`当前显示 ${n} / ${rows.length} 条`;}controls.forEach(x=>x.addEventListener('input',filter));filter();</script></body></html>
+<p>检索无法证明全网穷尽；历史站点失联、新库持续发布、同源版本关系和部分数据许可仍有缺口。数字应与2026-10-09日期、A／B／C证据口径及来源家族去重规则一起引用。后续补核应修改同一目录并重算统计，不把尚未确认的条目提前纳入。</p><h2 id="media-sources">16. 配图来源与覆盖（2026-10-16）</h2><p>配图更新：2026-10-16。本版新增81张图片，覆盖56个目录条目，其中51个属于主统计来源，8个人类ego来源均已配图。4组数值触觉样例由本报告读取公开数据后绘制。数据规模与开放状态仍沿用2026-10-09核验口径。</p><p><a href="figure_sources.csv">配图来源CSV</a> · <a href="figures/manifest.json">逐图元信息</a> · <a href="figure_coverage.json">全部条目配图覆盖</a></p><p>各图来源可追溯到论文、作者项目页或公开数据文件。引用介绍图不代表已验证全量数据；模型输出、派生标注和仿真在相应图注中说明。</p><details class="media-coverage"><summary>本轮尚未补图的主统计来源（4个）</summary><ul><li><a href="#R04">Eagle Shoal / Visual-Tactile Dataset</a>：未取得可核实且适合展示的图片，保留原数据入口。</li><li><a href="#R18">ARQ-CRISP Slip Detection Dataset</a>：未取得可核实且适合展示的图片，保留原数据入口。</li><li><a href="#R22">Active Clothing Material Perception（Yuan18）</a>：未取得可核实且适合展示的图片，保留原数据入口。</li><li><a href="#P10">GelSight Sim2Real（真实A域）</a>：未取得可核实且适合展示的图片，保留原数据入口。</li></ul></details></article></main></div><script>const controls=['query','group','evidence','counted'].map(id=>document.getElementById(id));const rows=[...document.querySelectorAll('#inventory tbody tr')];function filter(){const [q,g,e,c]=controls.map(x=>x.value.toLowerCase().trim());let n=0;for(const r of rows){const show=(!q||r.textContent.toLowerCase().includes(q))&&(!g||r.dataset.group.toLowerCase()===g)&&(!e||r.dataset.evidence.toLowerCase()===e)&&(!c||r.dataset.counted===c);r.hidden=!show;if(show)n++;}document.getElementById('result-count').textContent=`当前显示 ${n} / ${rows.length} 条`;}controls.forEach(x=>x.addEventListener('input',filter));filter();</script><dialog aria-label="数据集图片放大查看" class="image-dialog" id="figure-dialog"><div class="dialog-bar"><span class="dialog-title"></span><button aria-label="关闭图片" type="button">关闭 ×</button></div><img alt=""/><div class="dialog-caption"></div></dialog><script>
+(() => {
+const dialog=document.getElementById('figure-dialog');
+document.querySelectorAll('.figure-open').forEach(a=>a.addEventListener('click',event=>{
+ if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
+ event.preventDefault();const figure=a.closest('figure');
+ dialog.querySelector('img').src=a.href;
+ dialog.querySelector('img').alt=a.querySelector('img').alt;
+ dialog.querySelector('.dialog-title').textContent=figure.querySelector('.figure-type').textContent.replace('点击图片放大','').trim();
+ const cap=dialog.querySelector('.dialog-caption');cap.replaceChildren(figure.querySelector('figcaption').cloneNode(true));
+ dialog.showModal();
+}));
+dialog.querySelector('button').addEventListener('click',()=>dialog.close());
+dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();}});
+const only=document.getElementById('only-illustrated');
+function mediaFilter(){
+ const q=document.getElementById('query').value.toLowerCase().trim();
+ const g=document.getElementById('group').value;
+ const e=document.getElementById('evidence').value;
+ const c=document.getElementById('counted').value;
+ let n=0;const rows=[...document.querySelectorAll('#inventory tbody tr')];
+ for(const r of rows){const show=(!q||r.textContent.toLowerCase().includes(q))&&(!g||r.dataset.group===g)&&(!e||r.dataset.evidence===e)&&(!c||r.dataset.counted===c)&&(!only.checked||Number(r.dataset.figures)>0);r.hidden=!show;if(show)n++;}
+ document.getElementById('result-count').textContent=`当前显示 ${n} / ${rows.length} 条`;
+}
+document.querySelectorAll('.filters input,.filters select').forEach(el=>el.addEventListener('input',mediaFilter));mediaFilter();
+})();
+</script></body></html>

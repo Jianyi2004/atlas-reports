@@ -1,0 +1,31 @@
+{
+  "as_of": "2026-10-09",
+  "unit": "独立采集来源家族；不是仓库、版本、传感器或任务数",
+  "total_catalog_records": 71,
+  "main_publication_evidence_count": 55,
+  "main_counts_by_group": {
+    "E": 8,
+    "R": 23,
+    "U": 5,
+    "H": 6,
+    "P": 13
+  },
+  "main_counts_by_evidence": {
+    "B": 21,
+    "A": 34
+  },
+  "main_counts_by_license": {
+    "已标明非商业用途限制": 11,
+    "数据专用许可未确认／需保留上游条款": 21,
+    "已标明数据许可，无NC限制": 23
+  },
+  "conditional_families": [
+    "C01",
+    "C02"
+  ],
+  "main_plus_conditional": 57,
+  "robot_plus_handheld_tool": 28,
+  "other_real_non_ego": 19,
+  "all_real_except_ego": 47,
+  "limitations": "检索发现的来源数量，不是全网穷尽总量；未下载校验全量payload；公开发布证据不等于无用途限制开源。"
+}

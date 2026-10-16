@@ -1,0 +1,570 @@
+[
+  {
+    "id": "E01",
+    "name": "ActionSense",
+    "group": "E",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "E02",
+    "name": "EgoPressure",
+    "group": "E",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "E03",
+    "name": "OpenTouch",
+    "group": "E",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "E04",
+    "name": "EgoTouch（TouchAnything数据）",
+    "group": "E",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "E05",
+    "name": "EgoTactile",
+    "group": "E",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "E06",
+    "name": "OpenGraph Ego-Tactile Manipulation",
+    "group": "E",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "E07",
+    "name": "Touch and Go",
+    "group": "E",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "E08",
+    "name": "VTDexManip（真实人类预训练数据）",
+    "group": "E",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "R01",
+    "name": "VisGel",
+    "group": "R",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "R02",
+    "name": "Calandra抓取数据 / The Feeling of Success",
+    "group": "R",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "R03",
+    "name": "ObjectFolder-Real",
+    "group": "R",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "R04",
+    "name": "Eagle Shoal / Visual-Tactile Dataset",
+    "group": "R",
+    "main_counted": true,
+    "figures": 0,
+    "status": "本轮未取得可核实且适合展示的图片；保留原数据链接"
+  },
+  {
+    "id": "R05",
+    "name": "PoseIt",
+    "group": "R",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "R06",
+    "name": "YCB-Sight（真实部分）",
+    "group": "R",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "R07",
+    "name": "RH20T（触觉配置）",
+    "group": "R",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "R08",
+    "name": "Reactive Diffusion Policy（RDP）数据",
+    "group": "R",
+    "main_counted": true,
+    "figures": 3,
+    "status": "已补图"
+  },
+  {
+    "id": "R09",
+    "name": "UniT数据",
+    "group": "R",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "R10",
+    "name": "VLA-Touch数据",
+    "group": "R",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "R11",
+    "name": "OmniViTac（OmniVTA数据）",
+    "group": "R",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "R12",
+    "name": "HapTile",
+    "group": "R",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "R13",
+    "name": "LET-Dex Dataset",
+    "group": "R",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "R14",
+    "name": "Humanoid Everyday（触觉部分）",
+    "group": "R",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "R15",
+    "name": "白虎-VTouch / OpenLoong visuo-tactile",
+    "group": "R",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "R16",
+    "name": "Sharpa North-FTP-1",
+    "group": "R",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "R17",
+    "name": "Tactile MNIST（Real）",
+    "group": "R",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "R18",
+    "name": "ARQ-CRISP Slip Detection Dataset",
+    "group": "R",
+    "main_counted": true,
+    "figures": 0,
+    "status": "本轮未取得可核实且适合展示的图片；保留原数据链接"
+  },
+  {
+    "id": "R19",
+    "name": "iCub Hybrid Touch Texture Dataset",
+    "group": "R",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "R20",
+    "name": "Doro/Jaco OptoForce Object Classification",
+    "group": "R",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "R21",
+    "name": "BioTac_slide_20_50",
+    "group": "R",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "R22",
+    "name": "Active Clothing Material Perception（Yuan18）",
+    "group": "R",
+    "main_counted": true,
+    "figures": 0,
+    "status": "本轮未取得可核实且适合展示的图片；保留原数据链接"
+  },
+  {
+    "id": "R23",
+    "name": "SSVTP",
+    "group": "R",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "U01",
+    "name": "FreeTacMan",
+    "group": "U",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "U02",
+    "name": "Touch in the Wild",
+    "group": "U",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "U03",
+    "name": "exUMI",
+    "group": "U",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "U04",
+    "name": "ViTaMIn",
+    "group": "U",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "U05",
+    "name": "Daimon-Infinity",
+    "group": "U",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "H01",
+    "name": "STAG",
+    "group": "H",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "H02",
+    "name": "PressureVisionDB",
+    "group": "H",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "H03",
+    "name": "PX OmniSharing DB SampleData",
+    "group": "H",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "H04",
+    "name": "FusionX Multimodal Sample Dataset V3",
+    "group": "H",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "H05",
+    "name": "Tachin Fixed Viewpoint Tactile Dataset",
+    "group": "H",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "H06",
+    "name": "Tactile Gesture Language",
+    "group": "H",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "P01",
+    "name": "TVL-HCT（TVL新增人采部分）",
+    "group": "P",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "P02",
+    "name": "TacQuad（AnyTouch）",
+    "group": "P",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "P03",
+    "name": "HPT / HTT Dataset",
+    "group": "P",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "P04",
+    "name": "TaF-Dataset",
+    "group": "P",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "P05",
+    "name": "Touch-Slide",
+    "group": "P",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "P06",
+    "name": "YCB-Slide（Real）",
+    "group": "P",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "P07",
+    "name": "Sparsh / TacBench原创监督数据",
+    "group": "P",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "P08",
+    "name": "TactileTracking / NormalFlow Dataset",
+    "group": "P",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "P09",
+    "name": "GelSLAM Dataset",
+    "group": "P",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "P10",
+    "name": "GelSight Sim2Real（真实A域）",
+    "group": "P",
+    "main_counted": true,
+    "figures": 0,
+    "status": "本轮未取得可核实且适合展示的图片；保留原数据链接"
+  },
+  {
+    "id": "P11",
+    "name": "PhysiCLeAR（Octopi 1.0/1.5）",
+    "group": "P",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "P12",
+    "name": "Touch-Ex",
+    "group": "P",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "P13",
+    "name": "Tactile Deformation Response",
+    "group": "P",
+    "main_counted": true,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "C01",
+    "name": "TouchScale",
+    "group": "E",
+    "main_counted": false,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "C02",
+    "name": "ToucHD（AnyTouch 2，真实Force/Mani）",
+    "group": "P",
+    "main_counted": false,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
+    "id": "F01",
+    "name": "REASSEMBLE",
+    "group": "F",
+    "main_counted": false,
+    "figures": 0,
+    "status": "本轮未取得可核实且适合展示的图片；保留原数据链接"
+  },
+  {
+    "id": "F02",
+    "name": "MotionTrans（FTP公开机器人部分）",
+    "group": "F",
+    "main_counted": false,
+    "figures": 0,
+    "status": "本轮未取得可核实且适合展示的图片；保留原数据链接"
+  },
+  {
+    "id": "A01",
+    "name": "Foundation Tactile / FoTa",
+    "group": "A",
+    "main_counted": false,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "A02",
+    "name": "Sparsh预训练混合与TacBench",
+    "group": "A",
+    "main_counted": false,
+    "figures": 0,
+    "status": "本轮未取得可核实且适合展示的图片；保留原数据链接"
+  },
+  {
+    "id": "A03",
+    "name": "FTP-1 Dataset",
+    "group": "A",
+    "main_counted": false,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "A04",
+    "name": "Touch100k",
+    "group": "A",
+    "main_counted": false,
+    "figures": 1,
+    "status": "已补图"
+  },
+  {
+    "id": "A05",
+    "name": "Tactile Video Pretrain（yxma）",
+    "group": "A",
+    "main_counted": false,
+    "figures": 0,
+    "status": "本轮未取得可核实且适合展示的图片；保留原数据链接"
+  },
+  {
+    "id": "X01",
+    "name": "DexUMI",
+    "group": "X",
+    "main_counted": false,
+    "figures": 0,
+    "status": "本轮未取得可核实且适合展示的图片；保留原数据链接"
+  },
+  {
+    "id": "X02",
+    "name": "EgoTac-Open / Kitchen / Hotel及EgoTac-SC",
+    "group": "X",
+    "main_counted": false,
+    "figures": 0,
+    "status": "本轮未取得可核实且适合展示的图片；保留原数据链接"
+  },
+  {
+    "id": "X03",
+    "name": "3D-ViTac",
+    "group": "X",
+    "main_counted": false,
+    "figures": 0,
+    "status": "本轮未取得可核实且适合展示的图片；保留原数据链接"
+  },
+  {
+    "id": "X04",
+    "name": "Tactile Grasp and Move / Action-Conditioned Tactile Prediction",
+    "group": "X",
+    "main_counted": false,
+    "figures": 0,
+    "status": "本轮未取得可核实且适合展示的图片；保留原数据链接"
+  },
+  {
+    "id": "X05",
+    "name": "Touch-GS Dataset",
+    "group": "X",
+    "main_counted": false,
+    "figures": 0,
+    "status": "本轮未取得可核实且适合展示的图片；保留原数据链接"
+  },
+  {
+    "id": "X06",
+    "name": "HUST-Tactile",
+    "group": "X",
+    "main_counted": false,
+    "figures": 0,
+    "status": "本轮未取得可核实且适合展示的图片；保留原数据链接"
+  },
+  {
+    "id": "X07",
+    "name": "zhicao/egoforce（FusionX录制）",
+    "group": "X",
+    "main_counted": false,
+    "figures": 0,
+    "status": "本轮未取得可核实且适合展示的图片；保留原数据链接"
+  }
+]

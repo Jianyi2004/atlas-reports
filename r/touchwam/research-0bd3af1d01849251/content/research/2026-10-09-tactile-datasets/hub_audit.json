@@ -1,0 +1,3495 @@
+[
+  {
+    "repo": "HustleHard/EgoTactile",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "bdc81fb73f8c9697f40796d6f01d291c87ca67b1",
+    "license": "cc-by-nc-4.0",
+    "file_count": 1539,
+    "sample_files": [
+      "Raw_data/bare_hand/p001/Apple/repeat0000/data.json",
+      "Raw_data/bare_hand/p001/Apple/repeat0000/video.mp4",
+      "Raw_data/bare_hand/p001/Banana/repeat0000/data.json",
+      "Raw_data/bare_hand/p001/Banana/repeat0000/video.mp4",
+      "Raw_data/bare_hand/p001/BellPepper/repeat0000/data.json",
+      "Raw_data/bare_hand/p001/BellPepper/repeat0000/video.mp4",
+      "Raw_data/bare_hand/p001/Carrot/repeat0000/data.json",
+      "Raw_data/bare_hand/p001/Carrot/repeat0000/video.mp4",
+      "Raw_data/bare_hand/p001/CestbonWater-555ml/repeat0000/data.json",
+      "Raw_data/bare_hand/p001/CestbonWater-555ml/repeat0000/video.mp4",
+      "Raw_data/bare_hand/p001/Clip/repeat0000/data.json",
+      "Raw_data/bare_hand/p001/Clip/repeat0000/video.mp4",
+      "Raw_data/bare_hand/p001/CocaCola-330ml/repeat0000/data.json",
+      "Raw_data/bare_hand/p001/CocaCola-330ml/repeat0000/video.mp4",
+      "Raw_data/bare_hand/p001/CocaCola-500ml/repeat0000/data.json"
+    ],
+    "root": [
+      {
+        "path": "Raw_data",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2461
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 5905
+      }
+    ]
+  },
+  {
+    "repo": "OpenGraphLabs-Research/ego-tactile-manipulation",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "90c4e304b8e3a9578d5bb938992206358db1a660",
+    "license": "cc-by-4.0",
+    "file_count": 612,
+    "sample_files": [
+      "assets/ego_tactile_grid.mp4",
+      "data/chunk-000/file-000.parquet",
+      "extra/raw_imu/episode_000000_head.parquet",
+      "extra/raw_imu/episode_000000_wrist_left.parquet",
+      "extra/raw_imu/episode_000000_wrist_right.parquet",
+      "extra/raw_imu/episode_000001_head.parquet",
+      "extra/raw_imu/episode_000001_wrist_left.parquet",
+      "extra/raw_imu/episode_000001_wrist_right.parquet",
+      "extra/raw_imu/episode_000002_head.parquet",
+      "extra/raw_imu/episode_000002_wrist_left.parquet",
+      "extra/raw_imu/episode_000002_wrist_right.parquet",
+      "extra/raw_imu/episode_000003_head.parquet",
+      "extra/raw_imu/episode_000003_wrist_left.parquet",
+      "extra/raw_imu/episode_000003_wrist_right.parquet",
+      "extra/raw_imu/episode_000004_head.parquet"
+    ],
+    "root": [
+      {
+        "path": "assets",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "data",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "extra",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "meta",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "rerun",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "videos",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 6896
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 3678
+      }
+    ]
+  },
+  {
+    "repo": "eth-siplab/EgoPressure",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "cea37de99be44078f0e4b9796fd6f614d9110dc2",
+    "license": "cc-by-nc-sa-4.0",
+    "file_count": 47043,
+    "sample_files": [
+      "assets/teaser.gif",
+      "configs/p_001/p_001_calibration_routine_left.json",
+      "configs/p_001/p_001_calibration_routine_left_k4a/cam-1.k4a_calibration.json",
+      "configs/p_001/p_001_calibration_routine_left_k4a/cam-2.k4a_calibration.json",
+      "configs/p_001/p_001_calibration_routine_left_k4a/cam-3.k4a_calibration.json",
+      "configs/p_001/p_001_calibration_routine_left_k4a/cam-4.k4a_calibration.json",
+      "configs/p_001/p_001_calibration_routine_left_k4a/cam-5.k4a_calibration.json",
+      "configs/p_001/p_001_calibration_routine_left_k4a/cam-6.k4a_calibration.json",
+      "configs/p_001/p_001_calibration_routine_left_k4a/cam-7.k4a_calibration.json",
+      "configs/p_001/p_001_calibration_routine_left_k4a/cam-d.k4a_calibration.json",
+      "configs/p_001/p_001_calibration_routine_right.json",
+      "configs/p_001/p_001_calibration_routine_right_k4a/cam-1.k4a_calibration.json",
+      "configs/p_001/p_001_calibration_routine_right_k4a/cam-2.k4a_calibration.json",
+      "configs/p_001/p_001_calibration_routine_right_k4a/cam-3.k4a_calibration.json",
+      "configs/p_001/p_001_calibration_routine_right_k4a/cam-4.k4a_calibration.json"
+    ],
+    "root": [
+      {
+        "path": "assets",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "configs",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "data",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2504
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 6442
+      }
+    ]
+  },
+  {
+    "repo": "zhouzhoujy/EgoTouch",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "cfdbb0ac31cc2af4247943820aa250575e7e6637",
+    "license": null,
+    "file_count": 22897,
+    "sample_files": [
+      "Home/arrange_pillow/20260412_101136_379/chest.mp4",
+      "Home/arrange_pillow/20260412_101136_379/jq_pressure.json",
+      "Home/arrange_pillow/20260412_101136_379/left.mp4",
+      "Home/arrange_pillow/20260412_101136_379/manual_contact_annotation.json",
+      "Home/arrange_pillow/20260412_101136_379/pressure_grids.npz",
+      "Home/arrange_pillow/20260412_101136_379/right.mp4",
+      "Home/arrange_pillow/20260412_101136_379/rokoko_hands.json",
+      "Home/arrange_pillow/20260412_101136_379/visualization.mp4",
+      "Home/arrange_pillow/20260412_101136_379/vive_poses.json",
+      "Home/arrange_pillow/20260412_101136_379/wilor_hands.json",
+      "Home/arrange_pillow/20260412_101243_753/chest.mp4",
+      "Home/arrange_pillow/20260412_101243_753/jq_pressure.json",
+      "Home/arrange_pillow/20260412_101243_753/left.mp4",
+      "Home/arrange_pillow/20260412_101243_753/manual_contact_annotation.json",
+      "Home/arrange_pillow/20260412_101243_753/pressure_grids.npz"
+    ],
+    "root": [
+      {
+        "path": "Home",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Office",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Outdoor",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Retail",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Workbench",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 26331
+      },
+      {
+        "path": "split.json",
+        "type": "file",
+        "size": 313859
+      }
+    ]
+  },
+  {
+    "repo": "paxini/Omnisharing_DB_SampleData",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "05d2fd9d9e7e2e3353da159a03708d20a6d7b86b",
+    "license": null,
+    "file_count": 1002,
+    "sample_files": [
+      "data/part_01/episode_1000_214745_76_110069_glove.hdf5",
+      "data/part_01/episode_1001_214820_76_110069_glove.hdf5",
+      "data/part_01/episode_1002_214850_76_110069_glove.hdf5",
+      "data/part_01/episode_1003_215102_76_110069_glove.hdf5",
+      "data/part_01/episode_1004_215138_76_110069_glove.hdf5",
+      "data/part_01/episode_1005_215210_76_110069_glove.hdf5",
+      "data/part_01/episode_1006_215242_76_110069_glove.hdf5",
+      "data/part_01/episode_1007_215312_76_110069_glove.hdf5",
+      "data/part_01/episode_1008_215344_76_110069_glove.hdf5",
+      "data/part_01/episode_1009_215415_76_110069_glove.hdf5",
+      "data/part_01/episode_100_101302_138_120105_glove.hdf5",
+      "data/part_01/episode_1010_215446_76_110069_glove.hdf5",
+      "data/part_01/episode_1011_215515_76_110069_glove.hdf5",
+      "data/part_01/episode_1012_215553_76_110069_glove.hdf5",
+      "data/part_01/episode_1013_215632_76_110069_glove.hdf5"
+    ],
+    "root": [
+      {
+        "path": "data",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 92245
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 8822
+      }
+    ]
+  },
+  {
+    "repo": "touchtronix/FusionX-Multimodal-Sample-Data-V3",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "51392e3b05d8566b29ad8fe9f78478e8fef4971b",
+    "license": "cc-by-4.0",
+    "file_count": 47383,
+    "sample_files": [
+      "firstaid1/calib.json",
+      "firstaid1/frames.parquet",
+      "firstaid1/oak_imu.parquet",
+      "firstaid2/calib.json",
+      "firstaid2/frames.parquet",
+      "firstaid2/oak_imu.parquet",
+      "firstaid3/calib.json",
+      "firstaid3/frames.parquet",
+      "firstaid3/oak_imu.parquet",
+      "strap1/calib.json",
+      "strap1/frames.parquet",
+      "strap1/oak_imu.parquet",
+      "strap2/calib.json",
+      "strap2/frames.parquet",
+      "strap2/oak_imu.parquet"
+    ],
+    "root": [
+      {
+        "path": "firstaid1",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "firstaid2",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "firstaid3",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "strap1",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "strap2",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "strap3",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "strap4",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "water1",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "water2",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "water3",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "water4",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2504
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 3700
+      }
+    ]
+  },
+  {
+    "repo": "2077AIDataFoundation/TouchScale",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": "auto",
+    "sha": "4bc32c64c48d3711e99e1483a2520bdceda50c85",
+    "license": "cc-by-nc-4.0",
+    "file_count": 15773,
+    "sample_files": [
+      "assets/demo_gauze_dressing.mp4",
+      "assets/demo_gauze_dressing.webp",
+      "assets/demo_lab_scoop_pour.mp4",
+      "assets/demo_lab_scoop_pour.webp",
+      "assets/demo_pour_spray_bottle.mp4",
+      "assets/demo_pour_spray_bottle.webp",
+      "assets/demo_seal_carton.mp4",
+      "assets/demo_seal_carton.webp",
+      "assets/demo_wring_cloth.mp4",
+      "assets/demo_wring_cloth.webp",
+      "data/train-00000-of-00430.tar",
+      "data/train-00001-of-00430.tar",
+      "data/train-00002-of-00430.tar",
+      "data/train-00003-of-00430.tar",
+      "data/train-00004-of-00430.tar"
+    ],
+    "root": [
+      {
+        "path": "assets",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "data",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "metadata",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "previews",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2504
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 16049
+      }
+    ]
+  },
+  {
+    "repo": "OpenDriveLab/FreeTacMan",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "030316fb41d6fa1e58cccb4bbe0f6fddbb932671",
+    "license": "mit",
+    "file_count": 24915,
+    "sample_files": [
+      ".gitignore",
+      "ArrangeFruit/ArrangeFruit_100_camera1.mp4",
+      "ArrangeFruit/ArrangeFruit_100_camera2.mp4",
+      "ArrangeFruit/ArrangeFruit_100_camera3.mp4",
+      "ArrangeFruit/ArrangeFruit_100_traj.csv",
+      "ArrangeFruit/ArrangeFruit_101_camera1.mp4",
+      "ArrangeFruit/ArrangeFruit_101_camera2.mp4",
+      "ArrangeFruit/ArrangeFruit_101_camera3.mp4",
+      "ArrangeFruit/ArrangeFruit_101_traj.csv",
+      "ArrangeFruit/ArrangeFruit_102_camera1.mp4",
+      "ArrangeFruit/ArrangeFruit_102_camera2.mp4",
+      "ArrangeFruit/ArrangeFruit_102_camera3.mp4",
+      "ArrangeFruit/ArrangeFruit_102_traj.csv",
+      "ArrangeFruit/ArrangeFruit_103_camera1.mp4",
+      "ArrangeFruit/ArrangeFruit_103_camera2.mp4"
+    ],
+    "root": [
+      {
+        "path": "ArrangeFruit",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "CakePiping",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Cast",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "CutBanana",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "CutTofu",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "DecorateCake",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "DensePacking",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "FeelWeight",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "FragileCup",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Hammer",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "HangMosquitoCoil",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Hold",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "InsertIncenseStick",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "LayerWithBananaSlices",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Mount",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "OrganizeBrush",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Pipette",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Pound",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "PourWater",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "PullDrawer",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "ScrewInTheBulb",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Slot",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "SpreadCream",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "SprinkleSesame",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "SqueezeToothpaste",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Stamp",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "SteakSaucing",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Stir",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "StoreFruit",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "StoreToys",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "StringBeads",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "SwipeCard",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "TextureClassify",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "ThreadNeedle",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Throw",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "TissueGrasp",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "TransferEgg",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "TransferHerbs",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "UnscrewLightBulb",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Unzip",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "UsbPlug",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "UsbPlugManyEnv",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "UseTweezer",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "WateringPlants",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "WipeBoard",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Write",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2793
+      },
+      {
+        "path": ".gitignore",
+        "type": "file",
+        "size": 308
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 3933
+      }
+    ]
+  },
+  {
+    "repo": "WendiChen/reactive_diffusion_policy_dataset",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "821a9faa144158425f93c26e75d862c7e5994933",
+    "license": "mit",
+    "file_count": 61,
+    "sample_files": [
+      "dataset_full/lift_v2.zip",
+      "dataset_full/lift_v2_downsample1_zarr.zip",
+      "dataset_full/lift_v2_downsample2_zarr.zip",
+      "dataset_full/peel_v3.zip",
+      "dataset_full/peel_v3_downsample1_zarr.zip",
+      "dataset_full/peel_v3_downsample2_zarr.zip",
+      "dataset_full/wipe_v1.5_downsample1_zarr.zip",
+      "dataset_full/wipe_v1.5_downsample2_zarr.zip",
+      "dataset_full/wipe_v1.5_part1.zip",
+      "dataset_full/wipe_v1.5_part2.zip",
+      "dataset_mini/lift_v2.zip",
+      "dataset_mini/lift_v2_downsample1_zarr.zip",
+      "dataset_mini/lift_v2_downsample2_zarr.zip",
+      "dataset_mini/peel_v3.zip",
+      "dataset_mini/peel_v3_downsample1_zarr.zip"
+    ],
+    "root": [
+      {
+        "path": "dataset_full",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "dataset_mini",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "dataset_tactile_embedding",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2461
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 3274
+      }
+    ]
+  },
+  {
+    "repo": "tars-robotics/OmniVitac",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "060e506ca3cc49571e7ba4db4fc97e24d7711c0d",
+    "license": "cc-by-nc-4.0",
+    "file_count": 738,
+    "sample_files": [
+      "Adjustment_zip_new/Adjustment.tar.gz.00",
+      "Adjustment_zip_new/Adjustment.tar.gz.01",
+      "Adjustment_zip_new/Adjustment.tar.gz.02",
+      "Adjustment_zip_new/Adjustment.tar.gz.03",
+      "Adjustment_zip_new/Adjustment.tar.gz.04",
+      "Adjustment_zip_new/Adjustment.tar.gz.05",
+      "Adjustment_zip_new/Adjustment.tar.gz.06",
+      "Adjustment_zip_new/Adjustment.tar.gz.07",
+      "Adjustment_zip_new/Adjustment.tar.gz.08",
+      "Adjustment_zip_new/Adjustment.tar.gz.09",
+      "Adjustment_zip_new/Adjustment.tar.gz.10",
+      "Adjustment_zip_new/Adjustment.tar.gz.11",
+      "Adjustment_zip_new/Adjustment.tar.gz.12",
+      "Adjustment_zip_new/Adjustment.tar.gz.13",
+      "Adjustment_zip_new/Adjustment.tar.gz.14"
+    ],
+    "root": [
+      {
+        "path": "Adjustment_zip_new",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Assembly_zip_new",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Cutting_zip_new",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Grasping_zip_new",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Peeling_zip_new",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Wiping_zip_new",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2504
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 33
+      }
+    ]
+  },
+  {
+    "repo": "binghaohuang-robot/touch_in_the_wild-dataset",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "b518ef66eb46c416a0e9970c9f35533bf99503b1",
+    "license": "mit",
+    "file_count": 104,
+    "sample_files": [
+      "four_tasks/fluid_transfer/fluid_transfer.zarr.zip",
+      "four_tasks/fluid_transfer/mp4/fluid_transfer_sess1/dataset_plan.pkl",
+      "four_tasks/fluid_transfer/mp4/fluid_transfer_sess1/demos.zip",
+      "four_tasks/fluid_transfer/mp4/fluid_transfer_sess1/tactile_dataset_plan.pkl",
+      "four_tasks/fluid_transfer/mp4/fluid_transfer_sess2/dataset_plan.pkl",
+      "four_tasks/fluid_transfer/mp4/fluid_transfer_sess2/demos.zip",
+      "four_tasks/fluid_transfer/mp4/fluid_transfer_sess2/tactile_dataset_plan.pkl",
+      "four_tasks/pencil_insertion/mp4/pencil_insertion_sess1/dataset_plan.pkl",
+      "four_tasks/pencil_insertion/mp4/pencil_insertion_sess1/demos.zip",
+      "four_tasks/pencil_insertion/mp4/pencil_insertion_sess1/tactile_dataset_plan.pkl",
+      "four_tasks/pencil_insertion/mp4/pencil_insertion_sess2/dataset_plan.pkl",
+      "four_tasks/pencil_insertion/mp4/pencil_insertion_sess2/demos.zip",
+      "four_tasks/pencil_insertion/mp4/pencil_insertion_sess3/dataset_plan.pkl",
+      "four_tasks/pencil_insertion/mp4/pencil_insertion_sess3/demos.zip",
+      "four_tasks/pencil_insertion/pencil_insertion.zarr.zip"
+    ],
+    "root": [
+      {
+        "path": "four_tasks",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "in_the_wild_data",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "indoor_data",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "pretrain_data",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2461
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 2325
+      }
+    ]
+  },
+  {
+    "repo": "mlfu7/Touch-Vision-Language-Dataset",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "3324b2ee956b8d94974bdd8272dce0ade292cb56",
+    "license": null,
+    "file_count": 14,
+    "sample_files": [
+      "labels/alpaca_gpt4_data.json",
+      "labels/cc3m.csv",
+      "labels/llava_instruct_150k_new.json",
+      "tvl_dataset_sharded.z01",
+      "tvl_dataset_sharded.z02",
+      "tvl_dataset_sharded.z03",
+      "tvl_dataset_sharded.z04",
+      "tvl_dataset_sharded.z05",
+      "tvl_dataset_sharded.z06",
+      "tvl_dataset_sharded.z07",
+      "tvl_dataset_sharded.zip"
+    ],
+    "root": [
+      {
+        "path": "img",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "labels",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2916
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 3535
+      },
+      {
+        "path": "tvl_dataset_sharded.z01",
+        "type": "file",
+        "size": 10737418240
+      },
+      {
+        "path": "tvl_dataset_sharded.z02",
+        "type": "file",
+        "size": 10737418240
+      },
+      {
+        "path": "tvl_dataset_sharded.z03",
+        "type": "file",
+        "size": 10737418240
+      },
+      {
+        "path": "tvl_dataset_sharded.z04",
+        "type": "file",
+        "size": 10737418240
+      },
+      {
+        "path": "tvl_dataset_sharded.z05",
+        "type": "file",
+        "size": 10737418240
+      },
+      {
+        "path": "tvl_dataset_sharded.z06",
+        "type": "file",
+        "size": 10737418240
+      },
+      {
+        "path": "tvl_dataset_sharded.z07",
+        "type": "file",
+        "size": 10737418240
+      },
+      {
+        "path": "tvl_dataset_sharded.zip",
+        "type": "file",
+        "size": 134751060
+      }
+    ]
+  },
+  {
+    "repo": "alanz-mit/FoundationTactile",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "e1a16123575eb26e789cf0129ced6f3ba081f2ed",
+    "license": "mit",
+    "file_count": 111,
+    "sample_files": [
+      "dataset/FoTa_dataset.z01",
+      "dataset/FoTa_dataset.z02",
+      "dataset/FoTa_dataset.z03",
+      "dataset/FoTa_dataset.z04",
+      "dataset/FoTa_dataset.z05",
+      "dataset/FoTa_dataset.z06",
+      "dataset/FoTa_dataset.z07",
+      "dataset/FoTa_dataset.z08",
+      "dataset/FoTa_dataset.z09",
+      "dataset/FoTa_dataset.z10",
+      "dataset/FoTa_dataset.z11",
+      "dataset/FoTa_dataset.z12",
+      "dataset/FoTa_dataset.z13",
+      "dataset/FoTa_dataset.z14",
+      "dataset/FoTa_dataset.z15"
+    ],
+    "root": [
+      {
+        "path": "dataset",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "models",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 3579
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 7222
+      }
+    ]
+  },
+  {
+    "repo": "xxuan01/TacQuad",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "7b46e7836f6688788eb52e6988d563ea334f5dd0",
+    "license": "mit",
+    "file_count": 22,
+    "sample_files": [
+      "contact_obj.csv",
+      "contact_octopi.csv",
+      "contact_text_obj.csv",
+      "contact_text_octopi.csv",
+      "contact_text_tag_notest.csv",
+      "contact_text_tvl.csv",
+      "contact_visgel.csv",
+      "contact_yuan.csv",
+      "obj1.0.zip",
+      "octopi.zip",
+      "split_3.npy",
+      "tacquad.zip.001",
+      "tacquad.zip.002",
+      "tacquad.zip.003",
+      "tacquad.zip.004"
+    ],
+    "root": [
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2989
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 3059
+      },
+      {
+        "path": "contact_obj.csv",
+        "type": "file",
+        "size": 49514094
+      },
+      {
+        "path": "contact_octopi.csv",
+        "type": "file",
+        "size": 2083815
+      },
+      {
+        "path": "contact_text_obj.csv",
+        "type": "file",
+        "size": 101150292
+      },
+      {
+        "path": "contact_text_octopi.csv",
+        "type": "file",
+        "size": 2146855
+      },
+      {
+        "path": "contact_text_tag_notest.csv",
+        "type": "file",
+        "size": 9728434
+      },
+      {
+        "path": "contact_text_tvl.csv",
+        "type": "file",
+        "size": 2653671
+      },
+      {
+        "path": "contact_visgel.csv",
+        "type": "file",
+        "size": 18187979
+      },
+      {
+        "path": "contact_yuan.csv",
+        "type": "file",
+        "size": 5562512
+      },
+      {
+        "path": "obj1.0.zip",
+        "type": "file",
+        "size": 140295562
+      },
+      {
+        "path": "octopi.zip",
+        "type": "file",
+        "size": 507789477
+      },
+      {
+        "path": "split_3.npy",
+        "type": "file",
+        "size": 13983
+      },
+      {
+        "path": "tacquad.zip.001",
+        "type": "file",
+        "size": 10737418240
+      },
+      {
+        "path": "tacquad.zip.002",
+        "type": "file",
+        "size": 10737418240
+      },
+      {
+        "path": "tacquad.zip.003",
+        "type": "file",
+        "size": 10737418240
+      },
+      {
+        "path": "tacquad.zip.004",
+        "type": "file",
+        "size": 10737418240
+      },
+      {
+        "path": "tacquad.zip.005",
+        "type": "file",
+        "size": 10737418240
+      },
+      {
+        "path": "tacquad.zip.006",
+        "type": "file",
+        "size": 10737418240
+      },
+      {
+        "path": "tacquad.zip.007",
+        "type": "file",
+        "size": 3708231891
+      },
+      {
+        "path": "text_other.zip",
+        "type": "file",
+        "size": 16002030
+      },
+      {
+        "path": "text_tacquad.zip",
+        "type": "file",
+        "size": 132820
+      }
+    ]
+  },
+  {
+    "repo": "BAAI/ToucHD-Force",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": "auto",
+    "sha": "ab4447f005cbc7fd5e70b69c95c048c4e37458c2",
+    "license": "mit",
+    "file_count": 145,
+    "sample_files": [
+      "all_data_direction.json",
+      "obj000_speed1.zip",
+      "obj000_speed2.zip",
+      "obj001_speed1.zip",
+      "obj001_speed2.zip",
+      "obj002_speed1.zip",
+      "obj002_speed2.zip",
+      "obj003_speed1.zip",
+      "obj003_speed2.zip",
+      "obj004_speed1.zip",
+      "obj004_speed2.zip",
+      "obj005_speed1.zip",
+      "obj005_speed2.zip",
+      "obj006_speed1.zip",
+      "obj006_speed2.zip"
+    ],
+    "root": [
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2521
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 4386
+      },
+      {
+        "path": "all_data_direction.json",
+        "type": "file",
+        "size": 88970026
+      },
+      {
+        "path": "obj000_speed1.zip",
+        "type": "file",
+        "size": 3297354840
+      },
+      {
+        "path": "obj000_speed2.zip",
+        "type": "file",
+        "size": 1878314050
+      },
+      {
+        "path": "obj001_speed1.zip",
+        "type": "file",
+        "size": 3294773879
+      },
+      {
+        "path": "obj001_speed2.zip",
+        "type": "file",
+        "size": 1869571148
+      },
+      {
+        "path": "obj002_speed1.zip",
+        "type": "file",
+        "size": 3297486251
+      },
+      {
+        "path": "obj002_speed2.zip",
+        "type": "file",
+        "size": 1848335694
+      },
+      {
+        "path": "obj003_speed1.zip",
+        "type": "file",
+        "size": 3302187948
+      },
+      {
+        "path": "obj003_speed2.zip",
+        "type": "file",
+        "size": 1878962408
+      },
+      {
+        "path": "obj004_speed1.zip",
+        "type": "file",
+        "size": 3277120142
+      },
+      {
+        "path": "obj004_speed2.zip",
+        "type": "file",
+        "size": 1876625422
+      },
+      {
+        "path": "obj005_speed1.zip",
+        "type": "file",
+        "size": 3242041553
+      },
+      {
+        "path": "obj005_speed2.zip",
+        "type": "file",
+        "size": 1852936210
+      },
+      {
+        "path": "obj006_speed1.zip",
+        "type": "file",
+        "size": 3305179935
+      },
+      {
+        "path": "obj006_speed2.zip",
+        "type": "file",
+        "size": 1893233195
+      },
+      {
+        "path": "obj007_speed1.zip",
+        "type": "file",
+        "size": 3302627195
+      },
+      {
+        "path": "obj007_speed2.zip",
+        "type": "file",
+        "size": 1887445287
+      },
+      {
+        "path": "obj008_speed1.zip",
+        "type": "file",
+        "size": 3320518717
+      },
+      {
+        "path": "obj008_speed2.zip",
+        "type": "file",
+        "size": 1889752973
+      },
+      {
+        "path": "obj009_speed1.zip",
+        "type": "file",
+        "size": 3311527777
+      },
+      {
+        "path": "obj009_speed2.zip",
+        "type": "file",
+        "size": 1897793239
+      },
+      {
+        "path": "obj010_speed1.zip",
+        "type": "file",
+        "size": 3370062056
+      },
+      {
+        "path": "obj010_speed2.zip",
+        "type": "file",
+        "size": 1912135175
+      },
+      {
+        "path": "obj011_speed1.zip",
+        "type": "file",
+        "size": 3353825428
+      },
+      {
+        "path": "obj011_speed2.zip",
+        "type": "file",
+        "size": 1898963426
+      },
+      {
+        "path": "obj012_speed1.zip",
+        "type": "file",
+        "size": 3451829269
+      },
+      {
+        "path": "obj012_speed2.zip",
+        "type": "file",
+        "size": 1935499754
+      },
+      {
+        "path": "obj013_speed1.zip",
+        "type": "file",
+        "size": 3401633233
+      },
+      {
+        "path": "obj013_speed2.zip",
+        "type": "file",
+        "size": 1908585408
+      },
+      {
+        "path": "obj014_speed1.zip",
+        "type": "file",
+        "size": 3404161973
+      },
+      {
+        "path": "obj014_speed2.zip",
+        "type": "file",
+        "size": 1912717023
+      },
+      {
+        "path": "obj015_speed1.zip",
+        "type": "file",
+        "size": 3356821714
+      },
+      {
+        "path": "obj015_speed2.zip",
+        "type": "file",
+        "size": 1904397702
+      },
+      {
+        "path": "obj016_speed1.zip",
+        "type": "file",
+        "size": 3390555519
+      },
+      {
+        "path": "obj016_speed2.zip",
+        "type": "file",
+        "size": 1915060846
+      },
+      {
+        "path": "obj017_speed1.zip",
+        "type": "file",
+        "size": 3377442325
+      },
+      {
+        "path": "obj017_speed2.zip",
+        "type": "file",
+        "size": 1918459649
+      },
+      {
+        "path": "obj018_speed1.zip",
+        "type": "file",
+        "size": 3428614119
+      },
+      {
+        "path": "obj018_speed2.zip",
+        "type": "file",
+        "size": 1945419752
+      },
+      {
+        "path": "obj019_speed1.zip",
+        "type": "file",
+        "size": 3349873458
+      },
+      {
+        "path": "obj019_speed2.zip",
+        "type": "file",
+        "size": 1896062216
+      },
+      {
+        "path": "obj020_speed1.zip",
+        "type": "file",
+        "size": 3399843343
+      },
+      {
+        "path": "obj020_speed2.zip",
+        "type": "file",
+        "size": 1922032047
+      },
+      {
+        "path": "obj021_speed1.zip",
+        "type": "file",
+        "size": 3329542658
+      },
+      {
+        "path": "obj021_speed2.zip",
+        "type": "file",
+        "size": 1865134303
+      },
+      {
+        "path": "obj022_speed1.zip",
+        "type": "file",
+        "size": 3411661949
+      },
+      {
+        "path": "obj022_speed2.zip",
+        "type": "file",
+        "size": 1949198709
+      },
+      {
+        "path": "obj023_speed1.zip",
+        "type": "file",
+        "size": 3354293245
+      },
+      {
+        "path": "obj023_speed2.zip",
+        "type": "file",
+        "size": 1904416476
+      },
+      {
+        "path": "obj024_speed1.zip",
+        "type": "file",
+        "size": 3311582495
+      },
+      {
+        "path": "obj024_speed2.zip",
+        "type": "file",
+        "size": 1880971492
+      },
+      {
+        "path": "obj025_speed1.zip",
+        "type": "file",
+        "size": 3376722005
+      },
+      {
+        "path": "obj025_speed2.zip",
+        "type": "file",
+        "size": 1909521864
+      },
+      {
+        "path": "obj026_speed1.zip",
+        "type": "file",
+        "size": 3320961200
+      },
+      {
+        "path": "obj026_speed2.zip",
+        "type": "file",
+        "size": 1895844342
+      },
+      {
+        "path": "obj027_speed1.zip",
+        "type": "file",
+        "size": 3325523501
+      },
+      {
+        "path": "obj027_speed2.zip",
+        "type": "file",
+        "size": 1890791578
+      },
+      {
+        "path": "obj028_speed1.zip",
+        "type": "file",
+        "size": 3340365382
+      },
+      {
+        "path": "obj028_speed2.zip",
+        "type": "file",
+        "size": 1867359864
+      },
+      {
+        "path": "obj029_speed1.zip",
+        "type": "file",
+        "size": 3316095258
+      },
+      {
+        "path": "obj029_speed2.zip",
+        "type": "file",
+        "size": 1870991073
+      },
+      {
+        "path": "obj030_speed1.zip",
+        "type": "file",
+        "size": 3307415161
+      },
+      {
+        "path": "obj030_speed2.zip",
+        "type": "file",
+        "size": 1875939682
+      },
+      {
+        "path": "obj031_speed1.zip",
+        "type": "file",
+        "size": 3350923536
+      },
+      {
+        "path": "obj031_speed2.zip",
+        "type": "file",
+        "size": 1879043179
+      },
+      {
+        "path": "obj032_speed1.zip",
+        "type": "file",
+        "size": 3319871088
+      },
+      {
+        "path": "obj032_speed2.zip",
+        "type": "file",
+        "size": 1884356217
+      },
+      {
+        "path": "obj033_speed1.zip",
+        "type": "file",
+        "size": 3331649627
+      },
+      {
+        "path": "obj033_speed2.zip",
+        "type": "file",
+        "size": 1887917992
+      },
+      {
+        "path": "obj034_speed1.zip",
+        "type": "file",
+        "size": 3537796712
+      },
+      {
+        "path": "obj034_speed2.zip",
+        "type": "file",
+        "size": 1996208706
+      },
+      {
+        "path": "obj035_speed1.zip",
+        "type": "file",
+        "size": 3473462144
+      },
+      {
+        "path": "obj035_speed2.zip",
+        "type": "file",
+        "size": 1964207569
+      },
+      {
+        "path": "obj036_speed1.zip",
+        "type": "file",
+        "size": 3419884179
+      },
+      {
+        "path": "obj036_speed2.zip",
+        "type": "file",
+        "size": 1920499339
+      },
+      {
+        "path": "obj037_speed1.zip",
+        "type": "file",
+        "size": 3382361144
+      },
+      {
+        "path": "obj037_speed2.zip",
+        "type": "file",
+        "size": 1919036916
+      },
+      {
+        "path": "obj038_speed1.zip",
+        "type": "file",
+        "size": 3403634232
+      },
+      {
+        "path": "obj038_speed2.zip",
+        "type": "file",
+        "size": 1938728697
+      },
+      {
+        "path": "obj039_speed1.zip",
+        "type": "file",
+        "size": 3391880145
+      },
+      {
+        "path": "obj039_speed2.zip",
+        "type": "file",
+        "size": 1925119448
+      },
+      {
+        "path": "obj040_speed1.zip",
+        "type": "file",
+        "size": 3369811621
+      },
+      {
+        "path": "obj040_speed2.zip",
+        "type": "file",
+        "size": 1893141618
+      },
+      {
+        "path": "obj041_speed1.zip",
+        "type": "file",
+        "size": 3345468852
+      },
+      {
+        "path": "obj041_speed2.zip",
+        "type": "file",
+        "size": 1885646175
+      },
+      {
+        "path": "obj042_speed1.zip",
+        "type": "file",
+        "size": 3402573730
+      },
+      {
+        "path": "obj042_speed2.zip",
+        "type": "file",
+        "size": 1916820406
+      },
+      {
+        "path": "obj043_speed1.zip",
+        "type": "file",
+        "size": 3288154387
+      },
+      {
+        "path": "obj043_speed2.zip",
+        "type": "file",
+        "size": 1876701368
+      },
+      {
+        "path": "obj044_speed1.zip",
+        "type": "file",
+        "size": 3227953875
+      },
+      {
+        "path": "obj044_speed2.zip",
+        "type": "file",
+        "size": 1803211747
+      },
+      {
+        "path": "obj045_speed1.zip",
+        "type": "file",
+        "size": 3330811983
+      },
+      {
+        "path": "obj045_speed2.zip",
+        "type": "file",
+        "size": 1872796611
+      },
+      {
+        "path": "obj046_speed1.zip",
+        "type": "file",
+        "size": 3351005588
+      },
+      {
+        "path": "obj046_speed2.zip",
+        "type": "file",
+        "size": 1887050985
+      },
+      {
+        "path": "obj047_speed1.zip",
+        "type": "file",
+        "size": 3291147601
+      },
+      {
+        "path": "obj047_speed2.zip",
+        "type": "file",
+        "size": 1875599748
+      },
+      {
+        "path": "obj048_speed1.zip",
+        "type": "file",
+        "size": 3327780169
+      },
+      {
+        "path": "obj048_speed2.zip",
+        "type": "file",
+        "size": 1879589980
+      },
+      {
+        "path": "obj049_speed1.zip",
+        "type": "file",
+        "size": 3330469757
+      },
+      {
+        "path": "obj049_speed2.zip",
+        "type": "file",
+        "size": 1868667770
+      },
+      {
+        "path": "obj050_speed1.zip",
+        "type": "file",
+        "size": 3318742427
+      },
+      {
+        "path": "obj050_speed2.zip",
+        "type": "file",
+        "size": 1888115841
+      },
+      {
+        "path": "obj051_speed1.zip",
+        "type": "file",
+        "size": 3320359186
+      },
+      {
+        "path": "obj051_speed2.zip",
+        "type": "file",
+        "size": 1883346406
+      },
+      {
+        "path": "obj052_speed1.zip",
+        "type": "file",
+        "size": 3305327241
+      },
+      {
+        "path": "obj052_speed2.zip",
+        "type": "file",
+        "size": 1883134818
+      },
+      {
+        "path": "obj053_speed1.zip",
+        "type": "file",
+        "size": 3279950723
+      },
+      {
+        "path": "obj053_speed2.zip",
+        "type": "file",
+        "size": 1872879689
+      },
+      {
+        "path": "obj054_speed1.zip",
+        "type": "file",
+        "size": 3345562487
+      },
+      {
+        "path": "obj054_speed2.zip",
+        "type": "file",
+        "size": 1875213047
+      },
+      {
+        "path": "obj055_speed1.zip",
+        "type": "file",
+        "size": 3306579296
+      },
+      {
+        "path": "obj055_speed2.zip",
+        "type": "file",
+        "size": 1882887068
+      },
+      {
+        "path": "obj056_speed1.zip",
+        "type": "file",
+        "size": 3300308715
+      },
+      {
+        "path": "obj056_speed2.zip",
+        "type": "file",
+        "size": 1858798164
+      },
+      {
+        "path": "obj057_speed1.zip",
+        "type": "file",
+        "size": 3328331440
+      },
+      {
+        "path": "obj057_speed2.zip",
+        "type": "file",
+        "size": 1884723040
+      },
+      {
+        "path": "obj058_speed1.zip",
+        "type": "file",
+        "size": 3322799043
+      },
+      {
+        "path": "obj058_speed2.zip",
+        "type": "file",
+        "size": 1870947892
+      },
+      {
+        "path": "obj059_speed1.zip",
+        "type": "file",
+        "size": 3323347594
+      },
+      {
+        "path": "obj059_speed2.zip",
+        "type": "file",
+        "size": 1865603952
+      },
+      {
+        "path": "obj060_speed1.zip",
+        "type": "file",
+        "size": 3309920710
+      },
+      {
+        "path": "obj060_speed2.zip",
+        "type": "file",
+        "size": 1876804426
+      },
+      {
+        "path": "obj061_speed1.zip",
+        "type": "file",
+        "size": 3276472322
+      },
+      {
+        "path": "obj061_speed2.zip",
+        "type": "file",
+        "size": 1869811475
+      },
+      {
+        "path": "obj062_speed1.zip",
+        "type": "file",
+        "size": 3312946345
+      },
+      {
+        "path": "obj062_speed2.zip",
+        "type": "file",
+        "size": 1875228498
+      },
+      {
+        "path": "obj063_speed1.zip",
+        "type": "file",
+        "size": 3281219069
+      },
+      {
+        "path": "obj063_speed2.zip",
+        "type": "file",
+        "size": 1848892591
+      },
+      {
+        "path": "obj064_speed1.zip",
+        "type": "file",
+        "size": 3294697284
+      },
+      {
+        "path": "obj064_speed2.zip",
+        "type": "file",
+        "size": 1854635401
+      },
+      {
+        "path": "obj065_speed1.zip",
+        "type": "file",
+        "size": 1939314073
+      },
+      {
+        "path": "obj065_speed2.zip",
+        "type": "file",
+        "size": 1170855202
+      },
+      {
+        "path": "obj066_speed1.zip",
+        "type": "file",
+        "size": 2301311826
+      },
+      {
+        "path": "obj066_speed2.zip",
+        "type": "file",
+        "size": 1344507362
+      },
+      {
+        "path": "obj067_speed1.zip",
+        "type": "file",
+        "size": 2287979252
+      },
+      {
+        "path": "obj067_speed2.zip",
+        "type": "file",
+        "size": 1352193903
+      },
+      {
+        "path": "obj068_speed1.zip",
+        "type": "file",
+        "size": 3303458761
+      },
+      {
+        "path": "obj068_speed2.zip",
+        "type": "file",
+        "size": 1887556460
+      },
+      {
+        "path": "obj069_speed1.zip",
+        "type": "file",
+        "size": 3305826870
+      },
+      {
+        "path": "obj069_speed2.zip",
+        "type": "file",
+        "size": 1860418025
+      },
+      {
+        "path": "obj070_speed1.zip",
+        "type": "file",
+        "size": 3313815734
+      },
+      {
+        "path": "obj070_speed2.zip",
+        "type": "file",
+        "size": 1864096929
+      }
+    ]
+  },
+  {
+    "repo": "BAAI/ToucHD-Mani",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": "auto",
+    "sha": "848daaf0fb2fed93de0aa350546d4bca0817b114",
+    "license": "mit",
+    "file_count": 85,
+    "sample_files": [
+      "data.json",
+      "data1/assemble_chopsticks.zip",
+      "data1/assemble_disassemble_drill_bit.zip",
+      "data1/assemble_medicine.zip",
+      "data1/assemble_pen.zip",
+      "data1/broom_sweep_fruit.zip",
+      "data1/close_batch_head_storage_strip.zip",
+      "data1/close_open_box.zip",
+      "data1/close_seal_bag.zip",
+      "data1/cut_paper.zip",
+      "data1/disassemble_pen.zip",
+      "data1/fold_towel.zip",
+      "data1/get_rice.zip",
+      "data1/insert_pull_key.zip",
+      "data1/insert_six_hexagon.zip"
+    ],
+    "root": [
+      {
+        "path": "data1",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "data2",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2507
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 4321
+      },
+      {
+        "path": "data.json",
+        "type": "file",
+        "size": 62175913
+      }
+    ]
+  },
+  {
+    "repo": "HapTile2026/HapTile",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "54887384f1fe9e93b799e104194a582f9d8840b8",
+    "license": "cc-by-4.0",
+    "file_count": 40,
+    "sample_files": [
+      "Data/fold_Tshirt.zip",
+      "Data/insert_peg.zip",
+      "Data/move_cable.zip",
+      "Data/move_can.zip",
+      "Data/move_disposable_cup.zip",
+      "Data/move_mobile_box.zip",
+      "Data/move_plush_toy.zip",
+      "Data/move_rubiks_cube.zip",
+      "Data/move_spoon.zip",
+      "Data/move_toy_car.zip",
+      "Data/move_water_bottle.zip",
+      "Data/press_Coffee_machine.zip",
+      "Data/put_Apple.zip",
+      "Data/put_Banana.zip",
+      "Data/put_Orange.zip"
+    ],
+    "root": [
+      {
+        "path": "Data",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2504
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 27
+      }
+    ]
+  },
+  {
+    "repo": "AllenBi21/HTT-dataset",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "b3d6f0a275dfc949cbe6c100e4ca767e4ad8bf59",
+    "license": "cc-by-nc-4.0",
+    "file_count": 1269,
+    "sample_files": [
+      "MANIFEST.sha256",
+      "STATS.json",
+      "bg_data/tac02.npy",
+      "bg_data/xela.npy",
+      "classification/tacniq_gsmini/supervised_test_0000.tar",
+      "classification/tacniq_gsmini/supervised_test_0001.tar",
+      "classification/tacniq_gsmini/supervised_test_0002.tar",
+      "classification/tacniq_gsmini/supervised_test_0003.tar",
+      "classification/tacniq_gsmini/supervised_train_0000.tar",
+      "classification/tacniq_gsmini/supervised_train_0001.tar",
+      "classification/tacniq_gsmini/supervised_train_0002.tar",
+      "classification/tacniq_gsmini/supervised_train_0003.tar",
+      "classification/tacniq_gsmini/supervised_val_0000.tar",
+      "classification/tacniq_gsmini/supervised_val_0001.tar",
+      "classification/tacniq_gsmini/supervised_val_0002.tar"
+    ],
+    "root": [
+      {
+        "path": "bg_data",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "classification",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "force",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "pretrain",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "slip",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2504
+      },
+      {
+        "path": "FORMAT.md",
+        "type": "file",
+        "size": 5516
+      },
+      {
+        "path": "MANIFEST.sha256",
+        "type": "file",
+        "size": 152177
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 3037
+      },
+      {
+        "path": "STATS.json",
+        "type": "file",
+        "size": 2844
+      },
+      {
+        "path": "htt_4sensors_best.pth",
+        "type": "file",
+        "size": 68498155
+      }
+    ]
+  },
+  {
+    "repo": "AllenBi21/VLA-Touch",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "dc0e797682de397453ba7e96a1d454d6a8d60444",
+    "license": null,
+    "file_count": 384,
+    "sample_files": [
+      "mango/episode_0.h5",
+      "mango/episode_1.h5",
+      "mango/episode_10.h5",
+      "mango/episode_100.h5",
+      "mango/episode_101.h5",
+      "mango/episode_102.h5",
+      "mango/episode_103.h5",
+      "mango/episode_104.h5",
+      "mango/episode_105.h5",
+      "mango/episode_107.h5",
+      "mango/episode_108.h5",
+      "mango/episode_109.h5",
+      "mango/episode_11.h5",
+      "mango/episode_110.h5",
+      "mango/episode_111.h5"
+    ],
+    "root": [
+      {
+        "path": "mango",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "raw_data",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "watercup",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "wipe",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2461
+      }
+    ]
+  },
+  {
+    "repo": "MJJJJ1064/FTP-1-Dataset",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "d287c9c532514a08b2eb29bf1259997bb32f4f3b",
+    "license": null,
+    "file_count": 89,
+    "sample_files": [
+      "FreeTacMan/FreeTacMan.tar.part-0000",
+      "FreeTacMan/FreeTacMan.tar.part-0001",
+      "FreeTacMan/FreeTacMan.tar.part-0002",
+      "FreeTacMan/FreeTacMan.tar.part-0003",
+      "FreeTacMan/FreeTacMan.tar.part-0004",
+      "MotionTrans/MotionTrans.tar",
+      "RDP/RDP.tar",
+      "RDP_Bimanual/RDP_Bimanual.tar",
+      "RH20TCfg5Franka/RH20TCfg5Franka.tar.part-0000",
+      "RH20TCfg5Franka/RH20TCfg5Franka.tar.part-0001",
+      "RH20TCfg5Franka/RH20TCfg5Franka.tar.part-0002",
+      "RH20TCfg6ATIAxia/RH20TCfg6ATIAxia.tar.part-0000",
+      "RH20TCfg6ATIAxia/RH20TCfg6ATIAxia.tar.part-0001",
+      "RH20TCfg6ATIAxia/RH20TCfg6ATIAxia.tar.part-0002",
+      "RH20TCfg6ATIAxia/RH20TCfg6ATIAxia.tar.part-0003"
+    ],
+    "root": [
+      {
+        "path": "FreeTacMan",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "MotionTrans",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "RDP",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "RDP_Bimanual",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "RH20TCfg5Franka",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "RH20TCfg6ATIAxia",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "RH20TCfg7Tactile",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Unit",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "Unit_Bimanual",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "VLA_touch",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "ViTaMIn",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "VisuoTactile_D-WHEEL",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "VisuoTactile_QINGLOONG",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "exUMI",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "sharpa",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2504
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 812
+      }
+    ]
+  },
+  {
+    "repo": "USC-PSI-Lab/humanoid-everyday",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "71f6210e91c2a7e8b8e4d47db0147444a1a0640e",
+    "license": "apache-2.0",
+    "file_count": 26869,
+    "sample_files": [
+      "data/chunk-000/episode_000000.parquet",
+      "data/chunk-000/episode_000001.parquet",
+      "data/chunk-000/episode_000002.parquet",
+      "data/chunk-000/episode_000003.parquet",
+      "data/chunk-000/episode_000004.parquet",
+      "data/chunk-000/episode_000005.parquet",
+      "data/chunk-000/episode_000006.parquet",
+      "data/chunk-000/episode_000007.parquet",
+      "data/chunk-000/episode_000008.parquet",
+      "data/chunk-000/episode_000009.parquet",
+      "data/chunk-000/episode_000010.parquet",
+      "data/chunk-000/episode_000011.parquet",
+      "data/chunk-000/episode_000012.parquet",
+      "data/chunk-000/episode_000013.parquet",
+      "data/chunk-000/episode_000014.parquet"
+    ],
+    "root": [
+      {
+        "path": "data",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "meta",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "resume_meta",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "videos",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2461
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 2032
+      }
+    ]
+  },
+  {
+    "repo": "LejuRobotics/LET-Dex-Dataset",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "3b9920b46c1fb24350ee1fb95dbddb11f0247650",
+    "license": "cc-by-nc-sa-4.0",
+    "file_count": 745,
+    "sample_files": [
+      "datasets/rosbag/tactile/real/Labelled/Clean-up_desktop_items-P4-Linker_Hand_L6/A10-A12-H-C-05-TQ_02_01-p4_353-dex_hand-20251218112213-v001.bag",
+      "datasets/rosbag/tactile/real/Labelled/Clean-up_desktop_items-P4-Linker_Hand_L6/A10-A12-H-C-05-TQ_02_01-p4_353-dex_hand-20251218112328-v001.bag",
+      "datasets/rosbag/tactile/real/Labelled/Clean-up_desktop_items-P4-Linker_Hand_L6/A10-A12-H-C-05-TQ_02_01-p4_353-dex_hand-20251218112445-v001.bag",
+      "datasets/rosbag/tactile/real/Labelled/Clean-up_desktop_items-P4-Linker_Hand_L6/A10-A12-H-C-05-TQ_02_01-p4_353-dex_hand-20251218112554-v001.bag",
+      "datasets/rosbag/tactile/real/Labelled/Clean-up_desktop_items-P4-Linker_Hand_L6/A10-A12-H-C-05-TQ_02_01-p4_353-dex_hand-20251218112723-v001.bag",
+      "datasets/rosbag/tactile/real/Labelled/Clean-up_desktop_items-P4-Linker_Hand_L6/A10-A12-H-C-05-TQ_02_01-p4_353-dex_hand-20251218112850-v001.bag",
+      "datasets/rosbag/tactile/real/Labelled/Clean-up_desktop_items-P4-Linker_Hand_L6/A10-A12-H-C-05-TQ_02_01-p4_353-dex_hand-20251218112958-v001.bag",
+      "datasets/rosbag/tactile/real/Labelled/Clean-up_desktop_items-P4-Linker_Hand_L6/A10-A12-H-C-05-TQ_02_01-p4_353-dex_hand-20251218113112-v001.bag",
+      "datasets/rosbag/tactile/real/Labelled/Clean-up_desktop_items-P4-Linker_Hand_L6/A10-A12-H-C-05-TQ_02_01-p4_353-dex_hand-20251218113227-v001.bag",
+      "datasets/rosbag/tactile/real/Labelled/Clean-up_desktop_items-P4-Linker_Hand_L6/A10-A12-H-C-05-TQ_02_01-p4_353-dex_hand-20251218113343-v001.bag",
+      "datasets/rosbag/tactile/real/Labelled/Clean-up_desktop_items-P4-Linker_Hand_L6/A10-A12-H-C-05-TQ_02_01-p4_353-dex_hand-20251218113508-v001.bag",
+      "datasets/rosbag/tactile/real/Labelled/Clean-up_desktop_items-P4-Linker_Hand_L6/A10-A12-H-C-05-TQ_02_01-p4_353-dex_hand-20251218113629-v001.bag",
+      "datasets/rosbag/tactile/real/Labelled/Clean-up_desktop_items-P4-Linker_Hand_L6/A10-A12-H-C-05-TQ_02_01-p4_353-dex_hand-20251218113844-v001.bag",
+      "datasets/rosbag/tactile/real/Labelled/Clean-up_desktop_items-P4-Linker_Hand_L6/A10-A12-H-C-05-TQ_02_01-p4_353-dex_hand-20251218114013-v001.bag",
+      "datasets/rosbag/tactile/real/Labelled/Clean-up_desktop_items-P4-Linker_Hand_L6/A10-A12-H-C-05-TQ_02_01-p4_353-dex_hand-20251218114237-v001.bag"
+    ],
+    "root": [
+      {
+        "path": "datasets",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "docs",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 130552
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 20115
+      },
+      {
+        "path": "README_EN.md",
+        "type": "file",
+        "size": 21560
+      }
+    ]
+  },
+  {
+    "repo": "jiamig/taf-dataset",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "239c8ee8156bf11eb6d6c11c004f9a8721528d9d",
+    "license": "mit",
+    "file_count": 7289,
+    "sample_files": [
+      "taf_dataset/custom_designed/custom_designed_6*6_mark_obj1/data/chunk-000/file-000.parquet",
+      "taf_dataset/custom_designed/custom_designed_6*6_mark_obj1/meta/episodes/chunk-000/file-000.parquet",
+      "taf_dataset/custom_designed/custom_designed_6*6_mark_obj1/meta/info.json",
+      "taf_dataset/custom_designed/custom_designed_6*6_mark_obj1/meta/stats.json",
+      "taf_dataset/custom_designed/custom_designed_6*6_mark_obj1/meta/tasks.parquet",
+      "taf_dataset/custom_designed/custom_designed_6*6_mark_obj1/videos/observation.image/chunk-000/file-000.mp4",
+      "taf_dataset/custom_designed/custom_designed_6*6_mark_obj10/data/chunk-000/file-000.parquet",
+      "taf_dataset/custom_designed/custom_designed_6*6_mark_obj10/meta/episodes/chunk-000/file-000.parquet",
+      "taf_dataset/custom_designed/custom_designed_6*6_mark_obj10/meta/info.json",
+      "taf_dataset/custom_designed/custom_designed_6*6_mark_obj10/meta/stats.json",
+      "taf_dataset/custom_designed/custom_designed_6*6_mark_obj10/meta/tasks.parquet",
+      "taf_dataset/custom_designed/custom_designed_6*6_mark_obj10/videos/observation.image/chunk-000/file-000.mp4",
+      "taf_dataset/custom_designed/custom_designed_6*6_mark_obj11/data/chunk-000/file-000.parquet",
+      "taf_dataset/custom_designed/custom_designed_6*6_mark_obj11/meta/episodes/chunk-000/file-000.parquet",
+      "taf_dataset/custom_designed/custom_designed_6*6_mark_obj11/meta/info.json"
+    ],
+    "root": [
+      {
+        "path": "taf_dataset",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2504
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 4798
+      }
+    ]
+  },
+  {
+    "repo": "chuanyune/ViTaMIn_dataset",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "cda8f7b08ce13b37c95f3a9db0fe3ebf1a1ca936",
+    "license": "mit",
+    "file_count": 8,
+    "sample_files": [
+      "Articulated_Object_Manipulation_dataset.zarr.zip",
+      "Dynamic_Peg_Insertion_dataset.zarr.zip",
+      "Orange_Placement_dataset.zarr.zip",
+      "Scissor_Hanging_dataset.zarr.zip",
+      "Sponge_Insertion_dataset.zarr.zip",
+      "Test_Tube_Reorientation_dataset.zarr.zip"
+    ],
+    "root": [
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2461
+      },
+      {
+        "path": "Articulated_Object_Manipulation_dataset.zarr.zip",
+        "type": "file",
+        "size": 1634908174
+      },
+      {
+        "path": "Dynamic_Peg_Insertion_dataset.zarr.zip",
+        "type": "file",
+        "size": 2419388340
+      },
+      {
+        "path": "Orange_Placement_dataset.zarr.zip",
+        "type": "file",
+        "size": 1910499751
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 24
+      },
+      {
+        "path": "Scissor_Hanging_dataset.zarr.zip",
+        "type": "file",
+        "size": 6015041708
+      },
+      {
+        "path": "Sponge_Insertion_dataset.zarr.zip",
+        "type": "file",
+        "size": 5685973864
+      },
+      {
+        "path": "Test_Tube_Reorientation_dataset.zarr.zip",
+        "type": "file",
+        "size": 8497100074
+      }
+    ]
+  },
+  {
+    "repo": "silicx/exUMI",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "2184ea250d38614c0c38538571bdf47e8c50f740",
+    "license": null,
+    "file_count": 1498,
+    "sample_files": [
+      "insert_pen.zarr.zip",
+      "insert_pen/000000.mp4",
+      "insert_pen/000001.mp4",
+      "insert_pen/000002.mp4",
+      "insert_pen/000003.mp4",
+      "insert_pen/000004.mp4",
+      "insert_pen/000005.mp4",
+      "insert_pen/000006.mp4",
+      "insert_pen/000007.mp4",
+      "insert_pen/000008.mp4",
+      "insert_pen/000009.mp4",
+      "insert_pen/000010.mp4",
+      "insert_pen/000011.mp4",
+      "insert_pen/000012.mp4",
+      "insert_pen/000013.mp4"
+    ],
+    "root": [
+      {
+        "path": "insert_pen",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "open_bottle",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "peg_in_hole",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "pick_brocolli",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "pick_carrot",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "pick_cube",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "pull_drawer",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "stack_cube",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2461
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 730
+      },
+      {
+        "path": "insert_pen.zarr.zip",
+        "type": "file",
+        "size": 14884233350
+      },
+      {
+        "path": "open_bottle.zarr.zip",
+        "type": "file",
+        "size": 5125912624
+      },
+      {
+        "path": "peg_in_hole.zarr.zip",
+        "type": "file",
+        "size": 4017976437
+      },
+      {
+        "path": "pick_brocolli.zarr.zip",
+        "type": "file",
+        "size": 10323529211
+      },
+      {
+        "path": "pick_carrot.zarr.zip",
+        "type": "file",
+        "size": 5357943310
+      },
+      {
+        "path": "pick_cube.zarr.zip",
+        "type": "file",
+        "size": 1257453132
+      },
+      {
+        "path": "pull_drawer.zarr.zip",
+        "type": "file",
+        "size": 8120746204
+      },
+      {
+        "path": "stack_cube.zarr.zip",
+        "type": "file",
+        "size": 6605263350
+      }
+    ]
+  },
+  {
+    "repo": "facebook/touch-slide",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "466860e825b8e9c5467718dd56c1ce116c50ceea",
+    "license": "cc-by-nc-4.0",
+    "file_count": 71,
+    "sample_files": [
+      "assets/bread-digit.gif",
+      "assets/bread-real.gif",
+      "banana/dataset_0.pkl",
+      "banana/dataset_1.pkl",
+      "banana/dataset_2.pkl",
+      "banana/dataset_3.pkl",
+      "banana/dataset_4.pkl",
+      "bread/dataset_0.pkl",
+      "bread/dataset_1.pkl",
+      "bread/dataset_2.pkl",
+      "bread/dataset_3.pkl",
+      "bread/dataset_4.pkl",
+      "cheese/dataset_0.pkl",
+      "cheese/dataset_1.pkl",
+      "cheese/dataset_2.pkl"
+    ],
+    "root": [
+      {
+        "path": "assets",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "banana",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "bgs",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "bread",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "cheese",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "cookie",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "corn",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "lettuce",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "plum",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "strawberry",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "tomato",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2419
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 2600
+      }
+    ]
+  },
+  {
+    "repo": "facebook/digit-force-estimation",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "408e5b82e01b1cc471c8e747b686303afbababdc",
+    "license": "cc-by-nc-4.0",
+    "file_count": 54,
+    "sample_files": [
+      "assets/force.gif",
+      "flat/batch_1/dataset_digit_00.pkl",
+      "flat/batch_1/dataset_digit_01.pkl",
+      "flat/batch_1/dataset_digit_02.pkl",
+      "flat/batch_1/dataset_digit_03.pkl",
+      "flat/batch_1/dataset_slip_forces.pkl",
+      "flat/batch_2/dataset_digit_00.pkl",
+      "flat/batch_2/dataset_digit_01.pkl",
+      "flat/batch_2/dataset_digit_02.pkl",
+      "flat/batch_2/dataset_digit_03.pkl",
+      "flat/batch_2/dataset_slip_forces.pkl",
+      "flat/batch_3/dataset_digit_00.pkl",
+      "flat/batch_3/dataset_digit_01.pkl",
+      "flat/batch_3/dataset_digit_02.pkl",
+      "flat/batch_3/dataset_digit_03.pkl"
+    ],
+    "root": [
+      {
+        "path": "assets",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "flat",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "sharp",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "sphere",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "sphere2",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2419
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 3243
+      }
+    ]
+  },
+  {
+    "repo": "facebook/gelsight-force-estimation",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "136db55485b6501605b1d2648ce0fe44740e302e",
+    "license": "cc-by-nc-4.0",
+    "file_count": 91,
+    "sample_files": [
+      "assets/force.gif",
+      "flat/batch_1/dataset_gelsight_00.pkl",
+      "flat/batch_1/dataset_gelsight_01.pkl",
+      "flat/batch_1/dataset_gelsight_02.pkl",
+      "flat/batch_1/dataset_gelsight_03.pkl",
+      "flat/batch_1/dataset_slip_forces.pkl",
+      "flat/batch_1/org_dataset_gelsight_00.pkl",
+      "flat/batch_1/org_dataset_gelsight_01.pkl",
+      "flat/batch_1/org_dataset_gelsight_02.pkl",
+      "flat/batch_1/org_dataset_gelsight_03.pkl",
+      "flat/batch_2/dataset_gelsight_00.pkl",
+      "flat/batch_2/dataset_gelsight_01.pkl",
+      "flat/batch_2/dataset_gelsight_02.pkl",
+      "flat/batch_2/dataset_slip_forces.pkl",
+      "flat/batch_2/org_dataset_gelsight_00.pkl"
+    ],
+    "root": [
+      {
+        "path": "assets",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "flat",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "sharp",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "sphere",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2419
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 3290
+      }
+    ]
+  },
+  {
+    "repo": "facebook/digit-pose-estimation",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "91faf6c077dbcd8dd8a5c03eb309c32cc4a63c66",
+    "license": "cc-by-nc-4.0",
+    "file_count": 81,
+    "sample_files": [
+      "test/pringles/bag_00.pkl",
+      "test/pringles/bag_01.pkl",
+      "test/pringles/bag_02.pkl",
+      "test/pringles/bag_03.pkl",
+      "test/pringles/bag_04.pkl",
+      "test/pringles/bag_05.pkl",
+      "test/pringles/bag_06.pkl",
+      "test/sugar/bag_00.pkl",
+      "test/sugar/bag_01.pkl",
+      "test/sugar/bag_02.pkl",
+      "test/sugar/bag_03.pkl",
+      "test/sugar/bag_04.pkl",
+      "test/sugar/bag_05.pkl",
+      "test/sugar/bag_06.pkl",
+      "train/pringles/bag_00.pkl"
+    ],
+    "root": [
+      {
+        "path": "assets",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "bgs",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "test",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "train",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2419
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 4583
+      }
+    ]
+  },
+  {
+    "repo": "joehjhuang/TactileTracking",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "5a00ee2f17c96db6bb6de03912f254036720850e",
+    "license": "mit",
+    "file_count": 7,
+    "sample_files": [
+      "LICENSE.txt",
+      "dataset.zip"
+    ],
+    "root": [
+      {
+        "path": "assets",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2477
+      },
+      {
+        "path": "LICENSE.txt",
+        "type": "file",
+        "size": 1071
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 4152
+      },
+      {
+        "path": "dataset.zip",
+        "type": "file",
+        "size": 7033391345
+      }
+    ]
+  },
+  {
+    "repo": "TimSchneider42/tactile-mnist-touch-real-seq-t256-320x240",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "8c59032f7349c75f1a202c640b2a73a81c751ea5",
+    "license": "cc-by-2.0",
+    "file_count": 50,
+    "sample_files": [
+      "data/test-00000-of-00008.parquet",
+      "data/test-00001-of-00008.parquet",
+      "data/test-00002-of-00008.parquet",
+      "data/test-00003-of-00008.parquet",
+      "data/test-00004-of-00008.parquet",
+      "data/test-00005-of-00008.parquet",
+      "data/test-00006-of-00008.parquet",
+      "data/test-00007-of-00008.parquet",
+      "data/train-00000-of-00040.parquet",
+      "data/train-00001-of-00040.parquet",
+      "data/train-00002-of-00040.parquet",
+      "data/train-00003-of-00040.parquet",
+      "data/train-00004-of-00040.parquet",
+      "data/train-00005-of-00040.parquet",
+      "data/train-00006-of-00040.parquet"
+    ],
+    "root": [
+      {
+        "path": "data",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2461
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 364
+      }
+    ]
+  },
+  {
+    "repo": "gemixin/touch-ex",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "9c88468af42f30ff4023e98bfa5d0df79fcfe04b",
+    "license": "cc-by-4.0",
+    "file_count": 15,
+    "sample_files": [
+      "data/test_unseen-00000-of-00001.parquet",
+      "data/train-00000-of-00004.parquet",
+      "data/train-00001-of-00004.parquet",
+      "data/train-00002-of-00004.parquet",
+      "data/train-00003-of-00004.parquet",
+      "descriptions.csv",
+      "metadata.csv"
+    ],
+    "root": [
+      {
+        "path": "data",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "images",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2504
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 18988
+      },
+      {
+        "path": "baseline.jpg",
+        "type": "file",
+        "size": 14882
+      },
+      {
+        "path": "descriptions.csv",
+        "type": "file",
+        "size": 8820
+      },
+      {
+        "path": "metadata.csv",
+        "type": "file",
+        "size": 37880
+      }
+    ]
+  },
+  {
+    "repo": "wkzhang/EgoTac-SC",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "3506c3e11e3134e77d4328edbaf9fd219b0ee0a3",
+    "license": "apache-2.0",
+    "file_count": 48,
+    "sample_files": [
+      "aether_v1/aether_v1-part-0001.zip",
+      "aether_v1/aether_v1-part-0002.zip",
+      "aether_v1/aether_v1-part-0003.zip",
+      "aether_v1/aether_v1-part-0004.zip",
+      "aether_v1/aether_v1-part-0005.zip",
+      "aether_v1/aether_v1-part-0006.zip",
+      "aether_v1/aether_v1-part-0007.zip",
+      "aether_v1/aether_v1-part-0008.zip",
+      "aether_v1/aether_v1-part-0009.zip",
+      "aether_v1/aether_v1-part-0010.zip",
+      "aether_v1/aether_v1-part-0011.zip",
+      "aether_v1/aether_v1-part-0012.zip",
+      "aether_v1/aether_v1-part-0013.zip",
+      "aether_v1/aether_v1-part-0014.zip",
+      "aether_v1/aether_v1-part-0015.zip"
+    ],
+    "root": [
+      {
+        "path": "aether_v1",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2504
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 1214
+      }
+    ]
+  },
+  {
+    "repo": "zhicao/egoforce",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "2868fd319e5801fe84a13bd5b6e75f4f518b875e",
+    "license": null,
+    "file_count": 27,
+    "sample_files": [
+      "06142026/Placing_Lego_Blocks/Alina_4010/recording_000/_SUCCESS.json",
+      "06142026/Placing_Lego_Blocks/Alina_4010/recording_000/handpose_result.jsonl",
+      "06142026/Placing_Lego_Blocks/Alina_4010/recording_000/manifest.json",
+      "06142026/Placing_Lego_Blocks/Alina_4010/recording_000/output/force_video.mp4",
+      "06142026/Placing_Lego_Blocks/Alina_4010/recording_000/qa_result.json",
+      "06142026/Placing_Lego_Blocks/Alina_4010/recording_000/recording_000.mcap",
+      "06142026/Placing_Lego_Blocks/Alina_4010/recording_000/semantic_annotation_result.json",
+      "08122026/Nailing/Rohit_000/recording_000/_SUCCESS.json",
+      "08122026/Nailing/Rohit_000/recording_000/labels/handpose_result.jsonl",
+      "08122026/Nailing/Rohit_000/recording_000/labels/qa_result.json",
+      "08122026/Nailing/Rohit_000/recording_000/labels/semantic_annotation_result.json",
+      "08122026/Nailing/Rohit_000/recording_000/manifest.json",
+      "08122026/Nailing/Rohit_000/recording_000/output/force_lh.mp4",
+      "08122026/Nailing/Rohit_000/recording_000/output/force_rh.mp4",
+      "08122026/Nailing/Rohit_000/recording_000/output/force_video.mp4"
+    ],
+    "root": [
+      {
+        "path": "06142026",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "08122026",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2904
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 1952
+      },
+      {
+        "path": "fusionx_foxglove_annotated.json",
+        "type": "file",
+        "size": 8960
+      },
+      {
+        "path": "touchtronixrobotics.fusionx-tactile-panel-0.2.4.foxe",
+        "type": "file",
+        "size": 213840
+      },
+      {
+        "path": "visualize.py",
+        "type": "file",
+        "size": 25796
+      },
+      {
+        "path": "visualize_force.py",
+        "type": "file",
+        "size": 22169
+      }
+    ]
+  },
+  {
+    "repo": "yxma/tactile-video-pretrain",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "82bb3a24444a09fd23ba9b6b2d7e25a7f553c81d",
+    "license": "mit",
+    "file_count": 18591,
+    "sample_files": [
+      "assets/preview_freetacman.mp4",
+      "assets/preview_freetacman_pair.mp4",
+      "assets/preview_gelslam_recon.mp4",
+      "assets/preview_gelslam_tracking.mp4",
+      "assets/preview_touchandgo.mp4",
+      "assets/preview_touchandgo_pair.mp4",
+      "tactile_only/train-00000-of-00001.parquet",
+      "tactile_rgb/train-00000-of-00001.parquet",
+      "videos/freetacman/ArrangeFruit/ArrangeFruit_100_scene.mp4",
+      "videos/freetacman/ArrangeFruit/ArrangeFruit_100_tactile_left.mp4",
+      "videos/freetacman/ArrangeFruit/ArrangeFruit_100_tactile_right.mp4",
+      "videos/freetacman/ArrangeFruit/ArrangeFruit_101_scene.mp4",
+      "videos/freetacman/ArrangeFruit/ArrangeFruit_101_tactile_left.mp4",
+      "videos/freetacman/ArrangeFruit/ArrangeFruit_101_tactile_right.mp4",
+      "videos/freetacman/ArrangeFruit/ArrangeFruit_102_scene.mp4"
+    ],
+    "root": [
+      {
+        "path": "assets",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "tactile_only",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "tactile_rgb",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "videos",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2504
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 8713
+      },
+      {
+        "path": "SHORTLIST.md",
+        "type": "file",
+        "size": 4654
+      },
+      {
+        "path": "SOURCES.md",
+        "type": "file",
+        "size": 7879
+      }
+    ]
+  },
+  {
+    "repo": "yxma/tactile-video-pretrain-nc",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "d7dfecfb34b95fd1b72a050174f0e96916cc290b",
+    "license": "cc-by-nc-sa-4.0",
+    "file_count": 44355,
+    "sample_files": [
+      "assets/_tmp_full_bimanual/s105caede21d48678d0bff100df212fd_full.mp4",
+      "assets/_tmp_full_bimanual/s10e8b082e0045799ae05240e7ef9973_full.mp4",
+      "assets/_tmp_full_bimanual/s1115174b2bc4979a9ab1b593fcef25c_full.mp4",
+      "assets/_tmp_full_bimanual/s112a60afb59499aa6a500853dee5489_full.mp4",
+      "assets/_tmp_full_bimanual/s1166e0b15e34406bbbc61cbc603383a_full.mp4",
+      "assets/_tmp_full_bimanual/s1266c0382ad49e3bd8aa331d2c8f22a_full.mp4",
+      "assets/_tmp_full_bimanual/s12997828acf40d7b0c59a60893042d8_full.mp4",
+      "assets/_tmp_full_bimanual/s12e9d057dd749dcac2a34b2bee3abaf_full.mp4",
+      "assets/_tmp_full_bimanual/s13200c754e241fe886d11083f3df019_full.mp4",
+      "assets/_tmp_full_bimanual/s1323b11316541b486656fb75cab39b8_full.mp4",
+      "assets/_tmp_full_bimanual/s1348938d171458092f6ff4c4fdb50c5_full.mp4",
+      "assets/_tmp_full_bimanual/s1360f7e877045f9b21d89aeb24875ec_full.mp4",
+      "assets/_tmp_full_bimanual/s13614066ea447af85b4df9bdab6605a_full.mp4",
+      "assets/_tmp_full_bimanual/s136d768bcac4c15ab461daf8f977c0d_full.mp4",
+      "assets/_tmp_full_bimanual/s137c7ea0d4949d88d92d04d00827804_full.mp4"
+    ],
+    "root": [
+      {
+        "path": "assets",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "videos",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 270851
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 6642
+      }
+    ]
+  },
+  {
+    "repo": "Tachintech/Fixed_Viewpoint_Tactile_Dataset",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "96e67db61cf74faeccb07732e9698af7def9f9e8",
+    "license": "apache-2.0",
+    "file_count": 159,
+    "sample_files": [
+      "data/chunk-000/file-0000.parquet",
+      "data/chunk-000/file-0001.parquet",
+      "data/chunk-000/file-0002.parquet",
+      "data/chunk-000/file-0003.parquet",
+      "data/chunk-000/file-0004.parquet",
+      "data/chunk-000/file-0005.parquet",
+      "data/chunk-000/file-0006.parquet",
+      "data/chunk-000/file-0007.parquet",
+      "data/chunk-000/file-0008.parquet",
+      "data/chunk-000/file-0009.parquet",
+      "data/chunk-000/file-0010.parquet",
+      "data/chunk-000/file-0011.parquet",
+      "data/chunk-000/file-0012.parquet",
+      "data/chunk-000/file-0013.parquet",
+      "data/chunk-000/file-0014.parquet"
+    ],
+    "root": [
+      {
+        "path": "data",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "meta",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "videos",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2504
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 2069
+      },
+      {
+        "path": "example_usage.py",
+        "type": "file",
+        "size": 2813
+      },
+      {
+        "path": "requirements.txt",
+        "type": "file",
+        "size": 116
+      },
+      {
+        "path": "visualize_dataset.py",
+        "type": "file",
+        "size": 40934
+      }
+    ]
+  },
+  {
+    "repo": "Tachintech/tactile-deformation-response",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "1bf9003b86b7ceea234fbad3992920f5574d0b8e",
+    "license": "gpl-3.0",
+    "file_count": 1934,
+    "sample_files": [
+      "data/test/20260712_103545_027153_rigid_70.json",
+      "data/test/20260712_103545_027153_rigid_70.npz",
+      "data/test/20260712_103554_753242_rigid_70.json",
+      "data/test/20260712_103554_753242_rigid_70.npz",
+      "data/test/20260712_103600_930116_rigid_70.json",
+      "data/test/20260712_103600_930116_rigid_70.npz",
+      "data/test/20260712_103607_370926_rigid_70.json",
+      "data/test/20260712_103607_370926_rigid_70.npz",
+      "data/test/20260712_103612_760879_rigid_70.json",
+      "data/test/20260712_103612_760879_rigid_70.npz",
+      "data/test/20260712_103851_184258_rigid_80.json",
+      "data/test/20260712_103851_184258_rigid_80.npz",
+      "data/test/20260712_103856_720926_rigid_80.json",
+      "data/test/20260712_103856_720926_rigid_80.npz",
+      "data/test/20260712_103901_808233_rigid_80.json"
+    ],
+    "root": [
+      {
+        "path": "data",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "metadata",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "scripts",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2504
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 10375
+      }
+    ]
+  },
+  {
+    "repo": "Tachintech/Tactile_Gesture_Language",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "93e27819991167da35cdd5823a11da3abfce6562",
+    "license": "gpl-3.0",
+    "file_count": 103,
+    "sample_files": [
+      "dataset/man0/beat_man0.npy",
+      "dataset/man0/grip_man0.npy",
+      "dataset/man0/knead_man0.npy",
+      "dataset/man0/pinch_man0.npy",
+      "dataset/man0/poke_man0.npy",
+      "dataset/man0/pressing_man0.npy",
+      "dataset/man0/scratching_man0.npy",
+      "dataset/man0/squeeze_man0.npy",
+      "dataset/man0/stroking_man0.npy",
+      "dataset/man0/tapping_man0.npy",
+      "dataset/man1/beat_man1.npy",
+      "dataset/man1/grip_man1.npy",
+      "dataset/man1/knead_man1.npy",
+      "dataset/man1/pinch_man1.npy",
+      "dataset/man1/poke_man1.npy"
+    ],
+    "root": [
+      {
+        "path": "dataset",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2504
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 1129
+      },
+      {
+        "path": "load_sample.py",
+        "type": "file",
+        "size": 643
+      }
+    ]
+  },
+  {
+    "repo": "Voxel51/grabette-tactile-full-synced-48ep",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "2486cbfea525dff54e0b5f2c76fec661dab05816",
+    "license": "apache-2.0",
+    "file_count": 11,
+    "sample_files": [
+      "data/chunk-000/file-000.parquet",
+      "fiftyone.yml",
+      "grabette-tactile.gif",
+      "meta/episodes/chunk-000/file-000.parquet",
+      "meta/info.json",
+      "meta/stats.json",
+      "meta/tasks.parquet",
+      "videos/observation.images.right_cam0/chunk-000/file-000.mp4",
+      "videos/observation.images.right_cam1/chunk-000/file-000.mp4"
+    ],
+    "root": [
+      {
+        "path": "data",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "meta",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "videos",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2504
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 4393
+      },
+      {
+        "path": "fiftyone.yml",
+        "type": "file",
+        "size": 497
+      },
+      {
+        "path": "grabette-tactile.gif",
+        "type": "file",
+        "size": 15235576
+      }
+    ]
+  },
+  {
+    "repo": "chris10/EgoForce",
+    "metadata_status": 200,
+    "tree_status": 200,
+    "gated": false,
+    "sha": "d926a9081beb853962ce97adbe705bcd64302d5d",
+    "license": "other",
+    "file_count": 6183,
+    "sample_files": [
+      "ARCTIC/ArcticDatasetSeqNoCropImages/ds_info.json",
+      "ARCTIC/ArcticDatasetSeqNoCropImages/filetree.mpk",
+      "ARCTIC/ArcticDatasetSeqNoCropImages/metadata.json",
+      "ARCTIC/ArcticDatasetSeqNoCropImages/test/0000.cam00.tar",
+      "ARCTIC/ArcticDatasetSeqNoCropImages/test/0000.cam01.tar",
+      "ARCTIC/ArcticDatasetSeqNoCropImages/test/0000.cam02.tar",
+      "ARCTIC/ArcticDatasetSeqNoCropImages/test/0000.cam03.tar",
+      "ARCTIC/ArcticDatasetSeqNoCropImages/test/0000.cam04.tar",
+      "ARCTIC/ArcticDatasetSeqNoCropImages/test/0000.cam05.tar",
+      "ARCTIC/ArcticDatasetSeqNoCropImages/test/0000.cam06.tar",
+      "ARCTIC/ArcticDatasetSeqNoCropImages/test/0000.cam07.tar",
+      "ARCTIC/ArcticDatasetSeqNoCropImages/test/0000.cam08.tar",
+      "ARCTIC/ArcticDatasetSeqNoCropImages/test/0001.cam00.tar",
+      "ARCTIC/ArcticDatasetSeqNoCropImages/test/0001.cam01.tar",
+      "ARCTIC/ArcticDatasetSeqNoCropImages/test/0001.cam02.tar"
+    ],
+    "root": [
+      {
+        "path": "ARCTIC",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "H2O",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": "HOT3D",
+        "type": "directory",
+        "size": 0
+      },
+      {
+        "path": ".gitattributes",
+        "type": "file",
+        "size": 2631
+      },
+      {
+        "path": "LICENSE",
+        "type": "file",
+        "size": 3184
+      },
+      {
+        "path": "README.md",
+        "type": "file",
+        "size": 4884
+      }
+    ]
+  }
+]
