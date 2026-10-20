@@ -1,0 +1,60 @@
+{
+  "id": "R14",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "source_url": "https://huggingface.co/datasets/USC-PSI-Lab/humanoid-everyday",
+    "local_raw_paths": [
+      "trajectory_work/R14/episode_000000.parquet",
+      "trajectory_work/R14/episode_000000.mp4"
+    ],
+    "downloaded_bytes": 136784722,
+    "sha256": {
+      "trajectory_work/R14/episode_000000.parquet": "945aa8fa3f321e54848f469df8f48a9959aa9aa176017ad1ef66213409ecbdb2",
+      "trajectory_work/R14/episode_000000.mp4": "a0b125d8957d09bf58f1ddc435f286c5fd960e54488ba3291dd82f18a296a150"
+    },
+    "name": "episode_000000",
+    "complete_episode": true,
+    "frames": 515,
+    "fps": 30,
+    "duration_seconds": 17.133739471435547,
+    "duration_method": "last timestamp-first timestamp",
+    "modalities": [
+      "ego RGB",
+      "18x4 raw tactile"
+    ],
+    "sync": "30Hz同一episode索引"
+  },
+  "media": {
+    "html": "trajectories/R14/index.html",
+    "video": "trajectories/R14/preview.mp4",
+    "poster": "trajectories/R14/poster.webp",
+    "caption_zh": "完整episode_000000：515帧、30Hz，样例时间戳跨度17.134秒。左为同步ego RGB，右为18×4原始触觉数组（行是sensor_id，列是字段，不代表手掌几何）；含NaN及约30000/101000基线，灰色为NaN，未标定为牛顿。展示每3帧取1帧。",
+    "preview_seconds": 17.2
+  },
+  "duration": {
+    "basis": "metadata_sum",
+    "scope_zh": "混合机器人全库，非逐条确认有触觉的子集",
+    "explanation_zh": "官方meta/info.json：3,436,171帧 ÷ 30Hz ÷3600 = 31.816小时、8949条。含触觉字段不保证每条有效，不能把全库31.82小时全算成有效触觉。",
+    "sources": [
+      {
+        "url": "https://hf-mirror.com/datasets/USC-PSI-Lab/humanoid-everyday/resolve/main/meta/info.json",
+        "evidence": "{'total_frames': 3436171, 'fps': 30, 'total_episodes': 8949}"
+      }
+    ],
+    "metadata_hours": 31.81639814814815
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "validation": "原始schema/数组范围已读取；实际配对关系按数据字段核对；海报人工检查；视频通过ffprobe。",
+    "video_probe": {
+      "width": 960,
+      "height": 420,
+      "duration": "17.200000",
+      "nb_frames": "172"
+    }
+  }
+}

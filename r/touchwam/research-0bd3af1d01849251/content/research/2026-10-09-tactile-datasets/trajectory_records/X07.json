@@ -1,0 +1,58 @@
+{
+  "id": "X07",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "name": "06142026/Placing_Lego_Blocks/Alina_4010/recording_000",
+    "source_url": "https://huggingface.co/datasets/zhicao/egoforce",
+    "download_url": "https://hf-mirror.com/datasets/zhicao/egoforce/resolve/main/06142026/Placing_Lego_Blocks/Alina_4010/recording_000/recording_000.mcap",
+    "local_raw_paths": [
+      "trajectory_work/X07/raw/recording.mcap",
+      "trajectory_work/X07/raw/head.h264",
+      "trajectory_work/X07/raw/head.mp4",
+      "trajectory_work/X07/raw/tactile.npz"
+    ],
+    "complete_episode": true,
+    "frames": 432,
+    "duration_seconds": 14.317001581192017,
+    "duration_method": "RGB MCAP log_time span",
+    "modalities": [
+      "ego RGB",
+      "bilateral finger ADC",
+      "palm ADC"
+    ],
+    "sync": "各topic按MCAP log_time最近邻",
+    "notes": "LEGO无标定力、无腕部相机。源家族与FusionX关系仍待核实。 此帧率是时间戳估算平均帧率，不是硬件标称频率。",
+    "downloaded_bytes": 101587643,
+    "sha256": {
+      "trajectory_work/X07/raw/recording.mcap": "e9d4bde6786af5a58f60e22bbc9fa3fcd4bde5dd6a28ff8e73ce0b30f90ddf25",
+      "trajectory_work/X07/raw/head.h264": "be612e38a99df82fc73b10a4ebb8fc67afe79980947799fe4749e018ba43f8fb",
+      "trajectory_work/X07/raw/head.mp4": "a2c6819a2516c5d5e6416073b9db8e6bb2d468090c845c2155bc67e0dd59dee4",
+      "trajectory_work/X07/raw/tactile.npz": "652b2b27a95b7a304271e3d2090f9b8ecdb4f120d744123b13cc1429832a1547"
+    },
+    "observed_fps": 30.10406875739937
+  },
+  "media": {
+    "html": "trajectories/X07/index.html",
+    "video": "trajectories/X07/preview.mp4",
+    "poster": "trajectories/X07/poster.webp",
+    "caption_zh": "完整下载公开LEGO录制MCAP，解码432帧头部RGB，并重绘左右手指与手掌原始压力（ADC 0–255）。按MCAP log_time最近邻同步；手掌网格仅为通道排布。本仓库的采集家族归属仍未确认，不新增独立家族计数。",
+    "preview_seconds": 14.35021968230847
+  },
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "公开数据集总时长",
+    "explanation_zh": "未找到可核实的总时长；样例长度不外推全库。",
+    "sources": []
+  },
+  "evidence": [],
+  "blockers": [],
+  "reuses": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  },
+  "audit_files": [
+    "trajectory_audits/X07/mcap-summary.json"
+  ]
+}

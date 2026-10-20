@@ -1,0 +1,458 @@
+{
+  "brush.h5": [
+    {
+      "path": "GGCNN2/brush/Pose1/Exp1/tactile_timestamps",
+      "seconds": 3.522143602371216,
+      "frames": 635
+    },
+    {
+      "path": "GGCNN2/brush/Pose1/Exp10/tactile_timestamps",
+      "seconds": 3.3611581325531006,
+      "frames": 606
+    },
+    {
+      "path": "GGCNN2/brush/Pose1/Exp2/tactile_timestamps",
+      "seconds": 22.611265420913696,
+      "frames": 4071
+    },
+    {
+      "path": "GGCNN2/brush/Pose1/Exp3/tactile_timestamps",
+      "seconds": 19.677525997161865,
+      "frames": 3543
+    },
+    {
+      "path": "GGCNN2/brush/Pose1/Exp4/tactile_timestamps",
+      "seconds": 3.611417770385742,
+      "frames": 651
+    },
+    {
+      "path": "GGCNN2/brush/Pose1/Exp5/tactile_timestamps",
+      "seconds": 3.3221559524536133,
+      "frames": 599
+    },
+    {
+      "path": "GGCNN2/brush/Pose1/Exp6/tactile_timestamps",
+      "seconds": 3.8609840869903564,
+      "frames": 696
+    },
+    {
+      "path": "GGCNN2/brush/Pose1/Exp7/tactile_timestamps",
+      "seconds": 5.083352088928223,
+      "frames": 916
+    },
+    {
+      "path": "GGCNN2/brush/Pose1/Exp8/tactile_timestamps",
+      "seconds": 2.9838218688964844,
+      "frames": 538
+    },
+    {
+      "path": "GGCNN2/brush/Pose1/Exp9/tactile_timestamps",
+      "seconds": 3.0000181198120117,
+      "frames": 541
+    },
+    {
+      "path": "GGCNN2/brush/Pose2/Exp1/tactile_timestamps",
+      "seconds": 3.778012752532959,
+      "frames": 681
+    },
+    {
+      "path": "GGCNN2/brush/Pose2/Exp10/tactile_timestamps",
+      "seconds": 4.288898944854736,
+      "frames": 773
+    },
+    {
+      "path": "GGCNN2/brush/Pose2/Exp2/tactile_timestamps",
+      "seconds": 3.583303451538086,
+      "frames": 646
+    },
+    {
+      "path": "GGCNN2/brush/Pose2/Exp3/tactile_timestamps",
+      "seconds": 22.516759395599365,
+      "frames": 4054
+    },
+    {
+      "path": "GGCNN2/brush/Pose2/Exp4/tactile_timestamps",
+      "seconds": 3.666806936264038,
+      "frames": 661
+    },
+    {
+      "path": "GGCNN2/brush/Pose2/Exp5/tactile_timestamps",
+      "seconds": 1.2942123413085938,
+      "frames": 234
+    },
+    {
+      "path": "GGCNN2/brush/Pose2/Exp6/tactile_timestamps",
+      "seconds": 9.422335624694824,
+      "frames": 1697
+    },
+    {
+      "path": "GGCNN2/brush/Pose2/Exp7/tactile_timestamps",
+      "seconds": 22.4333016872406,
+      "frames": 4039
+    },
+    {
+      "path": "GGCNN2/brush/Pose2/Exp8/tactile_timestamps",
+      "seconds": 22.07201337814331,
+      "frames": 3974
+    },
+    {
+      "path": "GGCNN2/brush/Pose2/Exp9/tactile_timestamps",
+      "seconds": 3.5613017082214355,
+      "frames": 642
+    },
+    {
+      "path": "GGCNN2/brush/Pose3/Exp1/tactile_timestamps",
+      "seconds": 3.61649489402771,
+      "frames": 652
+    },
+    {
+      "path": "GGCNN2/brush/Pose3/Exp10/tactile_timestamps",
+      "seconds": 3.438910961151123,
+      "frames": 620
+    },
+    {
+      "path": "GGCNN2/brush/Pose3/Exp2/tactile_timestamps",
+      "seconds": 3.605417251586914,
+      "frames": 650
+    },
+    {
+      "path": "GGCNN2/brush/Pose3/Exp3/tactile_timestamps",
+      "seconds": 3.566354751586914,
+      "frames": 643
+    },
+    {
+      "path": "GGCNN2/brush/Pose3/Exp4/tactile_timestamps",
+      "seconds": 3.5501484870910645,
+      "frames": 640
+    },
+    {
+      "path": "GGCNN2/brush/Pose3/Exp5/tactile_timestamps",
+      "seconds": 10.994544744491577,
+      "frames": 1980
+    },
+    {
+      "path": "GGCNN2/brush/Pose3/Exp6/tactile_timestamps",
+      "seconds": 10.705618619918823,
+      "frames": 1928
+    },
+    {
+      "path": "GGCNN2/brush/Pose3/Exp7/tactile_timestamps",
+      "seconds": 9.83868670463562,
+      "frames": 1772
+    },
+    {
+      "path": "GGCNN2/brush/Pose3/Exp8/tactile_timestamps",
+      "seconds": 3.577643632888794,
+      "frames": 645
+    },
+    {
+      "path": "GGCNN2/brush/Pose3/Exp9/tactile_timestamps",
+      "seconds": 10.99442172050476,
+      "frames": 1980
+    }
+  ],
+  "r18_solder.h5": [
+    {
+      "path": "GGCNN2/SpoolSolder/Pose1/Exp1/tactile_timestamps",
+      "seconds": 22.98309087753296,
+      "frames": 4138
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose1/Exp10/tactile_timestamps",
+      "seconds": 22.943794012069702,
+      "frames": 4129
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose1/Exp2/tactile_timestamps",
+      "seconds": 22.905587911605835,
+      "frames": 4124
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose1/Exp3/tactile_timestamps",
+      "seconds": 23.283356428146362,
+      "frames": 4192
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose1/Exp4/tactile_timestamps",
+      "seconds": 22.60001492500305,
+      "frames": 4069
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose1/Exp5/tactile_timestamps",
+      "seconds": 23.38327145576477,
+      "frames": 4210
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose1/Exp6/tactile_timestamps",
+      "seconds": 11.561356782913208,
+      "frames": 2082
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose1/Exp7/tactile_timestamps",
+      "seconds": 23.622303247451782,
+      "frames": 4253
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose1/Exp8/tactile_timestamps",
+      "seconds": 23.005494594573975,
+      "frames": 4142
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose1/Exp9/tactile_timestamps",
+      "seconds": 9.260969877243042,
+      "frames": 1668
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose2/Exp1/tactile_timestamps",
+      "seconds": 3.694748878479004,
+      "frames": 666
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose2/Exp10/tactile_timestamps",
+      "seconds": 12.444407224655151,
+      "frames": 2241
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose2/Exp2/tactile_timestamps",
+      "seconds": 12.405505657196045,
+      "frames": 2234
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose2/Exp3/tactile_timestamps",
+      "seconds": 22.8498113155365,
+      "frames": 4114
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose2/Exp4/tactile_timestamps",
+      "seconds": 4.605611324310303,
+      "frames": 830
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose2/Exp5/tactile_timestamps",
+      "seconds": 3.52219820022583,
+      "frames": 635
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose2/Exp6/tactile_timestamps",
+      "seconds": 22.622328758239746,
+      "frames": 4073
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose2/Exp7/tactile_timestamps",
+      "seconds": 22.74421977996826,
+      "frames": 4095
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose2/Exp8/tactile_timestamps",
+      "seconds": 7.92246675491333,
+      "frames": 1427
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose2/Exp9/tactile_timestamps",
+      "seconds": 3.566547155380249,
+      "frames": 643
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose3/Exp1/tactile_timestamps",
+      "seconds": 23.0222749710083,
+      "frames": 4145
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose3/Exp10/tactile_timestamps",
+      "seconds": 22.922123908996582,
+      "frames": 4127
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose3/Exp2/tactile_timestamps",
+      "seconds": 11.922151327133179,
+      "frames": 2144
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose3/Exp3/tactile_timestamps",
+      "seconds": 5.3832008838653564,
+      "frames": 970
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose3/Exp4/tactile_timestamps",
+      "seconds": 23.122291326522827,
+      "frames": 4163
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose3/Exp5/tactile_timestamps",
+      "seconds": 22.06126832962036,
+      "frames": 3972
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose3/Exp6/tactile_timestamps",
+      "seconds": 23.044199228286743,
+      "frames": 4149
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose3/Exp7/tactile_timestamps",
+      "seconds": 22.644373893737793,
+      "frames": 4077
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose3/Exp8/tactile_timestamps",
+      "seconds": 23.444315671920776,
+      "frames": 4221
+    },
+    {
+      "path": "GGCNN2/SpoolSolder/Pose3/Exp9/tactile_timestamps",
+      "seconds": 23.44445514678955,
+      "frames": 4221
+    }
+  ],
+  "r18_screw.h5": [
+    {
+      "path": "GGCNN2/screwDriver/Pose1/Exp1/tactile_timestamps",
+      "seconds": 22.960466384887695,
+      "frames": 4134
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose1/Exp10/tactile_timestamps",
+      "seconds": 22.39500641822815,
+      "frames": 4031
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose1/Exp2/tactile_timestamps",
+      "seconds": 22.228798627853394,
+      "frames": 4002
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose1/Exp3/tactile_timestamps",
+      "seconds": 20.927590131759644,
+      "frames": 3768
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose1/Exp4/tactile_timestamps",
+      "seconds": 14.221599340438843,
+      "frames": 2561
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose1/Exp5/tactile_timestamps",
+      "seconds": 14.100615978240967,
+      "frames": 2539
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose1/Exp6/tactile_timestamps",
+      "seconds": 20.428168296813965,
+      "frames": 3678
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose1/Exp7/tactile_timestamps",
+      "seconds": 11.982020378112793,
+      "frames": 2158
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose1/Exp8/tactile_timestamps",
+      "seconds": 22.793704748153687,
+      "frames": 4104
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose1/Exp9/tactile_timestamps",
+      "seconds": 22.938997268676758,
+      "frames": 4130
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose2/Exp1/tactile_timestamps",
+      "seconds": 21.266953945159912,
+      "frames": 3829
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose2/Exp10/tactile_timestamps",
+      "seconds": 3.685120105743408,
+      "frames": 665
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose2/Exp2/tactile_timestamps",
+      "seconds": 11.210451126098633,
+      "frames": 2018
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose2/Exp3/tactile_timestamps",
+      "seconds": 13.539695739746094,
+      "frames": 2437
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose2/Exp4/tactile_timestamps",
+      "seconds": 12.857120275497437,
+      "frames": 2315
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose2/Exp5/tactile_timestamps",
+      "seconds": 3.650753974914551,
+      "frames": 658
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose2/Exp6/tactile_timestamps",
+      "seconds": 10.104549169540405,
+      "frames": 1820
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose2/Exp7/tactile_timestamps",
+      "seconds": 11.833505392074585,
+      "frames": 2131
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose2/Exp8/tactile_timestamps",
+      "seconds": 9.964511632919312,
+      "frames": 1795
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose2/Exp9/tactile_timestamps",
+      "seconds": 20.931254863739014,
+      "frames": 3764
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose3/Exp1/tactile_timestamps",
+      "seconds": 4.183924436569214,
+      "frames": 755
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose3/Exp10/tactile_timestamps",
+      "seconds": 22.272374391555786,
+      "frames": 4010
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose3/Exp2/tactile_timestamps",
+      "seconds": 22.383363485336304,
+      "frames": 4030
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose3/Exp3/tactile_timestamps",
+      "seconds": 23.400025606155396,
+      "frames": 4213
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose3/Exp4/tactile_timestamps",
+      "seconds": 23.16088080406189,
+      "frames": 4170
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose3/Exp5/tactile_timestamps",
+      "seconds": 21.999809741973877,
+      "frames": 3961
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose3/Exp6/tactile_timestamps",
+      "seconds": 23.400196075439453,
+      "frames": 4213
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose3/Exp7/tactile_timestamps",
+      "seconds": 20.878222942352295,
+      "frames": 3759
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose3/Exp8/tactile_timestamps",
+      "seconds": 16.3004469871521,
+      "frames": 2935
+    },
+    {
+      "path": "GGCNN2/screwDriver/Pose3/Exp9/tactile_timestamps",
+      "seconds": 22.644386768341064,
+      "frames": 4077
+    }
+  ]
+}

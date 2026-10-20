@@ -1,0 +1,31 @@
+{
+  "id": "R17",
+  "best_hours": 120.90309075777779,
+  "low_hours": 120.90309075777779,
+  "high_hours": 120.90309075777779,
+  "kind": "metadata",
+  "confidence": "high",
+  "scope_zh": "Tactile MNIST Real全部48个序列分片、600个唯一记录、153,600次触碰视频的录制窗口。",
+  "method_zh": "逐次视频读取video_length_frames限定的time_stamp_rel_seq首尾跨度，153,600次求和120.903091h；不包含各次视频之间的机器人移动间隔。另计净接触10.713059h，二者不相加。",
+  "assumptions_zh": [
+    "与其他数据集统一按实际传感器录制窗口计时，包含视频内接近/离开等未接触帧。",
+    "逐视频时间戳首尾差不包含跨触碰视频的等待/移动间隔。",
+    "不同分辨率、单帧版和序列版是同一来源表示，不重复相加。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/TimSchneider42/tactile-mnist-touch-real-seq-t256-320x240",
+      "evidence": "全部48Parquet已读metadata；600uniqueIDs×256touches。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "公开下载入口已核查，已有真实样本下载。",
+  "alternative_hours": {
+    "active_contact_only": 10.713059491111125
+  },
+  "audit_files": [
+    "duration_audits/R17/duration_audit.json"
+  ],
+  "active_contact_hours": 10.713059491111125,
+  "checked_at": "2026-10-19"
+}

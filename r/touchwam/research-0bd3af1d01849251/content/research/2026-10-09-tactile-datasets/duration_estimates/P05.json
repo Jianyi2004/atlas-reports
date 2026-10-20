@@ -1,0 +1,27 @@
+{
+  "id": "P05",
+  "best_hours": 1.6666666666666667,
+  "low_hours": 0.8333333333333334,
+  "high_hours": 3.3333333333333335,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "Touch-Slide全部45条有序触觉轨迹；不含YCB-Slide复用。",
+  "method_zh": "作者报告9物体×5轨迹、约180K帧；假设30Hz得约1.666667小时，15–60Hz得0.833333–3.333333小时。",
+  "assumptions_zh": [
+    "未核实原始保存FPS，30Hz只作规划假设；实际下载bread/dataset_0.pkl有3,600帧，不能据此把所有45条统一为3,600帧。",
+    "连续有序图像轨迹支持时长估计；此值不是实测时长。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/facebook/touch-slide",
+      "evidence": "官方公开45条触觉轨迹；本次完整读取一条3,600帧序列。"
+    },
+    {
+      "url": "https://arxiv.org/html/2410.24090",
+      "evidence": "Appendix C：9 objects，5 trajectories each，180k frames in total。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方公开数据入口可匿名访问。",
+  "checked_at": "2026-10-19"
+}

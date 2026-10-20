@@ -1,0 +1,27 @@
+{
+  "id": "C02",
+  "best_hours": 12.104425925925927,
+  "low_hours": 6.0522129629629635,
+  "high_hours": 36.31327777777778,
+  "kind": "static_equivalent",
+  "confidence": "low",
+  "scope_zh": "ToucHD真实Force+Mani两部分；不含仿真Sim。",
+  "method_zh": "(722,436 Force pairs+584,842 Mani contact frames)=1,307,278帧÷假设FPS÷3600。 以30帧/秒作统一播放等效值，10–60帧/秒给出敏感性范围；均不代表已经证实的连续交互时长。",
+  "assumptions_zh": [
+    "两个同步触觉/视觉流的帧对不应作为双倍时长；接触帧筛选及多传感器计数口径尚不足以还原原始录制时间。",
+    "30 FPS仅是便于横向比较的假设；范围不是统计置信区间，不能并入实录小时。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/BAAI/ToucHD-Force",
+      "evidence": "公开卡片报告722,436 touch-force pairs；匿名下载需认证。"
+    },
+    {
+      "url": "https://huggingface.co/datasets/BAAI/ToucHD-Mani/blob/main/README.md",
+      "evidence": "卡片报告584,842 contact frames，46 manipulation tasks。"
+    }
+  ],
+  "availability": "gated",
+  "availability_note_zh": "自动条款门控，需同意联系方式/单位/国家；未登录数据文件返回401/403。该等效数单列，不计入本次直接可获得总量。",
+  "checked_at": "2026-10-19"
+}

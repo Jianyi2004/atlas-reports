@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>OpenGraph | episode 0 / first 45 seconds</title><style>body{margin:0;background:#101820;color:#e5eef8;font:16px/1.7 system-ui;padding:20px;max-width:1160px}video{width:100%;max-height:80vh;background:black}a{color:#64d5cc}h1{font-size:22px}</style><h1>OpenGraph | episode 0 / first 45 seconds</h1><video controls preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video><p>OpenGraph episode 0：已下载完整4369帧、145.633秒的ego RGB与双手160通道压力，30Hz。报告播放前45秒，降采样10fps；每手按五指4×4传感器依次横向排列（4×20），保持每指网格，未人为画成手掌。视频与Parquet通过LeRobot episode metadata对齐。</p><p><a href="https://huggingface.co/datasets/OpenGraphLabs-Research/ego-tactile-manipulation" target="_blank">原始数据来源</a> · <a href="preview.mp4" download>下载可视化 MP4</a></p></html><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

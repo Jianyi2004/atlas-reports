@@ -1,0 +1,30 @@
+{
+  "id": "R21",
+  "best_hours": 2.1079489155,
+  "low_hours": 1.664029440277778,
+  "high_hours": 2.2196465047222222,
+  "kind": "estimated",
+  "confidence": "medium",
+  "scope_zh": "BioTac20材料×50条=1,000条原始_bio.csv序列；不重复计processed400×44张量。",
+  "method_zh": "从材料1/5/10/15/20各读取第10次试验，真实时间戳约6–8s；样本均值×1,000，样本最短/最长作为规划范围。",
+  "assumptions_zh": [
+    "5条跨材料系统抽样，不能保证覆盖全部长短轨迹；范围不是统计置信区间。",
+    "原始序列有600或约800帧，处理后400帧不是原始全部时长。"
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/dexrob/BioTac_slide_20_50",
+      "evidence": "README20classes×50；完整tree确有1,000个_bio.csv；5材料已实读。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "公开下载入口已核查，已有真实样本下载。",
+  "sample_seconds": [
+    5.990505985,
+    7.980619384,
+    7.990727417,
+    7.990589183,
+    7.99063851
+  ],
+  "checked_at": "2026-10-19"
+}

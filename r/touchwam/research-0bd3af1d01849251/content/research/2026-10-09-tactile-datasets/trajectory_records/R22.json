@@ -1,0 +1,57 @@
+{
+  "id": "R22",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "source_url": "https://data.csail.mit.edu/active_clothing/Data_ICRA18.tar",
+    "local_raw_paths": [
+      "trajectory_work/R22/Data_ICRA18__Data__133__12__KinectFixed_133_11_170901132103.npz",
+      "trajectory_work/R22/Data_ICRA18__Data__133__12__background.png",
+      "trajectory_work/R22/Data_ICRA18__Data__133__12__GelSight_video.mp4"
+    ],
+    "downloaded_bytes": 15965947,
+    "sha256": {
+      "trajectory_work/R22/Data_ICRA18__Data__133__12__KinectFixed_133_11_170901132103.npz": "61689ed6cfefcdc3941523e62922381f49b35e144913cb6a48fd08a484f1b160",
+      "trajectory_work/R22/Data_ICRA18__Data__133__12__background.png": "d1d43aa93fdbeccf715c1d9ef97d194459c07b2d1e504fb3aa275c021e2f44eb",
+      "trajectory_work/R22/Data_ICRA18__Data__133__12__GelSight_video.mp4": "e51ea75ca0e030e0c37c1deee90e4c8465e47dc6a2e6da52b858bd5a3ad6ed5c"
+    },
+    "name": "Data_ICRA18/Data/133/12",
+    "download_url": "https://data.csail.mit.edu/active_clothing/Data_ICRA18.tar",
+    "complete_episode": true,
+    "frames": 120,
+    "fps": 30.0,
+    "duration_seconds": 4.0,
+    "duration_method": "MP4 container",
+    "modalities": [
+      "static Kinect RGB",
+      "GelSight video"
+    ],
+    "sync": "同试验视觉快照+触觉视频；不是逐帧同步"
+  },
+  "media": {
+    "html": "trajectories/R22/index.html",
+    "video": "trajectories/R22/preview.mp4",
+    "poster": "trajectories/R22/poster.webp",
+    "caption_zh": "从官方70.65GB tar远程抽取Data/133/12完整试验文件。右为真实GelSight视频（120帧、30.00fps），左是同试验Kinect RGB抓取上下文快照；它不是同步视频，整个播放过程中保持静止。背景参考图和深度/抓取位姿保留在原文件。",
+    "preview_seconds": 4.0
+  },
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "完整发布数据",
+    "explanation_zh": "未找到可可靠汇总的总时长；不以样本数或文件体积推算。",
+    "sources": []
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "validation": "原始schema/数组范围已读取；实际配对关系按数据字段核对；海报人工检查；视频通过ffprobe。",
+    "video_probe": {
+      "width": 960,
+      "height": 420,
+      "duration": "4.000000",
+      "nb_frames": "120"
+    }
+  }
+}

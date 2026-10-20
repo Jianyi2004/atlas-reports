@@ -1,0 +1,51 @@
+{
+  "id": "R08",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "source_url": "https://huggingface.co/datasets/WendiChen/reactive_diffusion_policy_dataset",
+    "local_raw_paths": [
+      "trajectory_work/R08/episode0.npz"
+    ],
+    "downloaded_bytes": 55437866,
+    "sha256": {
+      "trajectory_work/R08/episode0.npz": "d38526164ebb275425b81bae080f63aadc0dd12e0d09101b5ca0f1569140e21b"
+    },
+    "name": "dataset_mini/lift_v2_downsample2_zarr.zip / episode0",
+    "download_url": "https://hf-mirror.com/datasets/WendiChen/reactive_diffusion_policy_dataset/resolve/main/dataset_mini/lift_v2_downsample2_zarr.zip",
+    "complete_episode": true,
+    "frames": 294,
+    "modalities": [
+      "external RGB",
+      "MCTac",
+      "action"
+    ],
+    "sync": "same processed Zarr index; timestamp float32 precision insufficient"
+  },
+  "media": {
+    "html": "trajectories/R08/index.html",
+    "video": "trajectories/R08/preview.mp4",
+    "poster": "trajectories/R08/poster.webp",
+    "caption_zh": "公开mini的lift_v2_downsample2第0条完整episode，共294帧，左external_img、右left_gripper2_img（MCTac，gripper1图像为全零占位）。转换包timestamp为float32 Unix秒，约1.7e9处精度不足（相邻帧坍缩），不能用其估计真实时长；10fps为浏览速度。保留action及状态字段。",
+    "preview_seconds": 29.4
+  },
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "完整发布数据",
+    "explanation_zh": "不能用本次processed timestamp推时长：Unix秒存float32，样例相邻帧时间被舍入到同值。公开full/mini不可重复累加；尚无可信全库小时总计。",
+    "sources": []
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "validation": "原始schema/数组范围已读取；实际配对关系按数据字段核对；海报人工检查；视频通过ffprobe。",
+    "video_probe": {
+      "width": 960,
+      "height": 420,
+      "duration": "29.400000",
+      "nb_frames": "294"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>HumanTouch | X001 episode_000001</title><style>body{margin:0;background:#101820;color:#e5eef8;font:16px/1.7 system-ui;padding:20px;max-width:1160px}video{width:100%;max-height:80vh;background:black}a{color:#64d5cc}h1{font-size:22px}</style><h1>HumanTouch | X001 episode_000001</h1><video controls preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video><p>HumanTouch X001/episode_000001：已下载完整1597帧、26.617秒的头戴RGB与双手触觉，60Hz按episode帧号对齐。预览降采样为10fps；每手460维原始响应按23×20存储顺序展平显示，不是手掌空间形状，也不把所有原始通道视为有效触点或牛顿值。</p><p><a href="https://huggingface.co/datasets/chuqiaoLyu/Xspark-HumanTouch" target="_blank">原始数据来源</a> · <a href="preview.mp4" download>下载可视化 MP4</a></p></html><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

@@ -1,0 +1,76 @@
+{
+  "id": "F02",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "name": "MotionTrans/robot_finetune+press_red_dice_to_make_it_rotation+.zarr/episode_000",
+    "source_url": "https://huggingface.co/datasets/michaelyuanqwq/motiontrans",
+    "download_url": "https://hf-mirror.com/datasets/MJJJJ1064/FTP-1-Dataset/resolve/main/MotionTrans/MotionTrans.tar",
+    "local_raw_paths": [
+      "trajectory_work/F02/episode000.npz"
+    ],
+    "complete_episode": true,
+    "frames": 89,
+    "fps": 20.000019073504518,
+    "duration_seconds": 4.3999998569488525,
+    "duration_method": "episode.timestamps[-1]-timestamps[0]（秒）",
+    "modalities": [
+      "robot scene RGB",
+      "Inspire six-channel forceAct state",
+      "hand joints",
+      "wrist pose"
+    ],
+    "sync": "同一转档Zarr行，89帧；相机与公共时间戳差值范围0.005399..0.056399秒。",
+    "notes": "只下载首条episode的完整视觉/状态模态，以及同任务20条episode的timestamps；未下载全库。forceAct读数的传感机制/物理标定未足够公开，保留F类。",
+    "downloaded_bytes": 7089969,
+    "sha256": {
+      "trajectory_work/F02/episode000.npz": "01cac06c9ec4addbe622fb3218b7a6357f95a1904cea848810d7a6452762bacb"
+    }
+  },
+  "media": {
+    "html": "trajectories/F02/index.html",
+    "video": "trajectories/F02/preview.mp4",
+    "poster": "trajectories/F02/poster.webp",
+    "caption_zh": "实际读取FTP公开MotionTrans包中“按压红色骰子使其转动”的完整第0条episode：89帧，原始时间戳跨度4.400秒。左为机器人场景RGB，右为同一记录行的6维Inspire手力反馈转档值（可能经对齐插值，不是原始整数寄存器转储）。已追溯代码：fingertorque/thumbtorque来自gripper0_gripper_force，驱动读取forceAct寄存器，FTP显式标type=state；不把它当接触压力阵列，也不把这些转档状态值称为N或N·m。保持F扩展类。",
+    "preview_seconds": 4.449999855323272
+  },
+  "duration": {
+    "metadata_hours": 0.02609722210301293,
+    "basis": "metadata_sum",
+    "scope_zh": "仅press_red_dice_to_make_it_rotation任务的20条机器人微调示范",
+    "explanation_zh": "按已读取meta/episode_ends分段，对20条timestamps首末跨度求和，合计93.950000秒≈0.026097小时（1899帧）。该数字仅对应一个任务；论文3,213条为人类/机器人混合示范，不能据此推算公开力觉数据全库时长。",
+    "sources": [
+      {
+        "url": "https://hf-mirror.com/datasets/MJJJJ1064/FTP-1-Dataset/resolve/main/MotionTrans/MotionTrans.tar",
+        "evidence": "首任务episode_ends含20条、末值1899；完整读取timestamps，按每条末帧减首帧求和。"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://hf-mirror.com/datasets/MJJJJ1064/FTP-1-Dataset/resolve/main/MotionTrans/MotionTrans.tar",
+      "status": 206,
+      "detail": "远程Tar索引提取并实际解码第一条89帧RGB/力反馈/时间戳。"
+    },
+    {
+      "url": "https://github.com/michaelyuancb/ftp1-policy/blob/main/data_processing/parse_data_module/parse_data_motiontrans.py",
+      "evidence": "281–288行：gripper0_gripper_force拆分4+2维，tactile_type=state；timestamps直接保存episode.timestamp。"
+    },
+    {
+      "url": "https://github.com/michaelyuancb/motiontrans/blob/main/real/inspire_hand_utils/inspire_hand_agent.py",
+      "evidence": "read_joint_force调用read6(...,forceAct)并处理有符号寄存器值。"
+    }
+  ],
+  "blockers": [
+    "六维力反馈为手部state；不是已确认的分布式接触触觉。",
+    "全库时长未逐任务汇总。"
+  ],
+  "reuses": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  },
+  "audit_files": [
+    "trajectory_audits/F02/duration-audit.json"
+  ]
+}

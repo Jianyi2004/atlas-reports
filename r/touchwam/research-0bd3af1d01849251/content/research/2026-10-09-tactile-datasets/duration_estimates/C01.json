@@ -1,0 +1,25 @@
+{
+  "id": "C01",
+  "best_hours": 100.0,
+  "low_hours": 100.0,
+  "high_hours": 100.0,
+  "kind": "reported",
+  "confidence": "medium",
+  "scope_zh": "TouchScale当前条件开放100小时；不计未来计划发布的剩余400小时。",
+  "method_zh": "数据卡明确release100h of500h；主值取100，论文/全量500仅另列。",
+  "assumptions_zh": [
+    "100–100是作者报告点值，不表示已独立核验准确有效时长；无依据构造误差范围。",
+    "该数据有访问门控，未授权时本机实际可下载小时为0，不应并入无申请直接可取的小时总量。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/2077AIDataFoundation/TouchScale",
+      "evidence": "release100h of500h;gated=auto;unauth raw file403"
+    }
+  ],
+  "availability": "gated",
+  "availability_note_zh": "首个tar实际请求403，需获授权后下载；本轮没有原始数据访问权限。",
+  "checked_at": "2026-10-19",
+  "source_total_hours": 500,
+  "currently_authorized_hours": 0
+}

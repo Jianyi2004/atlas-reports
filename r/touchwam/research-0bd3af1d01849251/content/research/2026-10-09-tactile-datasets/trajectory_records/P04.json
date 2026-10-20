@@ -1,0 +1,72 @@
+{
+  "id": "P04",
+  "checked_at": "2026-10-19",
+  "status": "tactile_only",
+  "sample": {
+    "name": "TaF · gs_mini_obj1 / episode 0",
+    "source_url": "https://huggingface.co/datasets/jiamig/taf-dataset",
+    "local_raw_paths": [
+      "trajectory_work/P04/episode_000.parquet",
+      "trajectory_work/P04/tactile.mp4",
+      "trajectory_work/P04/info.json",
+      "trajectory_work/P04/episodes.parquet"
+    ],
+    "downloaded_bytes": 123295424,
+    "sha256": {
+      "trajectory_work/P04/episode_000.parquet": "a85d6b1fa3cf56818f115c37648f94e46e20605a80da1ffe2c425430557edef1",
+      "trajectory_work/P04/tactile.mp4": "142ed29c2d020d26f369f08110ff0c1a6959b98c32795d5ca948857a3d64ba6e",
+      "trajectory_work/P04/info.json": "8f85d965f539f49b7c452784553b4dc9c2cd62a8e7bfe81f034ac34783428d43",
+      "trajectory_work/P04/episodes.parquet": "911ffc8846e4ac8e9d82c0b4aba2d5de26f6982375e830a576bd21e1f4ee07fc"
+    },
+    "complete_episode": true,
+    "frames": 3000,
+    "fps": 30,
+    "duration_seconds": 100,
+    "modalities": [
+      "optical tactile RGB",
+      "12×12 pressure",
+      "ATI wrench"
+    ],
+    "sync": "episode index=0, timestamps0..99.9667；视频区间0..100秒，原生30fps。",
+    "notes": "episode index=0, timestamps0..99.9667；视频区间0..100秒，原生30fps。"
+  },
+  "media": {
+    "html": "trajectories/P04/index.html",
+    "poster": "trajectories/P04/poster.webp",
+    "video": "trajectories/P04/preview.mp4",
+    "caption_zh": "完整下载gs_mini_obj1的原始视频与数值表，并提取episode 0（3,000帧、100秒）。预览前40秒：左为光学触觉；右为同时间戳12×12压力阵列与ATI力。压力色标为原始读数，未擅自换算Pa；该库没有外部场景RGB。",
+    "preview_seconds": 40.0
+  },
+  "duration": {
+    "released_hours": 93.08578703703704,
+    "paper_hours": null,
+    "metadata_hours": 93.08578703703704,
+    "basis": "metadata_sum",
+    "scope_zh": "全部408个公开object/sensor sequences，按每库info.json计时",
+    "explanation_zh": "逐个读取全部408份meta/info.json，均30fps，total_frames之和10,053,265，total_episodes之和3,592；时长=Σframes/fps=335,108.833秒≈93.086小时。不重复计触觉图、压力和ATI同步模态。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/jiamig/taf-dataset",
+        "evidence": "408份info.json实际审计汇总：10,053,265frames，3,592episodes，所有fps=30。"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://huggingface.co/datasets/jiamig/taf-dataset",
+      "status": 200,
+      "detail": "已下载并实际解读所列原始文件。"
+    }
+  ],
+  "blockers": [
+    "源数据没有外部场景RGB。"
+  ],
+  "reuses": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  },
+  "audit_files": [
+    "trajectory_audits/P04/duration-audit.json"
+  ]
+}

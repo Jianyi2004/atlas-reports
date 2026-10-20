@@ -1,0 +1,66 @@
+{
+  "id": "P07",
+  "checked_at": "2026-10-19",
+  "status": "tactile_only",
+  "sample": {
+    "name": "Sparsh / TacBench · DIGIT flat / trajectory 1",
+    "source_url": "https://huggingface.co/datasets/facebook/digit-force-estimation",
+    "local_raw_paths": [
+      "trajectory_work/P07/dataset_digit_00.pkl",
+      "trajectory_work/P07/dataset_slip_forces.pkl"
+    ],
+    "downloaded_bytes": 220440308,
+    "sha256": {
+      "trajectory_work/P07/dataset_digit_00.pkl": "8911c87bc20aeb309615b3814aced49840410ff958cfb6291109da5e2f1e3443",
+      "trajectory_work/P07/dataset_slip_forces.pkl": "8469dd3f3b71638d4e2cf9aef8fcb9ff4756dc393118bb2531547f3f52db1799"
+    },
+    "complete_episode": true,
+    "frames": 561,
+    "fps": null,
+    "duration_seconds": null,
+    "modalities": [
+      "DIGIT tactile RGB",
+      "per-trajectory force"
+    ],
+    "sync": "图像按trajectory.indexes提取；forces长度556与indexes561不同，只展示整段概览。",
+    "notes": "图像按trajectory.indexes提取；forces长度556与indexes561不同，只展示整段概览。",
+    "download_url": "https://hf-mirror.com/datasets/facebook/digit-force-estimation/resolve/main/flat/batch_1/dataset_digit_00.pkl"
+  },
+  "media": {
+    "html": "trajectories/P07/index.html",
+    "poster": "trajectories/P07/poster.webp",
+    "video": "trajectories/P07/preview.mp4",
+    "caption_zh": "完整提取flat/batch_1的trajectory 1：561个触觉帧索引。左侧每2帧取1帧浏览，右侧为该轨迹556行力数据概览。原文件图像索引与force长度相差5，未确认逐帧对齐规则，因此右侧不画同步游标、不声称精确同步；没有外部RGB。",
+    "preview_seconds": 28.1
+  },
+  "duration": {
+    "released_hours": null,
+    "paper_hours": null,
+    "metadata_hours": null,
+    "basis": "unknown",
+    "scope_zh": "全库",
+    "explanation_zh": "当前PKL不含原生采样时间戳；TacBench家族包含不同传感器/子任务，不能把样本数或公开GIF速度当唯一采集时长。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/facebook/digit-force-estimation",
+        "evidence": "当前PKL不含原生采样时间戳；TacBench家族包含不同传感器/子任务，不能把样本数或公开GIF速度当唯一采集时长。"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://huggingface.co/datasets/facebook/digit-force-estimation",
+      "status": 200,
+      "detail": "已下载并实际解读所列原始文件。"
+    }
+  ],
+  "blockers": [
+    "没有外部场景RGB。",
+    "原始force与图像索引长度不同；精确同步尚未确认。"
+  ],
+  "reuses": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  }
+}

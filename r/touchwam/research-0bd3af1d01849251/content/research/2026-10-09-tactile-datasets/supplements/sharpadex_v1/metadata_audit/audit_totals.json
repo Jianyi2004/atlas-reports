@@ -1,0 +1,461 @@
+{
+  "audited_at": "2026-10-19T22:42:53.837179+00:00",
+  "task_count": 59,
+  "season_count": 495,
+  "successful_info_count": 495,
+  "failed_info": [],
+  "total_episodes": 28993,
+  "total_frames": 32396172,
+  "duration_hours": 299.96455555555553,
+  "fps_distribution": {
+    "30": 495
+  },
+  "schema_distribution": {
+    "f2a37f32ef405ae1a7dd6d011f0de7aa050bae080b11968de09015d6694e7418": 495
+  },
+  "feature_count_distribution": {
+    "19": 495
+  },
+  "video_feature_count_distribution": {
+    "6": 495
+  },
+  "codebase_version_distribution": {
+    "v3.0": 495
+  },
+  "robot_type_distribution": {
+    "robot": 495
+  },
+  "repo_commit_distribution": {
+    "c8032fd891e3f6f19b0d4886793579c1dce5eea7": 495
+  },
+  "by_task": [
+    {
+      "task": "assemble_gears_on_base",
+      "seasons": 11,
+      "episodes": 1488,
+      "frames": 983123,
+      "hours": 9.102990740740742
+    },
+    {
+      "task": "clean_garment_with_lint_roller",
+      "seasons": 3,
+      "episodes": 810,
+      "frames": 737849,
+      "hours": 6.831935185185186
+    },
+    {
+      "task": "clean_knife_with_cloth",
+      "seasons": 2,
+      "episodes": 292,
+      "frames": 246287,
+      "hours": 2.280435185185185
+    },
+    {
+      "task": "clean_plate_with_eraser",
+      "seasons": 5,
+      "episodes": 343,
+      "frames": 190467,
+      "hours": 1.7635833333333333
+    },
+    {
+      "task": "close_kraft_paper_box",
+      "seasons": 2,
+      "episodes": 485,
+      "frames": 468006,
+      "hours": 4.333388888888889
+    },
+    {
+      "task": "collect_toys_into_basket",
+      "seasons": 5,
+      "episodes": 84,
+      "frames": 86296,
+      "hours": 0.799037037037037
+    },
+    {
+      "task": "collect_waste_into_bin",
+      "seasons": 8,
+      "episodes": 508,
+      "frames": 621140,
+      "hours": 5.751296296296297
+    },
+    {
+      "task": "cover_ball_with_cup",
+      "seasons": 5,
+      "episodes": 488,
+      "frames": 188956,
+      "hours": 1.7495925925925926
+    },
+    {
+      "task": "deal_playing_cards",
+      "seasons": 23,
+      "episodes": 1088,
+      "frames": 2074644,
+      "hours": 19.209666666666667
+    },
+    {
+      "task": "empty_dustpan_into_bin",
+      "seasons": 10,
+      "episodes": 488,
+      "frames": 379585,
+      "hours": 3.514675925925926
+    },
+    {
+      "task": "fit_trash_bag_into_bin",
+      "seasons": 47,
+      "episodes": 656,
+      "frames": 852443,
+      "hours": 7.892990740740741
+    },
+    {
+      "task": "fold_and_close_box",
+      "seasons": 10,
+      "episodes": 697,
+      "frames": 1233919,
+      "hours": 11.425175925925926
+    },
+    {
+      "task": "fold_towel",
+      "seasons": 3,
+      "episodes": 459,
+      "frames": 547201,
+      "hours": 5.066675925925926
+    },
+    {
+      "task": "form_kraft_paper_box",
+      "seasons": 5,
+      "episodes": 455,
+      "frames": 775252,
+      "hours": 7.178259259259259
+    },
+    {
+      "task": "grind_medicine_with_mortar_and_pestle",
+      "seasons": 4,
+      "episodes": 131,
+      "frames": 176595,
+      "hours": 1.635138888888889
+    },
+    {
+      "task": "hammer_nails",
+      "seasons": 4,
+      "episodes": 1071,
+      "frames": 861668,
+      "hours": 7.978407407407407
+    },
+    {
+      "task": "hang_garment_on_hanger",
+      "seasons": 15,
+      "episodes": 521,
+      "frames": 979299,
+      "hours": 9.067583333333333
+    },
+    {
+      "task": "insert_batteries_into_charger",
+      "seasons": 3,
+      "episodes": 458,
+      "frames": 841645,
+      "hours": 7.793009259259259
+    },
+    {
+      "task": "insert_batteries_into_device",
+      "seasons": 7,
+      "episodes": 516,
+      "frames": 456513,
+      "hours": 4.226972222222222
+    },
+    {
+      "task": "insert_knife_into_cutlery_bin",
+      "seasons": 4,
+      "episodes": 495,
+      "frames": 232113,
+      "hours": 2.1491944444444444
+    },
+    {
+      "task": "insert_plug_into_socket",
+      "seasons": 6,
+      "episodes": 416,
+      "frames": 183726,
+      "hours": 1.7011666666666665
+    },
+    {
+      "task": "insert_socket_module_into_board",
+      "seasons": 2,
+      "episodes": 957,
+      "frames": 512619,
+      "hours": 4.746472222222222
+    },
+    {
+      "task": "iron_garment",
+      "seasons": 33,
+      "episodes": 517,
+      "frames": 2277751,
+      "hours": 21.090287037037037
+    },
+    {
+      "task": "nest_cups",
+      "seasons": 10,
+      "episodes": 464,
+      "frames": 763601,
+      "hours": 7.070379629629629
+    },
+    {
+      "task": "organize_objects_in_drawer",
+      "seasons": 5,
+      "episodes": 95,
+      "frames": 115637,
+      "hours": 1.070712962962963
+    },
+    {
+      "task": "pack_blueberries_in_bag",
+      "seasons": 17,
+      "episodes": 485,
+      "frames": 1533417,
+      "hours": 14.198305555555555
+    },
+    {
+      "task": "pack_object_in_storage_bag",
+      "seasons": 9,
+      "episodes": 311,
+      "frames": 644006,
+      "hours": 5.963018518518519
+    },
+    {
+      "task": "place_ball_in_box",
+      "seasons": 3,
+      "episodes": 115,
+      "frames": 40672,
+      "hours": 0.37659259259259253
+    },
+    {
+      "task": "place_ball_in_cup_then_cup_in_box",
+      "seasons": 4,
+      "episodes": 456,
+      "frames": 252933,
+      "hours": 2.341972222222222
+    },
+    {
+      "task": "place_books_on_shelf",
+      "seasons": 9,
+      "episodes": 151,
+      "frames": 133230,
+      "hours": 1.2336111111111112
+    },
+    {
+      "task": "place_coffee_filter_in_dripper",
+      "seasons": 21,
+      "episodes": 784,
+      "frames": 1786030,
+      "hours": 16.537314814814813
+    },
+    {
+      "task": "place_cup_on_plate",
+      "seasons": 4,
+      "episodes": 429,
+      "frames": 149882,
+      "hours": 1.3877962962962964
+    },
+    {
+      "task": "place_fruits_in_basket",
+      "seasons": 8,
+      "episodes": 416,
+      "frames": 286988,
+      "hours": 2.6572962962962965
+    },
+    {
+      "task": "place_knife_and_fork_on_plate",
+      "seasons": 8,
+      "episodes": 461,
+      "frames": 314324,
+      "hours": 2.9104074074074076
+    },
+    {
+      "task": "place_pens_in_holder",
+      "seasons": 11,
+      "episodes": 399,
+      "frames": 427274,
+      "hours": 3.956240740740741
+    },
+    {
+      "task": "play_tic_tac_toe",
+      "seasons": 16,
+      "episodes": 521,
+      "frames": 1317513,
+      "hours": 12.199194444444444
+    },
+    {
+      "task": "pry_nails_from_board",
+      "seasons": 3,
+      "episodes": 24,
+      "frames": 21174,
+      "hours": 0.19605555555555557
+    },
+    {
+      "task": "relocate_tennis_ball",
+      "seasons": 1,
+      "episodes": 450,
+      "frames": 157112,
+      "hours": 1.4547407407407407
+    },
+    {
+      "task": "remove_block_from_box",
+      "seasons": 5,
+      "episodes": 388,
+      "frames": 142321,
+      "hours": 1.317787037037037
+    },
+    {
+      "task": "reorient_and_relocate_carton",
+      "seasons": 2,
+      "episodes": 347,
+      "frames": 181309,
+      "hours": 1.6787870370370372
+    },
+    {
+      "task": "reorient_cup_upright",
+      "seasons": 5,
+      "episodes": 420,
+      "frames": 151573,
+      "hours": 1.4034537037037036
+    },
+    {
+      "task": "reposition_and_stack_blocks",
+      "seasons": 15,
+      "episodes": 1007,
+      "frames": 1069334,
+      "hours": 9.901240740740741
+    },
+    {
+      "task": "rotate_bottle_cap",
+      "seasons": 17,
+      "episodes": 583,
+      "frames": 497695,
+      "hours": 4.608287037037037
+    },
+    {
+      "task": "scoop_salt_from_jar_into_cup",
+      "seasons": 13,
+      "episodes": 424,
+      "frames": 485424,
+      "hours": 4.494666666666666
+    },
+    {
+      "task": "scrub_cup_interior",
+      "seasons": 2,
+      "episodes": 481,
+      "frames": 314401,
+      "hours": 2.9111203703703703
+    },
+    {
+      "task": "seal_box_with_tape",
+      "seasons": 1,
+      "episodes": 115,
+      "frames": 208648,
+      "hours": 1.931925925925926
+    },
+    {
+      "task": "secure_coiled_cable_with_velcro_tie",
+      "seasons": 10,
+      "episodes": 473,
+      "frames": 632425,
+      "hours": 5.855787037037037
+    },
+    {
+      "task": "sort_utensils",
+      "seasons": 5,
+      "episodes": 419,
+      "frames": 460851,
+      "hours": 4.267138888888889
+    },
+    {
+      "task": "stack_napkins_in_holder",
+      "seasons": 5,
+      "episodes": 497,
+      "frames": 545816,
+      "hours": 5.053851851851852
+    },
+    {
+      "task": "stack_two_plates",
+      "seasons": 4,
+      "episodes": 491,
+      "frames": 185481,
+      "hours": 1.7174166666666668
+    },
+    {
+      "task": "staple_paper",
+      "seasons": 9,
+      "episodes": 695,
+      "frames": 605253,
+      "hours": 5.6041944444444445
+    },
+    {
+      "task": "sweep_waste_into_dustpan",
+      "seasons": 10,
+      "episodes": 609,
+      "frames": 516260,
+      "hours": 4.780185185185185
+    },
+    {
+      "task": "tighten_bottle_cap",
+      "seasons": 7,
+      "episodes": 131,
+      "frames": 139693,
+      "hours": 1.2934537037037037
+    },
+    {
+      "task": "tomato_boxed_lunch_packaging",
+      "seasons": 4,
+      "episodes": 97,
+      "frames": 243325,
+      "hours": 2.2530092592592594
+    },
+    {
+      "task": "transfer_liquid_with_dropper",
+      "seasons": 12,
+      "episodes": 360,
+      "frames": 655829,
+      "hours": 6.072490740740741
+    },
+    {
+      "task": "transfer_pills_between_cups",
+      "seasons": 9,
+      "episodes": 479,
+      "frames": 239561,
+      "hours": 2.2181574074074075
+    },
+    {
+      "task": "transfer_salt_between_cups_with_spoon",
+      "seasons": 4,
+      "episodes": 1483,
+      "frames": 831390,
+      "hours": 7.698055555555555
+    },
+    {
+      "task": "turn_book_pages",
+      "seasons": 7,
+      "episodes": 65,
+      "frames": 87056,
+      "hours": 0.806074074074074
+    },
+    {
+      "task": "unscrew_bottle_cap",
+      "seasons": 3,
+      "episodes": 445,
+      "frames": 351637,
+      "hours": 3.255898148148148
+    }
+  ],
+  "total_episodes_per_season": {
+    "min": 1,
+    "median": 34,
+    "max": 530
+  },
+  "total_frames_per_season": {
+    "min": 1060,
+    "median": 44559,
+    "max": 505009
+  },
+  "duration_hours_per_season": {
+    "min": 0.009814814814814816,
+    "median": 0.4125833333333333,
+    "max": 4.67600925925926
+  }
+}

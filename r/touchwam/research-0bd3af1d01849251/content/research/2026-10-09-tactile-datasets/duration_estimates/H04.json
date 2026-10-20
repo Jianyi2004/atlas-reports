@@ -1,0 +1,26 @@
+{
+  "id": "H04",
+  "best_hours": 0.14602431767516666,
+  "low_hours": 0.14602431767516666,
+  "high_hours": 0.14612615213998895,
+  "kind": "metadata",
+  "confidence": "high",
+  "scope_zh": "FusionX V3公开11条sample录制的总时间跨度。",
+  "method_zh": "逐读11份frames.parquet，Σ(max(timestamp)−min(timestamp))/3600=0.146024小时（8.761459分钟）；每段补1个平均帧间隔得到约0.146126小时。",
+  "assumptions_zh": [
+    "当前公开sample范围，不外推发布方未公开数据。",
+    "双手/双目共享同一条录制时间轴，不重复累加。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/touchtronix/FusionX-Multimodal-Sample-Data-V3",
+      "evidence": "逐读取firstaid1–3/strap1–4/water1–4的frames.parquet.timestamp求和"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "11份时间戳表全部读取；water2完整RGB/触觉样本已下载。",
+  "checked_at": "2026-10-19",
+  "audit_files": [
+    "trajectory_audits/H04/durations.json"
+  ]
+}

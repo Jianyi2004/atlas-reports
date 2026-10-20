@@ -1,0 +1,23 @@
+{
+  "id": "P12",
+  "best_hours": 1.2533333333333334,
+  "low_hours": 0.6266666666666667,
+  "high_hours": 3.76,
+  "kind": "static_equivalent",
+  "confidence": "low",
+  "scope_zh": "公开Touch-Ex全部1,128 contacts×120帧。",
+  "method_zh": "135,360帧÷假设FPS÷3600。 以30帧/秒作统一播放等效值，10–60帧/秒给出敏感性范围；均不代表已经证实的连续交互时长。",
+  "assumptions_zh": [
+    "采集按力类别过滤样本，120帧并非已验证的连续采样片段，不能按传感器标称FPS当实录时间。",
+    "30 FPS仅是便于横向比较的假设；范围不是统计置信区间，不能并入实录小时。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/gemixin/touch-ex",
+      "evidence": "README：1,128 contacts，每条120帧，共135,360帧；描述按force类别筛选。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方公开数据入口可匿名访问。",
+  "checked_at": "2026-10-19"
+}

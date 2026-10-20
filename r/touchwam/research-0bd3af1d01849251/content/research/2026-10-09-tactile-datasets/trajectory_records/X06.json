@@ -1,0 +1,46 @@
+{
+  "id": "X06",
+  "checked_at": "2026-10-19",
+  "status": "static_sample",
+  "sample": {
+    "name": "HUST-Tac classification samples",
+    "source_url": "https://github.com/HUSTOROP/Hust-Tac-Dataset",
+    "download_url": "https://cdn.jsdelivr.net/gh/HUSTOROP/Hust-Tac-Dataset@main/HUST-Tac.zip",
+    "local_raw_paths": [
+      "trajectory_work/X06/raw/HUST-Tac.zip"
+    ],
+    "complete_episode": false,
+    "frames": 3946,
+    "modalities": [
+      "tactile images"
+    ],
+    "notes": "下载并解压官方HUST-Tac.zip，实际包含3946张分类触觉图；展示各类别一张真实样例。没有RGB、时间戳或episode，不能制作同步操作轨迹，也不能换算小时。 实际3946张PNG与README称3949不一致；按文件SHA-256有3513个不同内容，存在重复图。",
+    "downloaded_bytes": 7257972,
+    "sha256": {
+      "trajectory_work/X06/raw/HUST-Tac.zip": "bd0d7d670b7642c2746786edc75bccbdd65da654a55a74cef14e9683876681a4"
+    }
+  },
+  "media": {
+    "html": "trajectories/X06/index.html",
+    "poster": "trajectories/X06/poster.webp",
+    "caption_zh": "下载并解压官方HUST-Tac.zip，实际包含3946张分类触觉图；展示各类别一张真实样例。没有RGB、时间戳或episode，不能制作同步操作轨迹，也不能换算小时。"
+  },
+  "duration": {
+    "basis": "not_temporal",
+    "scope_zh": "静态分类图像",
+    "explanation_zh": "3946张PNG，不含轨迹/采样率，时长不适用。 README称3949张，实际ZIP枚举3946张；3513个唯一文件哈希。",
+    "sources": [
+      {
+        "url": "https://github.com/HUSTOROP/Hust-Tac-Dataset",
+        "evidence": "已解压实际ZIP并枚举PNG"
+      }
+    ]
+  },
+  "evidence": [],
+  "blockers": [],
+  "reuses": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  }
+}

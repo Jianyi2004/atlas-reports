@@ -1,0 +1,65 @@
+{
+  "id": "A05",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "name": "videos/freetacman/ArrangeFruit/ArrangeFruit_100",
+    "source_url": "https://huggingface.co/datasets/yxma/tactile-video-pretrain",
+    "download_url": "https://hf-mirror.com/datasets/yxma/tactile-video-pretrain/resolve/main/videos/freetacman/ArrangeFruit/ArrangeFruit_100_scene.mp4",
+    "local_raw_paths": [
+      "trajectory_work/A05/raw/ArrangeFruit_100_scene.mp4",
+      "trajectory_work/A05/raw/ArrangeFruit_100_tactile_left.mp4",
+      "trajectory_work/A05/raw/ArrangeFruit_100_tactile_right.mp4"
+    ],
+    "complete_episode": true,
+    "frames": 240,
+    "fps": 30,
+    "duration_seconds": 8,
+    "duration_method": "三路240帧/30fps",
+    "modalities": [
+      "scene RGB",
+      "two tactile videos"
+    ],
+    "sync": "同一clip/demonstration、匹配帧号；预览10fps",
+    "notes": "与U01同源；汇编不新增独立来源。",
+    "downloaded_bytes": 6052817,
+    "sha256": {
+      "trajectory_work/A05/raw/ArrangeFruit_100_scene.mp4": "3de1073f65b0aac5423bed83a961523a37b6eb8e808669cde12ef8848ce95a91",
+      "trajectory_work/A05/raw/ArrangeFruit_100_tactile_left.mp4": "dd0542c287dc04e46996a47f157a121e57f5ab3bcd923439aece39deed54e0bf",
+      "trajectory_work/A05/raw/ArrangeFruit_100_tactile_right.mp4": "8cd8b8b4a45a37d25a84cf9866172f68ed24968472c97192e94526dea381bf4b"
+    }
+  },
+  "media": {
+    "html": "trajectories/A05/index.html",
+    "video": "trajectories/A05/preview.mp4",
+    "poster": "trajectories/A05/poster.webp",
+    "caption_zh": "实际下载yxma再编码包中的ArrangeFruit_100三路MP4：240帧、30fps、8秒。与U01是同一上游交互，展示该包的实际文件，不额外增加独立采集来源或行为时长。",
+    "preview_seconds": 8.0
+  },
+  "duration": {
+    "basis": "metadata_sum",
+    "scope_zh": "tactile_rgb配置、按唯一RGB路径去除双指重复后的名义时间",
+    "explanation_zh": "原12,103行配对索引去重合计30.305h：FreeTacMan15.697h及Touch and Go14.607h；但后者索引包含缺失文件。本轮按真实文件核查后的配对覆盖约19.072h，加仅触觉及GelSLAM后汇编约24.429h，详见下方统计记录。所有部分与上游去重，新增0h。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/yxma/tactile-video-pretrain",
+        "evidence": "tactile_rgb/train-00000-of-00001.parquet，按rgb_video分组取max(duration_s)"
+      }
+    ],
+    "converted_nominal_hours": 30.304516338627373
+  },
+  "evidence": [],
+  "blockers": [],
+  "reuses": [
+    "U01",
+    "E07",
+    "P09"
+  ],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  },
+  "audit_files": [
+    "trajectory_audits/A05/duration-audit.json"
+  ]
+}

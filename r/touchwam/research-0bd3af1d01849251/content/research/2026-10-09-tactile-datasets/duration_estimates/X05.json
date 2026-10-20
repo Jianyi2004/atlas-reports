@@ -1,0 +1,25 @@
+{
+  "id": "X05",
+  "best_hours": 0.0038240740740740744,
+  "low_hours": 0.0019120370370370372,
+  "high_hours": 0.011472222222222222,
+  "kind": "static_equivalent",
+  "confidence": "low",
+  "scope_zh": "三个真实场景413张原始触觉图的帧等效量",
+  "method_zh": "实际目录touch_raw/train：block166+bunny_real134+mirror113=413；按30fps等效0.003824h，10–60fps范围0.001912–0.011472h。",
+  "assumptions_zh": [
+    "等效秒数仅用于统一帧预算，不是实际采集持续时间。",
+    "只计原始真实触觉图；排除blender仿真、深度/变换副本、视觉图及处理后触觉副本。"
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/armlabstanford/touch-gs-data",
+      "evidence": "递归Git树实际413张touch_raw/train图。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "静态重建触点可取，连续轨迹总量贡献0。",
+  "checked_at": "2026-10-19",
+  "equivalent_frames": 413,
+  "equivalent_fps": 30
+}

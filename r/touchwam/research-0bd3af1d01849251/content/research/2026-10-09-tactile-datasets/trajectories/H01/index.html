@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>STAG | allen key set / first 45 seconds</title><style>body{margin:0;background:#101820;color:#e5eef8;font:16px/1.7 system-ui;padding:20px;max-width:1160px}video{width:100%;max-height:80vh;background:black}a{color:#64d5cc}h1{font-size:22px}</style><h1>STAG | allen key set / first 45 seconds</h1><video controls preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video><p>STAG classification/000/016-allen_key_set：通过官方ZIP的HTTP Range实际下载该完整记录819张原始RGB及pressuredata.mat；metadata对应819帧、145.989秒。展示前45秒，按真实相对时间戳选择对应JPEG与32×32压力矩阵。548个有效感知点存储于32×32阵列中；颜色为原始500–1024读数，矩阵不是手掌轮廓。</p><p><a href="https://stag.csail.mit.edu/datasets/classification.zip" target="_blank">原始数据来源</a> · <a href="preview.mp4" download>下载可视化 MP4</a></p></html><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

@@ -1,0 +1,44 @@
+{
+  "id": "R16",
+  "best_hours": 299.96455555555553,
+  "low_hours": 299.96455555555553,
+  "high_hours": 299.96455555555553,
+  "kind": "metadata",
+  "confidence": "high",
+  "scope_zh": "SharpaDex v1.0单一LeRobot导出的全部495个采集season；旧Sharpa FTP发布保留关联，不另加时长。",
+  "method_zh": "完整枚举59任务/495season，读取全部495份v3.0 meta/info.json；Σtotal_frames=32,396,172，全部fps=30，除以30×3600得到299.964556小时。",
+  "assumptions_zh": [
+    "上下界相同表示该元数据口径可确定计算，不意味着全库视频逐帧质量、物理同步或净接触时长均已审计。",
+    "v2.1和v3.0是同一批示范，只选一个导出；六视频流与十指不分别累计小时。",
+    "与Sharpa North-FTP-1属于同采集家族，轨迹交集尚未量化；保守只计本库，不额外加旧估计25.237778h，也不声称新版完整包含旧版。",
+    "全部495份元数据逐任务与README一致，来自固定commit；原始仓库信息接口100000文件上限已通过逐目录枚举绕开。",
+    "真实样例六路视频各1250帧/30Hz、导出时间网格一致；这不独立证明硬件零时延。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/Sharpa-Robotics/SharpaDex-v1.0",
+      "evidence": "官方数据卡：59任务、495seasons、28,993episodes、32,396,172frames、30FPS；两导出同源。"
+    },
+    {
+      "url": "https://huggingface.co/datasets/Sharpa-Robotics/SharpaDex-v1.0/blob/c8032fd891e3f6f19b0d4886793579c1dce5eea7/clean_plate_with_eraser/season_POC22027_2026_04_17_11_01_59_train/lerobot_v2.1/meta/info.json",
+      "evidence": "本轮逐一读取全部495份v3.0 info，响应commit均相同；样例v2.1结构及全局规模相符。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方非门控公开入口，已读取495份元数据及实际Parquet/视频；许可CC BY-NC 4.0。",
+  "checked_at": "2026-10-20",
+  "release_scope_verified": true,
+  "all_payloads_verified": false,
+  "historical_related_estimate": {
+    "path": "duration_estimates/history/R16-ftp-20261019.json",
+    "best_hours": 25.23777777777778,
+    "added_to_total": false,
+    "overlap_status": "unknown; conservative family-level grouping"
+  },
+  "audit_files": [
+    "supplements/sharpadex_v1/metadata_audit/audit_totals.json",
+    "supplements/sharpadex_v1/metadata_audit/season_metadata_summary.json",
+    "supplements/sharpadex_v1/metadata_audit/task_statistics.csv",
+    "supplements/sharpadex_v1/relation_notes.md"
+  ]
+}

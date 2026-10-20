@@ -1,0 +1,69 @@
+{
+  "id": "R02",
+  "checked_at": "2026-10-19",
+  "status": "static_sample",
+  "sample": {
+    "source_url": "https://huggingface.co/datasets/alanz-mit/FoundationTactile",
+    "local_raw_paths": [
+      "trajectory_work/A01/for_calandra17/calandra_corl2017_005-031_168_gelsightB_during.jpg",
+      "trajectory_work/A01/for_calandra17/calandra_corl2017_020-030_87_gelsightB_during.jpg",
+      "trajectory_work/A01/for_calandra17/calandra_corl2017_027-023_51_gelsightB_during.jpg",
+      "trajectory_work/A01/for_calandra17/calandra_corl2017_005-031_168_gelsightB_during.json",
+      "trajectory_work/A01/for_calandra17/calandra_corl2017_020-030_87_gelsightB_during.json",
+      "trajectory_work/A01/for_calandra17/calandra_corl2017_027-023_51_gelsightB_during.json"
+    ],
+    "downloaded_bytes": 268787,
+    "sha256": {
+      "trajectory_work/A01/for_calandra17/calandra_corl2017_005-031_168_gelsightB_during.jpg": "fa554728cb4c6710d8319227fd1cd732a80000de108b6082c6976a5485be14c9",
+      "trajectory_work/A01/for_calandra17/calandra_corl2017_020-030_87_gelsightB_during.jpg": "88b031d333bd01158d2049c65ef9975b2f56299f944e0bdfa144e2d5c6ebb08a",
+      "trajectory_work/A01/for_calandra17/calandra_corl2017_027-023_51_gelsightB_during.jpg": "828f5190a99b76f3726dc507b0e9fdaa749023e38d96e5fd637665575be1b626",
+      "trajectory_work/A01/for_calandra17/calandra_corl2017_005-031_168_gelsightB_during.json": "c099059d104f7530e29f1a9b73665951c8c1dc959513027ff22dae25a094f8aa",
+      "trajectory_work/A01/for_calandra17/calandra_corl2017_020-030_87_gelsightB_during.json": "d4a3b0e8447e9d90b006e55d24fb42c1044d043cb12bb514c01cd15a38a981b9",
+      "trajectory_work/A01/for_calandra17/calandra_corl2017_027-023_51_gelsightB_during.json": "fb7eb4001d53624ce0eb0d851bc3e89ea2a0004e1ec5fb36620eab90d0f577d6"
+    },
+    "name": "FoundationTactile/calandra17/val/data-000000.tar / first3 decoded samples",
+    "download_url": "https://hf-mirror.com/datasets/alanz-mit/FoundationTactile/resolve/main/dataset/FoTa_dataset.z01",
+    "complete_episode": false,
+    "frames": 3,
+    "modalities": [
+      "optical tactile stills",
+      "JSON labels"
+    ],
+    "sync": "3 independent static samples; no matched RGB",
+    "notes": "ZIP成员前4MiB解压前缀取完整JPEG/JSON，不是完整tar。"
+  },
+  "media": {
+    "html": "trajectories/R02/index.html",
+    "poster": "trajectories/R02/poster.webp",
+    "caption_zh": "实际从FoTa公开转换包提取3张Calandra / Feeling of Success真实触觉样本及同名JSON。这3张是不同记录的静态样本，不构成一条连续轨迹；转换包未包含匹配场景RGB，未补造视觉。"
+  },
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "完整发布数据",
+    "explanation_zh": "未找到可可靠汇总的总时长；不以样本数或文件体积推算。",
+    "sources": []
+  },
+  "evidence": [
+    {
+      "url": "https://drive.usercontent.google.com/download?id=1dHA-9QwZCMu5JCuCDZ6ooB1lNG-k6-tM&export=download",
+      "status": null,
+      "detail": "Sparsh官方脚本第一个原数据Drive文件在本环境连接超时；原项目Google Sites亦不可达。尚未下载可核验的完整抓取试验。"
+    },
+    {
+      "url": "https://hf-mirror.com/datasets/alanz-mit/FoundationTactile/resolve/main/dataset/FoTa_dataset.z01",
+      "status": 206,
+      "detail": "FoundationTactile/calandra17/val/data-000000.tar;3 JPEG/JSON successfully decoded"
+    }
+  ],
+  "blockers": [
+    "Sparsh官方脚本第一个原数据Drive文件在本环境连接超时；原项目Google Sites亦不可达。尚未下载可核验的完整抓取试验。",
+    "FoTa派生WDS仅提供静态触觉及标签，本次仍未获得原始完整RGB+触觉轨迹。"
+  ],
+  "reuses": [
+    "A01/FoTa转换包中的calandra17上游来源；只计原始采集来源一次"
+  ],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  }
+}

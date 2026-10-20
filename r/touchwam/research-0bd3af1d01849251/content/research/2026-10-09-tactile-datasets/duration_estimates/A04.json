@@ -1,0 +1,26 @@
+{
+  "id": "A04",
+  "best_hours": 0.9259259259259259,
+  "low_hours": 0.46296296296296297,
+  "high_hours": 2.7777777777777777,
+  "kind": "reuse",
+  "confidence": "low",
+  "scope_zh": "Touch100k约100K派生视觉—触觉—语言标注覆盖；不代表新增采集。",
+  "method_zh": "约100,000幅/组样本÷假设30FPS÷3600作为覆盖等效；10–60FPS为敏感性范围。汇编在总量中新增贡献固定为0。",
+  "assumptions_zh": [
+    "这是样本播放等效覆盖，不是实录连续时长。",
+    "上游来源重复，不把本包小时再加入独立数据集总量；样本规模可能为约数/下界。"
+  ],
+  "sources": [
+    {
+      "url": "https://cocacola-lab.github.io/Touch100k/",
+      "evidence": "项目称100k规模触觉—语言—视觉配对标注。"
+    }
+  ],
+  "availability": "official_entry",
+  "availability_note_zh": "Touch100k官方Drive入口存在但本次未能下载。",
+  "reuses_ids": [],
+  "incremental_hours": 0,
+  "coverage_measure": "static_equivalent",
+  "checked_at": "2026-10-19"
+}

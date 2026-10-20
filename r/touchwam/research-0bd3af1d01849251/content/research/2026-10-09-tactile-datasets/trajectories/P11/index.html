@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PhysiCLeAR · paper_towel_5（AnyTouch公开处理版）</title><style>body{font:16px system-ui;background:#101926;color:#eaf1fc;margin:0;padding:20px;max-width:1100px}video,img{max-width:100%;width:100%;border-radius:8px}p{line-height:1.7}input{width:50%}button{padding:8px}</style><h2>PhysiCLeAR · paper_towel_5（AnyTouch公开处理版）</h2><p>原作者Google Drive归档在当前两台机器均连接超时；改从AnyTouch官方数据仓库的octopi.zip实际提取physiclear_paper_towel_5，共126张已处理触觉帧。这是可核实的公开派生帧序列，不等同完整原始视频；无场景RGB和原生时间戳，10fps仅方便浏览。</p><video controls preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video></html><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

@@ -1,0 +1,30 @@
+{
+  "id": "R12",
+  "best_hours": 8.178997358333335,
+  "low_hours": 4.089498679166668,
+  "high_hours": 16.35799471666667,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "HapTile公开38个任务ZIP内全部1,700条trajectory.h5。",
+  "method_zh": "逐ZIP中央目录实数1,700条；move_toy_car30条时间戳总计519.606891s，均值17.32023s；1,700×该均值。范围均值0.5–2倍。",
+  "assumptions_zh": [
+    "已量出全库episode数，但仅一项任务完整审计时长。",
+    "任务之间长度差异未知，范围为跨任务敏感性，不是正式置信区间。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/HapTile2026/HapTile",
+      "evidence": "38ZIP中央目录1,700个trajectory.h5；每任务27–71条。"
+    },
+    {
+      "url": "https://haptile-dataset.github.io/",
+      "evidence": "数据按轨迹包含timestamps和RGB/触觉。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "公开下载入口已核查，已有真实样本下载。",
+  "audit_files": [
+    "duration_estimates/work_robot/R12_counts.json"
+  ],
+  "checked_at": "2026-10-19"
+}

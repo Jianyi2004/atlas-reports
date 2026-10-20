@@ -1,0 +1,53 @@
+{
+  "id": "R13",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "source_url": "https://huggingface.co/datasets/LejuRobotics/LET-Dex-Dataset",
+    "local_raw_paths": [
+      "trajectory_work/R13/contact.bag"
+    ],
+    "downloaded_bytes": 228702187,
+    "sha256": {
+      "trajectory_work/R13/contact.bag": "16bcb27518dca27ff263be30baab28f67f962051a69568b151057f8d8f44f0a0"
+    },
+    "name": "datasets/rosbag/tactile/real/Labelled/Smart_postal_packages-P4-Linker_Hand_L6/A10-A12-I-L-03-TQ_04_01-P4_338-dex_hand-20251219161353-v001.bag",
+    "download_url": "https://hf-mirror.com/datasets/LejuRobotics/LET-Dex-Dataset/resolve/main/datasets/rosbag/tactile/real/Labelled/Smart_postal_packages-P4-Linker_Hand_L6/A10-A12-I-L-03-TQ_04_01-P4_338-dex_hand-20251219161353-v001.bag",
+    "complete_episode": true,
+    "frames": 312,
+    "duration_seconds": 10.395954371,
+    "duration_method": "ROSbag end-start",
+    "modalities": [
+      "head RGB",
+      "left hand360taxels"
+    ],
+    "sync": "bag timestamp nearest neighbour maximum offset 17.5ms",
+    "notes": "另核查最小2.96秒bag所有触觉为0，故选择下一条完整原袋"
+  },
+  "media": {
+    "html": "trajectories/R13/index.html",
+    "video": "trajectories/R13/preview.mp4",
+    "poster": "trajectories/R13/poster.webp",
+    "caption_zh": "完整下载Smart_postal_packages任务原始ROSbag，10.396秒；左头部RGB，右左手5指×72通道压力数组（展平通道顺序，不是手掌几何），色标原始uint8 0–255。以bag时间戳最近邻配对，最大时间差17.5ms。",
+    "preview_seconds": 10.395954371
+  },
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "完整发布数据",
+    "explanation_zh": "未找到可可靠汇总的总时长；不以样本数或文件体积推算。",
+    "sources": []
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "validation": "原始schema/数组范围已读取；实际配对关系按数据字段核对；海报人工检查；视频通过ffprobe。",
+    "video_probe": {
+      "width": 960,
+      "height": 420,
+      "duration": "10.395954",
+      "nb_frames": "312"
+    }
+  }
+}

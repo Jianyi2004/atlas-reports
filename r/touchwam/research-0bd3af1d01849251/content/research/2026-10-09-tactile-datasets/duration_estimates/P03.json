@@ -1,0 +1,30 @@
+{
+  "id": "P03",
+  "best_hours": 2.0948194444444446,
+  "low_hours": 1.2953101851851851,
+  "high_hours": 5.692611111111111,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "公开HPT全部pretrain/classification连续episodes，加force/slip独立episodes；sliding只计一次。",
+  "method_zh": "force与slip共401+405=806条，按4秒协议得0.895556小时；paired预训练/分类共86,347个光学时间点，假设20Hz得1.199264小时，主值2.094819小时。paired部分按5–60Hz给敏感性范围。",
+  "assumptions_zh": [
+    "数据结构证明paired样本属于连续episodes；1光学帧与10阵列帧同步，不累加为11倍时长。",
+    "20Hz是根据论文0.2秒输入窗含4光学帧作的规划假设，未证实就是公开预处理序列存储频率；故宽范围并标低置信。",
+    "4秒明确写在force protocol；sliding沿同采集装置且每episode帧数相近，暂假设同样4秒，实际需全时间戳复核。",
+    "force任务总数含sliding、slip再统计同批sliding；这里只加一次806条。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/AllenBi21/HTT-dataset/raw/main/STATS.json",
+      "evidence": "pretrain 64,603 optical +646,030 array；classification21,744 optical +217,440 array；static401、sliding405 episodes。"
+    },
+    {
+      "url": "https://arxiv.org/html/2606.29948",
+      "evidence": "§4.1时间窗τ=0.2s；Appendix A.1 optical输入2 tubelets×2 frames；Appendix D Force per-episode protocol 4-second duration。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方公开数据入口可匿名访问。",
+  "reported_protocol_subtotal_hours": 0.8955555555555555,
+  "checked_at": "2026-10-19"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "R09",
+  "best_hours": 4.21156045751634,
+  "low_hours": 2.481127450980392,
+  "high_hours": 7.672426470588235,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "UniT作者声明发布的三类原始数据：550条操作示范、15,685帧表征数据、11,340帧USB姿态数据；不再计YCB-Sight复用。",
+  "method_zh": "操作：allenkey170条合计1.069722h，按550/170外推为3.460866h（跨任务均值0.5–2倍）。表征：论文15,685帧/10Hz=0.435694h；USB姿态：11,340帧/10Hz=0.315000h。合计4.211560h；后两项为论文明确数量/频率换算，不是新增假设帧数。",
+  "assumptions_zh": [
+    "操作部分200挂鸡腿+180薯片+170六角扳手；仅allenkey任务逐条时间戳已审计，其余操作时间仍为跨任务估计。",
+    "论文表征数据为Allen key10,854帧、small ball4,831帧，固定10Hz；USB姿态训练10,111帧+测试1,229帧，固定10Hz。",
+    "3D与6D pose是同一USB姿态采集的不同预测任务，仅计一次；论文YCB-Sight分类的240图属于R06复用，排除。",
+    "README明确表征、手内姿态、操作三类均已发布；后两类Drive文件本次未逐项下载清点，依作者声明/论文规模计入，不能称文件完整性已验证。",
+    "N/fps换算按记录长度计，未额外外推未报告的重建展示图或评测视频；FTP Unit/Unit_Bimanual等转换副本不再次累加。"
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/ZhengtongXu/UniT",
+      "evidence": "官方README逐任务200/180/170demonstrations。"
+    },
+    {
+      "url": "https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset/tree/main/Unit",
+      "evidence": "allenkey_insertion全170条时间戳审计。"
+    },
+    {
+      "url": "https://arxiv.org/html/2408.06481",
+      "evidence": "IV-B：10Hz采集、Allen key10,854images、ball4,831images；VI-A：USB姿态10Hz，训练10,111+测试1,229；3D/6D共享采集；YCB-Sight为复用数据。"
+    }
+  ],
+  "availability": "mirror",
+  "availability_note_zh": "操作样本已从FTP公开转换包下载；作者README声明三类数据均在公开Drive发布，表征/姿态部分本次未逐文件确认。",
+  "components_hours": {
+    "manipulation_estimated": 3.4608660130718953,
+    "representation_reported_count_rate": 0.43569444444444444,
+    "usb_pose_reported_count_rate": 0.315
+  },
+  "release_scope_verified": false,
+  "audit_files": [
+    "https://arxiv.org/html/2408.06481"
+  ],
+  "checked_at": "2026-10-19"
+}

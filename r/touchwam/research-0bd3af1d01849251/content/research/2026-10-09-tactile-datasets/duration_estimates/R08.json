@@ -1,0 +1,41 @@
+{
+  "id": "R08",
+  "best_hours": 1.0034953703703704,
+  "low_hours": 1.0034953703703704,
+  "high_hours": 1.9061278703703703,
+  "kind": "metadata",
+  "confidence": "high",
+  "scope_zh": "RDP三任务full操作集190条；另40个触觉表征视频与操作集是否重叠待核实，仅进入上界。",
+  "method_zh": "三个downsample2的action.shape共43,351帧÷12Hz=1.003495h，作为主值与下界。另40个MP4 mvhd时长合计3,249.477s=0.902633h；无法证明独立采集，只有在全部不重叠情景下上界才为1.906128h。",
+  "assumptions_zh": [
+    "官方代码说明原始24fps、downsample2对应12fps；N/fps为传感器记录长度换算，真实首尾跨度会有每条不超过约一帧的端点差异。",
+    "mini/raw/downsample1/downsample2是相同采集的不同表示，仅计一次。",
+    "数据卡只说明表征视频用于PCA训练，没有证明与操作集完全独立；主值不累加这0.902633h。",
+    "高置信度指190条操作范围的元数据换算，上界是额外视频全独立的条件情景。"
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/xiaoxiaoxh/reactive_diffusion_policy#data-postprocessing",
+      "evidence": "官方README说明24fps采集、12fps对应downsample2。"
+    },
+    {
+      "url": "https://huggingface.co/datasets/WendiChen/reactive_diffusion_policy_dataset",
+      "evidence": "三ZIP中央目录和.zarray已读取：lift50/11690帧，peel60/12927，wipe80/18734；40个MP4头已逐个审计。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "公开下载入口已核查，已有真实样本下载。",
+  "components_hours": {
+    "manipulation": 1.0034953703703704,
+    "representation_video_streams": 0.9026325
+  },
+  "audit_files": [
+    "duration_estimates/work_robot/R08_lift_v2.json",
+    "duration_estimates/work_robot/R08_peel_v3.json",
+    "duration_estimates/work_robot/R08_wipe_v1.5.json",
+    "duration_estimates/work_robot/R08_embedding_video_durations.json"
+  ],
+  "unverified_additional_hours": 0.9026325,
+  "additional_scope_status": "independence_not_verified",
+  "checked_at": "2026-10-19"
+}

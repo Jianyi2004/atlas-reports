@@ -1,0 +1,54 @@
+{
+  "id": "R15",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "source_url": "https://www.modelscope.cn/datasets/OpenLoong-Community/visuo-tactile",
+    "local_raw_paths": [
+      "trajectory_work/R15/episode_selected.h5"
+    ],
+    "downloaded_bytes": 151013736,
+    "sha256": {
+      "trajectory_work/R15/episode_selected.h5": "82710372271060f006997c1bab57bd4d1ca88c8a56246c76cf757e654e7042b1"
+    },
+    "name": "使用润滑油瓶滴油至轴承/D-WHEEL/s13c30c3652e4616903d8ca2e0ec4706.h5",
+    "download_url": "https://www.modelscope.cn/api/v1/datasets/OpenLoong-Community/visuo-tactile/repo?Revision=master&FilePath=%E4%BD%BF%E7%94%A8%E6%B6%A6%E6%BB%91%E6%B2%B9%E7%93%B6%E6%BB%B4%E6%B2%B9%E8%87%B3%E8%BD%B4%E6%89%BF%2FD-WHEEL%2Fs13c30c3652e4616903d8ca2e0ec4706.h5",
+    "complete_episode": true,
+    "frames": 709,
+    "fps": 30,
+    "duration_seconds": 23.599999764,
+    "duration_method": "nanosecond timestamps span",
+    "modalities": [
+      "head RGB",
+      "optical tactile"
+    ],
+    "sync": "official metadata aligned_to_30_fps; same indices",
+    "notes": "entire trajectory selected RGB+tactile streams, other modalities omitted"
+  },
+  "media": {
+    "html": "trajectories/R15/index.html",
+    "video": "trajectories/R15/preview.mp4",
+    "poster": "trajectories/R15/poster.webp",
+    "caption_zh": "从官方原始HDF5完整抽取709帧头部RGB与左夹爪左指触觉流，任务“使用润滑油瓶滴油至轴承”。metadata明确aligned_to_30_fps，timestamp为纳秒、跨度23.600秒；每2帧展示1帧。只下载选定两路与元数据，未下载其它相机/深度/关节字段。",
+    "preview_seconds": 23.666666666666668
+  },
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "完整发布数据",
+    "explanation_zh": "原数据metadata可逐episode统计时长；本次仅核实23.600秒样例，16TB文件体积不能换算为小时。",
+    "sources": []
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "validation": "原始schema/数组范围已读取；实际配对关系按数据字段核对；海报人工检查；视频通过ffprobe。",
+    "video_probe": {
+      "width": 960,
+      "height": 420,
+      "duration": "23.666667",
+      "nb_frames": "355"
+    }
+  }
+}

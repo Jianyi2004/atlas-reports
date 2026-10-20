@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>EgoTouch | arrange pillow</title><style>body{margin:0;background:#101820;color:#e5eef8;font:16px/1.7 system-ui;padding:20px;max-width:1160px}video{width:100%;max-height:80vh;background:black}a{color:#64d5cc}h1{font-size:22px}</style><h1>EgoTouch | arrange pillow</h1><video controls preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video><p>EgoTouch Home/arrange_pillow/20260412_101136_379：完整1652帧、55.067秒chest视频和双手21×21处理压力网格，按30fps等长逐帧对齐。展示的是pressure_grids.npz中处理后的网格（含基线校正/归一化），不是标定牛顿力，也不等同原始传感器几何；预览10fps。</p><p><a href="https://huggingface.co/datasets/zhouzhoujy/EgoTouch" target="_blank">原始数据来源</a> · <a href="preview.mp4" download>下载可视化 MP4</a></p></html><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

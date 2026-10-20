@@ -1,0 +1,7 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Humanoid Everyday | episode 0</title><style>body{background:#10202b;color:#eef6fb;font:16px system-ui;max-width:1100px;margin:25px auto;padding:16px}video,img{width:100%;height:auto}p{line-height:1.7}a{color:#86dcff}</style><h2>Humanoid Everyday | episode 0</h2><video controls preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video><p>完整episode_000000：515帧、30Hz，样例时间戳跨度17.134秒。左为同步ego RGB，右为18×4原始触觉数组（行是sensor_id，列是字段，不代表手掌几何）；含NaN及约30000/101000基线，灰色为NaN，未标定为牛顿。展示每3帧取1帧。</p><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

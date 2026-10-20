@@ -1,0 +1,25 @@
+{
+  "id": "R13",
+  "best_hours": 6.89031892226411,
+  "low_hours": 3.445159461132055,
+  "high_hours": 13.78063784452822,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "LET-Dex当前公开714个真机触觉ROSbag，不包括整个LET平台未发布数据。",
+  "method_zh": "公开714个ROSbag合计545.7GB；以完整实测sample228,702,187bytes/10.395954371s标定秒/字节，再乘全库字节数。",
+  "assumptions_zh": [
+    "ROSbag字节率受图像压缩、模态和事件频率影响，不能把体积直接当时长；这里只用真实时间锚点作有条件外推。",
+    "范围为标定字节率0.5–2倍的敏感性分析。",
+    "其中至少发现一个全零触觉bag，未逐条筛查非零接触比例，主值为有触觉通道的录制跨度。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/LejuRobotics/LET-Dex-Dataset",
+      "evidence": "完整文件树714个.bag，四类任务；已下载有效接触样例并读ROS时间戳。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "公开下载入口已核查，已有真实样本下载。",
+  "audit_samples": [],
+  "checked_at": "2026-10-19"
+}

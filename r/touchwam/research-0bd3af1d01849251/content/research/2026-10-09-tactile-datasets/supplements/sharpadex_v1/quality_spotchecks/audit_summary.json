@@ -1,0 +1,2867 @@
+{
+  "revision": "c8032fd891e3f6f19b0d4886793579c1dce5eea7",
+  "sample_count": 2,
+  "total_rows": 1038,
+  "downloaded_bytes": 1859508,
+  "results": [
+    {
+      "task": "hammer_nails",
+      "episode_index": 0,
+      "revision": "c8032fd891e3f6f19b0d4886793579c1dce5eea7",
+      "selection": "first listed season / episode 0; deterministic convenience sample",
+      "rows": 703,
+      "arrays": {
+        "observation.state": {
+          "arrow_type": "fixed_size_list<element: float>[65]",
+          "numpy_dtype": "float32",
+          "shape": [
+            703,
+            65
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": -1.3469659090042114,
+          "max": 1.7342512607574463,
+          "all_zero_columns": [],
+          "constant_columns": [
+            63,
+            64
+          ],
+          "all_zero_rows": 0,
+          "exact_repeat_adjacent_rows": 0
+        },
+        "observation.state.joint_torque": {
+          "arrow_type": "fixed_size_list<element: float>[65]",
+          "numpy_dtype": "float32",
+          "shape": [
+            703,
+            65
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": -27.811500549316406,
+          "max": 32.14350128173828,
+          "all_zero_columns": [
+            14,
+            15,
+            22,
+            23,
+            27,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64
+          ],
+          "constant_columns": [
+            14,
+            15,
+            22,
+            23,
+            27,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64
+          ],
+          "all_zero_rows": 0,
+          "exact_repeat_adjacent_rows": 0
+        },
+        "observation.state.tcp": {
+          "arrow_type": "fixed_size_list<element: float>[24]",
+          "numpy_dtype": "float32",
+          "shape": [
+            703,
+            24
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": -1.2007758617401123,
+          "max": 2.24251127243042,
+          "all_zero_columns": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "constant_columns": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "all_zero_rows": 0,
+          "exact_repeat_adjacent_rows": 0
+        },
+        "action": {
+          "arrow_type": "fixed_size_list<element: float>[65]",
+          "numpy_dtype": "float32",
+          "shape": [
+            703,
+            65
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": -1.3469516038894653,
+          "max": 1.734229326248169,
+          "all_zero_columns": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            61,
+            62
+          ],
+          "constant_columns": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            61,
+            62
+          ],
+          "all_zero_rows": 0,
+          "exact_repeat_adjacent_rows": 0
+        },
+        "observation.state.tcp_pose": {
+          "arrow_type": "fixed_size_list<element: float>[12]",
+          "numpy_dtype": "float32",
+          "shape": [
+            703,
+            12
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": -1.2007758617401123,
+          "max": 2.24251127243042,
+          "all_zero_columns": [],
+          "constant_columns": [],
+          "all_zero_rows": 0,
+          "exact_repeat_adjacent_rows": 0
+        },
+        "action.tcp_pose": {
+          "arrow_type": "fixed_size_list<element: float>[12]",
+          "numpy_dtype": "float32",
+          "shape": [
+            703,
+            12
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": -1.2006261348724365,
+          "max": 2.244288921356201,
+          "all_zero_columns": [],
+          "constant_columns": [],
+          "all_zero_rows": 0,
+          "exact_repeat_adjacent_rows": 8
+        },
+        "subtask_index": {
+          "arrow_type": "int64",
+          "numpy_dtype": "int64",
+          "shape": [
+            703
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": 0.0,
+          "max": 4.0
+        },
+        "observation.tactile": {
+          "arrow_type": "fixed_size_list<element: float>[60]",
+          "numpy_dtype": "float32",
+          "shape": [
+            703,
+            60
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": -8.621161460876465,
+          "max": 36.95414352416992,
+          "all_zero_columns": [],
+          "constant_columns": [],
+          "all_zero_rows": 1,
+          "exact_repeat_adjacent_rows": 4
+        },
+        "timestamp": {
+          "arrow_type": "float",
+          "numpy_dtype": "float32",
+          "shape": [
+            703
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": 0.0,
+          "max": 23.399999618530273
+        },
+        "frame_index": {
+          "arrow_type": "int64",
+          "numpy_dtype": "int64",
+          "shape": [
+            703
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": 0.0,
+          "max": 702.0
+        },
+        "episode_index": {
+          "arrow_type": "int64",
+          "numpy_dtype": "int64",
+          "shape": [
+            703
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "index": {
+          "arrow_type": "int64",
+          "numpy_dtype": "int64",
+          "shape": [
+            703
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": 0.0,
+          "max": 702.0
+        },
+        "task_index": {
+          "arrow_type": "int64",
+          "numpy_dtype": "int64",
+          "shape": [
+            703
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "state_action_comparison": {
+        "equal_cell_fraction": 0.09035999562315351,
+        "equal_complete_rows": 0,
+        "mean_absolute_difference": 0.007322845224452423,
+        "max_absolute_difference": 0.9704405665397644,
+        "different_dimensions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64
+        ],
+        "per_dimension_mean_abs_difference": [
+          1.0703400222539562e-06,
+          2.6683888767725373e-06,
+          8.140421693728625e-07,
+          1.2485604537160772e-06,
+          3.066184171402607e-07,
+          8.841020029944342e-07,
+          1.1416875451252097e-06,
+          0.006299939602719432,
+          0.0006706021386821347,
+          0.0036464306644454153,
+          0.00012741274852669967,
+          0.002739596848970923,
+          0.00046808460309530526,
+          0.003857424329359556,
+          0.0028549341837959008,
+          0.00166443293165034,
+          0.0005618515045211185,
+          0.008696632001384732,
+          0.0027742295129857906,
+          0.0015490931322318562,
+          0.00022812332062677984,
+          0.009629062170250233,
+          0.0026666381168490537,
+          0.0016232923577058727,
+          0.006887655568098488,
+          0.0040698304943274045,
+          0.0005882198090703462,
+          0.006224825802082951,
+          0.0015976160799800968,
+          0.0021274284821316326,
+          0.010597373903391202,
+          0.0022066275006915517,
+          0.011999945806744766,
+          0.02933745835622929,
+          0.011396979576620574,
+          0.023598285444255702,
+          0.0244905074997401,
+          0.01003898689624354,
+          0.049617730673544094,
+          0.032208674841336535,
+          0.007204368344215334,
+          0.030233188837655366,
+          0.010372870382437461,
+          0.009164673602804648,
+          0.008091539801856845,
+          0.019229182894679467,
+          0.0034829221648388646,
+          0.00765178112676142,
+          0.006056627083621432,
+          0.022772665521736717,
+          0.005957705482207457,
+          0.010337962262904746,
+          0.006312519572721596,
+          0.011720698045231702,
+          0.018177700669148335,
+          0.004693301289468529,
+          0.009168029170626427,
+          0.00827068922551717,
+          3.114872602785634e-06,
+          3.3743181404992833e-06,
+          1.8970895118767642e-06,
+          1.3774187756741385e-05,
+          2.1820495456223978e-06,
+          3.825013099959372e-06,
+          4.28593853968136e-06
+        ]
+      },
+      "tcp_pose_action_observation_comparison": {
+        "equal_cell_fraction": 0.021692745376955903,
+        "equal_complete_rows": 0,
+        "mean_absolute_difference": 0.006105005981809028,
+        "max_absolute_difference": 0.18481546640396118,
+        "different_dimensions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "per_dimension_mean_abs_difference": [
+          4.165033527661862e-06,
+          4.0877509761501e-06,
+          9.301207313157756e-06,
+          1.603339508620977e-05,
+          1.2289070303036512e-05,
+          1.6582130877086483e-05,
+          0.001841559052297774,
+          0.004016628899581063,
+          0.001798136135931544,
+          0.027763745438832137,
+          0.010062729990160143,
+          0.02771481367682238
+        ]
+      },
+      "tcp_pose_duplicated_observation_check": {
+        "equal_cell_fraction": 1.0,
+        "equal_complete_rows": 703,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "different_dimensions": [],
+        "per_dimension_mean_abs_difference": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "tactile": {
+        "dimensions": 60,
+        "all_zero_frame_indices": [
+          0
+        ],
+        "repeated_adjacent_pair_second_frame_indices": [
+          244,
+          248,
+          437,
+          646
+        ],
+        "all_dimensions_change_over_episode": true,
+        "non_integer_value_fraction": 0.9985775248933144,
+        "channel_stats": [
+          {
+            "index": 0,
+            "name": "left_thumb_fx",
+            "min": -0.014936961233615875,
+            "max": 0.004298537503927946,
+            "std": 0.002217914452380118,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 693,
+            "changed_adjacent_pairs_excluding_first_frame": 692
+          },
+          {
+            "index": 1,
+            "name": "left_thumb_fy",
+            "min": -4.145794082432985e-05,
+            "max": 0.02088165283203125,
+            "std": 0.0034293701750117292,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 693,
+            "changed_adjacent_pairs_excluding_first_frame": 692
+          },
+          {
+            "index": 2,
+            "name": "left_thumb_fz",
+            "min": -8.961875573731959e-05,
+            "max": 0.059068139642477036,
+            "std": 0.010026680738587245,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 693,
+            "changed_adjacent_pairs_excluding_first_frame": 692
+          },
+          {
+            "index": 3,
+            "name": "left_thumb_tx",
+            "min": -0.0012481780722737312,
+            "max": 1.6742260413593613e-06,
+            "std": 0.0002098063259265783,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 693,
+            "changed_adjacent_pairs_excluding_first_frame": 692
+          },
+          {
+            "index": 4,
+            "name": "left_thumb_ty",
+            "min": -1.769602022250183e-05,
+            "max": 0.00020866734848823398,
+            "std": 1.8808271547401657e-05,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 693,
+            "changed_adjacent_pairs_excluding_first_frame": 692
+          },
+          {
+            "index": 5,
+            "name": "left_thumb_tz",
+            "min": -0.0003358814283274114,
+            "max": 6.615487109229434e-06,
+            "std": 5.055205778364366e-05,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 693,
+            "changed_adjacent_pairs_excluding_first_frame": 692
+          },
+          {
+            "index": 6,
+            "name": "left_index_fx",
+            "min": -0.007167564705014229,
+            "max": 0.002801697701215744,
+            "std": 0.0008958082828151716,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 692,
+            "changed_adjacent_pairs_excluding_first_frame": 691
+          },
+          {
+            "index": 7,
+            "name": "left_index_fy",
+            "min": -4.211017585475929e-05,
+            "max": 0.022860947996377945,
+            "std": 0.00221283016773069,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 692,
+            "changed_adjacent_pairs_excluding_first_frame": 691
+          },
+          {
+            "index": 8,
+            "name": "left_index_fz",
+            "min": -9.579515608493239e-05,
+            "max": 0.06771305203437805,
+            "std": 0.006480878042820875,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 692,
+            "changed_adjacent_pairs_excluding_first_frame": 691
+          },
+          {
+            "index": 9,
+            "name": "left_index_tx",
+            "min": -0.0014369847485795617,
+            "max": 1.8041160956272506e-06,
+            "std": 0.00011003521694495034,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 692,
+            "changed_adjacent_pairs_excluding_first_frame": 691
+          },
+          {
+            "index": 10,
+            "name": "left_index_ty",
+            "min": -6.369651964632794e-05,
+            "max": 0.00017675872368272394,
+            "std": 2.3594876179853793e-05,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 692,
+            "changed_adjacent_pairs_excluding_first_frame": 691
+          },
+          {
+            "index": 11,
+            "name": "left_index_tz",
+            "min": -0.0001692670484771952,
+            "max": 8.741472811379936e-06,
+            "std": 1.7855216400087056e-05,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 692,
+            "changed_adjacent_pairs_excluding_first_frame": 691
+          },
+          {
+            "index": 12,
+            "name": "left_middle_fx",
+            "min": -0.006416133604943752,
+            "max": 0.0034157256595790386,
+            "std": 0.0009290168274302192,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 694,
+            "changed_adjacent_pairs_excluding_first_frame": 693
+          },
+          {
+            "index": 13,
+            "name": "left_middle_fy",
+            "min": -4.72318242827896e-05,
+            "max": 0.013347077183425426,
+            "std": 0.0017416307045000552,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 694,
+            "changed_adjacent_pairs_excluding_first_frame": 693
+          },
+          {
+            "index": 14,
+            "name": "left_middle_fz",
+            "min": -0.00010356288112234324,
+            "max": 0.037841539829969406,
+            "std": 0.005041167302969307,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 694,
+            "changed_adjacent_pairs_excluding_first_frame": 693
+          },
+          {
+            "index": 15,
+            "name": "left_middle_tx",
+            "min": -0.0007538636564277112,
+            "max": 1.9339438495080685e-06,
+            "std": 8.342307833866603e-05,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 694,
+            "changed_adjacent_pairs_excluding_first_frame": 693
+          },
+          {
+            "index": 16,
+            "name": "left_middle_ty",
+            "min": -3.89680644730106e-05,
+            "max": 9.375187801197171e-05,
+            "std": 1.462085387185785e-05,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 694,
+            "changed_adjacent_pairs_excluding_first_frame": 693
+          },
+          {
+            "index": 17,
+            "name": "left_middle_tz",
+            "min": -0.000149384984979406,
+            "max": 3.1689829484093934e-05,
+            "std": 1.4581743016837396e-05,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 694,
+            "changed_adjacent_pairs_excluding_first_frame": 693
+          },
+          {
+            "index": 18,
+            "name": "left_ring_fx",
+            "min": -0.016705088317394257,
+            "max": 0.008008877746760845,
+            "std": 0.0022414773693216973,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 19,
+            "name": "left_ring_fy",
+            "min": -3.472249227343127e-05,
+            "max": 0.019580500200390816,
+            "std": 0.003411914854680026,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 20,
+            "name": "left_ring_fz",
+            "min": -7.577960786875337e-05,
+            "max": 0.05821631848812103,
+            "std": 0.009963497710816198,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 21,
+            "name": "left_ring_tx",
+            "min": -0.0010384446941316128,
+            "max": 1.4055369774723658e-06,
+            "std": 0.00017573363028261884,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 22,
+            "name": "left_ring_ty",
+            "min": -1.1940323020098731e-05,
+            "max": 0.00024898204719647765,
+            "std": 2.294698276024937e-05,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 23,
+            "name": "left_ring_tz",
+            "min": -0.0003408772172406316,
+            "max": 7.615399226779118e-05,
+            "std": 4.403458338117107e-05,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 24,
+            "name": "left_little_fx",
+            "min": -0.011470742523670197,
+            "max": 0.0015749471494928002,
+            "std": 0.0009934233724523767,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 25,
+            "name": "left_little_fy",
+            "min": -4.608618837664835e-05,
+            "max": 0.019115209579467773,
+            "std": 0.0020462928188327415,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 26,
+            "name": "left_little_fz",
+            "min": -0.00010341133020119742,
+            "max": 0.05507705360651016,
+            "std": 0.005890961239184948,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 27,
+            "name": "left_little_tx",
+            "min": -0.001083637704141438,
+            "max": 1.9320534647704335e-06,
+            "std": 0.00010658722619702655,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 28,
+            "name": "left_little_ty",
+            "min": -7.063652446959168e-05,
+            "max": 0.00012010529462713748,
+            "std": 1.924211257609141e-05,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 29,
+            "name": "left_little_tz",
+            "min": -0.00023219987633638084,
+            "max": 7.550110694864998e-06,
+            "std": 2.084339886014431e-05,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 30,
+            "name": "right_thumb_fx",
+            "min": -4.197567462921143,
+            "max": 12.276446342468262,
+            "std": 2.0746547393505925,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 31,
+            "name": "right_thumb_fy",
+            "min": -3.4059674362652004e-05,
+            "max": 28.631418228149414,
+            "std": 6.660956860913647,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 32,
+            "name": "right_thumb_fz",
+            "min": -7.77592504164204e-05,
+            "max": 36.95414352416992,
+            "std": 10.92861687866541,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 33,
+            "name": "right_thumb_tx",
+            "min": -0.4831114411354065,
+            "max": 1.5061328895171755e-06,
+            "std": 0.1410004765755171,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 34,
+            "name": "right_thumb_ty",
+            "min": -0.07103320211172104,
+            "max": 0.041853439062833786,
+            "std": 0.02604407234650732,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 35,
+            "name": "right_thumb_tz",
+            "min": -0.06131943315267563,
+            "max": 0.18584561347961426,
+            "std": 0.037514726505541975,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 36,
+            "name": "right_index_fx",
+            "min": -8.621161460876465,
+            "max": 0.043394096195697784,
+            "std": 2.808236072048635,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 37,
+            "name": "right_index_fy",
+            "min": -2.990882396697998,
+            "max": 3.602780342102051,
+            "std": 1.1353194605322359,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 38,
+            "name": "right_index_fz",
+            "min": -7.739714055787772e-05,
+            "max": 13.067024230957031,
+            "std": 5.418106709467052,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 39,
+            "name": "right_index_tx",
+            "min": -0.22786562144756317,
+            "max": 1.5311800325434888e-06,
+            "std": 0.08678316515383143,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 40,
+            "name": "right_index_ty",
+            "min": -0.04311259835958481,
+            "max": 0.004593790043145418,
+            "std": 0.014098572470750598,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 41,
+            "name": "right_index_tz",
+            "min": -0.15864360332489014,
+            "max": 0.0010911320568993688,
+            "std": 0.04877960079344757,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 42,
+            "name": "right_middle_fx",
+            "min": -2.9489102363586426,
+            "max": 0.02135675586760044,
+            "std": 0.6651888352358951,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 683,
+            "changed_adjacent_pairs_excluding_first_frame": 682
+          },
+          {
+            "index": 43,
+            "name": "right_middle_fy",
+            "min": -3.188381379004568e-05,
+            "max": 2.8506088256835938,
+            "std": 0.6184675413932997,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 683,
+            "changed_adjacent_pairs_excluding_first_frame": 682
+          },
+          {
+            "index": 44,
+            "name": "right_middle_fz",
+            "min": -7.073562301229686e-05,
+            "max": 3.3715784549713135,
+            "std": 0.6998496452756731,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 683,
+            "changed_adjacent_pairs_excluding_first_frame": 682
+          },
+          {
+            "index": 45,
+            "name": "right_middle_tx",
+            "min": -0.038335688412189484,
+            "max": 1.3506910363503266e-06,
+            "std": 0.007740586801711829,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 683,
+            "changed_adjacent_pairs_excluding_first_frame": 682
+          },
+          {
+            "index": 46,
+            "name": "right_middle_ty",
+            "min": -0.0034595131874084473,
+            "max": 0.0028556620236486197,
+            "std": 0.0007338728600955066,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 683,
+            "changed_adjacent_pairs_excluding_first_frame": 682
+          },
+          {
+            "index": 47,
+            "name": "right_middle_tz",
+            "min": -0.033664293587207794,
+            "max": 0.000805145944468677,
+            "std": 0.006919955055308094,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 683,
+            "changed_adjacent_pairs_excluding_first_frame": 682
+          },
+          {
+            "index": 48,
+            "name": "right_ring_fx",
+            "min": -5.968533992767334,
+            "max": 0.03244442120194435,
+            "std": 1.5068520371815626,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 49,
+            "name": "right_ring_fy",
+            "min": -0.013336261734366417,
+            "max": 11.769808769226074,
+            "std": 2.3047458803184293,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 50,
+            "name": "right_ring_fz",
+            "min": -8.16495085018687e-05,
+            "max": 25.864118576049805,
+            "std": 4.962924293596389,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 51,
+            "name": "right_ring_tx",
+            "min": -0.3037095367908478,
+            "max": 1.533119757368695e-06,
+            "std": 0.05737016647311534,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 52,
+            "name": "right_ring_ty",
+            "min": -0.034595467150211334,
+            "max": 0.009181801229715347,
+            "std": 0.005855647733744971,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 53,
+            "name": "right_ring_tz",
+            "min": -0.06080220267176628,
+            "max": 0.00047371393884532154,
+            "std": 0.01747885976974654,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 691,
+            "changed_adjacent_pairs_excluding_first_frame": 690
+          },
+          {
+            "index": 54,
+            "name": "right_little_fx",
+            "min": -1.5183351039886475,
+            "max": 0.0022352254018187523,
+            "std": 0.28889190647528296,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 694,
+            "changed_adjacent_pairs_excluding_first_frame": 693
+          },
+          {
+            "index": 55,
+            "name": "right_little_fy",
+            "min": -2.9916971470811404e-05,
+            "max": 5.295978546142578,
+            "std": 0.5975208156984932,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 694,
+            "changed_adjacent_pairs_excluding_first_frame": 693
+          },
+          {
+            "index": 56,
+            "name": "right_little_fz",
+            "min": -6.537765148095787e-05,
+            "max": 5.747195243835449,
+            "std": 0.6779458181854838,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 694,
+            "changed_adjacent_pairs_excluding_first_frame": 693
+          },
+          {
+            "index": 57,
+            "name": "right_little_tx",
+            "min": -0.08362997323274612,
+            "max": 1.222247988152958e-06,
+            "std": 0.009989657824920931,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 694,
+            "changed_adjacent_pairs_excluding_first_frame": 693
+          },
+          {
+            "index": 58,
+            "name": "right_little_ty",
+            "min": -0.010514607653021812,
+            "max": 0.0026550600305199623,
+            "std": 0.0012800233008147554,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 694,
+            "changed_adjacent_pairs_excluding_first_frame": 693
+          },
+          {
+            "index": 59,
+            "name": "right_little_tz",
+            "min": -0.030229074880480766,
+            "max": 0.0017429767176508904,
+            "std": 0.004828309358239354,
+            "nonzero_fraction": 0.9985775248933144,
+            "changed_adjacent_pairs": 694,
+            "changed_adjacent_pairs_excluding_first_frame": 693
+          }
+        ]
+      },
+      "timing": {
+        "metadata_fps": 30,
+        "timestamp_start": 0.0,
+        "timestamp_end": 23.399999618530273,
+        "timestamp_span_seconds": 23.399999618530273,
+        "frame_coverage_seconds": 23.433333333333334,
+        "strictly_monotonic": true,
+        "delta_min_seconds": 0.03333282470703125,
+        "delta_max_seconds": 0.03333473205566406,
+        "delta_median_seconds": 0.03333330154418945,
+        "max_abs_timestamp_minus_frame_index_over_fps": 8.900960288826809e-07,
+        "frame_index_contiguous_zero_based": true,
+        "constant_episode_index": [
+          0
+        ],
+        "no_original_hardware_timestamps_in_parquet": true
+      },
+      "language": {
+        "annotation_num_frames": 703,
+        "episode_length": 703,
+        "lengths_match_parquet": true,
+        "global_text_present": true,
+        "task_lookup_equals_global_for_all_frames": true,
+        "tags": {
+          "task_name": "Hammer Nails",
+          "task_instruction": "Pick up the hammer with the right hand. Hammer down the first nail with the right hand. Then hammer down the second nail with the right hand. Finally, place the hammer back on the table.",
+          "scene_description": "A hammer and two nails are placed on the table. The robot needs to pick up the hammer, drive the first nail down, then drive the second nail down, and finally place the hammer back.",
+          "success_criteria": "Both nails are hammered down securely, and the hammer is placed back stably on the table.",
+          "score": "S",
+          "SOP": "V1.0"
+        },
+        "phase_covered_frames": 638,
+        "phase_coverage_fraction": 0.9075391180654339,
+        "uncovered_ranges_inclusive": [
+          [
+            638,
+            702
+          ]
+        ],
+        "overlap_frames": 0,
+        "uncovered_subtask_indices": [
+          4
+        ],
+        "uncovered_lookup_equals_global": true,
+        "segments": [
+          {
+            "id": "subtask-001",
+            "start_step": 0,
+            "end_step": 287,
+            "inclusive_frame_count": 288,
+            "text": "Pick up the hammer from the table with the right hand. | Skill: pick",
+            "task_skill": "pick",
+            "actual_subtask_indices": [
+              0
+            ],
+            "all_rows_lookup_text_equals_segment_text": true,
+            "start_in_bounds": true,
+            "end_in_bounds": true
+          },
+          {
+            "id": "subtask-002",
+            "start_step": 288,
+            "end_step": 418,
+            "inclusive_frame_count": 131,
+            "text": "Hammer down the first nail with the right hand. | Skill: press",
+            "task_skill": "press",
+            "actual_subtask_indices": [
+              1
+            ],
+            "all_rows_lookup_text_equals_segment_text": true,
+            "start_in_bounds": true,
+            "end_in_bounds": true
+          },
+          {
+            "id": "subtask-003",
+            "start_step": 419,
+            "end_step": 534,
+            "inclusive_frame_count": 116,
+            "text": "Hammer down the second nail with the right hand. | Skill: press",
+            "task_skill": "press",
+            "actual_subtask_indices": [
+              2
+            ],
+            "all_rows_lookup_text_equals_segment_text": true,
+            "start_in_bounds": true,
+            "end_in_bounds": true
+          },
+          {
+            "id": "subtask-004",
+            "start_step": 535,
+            "end_step": 637,
+            "inclusive_frame_count": 103,
+            "text": "Place the hammer back on the table with the right hand. | Skill: place",
+            "task_skill": "place",
+            "actual_subtask_indices": [
+              3
+            ],
+            "all_rows_lookup_text_equals_segment_text": true,
+            "start_in_bounds": true,
+            "end_in_bounds": true
+          }
+        ],
+        "subtask_runs": [
+          {
+            "start_frame": 0,
+            "end_frame_inclusive": 287,
+            "subtask_index": 0,
+            "text": "Pick up the hammer from the table with the right hand. | Skill: pick"
+          },
+          {
+            "start_frame": 288,
+            "end_frame_inclusive": 418,
+            "subtask_index": 1,
+            "text": "Hammer down the first nail with the right hand. | Skill: press"
+          },
+          {
+            "start_frame": 419,
+            "end_frame_inclusive": 534,
+            "subtask_index": 2,
+            "text": "Hammer down the second nail with the right hand. | Skill: press"
+          },
+          {
+            "start_frame": 535,
+            "end_frame_inclusive": 637,
+            "subtask_index": 3,
+            "text": "Place the hammer back on the table with the right hand. | Skill: place"
+          },
+          {
+            "start_frame": 638,
+            "end_frame_inclusive": 702,
+            "subtask_index": 4,
+            "text": "Task: Hammer Nails | Instruction: Pick up the hammer with the right hand. Hammer down the first nail with the right hand. Then hammer down the second nail with the right hand. Finally, place the hammer back on the table. | Scene: A hammer and two nails are placed on the table. The robot needs to pick up the hammer, drive the first nail down, then drive the second nail down, and finally place the hammer back. | Success: Both nails are hammered down securely, and the hammer is placed back stably on the table."
+          }
+        ],
+        "boundary_checks": [
+          {
+            "frame_index": 0,
+            "subtask_index": 0,
+            "lookup_text": "Pick up the hammer from the table with the right hand. | Skill: pick",
+            "at_segment_id": "subtask-001",
+            "position": "start"
+          },
+          {
+            "frame_index": 287,
+            "subtask_index": 0,
+            "lookup_text": "Pick up the hammer from the table with the right hand. | Skill: pick",
+            "at_segment_id": "subtask-001",
+            "position": "inclusive_end"
+          },
+          {
+            "frame_index": 288,
+            "subtask_index": 1,
+            "lookup_text": "Hammer down the first nail with the right hand. | Skill: press",
+            "at_segment_id": "subtask-001",
+            "position": "after_end"
+          },
+          {
+            "frame_index": 288,
+            "subtask_index": 1,
+            "lookup_text": "Hammer down the first nail with the right hand. | Skill: press",
+            "at_segment_id": "subtask-002",
+            "position": "start"
+          },
+          {
+            "frame_index": 418,
+            "subtask_index": 1,
+            "lookup_text": "Hammer down the first nail with the right hand. | Skill: press",
+            "at_segment_id": "subtask-002",
+            "position": "inclusive_end"
+          },
+          {
+            "frame_index": 419,
+            "subtask_index": 2,
+            "lookup_text": "Hammer down the second nail with the right hand. | Skill: press",
+            "at_segment_id": "subtask-002",
+            "position": "after_end"
+          },
+          {
+            "frame_index": 419,
+            "subtask_index": 2,
+            "lookup_text": "Hammer down the second nail with the right hand. | Skill: press",
+            "at_segment_id": "subtask-003",
+            "position": "start"
+          },
+          {
+            "frame_index": 534,
+            "subtask_index": 2,
+            "lookup_text": "Hammer down the second nail with the right hand. | Skill: press",
+            "at_segment_id": "subtask-003",
+            "position": "inclusive_end"
+          },
+          {
+            "frame_index": 535,
+            "subtask_index": 3,
+            "lookup_text": "Place the hammer back on the table with the right hand. | Skill: place",
+            "at_segment_id": "subtask-003",
+            "position": "after_end"
+          },
+          {
+            "frame_index": 535,
+            "subtask_index": 3,
+            "lookup_text": "Place the hammer back on the table with the right hand. | Skill: place",
+            "at_segment_id": "subtask-004",
+            "position": "start"
+          },
+          {
+            "frame_index": 637,
+            "subtask_index": 3,
+            "lookup_text": "Place the hammer back on the table with the right hand. | Skill: place",
+            "at_segment_id": "subtask-004",
+            "position": "inclusive_end"
+          },
+          {
+            "frame_index": 638,
+            "subtask_index": 4,
+            "lookup_text": "Task: Hammer Nails | Instruction: Pick up the hammer with the right hand. Hammer down the first nail with the right hand. Then hammer down the second nail with the right hand. Finally, place the hammer back on the table. | Scene: A hammer and two nails are placed on the table. The robot needs to pick up the hammer, drive the first nail down, then drive the second nail down, and finally place the hammer back. | Success: Both nails are hammered down securely, and the hammer is placed back stably on the table.",
+            "at_segment_id": "subtask-004",
+            "position": "after_end"
+          }
+        ],
+        "end_step_semantics_supported_by_sample": "inclusive; frame end_step maps to current segment, end_step+1 maps to next or global fallback",
+        "index_scope": "lookup-table ID within this season/export, not episode-local segment ID and not a universal skill ID"
+      },
+      "season_metadata_only": {
+        "info_total_episodes": 68,
+        "info_total_frames": 46875,
+        "annotation_rows": 68,
+        "episodes_rows": 68,
+        "annotation_frame_sum": 46875,
+        "episode_length_sum": 46875,
+        "subtask_lookup_rows": 16,
+        "unique_subtask_texts": 15,
+        "task_lookup_rows": 2,
+        "unique_global_task_texts": 1
+      },
+      "declared_but_not_independently_verified": {
+        "status": "passed",
+        "episodes": 68,
+        "frames": 46875,
+        "video_frames": {
+          "observation.images.head_left": 46875,
+          "observation.images.wrist_left": 46875,
+          "observation.images.wrist_right": 46875,
+          "observation.images.head_right": 46875,
+          "observation.images.tactile_deform": 46875,
+          "observation.images.tactile_raw": 46875
+        },
+        "tcp_validation": "Exact float32 equality with each source arm TCP dataset sampled by its own aligned_index",
+        "language_loaded": 68
+      },
+      "modality": {
+        "video": {
+          "head_left": {
+            "original_key": "observation.images.head_left"
+          },
+          "wrist_left": {
+            "original_key": "observation.images.wrist_left"
+          },
+          "wrist_right": {
+            "original_key": "observation.images.wrist_right"
+          },
+          "head_right": {
+            "original_key": "observation.images.head_right"
+          },
+          "tactile_deform": {
+            "original_key": "observation.images.tactile_deform"
+          },
+          "tactile_raw": {
+            "original_key": "observation.images.tactile_raw"
+          }
+        },
+        "annotation": {
+          "human.action.task_description": {
+            "original_key": "task_index"
+          }
+        },
+        "state": {
+          "joints": {
+            "start": 0,
+            "end": 65,
+            "rotation_type": null,
+            "absolute": true,
+            "dtype": "float32",
+            "original_key": "observation.state"
+          },
+          "tcp_pose": {
+            "start": 0,
+            "end": 12,
+            "rotation_type": null,
+            "absolute": true,
+            "dtype": "float32",
+            "original_key": "observation.state.tcp_pose"
+          }
+        },
+        "action": {
+          "joints": {
+            "start": 0,
+            "end": 65,
+            "rotation_type": null,
+            "absolute": true,
+            "dtype": "float32",
+            "original_key": "action"
+          },
+          "tcp_pose": {
+            "start": 0,
+            "end": 12,
+            "rotation_type": null,
+            "absolute": true,
+            "dtype": "float32",
+            "original_key": "action.tcp_pose"
+          }
+        }
+      }
+    },
+    {
+      "task": "insert_plug_into_socket",
+      "episode_index": 0,
+      "revision": "c8032fd891e3f6f19b0d4886793579c1dce5eea7",
+      "selection": "first listed season / episode 0; deterministic convenience sample",
+      "rows": 335,
+      "arrays": {
+        "observation.state": {
+          "arrow_type": "fixed_size_list<element: float>[65]",
+          "numpy_dtype": "float32",
+          "shape": [
+            335,
+            65
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": -1.7262542247772217,
+          "max": 1.6535238027572632,
+          "all_zero_columns": [],
+          "constant_columns": [],
+          "all_zero_rows": 0,
+          "exact_repeat_adjacent_rows": 0
+        },
+        "observation.state.joint_torque": {
+          "arrow_type": "fixed_size_list<element: float>[65]",
+          "numpy_dtype": "float32",
+          "shape": [
+            335,
+            65
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": -29.87700080871582,
+          "max": 36.2400016784668,
+          "all_zero_columns": [
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64
+          ],
+          "constant_columns": [
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64
+          ],
+          "all_zero_rows": 0,
+          "exact_repeat_adjacent_rows": 0
+        },
+        "observation.state.tcp": {
+          "arrow_type": "fixed_size_list<element: float>[24]",
+          "numpy_dtype": "float32",
+          "shape": [
+            335,
+            24
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": -1.788053274154663,
+          "max": 2.014167547225952,
+          "all_zero_columns": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "constant_columns": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "all_zero_rows": 0,
+          "exact_repeat_adjacent_rows": 0
+        },
+        "action": {
+          "arrow_type": "fixed_size_list<element: float>[65]",
+          "numpy_dtype": "float32",
+          "shape": [
+            335,
+            65
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": -1.7262340784072876,
+          "max": 1.691381812095642,
+          "all_zero_columns": [
+            14,
+            18
+          ],
+          "constant_columns": [
+            14,
+            18
+          ],
+          "all_zero_rows": 0,
+          "exact_repeat_adjacent_rows": 0
+        },
+        "observation.state.tcp_pose": {
+          "arrow_type": "fixed_size_list<element: float>[12]",
+          "numpy_dtype": "float32",
+          "shape": [
+            335,
+            12
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": -1.788053274154663,
+          "max": 2.014167547225952,
+          "all_zero_columns": [],
+          "constant_columns": [],
+          "all_zero_rows": 0,
+          "exact_repeat_adjacent_rows": 0
+        },
+        "action.tcp_pose": {
+          "arrow_type": "fixed_size_list<element: float>[12]",
+          "numpy_dtype": "float32",
+          "shape": [
+            335,
+            12
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": -1.7881656885147095,
+          "max": 2.0139944553375244,
+          "all_zero_columns": [],
+          "constant_columns": [],
+          "all_zero_rows": 0,
+          "exact_repeat_adjacent_rows": 0
+        },
+        "subtask_index": {
+          "arrow_type": "int64",
+          "numpy_dtype": "int64",
+          "shape": [
+            335
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": 0.0,
+          "max": 4.0
+        },
+        "observation.tactile": {
+          "arrow_type": "fixed_size_list<element: float>[60]",
+          "numpy_dtype": "float32",
+          "shape": [
+            335,
+            60
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": -2.124734878540039,
+          "max": 24.10345458984375,
+          "all_zero_columns": [],
+          "constant_columns": [],
+          "all_zero_rows": 1,
+          "exact_repeat_adjacent_rows": 2
+        },
+        "timestamp": {
+          "arrow_type": "float",
+          "numpy_dtype": "float32",
+          "shape": [
+            335
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": 0.0,
+          "max": 11.133333206176758
+        },
+        "frame_index": {
+          "arrow_type": "int64",
+          "numpy_dtype": "int64",
+          "shape": [
+            335
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": 0.0,
+          "max": 334.0
+        },
+        "episode_index": {
+          "arrow_type": "int64",
+          "numpy_dtype": "int64",
+          "shape": [
+            335
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "index": {
+          "arrow_type": "int64",
+          "numpy_dtype": "int64",
+          "shape": [
+            335
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": 0.0,
+          "max": 334.0
+        },
+        "task_index": {
+          "arrow_type": "int64",
+          "numpy_dtype": "int64",
+          "shape": [
+            335
+          ],
+          "null_rows": 0,
+          "null_elements": 0,
+          "nan_count": 0,
+          "inf_count": 0,
+          "finite_fraction": 1.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "state_action_comparison": {
+        "equal_cell_fraction": 0.0033065442020665903,
+        "equal_complete_rows": 0,
+        "mean_absolute_difference": 0.03211161732752258,
+        "max_absolute_difference": 1.4406625926494598,
+        "different_dimensions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64
+        ],
+        "per_dimension_mean_abs_difference": [
+          0.01029894636638129,
+          0.0027348005949561277,
+          0.0027719008970011802,
+          0.0006132755706559366,
+          0.00172983040857657,
+          0.01307500387424557,
+          0.00024274480876637929,
+          0.028409272727014413,
+          0.012063638555883332,
+          0.019858986454835133,
+          0.006915030246878516,
+          0.0532424231379557,
+          0.15323595332343187,
+          0.011853128356760048,
+          0.006823115838941798,
+          0.020042740036003683,
+          0.15479961270813955,
+          0.012898828101117657,
+          0.006352356871339812,
+          0.008983727461491614,
+          0.1551299653599845,
+          0.012782647867283937,
+          0.00409819942885148,
+          0.01465211217743414,
+          0.022175343251272815,
+          0.15211771245865124,
+          0.013564377449367738,
+          0.02443643392258282,
+          0.01926422614079497,
+          0.010301997412496539,
+          0.011251388734845973,
+          0.0030495795189906757,
+          0.010004400495272963,
+          0.04877650359906659,
+          0.017445459241191282,
+          0.013023114651476325,
+          0.04689856845774312,
+          0.025571396741529567,
+          0.06134646376316894,
+          0.033545037127406606,
+          0.0331783640545918,
+          0.05331255251458332,
+          0.016140788991535048,
+          0.09376181760010546,
+          0.0029455455412754593,
+          0.11529187825994927,
+          0.011306506615084746,
+          0.012166079343644096,
+          0.03547499959370983,
+          0.14023285619775527,
+          0.011709215486954956,
+          0.02070386357007743,
+          0.035471177255776504,
+          0.015929844376366974,
+          0.15367747259868392,
+          0.012278323394156047,
+          0.026006397738385555,
+          0.060417152035793766,
+          0.00013884199199391836,
+          8.511685613375992e-05,
+          0.0005630902389981853,
+          0.00045461910489285034,
+          0.001103605340524236,
+          0.0034132282128435934,
+          0.005111545235363405
+        ]
+      },
+      "tcp_pose_action_observation_comparison": {
+        "equal_cell_fraction": 0.0,
+        "equal_complete_rows": 0,
+        "mean_absolute_difference": 0.011694989889117064,
+        "max_absolute_difference": 0.6309478580951691,
+        "different_dimensions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "per_dimension_mean_abs_difference": [
+          0.0009406480326581357,
+          0.000456775747128387,
+          0.004171126636106576,
+          0.01293825026768357,
+          0.001996882282086273,
+          0.011966672228343451,
+          0.0012812038855766182,
+          0.0041822090522566835,
+          0.004575543972983289,
+          0.05401660335239774,
+          0.01931619964428802,
+          0.02449776356789603
+        ]
+      },
+      "tcp_pose_duplicated_observation_check": {
+        "equal_cell_fraction": 1.0,
+        "equal_complete_rows": 335,
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "different_dimensions": [],
+        "per_dimension_mean_abs_difference": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "tactile": {
+        "dimensions": 60,
+        "all_zero_frame_indices": [
+          0
+        ],
+        "repeated_adjacent_pair_second_frame_indices": [
+          170,
+          288
+        ],
+        "all_dimensions_change_over_episode": true,
+        "non_integer_value_fraction": 0.9945771144278607,
+        "channel_stats": [
+          {
+            "index": 0,
+            "name": "left_thumb_fx",
+            "min": -0.04236602783203125,
+            "max": 0.0,
+            "std": 0.008429163749184216,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 308,
+            "changed_adjacent_pairs_excluding_first_frame": 307
+          },
+          {
+            "index": 1,
+            "name": "left_thumb_fy",
+            "min": -0.000701904296875,
+            "max": 0.009033203125,
+            "std": 0.0017160922863841334,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 308,
+            "changed_adjacent_pairs_excluding_first_frame": 307
+          },
+          {
+            "index": 2,
+            "name": "left_thumb_fz",
+            "min": -0.002685546875,
+            "max": 0.00640869140625,
+            "std": 0.0014520830943526746,
+            "nonzero_fraction": 0.991044776119403,
+            "changed_adjacent_pairs": 305,
+            "changed_adjacent_pairs_excluding_first_frame": 304
+          },
+          {
+            "index": 3,
+            "name": "left_thumb_tx",
+            "min": -0.00015735626220703125,
+            "max": 0.0004138946533203125,
+            "std": 9.66713337712572e-05,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 308,
+            "changed_adjacent_pairs_excluding_first_frame": 307
+          },
+          {
+            "index": 4,
+            "name": "left_thumb_ty",
+            "min": -0.000518798828125,
+            "max": 5.9604644775390625e-05,
+            "std": 0.00010606748308566041,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 309,
+            "changed_adjacent_pairs_excluding_first_frame": 308
+          },
+          {
+            "index": 5,
+            "name": "left_thumb_tz",
+            "min": -0.00023651123046875,
+            "max": 0.00015115737915039062,
+            "std": 5.754845926543884e-05,
+            "nonzero_fraction": 0.9940298507462687,
+            "changed_adjacent_pairs": 309,
+            "changed_adjacent_pairs_excluding_first_frame": 308
+          },
+          {
+            "index": 6,
+            "name": "left_index_fx",
+            "min": -0.026947021484375,
+            "max": 0.06610107421875,
+            "std": 0.006270272226755717,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 299,
+            "changed_adjacent_pairs_excluding_first_frame": 298
+          },
+          {
+            "index": 7,
+            "name": "left_index_fy",
+            "min": -0.00286865234375,
+            "max": 0.0162353515625,
+            "std": 0.0014540597090616433,
+            "nonzero_fraction": 0.991044776119403,
+            "changed_adjacent_pairs": 294,
+            "changed_adjacent_pairs_excluding_first_frame": 293
+          },
+          {
+            "index": 8,
+            "name": "left_index_fz",
+            "min": -0.00433349609375,
+            "max": 0.00604248046875,
+            "std": 0.0009933300746867595,
+            "nonzero_fraction": 0.9940298507462687,
+            "changed_adjacent_pairs": 294,
+            "changed_adjacent_pairs_excluding_first_frame": 293
+          },
+          {
+            "index": 9,
+            "name": "left_index_tx",
+            "min": -0.00025653839111328125,
+            "max": 0.0014905929565429688,
+            "std": 0.00012280202263746285,
+            "nonzero_fraction": 0.9940298507462687,
+            "changed_adjacent_pairs": 298,
+            "changed_adjacent_pairs_excluding_first_frame": 297
+          },
+          {
+            "index": 10,
+            "name": "left_index_ty",
+            "min": -0.0014281272888183594,
+            "max": 0.0006375312805175781,
+            "std": 0.0001151957338890236,
+            "nonzero_fraction": 0.9940298507462687,
+            "changed_adjacent_pairs": 299,
+            "changed_adjacent_pairs_excluding_first_frame": 298
+          },
+          {
+            "index": 11,
+            "name": "left_index_tz",
+            "min": -0.00031685829162597656,
+            "max": 0.0007975101470947266,
+            "std": 7.47833434641406e-05,
+            "nonzero_fraction": 0.9940298507462687,
+            "changed_adjacent_pairs": 299,
+            "changed_adjacent_pairs_excluding_first_frame": 298
+          },
+          {
+            "index": 12,
+            "name": "left_middle_fx",
+            "min": -0.0074615478515625,
+            "max": 0.015674591064453125,
+            "std": 0.0034307548280713726,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 295,
+            "changed_adjacent_pairs_excluding_first_frame": 294
+          },
+          {
+            "index": 13,
+            "name": "left_middle_fy",
+            "min": -0.002960205078125,
+            "max": 0.0147552490234375,
+            "std": 0.0019990955966590254,
+            "nonzero_fraction": 0.991044776119403,
+            "changed_adjacent_pairs": 292,
+            "changed_adjacent_pairs_excluding_first_frame": 291
+          },
+          {
+            "index": 14,
+            "name": "left_middle_fz",
+            "min": -0.005859375,
+            "max": 0.0045166015625,
+            "std": 0.0021581024296455213,
+            "nonzero_fraction": 0.9880597014925373,
+            "changed_adjacent_pairs": 290,
+            "changed_adjacent_pairs_excluding_first_frame": 289
+          },
+          {
+            "index": 15,
+            "name": "left_middle_tx",
+            "min": 0.0,
+            "max": 0.000904083251953125,
+            "std": 0.00013765345500145468,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 295,
+            "changed_adjacent_pairs_excluding_first_frame": 294
+          },
+          {
+            "index": 16,
+            "name": "left_middle_ty",
+            "min": -0.00098419189453125,
+            "max": 0.0,
+            "std": 0.00014383301362035542,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 293,
+            "changed_adjacent_pairs_excluding_first_frame": 292
+          },
+          {
+            "index": 17,
+            "name": "left_middle_tz",
+            "min": -0.0003612041473388672,
+            "max": 0.0,
+            "std": 6.23313527660344e-05,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 295,
+            "changed_adjacent_pairs_excluding_first_frame": 294
+          },
+          {
+            "index": 18,
+            "name": "left_ring_fx",
+            "min": -0.01000213623046875,
+            "max": 0.00562286376953125,
+            "std": 0.0013017532804690253,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 302,
+            "changed_adjacent_pairs_excluding_first_frame": 301
+          },
+          {
+            "index": 19,
+            "name": "left_ring_fy",
+            "min": -0.0057373046875,
+            "max": 0.0084228515625,
+            "std": 0.0012040407890195949,
+            "nonzero_fraction": 0.9940298507462687,
+            "changed_adjacent_pairs": 302,
+            "changed_adjacent_pairs_excluding_first_frame": 301
+          },
+          {
+            "index": 20,
+            "name": "left_ring_fz",
+            "min": -0.00823974609375,
+            "max": 0.009033203125,
+            "std": 0.0023928785633414635,
+            "nonzero_fraction": 0.9880597014925373,
+            "changed_adjacent_pairs": 299,
+            "changed_adjacent_pairs_excluding_first_frame": 298
+          },
+          {
+            "index": 21,
+            "name": "left_ring_tx",
+            "min": -0.0002231597900390625,
+            "max": 0.0005550384521484375,
+            "std": 0.00011417010216000853,
+            "nonzero_fraction": 0.9940298507462687,
+            "changed_adjacent_pairs": 302,
+            "changed_adjacent_pairs_excluding_first_frame": 301
+          },
+          {
+            "index": 22,
+            "name": "left_ring_ty",
+            "min": -0.0006213188171386719,
+            "max": 0.00014162063598632812,
+            "std": 0.0001013877997430061,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 302,
+            "changed_adjacent_pairs_excluding_first_frame": 301
+          },
+          {
+            "index": 23,
+            "name": "left_ring_tz",
+            "min": -0.0002288818359375,
+            "max": 0.00011491775512695312,
+            "std": 4.348584320914005e-05,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 302,
+            "changed_adjacent_pairs_excluding_first_frame": 301
+          },
+          {
+            "index": 24,
+            "name": "left_little_fx",
+            "min": -0.0026493072509765625,
+            "max": 0.013525009155273438,
+            "std": 0.00155401040557629,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 307,
+            "changed_adjacent_pairs_excluding_first_frame": 306
+          },
+          {
+            "index": 25,
+            "name": "left_little_fy",
+            "min": -0.004058837890625,
+            "max": 0.0049896240234375,
+            "std": 0.001182090344233461,
+            "nonzero_fraction": 0.9940298507462687,
+            "changed_adjacent_pairs": 307,
+            "changed_adjacent_pairs_excluding_first_frame": 306
+          },
+          {
+            "index": 26,
+            "name": "left_little_fz",
+            "min": -0.002685546875,
+            "max": 0.0042724609375,
+            "std": 0.0010548293508825374,
+            "nonzero_fraction": 0.982089552238806,
+            "changed_adjacent_pairs": 303,
+            "changed_adjacent_pairs_excluding_first_frame": 302
+          },
+          {
+            "index": 27,
+            "name": "left_little_tx",
+            "min": -0.00016021728515625,
+            "max": 0.0008544921875,
+            "std": 0.00011979857933945867,
+            "nonzero_fraction": 0.991044776119403,
+            "changed_adjacent_pairs": 305,
+            "changed_adjacent_pairs_excluding_first_frame": 304
+          },
+          {
+            "index": 28,
+            "name": "left_little_ty",
+            "min": -0.0008931159973144531,
+            "max": 7.724761962890625e-05,
+            "std": 0.00011073139287719786,
+            "nonzero_fraction": 0.9940298507462687,
+            "changed_adjacent_pairs": 307,
+            "changed_adjacent_pairs_excluding_first_frame": 306
+          },
+          {
+            "index": 29,
+            "name": "left_little_tz",
+            "min": -0.0003361701965332031,
+            "max": 3.4332275390625e-05,
+            "std": 4.301981162094763e-05,
+            "nonzero_fraction": 0.991044776119403,
+            "changed_adjacent_pairs": 306,
+            "changed_adjacent_pairs_excluding_first_frame": 305
+          },
+          {
+            "index": 30,
+            "name": "right_thumb_fx",
+            "min": -0.0006160736083984375,
+            "max": 7.199913024902344,
+            "std": 2.2281058036453247,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 327,
+            "changed_adjacent_pairs_excluding_first_frame": 326
+          },
+          {
+            "index": 31,
+            "name": "right_thumb_fy",
+            "min": -0.02471923828125,
+            "max": 22.216644287109375,
+            "std": 5.809599864283748,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 327,
+            "changed_adjacent_pairs_excluding_first_frame": 326
+          },
+          {
+            "index": 32,
+            "name": "right_thumb_fz",
+            "min": -0.00177001953125,
+            "max": 19.72998046875,
+            "std": 6.006628922608595,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 326,
+            "changed_adjacent_pairs_excluding_first_frame": 325
+          },
+          {
+            "index": 33,
+            "name": "right_thumb_tx",
+            "min": -0.46024417877197266,
+            "max": 0.000415802001953125,
+            "std": 0.13866101485819046,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 325,
+            "changed_adjacent_pairs_excluding_first_frame": 324
+          },
+          {
+            "index": 34,
+            "name": "right_thumb_ty",
+            "min": -0.023288726806640625,
+            "max": 0.06986618041992188,
+            "std": 0.0063609706884028274,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 330,
+            "changed_adjacent_pairs_excluding_first_frame": 329
+          },
+          {
+            "index": 35,
+            "name": "right_thumb_tz",
+            "min": -4.1961669921875e-05,
+            "max": 0.13824224472045898,
+            "std": 0.04393245953680793,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 327,
+            "changed_adjacent_pairs_excluding_first_frame": 326
+          },
+          {
+            "index": 36,
+            "name": "right_index_fx",
+            "min": -2.124734878540039,
+            "max": 6.385030746459961,
+            "std": 1.1241335061313031,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 329,
+            "changed_adjacent_pairs_excluding_first_frame": 328
+          },
+          {
+            "index": 37,
+            "name": "right_index_fy",
+            "min": -0.0177001953125,
+            "max": 20.47357177734375,
+            "std": 4.833457102734587,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 326,
+            "changed_adjacent_pairs_excluding_first_frame": 325
+          },
+          {
+            "index": 38,
+            "name": "right_index_fz",
+            "min": 0.0,
+            "max": 24.10345458984375,
+            "std": 6.749899521722306,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 323,
+            "changed_adjacent_pairs_excluding_first_frame": 322
+          },
+          {
+            "index": 39,
+            "name": "right_index_tx",
+            "min": -0.3526763916015625,
+            "max": 0.0008687973022460938,
+            "std": 0.10858456117156137,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 328,
+            "changed_adjacent_pairs_excluding_first_frame": 327
+          },
+          {
+            "index": 40,
+            "name": "right_index_ty",
+            "min": -0.036045074462890625,
+            "max": 0.031459808349609375,
+            "std": 0.012892547161662576,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 329,
+            "changed_adjacent_pairs_excluding_first_frame": 328
+          },
+          {
+            "index": 41,
+            "name": "right_index_tz",
+            "min": -0.026288747787475586,
+            "max": 0.11531281471252441,
+            "std": 0.023310473679592318,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 329,
+            "changed_adjacent_pairs_excluding_first_frame": 328
+          },
+          {
+            "index": 42,
+            "name": "right_middle_fx",
+            "min": -0.027568817138671875,
+            "max": 0.027423858642578125,
+            "std": 0.009400142000750148,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 328,
+            "changed_adjacent_pairs_excluding_first_frame": 327
+          },
+          {
+            "index": 43,
+            "name": "right_middle_fy",
+            "min": -0.00616455078125,
+            "max": 0.0091705322265625,
+            "std": 0.0022544544144582636,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 325,
+            "changed_adjacent_pairs_excluding_first_frame": 324
+          },
+          {
+            "index": 44,
+            "name": "right_middle_fz",
+            "min": -0.00457763671875,
+            "max": 0.003173828125,
+            "std": 0.0014968063069558631,
+            "nonzero_fraction": 0.9731343283582089,
+            "changed_adjacent_pairs": 325,
+            "changed_adjacent_pairs_excluding_first_frame": 324
+          },
+          {
+            "index": 45,
+            "name": "right_middle_tx",
+            "min": 0.0,
+            "max": 0.00160980224609375,
+            "std": 0.000271398620025331,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 326,
+            "changed_adjacent_pairs_excluding_first_frame": 325
+          },
+          {
+            "index": 46,
+            "name": "right_middle_ty",
+            "min": -0.0015578269958496094,
+            "max": 0.00016355514526367188,
+            "std": 0.000288477004858359,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 329,
+            "changed_adjacent_pairs_excluding_first_frame": 328
+          },
+          {
+            "index": 47,
+            "name": "right_middle_tz",
+            "min": -0.0006043910980224609,
+            "max": 0.0,
+            "std": 0.00010295264415110889,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 329,
+            "changed_adjacent_pairs_excluding_first_frame": 328
+          },
+          {
+            "index": 48,
+            "name": "right_ring_fx",
+            "min": -0.003734588623046875,
+            "max": 0.34438323974609375,
+            "std": 0.03443915550326271,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 331,
+            "changed_adjacent_pairs_excluding_first_frame": 330
+          },
+          {
+            "index": 49,
+            "name": "right_ring_fy",
+            "min": -0.009613037109375,
+            "max": 0.073150634765625,
+            "std": 0.0066161111901656975,
+            "nonzero_fraction": 0.9940298507462687,
+            "changed_adjacent_pairs": 330,
+            "changed_adjacent_pairs_excluding_first_frame": 329
+          },
+          {
+            "index": 50,
+            "name": "right_ring_fz",
+            "min": -0.00665283203125,
+            "max": 0.06390380859375,
+            "std": 0.004708589971501951,
+            "nonzero_fraction": 0.9940298507462687,
+            "changed_adjacent_pairs": 325,
+            "changed_adjacent_pairs_excluding_first_frame": 324
+          },
+          {
+            "index": 51,
+            "name": "right_ring_tx",
+            "min": -0.0012388229370117188,
+            "max": 0.0011310577392578125,
+            "std": 0.00024002071035782022,
+            "nonzero_fraction": 0.991044776119403,
+            "changed_adjacent_pairs": 327,
+            "changed_adjacent_pairs_excluding_first_frame": 326
+          },
+          {
+            "index": 52,
+            "name": "right_ring_ty",
+            "min": -0.0014100074768066406,
+            "max": 0.0014462471008300781,
+            "std": 0.00026213284859758764,
+            "nonzero_fraction": 0.9940298507462687,
+            "changed_adjacent_pairs": 326,
+            "changed_adjacent_pairs_excluding_first_frame": 325
+          },
+          {
+            "index": 53,
+            "name": "right_ring_tz",
+            "min": -0.0005331039428710938,
+            "max": 0.006147623062133789,
+            "std": 0.0006636522184740993,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 328,
+            "changed_adjacent_pairs_excluding_first_frame": 327
+          },
+          {
+            "index": 54,
+            "name": "right_little_fx",
+            "min": -0.02603912353515625,
+            "max": 0.01537322998046875,
+            "std": 0.00880464511891689,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 331,
+            "changed_adjacent_pairs_excluding_first_frame": 330
+          },
+          {
+            "index": 55,
+            "name": "right_little_fy",
+            "min": -0.008453369140625,
+            "max": 0.005157470703125,
+            "std": 0.0024483276028970827,
+            "nonzero_fraction": 0.9880597014925373,
+            "changed_adjacent_pairs": 331,
+            "changed_adjacent_pairs_excluding_first_frame": 330
+          },
+          {
+            "index": 56,
+            "name": "right_little_fz",
+            "min": -0.0037841796875,
+            "max": 0.0062255859375,
+            "std": 0.0016384292264593038,
+            "nonzero_fraction": 0.9880597014925373,
+            "changed_adjacent_pairs": 328,
+            "changed_adjacent_pairs_excluding_first_frame": 327
+          },
+          {
+            "index": 57,
+            "name": "right_little_tx",
+            "min": -0.0002384185791015625,
+            "max": 0.000774383544921875,
+            "std": 0.00014929336687025767,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 331,
+            "changed_adjacent_pairs_excluding_first_frame": 330
+          },
+          {
+            "index": 58,
+            "name": "right_little_ty",
+            "min": -0.0007100105285644531,
+            "max": 0.0,
+            "std": 0.00012364553948681096,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 330,
+            "changed_adjacent_pairs_excluding_first_frame": 329
+          },
+          {
+            "index": 59,
+            "name": "right_little_tz",
+            "min": -0.0005342960357666016,
+            "max": 0.0,
+            "std": 8.592068353540143e-05,
+            "nonzero_fraction": 0.9970149253731343,
+            "changed_adjacent_pairs": 331,
+            "changed_adjacent_pairs_excluding_first_frame": 330
+          }
+        ]
+      },
+      "timing": {
+        "metadata_fps": 30,
+        "timestamp_start": 0.0,
+        "timestamp_end": 11.133333206176758,
+        "timestamp_span_seconds": 11.133333206176758,
+        "frame_coverage_seconds": 11.166666666666666,
+        "strictly_monotonic": true,
+        "delta_min_seconds": 0.03333282470703125,
+        "delta_max_seconds": 0.033333778381347656,
+        "delta_median_seconds": 0.03333330154418945,
+        "max_abs_timestamp_minus_frame_index_over_fps": 4.4504801444134046e-07,
+        "frame_index_contiguous_zero_based": true,
+        "constant_episode_index": [
+          0
+        ],
+        "no_original_hardware_timestamps_in_parquet": true
+      },
+      "language": {
+        "annotation_num_frames": 335,
+        "episode_length": 335,
+        "lengths_match_parquet": true,
+        "global_text_present": true,
+        "task_lookup_equals_global_for_all_frames": true,
+        "tags": {
+          "task_name": "Plug In Connector",
+          "task_instruction": "Pick up the plug with the right hand, move it above the socket, align it with the socket, and plug it in securely.",
+          "scene_description": "A plug and a socket are placed on the table. The robot needs to pick up the plug and insert it into the socket.",
+          "success_criteria": "The plug is stably inserted into the socket and remains stationary.",
+          "score": "S",
+          "SOP": "V1.0"
+        },
+        "phase_covered_frames": 265,
+        "phase_coverage_fraction": 0.7910447761194029,
+        "uncovered_ranges_inclusive": [
+          [
+            265,
+            334
+          ]
+        ],
+        "overlap_frames": 0,
+        "uncovered_subtask_indices": [
+          4
+        ],
+        "uncovered_lookup_equals_global": true,
+        "segments": [
+          {
+            "id": "subtask-001",
+            "start_step": 0,
+            "end_step": 130,
+            "inclusive_frame_count": 131,
+            "text": "Pick up the plug from the table with the right hand. | Skill: pick",
+            "task_skill": "pick",
+            "actual_subtask_indices": [
+              0
+            ],
+            "all_rows_lookup_text_equals_segment_text": true,
+            "start_in_bounds": true,
+            "end_in_bounds": true
+          },
+          {
+            "id": "subtask-002",
+            "start_step": 131,
+            "end_step": 152,
+            "inclusive_frame_count": 22,
+            "text": "Move the plug above the socket with the right hand. | Skill: move",
+            "task_skill": "move",
+            "actual_subtask_indices": [
+              1
+            ],
+            "all_rows_lookup_text_equals_segment_text": true,
+            "start_in_bounds": true,
+            "end_in_bounds": true
+          },
+          {
+            "id": "subtask-003",
+            "start_step": 153,
+            "end_step": 212,
+            "inclusive_frame_count": 60,
+            "text": "Align the plug with the socket with the right hand. | Skill: align",
+            "task_skill": "align",
+            "actual_subtask_indices": [
+              2
+            ],
+            "all_rows_lookup_text_equals_segment_text": true,
+            "start_in_bounds": true,
+            "end_in_bounds": true
+          },
+          {
+            "id": "subtask-004",
+            "start_step": 213,
+            "end_step": 264,
+            "inclusive_frame_count": 52,
+            "text": "Plug the plug into the socket with the right hand. | Skill: plug",
+            "task_skill": "plug",
+            "actual_subtask_indices": [
+              3
+            ],
+            "all_rows_lookup_text_equals_segment_text": true,
+            "start_in_bounds": true,
+            "end_in_bounds": true
+          }
+        ],
+        "subtask_runs": [
+          {
+            "start_frame": 0,
+            "end_frame_inclusive": 130,
+            "subtask_index": 0,
+            "text": "Pick up the plug from the table with the right hand. | Skill: pick"
+          },
+          {
+            "start_frame": 131,
+            "end_frame_inclusive": 152,
+            "subtask_index": 1,
+            "text": "Move the plug above the socket with the right hand. | Skill: move"
+          },
+          {
+            "start_frame": 153,
+            "end_frame_inclusive": 212,
+            "subtask_index": 2,
+            "text": "Align the plug with the socket with the right hand. | Skill: align"
+          },
+          {
+            "start_frame": 213,
+            "end_frame_inclusive": 264,
+            "subtask_index": 3,
+            "text": "Plug the plug into the socket with the right hand. | Skill: plug"
+          },
+          {
+            "start_frame": 265,
+            "end_frame_inclusive": 334,
+            "subtask_index": 4,
+            "text": "Task: Plug In Connector | Instruction: Pick up the plug with the right hand, move it above the socket, align it with the socket, and plug it in securely. | Scene: A plug and a socket are placed on the table. The robot needs to pick up the plug and insert it into the socket. | Success: The plug is stably inserted into the socket and remains stationary."
+          }
+        ],
+        "boundary_checks": [
+          {
+            "frame_index": 0,
+            "subtask_index": 0,
+            "lookup_text": "Pick up the plug from the table with the right hand. | Skill: pick",
+            "at_segment_id": "subtask-001",
+            "position": "start"
+          },
+          {
+            "frame_index": 130,
+            "subtask_index": 0,
+            "lookup_text": "Pick up the plug from the table with the right hand. | Skill: pick",
+            "at_segment_id": "subtask-001",
+            "position": "inclusive_end"
+          },
+          {
+            "frame_index": 131,
+            "subtask_index": 1,
+            "lookup_text": "Move the plug above the socket with the right hand. | Skill: move",
+            "at_segment_id": "subtask-001",
+            "position": "after_end"
+          },
+          {
+            "frame_index": 131,
+            "subtask_index": 1,
+            "lookup_text": "Move the plug above the socket with the right hand. | Skill: move",
+            "at_segment_id": "subtask-002",
+            "position": "start"
+          },
+          {
+            "frame_index": 152,
+            "subtask_index": 1,
+            "lookup_text": "Move the plug above the socket with the right hand. | Skill: move",
+            "at_segment_id": "subtask-002",
+            "position": "inclusive_end"
+          },
+          {
+            "frame_index": 153,
+            "subtask_index": 2,
+            "lookup_text": "Align the plug with the socket with the right hand. | Skill: align",
+            "at_segment_id": "subtask-002",
+            "position": "after_end"
+          },
+          {
+            "frame_index": 153,
+            "subtask_index": 2,
+            "lookup_text": "Align the plug with the socket with the right hand. | Skill: align",
+            "at_segment_id": "subtask-003",
+            "position": "start"
+          },
+          {
+            "frame_index": 212,
+            "subtask_index": 2,
+            "lookup_text": "Align the plug with the socket with the right hand. | Skill: align",
+            "at_segment_id": "subtask-003",
+            "position": "inclusive_end"
+          },
+          {
+            "frame_index": 213,
+            "subtask_index": 3,
+            "lookup_text": "Plug the plug into the socket with the right hand. | Skill: plug",
+            "at_segment_id": "subtask-003",
+            "position": "after_end"
+          },
+          {
+            "frame_index": 213,
+            "subtask_index": 3,
+            "lookup_text": "Plug the plug into the socket with the right hand. | Skill: plug",
+            "at_segment_id": "subtask-004",
+            "position": "start"
+          },
+          {
+            "frame_index": 264,
+            "subtask_index": 3,
+            "lookup_text": "Plug the plug into the socket with the right hand. | Skill: plug",
+            "at_segment_id": "subtask-004",
+            "position": "inclusive_end"
+          },
+          {
+            "frame_index": 265,
+            "subtask_index": 4,
+            "lookup_text": "Task: Plug In Connector | Instruction: Pick up the plug with the right hand, move it above the socket, align it with the socket, and plug it in securely. | Scene: A plug and a socket are placed on the table. The robot needs to pick up the plug and insert it into the socket. | Success: The plug is stably inserted into the socket and remains stationary.",
+            "at_segment_id": "subtask-004",
+            "position": "after_end"
+          }
+        ],
+        "end_step_semantics_supported_by_sample": "inclusive; frame end_step maps to current segment, end_step+1 maps to next or global fallback",
+        "index_scope": "lookup-table ID within this season/export, not episode-local segment ID and not a universal skill ID"
+      },
+      "season_metadata_only": {
+        "info_total_episodes": 110,
+        "info_total_frames": 42874,
+        "annotation_rows": 110,
+        "episodes_rows": 110,
+        "annotation_frame_sum": 42874,
+        "episode_length_sum": 42874,
+        "subtask_lookup_rows": 5,
+        "unique_subtask_texts": 5,
+        "task_lookup_rows": 1,
+        "unique_global_task_texts": 1
+      },
+      "declared_but_not_independently_verified": {
+        "status": "passed",
+        "episodes": 110,
+        "frames": 42874,
+        "video_frames": {
+          "observation.images.head_left": 42874,
+          "observation.images.wrist_left": 42874,
+          "observation.images.wrist_right": 42874,
+          "observation.images.head_right": 42874,
+          "observation.images.tactile_deform": 42874,
+          "observation.images.tactile_raw": 42874
+        },
+        "tcp_validation": "Exact float32 equality with each source arm TCP dataset sampled by its own aligned_index",
+        "language_loaded": 110
+      },
+      "modality": {
+        "video": {
+          "head_left": {
+            "original_key": "observation.images.head_left"
+          },
+          "wrist_left": {
+            "original_key": "observation.images.wrist_left"
+          },
+          "wrist_right": {
+            "original_key": "observation.images.wrist_right"
+          },
+          "head_right": {
+            "original_key": "observation.images.head_right"
+          },
+          "tactile_deform": {
+            "original_key": "observation.images.tactile_deform"
+          },
+          "tactile_raw": {
+            "original_key": "observation.images.tactile_raw"
+          }
+        },
+        "annotation": {
+          "human.action.task_description": {
+            "original_key": "task_index"
+          }
+        },
+        "state": {
+          "joints": {
+            "start": 0,
+            "end": 65,
+            "rotation_type": null,
+            "absolute": true,
+            "dtype": "float32",
+            "original_key": "observation.state"
+          },
+          "tcp_pose": {
+            "start": 0,
+            "end": 12,
+            "rotation_type": null,
+            "absolute": true,
+            "dtype": "float32",
+            "original_key": "observation.state.tcp_pose"
+          }
+        },
+        "action": {
+          "joints": {
+            "start": 0,
+            "end": 65,
+            "rotation_type": null,
+            "absolute": true,
+            "dtype": "float32",
+            "original_key": "action"
+          },
+          "tcp_pose": {
+            "start": 0,
+            "end": 12,
+            "rotation_type": null,
+            "absolute": true,
+            "dtype": "float32",
+            "original_key": "action.tcp_pose"
+          }
+        }
+      }
+    }
+  ],
+  "limitations_zh": [
+    "仅两个任务各一个episode的方便抽样，不能据此估计全库缺陷率。",
+    "两条都是float32的60D动态数值，不等于已证明牛顿/牛顿米单位、标定准确度或空间压力真值。",
+    "当前info/modality/README未完整给出触觉传感器型号、标定矩阵/误差、坐标系与单位；TCP旋转约定为null。",
+    "只证明同一导出帧上的数值列、均匀时间轴和语言索引一致；未下载视频、未读原始aligned_index/硬件时间戳，不能独立验证视觉—触觉物理同步、延迟、丢帧和插值方式。",
+    "action与observation数值不同，排除了本样例逐元素直接复制；不能单靠差异证明低层控制模式、控制时延或动作因果有效性。",
+    "success_criteria和score=S是标注字段；本次未通过视频独立验证任务成功或分段语义正确性。"
+  ]
+}

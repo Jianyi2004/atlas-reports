@@ -1,0 +1,31 @@
+{
+  "id": "U04",
+  "best_hours": 3.189148148148148,
+  "low_hours": 0.10577777777777778,
+  "high_hours": 9.567444444444446,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "公开6个单臂任务；不额外计未列出的双臂Knife Pulling",
+  "method_zh": "论文表VI六任务Σ(valid demos×avg length)=355029帧；以实际Articulated任务22,848帧替换该任务论文83×403帧，得到344428帧。主假设30Hz；下界仅已审计任务按60Hz，上界全部候选帧按10Hz。",
+  "assumptions_zh": [
+    "表VI avg length按帧数解释；原文表格未明确单位，这是估算假设。",
+    "论文相机60Hz、同步相机30Hz、控制10Hz，但未证明发布数组使用哪一时钟，因此必须给宽范围。",
+    "只有Articulated归档的75条/22,848帧实际核过；其余5任务按论文valid数量估计，不能称全量元数据实算。"
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2504.06156v1",
+      "evidence": "表VI任务valid数量/avg length；同步相机30Hz，GoPro60Hz，控制10Hz。"
+    },
+    {
+      "url": "https://huggingface.co/datasets/chuanyune/ViTaMIn_dataset",
+      "evidence": "当前6个Zarr任务ZIP；实际Articulated75条、22,848帧。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "全部归档列出可下载，已读一个完整episode；全库主值为规划估计。",
+  "checked_at": "2026-10-19",
+  "lower_bound_hours": 0.10577777777777778,
+  "release_scope_verified": false,
+  "coverage_condition_zh": "公开归档及真实样例存在，但全库数量仍使用论文规模或任务表外推；尚未确认全部计入的帧/示范均已发布。"
+}

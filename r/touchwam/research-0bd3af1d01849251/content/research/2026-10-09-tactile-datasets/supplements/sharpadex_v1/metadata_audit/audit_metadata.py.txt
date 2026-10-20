@@ -1,0 +1,77 @@
+#!/usr/bin/env python3
+"""Audit lightweight public trees and all v3.0 meta/info.json; no large media.
+Requests never exceed 4 concurrent workers. Cached successful responses are reused.
+"""
+from pathlib import Path
+import concurrent.futures,collections,datetime,hashlib,json,re,statistics,time
+from urllib.parse import quote,urlsplit,urlunsplit
+import requests
+ROOT=Path(__file__).resolve().parent
+REPO='Sharpa-Robotics/SharpaDex-v1.0'
+API=f'https://hf-mirror.com/api/datasets/{REPO}/tree/main'
+RAW=f'https://hf-mirror.com/datasets/{REPO}/raw/main'
+for n in ['task_trees','infos','responses']:(ROOT/n).mkdir(exist_ok=True)
+def save(p,d):p.write_text(json.dumps(d,ensure_ascii=False,indent=2))
+def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
+def get(url):
+ for retry in range(3):
+  try:
+   r=requests.get(url,timeout=(12,35))
+   if r.status_code==429:
+    wait=min(30,max(3,int(r.headers.get('Retry-After','5'))));time.sleep(wait);continue
+   r.raise_for_status();return r
+  except Exception:
+   if retry==2:raise
+   time.sleep(1+retry)
+ raise RuntimeError('429 after 3 attempts')
+def get_tree(path):
+ out=ROOT/'task_trees'/(path+'.json')
+ if out.exists():return json.loads(out.read_text())
+ rows=[];pages=[];url=API+'/'+quote(path,safe='/')+'?recursive=false&limit=1000'
+ while url:
+  r=get(url);data=r.json();assert isinstance(data,list);rows.extend(data)
+  next_url=r.links.get('next',{}).get('url');pages.append({'url':r.url,'read_at':now(),'status':r.status_code,'bytes':len(r.content),'entries':len(data),'next':next_url})
+  if next_url:
+   q=urlsplit(next_url);url=urlunsplit((q.scheme,'hf-mirror.com',q.path,q.query,q.fragment))
+  else:url=None
+ d={'task':path,'entries':rows,'pages':pages};save(out,d);return d
+def get_info(season):
+ task,sname=season.split('/');key=task+'__'+sname;out=ROOT/'infos'/(key+'.json');meta=ROOT/'responses'/(key+'.json')
+ if out.exists() and meta.exists():return json.loads(meta.read_text())
+ url=RAW+'/'+quote(season,safe='/')+'/lerobot_v3.0/meta/info.json'
+ d={'task':task,'season':sname,'path':season+'/lerobot_v3.0/meta/info.json','url':url,'read_at':now()}
+ try:
+  r=get(url);info=r.json();assert isinstance(info,dict) and 'total_frames' in info and 'fps' in info
+  out.write_bytes(r.content);d.update(status=r.status_code,bytes=len(r.content),sha256=hashlib.sha256(r.content).hexdigest(),repo_commit=r.headers.get('X-Repo-Commit'),etag=r.headers.get('ETag'))
+ except Exception as e:d['error']=str(e)
+ save(meta,d);return d
+
+def main():
+ root=json.loads((ROOT/'root_tree.json').read_text());tasks=sorted(x['path'] for x in root if x['type']=='directory' and x['path']!='assets')
+ with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:trees=list(pool.map(get_tree,tasks))
+ seasons=sorted(x['path'] for d in trees for x in d['entries'] if x['type']=='directory' and x['path'].split('/')[-1].startswith('season_'))
+ inventory={'read_at':now(),'tasks':tasks,'task_count':len(tasks),'season_count':len(seasons),'seasons':seasons,'by_task':{t:sum(s.startswith(t+'/') for s in seasons) for t in tasks},'nonseason_task_entries':{d['task']:[x for x in d['entries'] if not(x['type']=='directory' and x['path'].split('/')[-1].startswith('season_'))] for d in trees}}
+ save(ROOT/'season_inventory.json',inventory);print('INVENTORY',len(tasks),'tasks',len(seasons),'seasons',flush=True)
+ responses=[]
+ with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+  for i,d in enumerate(pool.map(get_info,seasons)):
+   responses.append(d)
+   if i%25==0:print('INFO',i+1,'/',len(seasons),d['task'],'OK' if 'error' not in d else d['error'],flush=True)
+ save(ROOT/'download_responses.json',responses)
+ rows=[]
+ for d in responses:
+  if 'error' in d:continue
+  info=json.loads((ROOT/'infos'/(d['task']+'__'+d['season']+'.json')).read_text());features=info.get('features',{});schema={k:{q:v.get(q) for q in ['dtype','shape','names','info']} for k,v in sorted(features.items())}
+  schema_sha=hashlib.sha256(json.dumps(schema,sort_keys=True).encode()).hexdigest()
+  row={'task':d['task'],'season':d['season'],'path':d['path'],'url':d['url'],'total_episodes':info.get('total_episodes'),'total_frames':info.get('total_frames'),'fps':info.get('fps'),'duration_hours':info['total_frames']/info['fps']/3600,'schema_sha256':schema_sha,'feature_count':len(features),'features':list(features),'video_feature_count':sum(x.get('dtype')=='video' for x in features.values()),'codebase_version':info.get('codebase_version'),'robot_type':info.get('robot_type'),'storage_and_file_fields':{k:v for k,v in info.items() if any(w in k.lower() for w in ['size','file','chunk','video'])},'raw_keys':list(info)}
+  rows.append(row)
+ save(ROOT/'season_metadata_summary.json',rows)
+ total={'audited_at':now(),'task_count':len(tasks),'season_count':len(seasons),'successful_info_count':len(rows),'failed_info':[d for d in responses if 'error' in d],'total_episodes':sum(r['total_episodes'] for r in rows),'total_frames':sum(r['total_frames'] for r in rows),'duration_hours':sum(r['duration_hours'] for r in rows),'fps_distribution':dict(collections.Counter(str(r['fps']) for r in rows)),'schema_distribution':dict(collections.Counter(r['schema_sha256'] for r in rows)),'feature_count_distribution':dict(collections.Counter(str(r['feature_count']) for r in rows)),'video_feature_count_distribution':dict(collections.Counter(str(r['video_feature_count']) for r in rows)),'codebase_version_distribution':dict(collections.Counter(str(r['codebase_version']) for r in rows)),'robot_type_distribution':dict(collections.Counter(str(r['robot_type']) for r in rows)),'repo_commit_distribution':dict(collections.Counter(str(d.get('repo_commit')) for d in responses if 'error' not in d))}
+ bytask=[]
+ for task in tasks:
+  a=[r for r in rows if r['task']==task];bytask.append({'task':task,'seasons':len(a),'episodes':sum(r['total_episodes'] for r in a),'frames':sum(r['total_frames'] for r in a),'hours':sum(r['duration_hours'] for r in a)})
+ total['by_task']=bytask
+ for k in ['total_episodes','total_frames','duration_hours']:
+  vals=[r[k] for r in rows];total[k+'_per_season']={'min':min(vals),'median':statistics.median(vals),'max':max(vals)}
+ save(ROOT/'audit_totals.json',total);print('TOTALS',json.dumps({k:v for k,v in total.items() if k not in ['by_task','failed_info']},ensure_ascii=False),flush=True)
+if __name__=='__main__':main()

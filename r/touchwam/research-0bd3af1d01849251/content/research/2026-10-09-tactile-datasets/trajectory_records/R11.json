@@ -1,0 +1,59 @@
+{
+  "id": "R11",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "source_url": "https://huggingface.co/datasets/tars-robotics/OmniVitac",
+    "local_raw_paths": [
+      "trajectory_work/R11/episode_selected.npz"
+    ],
+    "downloaded_bytes": 147914078,
+    "sha256": {
+      "trajectory_work/R11/episode_selected.npz": "030220146c5948cb20383ab8a3e60e58db7d105a0138cc9044d24a40497a7eb4"
+    },
+    "name": "mnt/oss_data/it20260119/Adjustment/Adjustment_Gello_Adjust the white rectangular prism and insert it into the corresponding slot_150/0000",
+    "download_url": "https://hf-mirror.com/datasets/tars-robotics/OmniVitac/resolve/main/Adjustment_zip_new/Adjustment.tar.gz.00?download=true",
+    "complete_episode": true,
+    "frames": 278,
+    "duration_seconds": 18.467,
+    "duration_method": "RGB timestamps span; tactile separately19.634s",
+    "modalities": [
+      "camera1 RGB",
+      "tactile1 deform700x3"
+    ],
+    "sync": "nearest timestamp, max difference 8ms",
+    "notes": "selected full RGB/tactile streams; no depth or raw tactile camera downloaded"
+  },
+  "media": {
+    "html": "trajectories/R11/index.html",
+    "video": "trajectories/R11/preview.mp4",
+    "poster": "trajectories/R11/poster.webp",
+    "caption_zh": "从OmniViTac公开Adjustment分卷读取0000完整camera1和tactile1流：RGB 278帧，触觉deform 1178帧。左camera1，右3×700原始deform字段热图（固定色标-0.841至0.496；不是牛顿，也不代表手掌形状）。按毫秒时间戳最近邻匹配，最大差8ms；预览RGB覆盖18.467秒，触觉流尾部另有约1.17秒。",
+    "preview_seconds": 18.467
+  },
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "完整发布数据",
+    "explanation_zh": "论文报告21,879条、86任务，但没有可直接采用的全库小时总计；30–60Hz是采样率范围，不能乘一个固定平均长度推全库。",
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2603.19201",
+        "evidence": "Table I: 21,879 trajectories,86 tasks,30–60Hz; no total hours"
+      }
+    ],
+    "paper_hours": null
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "validation": "原始schema/数组范围已读取；实际配对关系按数据字段核对；海报人工检查；视频通过ffprobe。",
+    "video_probe": {
+      "width": 960,
+      "height": 420,
+      "duration": "18.467000",
+      "nb_frames": "278"
+    }
+  }
+}

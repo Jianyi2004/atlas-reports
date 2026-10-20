@@ -1,0 +1,230 @@
+[
+  {
+    "path": "Data/fold_Tshirt.zip",
+    "episodes": 30,
+    "h5_entries": 30,
+    "h5_bytes": 472948819
+  },
+  {
+    "path": "Data/insert_peg.zip",
+    "episodes": 50,
+    "h5_entries": 50,
+    "h5_bytes": 972566246
+  },
+  {
+    "path": "Data/move_cable.zip",
+    "episodes": 55,
+    "h5_entries": 55,
+    "h5_bytes": 551435712
+  },
+  {
+    "path": "Data/move_can.zip",
+    "episodes": 30,
+    "h5_entries": 30,
+    "h5_bytes": 292187255
+  },
+  {
+    "path": "Data/move_disposable_cup.zip",
+    "episodes": 60,
+    "h5_entries": 60,
+    "h5_bytes": 696357218
+  },
+  {
+    "path": "Data/move_mobile_box.zip",
+    "episodes": 61,
+    "h5_entries": 61,
+    "h5_bytes": 1064820273
+  },
+  {
+    "path": "Data/move_plush_toy.zip",
+    "episodes": 71,
+    "h5_entries": 71,
+    "h5_bytes": 590691322
+  },
+  {
+    "path": "Data/move_rubiks_cube.zip",
+    "episodes": 30,
+    "h5_entries": 30,
+    "h5_bytes": 304548423
+  },
+  {
+    "path": "Data/move_spoon.zip",
+    "episodes": 49,
+    "h5_entries": 49,
+    "h5_bytes": 318749098
+  },
+  {
+    "path": "Data/move_toy_car.zip",
+    "episodes": 30,
+    "h5_entries": 30,
+    "h5_bytes": 181289298
+  },
+  {
+    "path": "Data/move_water_bottle.zip",
+    "episodes": 49,
+    "h5_entries": 49,
+    "h5_bytes": 571216153
+  },
+  {
+    "path": "Data/press_Coffee_machine.zip",
+    "episodes": 50,
+    "h5_entries": 50,
+    "h5_bytes": 372931321
+  },
+  {
+    "path": "Data/put_Apple.zip",
+    "episodes": 63,
+    "h5_entries": 63,
+    "h5_bytes": 526663041
+  },
+  {
+    "path": "Data/put_Banana.zip",
+    "episodes": 42,
+    "h5_entries": 42,
+    "h5_bytes": 355753319
+  },
+  {
+    "path": "Data/put_Orange.zip",
+    "episodes": 47,
+    "h5_entries": 47,
+    "h5_bytes": 444328433
+  },
+  {
+    "path": "Data/put_baseball.zip",
+    "episodes": 29,
+    "h5_entries": 29,
+    "h5_bytes": 354317682
+  },
+  {
+    "path": "Data/put_fork.zip",
+    "episodes": 50,
+    "h5_entries": 50,
+    "h5_bytes": 368712676
+  },
+  {
+    "path": "Data/put_golf_ball.zip",
+    "episodes": 50,
+    "h5_entries": 50,
+    "h5_bytes": 254935027
+  },
+  {
+    "path": "Data/put_lego.zip",
+    "episodes": 60,
+    "h5_entries": 60,
+    "h5_bytes": 303229428
+  },
+  {
+    "path": "Data/put_spatula.zip",
+    "episodes": 49,
+    "h5_entries": 49,
+    "h5_bytes": 373977218
+  },
+  {
+    "path": "Data/put_sponge.zip",
+    "episodes": 31,
+    "h5_entries": 31,
+    "h5_bytes": 424701317
+  },
+  {
+    "path": "Data/put_spoon.zip",
+    "episodes": 49,
+    "h5_entries": 49,
+    "h5_bytes": 451522012
+  },
+  {
+    "path": "Data/put_spray_bottle.zip",
+    "episodes": 50,
+    "h5_entries": 50,
+    "h5_bytes": 704773133
+  },
+  {
+    "path": "Data/put_stack_glass_cups.zip",
+    "episodes": 27,
+    "h5_entries": 27,
+    "h5_bytes": 504493488
+  },
+  {
+    "path": "Data/put_strawberry.zip",
+    "episodes": 30,
+    "h5_entries": 30,
+    "h5_bytes": 180256465
+  },
+  {
+    "path": "Data/remove_cloth.zip",
+    "episodes": 30,
+    "h5_entries": 30,
+    "h5_bytes": 514047374
+  },
+  {
+    "path": "Data/remove_laundry_pod.zip",
+    "episodes": 60,
+    "h5_entries": 60,
+    "h5_bytes": 608175911
+  },
+  {
+    "path": "Data/remove_screwdriver.zip",
+    "episodes": 50,
+    "h5_entries": 50,
+    "h5_bytes": 372427078
+  },
+  {
+    "path": "Data/remove_sticky_note.zip",
+    "episodes": 30,
+    "h5_entries": 30,
+    "h5_bytes": 251321784
+  },
+  {
+    "path": "Data/remove_sugar_bag.zip",
+    "episodes": 61,
+    "h5_entries": 61,
+    "h5_bytes": 371291290
+  },
+  {
+    "path": "Data/remove_tissue.zip",
+    "episodes": 47,
+    "h5_entries": 47,
+    "h5_bytes": 289108398
+  },
+  {
+    "path": "Data/stack_bowls.zip",
+    "episodes": 50,
+    "h5_entries": 50,
+    "h5_bytes": 326248147
+  },
+  {
+    "path": "Data/stack_disposable_cup.zip",
+    "episodes": 51,
+    "h5_entries": 51,
+    "h5_bytes": 365557435
+  },
+  {
+    "path": "Data/stack_glass_cups.zip",
+    "episodes": 30,
+    "h5_entries": 30,
+    "h5_bytes": 577598878
+  },
+  {
+    "path": "Data/turn_can.zip",
+    "episodes": 30,
+    "h5_entries": 30,
+    "h5_bytes": 554745831
+  },
+  {
+    "path": "Data/turn_cleanser_bottle.zip",
+    "episodes": 30,
+    "h5_entries": 30,
+    "h5_bytes": 786133004
+  },
+  {
+    "path": "Data/turn_water_bottle.zip",
+    "episodes": 39,
+    "h5_entries": 39,
+    "h5_bytes": 618668867
+  },
+  {
+    "path": "Data/wipe_whiteboard.zip",
+    "episodes": 50,
+    "h5_entries": 50,
+    "h5_bytes": 632804902
+  }
+]

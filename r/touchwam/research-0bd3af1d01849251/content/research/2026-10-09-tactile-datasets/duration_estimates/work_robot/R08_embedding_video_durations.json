@@ -1,0 +1,202 @@
+[
+  {
+    "path": "dataset_tactile_embedding/tactile_video_gelsight/video_001.mp4",
+    "seconds": 43.667,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_gelsight/video_002.mp4",
+    "seconds": 42.9,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_gelsight/video_003.mp4",
+    "seconds": 34.534,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_gelsight/video_004.mp4",
+    "seconds": 52.4,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_gelsight/video_005.mp4",
+    "seconds": 31.6,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_gelsight/video_006.mp4",
+    "seconds": 41.034,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_gelsight/video_007.mp4",
+    "seconds": 47.134,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_gelsight/video_008.mp4",
+    "seconds": 42.6,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_gelsight/video_009.mp4",
+    "seconds": 47.3,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_gelsight/video_010.mp4",
+    "seconds": 51.367,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_gelsight/video_011.mp4",
+    "seconds": 44.934,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_gelsight/video_012.mp4",
+    "seconds": 53.534,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_gelsight/video_013.mp4",
+    "seconds": 42.3,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_gelsight/video_014.mp4",
+    "seconds": 72.934,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_gelsight/video_015.mp4",
+    "seconds": 58.6,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_gelsight/video_016.mp4",
+    "seconds": 39.2,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_gelsight/video_017.mp4",
+    "seconds": 47.067,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_gelsight/video_018.mp4",
+    "seconds": 46.3,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_gelsight/video_019.mp4",
+    "seconds": 56.367,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_gelsight/video_020.mp4",
+    "seconds": 43.067,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_mctac_v1/video_001.mp4",
+    "seconds": 102.967,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_mctac_v1/video_002.mp4",
+    "seconds": 98.667,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_mctac_v1/video_003.mp4",
+    "seconds": 147.067,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_mctac_v1/video_004.mp4",
+    "seconds": 102.2,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_mctac_v1/video_005.mp4",
+    "seconds": 129.234,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_mctac_v1/video_006.mp4",
+    "seconds": 104.5,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_mctac_v1/video_007.mp4",
+    "seconds": 165.234,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_mctac_v1/video_008.mp4",
+    "seconds": 93.667,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_mctac_v1/video_009.mp4",
+    "seconds": 112.8,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_mctac_v1/video_010.mp4",
+    "seconds": 139.3,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_mctac_v1/video_011.mp4",
+    "seconds": 96.834,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_mctac_v1/video_012.mp4",
+    "seconds": 157.5,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_mctac_v1/video_013.mp4",
+    "seconds": 116.7,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_mctac_v1/video_014.mp4",
+    "seconds": 132.2,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_mctac_v1/video_015.mp4",
+    "seconds": 114.967,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_mctac_v1/video_016.mp4",
+    "seconds": 99.9,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_mctac_v1/video_017.mp4",
+    "seconds": 118.1,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_mctac_v1/video_018.mp4",
+    "seconds": 92.767,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_mctac_v1/video_019.mp4",
+    "seconds": 96.134,
+    "timescale": 1000
+  },
+  {
+    "path": "dataset_tactile_embedding/tactile_video_mctac_v1/video_020.mp4",
+    "seconds": 89.9,
+    "timescale": 1000
+  }
+]

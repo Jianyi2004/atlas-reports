@@ -1,0 +1,35 @@
+{
+  "id": "U02",
+  "best_hours": 12.037037037037038,
+  "low_hours": 12.037037037037038,
+  "high_hours": 31.40096618357488,
+  "kind": "estimated",
+  "confidence": "medium",
+  "scope_zh": "约2.6M视触觉配对帧的公开预训练范围；与任务Zarr去重计一次",
+  "method_zh": "主估计2,600,000/60/3600=12.037h；敏感性范围按60–23Hz为12.037–31.401h。",
+  "assumptions_zh": [
+    "论文称over 2.6M，不是精确文件计数；取2.6M作保守基数。",
+    "论文GoPro为60Hz，生成脚本逐视频帧保存，故主假设60Hz；尚未验证全部Zarr的实际时钟，23Hz下界采样率对应触觉硬件。",
+    "预训练集合包括四个主要任务、室内与野外任务，不重复叠加这些任务归档；双指12×64数组每时刻只计一次。"
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2507.15062",
+      "evidence": "2.6M+ pairs，2,700+ demonstrations，43 tasks；GoPro60Hz，tactile23Hz。"
+    },
+    {
+      "url": "https://github.com/XinyueZhuXY/touch_in_the_wild/blob/main/scripts_slam_pipeline/07_generate_replay_buffer.py",
+      "evidence": "按视频frame_start/end逐帧写入，无额外时间降采样参数。"
+    },
+    {
+      "url": "https://huggingface.co/datasets/binghaohuang-robot/touch_in_the_wild-dataset",
+      "evidence": "公开pretrain.zarr.zip及任务归档；已解码fluid_transfer真实样例。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "发布入口与样例可读；本轮全ZIP头请求受网络影响，仍是有依据估算而非全库时间审计。",
+  "checked_at": "2026-10-19",
+  "lower_bound_hours": 1.1690185185185185,
+  "release_scope_verified": false,
+  "coverage_condition_zh": "公开归档及真实样例存在，但全库数量仍使用论文规模或任务表外推；尚未确认全部计入的帧/示范均已发布。"
+}

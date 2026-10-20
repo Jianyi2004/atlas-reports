@@ -1,0 +1,28 @@
+{
+  "id": "P01",
+  "best_hours": 1.9300555555555554,
+  "low_hours": 1.9300555555555554,
+  "high_hours": 1.9300555555555554,
+  "kind": "metadata",
+  "confidence": "high",
+  "scope_zh": "原版公开ZIP的HCT部分：1,472个实际文件夹、208,446个同步帧时间点；不含SSVTP。",
+  "method_zh": "全ZIP目录逐帧核对HCT/vision与tactile各208,446张；每个文件夹帧号连续、无缺号。论文给定30Hz，因此208,446/30/3600=1.930056小时。",
+  "assumptions_zh": [
+    "视觉与触觉配对仅计一次；背景图、SSVTP复用图不计。",
+    "论文提到5名采集者20小时采集工作与1,486 trajectories；当前归档核验1,472文件夹。20小时不等于已公开的有效连续帧时长。"
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2402.13232",
+      "evidence": "§3.1：records both visual and tactile observations at 30 Hz；§3.4：39,154 in-contact +169,292 out-of-contact pairs。"
+    },
+    {
+      "url": "https://huggingface.co/datasets/mlfu7/Touch-Vision-Language-Dataset",
+      "evidence": "归档ZIP实核208,446帧/模态，1,472文件夹全部帧号连续；见work_probe/P01-frame-count-audit.json。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方公开数据入口可匿名访问。",
+  "source_total_hours": 20,
+  "checked_at": "2026-10-19"
+}

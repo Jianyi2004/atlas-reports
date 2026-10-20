@@ -1,0 +1,28 @@
+{
+  "id": "E03",
+  "best_hours": 5.1,
+  "low_hours": 5.05,
+  "high_hours": 5.15,
+  "kind": "reported",
+  "confidence": "medium",
+  "scope_zh": "原始OpenTouch官方Google Drive发布入口对应的5.1小时录制；其中约3小时精选标注。",
+  "method_zh": "采用论文5.1小时公开数据规模；5.05–5.15小时仅表示保留一位小数的舍入范围。",
+  "assumptions_zh": [
+    "未通过当前网络下载原始Drive全库，5.1小时是作者报告量。",
+    "同名opentouch-neurips2026候选样本与原始OpenTouch的来源关联未证实；其5秒样例不用于证明这5.1小时可直接下载。"
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/2512.16842",
+      "evidence": "5.1h recordings；2900 curated clips约3h"
+    },
+    {
+      "url": "https://github.com/OpenTouch-MIT/opentouch/blob/main/scripts/download_data.sh",
+      "evidence": "官方脚本公开Google Drive文件ID；未指向同名HF候选仓库"
+    }
+  ],
+  "availability": "official_entry",
+  "availability_note_zh": "官方入口公开，当前网络Drive超时；保留B级及候选样例来源限制。",
+  "checked_at": "2026-10-19",
+  "curated_hours": 3.0
+}

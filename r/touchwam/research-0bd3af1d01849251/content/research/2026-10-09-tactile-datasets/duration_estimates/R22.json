@@ -1,0 +1,32 @@
+{
+  "id": "R22",
+  "best_hours": 4.5801388888888885,
+  "low_hours": 4.538777777777778,
+  "high_hours": 4.621499999999999,
+  "kind": "metadata",
+  "confidence": "medium",
+  "scope_zh": "Active Clothing原始GelSight视频经FoTa全帧抽取的覆盖范围。",
+  "method_zh": "FoTa清单494,655帧，官方预处理源码逐视频ffmpeg -vf fps=30，因此总视频时间约494655/(30×3600)=4.580139h；容许每个约4,467视频一帧的取整误差。",
+  "assumptions_zh": [
+    "这不是Sparsh每视频只取10–25帧版本的时长换算；使用全帧FoTa处理。",
+    "原始train/test索引实数3554+871=4425条，与下游4467视频口径不同；小时数来自完整抽帧清单，不依赖二者相等。",
+    "同试验Kinect静态照片不额外增加视频小时数。"
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/alanzjl/t3/blob/main/dataset_preproc/README.md",
+      "evidence": "yuan18-cloth494,655images。"
+    },
+    {
+      "url": "https://github.com/alanzjl/t3/blob/main/dataset_preproc/preprocess_yuan18_images.py",
+      "evidence": "所有GelSight_video.mp4通过ffmpeg -vf fps=30抽帧后写入WebDataset。"
+    },
+    {
+      "url": "https://data.csail.mit.edu/active_clothing/Data_ICRA18.tar",
+      "evidence": "实际sample120帧/30fps=4s；train/test根索引已下载。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "公开下载入口已核查，已有真实样本下载。",
+  "checked_at": "2026-10-19"
+}

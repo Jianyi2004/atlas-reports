@@ -1,0 +1,26 @@
+[
+  {
+    "mode": "slide_raw",
+    "streams": 19,
+    "bytes": 183877734,
+    "sample_bytes": 9550934,
+    "sample_seconds": 764.5704998970032,
+    "estimated_seconds": 14719.763638227234
+  },
+  {
+    "mode": "touch_raw",
+    "streams": 19,
+    "bytes": 20733013,
+    "sample_bytes": 1020130,
+    "sample_seconds": 84.18302011489868,
+    "estimated_seconds": 1710.9266960303646
+  },
+  {
+    "mode": "touch_raw2",
+    "streams": 18,
+    "bytes": 107681906,
+    "sample_bytes": 5812063,
+    "sample_seconds": 470.46377992630005,
+    "estimated_seconds": 8716.429351579385
+  }
+]

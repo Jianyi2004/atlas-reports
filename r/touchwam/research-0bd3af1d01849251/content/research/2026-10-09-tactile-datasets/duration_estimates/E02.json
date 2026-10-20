@@ -1,0 +1,23 @@
+{
+  "id": "E02",
+  "best_hours": 5.833333333333333,
+  "low_hours": 5.787037037037036,
+  "high_hours": 5.87962962962963,
+  "kind": "estimated",
+  "confidence": "medium",
+  "scope_zh": "EgoPressure公开库的单一同步时间轴；不把8个相机累加。",
+  "method_zh": "作者约630K帧/相机÷30Hz÷3600≈5.833333小时；按630K为最接近10K的约数，625K–635K给出5.787037–5.879630小时的舍入敏感性区间。",
+  "assumptions_zh": [
+    "630K是作者近似统计，区间是约数解释，不是独立全库审计或统计置信区间。",
+    "含校准和无接触阶段；8路相机及压力只计一次同步时间。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/eth-siplab/EgoPressure/blob/main/README.md",
+      "evidence": "≈630K per camera;8 synchronized views;30Hz"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方Hugging Face公开，已下载完整RGB/压力样本。",
+  "checked_at": "2026-10-19"
+}

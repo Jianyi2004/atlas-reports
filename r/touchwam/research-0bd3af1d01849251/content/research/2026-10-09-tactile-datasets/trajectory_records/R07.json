@@ -1,0 +1,61 @@
+{
+  "id": "R07",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "source_url": "https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset/tree/main/RH20TCfg7Tactile",
+    "local_raw_paths": [
+      "trajectory_work/R07/episode0.npz"
+    ],
+    "downloaded_bytes": 29509248,
+    "sha256": {
+      "trajectory_work/R07/episode0.npz": "4eaa8f1bfb9a021151a82ec9b89628cb9288008b3f7eda4fe430cae8a0b6c672"
+    },
+    "name": "task_0050_Dish_on_rack.zarr / episode0",
+    "download_url": "https://www.modelscope.cn/api/v1/datasets/Eureka1064/FTP-1-Dataset/repo?Revision=master&FilePath=RH20TCfg7Tactile%2FRH20TCfg7Tactile.tar.part-0000",
+    "complete_episode": true,
+    "frames": 260,
+    "duration_seconds": 26.595,
+    "duration_method": "timestamps milliseconds span",
+    "modalities": [
+      "main RGB",
+      "uSkin2x4x4x3"
+    ],
+    "sync": "same FTP processed frame index"
+  },
+  "media": {
+    "html": "trajectories/R07/index.html",
+    "video": "trajectories/R07/preview.mp4",
+    "poster": "trajectories/R07/poster.webp",
+    "caption_zh": "从FTP公开转换包抽取Cfg7 task_0050_Dish_on_rack第0条完整episode，260帧、时间戳跨度26.595秒。左为camera_main_rgb，右为双指uSkin各4×4的Z原始读数（色标37645–50615，不是牛顿）；按同一索引同步，每2帧展示1帧。",
+    "preview_seconds": 26.595
+  },
+  "duration": {
+    "basis": "file_audit",
+    "scope_zh": "FTP-Cfg7中task_0050单任务20条，非Cfg7全库",
+    "explanation_zh": "读取该任务20条episode全部timestamps，首尾跨度合计740.664秒（0.206小时）；RH20T全库时长不能代替触觉Cfg7。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset/tree/main/RH20TCfg7Tactile",
+        "evidence": "task0050,20 episode spans sum=740.664s"
+      }
+    ],
+    "metadata_hours": 0.20574
+  },
+  "evidence": [],
+  "blockers": [],
+  "reuses": [
+    "FTP格式转换；按RH20T原始来源计一次"
+  ],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "validation": "原始schema/数组范围已读取；实际配对关系按数据字段核对；海报人工检查；视频通过ffprobe。",
+    "video_probe": {
+      "width": 960,
+      "height": 420,
+      "duration": "26.595000",
+      "nb_frames": "130"
+    }
+  }
+}

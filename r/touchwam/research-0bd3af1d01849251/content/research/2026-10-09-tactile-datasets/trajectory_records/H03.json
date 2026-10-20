@@ -1,0 +1,52 @@
+{
+  "id": "H03",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "name": "data/part_01/episode_1203_213135_115_110092_glove.hdf5",
+    "source_url": "https://huggingface.co/datasets/paxini/Omnisharing_DB_SampleData",
+    "download_url": "https://hf-mirror.com/datasets/paxini/Omnisharing_DB_SampleData/resolve/main/data/part_01/episode_1203_213135_115_110092_glove.hdf5",
+    "local_raw_paths": [
+      "trajectory_work/H03/sample.hdf5"
+    ],
+    "complete_episode": true,
+    "frames": 207,
+    "fps": null,
+    "duration_seconds": 6.9990000000000006,
+    "duration_method": "aligned_timestamp毫秒跨度6.966秒+中位帧间隔0.033秒",
+    "modalities": [
+      "RGBD_0彩色",
+      "双手多维触觉"
+    ],
+    "sync": "RGBD_0/timestamp与aligned_timestamp逐项相同；207视频帧匹配207触觉帧。忽略嵌入视频25fps，按原时间戳播放。",
+    "sha256": {
+      "trajectory_work/H03/sample.hdf5": "ea04a674571e13d71080e15ecb012d40a8a058449f8fb6f6d0b3a801a7ad51aa"
+    },
+    "downloaded_bytes": 440277311
+  },
+  "media": {
+    "html": "trajectories/H03/index.html",
+    "video": "trajectories/H03/preview.mp4",
+    "poster": "trajectories/H03/poster.webp",
+    "caption_zh": "PX OmniSharing：完整episode_1203_213135_115_110092_glove，207个对齐时间点，约7秒，将啤酒放入红色啤酒架。实际读取HDF5内RGBD_0彩色视频与双手tactile/data。嵌入视频容器写25fps，但真实aligned_timestamp约30Hz，因此按原时间戳逐帧重建，避免容器错误播放速度；右侧每手3465维按15×231展平显示，仅表示存储通道，不是3465个独立触点或物理手掌布局。",
+    "preview_seconds": 7.0
+  },
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "1000个HDF5文件；未核实全库总时长",
+    "explanation_zh": "公开目录1000个独立HDF5，但未有全库duration索引；一个约7秒episode不能外推1000条时长。原任务表9×100与正文10任务矛盾保留。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/paxini/Omnisharing_DB_SampleData",
+        "evidence": "API列1000个.hdf5；无聚合时长字段"
+      }
+    ]
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "method": "MP4帧数/可播放性检查与八项poster拼图人工核查"
+  }
+}

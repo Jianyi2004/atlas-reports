@@ -1,0 +1,50 @@
+{
+  "id": "R11",
+  "best_hours": 119.325635,
+  "low_hours": 59.6628175,
+  "high_hours": 238.65127,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "条件估计：按OmniViTac论文21,879条全部已公开的情景；本次未确认这些episode在发布文件中全部存在。",
+  "method_zh": "仅能确认官方仓库六类目录下736个压缩数据分卷，未提供逐episode清单，README仅含许可证。119.325635h=论文21,879条×已取得的一条完整触觉流19.634s/3600；59.662818–238.651270h是“全部21,879条发布且均值0.5–2倍”条件下的敏感性范围，不是已审计开放小时数。",
+  "assumptions_zh": [
+    "关键未验证条件：论文21,879条与当前公开分卷内容完全一致。轻量目录只能证明736个分卷存在，不能证明每条轨迹均可取得。",
+    "已实际下载并验证1条完整Adjustment轨迹，触觉19.634s；其他86任务没有充分时长样本。",
+    "上下界均条件于论文规模全部发布；若发布不全，实际可获取总时长可能低于该下界。",
+    "不把RGB、多指触觉与原始/转换版相加。"
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2603.19201",
+      "evidence": "21,879trajectories/86tasks/126objects。"
+    },
+    {
+      "url": "https://huggingface.co/datasets/tars-robotics/OmniVitac",
+      "evidence": "已取Adjustment0000完整RGB与tactile1：RGB18.467s，触觉19.634s。"
+    },
+    {
+      "url": "https://huggingface.co/datasets/tars-robotics/OmniVitac/tree/main",
+      "evidence": "完整API目录744条：6目录+736数据分卷+2元文件。分卷计数{'Adjustment_zip_new': 130, 'Assembly_zip_new': 134, 'Cutting_zip_new': 67, 'Grasping_zip_new': 300, 'Peeling_zip_new': 53, 'Wiping_zip_new': 52}；README只有CC-BY-NC-4.0许可证，未列episode数量。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方HF存在六类共736个数据分卷，完整样例已取得；无逐episode manifest，不能确认论文21,879条已经全部公开。",
+  "release_scope_verified": false,
+  "paper_reported_trajectories": 21879,
+  "verified_complete_trajectories": 1,
+  "verified_sample_hours": 0.005453888888888889,
+  "release_file_counts": {
+    "Adjustment_zip_new": 130,
+    "Assembly_zip_new": 134,
+    "Cutting_zip_new": 67,
+    "Grasping_zip_new": 300,
+    "Peeling_zip_new": 53,
+    "Wiping_zip_new": 52
+  },
+  "range_condition_zh": "假定论文21,879条全部发布，且总体平均轨迹长度为已下载样例的0.5–2倍。",
+  "audit_files": [
+    "duration_audits/R11/tree.json",
+    "duration_estimates/work_robot/R11_card.md"
+  ],
+  "checked_at": "2026-10-19"
+}

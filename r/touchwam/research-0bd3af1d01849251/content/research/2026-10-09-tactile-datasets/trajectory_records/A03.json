@@ -1,0 +1,66 @@
+{
+  "id": "A03",
+  "checked_at": "2026-10-19",
+  "status": "no_independent_sample",
+  "sample": {
+    "source_url": "https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset/tree/main/RH20TCfg7Tactile",
+    "local_raw_paths": [
+      "trajectory_work/R07/episode0.npz"
+    ],
+    "downloaded_bytes": 29509248,
+    "sha256": {
+      "trajectory_work/R07/episode0.npz": "4eaa8f1bfb9a021151a82ec9b89628cb9288008b3f7eda4fe430cae8a0b6c672"
+    },
+    "name": "task_0050_Dish_on_rack.zarr / episode0",
+    "download_url": "https://www.modelscope.cn/api/v1/datasets/Eureka1064/FTP-1-Dataset/repo?Revision=master&FilePath=RH20TCfg7Tactile%2FRH20TCfg7Tactile.tar.part-0000",
+    "complete_episode": false,
+    "frames": 260,
+    "duration_seconds": 26.595,
+    "duration_method": "timestamps milliseconds span",
+    "modalities": [
+      "main RGB",
+      "uSkin2x4x4x3"
+    ],
+    "sync": "same FTP processed frame index",
+    "notes": "直接复用从FTP官方归档提取的R07首条完整数据，属于同一公开文件，不新增独立交互/来源。"
+  },
+  "media": {
+    "html": "trajectories/R07/index.html",
+    "video": "trajectories/R07/preview.mp4",
+    "poster": "trajectories/R07/poster.webp",
+    "caption_zh": "FTP公开归档实际样例：复用R07（RH20T Cfg7）已提取的完整260帧序列。展示转换包中的相机图与触觉；对应上游来源不重复计数。",
+    "preview_seconds": 26.595
+  },
+  "duration": {
+    "paper_hours": 3000,
+    "basis": "official_reported",
+    "scope_zh": "论文训练混合约3000小时；当前公开目录不是3000小时全量证据",
+    "explanation_zh": "本轮原始审计见15个来源文件夹（存在拆配置/同源）；未获得公开全量去重时长。R07单任务样例可验证转换格式，不能证明26个论文来源均已发布。",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2606.13102",
+        "evidence": "paper training mixture approximately 3000 hours"
+      },
+      {
+        "url": "https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset",
+        "evidence": "当前目录与已下载R07原始转换文件"
+      }
+    ]
+  },
+  "evidence": [],
+  "blockers": [],
+  "reuses": [
+    "R07"
+  ],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "validation": "原始schema/数组范围已读取；实际配对关系按数据字段核对；海报人工检查；视频通过ffprobe。",
+    "video_probe": {
+      "width": 960,
+      "height": 420,
+      "duration": "26.595000",
+      "nb_frames": "130"
+    }
+  }
+}

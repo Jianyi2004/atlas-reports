@@ -1,0 +1,38 @@
+{
+  "id": "E08",
+  "best_hours": 5.234518518518518,
+  "low_hours": 2.617259259259259,
+  "high_hours": 15.703555555555557,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "VTDexManip非作者公开镜像中2032条连续触觉序列的假设帧率时长估计。",
+  "method_zh": "实际遍历整个tactile.tar.gz的2032个JSON，共565328帧。中心采用官方visualize.py演示帧率30作为计算假设：565328/30/3600=5.234519小时；假设10–60Hz给出2.617259–15.703556小时。",
+  "assumptions_zh": [
+    "原始采集FPS及逐帧时钟未找到；30fps只来自官方导出视频参数，不能证明采集率。",
+    "10–60Hz是显式的宽规划敏感性范围，不是证据支持的真实采样率区间或统计置信区间；实际时长可能超出。",
+    "假定发布帧保持等间隔连续顺序，未大幅重采样或填充；若不成立，数字只表示该速率下的序列播放尺度。",
+    "镜像文件组织和官方加载代码一致，但未有作者镜像授权链接或原始OneDrive文件校验和对比。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/wuliwuling/VTDexmanip/resolve/main/tactile.tar.gz",
+      "evidence": "完整37,422,433字节触觉归档，2032个JSON共565328帧"
+    },
+    {
+      "url": "https://github.com/LQTS/VTDexManipPretraining/blob/master/vitac_pretrain/visualize.py",
+      "evidence": "PNG按idx排序，与touch_data[i]配对；VideoWriter参数30仅为演示帧率"
+    }
+  ],
+  "availability": "mirror",
+  "availability_note_zh": "公开非作者镜像；已完整读取触觉归档并下载一条配对RGB，未认证与官方OneDrive逐字节一致。",
+  "checked_at": "2026-10-19",
+  "assumed_fps": 30,
+  "fps_sensitivity_range": [
+    10,
+    60
+  ],
+  "frames": 565328,
+  "audit_files": [
+    "duration_estimates/evidence/E08_frame_counts.json"
+  ]
+}

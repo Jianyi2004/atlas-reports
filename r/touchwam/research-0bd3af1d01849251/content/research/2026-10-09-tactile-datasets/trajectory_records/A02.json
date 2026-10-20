@@ -1,0 +1,66 @@
+{
+  "id": "A02",
+  "checked_at": "2026-10-19",
+  "status": "no_independent_sample",
+  "sample": {
+    "name": "Sparsh / TacBench · DIGIT flat / trajectory 1",
+    "source_url": "https://huggingface.co/datasets/facebook/digit-force-estimation",
+    "local_raw_paths": [
+      "trajectory_work/P07/dataset_digit_00.pkl",
+      "trajectory_work/P07/dataset_slip_forces.pkl"
+    ],
+    "downloaded_bytes": 220440308,
+    "sha256": {
+      "trajectory_work/P07/dataset_digit_00.pkl": "8911c87bc20aeb309615b3814aced49840410ff958cfb6291109da5e2f1e3443",
+      "trajectory_work/P07/dataset_slip_forces.pkl": "8469dd3f3b71638d4e2cf9aef8fcb9ff4756dc393118bb2531547f3f52db1799"
+    },
+    "complete_episode": false,
+    "frames": 561,
+    "fps": null,
+    "duration_seconds": null,
+    "modalities": [
+      "DIGIT tactile RGB",
+      "per-trajectory force"
+    ],
+    "sync": "图像按trajectory.indexes提取；forces长度556与indexes561不同，只展示整段概览。",
+    "notes": "本条为汇编入口，直接复用P07已下载的原始监督样例；没有另造一个独立采集轨迹。",
+    "download_url": "https://hf-mirror.com/datasets/facebook/digit-force-estimation/resolve/main/flat/batch_1/dataset_digit_00.pkl"
+  },
+  "media": {
+    "html": "trajectories/P07/index.html",
+    "poster": "trajectories/P07/poster.webp",
+    "video": "trajectories/P07/preview.mp4",
+    "caption_zh": "汇编展示复用P07已下载的真实DIGIT序列与力数据概览；图像561个索引、力556行，未确认逐帧同步；不增加独立样例来源数量。",
+    "preview_seconds": 28.1
+  },
+  "duration": {
+    "basis": "not_temporal",
+    "scope_zh": "Sparsh预训练混合与TacBench汇编",
+    "explanation_zh": "包括多上游静态图像与时序任务，未发布统一去重交互小时；不能与P05/P07等上游再次相加。",
+    "sources": [
+      {
+        "url": "https://github.com/facebookresearch/sparsh",
+        "evidence": "multi-sensor self-supervised pretraining and TacBench"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://huggingface.co/datasets/facebook/digit-force-estimation",
+      "status": 200,
+      "detail": "已下载并实际解读所列原始文件。"
+    }
+  ],
+  "blockers": [
+    "没有外部场景RGB。",
+    "原始force与图像索引长度不同；精确同步尚未确认。"
+  ],
+  "reuses": [
+    "P07",
+    "P05"
+  ],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  }
+}

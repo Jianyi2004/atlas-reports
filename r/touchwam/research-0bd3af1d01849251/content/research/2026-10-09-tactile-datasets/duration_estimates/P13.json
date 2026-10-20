@@ -1,0 +1,27 @@
+{
+  "id": "P13",
+  "best_hours": 0.5706666666666667,
+  "low_hours": 0.2853333333333333,
+  "high_hours": 1.712,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "公开963条连续触觉序列（train484/validation275/test204），每条64时刻。",
+  "method_zh": "API精确计数963×64=61,632时间步；假设30Hz得0.570667小时，10–60Hz得0.285333–1.712小时。",
+  "assumptions_zh": [
+    "README明确首维是时间；未提供采样率/真实时间戳，30Hz仅作规划假设。",
+    "README演示动画interval=80ms只是播放设定，不当真实采样周期。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/api/datasets/Tachintech/tactile-deformation-response",
+      "evidence": "siblings精确含963个.npz；train484、validation275、test204。"
+    },
+    {
+      "url": "https://huggingface.co/datasets/Tachintech/tactile-deformation-response",
+      "evidence": "每个NPZ frames.shape=(64,32,32)，首维为有序时间。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方公开数据入口可匿名访问。",
+  "checked_at": "2026-10-19"
+}

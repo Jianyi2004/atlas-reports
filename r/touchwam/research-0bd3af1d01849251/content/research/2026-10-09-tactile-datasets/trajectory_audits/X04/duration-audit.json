@@ -1,0 +1,242 @@
+[
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/test/data_sample_2021-11-25-13-42-05/meta_data.csv",
+    "seconds": 13.182245,
+    "fps": 36.3369719652
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/test/data_sample_2021-11-25-13-17-40/meta_data.csv",
+    "seconds": 47.256286,
+    "fps": 37.7304940362
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/test/data_sample_2021-11-25-13-20-06/meta_data.csv",
+    "seconds": 7.931062,
+    "fps": 38.961123318
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/test/data_sample_2021-11-25-13-11-37/meta_data.csv",
+    "seconds": 6.501392,
+    "fps": 38.7614608404
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/test/data_sample_2021-11-25-13-19-17/meta_data.csv",
+    "seconds": 8.098417,
+    "fps": 37.7858761822
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/test/data_sample_2021-11-25-13-23-53/meta_data.csv",
+    "seconds": 6.552855,
+    "fps": 38.4570069376
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/test/data_sample_2021-11-25-13-15-31/meta_data.csv",
+    "seconds": 24.199285,
+    "fps": 38.8444741505
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/test/data_sample_2021-11-25-13-39-20/meta_data.csv",
+    "seconds": 6.426904,
+    "fps": 41.3895374051
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/test/data_sample_2021-11-25-13-37-50/meta_data.csv",
+    "seconds": 8.802415,
+    "fps": 40.1031364991
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/test/data_sample_2021-11-25-13-41-23/meta_data.csv",
+    "seconds": 19.73932,
+    "fps": 40.0724465434
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/test/data_sample_2021-11-25-13-23-10/meta_data.csv",
+    "seconds": 5.901702,
+    "fps": 38.803272369
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/test/data_sample_2021-11-25-13-39-50/meta_data.csv",
+    "seconds": 15.661061,
+    "fps": 39.7804247775
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/test/data_sample_2021-11-25-13-07-20/meta_data.csv",
+    "seconds": 4.644353,
+    "fps": 36.8196767245
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/test/data_sample_2021-11-25-13-09-52/meta_data.csv",
+    "seconds": 6.086247,
+    "fps": 37.9590131577
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-55-56/meta_data.csv",
+    "seconds": 22.800285,
+    "fps": 41.5351277646
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-20-26/meta_data.csv",
+    "seconds": 16.836327,
+    "fps": 41.3393447983
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-23-04/meta_data.csv",
+    "seconds": 4.559524,
+    "fps": 44.0843045975
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-30-24/meta_data.csv",
+    "seconds": 5.954282,
+    "fps": 40.8116454569
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-39-52/meta_data.csv",
+    "seconds": 92.148381,
+    "fps": 41.0750961957
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-33-58/meta_data.csv",
+    "seconds": 40.362957,
+    "fps": 40.2597972036
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-40-42/meta_data.csv",
+    "seconds": 4.842643,
+    "fps": 41.3004951565
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-21-15/meta_data.csv",
+    "seconds": 33.257296,
+    "fps": 42.1562532188
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-16-03-47/meta_data.csv",
+    "seconds": 4.700672,
+    "fps": 39.99517499
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-34-35/meta_data.csv",
+    "seconds": 5.465036,
+    "fps": 40.256603065
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-42-06/meta_data.csv",
+    "seconds": 16.412472,
+    "fps": 38.324693013
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-16-01-25/meta_data.csv",
+    "seconds": 12.924565,
+    "fps": 41.8584989854
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-16-25-24/meta_data.csv",
+    "seconds": 47.778035,
+    "fps": 41.4417069042
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-34-53/meta_data.csv",
+    "seconds": 4.60139,
+    "fps": 41.9445482651
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-16-12-42/meta_data.csv",
+    "seconds": 30.132227,
+    "fps": 41.5503234014
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-16-19-56/meta_data.csv",
+    "seconds": 5.405662,
+    "fps": 40.1435401406
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-16-03-19/meta_data.csv",
+    "seconds": 74.20988,
+    "fps": 40.8302071785
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-16-18-59/meta_data.csv",
+    "seconds": 13.385202,
+    "fps": 42.2110397592
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-16-13-18/meta_data.csv",
+    "seconds": 5.569554,
+    "fps": 42.7329788649
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-31-09/meta_data.csv",
+    "seconds": 13.758994,
+    "fps": 41.9364464568
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-28-37/meta_data.csv",
+    "seconds": 4.042201,
+    "fps": 42.0569500121
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-53-35/meta_data.csv",
+    "seconds": 32.274589,
+    "fps": 41.332917798
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-55-09/meta_data.csv",
+    "seconds": 4.836462,
+    "fps": 32.0489959601
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-16-27-05/meta_data.csv",
+    "seconds": 4.13573,
+    "fps": 31.9177350386
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-52-36/meta_data.csv",
+    "seconds": 14.687667,
+    "fps": 36.4254077451
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-19-34/meta_data.csv",
+    "seconds": 25.479522,
+    "fps": 41.7591400472
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-28-22/meta_data.csv",
+    "seconds": 6.781861,
+    "fps": 40.9922426268
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-31-50/meta_data.csv",
+    "seconds": 29.02804,
+    "fps": 38.3767912392
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-16-13-36/meta_data.csv",
+    "seconds": 4.803828,
+    "fps": 41.2178064504
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-41-35/meta_data.csv",
+    "seconds": 10.764378,
+    "fps": 41.3403332432
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-16-18-22/meta_data.csv",
+    "seconds": 25.687217,
+    "fps": 38.3071225752
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-28-02/meta_data.csv",
+    "seconds": 31.589902,
+    "fps": 41.8489286604
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-15-40-25/meta_data.csv",
+    "seconds": 5.729379,
+    "fps": 42.0663852745
+  },
+  {
+    "path": "trajectory_work/X04/metadata/flat_objects_only/train/data_sample_2021-11-24-16-17-35/meta_data.csv",
+    "seconds": 32.869412,
+    "fps": 39.0637572403
+  }
+]

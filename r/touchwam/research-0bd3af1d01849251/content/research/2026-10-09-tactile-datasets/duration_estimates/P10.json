@@ -1,0 +1,26 @@
+{
+  "id": "P10",
+  "best_hours": 0.00035185185185185184,
+  "low_hours": 0.00017592592592592592,
+  "high_hours": 0.0010555555555555555,
+  "kind": "static_equivalent",
+  "confidence": "low",
+  "scope_zh": "仅官方GitHub可核实38张真实接触示例/标定图；是完整归档的已核实公开子集下界。",
+  "method_zh": "官方树中*_real.png去掉背景图共38张。此数只覆盖可直接核实子集，完整归档真实图公式为1,200×N_objects，N_objects尚未核实。 以30帧/秒作统一播放等效值，10–60帧/秒给出敏感性范围；均不代表已经证实的连续交互时长。",
+  "assumptions_zh": [
+    "静态实验图没有连续轨迹；完整归档Google Drive已发布但本次下载超时，不能将38张当全库规模。",
+    "每物体真实1,200张与仿真1,200张；只计真实A域，仿真B域不计。",
+    "30 FPS仅是便于横向比较的假设；范围不是统计置信区间，不能并入实录小时。"
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/RVSATHU/GelSight-Sim2Real",
+      "evidence": "README：每物体真实与仿真各1,200张，Google Drive完整归档；GitHub tree的quantitative_real_gan可核实38张非背景*_real.png。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方公开数据入口可匿名访问。",
+  "unverified_full_archive_formula": "real_image_count=1200*N_objects; equivalent_hours=1200*N_objects/(assumed_fps*3600)",
+  "coverage_is_subset": true,
+  "checked_at": "2026-10-19"
+}

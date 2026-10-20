@@ -1,0 +1,84 @@
+{
+  "id": "E01",
+  "checked_at": "2026-10-19",
+  "status": "partial_trajectory",
+  "sample": {
+    "name": "S02 / Peel a cucumber / video frames 28487..29232",
+    "source_url": "https://action-sense.csail.mit.edu/data.html",
+    "download_url": "https://data.csail.mit.edu/ActionNet/wearable_data/2022-06-13_experiment_S02/2022-06-13_21-47-57_actionNet-wearables_S02/2022-06-13_21-48-24_streamLog_actionNet-wearables_S02.hdf5",
+    "local_raw_paths": [
+      "trajectory_work/E01/manip_slice.npz",
+      "trajectory_work/E01/rgb_manip.mp4",
+      "trajectory_work/E01/manip_slice.json",
+      "trajectory_work/E01/manip_video_source.json",
+      "trajectory_work/E01/activities.json"
+    ],
+    "complete_episode": false,
+    "frames": 746,
+    "fps": null,
+    "duration_seconds": 25.00020980834961,
+    "duration_method": "HDF5原视频time_s末−首+中位帧间隔；已比对MP4帧间隔与HDF5时间",
+    "modalities": [
+      "ego RGB",
+      "双手32x32原始触觉"
+    ],
+    "sync": "同一录制HDF5真实time_s对齐；使用最近已采集的触觉样本（~6Hz），RGB~30Hz；详见sync_qa.json",
+    "notes": "官方活动标签内25秒双手削黄瓜片段；人工检查可见抓物与操作。保留旧校准片段备份。",
+    "sha256": {
+      "trajectory_work/E01/manip_slice.npz": "6ae5533dae1972da3cbe33516e2e28113fe992e8c97aff7f84bc1877a1136947",
+      "trajectory_work/E01/rgb_manip.mp4": "a8410a876bcb126599248cbc572d590870c05d492fd2e96a22e5ae16141ff87b",
+      "trajectory_work/E01/manip_slice.json": "37a62b63f1ceb2bf6f83c996819a845dcf6943aade7ae60d4ff13641f91a14cd",
+      "trajectory_work/E01/manip_video_source.json": "aa6b46260071a7409367dbc7dc61b58668dcf93b03b1da9e38fa5a59b674a19b",
+      "trajectory_work/E01/activities.json": "6bcbdc20a9f94cb9725ddfe2068a672c3f2c1638e1b6fa42973b9fb8220f9d26"
+    },
+    "downloaded_bytes": 9646539,
+    "hdf5_range_downloaded_bytes": 8388609
+  },
+  "media": {
+    "html": "trajectories/E01/index.html",
+    "video": "trajectories/E01/preview.mp4",
+    "poster": "trajectories/E01/poster.webp",
+    "caption_zh": "ActionSense真实双手物体操作：S02在官方标注“Peel a cucumber”时段内，左手握持黄瓜、右手握削皮器反复削皮。展示原始视频约956–981秒的连续25秒片段；已人工检查1、5、10、15秒处，均能看到手与物体接触。RGB与双手32×32原始触觉来自同一录制，依据HDF5 time_s逐帧匹配最近已采集触觉值；触觉约6Hz、RGB约30Hz，不做虚构触觉插值。MP4帧时间间隔与HDF5视频时钟的最大差为0.0164秒；触觉值最多滞后左手0.207秒/右手0.208秒。此为长录制内的操作片段，不是整项任务。",
+    "preview_seconds": 25.1
+  },
+  "duration": {
+    "paper_hours": 12.966666666666667,
+    "basis": "official_reported",
+    "scope_zh": "总录制778分钟（12.967小时）；厨房活动543.5分钟",
+    "explanation_zh": "778分钟是整个多模态项目录制量，含无触觉的S06–S09，不能作为触觉总量。本轮已遍历S00–S05的12个HDF5：双手触觉共同覆盖6.679502小时，其中可核对ego时间戳的三流共同覆盖5.683252小时，见下方统计记录。",
+    "sources": [
+      {
+        "url": "https://action-sense.csail.mit.edu/dataset_info.html",
+        "evidence": "778.0 minutes recorded;543.5 minutes kitchen activities"
+      },
+      {
+        "url": "https://action-sense.csail.mit.edu/data.html",
+        "evidence": "Subjects06 through09 did not wear finger-tracking gloves or tactile hand sensors;S01wearable data lost after calibration/peeling cucumber"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://data.csail.mit.edu/ActionNet/wearable_data/2022-06-13_experiment_S02/2022-06-13_21-47-57_actionNet-wearables_S02/2022-06-13_21-48-24_streamLog_actionNet-wearables_S02.hdf5",
+      "status": 206,
+      "detail": "实际Range读取双手压力；HDF5活动标签Peel a cucumber，源视频951.653–1009.462秒；展示约956–981秒。"
+    },
+    {
+      "url": "https://data.csail.mit.edu/ActionNet/wearable_data/2022-06-13_experiment_S02/2022-06-13_21-47-57_actionNet-wearables_S02/2022-06-13_21-48-24_S02_eye-tracking-video-world_frame.mp4",
+      "status": 200,
+      "detail": "从原始ego MP4提取连续25秒、746帧，保留可变帧率；与HDF5逐帧时间差最大16.4ms，全片解码和4时点目视检查通过。"
+    }
+  ],
+  "blockers": [
+    "当前展示25秒操作片段，不是完整削黄瓜任务。"
+  ],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "method": "人工查看1/5/10/15秒RGB截图确认左手抓黄瓜、右手握削皮器；全片解码；逐帧PTS差与触觉样本滞后检查"
+  },
+  "audit_files": [
+    "trajectory_work/E01/manip_contact_sheet.jpg",
+    "trajectory_work/E01/sync_qa.json"
+  ]
+}

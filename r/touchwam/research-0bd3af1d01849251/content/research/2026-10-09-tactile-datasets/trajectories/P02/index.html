@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TacQuad · fine/nail · DIGIT + scene RGB</title><style>body{font:16px system-ui;background:#101926;color:#eaf1fc;margin:0;padding:20px;max-width:1100px}video,img{max-width:100%;width:100%;border-radius:8px}p{line-height:1.7}input{width:50%}button{padding:8px}</style><h2>TacQuad · fine/nail · DIGIT + scene RGB</h2><p>远程抽取精细对齐子集nail的完整DIGIT流及其场景相机流，各240帧，并下载两条CSV时间戳。预览按30fps共同时间轴取最近邻，逐帧显示配对时间差；不是按相同文件序号强行同步。此样本只覆盖四传感器中的DIGIT一路。</p><video controls preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video></html><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

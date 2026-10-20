@@ -1,0 +1,61 @@
+{
+  "id": "F01",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "name": "2025-01-11-14-43-37.h5",
+    "source_url": "https://researchdata.tuwien.ac.at/records/0ewrv-8cb44",
+    "download_url": "https://researchdata.tuwien.ac.at/api/records/0ewrv-8cb44/files/data.zip/content",
+    "local_raw_paths": [
+      "trajectory_work/F01/raw/2025-01-11-14-43-37.h5",
+      "trajectory_work/F01/raw/hama1.mp4"
+    ],
+    "complete_episode": true,
+    "frames": 697,
+    "duration_seconds": 23.202108144760132,
+    "duration_method": "hama1 timestamp span",
+    "modalities": [
+      "RGB",
+      "wrist force/torque",
+      "robot states"
+    ],
+    "sync": "原始各传感器时间戳最近邻匹配",
+    "notes": "完整录制包含多个动作分段；不是单个指尖触觉episode。 帧率为(n−1)/时间戳跨度得到的平均到帧率，不是硬件标称采样率。",
+    "downloaded_bytes": 103638016,
+    "sha256": {
+      "trajectory_work/F01/raw/2025-01-11-14-43-37.h5": "bef0903e9c3a4172cf0598dbc14f9bd1d5b8f25ed5f6f31ca99c7178726ec603",
+      "trajectory_work/F01/raw/hama1.mp4": "90e0c6f01c79a9c5179e6eca0c0c59e53f9661bb69652664ca89645bbe484757"
+    },
+    "observed_fps": 29.997274198430187
+  },
+  "media": {
+    "html": "trajectories/F01/index.html",
+    "video": "trajectories/F01/preview.mp4",
+    "poster": "trajectories/F01/poster.webp",
+    "caption_zh": "完整读取一个HDF5录制（含分段标注），解码hama1 RGB并按各自timestamps最近邻匹配measured_force/torque。展示腕部六维力／力矩；它属于力觉扩展，不是指尖触觉阵列。预览每3帧取1帧。",
+    "preview_seconds": 23.302117231590994
+  },
+  "duration": {
+    "released_hours": 13.016666666666667,
+    "paper_hours": 13.016666666666667,
+    "basis": "official_reported",
+    "scope_zh": "公开REASSEMBLE全库（腕部力/矩扩展）",
+    "explanation_zh": "官方记录说明781分钟、4551条示范；本次只读取一份HDF5，不是全库时长重算。",
+    "sources": [
+      {
+        "url": "https://researchdata.tuwien.ac.at/records/0ewrv-8cb44",
+        "evidence": "781 minutes; 4551 demonstrations"
+      }
+    ]
+  },
+  "evidence": [],
+  "blockers": [],
+  "reuses": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  },
+  "audit_files": [
+    "trajectory_audits/F01/extracted.json"
+  ]
+}

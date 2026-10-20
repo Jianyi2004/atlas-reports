@@ -1,0 +1,38 @@
+{
+  "id": "C01",
+  "checked_at": "2026-10-19",
+  "status": "blocked",
+  "sample": {
+    "complete_episode": false,
+    "local_raw_paths": [],
+    "downloaded_bytes": 0
+  },
+  "media": {},
+  "duration": {
+    "released_hours": 100,
+    "paper_hours": 500,
+    "basis": "official_reported",
+    "scope_zh": "当前条件开放100小时；论文全量500小时",
+    "explanation_zh": "发布卡称100小时、全500小时计划11月前开放。门控原始数据尚未授权，无法独立求和确认有效同步时长。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/2077AIDataFoundation/TouchScale",
+        "evidence": "release100h of500h;gated=auto;unauth raw file403"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://hf-mirror.com/datasets/2077AIDataFoundation/TouchScale/resolve/main/data/train-00000-of-00430.tar",
+      "status": 403,
+      "response": "Access to dataset 2077AIDataFoundation/TouchScale is restricted and you are not in the authorized list. Visit https://huggingface.co/datasets/2077AIDataFoundation/TouchScale to ask for access."
+    }
+  ],
+  "blockers": [
+    "HF API明确gated=auto；实际请求首个数据tar返回403，提示不在授权名单。未接受新条款、未绕过门控，无法下载原始轨迹。"
+  ],
+  "review": {
+    "raw_read": false,
+    "render_checked": false
+  }
+}

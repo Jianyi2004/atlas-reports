@@ -1,0 +1,46 @@
+{
+  "id": "H02",
+  "checked_at": "2026-10-19",
+  "status": "blocked",
+  "sample": {
+    "complete_episode": false,
+    "local_raw_paths": [],
+    "downloaded_bytes": 0
+  },
+  "media": {},
+  "duration": {
+    "released_hours": 16,
+    "paper_hours": 16,
+    "basis": "official_reported",
+    "scope_zh": "16小时（官方报告）",
+    "explanation_zh": "官方README描述36参与者、4相机、16小时；小版3FPS与原15FPS版是同来源降采样版本，不将时长相加或再乘4。",
+    "sources": [
+      {
+        "url": "https://github.com/facebookresearch/PressureVision",
+        "evidence": "36 participants recorded by4 cameras for16 hours; full15FPS/small3FPS"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://www.dropbox.com/s/iofj8jonnvl1e7n/test.zip?dl=1",
+      "error": "HTTPSConnectionPool(host='www.dropbox.com', port=443): Max retries exceeded with url: /s/iofj8jonnvl1e7n/test.zip?dl=1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x72b5e21aa7e0>, 'Connection to www.dropbox.com timed out. (connect timeout=12)'))"
+    },
+    {
+      "url": "https://dl.dropboxusercontent.com/s/iofj8jonnvl1e7n/test.zip",
+      "error": "HTTPSConnectionPool(host='dl.dropboxusercontent.com', port=443): Max retries exceeded with url: /s/iofj8jonnvl1e7n/test.zip (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x70fb64d9fbf0>, 'Connection to dl.dropboxusercontent.com timed out. (connect timeout=12)'))"
+    },
+    {
+      "url": "https://gcore.jsdelivr.net/gh/facebookresearch/PressureVision@main/recording/downloader.py",
+      "status": 200,
+      "detail": "官方脚本指定test.zip下载地址"
+    }
+  ],
+  "blockers": [
+    "已读取官方下载器并尝试小版test.zip；dropbox.com与dl.dropboxusercontent.com本机连接超时，4090也网络不可达，未取得原始RGB/压力配对。"
+  ],
+  "review": {
+    "raw_read": false,
+    "render_checked": false
+  }
+}

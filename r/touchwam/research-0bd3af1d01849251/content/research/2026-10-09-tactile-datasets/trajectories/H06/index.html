@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tactile Gesture Language | stroking / sample 0</title><style>body{margin:0;background:#101820;color:#e5eef8;font:16px/1.7 system-ui;padding:20px;max-width:1160px}video{width:100%;max-height:80vh;background:black}a{color:#64d5cc}h1{font-size:22px}</style><h1>Tactile Gesture Language | stroking / sample 0</h1><video controls preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video><p>Tactile Gesture Language：实际下载man0/stroking_man0.npy（44×200×32×32），展示其中第0条完整200帧抚摸序列。原数据未提供RGB与时间戳/采样率，故只有真实触觉热图；以每秒10帧的演示速度播放，20秒是播放器时长，不代表真实采集时长。</p><p><a href="https://huggingface.co/datasets/Tachintech/Tactile_Gesture_Language" target="_blank">原始数据来源</a> · <a href="preview.mp4" download>下载可视化 MP4</a></p></html><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

@@ -1,0 +1,35 @@
+{
+  "id": "E01",
+  "best_hours": 5.683251655499141,
+  "low_hours": 5.683251655499141,
+  "high_hours": 5.683251655499141,
+  "kind": "metadata",
+  "confidence": "high",
+  "scope_zh": "已核对时间戳的第一视角RGB与双手触觉共同覆盖时长；含校准、等待及未标注时段。",
+  "method_zh": "遍历S00–S05全部12个官方HDF5，逐录制计算 max(0,min(三流末时间)−max(三流首时间))，仅10段具备三流时间戳，求和20459.70596秒/3600=5.683252小时。",
+  "assumptions_zh": [
+    "范围上下限相同表示此时间边界口径的确定计算，并非所有帧均有效接触或无内部丢帧。",
+    "S06–S09官方明确未戴触觉手套，全部排除。",
+    "S01和S03第一段缺少可核对的ego frame_timestamp；其双手触觉仍另计入全触觉6.679502小时，不冒充严格RGB—触觉配对。"
+  ],
+  "sources": [
+    {
+      "url": "https://action-sense.csail.mit.edu/data.html",
+      "evidence": "官方12个S00–S05 wearable HDF5入口；S06–S09无触觉手套说明"
+    },
+    {
+      "url": "https://data.csail.mit.edu/ActionNet/wearable_data/2022-06-13_experiment_S02/2022-06-13_21-47-57_actionNet-wearables_S02/2022-06-13_21-48-24_streamLog_actionNet-wearables_S02.hdf5",
+      "evidence": "读取tactile-glove-left/right与eye-tracking-video-world/frame_timestamp的time_s首末值；完整逐文件证据见E01_stream_totals.json"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方原文件支持HTTP Range，已实际读取全部12段的时间边界。",
+  "checked_at": "2026-10-19",
+  "source_total_hours": 12.966666666666667,
+  "all_tactile_overlap_hours": 6.679502302540673,
+  "labeled_activity_paired_hours": 2.593935558862156,
+  "audit_files": [
+    "duration_estimates/evidence/E01_stream_totals.json"
+  ],
+  "all_tactile_hours": 6.679502302540673
+}

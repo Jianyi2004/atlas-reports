@@ -1,0 +1,30 @@
+{
+  "id": "R14",
+  "best_hours": 16.47487962962963,
+  "low_hours": 16.43725,
+  "high_hours": 16.47487962962963,
+  "kind": "metadata",
+  "confidence": "medium",
+  "scope_zh": "Humanoid Everyday仅G1 Dex3-1触觉手平台：4,064条、1,779,287帧；排除H1。",
+  "method_zh": "官方每episode robot_type筛选g1，然后sum(length)/(30×3600)=16.47488h；下限每episode扣一个端点帧。",
+  "assumptions_zh": [
+    "这是触觉传感器平台的录制时长，未逐帧剔除NaN、基线、未接触片段；不等于全部为有效接触。",
+    "H1的4,885条/1,656,884帧没有论文所述Dex3-1触觉手，不能计入主值。"
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2510.08807",
+      "evidence": "BothH1andG1；In addition,theG1Dex3-1 hands possess tactile sensors；30Hz采集。"
+    },
+    {
+      "url": "https://huggingface.co/datasets/USC-PSI-Lab/humanoid-everyday/blob/main/meta/episodes.jsonl",
+      "evidence": "全8949条按robot_type分组实算，G1 4064条1,779,287帧。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "公开下载入口已核查，已有真实样本下载。",
+  "alternative_hours": {
+    "mixed_robot_all_frames_not_tactile_total": 31.81639814814815
+  },
+  "checked_at": "2026-10-19"
+}

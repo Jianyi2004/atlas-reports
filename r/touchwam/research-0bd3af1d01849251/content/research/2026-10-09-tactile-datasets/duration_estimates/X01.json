@@ -1,0 +1,29 @@
+{
+  "id": "X01",
+  "best_hours": 0.0043581559461179295,
+  "low_hours": 0.0043581559461179295,
+  "high_hours": 0.0043581559461179295,
+  "kind": "metadata",
+  "confidence": "high",
+  "scope_zh": "作者官方样例ZIP中已确认包含RGB与三组FSR的参考录制交集；不是完整任务库",
+  "method_zh": "按四条capture_time流求交集：min(末帧)-max(首帧)=15.689361秒。",
+  "assumptions_zh": [
+    "software_go_through两条采集示例的numeric_0为关节/电压；未证实包含FSR，不混入触觉小时。",
+    "采集、重放、渲染副本去重；仅计已证实公开的触觉范围。",
+    "独立任务训练库的总时长仍未知，主值是可获取范围，不外推成整篇论文规模。"
+  ],
+  "sources": [
+    {
+      "url": "https://real.stanford.edu/dexumi/sample_data.zip",
+      "evidence": "已读官方Zarr capture_time与fsr_values；731相机帧，训练valid_indices235帧。"
+    },
+    {
+      "url": "https://github.com/real-stanford/DexUMI",
+      "evidence": "作者提供sample_data用于处理流程测试，支持可选FSR。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方样例可直接下载；仅参考/校准录制进入时长，不代表任务数据量。",
+  "checked_at": "2026-10-19",
+  "lower_bound_hours": 0.0043581559461179295
+}

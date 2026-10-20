@@ -1,0 +1,7 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>OmniViTac | prism adjustment</title><style>body{background:#10202b;color:#eef6fb;font:16px system-ui;max-width:1100px;margin:25px auto;padding:16px}video,img{width:100%;height:auto}p{line-height:1.7}a{color:#86dcff}</style><h2>OmniViTac | prism adjustment</h2><video controls preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video><p>从OmniViTac公开Adjustment分卷读取0000完整camera1和tactile1流：RGB 278帧，触觉deform 1178帧。左camera1，右3×700原始deform字段热图（固定色标-0.841至0.496；不是牛顿，也不代表手掌形状）。按毫秒时间戳最近邻匹配，最大差8ms；预览RGB覆盖18.467秒，触觉流尾部另有约1.17秒。</p><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

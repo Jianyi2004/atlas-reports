@@ -1,0 +1,30 @@
+{
+  "id": "R16",
+  "best_hours": 25.23777777777778,
+  "low_hours": 6.309444444444445,
+  "high_hours": 151.42666666666668,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "FTP新增Sharpa North约4,000条示范，不是26来源汇编3,000小时。",
+  "method_zh": "首任务meta显示100条/68,142帧，均值681.42帧；假定30Hz，则4000×681.42/30/3600。范围联合假设平均帧长0.5–2倍、保存频率10–60Hz。",
+  "assumptions_zh": [
+    "未核实保存帧率；30fps是显式假设，播放器30fps不构成证据。",
+    "首个任务100条不能充分代表其他长时程任务。",
+    "4,000是论文新增来源规模，已见sharpa公开分卷但未逐包清点全部episode。"
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2606.13102",
+      "evidence": "SharpaNorth-FTP-1新增4,000long-horizon dexterous demonstrations。"
+    },
+    {
+      "url": "https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset/tree/main/sharpa",
+      "evidence": "首task的meta/episode_ends为100条，data总68,142帧；完整sample729帧。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "FTP公开sharpa分卷已实际抽出样本，来源总体规模沿用论文。",
+  "checked_at": "2026-10-19",
+  "release_scope_verified": false,
+  "coverage_condition_zh": "公开归档及真实样例存在，但全库数量仍使用论文规模或任务表外推；尚未确认全部计入的帧/示范均已发布。"
+}

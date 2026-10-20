@@ -1,0 +1,45 @@
+{
+  "id": "R23",
+  "checked_at": "2026-10-19",
+  "status": "static_sample",
+  "sample": {
+    "source_url": "https://huggingface.co/datasets/mlfu7/Touch-Vision-Language-Dataset",
+    "local_raw_paths": [
+      "trajectory_work/R23/image_0_rgb.jpg",
+      "trajectory_work/R23/image_0_tac.jpg",
+      "trajectory_work/R23/labels_0.txt"
+    ],
+    "downloaded_bytes": 242442,
+    "sha256": {
+      "trajectory_work/R23/image_0_rgb.jpg": "10585537480df45ec7803da237724be355c3c1cb2415231abe7752f5f811ddf5",
+      "trajectory_work/R23/image_0_tac.jpg": "6beb57c726ff9fb9d295b5b3a64f54c46e4354816beaaf3e1b89b5526efe38dc",
+      "trajectory_work/R23/labels_0.txt": "f2a4ff14667a586e645eab7618935e27163c53c61cd98f06cf8332e8a94cb451"
+    },
+    "name": "tvl_dataset/ssvtp/image_0",
+    "complete_episode": false,
+    "frames": 1,
+    "modalities": [
+      "RGB still",
+      "DIGIT still"
+    ],
+    "sync": "same sample ID; vision acquired before touch, not simultaneous"
+  },
+  "media": {
+    "html": "trajectories/R23/index.html",
+    "poster": "trajectories/R23/poster.webp",
+    "caption_zh": "从TVL官方split ZIP实际抽取ssvtp/image_0的视觉、DIGIT触觉和文字标签。它是静态对应样本：机器人先拍RGB、再移动到对应位置接触，不是同步轨迹；不虚构视频或时长。"
+  },
+  "duration": {
+    "basis": "not_temporal",
+    "scope_zh": "完整发布数据",
+    "explanation_zh": "4,587组静态视觉—触觉对应对，未发布连续时间轴；小时数不适用，不按FPS换算。",
+    "sources": []
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "validation": "原始schema/数组范围已读取；实际配对关系按数据字段核对；海报人工检查；视频通过ffprobe。"
+  }
+}

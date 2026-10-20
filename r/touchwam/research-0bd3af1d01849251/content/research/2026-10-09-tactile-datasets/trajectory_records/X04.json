@@ -1,0 +1,67 @@
+{
+  "id": "X04",
+  "checked_at": "2026-10-19",
+  "status": "tactile_only",
+  "sample": {
+    "name": "flat_objects_only/test/data_sample_2021-11-25-13-07-20",
+    "source_url": "https://github.com/WillMandil001/Tactile_Grasp_and_Move_Dataset",
+    "download_url": "https://cdn.jsdelivr.net/gh/WillMandil001/Tactile_Grasp_and_Move_Dataset@main/",
+    "local_raw_paths": [
+      "trajectory_work/X04/raw/robot_state.csv",
+      "trajectory_work/X04/raw/meta_data.csv",
+      "trajectory_work/X04/raw/xela_sensor1.csv"
+    ],
+    "complete_episode": true,
+    "frames": 171,
+    "fps": 36.8196767245,
+    "duration_seconds": 4.644353,
+    "duration_method": "metadata start_time/stop_time；frequency_hz用于近似播放",
+    "modalities": [
+      "Xela 16x3",
+      "robot states"
+    ],
+    "sync": "CSV同一录制；无RGB。",
+    "notes": "已下载传感器1完整序列；传感器2下载入口返回403，本次展示传感器1；已保留完整传感器1及机器人状态。",
+    "downloaded_bytes": 127546,
+    "sha256": {
+      "trajectory_work/X04/raw/robot_state.csv": "a8a420bd3e1cf970f738e1d4af9a1285f22363e67f4d4e10647fbe7eedbe7246",
+      "trajectory_work/X04/raw/meta_data.csv": "7355d4903fe045688a62c12aa04da9e059b769f2501c628873edce0e51689ce2",
+      "trajectory_work/X04/raw/xela_sensor1.csv": "0dadfc8c5d03361bb62501695ca58486d2a8596160474d3067d226cb49971c1e"
+    }
+  },
+  "media": {
+    "html": "trajectories/X04/index.html",
+    "video": "trajectories/X04/preview.mp4",
+    "poster": "trajectories/X04/poster.webp",
+    "caption_zh": "完整下载一次抓取移动记录的触觉、机器人状态及metadata。此仓库未提供RGB，展示Xela传感器1的16税元XYZ三轴相对首帧变化；4×4仅按CSV通道序排列，不推断物理布置，单位未标定为牛顿。",
+    "preview_seconds": 4.671415267629179
+  },
+  "duration": {
+    "metadata_hours": 0.2413330877777778,
+    "basis": "metadata_sum",
+    "scope_zh": "已读取的48/75条metadata子集",
+    "explanation_zh": "按各记录stop_time-start_time求和，无法外推未读取部分。",
+    "sources": [
+      {
+        "url": "https://github.com/WillMandil001/Tactile_Grasp_and_Move_Dataset",
+        "evidence": "实际48条meta_data.csv的时间跨度"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/WillMandil001/Tactile_Grasp_and_Move_Dataset",
+      "status": 200,
+      "detail": "递归树含实际CSV；读取元数据及171帧触觉。"
+    }
+  ],
+  "blockers": [],
+  "reuses": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  },
+  "audit_files": [
+    "trajectory_audits/X04/duration-audit.json"
+  ]
+}

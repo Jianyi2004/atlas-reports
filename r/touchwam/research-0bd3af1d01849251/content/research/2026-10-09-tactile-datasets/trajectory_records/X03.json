@@ -1,0 +1,33 @@
+{
+  "id": "X03",
+  "checked_at": "2026-10-19",
+  "status": "blocked",
+  "sample": {
+    "source_url": "https://github.com/binghao-huang/3d-vitac-training-code",
+    "download_url": "https://binghao-huang.github.io/3D-ViTac/",
+    "downloaded_bytes": 0,
+    "sha256": {}
+  },
+  "media": {},
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "公开数据集总时长",
+    "explanation_zh": "未找到可核实的总时长；样例长度不外推全库。",
+    "sources": []
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/binghao-huang/3d-vitac-training-code",
+      "status": 200,
+      "detail": "README: VT-Refine pretraining ... only difference is it runs in simulation; cleaned 3D-ViTac-only code soon."
+    }
+  ],
+  "blockers": [
+    "官方项目和训练仓库可读，但尚未取得对应真实数据的可下载归档。README引导VT-Refine预训练代码并明确该代码在仿真运行；不能拿仿真或Touch in the Wild替代3D-ViTac论文原始数据。"
+  ],
+  "reuses": [],
+  "review": {
+    "raw_read": false,
+    "render_checked": false
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "R03",
+  "best_hours": 13.125925925925927,
+  "low_hours": 6.562962962962963,
+  "high_hours": 26.251851851851853,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "ObjectFolder-Real真实触觉视频的单路GelSight时间轴（FoTa预处理0/gelsight范围）。",
+  "method_zh": "公开FoTa清单1,417,600触觉帧÷假定30fps；15–60fps给出范围。",
+  "assumptions_zh": [
+    "原始帧率未核实，30fps只作规划假设。",
+    "预处理源码固定每trial的0/gelsight，未把多个视觉相机叠加为时间。",
+    "不可使用声音片段6s代替触觉轨迹时长。"
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/alanzjl/t3/blob/main/dataset_preproc/README.md",
+      "evidence": "ObjectFolder-Real1,417,600 images。"
+    },
+    {
+      "url": "https://github.com/alanzjl/t3/blob/main/dataset_preproc/preprocess_objectfolder_real_images.py",
+      "evidence": "逐物体trial读取0/gelsight/*.png。"
+    },
+    {
+      "url": "https://objectfolder.stanford.edu/objectfolder-real-download",
+      "evidence": "100个真实物体，每物体约30–50次接触；原始触觉序列公开。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "原始下载入口与FoTa镜像均公开；已取得镜像触觉图及原始部分视觉帧。",
+  "checked_at": "2026-10-19"
+}

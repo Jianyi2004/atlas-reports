@@ -1,0 +1,61 @@
+{
+  "id": "P05",
+  "checked_at": "2026-10-19",
+  "status": "tactile_only",
+  "sample": {
+    "name": "Touch-Slide · bread / dataset_0",
+    "source_url": "https://huggingface.co/datasets/facebook/touch-slide",
+    "local_raw_paths": [
+      "trajectory_work/P05/sample.pkl"
+    ],
+    "downloaded_bytes": 51609759,
+    "sha256": {
+      "trajectory_work/P05/sample.pkl": "ea68e5c5ac40e0f8b2a21047bdf5b5d13085cabe67734a000954039517d1f911"
+    },
+    "complete_episode": true,
+    "frames": 3600,
+    "fps": null,
+    "duration_seconds": null,
+    "modalities": [
+      "DIGIT optical tactile"
+    ],
+    "sync": "单一触觉序列。",
+    "notes": "单一触觉序列。"
+  },
+  "media": {
+    "html": "trajectories/P05/index.html",
+    "poster": "trajectories/P05/poster.webp",
+    "video": "trajectories/P05/preview.mp4",
+    "caption_zh": "完整下载bread/dataset_0.pkl，共3,600帧DIGIT触觉图像。预览每12帧抽1帧，按10fps浏览；发布PKL没有外部RGB、原生FPS或时间戳，因此不宣称预览30秒等于真实采集30秒。",
+    "preview_seconds": 30.0
+  },
+  "duration": {
+    "released_hours": null,
+    "paper_hours": null,
+    "metadata_hours": null,
+    "basis": "unknown",
+    "scope_zh": "全库",
+    "explanation_zh": "官方9物体×5轨迹、约180K帧；PKL只有图像，没有原生FPS/时间戳。不能凭DIGIT的硬件帧率推定全部采集时长。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/facebook/touch-slide",
+        "evidence": "官方9物体×5轨迹、约180K帧；PKL只有图像，没有原生FPS/时间戳。不能凭DIGIT的硬件帧率推定全部采集时长。"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://huggingface.co/datasets/facebook/touch-slide",
+      "status": 200,
+      "detail": "已下载并实际解读所列原始文件。"
+    }
+  ],
+  "blockers": [
+    "发布的轨迹PKL不含场景RGB。"
+  ],
+  "reuses": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  }
+}

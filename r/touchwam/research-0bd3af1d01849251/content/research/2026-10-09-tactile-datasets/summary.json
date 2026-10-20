@@ -1,31 +1,614 @@
 {
-  "as_of": "2026-10-09",
+  "as_of": "2026-10-20",
+  "baseline_checked_at": "2026-10-09",
+  "incremental_update": {
+    "date": "2026-10-20",
+    "added_ids": [
+      "E09"
+    ],
+    "promoted_ids": [
+      "X01",
+      "X04",
+      "X05",
+      "X06"
+    ],
+    "updated_ids": [
+      "R16"
+    ],
+    "scope": "在2026-10-19真实样例与时长版本基础上，R16升级为SharpaDex官方发布入口：495份metadata核验、六路真实视频样例及许可。保守按同采集家族计一次，旧FTP样例和估计保留历史附件；未宣称新旧轨迹已完全去重或全视频质量已审计。"
+  },
   "unit": "独立采集来源家族；不是仓库、版本、传感器或任务数",
-  "total_catalog_records": 71,
-  "main_publication_evidence_count": 55,
+  "total_catalog_records": 72,
+  "main_publication_evidence_count": 60,
   "main_counts_by_group": {
-    "E": 8,
-    "R": 23,
-    "U": 5,
+    "E": 9,
+    "R": 24,
+    "U": 6,
     "H": 6,
-    "P": 13
+    "P": 15
   },
   "main_counts_by_evidence": {
-    "B": 21,
-    "A": 34
+    "A": 55,
+    "B": 5
   },
   "main_counts_by_license": {
-    "已标明非商业用途限制": 11,
-    "数据专用许可未确认／需保留上游条款": 21,
+    "已标明非商业用途限制": 13,
+    "数据专用许可未确认／需保留上游条款": 24,
     "已标明数据许可，无NC限制": 23
   },
   "conditional_families": [
     "C01",
     "C02"
   ],
-  "main_plus_conditional": 57,
-  "robot_plus_handheld_tool": 28,
-  "other_real_non_ego": 19,
-  "all_real_except_ego": 47,
-  "limitations": "检索发现的来源数量，不是全网穷尽总量；未下载校验全量payload；公开发布证据不等于无用途限制开源。"
+  "main_plus_conditional": 62,
+  "robot_plus_handheld_tool": 30,
+  "other_real_non_ego": 21,
+  "all_real_except_ego": 51,
+  "limitations": "检索发现的来源数量，不是全网穷尽总量；未下载校验全量payload；公开发布证据不等于无用途限制开源。",
+  "trajectory_audit": {
+    "checked_at": "2026-10-20",
+    "catalog_entries": 72,
+    "entries_with_actual_media": 64,
+    "entries_with_associated_media": 63,
+    "entries_with_unverified_candidate_media": 1,
+    "entries_with_complete_sequence": 49,
+    "entries_with_duration_evidence": 33,
+    "status_counts": {
+      "partial_trajectory": 2,
+      "complete_trajectory": 36,
+      "unverified_sample": 1,
+      "static_sample": 9,
+      "blocked": 8,
+      "tactile_only": 14,
+      "no_independent_sample": 2
+    },
+    "note": "实际文件展示含来源待证实候选；已关联媒体与完整序列统计排除候选。完整序列可缺RGB或真实采样率；完整参考/校准记录单独注明。汇编复用不增来源数；原始证据各口径不直接相加，规划汇总另列。"
+  },
+  "duration_totals": {
+    "checked_at": "2026-10-20",
+    "catalog_entries": 72,
+    "entries_with_numeric_duration": 72,
+    "method_counts": {
+      "reuse": 5,
+      "reported": 9,
+      "estimated": 31,
+      "metadata": 19,
+      "static_equivalent": 8
+    },
+    "groups": {
+      "E": {
+        "direct": {
+          "best_hours": 142.30698053754656,
+          "low_hours": 136.58545730563304,
+          "high_hours": 156.91421375845505,
+          "ids": [
+            "E01",
+            "E02",
+            "E04",
+            "E05",
+            "E06",
+            "E07",
+            "E08",
+            "E09"
+          ]
+        },
+        "scope_unverified": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "entry": {
+          "best_hours": 5.1,
+          "low_hours": 5.05,
+          "high_hours": 5.15,
+          "ids": [
+            "E03"
+          ]
+        },
+        "static": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "gated": {
+          "best_hours": 100.0,
+          "low_hours": 100.0,
+          "high_hours": 100.0,
+          "ids": [
+            "C01"
+          ]
+        },
+        "gated_static": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "unreleased": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "additional_unpaired": {
+          "best_hours": 3.0729172777136156,
+          "low_hours": 3.0729172777136156,
+          "high_hours": 3.0729172777136156,
+          "ids": [
+            "E01",
+            "E07"
+          ]
+        }
+      },
+      "R": {
+        "direct": {
+          "best_hours": 643.7791367119451,
+          "low_hours": 572.7358401545752,
+          "high_hours": 745.1042492458363,
+          "ids": [
+            "R01",
+            "R03",
+            "R04",
+            "R08",
+            "R10",
+            "R12",
+            "R13",
+            "R14",
+            "R15",
+            "R16",
+            "R17",
+            "R18",
+            "R19",
+            "R20",
+            "R21",
+            "R22",
+            "X04"
+          ]
+        },
+        "scope_unverified": {
+          "best_hours": 132.97037445751636,
+          "low_hours": 66.8605344509804,
+          "high_hours": 265.1900544705882,
+          "ids": [
+            "R07",
+            "R09",
+            "R11"
+          ]
+        },
+        "entry": {
+          "best_hours": 12.777777777777779,
+          "low_hours": 6.644444444444445,
+          "high_hours": 20.444444444444443,
+          "ids": [
+            "R05"
+          ]
+        },
+        "static": {
+          "best_hours": 0.27023148148148146,
+          "low_hours": 0.13511574074074073,
+          "high_hours": 0.8106944444444444,
+          "ids": [
+            "R02",
+            "R06",
+            "R23"
+          ]
+        },
+        "gated": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "gated_static": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "unreleased": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "additional_unpaired": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        }
+      },
+      "U": {
+        "direct": {
+          "best_hours": 15.701460007817563,
+          "low_hours": 15.701460007817563,
+          "high_hours": 15.701460007817563,
+          "ids": [
+            "U01",
+            "X01"
+          ]
+        },
+        "scope_unverified": {
+          "best_hours": 17.99800411522634,
+          "low_hours": 12.727495370370372,
+          "high_hours": 47.118410628019326,
+          "ids": [
+            "U02",
+            "U03",
+            "U04"
+          ]
+        },
+        "entry": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "static": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "gated": {
+          "best_hours": 1000.0,
+          "low_hours": 1000.0,
+          "high_hours": 1000.0,
+          "ids": [
+            "U05"
+          ]
+        },
+        "gated_static": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "unreleased": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "additional_unpaired": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        }
+      },
+      "H": {
+        "direct": {
+          "best_hours": 33.06782494967072,
+          "low_hours": 22.019509903374423,
+          "high_hours": 74.67441380496851,
+          "ids": [
+            "H01",
+            "H03",
+            "H04",
+            "H05",
+            "H06"
+          ]
+        },
+        "scope_unverified": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "entry": {
+          "best_hours": 16.0,
+          "low_hours": 16.0,
+          "high_hours": 16.0,
+          "ids": [
+            "H02"
+          ]
+        },
+        "static": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "gated": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "gated_static": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "unreleased": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "additional_unpaired": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        }
+      },
+      "P": {
+        "direct": {
+          "best_hours": 131.22054629629628,
+          "low_hours": 124.32295061728394,
+          "high_hours": 143.44779166666666,
+          "ids": [
+            "P01",
+            "P02",
+            "P03",
+            "P04",
+            "P05",
+            "P07",
+            "P08",
+            "P09",
+            "P11",
+            "P13"
+          ]
+        },
+        "scope_unverified": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "entry": {
+          "best_hours": 0.8333333333333334,
+          "low_hours": 0.8333333333333334,
+          "high_hours": 0.8333333333333334,
+          "ids": [
+            "P06"
+          ]
+        },
+        "static": {
+          "best_hours": 1.290037037037037,
+          "low_hours": 0.6450185185185185,
+          "high_hours": 3.8701111111111106,
+          "ids": [
+            "P10",
+            "P12",
+            "X05",
+            "X06"
+          ]
+        },
+        "gated": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "gated_static": {
+          "best_hours": 12.104425925925927,
+          "low_hours": 6.0522129629629635,
+          "high_hours": 36.31327777777778,
+          "ids": [
+            "C02"
+          ]
+        },
+        "unreleased": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "additional_unpaired": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        }
+      },
+      "F": {
+        "direct": {
+          "best_hours": 17.64480015935926,
+          "low_hours": 14.173700039839815,
+          "high_hours": 31.529200637437043,
+          "ids": [
+            "F01",
+            "F02"
+          ]
+        },
+        "scope_unverified": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "entry": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "static": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "gated": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "gated_static": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "unreleased": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        },
+        "additional_unpaired": {
+          "best_hours": 0.0,
+          "low_hours": 0.0,
+          "high_hours": 0.0,
+          "ids": []
+        }
+      }
+    },
+    "main_tactile": {
+      "direct": {
+        "best_hours": 966.0759485032759,
+        "low_hours": 871.3652179886842,
+        "high_hours": 1135.8421284837439,
+        "ids": [
+          "E01",
+          "E02",
+          "E04",
+          "E05",
+          "E06",
+          "E07",
+          "E08",
+          "E09",
+          "R01",
+          "R03",
+          "R04",
+          "R08",
+          "R10",
+          "R12",
+          "R13",
+          "R14",
+          "R15",
+          "R16",
+          "R17",
+          "R18",
+          "R19",
+          "R20",
+          "R21",
+          "R22",
+          "X04",
+          "U01",
+          "X01",
+          "H01",
+          "H03",
+          "H04",
+          "H05",
+          "H06",
+          "P01",
+          "P02",
+          "P03",
+          "P04",
+          "P05",
+          "P07",
+          "P08",
+          "P09",
+          "P11",
+          "P13"
+        ]
+      },
+      "scope_unverified": {
+        "best_hours": 150.9683785727427,
+        "low_hours": 79.58802982135076,
+        "high_hours": 312.30846509860754,
+        "ids": [
+          "R07",
+          "R09",
+          "R11",
+          "U02",
+          "U03",
+          "U04"
+        ]
+      },
+      "entry": {
+        "best_hours": 34.711111111111116,
+        "low_hours": 28.527777777777775,
+        "high_hours": 42.42777777777778,
+        "ids": [
+          "E03",
+          "R05",
+          "H02",
+          "P06"
+        ]
+      },
+      "static": {
+        "best_hours": 1.5602685185185183,
+        "low_hours": 0.7801342592592592,
+        "high_hours": 4.680805555555556,
+        "ids": [
+          "R02",
+          "R06",
+          "R23",
+          "P10",
+          "P12",
+          "X05",
+          "X06"
+        ]
+      },
+      "gated": {
+        "best_hours": 1100.0,
+        "low_hours": 1100.0,
+        "high_hours": 1100.0,
+        "ids": [
+          "C01",
+          "U05"
+        ]
+      },
+      "gated_static": {
+        "best_hours": 12.104425925925927,
+        "low_hours": 6.0522129629629635,
+        "high_hours": 36.31327777777778,
+        "ids": [
+          "C02"
+        ]
+      },
+      "additional_unpaired": {
+        "best_hours": 3.0729172777136156,
+        "low_hours": 3.0729172777136156,
+        "high_hours": 3.0729172777136156,
+        "ids": [
+          "E01",
+          "E07"
+        ]
+      }
+    },
+    "extra_categories": {
+      "conditional": {
+        "ids": [
+          "C01",
+          "C02"
+        ],
+        "note": "不相加；每个条目分别展示，复用新增小时为0"
+      },
+      "candidate": {
+        "ids": [
+          "X02",
+          "X03",
+          "X07"
+        ],
+        "note": "不相加；每个条目分别展示，复用新增小时为0"
+      },
+      "reuse": {
+        "ids": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05"
+        ],
+        "note": "不相加；每个条目分别展示，复用新增小时为0"
+      }
+    },
+    "notes": [
+      "连续录制小时按独立时间轴去重，不是多相机/双指stream-hours；仍可能含非接触帧、停顿或校准。",
+      "主值基于公开文件目录、元数据或发布方规模说明，包含明确标记的时长估算；公开覆盖仍依赖论文全量假设的条目单列。",
+      "仅官方入口未验证、条件开放、候选来源另列；静态帧等效量与连续录制量不相加，汇编不重复计数。",
+      "范围为各条目采样率/覆盖假设的敏感性边界逐项求和，不是统计置信区间，也不是保证可下载/质量合格的上下限。",
+      "点估计覆盖量不等于本次已下载量；本次仅下载代表性样例和轻量元数据。"
+    ]
+  }
 }

@@ -1,0 +1,73 @@
+{
+  "id": "E03",
+  "checked_at": "2026-10-19",
+  "status": "unverified_sample",
+  "sample": {
+    "name": "eat_mcdonalds.hdf5/data/demo_40;clip_011655_011804.hdf5",
+    "source_url": "https://huggingface.co/datasets/opentouch-neurips2026/opentouch-sample",
+    "download_url": "https://huggingface.co/datasets/opentouch-neurips2026/opentouch-sample/resolve/main/eat_mcdonalds.hdf5",
+    "local_raw_paths": [
+      "trajectory_work/E03/sample.hdf5"
+    ],
+    "complete_episode": true,
+    "frames": 150,
+    "fps": null,
+    "duration_seconds": 4.999193387,
+    "duration_method": "ns timestamps跨度4.965866秒+中位帧间隔约0.03333秒",
+    "modalities": [
+      "ego RGB JPEG",
+      "右手压力16x16"
+    ],
+    "sync": "同一个HDF5 demo组，150个共享纳秒timestamps分别索引RGB/pressure",
+    "notes": "同名公开候选样例（来源关联尚未证实）。官方项目、README及下载脚本未指向此Hugging Face仓库；数据卡无作者/论文引用，名称及字段结构不足以证明属于原始2025 OpenTouch。已完整下载的是候选库短片段，不能作为官方数据下载成功的证据。",
+    "sha256": {
+      "trajectory_work/E03/sample.hdf5": "3707acc91bd84a9bc41cde7b581ef87a4a11c1009d3a9f416b0539b324195e6d"
+    },
+    "downloaded_bytes": 9231719
+  },
+  "media": {
+    "html": "trajectories/E03/index.html",
+    "video": "trajectories/E03/preview.mp4",
+    "poster": "trajectories/E03/poster.webp",
+    "caption_zh": "同名公开候选样例（来源关联尚未证实）：从opentouch-neurips2026/opentouch-sample取得eat_mcdonalds.hdf5中的完整demo_40（source_file=clip_011655_011804.hdf5）。实际解码150帧RGB、16×16右手压力及共享纳秒时间戳，约5秒。官方OpenTouch仍只指向Google Drive，尚未找到与此仓库的作者关联，因此不计入已核实数据集样例及完整序列覆盖。16×16为存储矩阵，不等于256有效触点；颜色为原字段数值，未推断物理压力或响应单调性。",
+    "preview_seconds": 5.0
+  },
+  "duration": {
+    "paper_hours": 5.1,
+    "basis": "official_reported",
+    "scope_zh": "论文5.1小时录制，其中约3小时精选标注",
+    "explanation_zh": "官方项目页约5小时录制，其中约3小时密集标注片段；未审计原Drive全量时长。下方候选样例约5秒仅属候选仓库，不能验证官方数据集总量或可下载性。",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2512.16842",
+        "evidence": "5.1h recordings;2900 curated clips (~3h)"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://huggingface.co/datasets/opentouch-neurips2026/opentouch-sample/resolve/main/eat_mcdonalds.hdf5",
+      "status": 200,
+      "detail": "9,231,719bytes;decoded150JPEG/pressure/timestamps"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1EjMOzs45devBo0TqhuhZTT_Ll7HZ1lrW/view",
+      "detail": "官方原Drive本机及4090连接超时；不能用同名候选仓库认定官方文件已下载"
+    },
+    {
+      "url": "https://opentouch-tactile.github.io/",
+      "detail": "官方项目；未发现指向该HF样例库的交叉链接"
+    },
+    {
+      "url": "https://github.com/OpenTouch-MIT/opentouch",
+      "detail": "官方README及下载脚本仍指向Google Drive；同名HF数据卡无作者及论文引用"
+    }
+  ],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "method": "解码帧数和配对索引检查；可视化poster人工检查",
+    "source_association_verified": false
+  }
+}

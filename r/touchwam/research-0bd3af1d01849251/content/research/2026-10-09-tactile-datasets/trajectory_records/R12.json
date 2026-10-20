@@ -1,0 +1,59 @@
+{
+  "id": "R12",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "source_url": "https://huggingface.co/datasets/HapTile2026/HapTile",
+    "local_raw_paths": [
+      "trajectory_work/R12/sample.h5"
+    ],
+    "downloaded_bytes": 6493590,
+    "sha256": {
+      "trajectory_work/R12/sample.h5": "706ee328a40149be98399f14a84fd5d5335c7e6df0d2af6e7d9ed5b943097111"
+    },
+    "name": "Data/move_toy_car.zip / 0428_131000",
+    "download_url": "https://hf-mirror.com/datasets/HapTile2026/HapTile/resolve/main/Data/move_toy_car.zip",
+    "complete_episode": true,
+    "frames": 278,
+    "fps": 15,
+    "duration_seconds": 18.506302,
+    "duration_method": "ISO timestamps span",
+    "modalities": [
+      "base RGB",
+      "optical tactile"
+    ],
+    "sync": "same HDF5 frame/video index; video_fps15"
+  },
+  "media": {
+    "html": "trajectories/R12/index.html",
+    "video": "trajectories/R12/preview.mp4",
+    "poster": "trajectories/R12/poster.webp",
+    "caption_zh": "完整下载move_toy_car任务包中的0428_131000/trajectory.h5；278帧、时间戳跨度18.506秒。左base_camera_rgb_0，右tactile_left_rgb；嵌入视频原标称15fps，按帧索引配对播放，采集间隔存在波动。",
+    "preview_seconds": 18.533333333333335
+  },
+  "duration": {
+    "basis": "file_audit",
+    "scope_zh": "仅本次下载move_toy_car任务包",
+    "explanation_zh": "对该包30条episode的首尾ISO时间戳求和，519.607秒（0.144小时）。这只是一个任务，不能代表整个HapTile全库。",
+    "sources": [
+      {
+        "url": "https://hf-mirror.com/datasets/HapTile2026/HapTile/resolve/main/Data/move_toy_car.zip",
+        "evidence": "30 trajectories; sum(last-first)=519.606891 s"
+      }
+    ],
+    "metadata_hours": 0.1443352475
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "validation": "原始schema/数组范围已读取；实际配对关系按数据字段核对；海报人工检查；视频通过ffprobe。",
+    "video_probe": {
+      "width": 960,
+      "height": 420,
+      "duration": "18.533333",
+      "nb_frames": "278"
+    }
+  }
+}

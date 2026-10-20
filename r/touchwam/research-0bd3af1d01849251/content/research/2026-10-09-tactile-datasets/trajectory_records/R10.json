@@ -1,0 +1,50 @@
+{
+  "id": "R10",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "source_url": "https://huggingface.co/datasets/AllenBi21/VLA-Touch",
+    "local_raw_paths": [
+      "trajectory_work/R10/episode_0.h5"
+    ],
+    "downloaded_bytes": 196009660,
+    "sha256": {
+      "trajectory_work/R10/episode_0.h5": "2b71d6bdb10f657b20fa32b29be62f1a28564e707132a5da32de583b049550f1"
+    },
+    "name": "mango/episode_0.h5",
+    "download_url": "https://hf-mirror.com/datasets/AllenBi21/VLA-Touch/resolve/main/mango/episode_0.h5",
+    "complete_episode": true,
+    "frames": 79,
+    "modalities": [
+      "camera1 RGB",
+      "GelSight RGB"
+    ],
+    "sync": "同一存储索引；物理采样间隔未提供。"
+  },
+  "media": {
+    "html": "trajectories/R10/index.html",
+    "video": "trajectories/R10/preview.mp4",
+    "poster": "trajectories/R10/poster.webp",
+    "caption_zh": "完整下载 mango/episode_0.h5，79 个配对观测：左 camera1，右 GelSight 原始图像。按同一HDF5索引配对；文件没有时间戳/FPS，播放器以10帧/秒方便浏览，7.9秒是展示时长，不代表真实交互时长。",
+    "preview_seconds": 7.9
+  },
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "完整发布数据",
+    "explanation_zh": "未找到可可靠汇总的总时长；不以样本数或文件体积推算。",
+    "sources": []
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "validation": "原始schema/数组范围已读取；实际配对关系按数据字段核对；海报人工检查；视频通过ffprobe。",
+    "video_probe": {
+      "width": 960,
+      "height": 420,
+      "duration": "7.900000",
+      "nb_frames": "79"
+    }
+  }
+}

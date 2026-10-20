@@ -1,0 +1,402 @@
+[
+  {
+    "name": "1763647052611.zarr",
+    "frames": 4253,
+    "first": 1763647052677.0,
+    "last": 1763647194646.9417,
+    "duration_seconds": 141.96994165039064,
+    "monotonic": true,
+    "median_step_ms": 33.388916015625,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763648890735.zarr",
+    "frames": 3282,
+    "first": 1763648891380.0,
+    "last": 1763649000967.0,
+    "duration_seconds": 109.587,
+    "monotonic": true,
+    "median_step_ms": 33.400390625,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763650637470.zarr",
+    "frames": 801,
+    "first": 1763650637536.0,
+    "last": 1763650664236.0,
+    "duration_seconds": 26.7,
+    "monotonic": true,
+    "median_step_ms": 33.375,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763651148346.zarr",
+    "frames": 580,
+    "first": 1763651148398.0,
+    "last": 1763651167677.7017,
+    "duration_seconds": 19.27970166015625,
+    "monotonic": true,
+    "median_step_ms": 33.29833984375,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763651969312.zarr",
+    "frames": 751,
+    "first": 1763651969372.0,
+    "last": 1763651994376.6604,
+    "duration_seconds": 25.004660400390627,
+    "monotonic": true,
+    "median_step_ms": 33.339599609375,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763652819813.zarr",
+    "frames": 1637,
+    "first": 1763652819897.0,
+    "last": 1763652874442.6592,
+    "duration_seconds": 54.5456591796875,
+    "monotonic": true,
+    "median_step_ms": 33.3408203125,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763652906229.zarr",
+    "frames": 2490,
+    "first": 1763652906285.0,
+    "last": 1763652989258.6638,
+    "duration_seconds": 82.97366381835937,
+    "monotonic": true,
+    "median_step_ms": 33.336181640625,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763653039006.zarr",
+    "frames": 1967,
+    "first": 1763653039068.0,
+    "last": 1763653104637.6482,
+    "duration_seconds": 65.56964819335937,
+    "monotonic": true,
+    "median_step_ms": 33.351806640625,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763687596938.zarr",
+    "frames": 789,
+    "first": 1763687596989.0,
+    "last": 1763687623272.645,
+    "duration_seconds": 26.28364501953125,
+    "monotonic": true,
+    "median_step_ms": 33.35498046875,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763688029005.zarr",
+    "frames": 2574,
+    "first": 1763688029076.0,
+    "last": 1763688114934.6309,
+    "duration_seconds": 85.858630859375,
+    "monotonic": true,
+    "median_step_ms": 33.369140625,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763690859922.zarr",
+    "frames": 2053,
+    "first": 1763690859989.0,
+    "last": 1763690928450.6367,
+    "duration_seconds": 68.46163671875,
+    "monotonic": true,
+    "median_step_ms": 33.36328125,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763692136516.zarr",
+    "frames": 2611,
+    "first": 1763692136586.0,
+    "last": 1763692223848.5662,
+    "duration_seconds": 87.26256616210938,
+    "monotonic": true,
+    "median_step_ms": 33.433837890625,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763695551994.zarr",
+    "frames": 1232,
+    "first": 1763695552072.0,
+    "last": 1763695593093.676,
+    "duration_seconds": 41.021676025390626,
+    "monotonic": true,
+    "median_step_ms": 33.323974609375,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763696520232.zarr",
+    "frames": 511,
+    "first": 1763696520930.0,
+    "last": 1763696537921.0,
+    "duration_seconds": 16.991,
+    "monotonic": true,
+    "median_step_ms": 33.315673828125,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763696619228.zarr",
+    "frames": 586,
+    "first": 1763696619298.0,
+    "last": 1763696638787.6843,
+    "duration_seconds": 19.489684326171876,
+    "monotonic": true,
+    "median_step_ms": 33.315673828125,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763696645426.zarr",
+    "frames": 534,
+    "first": 1763696645504.0,
+    "last": 1763696663258.6892,
+    "duration_seconds": 17.754689208984374,
+    "monotonic": true,
+    "median_step_ms": 33.310791015625,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763697603637.zarr",
+    "frames": 1111,
+    "first": 1763697603717.0,
+    "last": 1763697640698.0,
+    "duration_seconds": 36.981,
+    "monotonic": true,
+    "median_step_ms": 33.316162109375,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763697713213.zarr",
+    "frames": 1168,
+    "first": 1763697713286.0,
+    "last": 1763697752179.672,
+    "duration_seconds": 38.893672119140625,
+    "monotonic": true,
+    "median_step_ms": 33.327880859375,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763697915010.zarr",
+    "frames": 538,
+    "first": 1763697915065.0,
+    "last": 1763697932939.7139,
+    "duration_seconds": 17.8747138671875,
+    "monotonic": true,
+    "median_step_ms": 33.2861328125,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763700794737.zarr",
+    "frames": 219,
+    "first": 1763700795436.0,
+    "last": 1763700802669.0,
+    "duration_seconds": 7.233,
+    "monotonic": true,
+    "median_step_ms": 33.178955078125,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763700830322.zarr",
+    "frames": 392,
+    "first": 1763700830375.0,
+    "last": 1763700843382.0,
+    "duration_seconds": 13.007,
+    "monotonic": true,
+    "median_step_ms": 33.265869140625,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763700873603.zarr",
+    "frames": 298,
+    "first": 1763700873670.0,
+    "last": 1763700883638.4363,
+    "duration_seconds": 9.968436279296874,
+    "monotonic": true,
+    "median_step_ms": 33.563720703125,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763717247715.zarr",
+    "frames": 1890,
+    "first": 1763717248391.0,
+    "last": 1763717311471.0,
+    "duration_seconds": 63.08,
+    "monotonic": true,
+    "median_step_ms": 33.393310546875,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763757539754.zarr",
+    "frames": 504,
+    "first": 1763757540442.0,
+    "last": 1763757557229.625,
+    "duration_seconds": 16.787625,
+    "monotonic": true,
+    "median_step_ms": 33.375,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763783817283.zarr",
+    "frames": 501,
+    "first": 1763783817960.0,
+    "last": 1763783834619.6807,
+    "duration_seconds": 16.6596806640625,
+    "monotonic": true,
+    "median_step_ms": 33.3193359375,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763784542584.zarr",
+    "frames": 391,
+    "first": 1763784542659.0,
+    "last": 1763784555678.6165,
+    "duration_seconds": 13.019616455078125,
+    "monotonic": true,
+    "median_step_ms": 33.383544921875,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763821329290.zarr",
+    "frames": 515,
+    "first": 1763821329382.0,
+    "last": 1763821346632.4387,
+    "duration_seconds": 17.250438720703126,
+    "monotonic": true,
+    "median_step_ms": 33.561279296875,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763821382402.zarr",
+    "frames": 703,
+    "first": 1763821382463.0,
+    "last": 1763821405854.0,
+    "duration_seconds": 23.391,
+    "monotonic": true,
+    "median_step_ms": 33.320556640625,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763821454977.zarr",
+    "frames": 657,
+    "first": 1763821455040.0,
+    "last": 1763821476973.5647,
+    "duration_seconds": 21.933564697265624,
+    "monotonic": true,
+    "median_step_ms": 33.435302734375,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763821554024.zarr",
+    "frames": 493,
+    "first": 1763821554083.0,
+    "last": 1763821570453.0,
+    "duration_seconds": 16.37,
+    "monotonic": true,
+    "median_step_ms": 33.2724609375,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763821622066.zarr",
+    "frames": 633,
+    "first": 1763821622133.0,
+    "last": 1763821643161.0,
+    "duration_seconds": 21.028,
+    "monotonic": true,
+    "median_step_ms": 33.272216796875,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763821660029.zarr",
+    "frames": 475,
+    "first": 1763821660086.0,
+    "last": 1763821675860.72,
+    "duration_seconds": 15.774719970703124,
+    "monotonic": true,
+    "median_step_ms": 33.280029296875,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763821758027.zarr",
+    "frames": 2236,
+    "first": 1763821758103.0,
+    "last": 1763821832622.658,
+    "duration_seconds": 74.51965795898437,
+    "monotonic": true,
+    "median_step_ms": 33.342041015625,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763821844056.zarr",
+    "frames": 2622,
+    "first": 1763821844134.0,
+    "last": 1763821931619.6213,
+    "duration_seconds": 87.48562133789062,
+    "monotonic": true,
+    "median_step_ms": 33.378662109375,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1763824745111.zarr",
+    "frames": 2011,
+    "first": 1763824745164.0,
+    "last": 1763824812140.0,
+    "duration_seconds": 66.976,
+    "monotonic": true,
+    "median_step_ms": 33.3212890625,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1764058230343.zarr",
+    "frames": 1567,
+    "first": 1764058230409.0,
+    "last": 1764058282705.605,
+    "duration_seconds": 52.29660498046875,
+    "monotonic": true,
+    "median_step_ms": 33.39501953125,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1764059030392.zarr",
+    "frames": 1316,
+    "first": 1764059030454.0,
+    "last": 1764059074322.0,
+    "duration_seconds": 43.868,
+    "monotonic": true,
+    "median_step_ms": 33.359619140625,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1764062192887.zarr",
+    "frames": 547,
+    "first": 1764062192955.0,
+    "last": 1764062214538.938,
+    "duration_seconds": 21.58393798828125,
+    "monotonic": true,
+    "median_step_ms": 39.531005859375,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1764065362213.zarr",
+    "frames": 1163,
+    "first": 1764065362284.0,
+    "last": 1764065407619.9846,
+    "duration_seconds": 45.335984619140625,
+    "monotonic": true,
+    "median_step_ms": 39.015380859375,
+    "timestamp_unit": "milliseconds"
+  },
+  {
+    "name": "1764072209354.zarr",
+    "frames": 923,
+    "first": 1764072209405.0,
+    "last": 1764072240183.6174,
+    "duration_seconds": 30.778617431640626,
+    "monotonic": true,
+    "median_step_ms": 33.382568359375,
+    "timestamp_unit": "milliseconds"
+  }
+]

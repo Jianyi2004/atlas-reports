@@ -1,0 +1,57 @@
+{
+  "id": "R16",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "source_url": "https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset/tree/main/sharpa",
+    "local_raw_paths": [
+      "trajectory_work/R16/episode0.npz"
+    ],
+    "downloaded_bytes": 71174813,
+    "sha256": {
+      "trajectory_work/R16/episode0.npz": "2d92f37b6b28c814432f25641c019bcae180d95f316a373f4414115853a88782"
+    },
+    "name": "sharpa/tube_season_POC22007_2026_02_09_15_57_16_train.zarr / episode0",
+    "download_url": "https://www.modelscope.cn/api/v1/datasets/Eureka1064/FTP-1-Dataset/repo?Revision=master&FilePath=sharpa%2Fsharpa.tar.part-0000",
+    "complete_episode": true,
+    "frames": 729,
+    "modalities": [
+      "wrist RGB",
+      "FTP standardized fingertip tactile image"
+    ],
+    "sync": "same FTP frame index; physical sampling frequency not verified"
+  },
+  "media": {
+    "html": "trajectories/R16/index.html",
+    "video": "trajectories/R16/preview.mp4",
+    "poster": "trajectories/R16/poster.webp",
+    "caption_zh": "从FTP公开sharpa分卷完整提取tube_season_POC22007_2026_02_09_15_57_16_train第0条episode，共729帧。左right_wrist_camera_rgb，右right_tactile_data_fingers（存储为CHW，展示时转HWC）。同转换包逐帧索引配对；此次未得到可核实采样时间，30fps仅为浏览速度，24.3秒不是已确认的物理轨迹时长。 展示的是FTP标准化后的触觉表示，海报选择接触最明显的第301帧。",
+    "preview_seconds": 24.3
+  },
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "完整发布数据",
+    "explanation_zh": "论文约4000条长时程示范；FTP文中3000小时是26来源汇编总量，不能赋给Sharpa。单例本次缺可核实物理时间戳，全库小时数未知。",
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2606.13102",
+        "evidence": "Sharpa North-FTP-1:4,000 long-horizon dexterous demonstrations; 3,000h describes all26sources"
+      }
+    ]
+  },
+  "evidence": [],
+  "blockers": [],
+  "reuses": [
+    "FTP作者新增Sharpa采集，转换数组按原来源计一次"
+  ],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "video_probe": {
+      "width": 960,
+      "height": 420,
+      "duration": "24.300000",
+      "nb_frames": "729"
+    }
+  }
+}

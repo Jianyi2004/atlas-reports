@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>X04 实际数据样例</title><style>body{background:#0b1423;color:#e7edf7;font:16px system-ui;margin:16px}video{width:100%;max-height:80vh}p{line-height:1.7}</style><h1>X04 · 实际数据样例</h1><video controls playsinline preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video><p>完整下载一次抓取移动记录的触觉、机器人状态及metadata。此仓库未提供RGB，展示Xela传感器1的16税元XYZ三轴相对首帧变化；4×4仅按CSV通道序排列，不推断物理布置，单位未标定为牛顿。</p></html><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

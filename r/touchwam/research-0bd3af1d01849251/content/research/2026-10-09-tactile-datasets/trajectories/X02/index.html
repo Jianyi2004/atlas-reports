@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>X02 实际数据样例</title><style>body{background:#0b1423;color:#e7edf7;font:16px system-ui;margin:16px}video{width:100%;max-height:80vh}p{line-height:1.7}</style><h1>X02 · 实际数据样例</h1><video controls playsinline preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video><p>实际下载EgoTac-SC中1763700794737的一条完整219帧记录，时间戳首末跨度7.233秒。左为原始ego_cam_rgb（未用重着色视频），中/右为双手原始finger与palm触觉通道，整段统一色标；手掌72通道仅排成6×12格方便观察，不是手掌几何布局。按同一记录行展示，画面列出相机与公共时间戳差值（约0.03–46ms）；触觉值单位未提供，不能称为N或Pa。SC与FTP三个来源的对应关系仍未核实，保持X类待核实。</p></html><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

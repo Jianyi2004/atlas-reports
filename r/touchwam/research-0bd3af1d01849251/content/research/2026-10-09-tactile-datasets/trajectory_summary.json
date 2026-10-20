@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-20",
+  "catalog_entries": 72,
+  "entries_with_actual_media": 64,
+  "entries_with_associated_media": 63,
+  "entries_with_unverified_candidate_media": 1,
+  "entries_with_complete_sequence": 49,
+  "entries_with_duration_evidence": 33,
+  "status_counts": {
+    "partial_trajectory": 2,
+    "complete_trajectory": 36,
+    "unverified_sample": 1,
+    "static_sample": 9,
+    "blocked": 8,
+    "tactile_only": 14,
+    "no_independent_sample": 2
+  },
+  "note": "实际文件展示含来源待证实候选；已关联媒体与完整序列统计排除候选。完整序列可缺RGB或真实采样率；完整参考/校准记录单独注明。汇编复用不增来源数；原始证据各口径不直接相加，规划汇总另列。"
+}

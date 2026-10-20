@@ -1,0 +1,50 @@
+{
+  "id": "R19",
+  "checked_at": "2026-10-19",
+  "status": "tactile_only",
+  "sample": {
+    "source_url": "https://github.com/clear-nus/TactileLearning",
+    "local_raw_paths": [
+      "trajectory_work/R19/forearm.log"
+    ],
+    "downloaded_bytes": 15311459,
+    "sha256": {
+      "trajectory_work/R19/forearm.log": "039b9e9d7ce141e41601db4a43b5d8bbab1e2ac57fa10e6cb82a0aa7f5ab315a"
+    },
+    "name": "data/bathTowel/touch_raw/right_forearm_comp/data.log",
+    "complete_episode": false,
+    "frames": 4167,
+    "duration_seconds": 84.18598890304565,
+    "duration_method": "record timestamps span",
+    "modalities": [
+      "iCub forearm skin"
+    ],
+    "notes": "完整touch_raw记录流，官方README说明该目录含10次触摸；缺少显式单试验分段，本次没有虚构episode边界。"
+  },
+  "media": {
+    "html": "trajectories/R19/index.html",
+    "video": "trajectories/R19/preview.mp4",
+    "poster": "trajectories/R19/poster.webp",
+    "caption_zh": "完整下载bathTowel/touch_raw/right_forearm_comp/data.log：4167条、384个皮肤通道，时间戳跨度84.186秒。图像横轴为原时间、纵轴为通道，热图是完整序列；30秒游标加速浏览。发布包没有对应RGB。颜色范围0–73.67（99.9分位截断显示，原文件未截断），单位未转换为牛顿。 官方touch_raw包含10次触摸，此处展示完整记录流，未假定单次试验边界。",
+    "preview_seconds": 30
+  },
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "完整发布数据",
+    "explanation_zh": "未找到可可靠汇总的总时长；不以样本数或文件体积推算。",
+    "sources": []
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "validation": "原始schema/数组范围已读取；实际配对关系按数据字段核对；海报人工检查；视频通过ffprobe。",
+    "video_probe": {
+      "width": 960,
+      "height": 420,
+      "duration": "30.000000",
+      "nb_frames": "209"
+    }
+  }
+}

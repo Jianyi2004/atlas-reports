@@ -1,0 +1,33 @@
+{
+  "id": "F02",
+  "best_hours": 4.628133492692593,
+  "low_hours": 1.1570333731731484,
+  "high_hours": 18.512533970770374,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "FTP公开MotionTrans/MotionTrans.tar机器人力学state归档的容量外推；单列F扩展类。",
+  "method_zh": "已完整审计首个机器人任务20 episodes，1,899帧，累计有效时间93.9499996秒，该任务TAR占144,192,000字节。公开归档25,571,297,280字节；按相同每秒压缩字节密度外推得4.628小时。假设全库每秒存储密度为该任务0.25–4倍，给1.157–18.513小时规划范围。",
+  "assumptions_zh": [
+    "本值高度依赖图像内容、压缩率、相机分辨率、空闲帧和任务字段是否与首任务一致；范围是工程敏感性情景，不是统计置信区间。",
+    "只将已下载首任务20条的0.026097小时视为实测；全归档时长不是直接读出的。",
+    "不使用原论文3,213人类/机器人混合示范作为机器人触觉数量；不将Simulation_inspire.tar混入当前归档。",
+    "该字段来自InspireHand forceAct/joint-force state，不是空间压力阵列，物理单位未确认。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset/tree/main/MotionTrans",
+      "evidence": "API精确公开MotionTrans.tar大小25,571,297,280字节；本地TAR索引与首任务episode时间戳已核实。"
+    },
+    {
+      "url": "https://github.com/michaelyuancb/ftp1-policy",
+      "evidence": "parse_data_motiontrans.py将gripper0_gripper_force按4指+2拇指转换为type=state；原Inspire驱动读forceAct。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方公开数据入口可匿名访问。",
+  "measured_subset_hours": 0.02609722210301293,
+  "measured_subset_recordings": 20,
+  "extrapolation_basis_bytes": 144192000,
+  "archive_bytes": 25571297280,
+  "checked_at": "2026-10-19"
+}

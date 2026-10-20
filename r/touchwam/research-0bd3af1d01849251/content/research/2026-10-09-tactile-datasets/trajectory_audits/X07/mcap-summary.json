@@ -1,0 +1,25 @@
+{
+  "message_start_time": 1781478680933681920,
+  "message_end_time": 1781478696449606656,
+  "counts": {
+    "/camera/head/rgb/calibration": 1,
+    "/camera/head/mono_left/calibration": 1,
+    "/camera/head/mono_right/calibration": 1,
+    "/tf_static": 3,
+    "/calibration/camera/head/json": 1,
+    "/calibration/glove/user/json": 1,
+    "/glove/lh/tactile": 3021,
+    "/glove/lh/imu": 3021,
+    "/glove/rh/tactile": 3013,
+    "/glove/rh/imu": 3013,
+    "/camera/head/mono_left/h264": 432,
+    "/camera/head/mono_right/h264": 432,
+    "/camera/head/rgb/h264": 432,
+    "/annotations/semantic/image": 432,
+    "/annotations/semantic/state": 432,
+    "/annotations/qa": 1,
+    "/camera/head/imu": 2860,
+    "/annotations/hand_pose_3d/right": 355,
+    "/annotations/hand_pose_3d/left": 234
+  }
+}

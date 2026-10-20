@@ -1,0 +1,39 @@
+{
+  "id": "A05",
+  "best_hours": 24.42868879977614,
+  "low_hours": 24.418688799776138,
+  "high_hours": 24.438688799776138,
+  "kind": "reuse",
+  "confidence": "medium",
+  "scope_zh": "实际存在文件的公开汇编覆盖：FreeTacMan、Touch and Go、GelSLAM三个上游；含仅触觉记录，新增独立小时为0。",
+  "method_zh": "FreeTacMan 6,337个唯一RGB录制15.697102h + Touch and Go 54条可取触觉5.451587h + GelSLAM 155视频约3.28h = 24.428689h。配对配置实际可取部分只含FreeTacMan与39条Touch and Go，约19.072022h。",
+  "assumptions_zh": [
+    "完整18591项文件清单确认：FreeTacMan全部11965对存在；Touch and Go索引138条中39条双模态、15条仅触觉、14条仅RGB；只计54条含触觉记录。",
+    "GelSLAM实际存在140条tracking和15条reconstruction的MP4；3.28h取镜像卡四舍五入报告，范围只反映其舍入误差。",
+    "各source计时方法不同：FreeTacMan为索引名义时长，Touch and Go为逐帧时间戳，GelSLAM为发布方报告，均未逐文件做完整可解码审计。",
+    "原卡47.65触觉stream-hours及配对索引30.3045h包含双指重复或缺失文件，不能当当前可取的独立录制量。",
+    "与U01、E07、P09同源，新增独立小时为0；NC兄弟库未审计范围不加入。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/yxma/tactile-video-pretrain",
+      "evidence": "完整仓库文件清单、配对Parquet与README的GelSLAM分项；已区分索引条目和实际文件。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "已逐路径核查公开文件存在性；汇编的小时与上游重叠，不额外加入分类总量。",
+  "checked_at": "2026-10-19",
+  "reuses_ids": [
+    "U01",
+    "E07",
+    "P09"
+  ],
+  "stream_hours": 47.65,
+  "incremental_hours": 0,
+  "paired_configuration_index_hours": 30.304516338627373,
+  "paired_configuration_available_hours": 19.072022169104052,
+  "audit_files": [
+    "duration_estimates/evidence/A05_full_repository_files.json",
+    "duration_estimates/evidence/E07_all_clock_spans.json"
+  ]
+}

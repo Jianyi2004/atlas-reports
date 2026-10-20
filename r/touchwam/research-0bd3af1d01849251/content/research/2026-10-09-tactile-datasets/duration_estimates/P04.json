@@ -1,0 +1,22 @@
+{
+  "id": "P04",
+  "best_hours": 93.08578703703704,
+  "low_hours": 93.08578703703704,
+  "high_hours": 93.08578703703704,
+  "kind": "metadata",
+  "confidence": "high",
+  "scope_zh": "公开TaF全部408份metadata对应的3,592 episodes。",
+  "method_zh": "逐一读取408份metadata，10,053,265 frames；每份fps均为30，Σframes/fps/3600=93.085787小时。",
+  "assumptions_zh": [
+    "依据文件帧覆盖计算时长；同步多相机/触觉流不重复累加。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/jiamig/taf-dataset",
+      "evidence": "本地审计trajectory_work/P04/duration-audit.json：408 metadata、10,053,265 frames、3,592 episodes、30 FPS。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方公开数据入口可匿名访问。",
+  "checked_at": "2026-10-19"
+}

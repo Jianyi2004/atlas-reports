@@ -1,0 +1,38 @@
+{
+  "id": "A02",
+  "best_hours": 6.12037037037037,
+  "low_hours": 3.060185185185185,
+  "high_hours": 18.36111111111111,
+  "kind": "reuse",
+  "confidence": "low",
+  "scope_zh": "Sparsh预训练汇编约661K图像覆盖；70%即462.7K用于预训练；TacBench上游另见独立条目。",
+  "method_zh": "约661,000幅/组样本÷假设30FPS÷3600作为覆盖等效；10–60FPS为敏感性范围。汇编在总量中新增贡献固定为0。",
+  "assumptions_zh": [
+    "这是样本播放等效覆盖，不是实录连续时长。",
+    "上游来源重复，不把本包小时再加入独立数据集总量；样本规模可能为约数/下界。"
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2410.24090",
+      "evidence": "§4.1/Appendix C：约661K images，70%=462.7K用于SSL；Touch-Slide180K、YCB-Slide180K、Touch and Go220K、ObjectFolder81K。"
+    },
+    {
+      "url": "https://github.com/facebookresearch/sparsh",
+      "evidence": "预训练与TacBench来源清单；force/slip同源试验不得再相加。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方汇编已公开；不同上游保留各自许可。",
+  "reuses_ids": [
+    "P05",
+    "P06",
+    "P07",
+    "R02",
+    "R03",
+    "R22",
+    "E07"
+  ],
+  "incremental_hours": 0,
+  "coverage_measure": "static_equivalent",
+  "checked_at": "2026-10-19"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "E05",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "name": "Raw_data/gloved_hand/p001/Apple/repeat0000",
+    "source_url": "https://huggingface.co/datasets/HustleHard/EgoTactile",
+    "download_url": "https://huggingface.co/datasets/HustleHard/EgoTactile/resolve/main/Raw_data/gloved_hand/p001/Apple/repeat0000/data.json",
+    "local_raw_paths": [
+      "trajectory_work/E05/data.json",
+      "trajectory_work/E05/rgb.mp4"
+    ],
+    "complete_episode": true,
+    "frames": 399,
+    "fps": 15,
+    "duration_seconds": 26.6,
+    "duration_method": "399视频帧/15fps；JSON camera_timestamp跨度26.864秒另记",
+    "modalities": [
+      "ego RGB",
+      "右手触觉"
+    ],
+    "sync": "JSON frame_id与MP4399帧对应；按15fps播放，绝对采集时间有轻微不均匀。",
+    "sha256": {
+      "trajectory_work/E05/data.json": "b7c46108c4ea587693736a9d45617e2a08fad9f2bc558646cf72a11659fec6be",
+      "trajectory_work/E05/rgb.mp4": "f387f06aaff0ee3e5f4fed6a9b5ea53e8294f9599306c81662a65c495cc7cb84"
+    },
+    "downloaded_bytes": 6552691
+  },
+  "media": {
+    "html": "trajectories/E05/index.html",
+    "video": "trajectories/E05/preview.mp4",
+    "poster": "trajectories/E05/poster.webp",
+    "caption_zh": "EgoTactile gloved_hand/p001/Apple/repeat0000：完整399帧、26.6秒配对样例。视频15fps，按JSON frame_id对应；触觉显示实际存储的RH.sensor_256按16×16展平值，不把256存储项称为256有效触点（数据卡162位置）。使用戴手套子集；预览10fps。JSON相机时间跨度26.864秒与恒帧率视频26.6秒略异，展示采用发布帧号配对。",
+    "preview_seconds": 26.6
+  },
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "未公开可核实的全库总时长",
+    "explanation_zh": "数据卡只给12人、63物体、15Hz；不能用人数×物体×单个样例时长外推总时长。当前实际样例26.6秒。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/HustleHard/EgoTactile",
+        "evidence": "12 participants /63 objects /15 FPS；无总小时数"
+      }
+    ]
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "method": "MP4帧数/可播放性检查与八项poster拼图人工核查"
+  }
+}

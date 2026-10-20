@@ -1,0 +1,17 @@
+[
+  {
+    "member": "tracking_dataset/hammer0/gelsight.avi",
+    "bytes": 66331404,
+    "sha256": "0ff093490407c013b587a7bbb5f28f9fe2679f86e84e84651d4cdae42071719b"
+  },
+  {
+    "member": "tracking_dataset/hammer0/true_start_T_currs.npy",
+    "bytes": 82944,
+    "sha256": "e964ceea7831dc5805e45974c6b6505a0a5e72048dfb607c72b18e89e340286f"
+  },
+  {
+    "member": "tracking_dataset/hammer0/background.png",
+    "bytes": 77120,
+    "sha256": "de0282deedd9ae4b3da58ca716c43f131a3653b04d89235285d939fe57cd4288"
+  }
+]

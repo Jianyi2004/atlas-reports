@@ -1,0 +1,36 @@
+{
+  "id": "U01",
+  "best_hours": 15.697101851871444,
+  "low_hours": 15.697101851871444,
+  "high_hours": 15.697101851871444,
+  "kind": "metadata",
+  "confidence": "medium",
+  "scope_zh": "当前可取得的派生包覆盖：6,337个唯一RGB录制；原始库全量仍可能更大",
+  "method_zh": "Σ各唯一rgb_video的max(duration_s)=56,509.5667秒；11,965双指视频流不重复累计。官方3M+ pairs未明确是否双指重复，不据此放大。",
+  "assumptions_zh": [
+    "采用已公开、可读取的配对索引覆盖量，非论文10K+轨迹全量；duration_s为n_frames/fps名义值，未逐视频核对。",
+    "本次官方HF目录6,428 CSV，其中按camera3+至少一指检查5,628组能匹配，派生包另覆盖709组；不声称原官方目录与派生包完全一致。",
+    "完整仓库18,591项文件清单已核对：FreeTacMan索引11,965对所指RGB及触觉文件全部存在，去重6,337个RGB录制；时长仍取索引值，未逐视频审计时钟。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/yxma/tactile-video-pretrain",
+      "evidence": "已读12,103行配对索引；FreeTacMan去重后6,337 RGB文件。"
+    },
+    {
+      "url": "https://huggingface.co/datasets/OpenDriveLab/FreeTacMan",
+      "evidence": "官方发布入口；原始样例三路240帧/30fps=8秒已核验。"
+    },
+    {
+      "url": "https://arxiv.org/html/2506.01941",
+      "evidence": "论文同步30Hz；3M+图像对和10K+轨迹为论文规模，不能直接视作当前可取的独立时序数。"
+    }
+  ],
+  "availability": "mirror",
+  "availability_note_zh": "主值对应公开派生覆盖；官方样例也已读取，许可证仍遵守上游。",
+  "checked_at": "2026-10-19",
+  "lower_bound_hours": 15.697101851871444,
+  "audit_files": [
+    "duration_estimates/evidence/A05_full_repository_files.json"
+  ]
+}

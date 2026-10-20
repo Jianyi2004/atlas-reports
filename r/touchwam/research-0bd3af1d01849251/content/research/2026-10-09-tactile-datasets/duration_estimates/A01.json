@@ -1,0 +1,35 @@
+{
+  "id": "A01",
+  "best_hours": 27.77777777777778,
+  "low_hours": 13.88888888888889,
+  "high_hours": 83.33333333333333,
+  "kind": "reuse",
+  "confidence": "low",
+  "scope_zh": "FoTa所称3M+静态/派生触觉图像汇编；仅覆盖规模等效。",
+  "method_zh": "约3,000,000幅/组样本÷假设30FPS÷3600作为覆盖等效；10–60FPS为敏感性范围。汇编在总量中新增贡献固定为0。",
+  "assumptions_zh": [
+    "这是样本播放等效覆盖，不是实录连续时长。",
+    "上游来源重复，不把本包小时再加入独立数据集总量；样本规模可能为约数/下界。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/alanz-mit/FoundationTactile",
+      "evidence": "卡片：3M+ images、13 sensors、11 tasks；目录含VisGel、ObjectFolder、Calandra、Yuan18、TVL、Touch and Go、YCB-Sight等。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方汇编已公开；不同上游保留各自许可。",
+  "reuses_ids": [
+    "R01",
+    "R02",
+    "R03",
+    "R06",
+    "R22",
+    "R23",
+    "P01",
+    "E07"
+  ],
+  "incremental_hours": 0,
+  "coverage_measure": "static_equivalent",
+  "checked_at": "2026-10-19"
+}

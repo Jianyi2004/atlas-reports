@@ -1,0 +1,61 @@
+{
+  "id": "P13",
+  "checked_at": "2026-10-19",
+  "status": "tactile_only",
+  "sample": {
+    "name": "data/test/20260712_103545_027153_rigid_70.npz",
+    "source_url": "https://huggingface.co/datasets/Tachintech/tactile-deformation-response",
+    "download_url": "https://hf-mirror.com/datasets/Tachintech/tactile-deformation-response/resolve/main/data/test/20260712_103545_027153_rigid_70.npz",
+    "local_raw_paths": [
+      "trajectory_work/P13/sample.npz"
+    ],
+    "downloaded_bytes": 90832,
+    "sha256": {
+      "trajectory_work/P13/sample.npz": "0c72bb76adff9d15999c97788d97ac730062f61313c06f78ca7d16c711d98c93"
+    },
+    "complete_episode": true,
+    "frames": 64,
+    "fps": null,
+    "duration_seconds": null,
+    "modalities": [
+      "32×32 tactile array"
+    ],
+    "sync": "单一触觉时序，无视觉流。",
+    "notes": "复用2026-10-16已从官方公开仓库下载并校验的完整NPZ。"
+  },
+  "media": {
+    "html": "trajectories/P13/index.html",
+    "poster": "trajectories/P13/poster.webp",
+    "caption_zh": "完整读取一条64帧、32×32触觉阵列序列。左：归一化去基线响应，整条序列统一色标；右：响应总和及当前帧。数据不含场景RGB与采样时间；以10帧/秒播放仅方便浏览，不代表真实采样率。"
+  },
+  "duration": {
+    "released_hours": null,
+    "paper_hours": null,
+    "metadata_hours": null,
+    "basis": "unknown",
+    "scope_zh": "全库",
+    "explanation_zh": "每条64帧，但数据/metadata未提供原生FPS或时间戳；不能将演示动画的80ms间隔当作采集周期。无法可靠换算全库小时数。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/Tachintech/tactile-deformation-response",
+        "evidence": "frames.shape (64,32,32); temporal frame index; animation interval is a visualization example"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://hf-mirror.com/datasets/Tachintech/tactile-deformation-response/resolve/main/data/test/20260712_103545_027153_rigid_70.npz",
+      "status": 200,
+      "detail": "实际读取NPZ frames=(64,32,32), float32。"
+    }
+  ],
+  "blockers": [
+    "源数据未提供场景RGB。",
+    "未提供原生采样时间。"
+  ],
+  "reuses": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  }
+}

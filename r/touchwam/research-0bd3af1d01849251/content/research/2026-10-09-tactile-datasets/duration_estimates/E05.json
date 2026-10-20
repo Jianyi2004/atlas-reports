@@ -1,0 +1,35 @@
+{
+  "id": "E05",
+  "best_hours": 5.816666666666666,
+  "low_hours": 5.802462962962963,
+  "high_hours": 5.900834234524656,
+  "kind": "metadata",
+  "confidence": "high",
+  "scope_zh": "EgoTactile当前767个具有data.json及同目录视频的发布序列，含戴手套与裸手协调参考两子集。",
+  "method_zh": "逐下载并解析全部767份JSON，共314100帧；全部frame_id从首到尾连续。314100/15/3600=5.816667小时。下界按每段末−首帧间隔(314100−767)/15；上界按各camera_timestamp末−首再加1/15秒，合计5.900834小时。",
+  "assumptions_zh": [
+    "名义15Hz与真实相机时间戳存在约1.4%差异；范围反映两种实际时间口径，不是置信区间。",
+    "戴手套692条281185帧=5.207130小时，为可见操作手的直接压力测量；裸手75条32915帧=0.609537小时，其压力来自另一只画面外戴手套手的协调动作。",
+    "768个视频文件中只有767份配套data.json，本统计只计配对目录；不从12人×63物体外推。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/HustleHard/EgoTactile",
+      "evidence": "官方发布目录及15Hz同步说明、裸手参考协议"
+    },
+    {
+      "url": "https://huggingface.co/datasets/HustleHard/EgoTactile/raw/main/Raw_data/gloved_hand/p002/Apple/repeat0000/data.json",
+      "evidence": "全部767份JSON读取frame_id及camera_timestamp首末；统计明细见E05_audited_counts.json"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "767份发布JSON全部读取成功；公开RGB对应目录已核对。",
+  "checked_at": "2026-10-19",
+  "direct_visible_hand_hours": 5.20712962962963,
+  "bare_hand_reference_hours": 0.6095370370370371,
+  "timestamp_span_hours": 5.886630530820953,
+  "audit_files": [
+    "duration_estimates/evidence/E05_totals.json",
+    "duration_estimates/evidence/E05_audited_counts.json"
+  ]
+}

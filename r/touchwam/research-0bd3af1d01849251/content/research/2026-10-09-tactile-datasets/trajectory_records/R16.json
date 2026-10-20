@@ -1,0 +1,99 @@
+{
+  "id": "R16",
+  "checked_at": "2026-10-20",
+  "status": "complete_trajectory",
+  "sample": {
+    "name": "clean_plate_with_eraser/season_POC22027_2026_04_17_11_01_59_train/lerobot_v2.1 / episode 0",
+    "source_url": "https://huggingface.co/datasets/Sharpa-Robotics/SharpaDex-v1.0",
+    "download_url": "https://huggingface.co/datasets/Sharpa-Robotics/SharpaDex-v1.0/resolve/c8032fd891e3f6f19b0d4886793579c1dce5eea7/clean_plate_with_eraser/season_POC22027_2026_04_17_11_01_59_train/lerobot_v2.1/data/chunk-000/episode_000000.parquet",
+    "local_raw_paths": [
+      "supplements/sharpadex_v1/sample/data/chunk-000/episode_000000.parquet"
+    ],
+    "raw_video_work_directory": "/data_all/intern10/workspace/TouchWAM/research/sharpadex_v1_audit_20261020/sample/videos",
+    "downloaded_bytes": 194594967,
+    "sha256": {
+      "sample/meta/modality.json": "5fcbedab7f7159b10ec42827bdcfcf4faa348a6ec65db002910ae78a18900ec3",
+      "sample/meta/info.json": "18f035379f9251c534e0101d93bc5c5f601a66aceb53407f3c21602044ed9c19",
+      "sample/meta/annotations.jsonl": "f683a899745a9466a550d46a05f020aa198ab6b49635bd0279e3047b37ded091",
+      "sample/meta/episodes.jsonl": "ec1b62070d6b0ea99afea7fb94d96052021a75a4811988b36d6382950dfe3a85",
+      "sample/data/chunk-000/episode_000000.parquet": "b79a44b0e25eed45bf98a3399a61e74642da5f815a191bf103844d3ac1a6c3c8",
+      "sample/videos/chunk-000/observation.images.head_right/episode_000000.mp4": "799e311d9034b5be2bbf3423cc32856cc3092c04b46e3cacd91334b1fd659493",
+      "sample/videos/chunk-000/observation.images.tactile_deform/episode_000000.mp4": "e3ed1a00cbe56b6e085eec28ce6abf7dd79d239fce7262bee4c94ab5de8055a8",
+      "sample/videos/chunk-000/observation.images.wrist_left/episode_000000.mp4": "83785a5bd462bbd2b47154d6c9cab50e21086253444799c71da247b076681182",
+      "sample/videos/chunk-000/observation.images.wrist_right/episode_000000.mp4": "dca47efdc0d733ed4dd6c50621c6bd9f540b5b82266fbd27365e759e23d2f724",
+      "sample/videos/chunk-000/observation.images.tactile_raw/episode_000000.mp4": "32d304c8220f7104555b2facd413a6ba86254c58bf1c415862c35164a990484f",
+      "sample/videos/chunk-000/observation.images.head_left/episode_000000.mp4": "f96ca5138e09fb4008a2ea86b06fe5a73edfc78e78215a876d82c8a8c9bcaed9"
+    },
+    "complete_episode": true,
+    "frames": 1250,
+    "fps": 30,
+    "duration_seconds": 41.666666666666664,
+    "duration_method": "Parquet帧数/30；六路MP4各1250帧、41.666667秒；timestamp末值41.633335秒。",
+    "modalities": [
+      "4 RGB cameras",
+      "raw fingertip tactile video",
+      "deformation video",
+      "60D tactile",
+      "65D state/action",
+      "TCP pose state/action",
+      "language"
+    ],
+    "sync": "同一导出frame_index对齐六路视频及Parquet；各视频完整解码1250帧。只验证导出网格，不宣称原始硬件时延已独立审计。",
+    "notes": "原始清盘完整轨迹41.667秒；合成预览每3帧取1帧、10FPS按1倍时间播放41.7秒。数据值不虚构单位、不做触觉插值。"
+  },
+  "media": {
+    "html": "supplements/sharpadex_v1/review.html",
+    "video": "supplements/sharpadex_v1/visualization/preview.mp4",
+    "poster": "supplements/sharpadex_v1/visualization/poster.jpg",
+    "preview_seconds": 41.7,
+    "caption_zh": "SharpaDex真实清盘轨迹：左手握盘、右手持擦子擦拭。上排四路头/腕RGB，中排原始2×5触觉相机拼图与形变图，下排双手各5指fz存储值及当前时刻。实际六视频各1250帧/30Hz；触觉图块到手指的语义映射、数值单位及硬件时延未独立确认。"
+  },
+  "duration": {
+    "released_hours": 300.0,
+    "metadata_hours": 299.96455555555553,
+    "basis": "metadata_sum",
+    "scope_zh": "SharpaDex v1.0单一导出全部495seasons，59任务；原始FTP旧发布不额外叠加。",
+    "explanation_zh": "全部495份info实算32,396,172/30/3600=299.964556小时，非单条样例外推。v2.1/v3.0重复导出不相加。约300小时包含非接触阶段，尚未全量解码验证质量；旧FTP约4000条及原25.24小时估计保留历史附件。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/Sharpa-Robotics/SharpaDex-v1.0",
+        "evidence": "官方数据卡：59任务、495seasons、28,993episodes、32,396,172frames、30FPS；两导出同源。"
+      },
+      {
+        "url": "https://huggingface.co/datasets/Sharpa-Robotics/SharpaDex-v1.0/blob/c8032fd891e3f6f19b0d4886793579c1dce5eea7/clean_plate_with_eraser/season_POC22027_2026_04_17_11_01_59_train/lerobot_v2.1/meta/info.json",
+        "evidence": "本轮逐一读取全部495份v3.0 info，响应commit均相同；样例v2.1结构及全局规模相符。"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://huggingface.co/datasets/Sharpa-Robotics/SharpaDex-v1.0/blob/c8032fd891e3f6f19b0d4886793579c1dce5eea7/clean_plate_with_eraser/season_POC22027_2026_04_17_11_01_59_train/lerobot_v2.1/data/chunk-000/episode_000000.parquet",
+      "status": 200,
+      "detail": "真实Parquet1250帧、动作区别于观察、60维触觉变化；另抽查锤钉703帧及插插头335帧。"
+    }
+  ],
+  "blockers": [
+    "TCP force槽及7个torso torque槽为零；三条抽样触觉首帧全零，并有少量相邻重复行。",
+    "触觉单位/标定、TCP坐标与旋转约定仍不充分；无全库逐帧有效率保证。"
+  ],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "method": "全部495份metadata；三条Parquet数值抽查；清盘六路视频全片解码；预览播放和28.3秒拖动已验证。"
+  },
+  "audit_files": [
+    "supplements/sharpadex_v1/review.html",
+    "supplements/sharpadex_v1/video_audit.json",
+    "supplements/sharpadex_v1/quality_spotchecks/conclusion_zh.md",
+    "supplements/sharpadex_v1/metadata_audit/audit_totals.json"
+  ],
+  "related_releases": [
+    {
+      "name": "Sharpa North-FTP-1旧发布",
+      "sample_html": "trajectories/R16/index.html",
+      "record": "trajectory_records/history/R16-ftp-20261019.json",
+      "duration_record": "duration_estimates/history/R16-ftp-20261019.json",
+      "counted_separately": false
+    }
+  ]
+}

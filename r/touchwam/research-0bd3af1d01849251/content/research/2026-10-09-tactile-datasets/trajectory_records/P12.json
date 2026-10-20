@@ -1,0 +1,63 @@
+{
+  "id": "P12",
+  "checked_at": "2026-10-19",
+  "status": "tactile_only",
+  "sample": {
+    "name": "Touch-Ex · beaker / body / interaction0001",
+    "source_url": "https://huggingface.co/datasets/gemixin/touch-ex",
+    "local_raw_paths": [
+      "trajectory_work/P12/interaction.parquet"
+    ],
+    "downloaded_bytes": 212135656,
+    "sha256": {
+      "trajectory_work/P12/interaction.parquet": "1990fd65013b05ac3bf6c7f7edaad93c40d3f200f9f7f2ec9844e756b62ad7fe"
+    },
+    "complete_episode": true,
+    "frames": 120,
+    "fps": null,
+    "duration_seconds": null,
+    "modalities": [
+      "DIGIT tactile RGB",
+      "FSR force_n"
+    ],
+    "sync": "image和force_n使用同一Parquet行；完整120帧interaction。",
+    "notes": "image和force_n使用同一Parquet行；完整120帧interaction。",
+    "download_url": "https://hf-mirror.com/datasets/gemixin/touch-ex/resolve/main/data/test_unseen-00000-of-00001.parquet"
+  },
+  "media": {
+    "html": "trajectories/P12/index.html",
+    "poster": "trajectories/P12/poster.webp",
+    "video": "trajectories/P12/preview.mp4",
+    "caption_zh": "从官方测试Parquet提取完整beaker_body_force1_interaction0001（120帧）。左为DIGIT触觉图，右为同一行force_n字段；这是背面FSR估计的按压力，不是像素力分布。没有场景RGB；原始采集会按力区间筛帧，10fps播放不能换算真实接触时长。",
+    "preview_seconds": 12.0
+  },
+  "duration": {
+    "released_hours": null,
+    "paper_hours": null,
+    "metadata_hours": null,
+    "basis": "unknown",
+    "scope_zh": "全库",
+    "explanation_zh": "135,360帧/1,128接触。官方明确只保留力落在目标区间内的帧，且无每帧时间戳/FPS，不能将120帧视为固定秒数。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/gemixin/touch-ex",
+        "evidence": "135,360帧/1,128接触。官方明确只保留力落在目标区间内的帧，且无每帧时间戳/FPS，不能将120帧视为固定秒数。"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://huggingface.co/datasets/gemixin/touch-ex",
+      "status": 200,
+      "detail": "已下载并实际解读所列原始文件。"
+    }
+  ],
+  "blockers": [
+    "源数据未提供外部场景RGB。"
+  ],
+  "reuses": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  }
+}

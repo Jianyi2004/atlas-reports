@@ -1,0 +1,70 @@
+{
+  "id": "P09",
+  "checked_at": "2026-10-19",
+  "status": "tactile_only",
+  "sample": {
+    "name": "GelSLAM · tracking / hammer0",
+    "source_url": "https://huggingface.co/datasets/joehjhuang/GelSLAM_dataset",
+    "local_raw_paths": [
+      "trajectory_work/P09/gelsight.avi",
+      "trajectory_work/P09/true_start_T_currs.npy",
+      "trajectory_work/P09/background.png"
+    ],
+    "downloaded_bytes": 66491468,
+    "sha256": {
+      "trajectory_work/P09/gelsight.avi": "0ff093490407c013b587a7bbb5f28f9fe2679f86e84e84651d4cdae42071719b",
+      "trajectory_work/P09/true_start_T_currs.npy": "e964ceea7831dc5805e45974c6b6505a0a5e72048dfb607c72b18e89e340286f",
+      "trajectory_work/P09/background.png": "de0282deedd9ae4b3da58ca716c43f131a3653b04d89235285d939fe57cd4288"
+    },
+    "complete_episode": true,
+    "frames": 647,
+    "fps": 25.0,
+    "duration_seconds": 25.88,
+    "modalities": [
+      "GelSight tactile RGB",
+      "6DoF sensor pose"
+    ],
+    "sync": "true_start_T_currs.npy形状(647,4,4)，逐帧对应原始触觉视频。",
+    "notes": "true_start_T_currs.npy形状(647,4,4)，逐帧对应原始触觉视频。",
+    "download_url": "https://hf-mirror.com/datasets/joehjhuang/GelSLAM_dataset/resolve/main/dataset.zip"
+  },
+  "media": {
+    "html": "trajectories/P09/index.html",
+    "poster": "trajectories/P09/poster.webp",
+    "video": "trajectories/P09/preview.mp4",
+    "caption_zh": "完整下载GelSLAM tracking/hammer0（647帧、25fps、25.88秒）。左为原始GelSight视频；右为同帧动捕相对位姿的平移分量。发布归档中未找到外部webcam流，右侧不是场景视频。",
+    "preview_seconds": 25.88
+  },
+  "duration": {
+    "released_hours": 0.8166666666666667,
+    "paper_hours": null,
+    "metadata_hours": null,
+    "basis": "official_reported",
+    "scope_zh": "仅140条long-horizon tracking；不含15条重建扫描",
+    "explanation_zh": "原作者tracking子集140条×平均约21秒≈0.817h，不含重建。此次另核对完整镜像155视频，发布方报告tracking0.81h、reconstruction2.47h，合计3.28h；见下方统计记录，不把tracking和总量重复相加。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/joehjhuang/GelSLAM_dataset",
+        "evidence": "140 tracking episodes; average approximately21 seconds;15 reconstruction objects"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://huggingface.co/datasets/joehjhuang/GelSLAM_dataset",
+      "status": 200,
+      "detail": "已下载并实际解读所列原始文件。"
+    }
+  ],
+  "blockers": [
+    "归档跟踪数据没有外部场景RGB。"
+  ],
+  "reuses": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  },
+  "audit_files": [
+    "trajectory_audits/P09/extracted.json"
+  ]
+}

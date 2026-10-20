@@ -1,0 +1,456 @@
+{
+  "recordings": 75,
+  "hours": 0.3638749588888889,
+  "entries": [
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-27-35/meta_data.csv",
+      "start": "2021-11-25 13:27:11.445946",
+      "stop": "2021-11-25 13:27:35.914210",
+      "seconds": 24.468264
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-42-05/meta_data.csv",
+      "start": "2021-11-25 13:41:51.998187",
+      "stop": "2021-11-25 13:42:05.180432",
+      "seconds": 13.182245
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-17-40/meta_data.csv",
+      "start": "2021-11-25 13:16:53.272879",
+      "stop": "2021-11-25 13:17:40.529165",
+      "seconds": 47.256286
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-26-15/meta_data.csv",
+      "start": "2021-11-25 13:26:10.985437",
+      "stop": "2021-11-25 13:26:15.970173",
+      "seconds": 4.984736
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-29-56/meta_data.csv",
+      "start": "2021-11-25 13:29:45.216416",
+      "stop": "2021-11-25 13:29:56.394287",
+      "seconds": 11.177871
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-42-55/meta_data.csv",
+      "start": "2021-11-25 13:42:40.371475",
+      "stop": "2021-11-25 13:42:55.156774",
+      "seconds": 14.785299
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-20-06/meta_data.csv",
+      "start": "2021-11-25 13:19:58.326272",
+      "stop": "2021-11-25 13:20:06.257334",
+      "seconds": 7.931062
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-11-37/meta_data.csv",
+      "start": "2021-11-25 13:11:31.362739",
+      "stop": "2021-11-25 13:11:37.864131",
+      "seconds": 6.501392
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-19-17/meta_data.csv",
+      "start": "2021-11-25 13:19:09.847000",
+      "stop": "2021-11-25 13:19:17.945417",
+      "seconds": 8.098417
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-38-56/meta_data.csv",
+      "start": "2021-11-25 13:38:50.704243",
+      "stop": "2021-11-25 13:38:56.908539",
+      "seconds": 6.204296
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-23-53/meta_data.csv",
+      "start": "2021-11-25 13:23:46.857263",
+      "stop": "2021-11-25 13:23:53.410118",
+      "seconds": 6.552855
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-15-31/meta_data.csv",
+      "start": "2021-11-25 13:15:07.224423",
+      "stop": "2021-11-25 13:15:31.423708",
+      "seconds": 24.199285
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-39-20/meta_data.csv",
+      "start": "2021-11-25 13:39:14.313924",
+      "stop": "2021-11-25 13:39:20.740828",
+      "seconds": 6.426904
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-37-50/meta_data.csv",
+      "start": "2021-11-25 13:37:42.162112",
+      "stop": "2021-11-25 13:37:50.964527",
+      "seconds": 8.802415
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-12-16/meta_data.csv",
+      "start": "2021-11-25 13:12:07.006766",
+      "stop": "2021-11-25 13:12:16.167765",
+      "seconds": 9.160999
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-21-10/meta_data.csv",
+      "start": "2021-11-25 13:20:52.812668",
+      "stop": "2021-11-25 13:21:10.041868",
+      "seconds": 17.2292
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-28-45/meta_data.csv",
+      "start": "2021-11-25 13:28:18.568623",
+      "stop": "2021-11-25 13:28:45.115892",
+      "seconds": 26.547269
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-24-35/meta_data.csv",
+      "start": "2021-11-25 13:24:29.535439",
+      "stop": "2021-11-25 13:24:35.929914",
+      "seconds": 6.394475
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-41-23/meta_data.csv",
+      "start": "2021-11-25 13:41:03.472953",
+      "stop": "2021-11-25 13:41:23.212273",
+      "seconds": 19.73932
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-23-10/meta_data.csv",
+      "start": "2021-11-25 13:23:04.916635",
+      "stop": "2021-11-25 13:23:10.818337",
+      "seconds": 5.901702
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-39-50/meta_data.csv",
+      "start": "2021-11-25 13:39:34.559450",
+      "stop": "2021-11-25 13:39:50.220511",
+      "seconds": 15.661061
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-07-20/meta_data.csv",
+      "start": "2021-11-25 13:07:15.514804",
+      "stop": "2021-11-25 13:07:20.159157",
+      "seconds": 4.644353
+    },
+    {
+      "file": "flat_objects_only/test/data_sample_2021-11-25-13-09-52/meta_data.csv",
+      "start": "2021-11-25 13:09:46.496901",
+      "stop": "2021-11-25 13:09:52.583148",
+      "seconds": 6.086247
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-55-56/meta_data.csv",
+      "start": "2021-11-24 15:55:33.531254",
+      "stop": "2021-11-24 15:55:56.331539",
+      "seconds": 22.800285
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-20-26/meta_data.csv",
+      "start": "2021-11-24 15:20:09.448909",
+      "stop": "2021-11-24 15:20:26.285236",
+      "seconds": 16.836327
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-23-04/meta_data.csv",
+      "start": "2021-11-24 15:23:00.223063",
+      "stop": "2021-11-24 15:23:04.782587",
+      "seconds": 4.559524
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-11-47/meta_data.csv",
+      "start": "2021-11-24 16:10:31.400815",
+      "stop": "2021-11-24 16:11:47.702850",
+      "seconds": 76.302035
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-30-24/meta_data.csv",
+      "start": "2021-11-24 15:30:18.557512",
+      "stop": "2021-11-24 15:30:24.511794",
+      "seconds": 5.954282
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-39-52/meta_data.csv",
+      "start": "2021-11-24 15:38:20.612191",
+      "stop": "2021-11-24 15:39:52.760572",
+      "seconds": 92.148381
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-33-58/meta_data.csv",
+      "start": "2021-11-24 15:33:18.100566",
+      "stop": "2021-11-24 15:33:58.463523",
+      "seconds": 40.362957
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-31-42/meta_data.csv",
+      "start": "2021-11-24 16:31:29.004788",
+      "stop": "2021-11-24 16:31:42.850750",
+      "seconds": 13.845962
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-40-42/meta_data.csv",
+      "start": "2021-11-24 15:40:37.718043",
+      "stop": "2021-11-24 15:40:42.560686",
+      "seconds": 4.842643
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-21-15/meta_data.csv",
+      "start": "2021-11-24 15:20:42.172409",
+      "stop": "2021-11-24 15:21:15.429705",
+      "seconds": 33.257296
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-04-03/meta_data.csv",
+      "start": "2021-11-24 16:03:57.760969",
+      "stop": "2021-11-24 16:04:03.284454",
+      "seconds": 5.523485
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-03-47/meta_data.csv",
+      "start": "2021-11-24 16:03:43.287743",
+      "stop": "2021-11-24 16:03:47.988415",
+      "seconds": 4.700672
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-01-54/meta_data.csv",
+      "start": "2021-11-24 16:01:45.096372",
+      "stop": "2021-11-24 16:01:54.260033",
+      "seconds": 9.163661
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-34-35/meta_data.csv",
+      "start": "2021-11-24 15:34:30.343261",
+      "stop": "2021-11-24 15:34:35.808297",
+      "seconds": 5.465036
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-42-06/meta_data.csv",
+      "start": "2021-11-24 15:41:50.372115",
+      "stop": "2021-11-24 15:42:06.784587",
+      "seconds": 16.412472
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-01-25/meta_data.csv",
+      "start": "2021-11-24 16:01:12.919882",
+      "stop": "2021-11-24 16:01:25.844447",
+      "seconds": 12.924565
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-25-24/meta_data.csv",
+      "start": "2021-11-24 16:24:36.343264",
+      "stop": "2021-11-24 16:25:24.121299",
+      "seconds": 47.778035
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-34-53/meta_data.csv",
+      "start": "2021-11-24 15:34:49.190484",
+      "stop": "2021-11-24 15:34:53.791874",
+      "seconds": 4.60139
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-38-40/meta_data.csv",
+      "start": "2021-11-24 16:38:26.803186",
+      "stop": "2021-11-24 16:38:40.947901",
+      "seconds": 14.144715
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-12-42/meta_data.csv",
+      "start": "2021-11-24 16:12:12.178654",
+      "stop": "2021-11-24 16:12:42.310881",
+      "seconds": 30.132227
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-19-56/meta_data.csv",
+      "start": "2021-11-24 16:19:50.794945",
+      "stop": "2021-11-24 16:19:56.200607",
+      "seconds": 5.405662
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-24-26/meta_data.csv",
+      "start": "2021-11-24 15:24:02.476841",
+      "stop": "2021-11-24 15:24:26.766712",
+      "seconds": 24.289871
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-03-19/meta_data.csv",
+      "start": "2021-11-24 16:02:05.090503",
+      "stop": "2021-11-24 16:03:19.300383",
+      "seconds": 74.20988
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-18-59/meta_data.csv",
+      "start": "2021-11-24 16:18:46.230897",
+      "stop": "2021-11-24 16:18:59.616099",
+      "seconds": 13.385202
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-22-34/meta_data.csv",
+      "start": "2021-11-24 15:22:05.790596",
+      "stop": "2021-11-24 15:22:34.325299",
+      "seconds": 28.534703
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-26-21/meta_data.csv",
+      "start": "2021-11-24 16:25:36.970696",
+      "stop": "2021-11-24 16:26:21.857038",
+      "seconds": 44.886342
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-13-18/meta_data.csv",
+      "start": "2021-11-24 16:13:13.125567",
+      "stop": "2021-11-24 16:13:18.695121",
+      "seconds": 5.569554
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-31-09/meta_data.csv",
+      "start": "2021-11-24 15:30:56.147978",
+      "stop": "2021-11-24 15:31:09.906972",
+      "seconds": 13.758994
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-28-37/meta_data.csv",
+      "start": "2021-11-24 15:28:33.868158",
+      "stop": "2021-11-24 15:28:37.910359",
+      "seconds": 4.042201
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-32-21/meta_data.csv",
+      "start": "2021-11-24 16:31:58.621903",
+      "stop": "2021-11-24 16:32:21.002665",
+      "seconds": 22.380762
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-53-35/meta_data.csv",
+      "start": "2021-11-24 15:53:02.888736",
+      "stop": "2021-11-24 15:53:35.163325",
+      "seconds": 32.274589
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-55-09/meta_data.csv",
+      "start": "2021-11-24 15:55:04.198384",
+      "stop": "2021-11-24 15:55:09.034846",
+      "seconds": 4.836462
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-27-05/meta_data.csv",
+      "start": "2021-11-24 16:27:01.578207",
+      "stop": "2021-11-24 16:27:05.713937",
+      "seconds": 4.13573
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-23-32/meta_data.csv",
+      "start": "2021-11-24 15:23:21.460518",
+      "stop": "2021-11-24 15:23:32.061476",
+      "seconds": 10.600958
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-39-39/meta_data.csv",
+      "start": "2021-11-24 16:39:34.778354",
+      "stop": "2021-11-24 16:39:39.612638",
+      "seconds": 4.834284
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-37-23/meta_data.csv",
+      "start": "2021-11-24 16:37:01.101544",
+      "stop": "2021-11-24 16:37:23.747504",
+      "seconds": 22.64596
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-57-53/meta_data.csv",
+      "start": "2021-11-24 15:57:48.409848",
+      "stop": "2021-11-24 15:57:53.349687",
+      "seconds": 4.939839
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-52-36/meta_data.csv",
+      "start": "2021-11-24 15:52:22.139570",
+      "stop": "2021-11-24 15:52:36.827237",
+      "seconds": 14.687667
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-32-59/meta_data.csv",
+      "start": "2021-11-24 15:32:38.045104",
+      "stop": "2021-11-24 15:32:59.223331",
+      "seconds": 21.178227
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-56-17/meta_data.csv",
+      "start": "2021-11-24 15:56:13.677574",
+      "stop": "2021-11-24 15:56:17.643672",
+      "seconds": 3.966098
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-19-34/meta_data.csv",
+      "start": "2021-11-24 15:19:09.142171",
+      "stop": "2021-11-24 15:19:34.621693",
+      "seconds": 25.479522
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-28-22/meta_data.csv",
+      "start": "2021-11-24 15:28:15.841138",
+      "stop": "2021-11-24 15:28:22.622999",
+      "seconds": 6.781861
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-39-22/meta_data.csv",
+      "start": "2021-11-24 16:39:17.871695",
+      "stop": "2021-11-24 16:39:22.548402",
+      "seconds": 4.676707
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-20-11/meta_data.csv",
+      "start": "2021-11-24 16:20:07.509467",
+      "stop": "2021-11-24 16:20:11.552733",
+      "seconds": 4.043266
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-31-50/meta_data.csv",
+      "start": "2021-11-24 15:31:21.595160",
+      "stop": "2021-11-24 15:31:50.623200",
+      "seconds": 29.02804
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-13-36/meta_data.csv",
+      "start": "2021-11-24 16:13:31.746676",
+      "stop": "2021-11-24 16:13:36.550504",
+      "seconds": 4.803828
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-26-51/meta_data.csv",
+      "start": "2021-11-24 16:26:47.544617",
+      "stop": "2021-11-24 16:26:51.786069",
+      "seconds": 4.241452
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-41-35/meta_data.csv",
+      "start": "2021-11-24 15:41:25.004803",
+      "stop": "2021-11-24 15:41:35.769181",
+      "seconds": 10.764378
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-18-22/meta_data.csv",
+      "start": "2021-11-24 16:17:57.280491",
+      "stop": "2021-11-24 16:18:22.967708",
+      "seconds": 25.687217
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-28-02/meta_data.csv",
+      "start": "2021-11-24 15:27:31.127990",
+      "stop": "2021-11-24 15:28:02.717892",
+      "seconds": 31.589902
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-15-40-25/meta_data.csv",
+      "start": "2021-11-24 15:40:19.359829",
+      "stop": "2021-11-24 15:40:25.089208",
+      "seconds": 5.729379
+    },
+    {
+      "file": "flat_objects_only/train/data_sample_2021-11-24-16-17-35/meta_data.csv",
+      "start": "2021-11-24 16:17:02.794550",
+      "stop": "2021-11-24 16:17:35.663962",
+      "seconds": 32.869412
+    }
+  ]
+}

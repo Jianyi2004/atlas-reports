@@ -1,0 +1,1502 @@
+[
+  {
+    "id": "H06",
+    "path": "dataset/man4/knead_man4.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man4/knead_man4.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/95027328",
+    "shape": [
+      58,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 11600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man3/beat_man3.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man3/beat_man3.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/201523328",
+    "shape": [
+      123,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 24600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man6/pressing_man6.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man6/pressing_man6.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/173670528",
+    "shape": [
+      106,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 21200
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man5/grip_man5.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man5/grip_man5.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/222822528",
+    "shape": [
+      136,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 27200
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man9/poke_man9.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man9/poke_man9.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/191692928",
+    "shape": [
+      117,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 23400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man4/poke_man4.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man4/poke_man4.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/160563328",
+    "shape": [
+      98,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 19600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man5/poke_man5.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man5/poke_man5.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/151552128",
+    "shape": [
+      185,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<i4",
+    "frames": 37000
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man3/grip_man3.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man3/grip_man3.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/173670528",
+    "shape": [
+      106,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 21200
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man6/pinch_man6.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man6/pinch_man6.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/216268928",
+    "shape": [
+      132,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 26400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man2/beat_man2.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man2/beat_man2.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/162201728",
+    "shape": [
+      99,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 19800
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man7/tapping_man7.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man7/tapping_man7.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/281804928",
+    "shape": [
+      172,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 34400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man3/tapping_man3.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man3/tapping_man3.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/180224128",
+    "shape": [
+      110,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 22000
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man1/pinch_man1.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man1/pinch_man1.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/186777728",
+    "shape": [
+      114,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 22800
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man2/pressing_man2.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man2/pressing_man2.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/117964928",
+    "shape": [
+      72,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 14400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man9/squeeze_man9.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man9/squeeze_man9.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/108134528",
+    "shape": [
+      66,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 13200
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man0/pinch_man0.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man0/pinch_man0.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/132710528",
+    "shape": [
+      81,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 16200
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man3/poke_man3.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man3/poke_man3.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/163840128",
+    "shape": [
+      100,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 20000
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man6/knead_man6.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man6/knead_man6.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/204800128",
+    "shape": [
+      125,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 25000
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man1/squeeze_man1.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man1/squeeze_man1.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/116326528",
+    "shape": [
+      71,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 14200
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man7/stroking_man7.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man7/stroking_man7.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/296550528",
+    "shape": [
+      181,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 36200
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man5/pressing_man5.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man5/pressing_man5.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/206438528",
+    "shape": [
+      126,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 25200
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man3/stroking_man3.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man3/stroking_man3.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/160563328",
+    "shape": [
+      98,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 19600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man5/knead_man5.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man5/knead_man5.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/601292928",
+    "shape": [
+      367,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 73400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man6/stroking_man6.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man6/stroking_man6.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/106496128",
+    "shape": [
+      65,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 13000
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man2/poke_man2.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man2/poke_man2.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/244121728",
+    "shape": [
+      149,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 29800
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man4/pinch_man4.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man4/pinch_man4.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/183500928",
+    "shape": [
+      112,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 22400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man1/pressing_man1.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man1/pressing_man1.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/175308928",
+    "shape": [
+      107,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 21400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man5/tapping_man5.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man5/tapping_man5.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/185139328",
+    "shape": [
+      113,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 22600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man8/pinch_man8.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man8/pinch_man8.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/172032128",
+    "shape": [
+      105,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 21000
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man7/knead_man7.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man7/knead_man7.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/217907328",
+    "shape": [
+      133,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 26600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man4/tapping_man4.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man4/tapping_man4.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/219545728",
+    "shape": [
+      134,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 26800
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man6/tapping_man6.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man6/tapping_man6.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/160563328",
+    "shape": [
+      98,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 19600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man5/stroking_man5.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man5/stroking_man5.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/51609728",
+    "shape": [
+      63,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<i4",
+    "frames": 12600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man6/beat_man6.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man6/beat_man6.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/267059328",
+    "shape": [
+      163,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 32600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man0/squeeze_man0.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man0/squeeze_man0.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/109772928",
+    "shape": [
+      67,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 13400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man8/knead_man8.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man8/knead_man8.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/234291328",
+    "shape": [
+      143,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 28600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man8/grip_man8.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man8/grip_man8.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/193331328",
+    "shape": [
+      118,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 23600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man7/poke_man7.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man7/poke_man7.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/244121728",
+    "shape": [
+      149,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 29800
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man9/stroking_man9.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man9/stroking_man9.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/85196928",
+    "shape": [
+      52,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 10400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man8/squeeze_man8.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man8/squeeze_man8.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/201523328",
+    "shape": [
+      123,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 24600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man0/beat_man0.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man0/beat_man0.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/116326528",
+    "shape": [
+      71,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 14200
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man7/pinch_man7.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man7/pinch_man7.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/234291328",
+    "shape": [
+      143,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 28600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man1/stroking_man1.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man1/stroking_man1.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/165478528",
+    "shape": [
+      101,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 20200
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man5/beat_man5.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man5/beat_man5.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/448921728",
+    "shape": [
+      274,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 54800
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man3/pressing_man3.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man3/pressing_man3.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/137625728",
+    "shape": [
+      84,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 16800
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man5/pinch_man5.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man5/pinch_man5.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/178585728",
+    "shape": [
+      218,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<i4",
+    "frames": 43600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man7/scratching_man7.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man7/scratching_man7.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/139264128",
+    "shape": [
+      85,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 17000
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man2/squeeze_man2.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man2/squeeze_man2.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/119603328",
+    "shape": [
+      73,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 14600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man4/grip_man4.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man4/grip_man4.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/114688128",
+    "shape": [
+      70,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 14000
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man2/tapping_man2.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man2/tapping_man2.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/142540928",
+    "shape": [
+      87,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 17400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man2/stroking_man2.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man2/stroking_man2.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/109772928",
+    "shape": [
+      67,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 13400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man7/beat_man7.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man7/beat_man7.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/293273728",
+    "shape": [
+      179,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 35800
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man9/pinch_man9.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man9/pinch_man9.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/158924928",
+    "shape": [
+      97,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 19400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man4/squeeze_man4.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man4/squeeze_man4.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/109772928",
+    "shape": [
+      67,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 13400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man7/pressing_man7.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man7/pressing_man7.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/206438528",
+    "shape": [
+      126,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 25200
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man2/knead_man2.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man2/knead_man2.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/81920128",
+    "shape": [
+      50,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 10000
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man9/tapping_man9.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man9/tapping_man9.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/124518528",
+    "shape": [
+      76,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 15200
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man2/grip_man2.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man2/grip_man2.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/73728128",
+    "shape": [
+      45,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 9000
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man1/tapping_man1.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man1/tapping_man1.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/140902528",
+    "shape": [
+      86,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 17200
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man8/pressing_man8.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man8/pressing_man8.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/237568128",
+    "shape": [
+      145,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 29000
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man8/beat_man8.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man8/beat_man8.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/242483328",
+    "shape": [
+      148,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 29600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man1/poke_man1.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man1/poke_man1.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/150732928",
+    "shape": [
+      92,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 18400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man0/stroking_man0.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man0/stroking_man0.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/72089728",
+    "shape": [
+      44,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 8800
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man2/pinch_man2.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man2/pinch_man2.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/86835328",
+    "shape": [
+      53,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 10600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man3/knead_man3.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man3/knead_man3.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/154009728",
+    "shape": [
+      94,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 18800
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man4/scratching_man4.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man4/scratching_man4.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/158924928",
+    "shape": [
+      97,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 19400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man6/squeeze_man6.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man6/squeeze_man6.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/186777728",
+    "shape": [
+      114,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 22800
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man0/poke_man0.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man0/poke_man0.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/88473728",
+    "shape": [
+      54,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 10800
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man7/squeeze_man7.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man7/squeeze_man7.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/281804928",
+    "shape": [
+      172,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 34400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man3/squeeze_man3.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man3/squeeze_man3.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/134348928",
+    "shape": [
+      82,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 16400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man8/scratching_man8.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man8/scratching_man8.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/275251328",
+    "shape": [
+      168,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 33600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man6/poke_man6.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man6/poke_man6.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/263782528",
+    "shape": [
+      161,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 32200
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man9/knead_man9.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man9/knead_man9.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/137625728",
+    "shape": [
+      84,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 16800
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man9/grip_man9.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man9/grip_man9.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/135987328",
+    "shape": [
+      83,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 16600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man1/scratching_man1.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man1/scratching_man1.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/183500928",
+    "shape": [
+      112,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 22400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man9/pressing_man9.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man9/pressing_man9.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/142540928",
+    "shape": [
+      87,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 17400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man7/grip_man7.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man7/grip_man7.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/122880128",
+    "shape": [
+      75,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 15000
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man5/scratching_man5.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man5/scratching_man5.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/95846528",
+    "shape": [
+      117,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<i4",
+    "frames": 23400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man0/knead_man0.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man0/knead_man0.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/131072128",
+    "shape": [
+      80,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 16000
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man0/grip_man0.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man0/grip_man0.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/113049728",
+    "shape": [
+      69,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 13800
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man1/knead_man1.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man1/knead_man1.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/135987328",
+    "shape": [
+      83,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 16600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man0/scratching_man0.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man0/scratching_man0.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/127795328",
+    "shape": [
+      78,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 15600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man4/stroking_man4.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man4/stroking_man4.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/150732928",
+    "shape": [
+      92,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 18400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man2/scratching_man2.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man2/scratching_man2.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/103219328",
+    "shape": [
+      63,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 12600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man8/stroking_man8.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man8/stroking_man8.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/244121728",
+    "shape": [
+      149,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 29800
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man6/scratching_man6.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man6/scratching_man6.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/209715328",
+    "shape": [
+      128,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 25600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man5/squeeze_man5.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man5/squeeze_man5.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/237568128",
+    "shape": [
+      145,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 29000
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man8/poke_man8.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man8/poke_man8.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/245760128",
+    "shape": [
+      150,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 30000
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man0/tapping_man0.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man0/tapping_man0.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/88473728",
+    "shape": [
+      54,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 10800
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man9/scratching_man9.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man9/scratching_man9.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/103219328",
+    "shape": [
+      63,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 12600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man3/pinch_man3.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man3/pinch_man3.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/209715328",
+    "shape": [
+      128,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 25600
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man9/beat_man9.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man9/beat_man9.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/149094528",
+    "shape": [
+      91,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 18200
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man3/scratching_man3.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man3/scratching_man3.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/157286528",
+    "shape": [
+      96,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 19200
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man4/beat_man4.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man4/beat_man4.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/175308928",
+    "shape": [
+      107,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 21400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man1/beat_man1.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man1/beat_man1.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/124518528",
+    "shape": [
+      76,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 15200
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man6/grip_man6.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man6/grip_man6.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/199884928",
+    "shape": [
+      122,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 24400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man8/tapping_man8.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man8/tapping_man8.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/344064128",
+    "shape": [
+      210,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 42000
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man4/pressing_man4.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man4/pressing_man4.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/178585728",
+    "shape": [
+      109,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 21800
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man1/grip_man1.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man1/grip_man1.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/191692928",
+    "shape": [
+      117,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 23400
+  },
+  {
+    "id": "H06",
+    "path": "dataset/man0/pressing_man0.npy",
+    "url": "https://hf-mirror.com/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man0/pressing_man0.npy",
+    "status": 206,
+    "content_range": "bytes 0-4095/103219328",
+    "shape": [
+      63,
+      200,
+      32,
+      32
+    ],
+    "dtype": "<f8",
+    "frames": 12600
+  }
+]

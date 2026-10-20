@@ -1,0 +1,40 @@
+{
+  "id": "U05",
+  "checked_at": "2026-10-19",
+  "status": "blocked",
+  "sample": {
+    "source_url": "https://www.modelscope.cn/datasets/daimonrobotics/Daimon-Infinity-Lite",
+    "download_url": "https://www.modelscope.cn/api/v1/datasets/daimonrobotics/Daimon-Infinity-Lite/repo?Revision=master&FilePath=datasets/dm_dataClaw/meta/info.json",
+    "downloaded_bytes": 0,
+    "sha256": {}
+  },
+  "media": {},
+  "duration": {
+    "released_hours": 1000,
+    "paper_hours": 1209,
+    "basis": "official_reported",
+    "scope_zh": "官方完整Daimon-Infinity发布声明；不是Lite实测",
+    "explanation_zh": "作者称首批发布1000小时，统计已采1209小时；本次Lite和数据文件接口返回403『无权访问该数据集』，没有独立验证公开文件实际时长。10000小时是未来目标。",
+    "sources": [
+      {
+        "url": "https://github.com/dmrobot-admin/Daimon-Infinity",
+        "evidence": "README首批1000小时、已采集1209小时、目标10000小时"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://www.modelscope.cn/api/v1/datasets/daimonrobotics/Daimon-Infinity-Lite/repo?Revision=master&FilePath=datasets/dm_dataClaw/meta/info.json",
+      "status": 403,
+      "detail": "无权访问该数据集；响应保存在trajectory_work/U05/download-response.json"
+    }
+  ],
+  "blockers": [
+    "官方ModelScope卡片可读；实际文件与目录接口匿名HTTP 403，Code 10020101037，Message：无权访问该数据集。未下载原始轨迹，未将官方演示视频冒充样例。"
+  ],
+  "reuses": [],
+  "review": {
+    "raw_read": false,
+    "render_checked": false
+  }
+}

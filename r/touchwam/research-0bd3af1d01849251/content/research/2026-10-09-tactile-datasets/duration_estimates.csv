@@ -1,0 +1,259 @@
+﻿编号,数据集,类型,主值小时,范围下界小时,范围上界小时,口径,可信度,访问状态,覆盖范围,计算依据,假设,来源,全量覆盖待确认
+E01,ActionSense,人类 ego 视觉＋触觉,5.683251655499141,5.683251655499141,5.683251655499141,元数据实算,高,已验证文件入口,已核对时间戳的第一视角RGB与双手触觉共同覆盖时长；含校准、等待及未标注时段。,"遍历S00–S05全部12个官方HDF5，逐录制计算 max(0,min(三流末时间)−max(三流首时间))，仅10段具备三流时间戳，求和20459.70596秒/3600=5.683252小时。","范围上下限相同表示此时间边界口径的确定计算，并非所有帧均有效接触或无内部丢帧。
+S06–S09官方明确未戴触觉手套，全部排除。
+S01和S03第一段缺少可核对的ego frame_timestamp；其双手触觉仍另计入全触觉6.679502小时，不冒充严格RGB—触觉配对。","https://action-sense.csail.mit.edu/data.html
+https://data.csail.mit.edu/ActionNet/wearable_data/2022-06-13_experiment_S02/2022-06-13_21-47-57_actionNet-wearables_S02/2022-06-13_21-48-24_streamLog_actionNet-wearables_S02.hdf5",False
+E02,EgoPressure,人类 ego 视觉＋触觉,5.833333333333333,5.787037037037036,5.87962962962963,估算,中,已验证文件入口,EgoPressure公开库的单一同步时间轴；不把8个相机累加。,作者约630K帧/相机÷30Hz÷3600≈5.833333小时；按630K为最接近10K的约数，625K–635K给出5.787037–5.879630小时的舍入敏感性区间。,"630K是作者近似统计，区间是约数解释，不是独立全库审计或统计置信区间。
+含校准和无接触阶段；8路相机及压力只计一次同步时间。",https://huggingface.co/datasets/eth-siplab/EgoPressure/blob/main/README.md,False
+E03,OpenTouch,人类 ego 视觉＋触觉,5.1,5.05,5.15,作者报告,中,仅官方入口，下载未验证,原始OpenTouch官方Google Drive发布入口对应的5.1小时录制；其中约3小时精选标注。,采用论文5.1小时公开数据规模；5.05–5.15小时仅表示保留一位小数的舍入范围。,"未通过当前网络下载原始Drive全库，5.1小时是作者报告量。
+同名opentouch-neurips2026候选样本与原始OpenTouch的来源关联未证实；其5秒样例不用于证明这5.1小时可直接下载。","https://arxiv.org/abs/2512.16842
+https://github.com/OpenTouch-MIT/opentouch/blob/main/scripts/download_data.sh",False
+E04,EgoTouch（TouchAnything数据）,人类 ego 视觉＋触觉,15.080688194444443,12.037938478009258,18.71773111111111,估算,中,已验证文件入口,EgoTouch当前公开1933个pressure_grids.npz与chest.mp4配套目录的总时长估计。,公开目录分Home1145/Office191/Outdoor157/Retail127/Workbench313条；固定种子20261019在每场景均匀随机抽40条，共200条，实际Range解码NPZ内数组shape。估计Σ(场景条数×场景样本平均帧数)/30/3600=15.080688小时；场景内bootstrap20000次给出约95%经验区间12.037938–18.717731小时。,"处理规格30fps；未逐条验证chest视频帧数与NPZ完全一致。
+随机抽样按发布目录分层，不按任务、时长或参与者再分层；长尾时长、场景内部组成和后续补传可能造成偏差。
+bootstrap仅反映此次样本内抽样波动，不覆盖FPS或发布文件质量错误。
+不使用所有三路相机和可视化视频重复计时；旧约2M帧/30fps=18.5185h作者口径另留。","https://huggingface.co/datasets/zhouzhoujy/EgoTouch/tree/main
+https://github.com/Jianyi2004/TouchAnything
+https://huggingface.co/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/arrange_pillow/20260412_101243_753/pressure_grids.npz",False
+E05,EgoTactile,人类 ego 视觉＋触觉,5.816666666666666,5.802462962962963,5.900834234524656,元数据实算,高,已验证文件入口,EgoTactile当前767个具有data.json及同目录视频的发布序列，含戴手套与裸手协调参考两子集。,逐下载并解析全部767份JSON，共314100帧；全部frame_id从首到尾连续。314100/15/3600=5.816667小时。下界按每段末−首帧间隔(314100−767)/15；上界按各camera_timestamp末−首再加1/15秒，合计5.900834小时。,"名义15Hz与真实相机时间戳存在约1.4%差异；范围反映两种实际时间口径，不是置信区间。
+戴手套692条281185帧=5.207130小时，为可见操作手的直接压力测量；裸手75条32915帧=0.609537小时，其压力来自另一只画面外戴手套手的协调动作。
+768个视频文件中只有767份配套data.json，本统计只计配对目录；不从12人×63物体外推。","https://huggingface.co/datasets/HustleHard/EgoTactile
+https://huggingface.co/datasets/HustleHard/EgoTactile/raw/main/Raw_data/gloved_hand/p002/Apple/repeat0000/data.json",False
+E06,OpenGraph Ego-Tactile Manipulation,人类 ego 视觉＋触觉,1.2836018518518517,1.2829351851851851,1.2836018518518517,元数据实算,高,已验证文件入口,OpenGraph当前72条发布episode的同步RGB—触觉时间轴。,meta.total_frames=138629、fps=30：138629/30/3600=1.283602小时；按每段只计首末间隔的下界(138629−72)/30/3600=1.282935小时。,只计一个同步时间轴，不把双手、图像流或90Hz原始压力重复加时。,https://huggingface.co/datasets/OpenGraphLabs-Research/ego-tactile-manipulation/blob/main/meta/info.json,False
+E07,Touch and Go,人类 ego 视觉＋触觉,3.374920317232609,3.3745727276802064,3.7456097202830843,元数据实算,中,公开镜像／派生入口,Touch and Go公开转换副本中实际同时存在RGB与GelSight文件的39条记录。,逐核对完整仓库18591条siblings及touchandgo子树175项，无分页遗漏；138条索引中仅39条具备两个视频文件。对这39条逐求time_scene/time_tactile交集并加中位末帧间隔=3.374920小时；仅首末交集3.374573小时，下界；视频容器名义时长合计3.745610小时作为另一时钟口径上界。,"来源是非作者公开转换副本，未独立审核从官方原视频到转换时间戳的过程。
+原先138条duration_s之和14.607414h包含未发布文件，不能当可获取完整配对时长；完整索引真实时钟约13.1619h也不能全部计入当前可取量。
+同源数据也出现在A05聚合库，跨库汇总必须去重。
+另有15条仅触觉视频可取得，按其metadata时钟含末帧约2.076667小时；全部54条可取触觉合计5.451587小时。另14条只有RGB，不计触觉量。","https://huggingface.co/api/datasets/yxma/tactile-video-pretrain
+https://huggingface.co/datasets/yxma/tactile-video-pretrain/blob/main/tactile_rgb/train-00000-of-00001.parquet
+https://touch-and-go.github.io/",False
+E08,VTDexManip（真实人类预训练数据）,人类 ego 视觉＋触觉,5.234518518518518,2.617259259259259,15.703555555555557,估算,低,公开镜像／派生入口,VTDexManip非作者公开镜像中2032条连续触觉序列的假设帧率时长估计。,实际遍历整个tactile.tar.gz的2032个JSON，共565328帧。中心采用官方visualize.py演示帧率30作为计算假设：565328/30/3600=5.234519小时；假设10–60Hz给出2.617259–15.703556小时。,"原始采集FPS及逐帧时钟未找到；30fps只来自官方导出视频参数，不能证明采集率。
+10–60Hz是显式的宽规划敏感性范围，不是证据支持的真实采样率区间或统计置信区间；实际时长可能超出。
+假定发布帧保持等间隔连续顺序，未大幅重采样或填充；若不成立，数字只表示该速率下的序列播放尺度。
+镜像文件组织和官方加载代码一致，但未有作者镜像授权链接或原始OneDrive文件校验和对比。","https://huggingface.co/datasets/wuliwuling/VTDexmanip/resolve/main/tactile.tar.gz
+https://github.com/LQTS/VTDexManipPretraining/blob/master/vitac_pretrain/visualize.py",False
+E09,HumanTouch（Xspark-HumanTouch；Spark-0人类触觉预训练数据）,人类 ego 视觉＋触觉,100.0,100.0,100.0,作者报告,高,已验证文件入口,HumanTouch官方首版约100小时、10任务的公开release规模。,保守沿用作者明确公布的initial release ~100 hours；不把论文1000小时、未来发布量或尚未全量核验的132.754小时meta推算代替公开主值。,"100小时为作者的近似发布规模，low=high=100仅表示没有虚构误差范围，不表示实测到小时或完整同步有效100小时。
+各X001–X010 meta.total_frames/60合计132.753972h，但episode文件数量与meta不一致，作为替代元数据口径单列。","https://xsparkai.com/sparklab/humantouch/
+https://huggingface.co/datasets/chuqiaoLyu/Xspark-HumanTouch/blob/main/X001/meta/info.json",False
+R01,VisGel,机器人真机触觉,29.359212962962964,14.679606481481482,58.71842592592593,估算,低,公开镜像／派生入口,可访问FoTa镜像中的VisGel完整版触觉序列范围；未恢复原同步场景RGB，不能把完整及下采样版本重复计入。,"FoTa预处理清单报告原始3,170,795帧；假定原始30fps，小时数=N/(fps×3600)，15–60fps作为敏感性范围。","未找到原始保存帧率，30fps是估算参数，不是已核实的采样率。
+FoTa接触筛选后726,740张图不是连续全视频，不能用它代表原始录制时长。
+同一帧的视觉和触觉只计一次。
+镜像成员名如seen_2_rec_02592_frame0204.jpg；作者预处理保留原录制目录及frame编号，完整与下采样版本同源，按完整版计一次。","https://github.com/alanzjl/t3/blob/main/dataset_preproc/README.md
+https://github.com/YunzhuLi/VisGel
+https://github.com/alanzjl/t3/blob/main/dataset_preproc/preprocess_visgel_images.py",False
+R02,Calandra抓取数据 / The Feeling of Success,机器人真机触觉,0.2233148148148148,0.1116574074074074,0.6699444444444445,静态帧等效,中,公开镜像／派生入口,"FoTa公开Calandra17静态触觉图像子集24,118张。","仅作训练帧量等价：24,118/(30×3600)；10–60fps给出等价范围。","这些是阶段快照/双指图像，未把不同手指图像当作增加的物理采集时间。
+本条数字是传感器图像帧量等价，不是实际录制小时数。
+原论文9,269次×约60秒=154.483h是机器人执行时间，不能替代公开静态数据时长。","https://github.com/alanzjl/t3/blob/main/dataset_preproc/README.md
+https://sites.google.com/view/the-feeling-of-success/",False
+R03,ObjectFolder-Real,机器人真机触觉,13.125925925925927,6.562962962962963,26.251851851851853,估算,低,已验证文件入口,ObjectFolder-Real真实触觉视频的单路GelSight时间轴（FoTa预处理0/gelsight范围）。,"公开FoTa清单1,417,600触觉帧÷假定30fps；15–60fps给出范围。","原始帧率未核实，30fps只作规划假设。
+预处理源码固定每trial的0/gelsight，未把多个视觉相机叠加为时间。
+不可使用声音片段6s代替触觉轨迹时长。","https://github.com/alanzjl/t3/blob/main/dataset_preproc/README.md
+https://github.com/alanzjl/t3/blob/main/dataset_preproc/preprocess_objectfolder_real_images.py
+https://objectfolder.stanford.edu/objectfolder-real-download",False
+R04,Eagle Shoal / Visual-Tactile Dataset,机器人真机触觉,13.733796296296296,7.083333333333333,21.25,估算,低,已验证文件入口,"Eagle Shoal全部2,550次试验；其中1,650次有视觉视频。","2,550×已下载trial的RGB时长349/18=19.3889s；以平均每trial10–30s给出范围。","只审计了一条视频，不能证明全库平均时长。
+假定900条无视频试验的触觉记录时长与有视频试验同量级；触觉400帧没有独立时间戳验证。
+视频、深度、触觉为同一次试验，不累加模态。","https://github.com/tsinghua-rll/Visual-Tactile_Dataset/blob/master/dataset/README.md
+https://github.com/tsinghua-rll/Visual-Tactile_Dataset",False
+R05,PoseIt,机器人真机触觉,12.777777777777779,6.644444444444445,20.444444444444443,估算,低,仅官方入口，下载未验证,"PoseIt公开入口所指1,840次抓取的完整四阶段轨迹。","1,840×假定每次25s；按每次13–40s给出规划范围。论文只明确抓前1s及姿态后1s等待，其余运动时长未报告。","25s是基于抓取、姿态调整、摇晃、回撤四阶段的规划假设，未从文件实测。
+假定明确的2s等待之外，四阶段机器人动作合计23s（11–38s）。
+原始文件未下载成功，数值不证明当前可用录制量。","https://arxiv.org/html/2209.05022
+https://github.com/Robo-Touch/PoseIt",False
+R06,YCB-Sight（真实部分）,机器人真机触觉,0.0044444444444444444,0.0022222222222222222,0.013333333333333334,静态帧等效,中,公开镜像／派生入口,"YCB-Sight Real的6物体、480张真实GelSight接触图（不包含1,800张仿真图）。",480/(30×3600)仅作静态训练帧量等价；10–60fps给出范围。,"这些是稀疏接触位置图，不能据此还原连续采集时间。
+以可实际取得的FoTa真实图像发布范围计量。","https://github.com/alanzjl/t3/blob/main/dataset_preproc/README.md
+https://github.com/Robo-Touch/YCB-Sight",False
+R07,RH20T（触觉配置）,机器人真机触觉,9.433179,4.7165895,18.866358,估算,低,公开镜像／派生入口,RH20T触觉配置（Cfg7），按917条触觉轨迹估计，不含RH20T其他无触觉配置。,已审计Dish_on_rack的20条合计0.20574h；全触觉子集估计0.20574/20×917。跨任务均值设为审计任务的0.5–2倍。,"917条/55任务来自OmniVTA比较表的RH20T*触觉范围。
+一项任务不能代表55任务时长分布，因此范围为敏感性分析，不是统计置信区间。","https://arxiv.org/html/2603.19201
+https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset/tree/main/RH20TCfg7Tactile",True
+R08,Reactive Diffusion Policy（RDP）数据,机器人真机触觉,1.0034953703703704,1.0034953703703704,1.9061278703703703,元数据实算,高,已验证文件入口,RDP三任务full操作集190条；另40个触觉表征视频与操作集是否重叠待核实，仅进入上界。,"三个downsample2的action.shape共43,351帧÷12Hz=1.003495h，作为主值与下界。另40个MP4 mvhd时长合计3,249.477s=0.902633h；无法证明独立采集，只有在全部不重叠情景下上界才为1.906128h。","官方代码说明原始24fps、downsample2对应12fps；N/fps为传感器记录长度换算，真实首尾跨度会有每条不超过约一帧的端点差异。
+mini/raw/downsample1/downsample2是相同采集的不同表示，仅计一次。
+数据卡只说明表征视频用于PCA训练，没有证明与操作集完全独立；主值不累加这0.902633h。
+高置信度指190条操作范围的元数据换算，上界是额外视频全独立的条件情景。","https://github.com/xiaoxiaoxh/reactive_diffusion_policy#data-postprocessing
+https://huggingface.co/datasets/WendiChen/reactive_diffusion_policy_dataset",False
+R09,UniT数据,机器人真机触觉,4.21156045751634,2.481127450980392,7.672426470588235,估算,低,公开镜像／派生入口,"UniT作者声明发布的三类原始数据：550条操作示范、15,685帧表征数据、11,340帧USB姿态数据；不再计YCB-Sight复用。","操作：allenkey170条合计1.069722h，按550/170外推为3.460866h（跨任务均值0.5–2倍）。表征：论文15,685帧/10Hz=0.435694h；USB姿态：11,340帧/10Hz=0.315000h。合计4.211560h；后两项为论文明确数量/频率换算，不是新增假设帧数。","操作部分200挂鸡腿+180薯片+170六角扳手；仅allenkey任务逐条时间戳已审计，其余操作时间仍为跨任务估计。
+论文表征数据为Allen key10,854帧、small ball4,831帧，固定10Hz；USB姿态训练10,111帧+测试1,229帧，固定10Hz。
+3D与6D pose是同一USB姿态采集的不同预测任务，仅计一次；论文YCB-Sight分类的240图属于R06复用，排除。
+README明确表征、手内姿态、操作三类均已发布；后两类Drive文件本次未逐项下载清点，依作者声明/论文规模计入，不能称文件完整性已验证。
+N/fps换算按记录长度计，未额外外推未报告的重建展示图或评测视频；FTP Unit/Unit_Bimanual等转换副本不再次累加。","https://github.com/ZhengtongXu/UniT
+https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset/tree/main/Unit
+https://arxiv.org/html/2408.06481",True
+R10,VLA-Touch数据,机器人真机触觉,0.8082222222222222,0.4729777777777778,1.2495333333333332,估算,中,已验证文件入口,HF公开380个processed HDF5 episode：mango179、watercup100、wipe101；rawZIP为副本不另加。,分任务读取episode0/50/99共9个HDF5的ee_poses.shape，均值按10Hz换算后乘各任务真实文件数。范围采用各任务样本最短/最长时长外推，再放宽20%。,"10Hz来自OmniVTA TableI对VLA-Touch的采样频率描述；本地HDF5自身无fps/时间戳字段。
+9条非随机系统抽样，范围不是统计置信区间，其他episode可能更长。","https://huggingface.co/datasets/AllenBi21/VLA-Touch
+https://arxiv.org/html/2603.19201",False
+R11,OmniViTac（OmniVTA数据）,机器人真机触觉,119.325635,59.6628175,238.65127,估算,低,已验证文件入口,"条件估计：按OmniViTac论文21,879条全部已公开的情景；本次未确认这些episode在发布文件中全部存在。","仅能确认官方仓库六类目录下736个压缩数据分卷，未提供逐episode清单，README仅含许可证。119.325635h=论文21,879条×已取得的一条完整触觉流19.634s/3600；59.662818–238.651270h是“全部21,879条发布且均值0.5–2倍”条件下的敏感性范围，不是已审计开放小时数。","关键未验证条件：论文21,879条与当前公开分卷内容完全一致。轻量目录只能证明736个分卷存在，不能证明每条轨迹均可取得。
+已实际下载并验证1条完整Adjustment轨迹，触觉19.634s；其他86任务没有充分时长样本。
+上下界均条件于论文规模全部发布；若发布不全，实际可获取总时长可能低于该下界。
+不把RGB、多指触觉与原始/转换版相加。","https://arxiv.org/html/2603.19201
+https://huggingface.co/datasets/tars-robotics/OmniVitac
+https://huggingface.co/datasets/tars-robotics/OmniVitac/tree/main",True
+R12,HapTile,机器人真机触觉,8.178997358333335,4.089498679166668,16.35799471666667,估算,低,已验证文件入口,"HapTile公开38个任务ZIP内全部1,700条trajectory.h5。","逐ZIP中央目录实数1,700条；move_toy_car30条时间戳总计519.606891s，均值17.32023s；1,700×该均值。范围均值0.5–2倍。","已量出全库episode数，但仅一项任务完整审计时长。
+任务之间长度差异未知，范围为跨任务敏感性，不是正式置信区间。","https://huggingface.co/datasets/HapTile2026/HapTile
+https://haptile-dataset.github.io/",False
+R13,LET-Dex Dataset,机器人真机触觉,6.89031892226411,3.445159461132055,13.78063784452822,估算,低,已验证文件入口,LET-Dex当前公开714个真机触觉ROSbag，不包括整个LET平台未发布数据。,"公开714个ROSbag合计545.7GB；以完整实测sample228,702,187bytes/10.395954371s标定秒/字节，再乘全库字节数。","ROSbag字节率受图像压缩、模态和事件频率影响，不能把体积直接当时长；这里只用真实时间锚点作有条件外推。
+范围为标定字节率0.5–2倍的敏感性分析。
+其中至少发现一个全零触觉bag，未逐条筛查非零接触比例，主值为有触觉通道的录制跨度。",https://huggingface.co/datasets/LejuRobotics/LET-Dex-Dataset,False
+R14,Humanoid Everyday（触觉部分）,机器人真机触觉,16.47487962962963,16.43725,16.47487962962963,元数据实算,中,已验证文件入口,"Humanoid Everyday仅G1 Dex3-1触觉手平台：4,064条、1,779,287帧；排除H1。",官方每episode robot_type筛选g1，然后sum(length)/(30×3600)=16.47488h；下限每episode扣一个端点帧。,"这是触觉传感器平台的录制时长，未逐帧剔除NaN、基线、未接触片段；不等于全部为有效接触。
+H1的4,885条/1,656,884帧没有论文所述Dex3-1触觉手，不能计入主值。","https://arxiv.org/html/2510.08807
+https://huggingface.co/datasets/USC-PSI-Lab/humanoid-everyday/blob/main/meta/episodes.jsonl",False
+R15,白虎-VTouch / OpenLoong visuo-tactile,机器人真机触觉,111.20129714829274,77.84090800380491,144.56168629278056,估算,中,已验证文件入口,"VTouch官方ModelScope全部9,246个HDF5，三平台合并一次。","四页官方API核实9,246条、17,249,459,503,388bytes；各平台在文件大小20/50/80百分位抽三条，共9条，读真实ns时间戳。按平台用总字节数×样本总秒数/样本总字节数外推后求和。","同平台HDF5各模态的字节率假定近似稳定；不同平台分别标定，未以单条D-WHEEL代替全部平台。
+±30%是压缩比与轨迹差异的规划范围，不是统计置信区间。
+PIKA属手持采集，但按现有报告来源家族R15分类统计；不与FTP再相加。","https://www.modelscope.cn/datasets/OpenLoong-Community/visuo-tactile
+https://www.modelscope.cn/api/v1/datasets/174855/repo/tree?Revision=master&Root=/&Recursive=True&PageNumber=1&PageSize=3000",False
+R16,SharpaDex v1.0 / Sharpa North（关联FTP旧发布）,机器人真机触觉,299.96455555555553,299.96455555555553,299.96455555555553,元数据实算,高,已验证文件入口,SharpaDex v1.0单一LeRobot导出的全部495个采集season；旧Sharpa FTP发布保留关联，不另加时长。,"完整枚举59任务/495season，读取全部495份v3.0 meta/info.json；Σtotal_frames=32,396,172，全部fps=30，除以30×3600得到299.964556小时。","上下界相同表示该元数据口径可确定计算，不意味着全库视频逐帧质量、物理同步或净接触时长均已审计。
+v2.1和v3.0是同一批示范，只选一个导出；六视频流与十指不分别累计小时。
+与Sharpa North-FTP-1属于同采集家族，轨迹交集尚未量化；保守只计本库，不额外加旧估计25.237778h，也不声称新版完整包含旧版。
+全部495份元数据逐任务与README一致，来自固定commit；原始仓库信息接口100000文件上限已通过逐目录枚举绕开。
+真实样例六路视频各1250帧/30Hz、导出时间网格一致；这不独立证明硬件零时延。","https://huggingface.co/datasets/Sharpa-Robotics/SharpaDex-v1.0
+https://huggingface.co/datasets/Sharpa-Robotics/SharpaDex-v1.0/blob/c8032fd891e3f6f19b0d4886793579c1dce5eea7/clean_plate_with_eraser/season_POC22027_2026_04_17_11_01_59_train/lerobot_v2.1/meta/info.json",False
+R17,Tactile MNIST（Real）,机器人真机触觉,120.90309075777779,120.90309075777779,120.90309075777779,元数据实算,高,已验证文件入口,"Tactile MNIST Real全部48个序列分片、600个唯一记录、153,600次触碰视频的录制窗口。","逐次视频读取video_length_frames限定的time_stamp_rel_seq首尾跨度，153,600次求和120.903091h；不包含各次视频之间的机器人移动间隔。另计净接触10.713059h，二者不相加。","与其他数据集统一按实际传感器录制窗口计时，包含视频内接近/离开等未接触帧。
+逐视频时间戳首尾差不包含跨触碰视频的等待/移动间隔。
+不同分辨率、单帧版和序列版是同一来源表示，不重复相加。",https://huggingface.co/datasets/TimSchneider42/tactile-mnist-touch-real-seq-t256-320x240,False
+R18,ARQ-CRISP Slip Detection Dataset,机器人真机触觉,0.3525336905320485,0.3525336905320485,0.3525336905320485,元数据实算,高,已验证文件入口,ARQ-CRISP三物体×30试验=90条的全部公开触觉记录。,完整三个HDF5逐试验对tactile_timestamps毫秒首尾差求和。,"三个物体brush/SpoolSolder/screwDriver各30条；每条只计一次，滑移标签不增加时间。
+记录跨度包括试验内非滑移时段，不是仅滑移事件持续时间。",https://github.com/ARQ-CRISP/slip_detection_dataset_2021/tree/main/data,False
+R19,iCub Hybrid Touch Texture Dataset,机器人真机触觉,6.9853110238436065,5.588248819074885,8.382373228612327,估算,中,已验证文件入口,iCub当前可见19种材料的56个带skin_events录制流：19slide、19touch、18touch_raw2。,各模式完整读取bathTowel对应encoder流，得到764.5705/84.1830/470.4638s；其余同模式按encoder文本字节数比例外推。每种模式只计一次时间，不再叠加forearm/events通道。,"论文23材料不等于当前公开目录19材料；只对实际有skin_events文件的流求和。
+编码器固定列数/约50Hz使文本字节率可作粗代理，但数字长度和采样抖动会改变字节率；±20%敏感性范围。
+主值是完整记录跨度，包含多次触摸间的等待，不等于有效接触时长。",https://github.com/clear-nus/TactileLearning,False
+R20,Doro/Jaco OptoForce Object Classification,机器人真机触觉,7.745537084660834,7.745537084660834,7.745537084660834,元数据实算,高,已验证文件入口,"Doro/Jaco OptoForce原始训练2,000条+real-life测试120条；增强版不重复计。","两个完整CSV共2,120个header的stamp end−stamp start(ns)用Decimal计算后求和=7.745537h。","每条50个数值是重采样点，不是50Hz。
+训练与测试按不同原始header时间区间计；未加入Data augmentation的副本。","https://github.com/philipmaus/Tactile_Object_Classification/blob/main/000_training_data.csv
+https://github.com/philipmaus/Tactile_Object_Classification/blob/main/000_real_life_data.csv",False
+R21,BioTac_slide_20_50,机器人真机触觉,2.1079489155,1.664029440277778,2.2196465047222222,估算,中,已验证文件入口,"BioTac20材料×50条=1,000条原始_bio.csv序列；不重复计processed400×44张量。","从材料1/5/10/15/20各读取第10次试验，真实时间戳约6–8s；样本均值×1,000，样本最短/最长作为规划范围。","5条跨材料系统抽样，不能保证覆盖全部长短轨迹；范围不是统计置信区间。
+原始序列有600或约800帧，处理后400帧不是原始全部时长。",https://github.com/dexrob/BioTac_slide_20_50,False
+R22,Active Clothing Material Perception（Yuan18）,机器人真机触觉,4.5801388888888885,4.538777777777778,4.621499999999999,元数据实算,中,已验证文件入口,Active Clothing原始GelSight视频经FoTa全帧抽取的覆盖范围。,"FoTa清单494,655帧，官方预处理源码逐视频ffmpeg -vf fps=30，因此总视频时间约494655/(30×3600)=4.580139h；容许每个约4,467视频一帧的取整误差。","这不是Sparsh每视频只取10–25帧版本的时长换算；使用全帧FoTa处理。
+原始train/test索引实数3554+871=4425条，与下游4467视频口径不同；小时数来自完整抽帧清单，不依赖二者相等。
+同试验Kinect静态照片不额外增加视频小时数。","https://github.com/alanzjl/t3/blob/main/dataset_preproc/README.md
+https://github.com/alanzjl/t3/blob/main/dataset_preproc/preprocess_yuan18_images.py
+https://data.csail.mit.edu/active_clothing/Data_ICRA18.tar",False
+R23,SSVTP,机器人真机触觉,0.042472222222222224,0.021236111111111112,0.12741666666666665,静态帧等效,中,公开镜像／派生入口,"SSVTP4,587组静态视觉触觉对应对，TVL官方镜像。","仅作静态训练帧量等价：4,587/(30×3600)；10–60fps给出范围。","非同时采集，机器人先拍视觉，再移动到接触点；没有连续轨迹时间轴。
+不将视觉与触觉各计一次，不与TVL或FoTa汇编再次相加。
+该数值不是录制时长。","https://arxiv.org/abs/2402.13232
+https://huggingface.co/datasets/mlfu7/Touch-Vision-Language-Dataset",False
+U01,FreeTacMan,手持工具／UMI 触觉,15.697101851871444,15.697101851871444,15.697101851871444,元数据实算,中,公开镜像／派生入口,"当前可取得的派生包覆盖：6,337个唯一RGB录制；原始库全量仍可能更大","Σ各唯一rgb_video的max(duration_s)=56,509.5667秒；11,965双指视频流不重复累计。官方3M+ pairs未明确是否双指重复，不据此放大。","采用已公开、可读取的配对索引覆盖量，非论文10K+轨迹全量；duration_s为n_frames/fps名义值，未逐视频核对。
+本次官方HF目录6,428 CSV，其中按camera3+至少一指检查5,628组能匹配，派生包另覆盖709组；不声称原官方目录与派生包完全一致。
+完整仓库18,591项文件清单已核对：FreeTacMan索引11,965对所指RGB及触觉文件全部存在，去重6,337个RGB录制；时长仍取索引值，未逐视频审计时钟。","https://huggingface.co/datasets/yxma/tactile-video-pretrain
+https://huggingface.co/datasets/OpenDriveLab/FreeTacMan
+https://arxiv.org/html/2506.01941",False
+U02,Touch in the Wild,手持工具／UMI 触觉,12.037037037037038,12.037037037037038,31.40096618357488,估算,中,已验证文件入口,约2.6M视触觉配对帧的公开预训练范围；与任务Zarr去重计一次,"主估计2,600,000/60/3600=12.037h；敏感性范围按60–23Hz为12.037–31.401h。","论文称over 2.6M，不是精确文件计数；取2.6M作保守基数。
+论文GoPro为60Hz，生成脚本逐视频帧保存，故主假设60Hz；尚未验证全部Zarr的实际时钟，23Hz下界采样率对应触觉硬件。
+预训练集合包括四个主要任务、室内与野外任务，不重复叠加这些任务归档；双指12×64数组每时刻只计一次。","https://arxiv.org/html/2507.15062
+https://github.com/XinyueZhuXY/touch_in_the_wild/blob/main/scripts_slam_pipeline/07_generate_replay_buffer.py
+https://huggingface.co/datasets/binghaohuang-robot/touch_in_the_wild-dataset",True
+U03,exUMI,手持工具／UMI 触觉,2.771818930041152,0.5846805555555555,6.15,估算,低,已验证文件入口,7个候选含触觉公开任务；排除已证实不含tactile_combined的pick_cube及未列出的put_ball,"已核实open_bottle 270条/126,291帧，以其平均467.744帧外推论文7任务1,280条；按GoPro60Hz得2.772h。下界只算已核实open_bottle约0.585h，上界用这7任务含重置的369分钟=6.15h作为规划上限。","其他6归档触觉完整性及任务时长分布未逐条确认，外推具有任务偏倚。
+60Hz来自作者采集配置QR命名Tp60及GoPro逐帧生成管线，仍需原视频时钟验证。
+论文480K触觉帧/5h属于另一表征采集集，当前8个任务ZIP未证实包含该全量，不额外相加。
+论文表2时间明确包含环境重置，6.15h仅为相关论文任务的敏感性上限，不能当可训练轨迹时长。","https://arxiv.org/html/2509.14688
+https://huggingface.co/datasets/silicx/exUMI
+https://github.com/silicx/exUMI/blob/main/DATA_COLLECTION.md",True
+U04,ViTaMIn,手持工具／UMI 触觉,3.189148148148148,0.10577777777777778,9.567444444444446,估算,低,已验证文件入口,公开6个单臂任务；不额外计未列出的双臂Knife Pulling,"论文表VI六任务Σ(valid demos×avg length)=355029帧；以实际Articulated任务22,848帧替换该任务论文83×403帧，得到344428帧。主假设30Hz；下界仅已审计任务按60Hz，上界全部候选帧按10Hz。","表VI avg length按帧数解释；原文表格未明确单位，这是估算假设。
+论文相机60Hz、同步相机30Hz、控制10Hz，但未证明发布数组使用哪一时钟，因此必须给宽范围。
+只有Articulated归档的75条/22,848帧实际核过；其余5任务按论文valid数量估计，不能称全量元数据实算。","https://arxiv.org/html/2504.06156v1
+https://huggingface.co/datasets/chuanyune/ViTaMIn_dataset",True
+U05,Daimon-Infinity,手持工具／UMI 触觉,1000,1000,1000,作者报告,中,待权限／条件开放,作者首批发布声明；当前匿名文件接口403,"直接引用官方首批1,000小时；不是实测值。当前可直接获取统计贡献为0，另列待权限量。","已采1,209小时与未来10,000小时目标均不计入首批公开量。
+区间相同表示作者给出单一发布数字，不意味着1,000小时经过逐轨迹审计。",https://github.com/dmrobot-admin/Daimon-Infinity,False
+H01,STAG,其他人类真实触觉,6.9057080394029615,6.9057080394029615,6.914331171347035,元数据实算,高,已验证文件入口,STAG四个官方子集classification、blindfolded、weights、handposes的发布录制总时长。,"已下载四个lite.zip，按各metadata.mat的(batchId,recordingId)分组求max(ts)−min(ts)再相加。177592帧、221条记录，合计6.905708小时；为每条补一个中位采样间隔后6.914331小时。","每个子集内部按录制去重；压力lite版与带图像完整版是同一来源，不重复计时。
+统计录制跨度，包含动作前后静止时段，不等于接触有效时长。
+此前5.276384h只含classification，现已补齐其他三个发布子集。","https://stag.csail.mit.edu/
+https://stag.csail.mit.edu/datasets/classification_lite.zip
+https://stag.csail.mit.edu/datasets/blindfolded_lite.zip
+https://stag.csail.mit.edu/datasets/weights_lite.zip
+https://stag.csail.mit.edu/datasets/handposes_lite.zip",False
+H02,PressureVisionDB,其他人类真实触觉,16.0,16.0,16.0,作者报告,中,仅官方入口，下载未验证,PressureVision官方公开数据的16小时录制；原15fps与小版3fps为同源版本。,采用官方README“36 participants ... four cameras ...16 hours”的报告值；不乘4路相机，不把15fps和3fps版本时长相加。,"作者未提供小时数误差范围，因此不杜撰区间；16–16是报告点值，并非独立精确审计。
+当前网络Dropbox下载失败，仅能确认官方公开入口，未读取原始轨迹。",https://github.com/facebookresearch/PressureVision,False
+H03,PX OmniSharing DB SampleData,其他人类真实触觉,4.84075,3.971509027777777,5.731206481481481,估算,中,已验证文件入口,PX OmniSharing当前公开1000个HDF5的同步observation时间轴总时长估计。,10个part各100文件，固定种子20261019每part均匀随机抽3份，共30份，HTTP Range实际读aligned_timestamp首末值（毫秒）。Σ100×part样本平均跨度/3600=4.840750小时；分层bootstrap20000次约95%经验区间3.971509–5.731206小时。,"按真实毫秒时间戳计算，未采用内嵌MP4的25fps替代实际约30Hz同步时钟。
+只有每part3条，且part不等于任务类别；任务时长长尾和part内组成会导致采样偏差，真实总量可能在区间外。
+不包含商业全库；多相机/双手不重复计时。
+区间只度量此次分层重采样波动，不包括数据丢帧、文件坏损等系统误差。","https://huggingface.co/datasets/paxini/Omnisharing_DB_SampleData
+https://huggingface.co/datasets/paxini/Omnisharing_DB_SampleData/resolve/main/data/part_01/episode_1227_213409_93_110056_glove.hdf5",False
+H04,FusionX Multimodal Sample Dataset V3,其他人类真实触觉,0.14602431767516666,0.14602431767516666,0.14612615213998895,元数据实算,高,已验证文件入口,FusionX V3公开11条sample录制的总时间跨度。,逐读11份frames.parquet，Σ(max(timestamp)−min(timestamp))/3600=0.146024小时（8.761459分钟）；每段补1个平均帧间隔得到约0.146126小时。,"当前公开sample范围，不外推发布方未公开数据。
+双手/双目共享同一条录制时间轴，不重复累加。",https://huggingface.co/datasets/touchtronix/FusionX-Multimodal-Sample-Data-V3,False
+H05,Tachin Fixed Viewpoint Tactile Dataset,其他人类真实触觉,0.8216388888888889,0.8194166666666667,0.8216388888888889,元数据实算,高,已验证文件入口,Tachin固定视角公开160条episode的RGB/触觉共同时间轴。,meta.total_frames=59158、fps=20：59158/20/3600=0.821639小时；只计首末帧间隔时(59158−160)/20/3600=0.819417小时。,单一同步时间，不乘RGB/深度/触觉模态数。,https://huggingface.co/datasets/Tachintech/Fixed_Viewpoint_Tactile_Dataset/blob/main/meta/info.json,False
+H06,Tactile Gesture Language,其他人类真实触觉,20.3537037037037,10.17685185185185,61.06111111111111,估算,低,已验证文件入口,Tactile Gesture Language全部发布连续触觉序列的假设帧率录制时长估计，仅触觉。,"实际Range读取10人×10手势共100个NPY头，shape均为(N,200,32,32)，总N=10991，合计2198200帧。中心假设30Hz：2198200/30/3600=20.353704小时；假设10–60Hz给出10.176852–61.061111小时。","数据卡和官方加载器未公布FPS或时间戳；30Hz是统一规划换算假设，不是观测结果。
+10–60Hz是显式宽敏感性范围，没有证据证明真实采样率必在范围内；并非统计置信区间。
+假定每条200帧是等间隔连续采样且未被重采样/补零；若这些假设不成立，数值仅是该帧率下的播放尺度。
+不把本报告10fps可视化速度当成原始采样率；数据没有发布RGB。","https://huggingface.co/datasets/Tachintech/Tactile_Gesture_Language
+https://huggingface.co/api/datasets/Tachintech/Tactile_Gesture_Language/tree/main?recursive=true&limit=1000
+https://huggingface.co/datasets/Tachintech/Tactile_Gesture_Language/blob/main/load_sample.py",False
+P01,TVL-HCT（TVL新增人采部分）,探测／标定／实验台触觉,1.9300555555555554,1.9300555555555554,1.9300555555555554,元数据实算,高,已验证文件入口,"原版公开ZIP的HCT部分：1,472个实际文件夹、208,446个同步帧时间点；不含SSVTP。","全ZIP目录逐帧核对HCT/vision与tactile各208,446张；每个文件夹帧号连续、无缺号。论文给定30Hz，因此208,446/30/3600=1.930056小时。","视觉与触觉配对仅计一次；背景图、SSVTP复用图不计。
+论文提到5名采集者20小时采集工作与1,486 trajectories；当前归档核验1,472文件夹。20小时不等于已公开的有效连续帧时长。","https://arxiv.org/html/2402.13232
+https://huggingface.co/datasets/mlfu7/Touch-Vision-Language-Dataset",False
+P02,TacQuad（AnyTouch）,探测／标定／实验台触觉,1.0358148148148147,0.5179074074074074,2.0716296296296295,估算,中,已验证文件入口,TacQuad完整原始归档中四类传感器各次采集的RGB时间轴；含未接触阶段。,"ZIP索引核得img_digit 29,842、img_gelsight 29,824、img_duragel 29,704、img_tac3d 22,498，共111,868帧。以已下载完整片段时间戳约30Hz外推；15–60Hz作敏感性范围。","同一物理采集的RGB和触觉不重复加和；传感器在同物体同位置的不同采集分别计入。
+接触帧17,524+55,082不是全录制长度，故使用原始RGB时间轴；test_tac3d派生图不再累加。
+本次仅一个完整240帧片段核验时间戳，全库675个RGB CSV未全部读到，其他采集可能有不同采样率。","https://huggingface.co/datasets/xxuan01/TacQuad
+https://github.com/GeWu-Lab/AnyTouch",False
+P03,HPT / HTT Dataset,探测／标定／实验台触觉,2.0948194444444446,1.2953101851851851,5.692611111111111,估算,低,已验证文件入口,公开HPT全部pretrain/classification连续episodes，加force/slip独立episodes；sliding只计一次。,"force与slip共401+405=806条，按4秒协议得0.895556小时；paired预训练/分类共86,347个光学时间点，假设20Hz得1.199264小时，主值2.094819小时。paired部分按5–60Hz给敏感性范围。","数据结构证明paired样本属于连续episodes；1光学帧与10阵列帧同步，不累加为11倍时长。
+20Hz是根据论文0.2秒输入窗含4光学帧作的规划假设，未证实就是公开预处理序列存储频率；故宽范围并标低置信。
+4秒明确写在force protocol；sliding沿同采集装置且每episode帧数相近，暂假设同样4秒，实际需全时间戳复核。
+force任务总数含sliding、slip再统计同批sliding；这里只加一次806条。","https://huggingface.co/datasets/AllenBi21/HTT-dataset/raw/main/STATS.json
+https://arxiv.org/html/2606.29948",False
+P04,TaF-Dataset,探测／标定／实验台触觉,93.08578703703704,93.08578703703704,93.08578703703704,元数据实算,高,已验证文件入口,"公开TaF全部408份metadata对应的3,592 episodes。","逐一读取408份metadata，10,053,265 frames；每份fps均为30，Σframes/fps/3600=93.085787小时。",依据文件帧覆盖计算时长；同步多相机/触觉流不重复累加。,https://huggingface.co/datasets/jiamig/taf-dataset,False
+P05,Touch-Slide,探测／标定／实验台触觉,1.6666666666666667,0.8333333333333334,3.3333333333333335,估算,低,已验证文件入口,Touch-Slide全部45条有序触觉轨迹；不含YCB-Slide复用。,作者报告9物体×5轨迹、约180K帧；假设30Hz得约1.666667小时，15–60Hz得0.833333–3.333333小时。,"未核实原始保存FPS，30Hz只作规划假设；实际下载bread/dataset_0.pkl有3,600帧，不能据此把所有45条统一为3,600帧。
+连续有序图像轨迹支持时长估计；此值不是实测时长。","https://huggingface.co/datasets/facebook/touch-slide
+https://arxiv.org/html/2410.24090",False
+P06,YCB-Slide（Real）,探测／标定／实验台触觉,0.8333333333333334,0.8333333333333334,0.8333333333333334,作者报告,高,仅官方入口，下载未验证,YCB-Slide官方50条真实轨迹；不含仿真。,"官方50条轨迹，每条60秒，合计3,000秒=0.833333小时。",使用官方完整轨迹协议；未通过全量视频时间戳复核。,https://github.com/rpl-cmu/YCB-Slide,False
+P07,Sparsh / TacBench原创监督数据,探测／标定／实验台触觉,26.822041666666667,22.620043209876545,31.099819444444442,估算,低,已验证文件入口,Sparsh公开原创DIGIT/GelSight力滑移库全部图像shards（含无接触），加论文49K姿态样本覆盖估算。,"DIGIT API列39个图像PKL/12 batches；GelSight列39个处理后图像PKL/10 batches。已读DIGIT首shard=50,000帧、flat/batch_1总189,561帧。假定其余每个非末shard50K、未知末shard主值25K（1–50K范围），得DIGIT约1,664,561帧、GelSight约1,700,000帧。分别除论文原生60/25FPS；姿态49K按60Hz主值，合计约26.822h。","50K上限/分块方式只实读验证一个图像shard；外推到全部两种传感器shards是核心假设，若分块规则不同，本范围也会失效。
+范围是未知末shard1–50K的条件情景，非统计置信区间；不意味着全量帧数已经实测。
+GelSight org_dataset_*与dataset_*为同源版本，计处理版一次；force/slip复用同批轨迹，按图像一次计。
+论文T3的49K可能是单指展开样本或同步时间点；姿态低值按3指共享49K/3，高值按49K个时间点、30Hz，主值假设49K个60Hz时间点。
+公开包保留大量无接触帧，因此不能把论文用于T1/T2评测的75K/125K标注样本直接作为全库大小。","https://huggingface.co/datasets/facebook/digit-force-estimation
+https://huggingface.co/datasets/facebook/gelsight-force-estimation
+https://arxiv.org/html/2410.24090",False
+P08,TactileTracking / NormalFlow Dataset,探测／标定／实验台触觉,0.238,0.23683333333333334,0.23916666666666667,作者报告,高,已验证文件入口,TactileTracking / NormalFlow全部84次试验。,84 trials×平均10.2秒=0.238小时；范围仅反映均值保留一位小数的舍入。,假设10.2秒是按0.1秒四舍五入后的全体平均值。,https://huggingface.co/datasets/joehjhuang/TactileTracking,False
+P09,GelSLAM Dataset,探测／标定／实验台触觉,3.28,3.27,3.29,作者报告,中,已验证文件入口,GelSLAM公开140条tracking与15条reconstruction扫描；使用可下载重编码镜像统计。,镜像卡列tracking 0.81小时、reconstruction 2.47小时，总3.28小时。两项均按0.01小时公布，范围仅反映相加舍入误差。,"原版ZIP索引确认恰有140+15=155条gelsight.avi，与镜像条目数吻合。
+镜像将AVI转成25FPS MP4；未逐个重新解码155条视频核对是否保持全部帧。
+原作者的平均约21秒仅针对tracking；不能遗漏1–30分钟每条的reconstruction扫描。","https://huggingface.co/datasets/yxma/tactile-video-pretrain
+https://huggingface.co/datasets/joehjhuang/GelSLAM_dataset",False
+P10,GelSight Sim2Real（真实A域）,探测／标定／实验台触觉,0.00035185185185185184,0.00017592592592592592,0.0010555555555555555,静态帧等效,低,已验证文件入口,仅官方GitHub可核实38张真实接触示例/标定图；是完整归档的已核实公开子集下界。,"官方树中*_real.png去掉背景图共38张。此数只覆盖可直接核实子集，完整归档真实图公式为1,200×N_objects，N_objects尚未核实。 以30帧/秒作统一播放等效值，10–60帧/秒给出敏感性范围；均不代表已经证实的连续交互时长。","静态实验图没有连续轨迹；完整归档Google Drive已发布但本次下载超时，不能将38张当全库规模。
+每物体真实1,200张与仿真1,200张；只计真实A域，仿真B域不计。
+30 FPS仅是便于横向比较的假设；范围不是统计置信区间，不能并入实录小时。",https://github.com/RVSATHU/GelSight-Sim2Real,False
+P11,PhysiCLeAR（Octopi 1.0/1.5）,探测／标定／实验台触觉,0.49669444444444444,0.24834722222222222,0.9933888888888889,估算,低,公开镜像／派生入口,"AnyTouch发布的PhysiCLeAR/Octopi处理版镜像：476个连续帧文件夹、53,643张图。","完整octopi.zip中央目录计数53,643张JPEG；假设30Hz得0.496694小时，15–60Hz得0.248347–0.993389小时。","原始论文报告74物体408个视频，镜像476文件夹不可强行认作同样408条；数值只代表该可下载镜像。
+已下载样本含按序编号的126帧，但未核实该镜像所有文件夹的原始/抽帧FPS。
+论文用于模型训练的top30%显著帧与5帧输入策略不应再乘为全时长；本次以发布的全部处理图像作序列估计。","https://huggingface.co/datasets/xxuan01/TacQuad/tree/main
+https://arxiv.org/html/2405.02794",False
+P12,Touch-Ex,探测／标定／实验台触觉,1.2533333333333334,0.6266666666666667,3.76,静态帧等效,低,已验证文件入口,"公开Touch-Ex全部1,128 contacts×120帧。","135,360帧÷假设FPS÷3600。 以30帧/秒作统一播放等效值，10–60帧/秒给出敏感性范围；均不代表已经证实的连续交互时长。","采集按力类别过滤样本，120帧并非已验证的连续采样片段，不能按传感器标称FPS当实录时间。
+30 FPS仅是便于横向比较的假设；范围不是统计置信区间，不能并入实录小时。",https://huggingface.co/datasets/gemixin/touch-ex,False
+P13,Tactile Deformation Response,探测／标定／实验台触觉,0.5706666666666667,0.2853333333333333,1.712,估算,低,已验证文件入口,公开963条连续触觉序列（train484/validation275/test204），每条64时刻。,"API精确计数963×64=61,632时间步；假设30Hz得0.570667小时，10–60Hz得0.285333–1.712小时。","README明确首维是时间；未提供采样率/真实时间戳，30Hz仅作规划假设。
+README演示动画interval=80ms只是播放设定，不当真实采样周期。","https://huggingface.co/api/datasets/Tachintech/tactile-deformation-response
+https://huggingface.co/datasets/Tachintech/tactile-deformation-response",False
+C01,TouchScale,人类 ego 视觉＋触觉,100.0,100.0,100.0,作者报告,中,待权限／条件开放,TouchScale当前条件开放100小时；不计未来计划发布的剩余400小时。,数据卡明确release100h of500h；主值取100，论文/全量500仅另列。,"100–100是作者报告点值，不表示已独立核验准确有效时长；无依据构造误差范围。
+该数据有访问门控，未授权时本机实际可下载小时为0，不应并入无申请直接可取的小时总量。",https://huggingface.co/datasets/2077AIDataFoundation/TouchScale,False
+C02,ToucHD（AnyTouch 2，真实Force/Mani）,探测／标定／实验台触觉,12.104425925925927,6.0522129629629635,36.31327777777778,静态帧等效,低,待权限／条件开放,ToucHD真实Force+Mani两部分；不含仿真Sim。,"(722,436 Force pairs+584,842 Mani contact frames)=1,307,278帧÷假设FPS÷3600。 以30帧/秒作统一播放等效值，10–60帧/秒给出敏感性范围；均不代表已经证实的连续交互时长。","两个同步触觉/视觉流的帧对不应作为双倍时长；接触帧筛选及多传感器计数口径尚不足以还原原始录制时间。
+30 FPS仅是便于横向比较的假设；范围不是统计置信区间，不能并入实录小时。","https://huggingface.co/datasets/BAAI/ToucHD-Force
+https://huggingface.co/datasets/BAAI/ToucHD-Mani/blob/main/README.md",False
+F01,REASSEMBLE,力／力矩扩展（另列）,13.016666666666667,13.016666666666667,13.016666666666667,作者报告,高,已验证文件入口,REASSEMBLE公开示范全部；单列力/力矩扩展类别。,官方报告781分钟，即13.016667小时。,同步视觉、机器人状态、六维力/力矩只计一份轨迹时间。,https://researchdata.tuwien.ac.at/records/0ewrv-8cb44,False
+F02,MotionTrans（FTP公开机器人部分）,力／力矩扩展（另列）,4.628133492692593,1.1570333731731484,18.512533970770374,估算,低,已验证文件入口,FTP公开MotionTrans/MotionTrans.tar机器人力学state归档的容量外推；单列F扩展类。,"已完整审计首个机器人任务20 episodes，1,899帧，累计有效时间93.9499996秒，该任务TAR占144,192,000字节。公开归档25,571,297,280字节；按相同每秒压缩字节密度外推得4.628小时。假设全库每秒存储密度为该任务0.25–4倍，给1.157–18.513小时规划范围。","本值高度依赖图像内容、压缩率、相机分辨率、空闲帧和任务字段是否与首任务一致；范围是工程敏感性情景，不是统计置信区间。
+只将已下载首任务20条的0.026097小时视为实测；全归档时长不是直接读出的。
+不使用原论文3,213人类/机器人混合示范作为机器人触觉数量；不将Simulation_inspire.tar混入当前归档。
+该字段来自InspireHand forceAct/joint-force state，不是空间压力阵列，物理单位未确认。","https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset/tree/main/MotionTrans
+https://github.com/michaelyuancb/ftp1-policy",False
+A01,Foundation Tactile / FoTa,A,27.77777777777778,13.88888888888889,83.33333333333333,上游复用,低,已验证文件入口,FoTa所称3M+静态/派生触觉图像汇编；仅覆盖规模等效。,"约3,000,000幅/组样本÷假设30FPS÷3600作为覆盖等效；10–60FPS为敏感性范围。汇编在总量中新增贡献固定为0。","这是样本播放等效覆盖，不是实录连续时长。
+上游来源重复，不把本包小时再加入独立数据集总量；样本规模可能为约数/下界。",https://huggingface.co/datasets/alanz-mit/FoundationTactile,False
+A02,Sparsh预训练混合与TacBench,A,6.12037037037037,3.060185185185185,18.36111111111111,上游复用,低,已验证文件入口,Sparsh预训练汇编约661K图像覆盖；70%即462.7K用于预训练；TacBench上游另见独立条目。,"约661,000幅/组样本÷假设30FPS÷3600作为覆盖等效；10–60FPS为敏感性范围。汇编在总量中新增贡献固定为0。","这是样本播放等效覆盖，不是实录连续时长。
+上游来源重复，不把本包小时再加入独立数据集总量；样本规模可能为约数/下界。","https://arxiv.org/html/2410.24090
+https://github.com/facebookresearch/sparsh",False
+A03,FTP-1 Dataset,A,178.18173439893278,110.36913610575583,375.60987890082544,上游复用,低,已验证文件入口,FTP公开15个一级目录可映射的10个上游数据家族“覆盖包络”；不是FTP自身已核实逐轨迹总时长。,按2026-10-19上游估计快照U01/F02/R08/R07/R09/R10/U04/R15/U03/旧R16各计一次，形成覆盖包络；Sharpa项固定为FTP旧发布25.237778h，不因R16主入口更新而替换成SharpaDex299.964556h。它不是FTP全量实测库存，新增独立小时固定0。,"FTP各目录不保证包含这些上游当前全部版本；部分上游可能只有子集，双臂新增配置也可能在上游主估计之外，所以覆盖包络不是精确FTP库存。
+论文3,000小时/26来源属于训练语料范围，不是已公开15目录的总时长；保留为source_total_hours，绝不填入已开放小时。
+该包同时包含触觉和力/state来源，继承上游分类，不整体当纯触觉小时。
+2026-10-20新SharpaDex与FTP Sharpa的轨迹重叠未核实，不能声称FTP已包含新库全部300小时；本条保持历史上游快照。","https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset
+https://arxiv.org/abs/2606.13102",False
+A04,Touch100k,A,0.9259259259259259,0.46296296296296297,2.7777777777777777,上游复用,低,仅官方入口，下载未验证,Touch100k约100K派生视觉—触觉—语言标注覆盖；不代表新增采集。,"约100,000幅/组样本÷假设30FPS÷3600作为覆盖等效；10–60FPS为敏感性范围。汇编在总量中新增贡献固定为0。","这是样本播放等效覆盖，不是实录连续时长。
+上游来源重复，不把本包小时再加入独立数据集总量；样本规模可能为约数/下界。",https://cocacola-lab.github.io/Touch100k/,False
+A05,Tactile Video Pretrain（yxma）,A,24.42868879977614,24.418688799776138,24.438688799776138,上游复用,中,已验证文件入口,实际存在文件的公开汇编覆盖：FreeTacMan、Touch and Go、GelSLAM三个上游；含仅触觉记录，新增独立小时为0。,"FreeTacMan 6,337个唯一RGB录制15.697102h + Touch and Go 54条可取触觉5.451587h + GelSLAM 155视频约3.28h = 24.428689h。配对配置实际可取部分只含FreeTacMan与39条Touch and Go，约19.072022h。","完整18591项文件清单确认：FreeTacMan全部11965对存在；Touch and Go索引138条中39条双模态、15条仅触觉、14条仅RGB；只计54条含触觉记录。
+GelSLAM实际存在140条tracking和15条reconstruction的MP4；3.28h取镜像卡四舍五入报告，范围只反映其舍入误差。
+各source计时方法不同：FreeTacMan为索引名义时长，Touch and Go为逐帧时间戳，GelSLAM为发布方报告，均未逐文件做完整可解码审计。
+原卡47.65触觉stream-hours及配对索引30.3045h包含双指重复或缺失文件，不能当当前可取的独立录制量。
+与U01、E07、P09同源，新增独立小时为0；NC兄弟库未审计范围不加入。",https://huggingface.co/datasets/yxma/tactile-video-pretrain,False
+X01,DexUMI,手持工具／UMI 触觉,0.0043581559461179295,0.0043581559461179295,0.0043581559461179295,元数据实算,高,已验证文件入口,作者官方样例ZIP中已确认包含RGB与三组FSR的参考录制交集；不是完整任务库,按四条capture_time流求交集：min(末帧)-max(首帧)=15.689361秒。,"software_go_through两条采集示例的numeric_0为关节/电压；未证实包含FSR，不混入触觉小时。
+采集、重放、渲染副本去重；仅计已证实公开的触觉范围。
+独立任务训练库的总时长仍未知，主值是可获取范围，不外推成整篇论文规模。","https://real.stanford.edu/dexumi/sample_data.zip
+https://github.com/real-stanford/DexUMI",False
+X02,EgoTac-Open / Kitchen / Hotel及EgoTac-SC,X,9.884368374186197,3.6896729565565325,20.472545528313532,估算,低,已验证文件入口,EgoTac-SC公开857条录制的外推；尚未核实与其他EgoTac来源的独立关系。,"首个ZIP全部40条录制，Σ(t_last−t_first)=1,660.850695秒；40条平均41.521267秒×857=约9.884小时。范围用这40条时长的P10/P90（15.499/85.999秒）代表全库平均时长的敏感性情景。","首ZIP并非随机抽样，范围不是置信区间，任务偏倚可能超出范围。
+采用各条ego_cam_real_timestamp的毫秒时间戳，全部单调；40条之间没有时间区间重叠。
+没有把SC直接认定为FTP的EgoTac-Open/Kitchen/Hotel；统计中保留待确认来源类别。",https://huggingface.co/datasets/wkzhang/EgoTac-SC,False
+X03,3D-ViTac,X,3.3333333333333335,1.1111111111111112,6.666666666666667,估算,低,未取得发布归档,论文200条任务示范的采集规模估计；当前未证实发布原始数据,论文6任务demos=30+30+30+50+30+30=200；以每条60秒规划，范围20–120秒，即3.333h（1.111–6.667h）。,"每条20–120秒是本报告的任务级预算假设，不是论文测得均值。
+未取得真实数据发布归档，当前可直接获取贡献为0。
+不能使用Touch in the Wild或VT-Refine仿真数据代替该论文原始数据。","https://arxiv.org/html/2410.24091v1
+https://github.com/binghao-huang/3d-vitac-training-code",False
+X04,Tactile Grasp and Move / Action-Conditioned Tactile Prediction,机器人真机触觉,0.3638749588888889,0.3638749588888889,0.3638749588888889,元数据实算,高,已验证文件入口,官方75条不同录制全部metadata；不含多传感器重复,对75个唯一录制stop_time-start_time求和=1309.949852秒，再除3600。,"每个录制只计一次，双Xela传感器不累计双倍小时。
+这是录制窗口，不是阈值筛选后的净接触时间；无场景RGB。",https://github.com/WillMandil001/Tactile_Grasp_and_Move_Dataset,False
+X05,Touch-GS Dataset,探测／标定／实验台触觉,0.0038240740740740744,0.0019120370370370372,0.011472222222222222,静态帧等效,低,已验证文件入口,三个真实场景413张原始触觉图的帧等效量,实际目录touch_raw/train：block166+bunny_real134+mirror113=413；按30fps等效0.003824h，10–60fps范围0.001912–0.011472h。,"等效秒数仅用于统一帧预算，不是实际采集持续时间。
+只计原始真实触觉图；排除blender仿真、深度/变换副本、视觉图及处理后触觉副本。",https://github.com/armlabstanford/touch-gs-data,False
+X06,HUST-Tactile,探测／标定／实验台触觉,0.032527777777777774,0.016263888888888887,0.09758333333333334,静态帧等效,低,已验证文件入口,"公开HUST-Tac.zip按内容去重后3,513张触觉图","3,946个PNG文件按SHA-256去重3,513内容；以30fps算0.032528等效小时，10–60fps敏感性范围0.016264–0.097583h。",静态分类数据没有真实时间轴；这里只给帧预算等效时长，不计连续录制。,https://github.com/HUSTOROP/Hust-Tac-Dataset,False
+X07,zhicao/egoforce（FusionX录制）,X,0.08764331242666666,0.04597664576,0.12930997909333333,估算,低,已验证文件入口,公开两条MCAP：LEGO与Nailing；候选来源独立性仍未确认,"LEGO消息时间跨度实算15.515925秒；Nailing官方manifest记录9,000 RGB帧，以30fps估计300秒；合计0.087643h，按20–60fps敏感性范围。","Nailing尚未逐消息核验帧率，30fps是假设。
+同一记录多视频、多只手不重复相加。
+与FusionX是否重叠未排除，主统计外单列。",https://huggingface.co/datasets/zhicao/egoforce,False

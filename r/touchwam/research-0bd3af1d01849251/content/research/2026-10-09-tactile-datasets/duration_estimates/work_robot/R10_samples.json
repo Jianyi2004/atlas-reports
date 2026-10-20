@@ -1,0 +1,56 @@
+[
+  {
+    "path": "mango/episode_0.h5",
+    "frames": 79,
+    "file_bytes": 196009660,
+    "read_bytes": 49152
+  },
+  {
+    "path": "mango/episode_50.h5",
+    "frames": 47,
+    "file_bytes": 118293046,
+    "read_bytes": 49152
+  },
+  {
+    "path": "mango/episode_99.h5",
+    "frames": 84,
+    "file_bytes": 201794505,
+    "read_bytes": 49152
+  },
+  {
+    "path": "watercup/episode_0.h5",
+    "frames": 73,
+    "file_bytes": 184008056,
+    "read_bytes": 49152
+  },
+  {
+    "path": "watercup/episode_50.h5",
+    "frames": 57,
+    "file_bytes": 144712695,
+    "read_bytes": 49152
+  },
+  {
+    "path": "watercup/episode_99.h5",
+    "frames": 66,
+    "file_bytes": 155189566,
+    "read_bytes": 49152
+  },
+  {
+    "path": "wipe/episode_0.h5",
+    "frames": 77,
+    "file_bytes": 201623409,
+    "read_bytes": 49152
+  },
+  {
+    "path": "wipe/episode_50.h5",
+    "frames": 150,
+    "file_bytes": 373461588,
+    "read_bytes": 49152
+  },
+  {
+    "path": "wipe/episode_99.h5",
+    "frames": 71,
+    "file_bytes": 185550179,
+    "read_bytes": 49152
+  }
+]

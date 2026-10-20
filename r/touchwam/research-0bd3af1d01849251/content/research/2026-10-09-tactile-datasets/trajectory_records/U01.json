@@ -1,0 +1,61 @@
+{
+  "id": "U01",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "name": "ArrangeFruit/ArrangeFruit_100",
+    "source_url": "https://www.modelscope.cn/datasets/OpenDriveLab/FreeTacMan",
+    "download_url": "https://www.modelscope.cn/datasets/OpenDriveLab/FreeTacMan",
+    "local_raw_paths": [
+      "trajectory_work/U01/raw/ArrangeFruit_100_traj.csv",
+      "trajectory_work/U01/raw/ArrangeFruit_100_camera1.mp4",
+      "trajectory_work/U01/raw/ArrangeFruit_100_camera3.mp4",
+      "trajectory_work/U01/raw/ArrangeFruit_100_camera2.mp4"
+    ],
+    "complete_episode": true,
+    "frames": 240,
+    "fps": 30,
+    "duration_seconds": 8,
+    "duration_method": "三路MP4均240帧/30fps",
+    "modalities": [
+      "wrist RGB",
+      "two optical tactile videos",
+      "TCP/gripper CSV"
+    ],
+    "sync": "同轨迹编号、相同帧数与30fps；按帧号对齐。",
+    "notes": "CSV中有重复timestamp，样例展示以三路视频共有帧号为准。",
+    "downloaded_bytes": 6106668,
+    "sha256": {
+      "trajectory_work/U01/raw/ArrangeFruit_100_traj.csv": "974763c4dc971dd76cfeea02f26ce5870fae62562a53bf403a6df584ef766881",
+      "trajectory_work/U01/raw/ArrangeFruit_100_camera1.mp4": "dd0542c287dc04e46996a47f157a121e57f5ab3bcd923439aece39deed54e0bf",
+      "trajectory_work/U01/raw/ArrangeFruit_100_camera3.mp4": "3de1073f65b0aac5423bed83a961523a37b6eb8e808669cde12ef8848ce95a91",
+      "trajectory_work/U01/raw/ArrangeFruit_100_camera2.mp4": "8cd8b8b4a45a37d25a84cf9866172f68ed24968472c97192e94526dea381bf4b"
+    }
+  },
+  "media": {
+    "html": "trajectories/U01/index.html",
+    "video": "trajectories/U01/preview.mp4",
+    "poster": "trajectories/U01/poster.webp",
+    "caption_zh": "完整下载 ArrangeFruit_100：240帧、30 fps、8秒，含腕部RGB和两路光学触觉。按同名轨迹及相同帧号配对，预览降采样为10 fps；保留三路原视频与动作CSV。",
+    "preview_seconds": 8.0
+  },
+  "duration": {
+    "basis": "metadata_sum",
+    "scope_zh": "yxma转换索引覆盖的6,337个FreeTacMan RGB记录，非原库完整实测",
+    "explanation_zh": "按同一RGB路径合并左右指流后，duration_s累计约15.697小时；原11,965指流累计29.708小时不能视作行为时长。转换范围与原官方完整发布覆盖尚未一一核对。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/yxma/tactile-video-pretrain",
+        "evidence": "配对索引，source=freetacman，rgb_video去重；不是官方全库总时长"
+      }
+    ],
+    "converted_nominal_hours": 15.697101851871444
+  },
+  "evidence": [],
+  "blockers": [],
+  "reuses": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  }
+}

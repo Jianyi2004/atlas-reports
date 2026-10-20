@@ -1,0 +1,50 @@
+{
+  "id": "R21",
+  "checked_at": "2026-10-19",
+  "status": "tactile_only",
+  "sample": {
+    "source_url": "https://github.com/dexrob/BioTac_slide_20_50",
+    "local_raw_paths": [
+      "trajectory_work/R21/sample.csv"
+    ],
+    "downloaded_bytes": 86141,
+    "sha256": {
+      "trajectory_work/R21/sample.csv": "a72f02bd79cb82c16a0e17ff360f36d3e629870b270fa8756046c6c541f493fc"
+    },
+    "name": "raw_data/mat1/mat1_10_bio.csv",
+    "complete_episode": true,
+    "frames": 600,
+    "fps": null,
+    "duration_seconds": 5.990505933761597,
+    "duration_method": "timestamp span",
+    "modalities": [
+      "BioTac44channels"
+    ]
+  },
+  "media": {
+    "html": "trajectories/R21/index.html",
+    "video": "trajectories/R21/preview.mp4",
+    "poster": "trajectories/R21/poster.webp",
+    "caption_zh": "下载完整mat1_10_bio.csv；展示19个电极通道，其余温度/压力/振动字段保留在原CSV。电极值为原始读数，不混称为力。 红色游标按原时间推进；无对应RGB，未用项目图片冒充同步视觉。",
+    "preview_seconds": 5.990505933761597
+  },
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "完整发布数据",
+    "explanation_zh": "未找到可可靠汇总的总时长；不以样本数或文件体积推算。",
+    "sources": []
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "validation": "原始schema/数组范围已读取；实际配对关系按数据字段核对；海报人工检查；视频通过ffprobe。",
+    "video_probe": {
+      "width": 960,
+      "height": 420,
+      "duration": "5.990506",
+      "nb_frames": "200"
+    }
+  }
+}

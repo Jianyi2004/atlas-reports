@@ -1,0 +1,31 @@
+{
+  "source_prefix": "clean_plate_with_eraser/season_POC22027_2026_04_17_11_01_59_train/lerobot_v2.1",
+  "revision": "c8032fd891e3f6f19b0d4886793579c1dce5eea7",
+  "results": [
+    {
+      "path": "meta/info.json",
+      "status": 200,
+      "bytes": 15795
+    },
+    {
+      "path": "meta/modality.json",
+      "status": 200,
+      "bytes": 1370
+    },
+    {
+      "path": "meta/episodes.jsonl",
+      "status": 200,
+      "bytes": 19388
+    },
+    {
+      "path": "meta/annotations.jsonl",
+      "status": 200,
+      "bytes": 101859
+    },
+    {
+      "path": "data/chunk-000/episode_000000.parquet",
+      "status": 200,
+      "bytes": 1641382
+    }
+  ]
+}

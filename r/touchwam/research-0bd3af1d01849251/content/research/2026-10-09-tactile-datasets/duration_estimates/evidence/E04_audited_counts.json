@@ -1,0 +1,2218 @@
+[
+  {
+    "id": "E04",
+    "path": "Home/pick_up_power_adapter_2/20260316_223251_599/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/pick_up_power_adapter_2/20260316_223251_599/pressure_grids.npz",
+    "shape": [
+      93,
+      21,
+      21
+    ],
+    "frames": 93
+  },
+  {
+    "id": "E04",
+    "path": "Home/open_close_umbrella/20260324_165125_924/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/open_close_umbrella/20260324_165125_924/pressure_grids.npz",
+    "shape": [
+      1096,
+      21,
+      21
+    ],
+    "frames": 1096
+  },
+  {
+    "id": "E04",
+    "path": "Home/pick_up_bottle/20260314_001045_030/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/pick_up_bottle/20260314_001045_030/pressure_grids.npz",
+    "shape": [
+      94,
+      21,
+      21
+    ],
+    "frames": 94
+  },
+  {
+    "id": "E04",
+    "path": "Home/squeeze_duck_toy/20260319_210228_454/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/squeeze_duck_toy/20260319_210228_454/pressure_grids.npz",
+    "shape": [
+      181,
+      21,
+      21
+    ],
+    "frames": 181
+  },
+  {
+    "id": "E04",
+    "path": "Home/use_thermometer/20260320_144618_071/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/use_thermometer/20260320_144618_071/pressure_grids.npz",
+    "shape": [
+      887,
+      21,
+      21
+    ],
+    "frames": 887
+  },
+  {
+    "id": "E04",
+    "path": "Home/pick_up_earphones_2/20260316_222308_087/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/pick_up_earphones_2/20260316_222308_087/pressure_grids.npz",
+    "shape": [
+      115,
+      21,
+      21
+    ],
+    "frames": 115
+  },
+  {
+    "id": "E04",
+    "path": "Home/pick_up_earphones/20260314_162416_475/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/pick_up_earphones/20260314_162416_475/pressure_grids.npz",
+    "shape": [
+      114,
+      21,
+      21
+    ],
+    "frames": 114
+  },
+  {
+    "id": "E04",
+    "path": "Home/drag_chair/20260319_214646_777/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/drag_chair/20260319_214646_777/pressure_grids.npz",
+    "status": 206,
+    "content_range": "bytes 0-4095/70267",
+    "shape": [
+      315,
+      21,
+      21
+    ],
+    "frames": 315
+  },
+  {
+    "id": "E04",
+    "path": "Home/pick_up_skincare_product/20260320_091819_308/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/pick_up_skincare_product/20260320_091819_308/pressure_grids.npz",
+    "shape": [
+      385,
+      21,
+      21
+    ],
+    "frames": 385
+  },
+  {
+    "id": "E04",
+    "path": "Home/open_toolbox/20260314_104601_544/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/open_toolbox/20260314_104601_544/pressure_grids.npz",
+    "shape": [
+      75,
+      21,
+      21
+    ],
+    "frames": 75
+  },
+  {
+    "id": "E04",
+    "path": "Home/assemble_foam_floor_mat/20260409_195519_118/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/assemble_foam_floor_mat/20260409_195519_118/pressure_grids.npz",
+    "status": 206,
+    "content_range": "bytes 0-4095/561971",
+    "shape": [
+      5019,
+      21,
+      21
+    ],
+    "frames": 5019
+  },
+  {
+    "id": "E04",
+    "path": "Home/use_wash_bottle/20260321_102316_497/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/use_wash_bottle/20260321_102316_497/pressure_grids.npz",
+    "shape": [
+      511,
+      21,
+      21
+    ],
+    "frames": 511
+  },
+  {
+    "id": "E04",
+    "path": "Home/pick_up_earphones_2/20260316_222348_924/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/pick_up_earphones_2/20260316_222348_924/pressure_grids.npz",
+    "shape": [
+      126,
+      21,
+      21
+    ],
+    "frames": 126
+  },
+  {
+    "id": "E04",
+    "path": "Home/put_misc_items_into_cabinet/20260324_160833_141/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/put_misc_items_into_cabinet/20260324_160833_141/pressure_grids.npz",
+    "shape": [
+      749,
+      21,
+      21
+    ],
+    "frames": 749
+  },
+  {
+    "id": "E04",
+    "path": "Home/pick_up_earphones/20260314_162638_490/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/pick_up_earphones/20260314_162638_490/pressure_grids.npz",
+    "shape": [
+      112,
+      21,
+      21
+    ],
+    "frames": 112
+  },
+  {
+    "id": "E04",
+    "path": "Home/wring_towel_2/20260316_222743_811/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/wring_towel_2/20260316_222743_811/pressure_grids.npz",
+    "shape": [
+      119,
+      21,
+      21
+    ],
+    "frames": 119
+  },
+  {
+    "id": "E04",
+    "path": "Home/pick_up_plush_toy/20260321_101731_914/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/pick_up_plush_toy/20260321_101731_914/pressure_grids.npz",
+    "shape": [
+      320,
+      21,
+      21
+    ],
+    "frames": 320
+  },
+  {
+    "id": "E04",
+    "path": "Home/grip_hand_dynamometer/20260324_175313_344/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/grip_hand_dynamometer/20260324_175313_344/pressure_grids.npz",
+    "status": 206,
+    "content_range": "bytes 0-4095/394517",
+    "shape": [
+      2206,
+      21,
+      21
+    ],
+    "frames": 2206
+  },
+  {
+    "id": "E04",
+    "path": "Home/grip_hand_dynamometer/20260324_175605_728/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/grip_hand_dynamometer/20260324_175605_728/pressure_grids.npz",
+    "status": 206,
+    "content_range": "bytes 0-4095/222546",
+    "shape": [
+      1231,
+      21,
+      21
+    ],
+    "frames": 1231
+  },
+  {
+    "id": "E04",
+    "path": "Home/plug_unplug_power_plug/20260316_225756_996/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/plug_unplug_power_plug/20260316_225756_996/pressure_grids.npz",
+    "shape": [
+      112,
+      21,
+      21
+    ],
+    "frames": 112
+  },
+  {
+    "id": "E04",
+    "path": "Home/pick_up_charger_2/20260316_214424_502/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/pick_up_charger_2/20260316_214424_502/pressure_grids.npz",
+    "shape": [
+      104,
+      21,
+      21
+    ],
+    "frames": 104
+  },
+  {
+    "id": "E04",
+    "path": "Home/pick_up_charger/20260314_151340_196/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/pick_up_charger/20260314_151340_196/pressure_grids.npz",
+    "shape": [
+      104,
+      21,
+      21
+    ],
+    "frames": 104
+  },
+  {
+    "id": "E04",
+    "path": "Home/rotate_table_clamp/20260319_213501_266/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/rotate_table_clamp/20260319_213501_266/pressure_grids.npz",
+    "shape": [
+      1009,
+      21,
+      21
+    ],
+    "frames": 1009
+  },
+  {
+    "id": "E04",
+    "path": "Home/grip_hand_dynamometer/20260324_175829_107/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/grip_hand_dynamometer/20260324_175829_107/pressure_grids.npz",
+    "status": 206,
+    "content_range": "bytes 0-4095/160002",
+    "shape": [
+      864,
+      21,
+      21
+    ],
+    "frames": 864
+  },
+  {
+    "id": "E04",
+    "path": "Home/over_ear_headphones/20260319_171552_671/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/over_ear_headphones/20260319_171552_671/pressure_grids.npz",
+    "shape": [
+      447,
+      21,
+      21
+    ],
+    "frames": 447
+  },
+  {
+    "id": "E04",
+    "path": "Home/plug_unplug_power_plug/20260316_231111_134/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/plug_unplug_power_plug/20260316_231111_134/pressure_grids.npz",
+    "shape": [
+      83,
+      21,
+      21
+    ],
+    "frames": 83
+  },
+  {
+    "id": "E04",
+    "path": "Home/pick_up_shower_gel/20260320_090247_811/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/pick_up_shower_gel/20260320_090247_811/pressure_grids.npz",
+    "shape": [
+      247,
+      21,
+      21
+    ],
+    "frames": 247
+  },
+  {
+    "id": "E04",
+    "path": "Home/collect_water/20260327_203519_453/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/collect_water/20260327_203519_453/pressure_grids.npz",
+    "status": 206,
+    "content_range": "bytes 0-4095/195490",
+    "shape": [
+      1297,
+      21,
+      21
+    ],
+    "frames": 1297
+  },
+  {
+    "id": "E04",
+    "path": "Home/wring_towel_2/20260316_222603_676/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/wring_towel_2/20260316_222603_676/pressure_grids.npz",
+    "shape": [
+      117,
+      21,
+      21
+    ],
+    "frames": 117
+  },
+  {
+    "id": "E04",
+    "path": "Home/pick_up_sachima/20260325_164416_961/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/pick_up_sachima/20260325_164416_961/pressure_grids.npz",
+    "shape": [
+      1240,
+      21,
+      21
+    ],
+    "frames": 1240
+  },
+  {
+    "id": "E04",
+    "path": "Home/pick_up_earphones/20260314_162517_142/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/pick_up_earphones/20260314_162517_142/pressure_grids.npz",
+    "shape": [
+      127,
+      21,
+      21
+    ],
+    "frames": 127
+  },
+  {
+    "id": "E04",
+    "path": "Home/organize_tabletop_1/20260319_171111_459/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/organize_tabletop_1/20260319_171111_459/pressure_grids.npz",
+    "shape": [
+      728,
+      21,
+      21
+    ],
+    "frames": 728
+  },
+  {
+    "id": "E04",
+    "path": "Home/metadata/20260314_101910_605/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/metadata/20260314_101910_605/pressure_grids.npz",
+    "shape": [
+      237,
+      21,
+      21
+    ],
+    "frames": 237
+  },
+  {
+    "id": "E04",
+    "path": "Home/pick_up_toothpaste/20260320_094650_280/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/pick_up_toothpaste/20260320_094650_280/pressure_grids.npz",
+    "shape": [
+      588,
+      21,
+      21
+    ],
+    "frames": 588
+  },
+  {
+    "id": "E04",
+    "path": "Home/fold_clothes_and_bag/20260410_203832_973/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/fold_clothes_and_bag/20260410_203832_973/pressure_grids.npz",
+    "status": 206,
+    "content_range": "bytes 0-4095/187639",
+    "shape": [
+      1570,
+      21,
+      21
+    ],
+    "frames": 1570
+  },
+  {
+    "id": "E04",
+    "path": "Home/plug_unplug_power_plug/20260316_230132_397/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/plug_unplug_power_plug/20260316_230132_397/pressure_grids.npz",
+    "shape": [
+      131,
+      21,
+      21
+    ],
+    "frames": 131
+  },
+  {
+    "id": "E04",
+    "path": "Home/arrange_pillow/20260412_101136_379/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/arrange_pillow/20260412_101136_379/pressure_grids.npz",
+    "status": 206,
+    "content_range": "bytes 0-4095/274339",
+    "shape": [
+      1652,
+      21,
+      21
+    ],
+    "frames": 1652
+  },
+  {
+    "id": "E04",
+    "path": "Home/pick_up_skincare_product/20260320_092124_356/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/pick_up_skincare_product/20260320_092124_356/pressure_grids.npz",
+    "shape": [
+      626,
+      21,
+      21
+    ],
+    "frames": 626
+  },
+  {
+    "id": "E04",
+    "path": "Home/pick_up_power_adapter_2/20260316_223717_800/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/pick_up_power_adapter_2/20260316_223717_800/pressure_grids.npz",
+    "shape": [
+      89,
+      21,
+      21
+    ],
+    "frames": 89
+  },
+  {
+    "id": "E04",
+    "path": "Home/squeeze_toothpaste/20260320_195005_272/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/squeeze_toothpaste/20260320_195005_272/pressure_grids.npz",
+    "shape": [
+      685,
+      21,
+      21
+    ],
+    "frames": 685
+  },
+  {
+    "id": "E04",
+    "path": "Office/use_correction_tape/20260320_162511_002/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/use_correction_tape/20260320_162511_002/pressure_grids.npz",
+    "shape": [
+      1087,
+      21,
+      21
+    ],
+    "frames": 1087
+  },
+  {
+    "id": "E04",
+    "path": "Office/use_laptop_stand/20260320_142450_901/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/use_laptop_stand/20260320_142450_901/pressure_grids.npz",
+    "shape": [
+      680,
+      21,
+      21
+    ],
+    "frames": 680
+  },
+  {
+    "id": "E04",
+    "path": "Office/pick_up_mouse_2/20260316_214944_519/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/pick_up_mouse_2/20260316_214944_519/pressure_grids.npz",
+    "shape": [
+      128,
+      21,
+      21
+    ],
+    "frames": 128
+  },
+  {
+    "id": "E04",
+    "path": "Office/slide_mouse_2/20260316_215756_312/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/slide_mouse_2/20260316_215756_312/pressure_grids.npz",
+    "shape": [
+      115,
+      21,
+      21
+    ],
+    "frames": 115
+  },
+  {
+    "id": "E04",
+    "path": "Office/pick_up_mouse_2/20260316_215212_029/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/pick_up_mouse_2/20260316_215212_029/pressure_grids.npz",
+    "shape": [
+      110,
+      21,
+      21
+    ],
+    "frames": 110
+  },
+  {
+    "id": "E04",
+    "path": "Office/pick_up_mouse_2/20260316_215334_744/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/pick_up_mouse_2/20260316_215334_744/pressure_grids.npz",
+    "shape": [
+      89,
+      21,
+      21
+    ],
+    "frames": 89
+  },
+  {
+    "id": "E04",
+    "path": "Office/pick_up_mouse_2/20260316_214822_875/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/pick_up_mouse_2/20260316_214822_875/pressure_grids.npz",
+    "shape": [
+      100,
+      21,
+      21
+    ],
+    "frames": 100
+  },
+  {
+    "id": "E04",
+    "path": "Office/use_correction_tape/20260320_162919_741/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/use_correction_tape/20260320_162919_741/pressure_grids.npz",
+    "shape": [
+      740,
+      21,
+      21
+    ],
+    "frames": 740
+  },
+  {
+    "id": "E04",
+    "path": "Office/open_laptop_stand_and_place_laptop/20260320_165546_890/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/open_laptop_stand_and_place_laptop/20260320_165546_890/pressure_grids.npz",
+    "shape": [
+      717,
+      21,
+      21
+    ],
+    "frames": 717
+  },
+  {
+    "id": "E04",
+    "path": "Office/use_correction_tape/20260320_164114_575/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/use_correction_tape/20260320_164114_575/pressure_grids.npz",
+    "shape": [
+      880,
+      21,
+      21
+    ],
+    "frames": 880
+  },
+  {
+    "id": "E04",
+    "path": "Office/work_on_computer/20260321_174556_540/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/work_on_computer/20260321_174556_540/pressure_grids.npz",
+    "shape": [
+      664,
+      21,
+      21
+    ],
+    "frames": 664
+  },
+  {
+    "id": "E04",
+    "path": "Office/pick_up_mouse/20260314_153054_198/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/pick_up_mouse/20260314_153054_198/pressure_grids.npz",
+    "shape": [
+      89,
+      21,
+      21
+    ],
+    "frames": 89
+  },
+  {
+    "id": "E04",
+    "path": "Office/slide_mouse/20260314_161627_724/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/slide_mouse/20260314_161627_724/pressure_grids.npz",
+    "shape": [
+      49,
+      21,
+      21
+    ],
+    "frames": 49
+  },
+  {
+    "id": "E04",
+    "path": "Office/slide_mouse/20260314_161455_374/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/slide_mouse/20260314_161455_374/pressure_grids.npz",
+    "shape": [
+      51,
+      21,
+      21
+    ],
+    "frames": 51
+  },
+  {
+    "id": "E04",
+    "path": "Office/open_laptop_stand_and_place_laptop/20260320_164938_062/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/open_laptop_stand_and_place_laptop/20260320_164938_062/pressure_grids.npz",
+    "shape": [
+      1235,
+      21,
+      21
+    ],
+    "frames": 1235
+  },
+  {
+    "id": "E04",
+    "path": "Office/pick_up_mouse_2/20260316_214738_308/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/pick_up_mouse_2/20260316_214738_308/pressure_grids.npz",
+    "shape": [
+      132,
+      21,
+      21
+    ],
+    "frames": 132
+  },
+  {
+    "id": "E04",
+    "path": "Office/pick_up_mouse/20260314_153543_036/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/pick_up_mouse/20260314_153543_036/pressure_grids.npz",
+    "shape": [
+      85,
+      21,
+      21
+    ],
+    "frames": 85
+  },
+  {
+    "id": "E04",
+    "path": "Office/pick_up_pen_and_write/20260320_154059_996/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/pick_up_pen_and_write/20260320_154059_996/pressure_grids.npz",
+    "shape": [
+      441,
+      21,
+      21
+    ],
+    "frames": 441
+  },
+  {
+    "id": "E04",
+    "path": "Office/open_laptop_stand_and_place_laptop/20260320_164657_494/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/open_laptop_stand_and_place_laptop/20260320_164657_494/pressure_grids.npz",
+    "shape": [
+      669,
+      21,
+      21
+    ],
+    "frames": 669
+  },
+  {
+    "id": "E04",
+    "path": "Office/pick_up_pen/20260325_174000_830/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/pick_up_pen/20260325_174000_830/pressure_grids.npz",
+    "shape": [
+      2111,
+      21,
+      21
+    ],
+    "frames": 2111
+  },
+  {
+    "id": "E04",
+    "path": "Office/pick_up_mouse_2/20260316_215241_410/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/pick_up_mouse_2/20260316_215241_410/pressure_grids.npz",
+    "shape": [
+      93,
+      21,
+      21
+    ],
+    "frames": 93
+  },
+  {
+    "id": "E04",
+    "path": "Office/use_correction_tape/20260320_162718_367/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/use_correction_tape/20260320_162718_367/pressure_grids.npz",
+    "shape": [
+      967,
+      21,
+      21
+    ],
+    "frames": 967
+  },
+  {
+    "id": "E04",
+    "path": "Office/pick_up_mouse_2/20260316_214802_491/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/pick_up_mouse_2/20260316_214802_491/pressure_grids.npz",
+    "shape": [
+      122,
+      21,
+      21
+    ],
+    "frames": 122
+  },
+  {
+    "id": "E04",
+    "path": "Office/open_laptop_stand_and_place_laptop/20260320_164544_200/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/open_laptop_stand_and_place_laptop/20260320_164544_200/pressure_grids.npz",
+    "shape": [
+      726,
+      21,
+      21
+    ],
+    "frames": 726
+  },
+  {
+    "id": "E04",
+    "path": "Office/use_correction_tape/20260320_164148_050/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/use_correction_tape/20260320_164148_050/pressure_grids.npz",
+    "shape": [
+      905,
+      21,
+      21
+    ],
+    "frames": 905
+  },
+  {
+    "id": "E04",
+    "path": "Office/pick_up_mouse_2/20260316_214750_741/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/pick_up_mouse_2/20260316_214750_741/pressure_grids.npz",
+    "shape": [
+      117,
+      21,
+      21
+    ],
+    "frames": 117
+  },
+  {
+    "id": "E04",
+    "path": "Office/place_laptop_on_stand/20260321_172401_085/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/place_laptop_on_stand/20260321_172401_085/pressure_grids.npz",
+    "shape": [
+      715,
+      21,
+      21
+    ],
+    "frames": 715
+  },
+  {
+    "id": "E04",
+    "path": "Office/pick_up_mouse_2/20260316_214846_532/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/pick_up_mouse_2/20260316_214846_532/pressure_grids.npz",
+    "shape": [
+      140,
+      21,
+      21
+    ],
+    "frames": 140
+  },
+  {
+    "id": "E04",
+    "path": "Office/work_on_computer/20260321_173809_740/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/work_on_computer/20260321_173809_740/pressure_grids.npz",
+    "shape": [
+      860,
+      21,
+      21
+    ],
+    "frames": 860
+  },
+  {
+    "id": "E04",
+    "path": "Office/pick_up_mouse_2/20260316_215312_407/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/pick_up_mouse_2/20260316_215312_407/pressure_grids.npz",
+    "shape": [
+      106,
+      21,
+      21
+    ],
+    "frames": 106
+  },
+  {
+    "id": "E04",
+    "path": "Office/flip_book_pages/20260320_154809_642/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/flip_book_pages/20260320_154809_642/pressure_grids.npz",
+    "shape": [
+      578,
+      21,
+      21
+    ],
+    "frames": 578
+  },
+  {
+    "id": "E04",
+    "path": "Office/slide_mouse_2/20260316_215600_727/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/slide_mouse_2/20260316_215600_727/pressure_grids.npz",
+    "shape": [
+      102,
+      21,
+      21
+    ],
+    "frames": 102
+  },
+  {
+    "id": "E04",
+    "path": "Office/place_laptop_on_stand/20260321_172839_511/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/place_laptop_on_stand/20260321_172839_511/pressure_grids.npz",
+    "shape": [
+      561,
+      21,
+      21
+    ],
+    "frames": 561
+  },
+  {
+    "id": "E04",
+    "path": "Office/pick_up_mouse/20260314_153238_295/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/pick_up_mouse/20260314_153238_295/pressure_grids.npz",
+    "shape": [
+      92,
+      21,
+      21
+    ],
+    "frames": 92
+  },
+  {
+    "id": "E04",
+    "path": "Office/use_correction_tape/20260320_163941_820/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/use_correction_tape/20260320_163941_820/pressure_grids.npz",
+    "shape": [
+      736,
+      21,
+      21
+    ],
+    "frames": 736
+  },
+  {
+    "id": "E04",
+    "path": "Office/slide_mouse_2/20260316_215929_635/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/slide_mouse_2/20260316_215929_635/pressure_grids.npz",
+    "shape": [
+      99,
+      21,
+      21
+    ],
+    "frames": 99
+  },
+  {
+    "id": "E04",
+    "path": "Office/pick_up_mouse_2/20260316_215056_232/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/pick_up_mouse_2/20260316_215056_232/pressure_grids.npz",
+    "shape": [
+      99,
+      21,
+      21
+    ],
+    "frames": 99
+  },
+  {
+    "id": "E04",
+    "path": "Office/slide_mouse_2/20260316_215553_225/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/slide_mouse_2/20260316_215553_225/pressure_grids.npz",
+    "shape": [
+      97,
+      21,
+      21
+    ],
+    "frames": 97
+  },
+  {
+    "id": "E04",
+    "path": "Office/open_laptop_stand_and_place_laptop/20260320_164914_134/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/open_laptop_stand_and_place_laptop/20260320_164914_134/pressure_grids.npz",
+    "shape": [
+      625,
+      21,
+      21
+    ],
+    "frames": 625
+  },
+  {
+    "id": "E04",
+    "path": "Office/slide_mouse/20260314_161746_842/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Office/slide_mouse/20260314_161746_842/pressure_grids.npz",
+    "shape": [
+      60,
+      21,
+      21
+    ],
+    "frames": 60
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/play_billiards/20260324_194005_561/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/play_billiards/20260324_194005_561/pressure_grids.npz",
+    "shape": [
+      284,
+      21,
+      21
+    ],
+    "frames": 284
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/pick_up_and_squeeze_tennis_ball/20260319_163355_541/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/pick_up_and_squeeze_tennis_ball/20260319_163355_541/pressure_grids.npz",
+    "shape": [
+      549,
+      21,
+      21
+    ],
+    "frames": 549
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/play_foosball/20260324_160006_534/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/play_foosball/20260324_160006_534/pressure_grids.npz",
+    "shape": [
+      1958,
+      21,
+      21
+    ],
+    "frames": 1958
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/swing_badminton_racket_and_handle_ball_bucket/20260409_145216_729/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/swing_badminton_racket_and_handle_ball_bucket/20260409_145216_729/pressure_grids.npz",
+    "shape": [
+      3999,
+      21,
+      21
+    ],
+    "frames": 3999
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/clean_billiard_balls/20260324_195622_623/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/clean_billiard_balls/20260324_195622_623/pressure_grids.npz",
+    "shape": [
+      3844,
+      21,
+      21
+    ],
+    "frames": 3844
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/play_foosball/20260324_155610_718/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/play_foosball/20260324_155610_718/pressure_grids.npz",
+    "shape": [
+      352,
+      21,
+      21
+    ],
+    "frames": 352
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/inflate_ball/20260324_173322_919/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/inflate_ball/20260324_173322_919/pressure_grids.npz",
+    "shape": [
+      4179,
+      21,
+      21
+    ],
+    "frames": 4179
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/play_billiards/20260324_194024_431/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/play_billiards/20260324_194024_431/pressure_grids.npz",
+    "shape": [
+      1090,
+      21,
+      21
+    ],
+    "frames": 1090
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/throw_football/20260324_164336_088/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/throw_football/20260324_164336_088/pressure_grids.npz",
+    "shape": [
+      1215,
+      21,
+      21
+    ],
+    "frames": 1215
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/play_foosball/20260324_155838_699/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/play_foosball/20260324_155838_699/pressure_grids.npz",
+    "shape": [
+      1586,
+      21,
+      21
+    ],
+    "frames": 1586
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/pick_up_and_squeeze_tennis_ball/20260319_163450_938/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/pick_up_and_squeeze_tennis_ball/20260319_163450_938/pressure_grids.npz",
+    "shape": [
+      384,
+      21,
+      21
+    ],
+    "frames": 384
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/play_billiards/20260324_193534_836/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/play_billiards/20260324_193534_836/pressure_grids.npz",
+    "shape": [
+      464,
+      21,
+      21
+    ],
+    "frames": 464
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/play_tennis/20260324_174826_280/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/play_tennis/20260324_174826_280/pressure_grids.npz",
+    "shape": [
+      669,
+      21,
+      21
+    ],
+    "frames": 669
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/pick_up_toy_badminton_racket/20260321_100519_118/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/pick_up_toy_badminton_racket/20260321_100519_118/pressure_grids.npz",
+    "shape": [
+      458,
+      21,
+      21
+    ],
+    "frames": 458
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/bounce_ping_pong_ball/20260320_170645_947/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/bounce_ping_pong_ball/20260320_170645_947/pressure_grids.npz",
+    "shape": [
+      1508,
+      21,
+      21
+    ],
+    "frames": 1508
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/play_foosball/20260324_155627_989/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/play_foosball/20260324_155627_989/pressure_grids.npz",
+    "shape": [
+      1716,
+      21,
+      21
+    ],
+    "frames": 1716
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/bounce_ping_pong_ball/20260320_170415_985/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/bounce_ping_pong_ball/20260320_170415_985/pressure_grids.npz",
+    "shape": [
+      1639,
+      21,
+      21
+    ],
+    "frames": 1639
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/toss_and_catch_tennis_ball/20260319_203315_683/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/toss_and_catch_tennis_ball/20260319_203315_683/pressure_grids.npz",
+    "shape": [
+      233,
+      21,
+      21
+    ],
+    "frames": 233
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/put_back_badminton_shuttlecock/20260321_105249_535/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/put_back_badminton_shuttlecock/20260321_105249_535/pressure_grids.npz",
+    "shape": [
+      802,
+      21,
+      21
+    ],
+    "frames": 802
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/hit_tennis_ball/20260324_161931_613/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/hit_tennis_ball/20260324_161931_613/pressure_grids.npz",
+    "shape": [
+      524,
+      21,
+      21
+    ],
+    "frames": 524
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/take_out_badminton_shuttlecock/20260321_104605_135/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/take_out_badminton_shuttlecock/20260321_104605_135/pressure_grids.npz",
+    "shape": [
+      462,
+      21,
+      21
+    ],
+    "frames": 462
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/clean_billiard_balls/20260324_195156_399/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/clean_billiard_balls/20260324_195156_399/pressure_grids.npz",
+    "shape": [
+      4188,
+      21,
+      21
+    ],
+    "frames": 4188
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/put_away_billiard_balls/20260324_194856_528/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/put_away_billiard_balls/20260324_194856_528/pressure_grids.npz",
+    "shape": [
+      1012,
+      21,
+      21
+    ],
+    "frames": 1012
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/swing_badminton_racket_and_handle_ball_bucket/20260409_145510_646/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/swing_badminton_racket_and_handle_ball_bucket/20260409_145510_646/pressure_grids.npz",
+    "shape": [
+      3868,
+      21,
+      21
+    ],
+    "frames": 3868
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/throw_football/20260324_164506_282/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/throw_football/20260324_164506_282/pressure_grids.npz",
+    "shape": [
+      603,
+      21,
+      21
+    ],
+    "frames": 603
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/put_back_badminton_shuttlecock/20260321_105418_065/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/put_back_badminton_shuttlecock/20260321_105418_065/pressure_grids.npz",
+    "shape": [
+      846,
+      21,
+      21
+    ],
+    "frames": 846
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/pick_up_and_squeeze_tennis_ball/20260319_163547_639/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/pick_up_and_squeeze_tennis_ball/20260319_163547_639/pressure_grids.npz",
+    "shape": [
+      389,
+      21,
+      21
+    ],
+    "frames": 389
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/throw_football/20260324_164111_475/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/throw_football/20260324_164111_475/pressure_grids.npz",
+    "shape": [
+      819,
+      21,
+      21
+    ],
+    "frames": 819
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/pick_up_toy_badminton_racket/20260321_100501_177/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/pick_up_toy_badminton_racket/20260321_100501_177/pressure_grids.npz",
+    "shape": [
+      355,
+      21,
+      21
+    ],
+    "frames": 355
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/play_indoor_basketball/20260324_162321_303/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/play_indoor_basketball/20260324_162321_303/pressure_grids.npz",
+    "shape": [
+      518,
+      21,
+      21
+    ],
+    "frames": 518
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/clean_billiard_balls/20260324_200215_436/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/clean_billiard_balls/20260324_200215_436/pressure_grids.npz",
+    "shape": [
+      3585,
+      21,
+      21
+    ],
+    "frames": 3585
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/bounce_ping_pong_ball/20260320_170213_887/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/bounce_ping_pong_ball/20260320_170213_887/pressure_grids.npz",
+    "shape": [
+      1573,
+      21,
+      21
+    ],
+    "frames": 1573
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/arrange_billiard_balls/20260324_194638_797/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/arrange_billiard_balls/20260324_194638_797/pressure_grids.npz",
+    "shape": [
+      758,
+      21,
+      21
+    ],
+    "frames": 758
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/pick_up_and_squeeze_tennis_ball/20260319_163144_102/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/pick_up_and_squeeze_tennis_ball/20260319_163144_102/pressure_grids.npz",
+    "shape": [
+      365,
+      21,
+      21
+    ],
+    "frames": 365
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/bounce_ping_pong_ball/20260320_171347_880/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/bounce_ping_pong_ball/20260320_171347_880/pressure_grids.npz",
+    "shape": [
+      1104,
+      21,
+      21
+    ],
+    "frames": 1104
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/bounce_ping_pong_ball/20260320_170948_381/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/bounce_ping_pong_ball/20260320_170948_381/pressure_grids.npz",
+    "shape": [
+      1459,
+      21,
+      21
+    ],
+    "frames": 1459
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/deflate_and_inflate_ball/20260409_154050_340/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/deflate_and_inflate_ball/20260409_154050_340/pressure_grids.npz",
+    "shape": [
+      9496,
+      21,
+      21
+    ],
+    "frames": 9496
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/practice_badminton_swing_outdoors/20260324_165657_616/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/practice_badminton_swing_outdoors/20260324_165657_616/pressure_grids.npz",
+    "shape": [
+      755,
+      21,
+      21
+    ],
+    "frames": 755
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/hit_tennis_ball/20260324_161956_434/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/hit_tennis_ball/20260324_161956_434/pressure_grids.npz",
+    "shape": [
+      117,
+      21,
+      21
+    ],
+    "frames": 117
+  },
+  {
+    "id": "E04",
+    "path": "Outdoor/play_tennis/20260324_175021_381/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Outdoor/play_tennis/20260324_175021_381/pressure_grids.npz",
+    "shape": [
+      368,
+      21,
+      21
+    ],
+    "frames": 368
+  },
+  {
+    "id": "E04",
+    "path": "Retail/shop_for_fruit/20260411_144931_749/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/shop_for_fruit/20260411_144931_749/pressure_grids.npz",
+    "shape": [
+      2793,
+      21,
+      21
+    ],
+    "frames": 2793
+  },
+  {
+    "id": "E04",
+    "path": "Retail/open_package_bag/20260321_213237_166/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/open_package_bag/20260321_213237_166/pressure_grids.npz",
+    "shape": [
+      926,
+      21,
+      21
+    ],
+    "frames": 926
+  },
+  {
+    "id": "E04",
+    "path": "Retail/open_package_bag/20260321_212039_672/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/open_package_bag/20260321_212039_672/pressure_grids.npz",
+    "shape": [
+      1367,
+      21,
+      21
+    ],
+    "frames": 1367
+  },
+  {
+    "id": "E04",
+    "path": "Retail/open_disposable_chopsticks_package/20260321_210257_037/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/open_disposable_chopsticks_package/20260321_210257_037/pressure_grids.npz",
+    "shape": [
+      820,
+      21,
+      21
+    ],
+    "frames": 820
+  },
+  {
+    "id": "E04",
+    "path": "Retail/shop_for_fruit/20260411_095945_249/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/shop_for_fruit/20260411_095945_249/pressure_grids.npz",
+    "shape": [
+      5573,
+      21,
+      21
+    ],
+    "frames": 5573
+  },
+  {
+    "id": "E04",
+    "path": "Retail/open_package_bag/20260321_211436_038/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/open_package_bag/20260321_211436_038/pressure_grids.npz",
+    "shape": [
+      1293,
+      21,
+      21
+    ],
+    "frames": 1293
+  },
+  {
+    "id": "E04",
+    "path": "Retail/pick_up_wafer_biscuits/20260325_164543_863/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/pick_up_wafer_biscuits/20260325_164543_863/pressure_grids.npz",
+    "shape": [
+      1072,
+      21,
+      21
+    ],
+    "frames": 1072
+  },
+  {
+    "id": "E04",
+    "path": "Retail/pick_up_fruit/20260313_232326_429/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/pick_up_fruit/20260313_232326_429/pressure_grids.npz",
+    "shape": [
+      136,
+      21,
+      21
+    ],
+    "frames": 136
+  },
+  {
+    "id": "E04",
+    "path": "Retail/shop_for_snacks/20260411_151059_547/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/shop_for_snacks/20260411_151059_547/pressure_grids.npz",
+    "shape": [
+      6211,
+      21,
+      21
+    ],
+    "frames": 6211
+  },
+  {
+    "id": "E04",
+    "path": "Retail/pick_up_bread_3/20260326_153759_719/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/pick_up_bread_3/20260326_153759_719/pressure_grids.npz",
+    "shape": [
+      3112,
+      21,
+      21
+    ],
+    "frames": 3112
+  },
+  {
+    "id": "E04",
+    "path": "Retail/pick_up_fruit/20260313_232744_367/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/pick_up_fruit/20260313_232744_367/pressure_grids.npz",
+    "shape": [
+      179,
+      21,
+      21
+    ],
+    "frames": 179
+  },
+  {
+    "id": "E04",
+    "path": "Retail/pick_up_fruit/20260313_231845_465/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/pick_up_fruit/20260313_231845_465/pressure_grids.npz",
+    "shape": [
+      158,
+      21,
+      21
+    ],
+    "frames": 158
+  },
+  {
+    "id": "E04",
+    "path": "Retail/open_disposable_chopsticks_package/20260321_210645_793/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/open_disposable_chopsticks_package/20260321_210645_793/pressure_grids.npz",
+    "shape": [
+      827,
+      21,
+      21
+    ],
+    "frames": 827
+  },
+  {
+    "id": "E04",
+    "path": "Retail/open_package_bag/20260321_211228_265/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/open_package_bag/20260321_211228_265/pressure_grids.npz",
+    "shape": [
+      1240,
+      21,
+      21
+    ],
+    "frames": 1240
+  },
+  {
+    "id": "E04",
+    "path": "Retail/open_disposable_chopsticks_package/20260321_210548_907/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/open_disposable_chopsticks_package/20260321_210548_907/pressure_grids.npz",
+    "shape": [
+      952,
+      21,
+      21
+    ],
+    "frames": 952
+  },
+  {
+    "id": "E04",
+    "path": "Retail/pick_up_drink/20260326_165011_967/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/pick_up_drink/20260326_165011_967/pressure_grids.npz",
+    "shape": [
+      3424,
+      21,
+      21
+    ],
+    "frames": 3424
+  },
+  {
+    "id": "E04",
+    "path": "Retail/pick_up_snacks/20260325_145245_250/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/pick_up_snacks/20260325_145245_250/pressure_grids.npz",
+    "shape": [
+      4214,
+      21,
+      21
+    ],
+    "frames": 4214
+  },
+  {
+    "id": "E04",
+    "path": "Retail/pick_up_fruit/20260313_231726_528/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/pick_up_fruit/20260313_231726_528/pressure_grids.npz",
+    "shape": [
+      153,
+      21,
+      21
+    ],
+    "frames": 153
+  },
+  {
+    "id": "E04",
+    "path": "Retail/pick_up_wafer_biscuits/20260325_164709_097/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/pick_up_wafer_biscuits/20260325_164709_097/pressure_grids.npz",
+    "shape": [
+      1979,
+      21,
+      21
+    ],
+    "frames": 1979
+  },
+  {
+    "id": "E04",
+    "path": "Retail/buy_bagged_snacks/20260411_153750_067/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/buy_bagged_snacks/20260411_153750_067/pressure_grids.npz",
+    "shape": [
+      3404,
+      21,
+      21
+    ],
+    "frames": 3404
+  },
+  {
+    "id": "E04",
+    "path": "Retail/pick_up_snacks/20260325_150224_827/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/pick_up_snacks/20260325_150224_827/pressure_grids.npz",
+    "shape": [
+      4338,
+      21,
+      21
+    ],
+    "frames": 4338
+  },
+  {
+    "id": "E04",
+    "path": "Retail/pick_up_fruit/20260313_231445_105/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/pick_up_fruit/20260313_231445_105/pressure_grids.npz",
+    "shape": [
+      324,
+      21,
+      21
+    ],
+    "frames": 324
+  },
+  {
+    "id": "E04",
+    "path": "Retail/buy_drink/20260411_155446_961/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/buy_drink/20260411_155446_961/pressure_grids.npz",
+    "shape": [
+      4424,
+      21,
+      21
+    ],
+    "frames": 4424
+  },
+  {
+    "id": "E04",
+    "path": "Retail/pick_up_fruit/20260313_232358_385/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/pick_up_fruit/20260313_232358_385/pressure_grids.npz",
+    "shape": [
+      167,
+      21,
+      21
+    ],
+    "frames": 167
+  },
+  {
+    "id": "E04",
+    "path": "Retail/shop_for_fruit/20260411_101736_711/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/shop_for_fruit/20260411_101736_711/pressure_grids.npz",
+    "shape": [
+      5895,
+      21,
+      21
+    ],
+    "frames": 5895
+  },
+  {
+    "id": "E04",
+    "path": "Retail/pick_up_fruit/20260313_232311_482/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/pick_up_fruit/20260313_232311_482/pressure_grids.npz",
+    "shape": [
+      148,
+      21,
+      21
+    ],
+    "frames": 148
+  },
+  {
+    "id": "E04",
+    "path": "Retail/pick_up_fruit/20260313_232414_647/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/pick_up_fruit/20260313_232414_647/pressure_grids.npz",
+    "shape": [
+      144,
+      21,
+      21
+    ],
+    "frames": 144
+  },
+  {
+    "id": "E04",
+    "path": "Retail/pick_up_dried_fruit_and_nut_snacks/20260325_143329_516/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/pick_up_dried_fruit_and_nut_snacks/20260325_143329_516/pressure_grids.npz",
+    "shape": [
+      4021,
+      21,
+      21
+    ],
+    "frames": 4021
+  },
+  {
+    "id": "E04",
+    "path": "Retail/open_package_bag/20260321_213836_117/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/open_package_bag/20260321_213836_117/pressure_grids.npz",
+    "shape": [
+      982,
+      21,
+      21
+    ],
+    "frames": 982
+  },
+  {
+    "id": "E04",
+    "path": "Retail/pick_up_fruit/20260326_155223_379/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/pick_up_fruit/20260326_155223_379/pressure_grids.npz",
+    "shape": [
+      4001,
+      21,
+      21
+    ],
+    "frames": 4001
+  },
+  {
+    "id": "E04",
+    "path": "Retail/buy_boxed_drink/20260325_141852_073/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/buy_boxed_drink/20260325_141852_073/pressure_grids.npz",
+    "shape": [
+      4090,
+      21,
+      21
+    ],
+    "frames": 4090
+  },
+  {
+    "id": "E04",
+    "path": "Retail/pick_up_wafer_biscuits/20260325_164818_937/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/pick_up_wafer_biscuits/20260325_164818_937/pressure_grids.npz",
+    "shape": [
+      1877,
+      21,
+      21
+    ],
+    "frames": 1877
+  },
+  {
+    "id": "E04",
+    "path": "Retail/pick_up_dried_fruit_and_nut_snacks/20260325_142527_466/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/pick_up_dried_fruit_and_nut_snacks/20260325_142527_466/pressure_grids.npz",
+    "shape": [
+      3299,
+      21,
+      21
+    ],
+    "frames": 3299
+  },
+  {
+    "id": "E04",
+    "path": "Retail/buy_drink/20260325_140551_261/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/buy_drink/20260325_140551_261/pressure_grids.npz",
+    "shape": [
+      3390,
+      21,
+      21
+    ],
+    "frames": 3390
+  },
+  {
+    "id": "E04",
+    "path": "Retail/pick_up_snacks/20260325_144929_542/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/pick_up_snacks/20260325_144929_542/pressure_grids.npz",
+    "shape": [
+      4116,
+      21,
+      21
+    ],
+    "frames": 4116
+  },
+  {
+    "id": "E04",
+    "path": "Retail/buy_tissues/20260411_154936_310/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/buy_tissues/20260411_154936_310/pressure_grids.npz",
+    "shape": [
+      1230,
+      21,
+      21
+    ],
+    "frames": 1230
+  },
+  {
+    "id": "E04",
+    "path": "Retail/buy_drink/20260325_140354_186/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/buy_drink/20260325_140354_186/pressure_grids.npz",
+    "shape": [
+      3052,
+      21,
+      21
+    ],
+    "frames": 3052
+  },
+  {
+    "id": "E04",
+    "path": "Retail/pick_up_fruit/20260313_232550_613/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/pick_up_fruit/20260313_232550_613/pressure_grids.npz",
+    "shape": [
+      159,
+      21,
+      21
+    ],
+    "frames": 159
+  },
+  {
+    "id": "E04",
+    "path": "Retail/buy_bagged_snacks/20260411_153958_237/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/buy_bagged_snacks/20260411_153958_237/pressure_grids.npz",
+    "shape": [
+      9674,
+      21,
+      21
+    ],
+    "frames": 9674
+  },
+  {
+    "id": "E04",
+    "path": "Retail/buy_drink/20260411_160228_909/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Retail/buy_drink/20260411_160228_909/pressure_grids.npz",
+    "shape": [
+      6333,
+      21,
+      21
+    ],
+    "frames": 6333
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/squeeze_pliers/20260313_235442_534/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/squeeze_pliers/20260313_235442_534/pressure_grids.npz",
+    "shape": [
+      196,
+      21,
+      21
+    ],
+    "frames": 196
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/swing_hammer/20260409_140034_598/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/swing_hammer/20260409_140034_598/pressure_grids.npz",
+    "shape": [
+      5877,
+      21,
+      21
+    ],
+    "frames": 5877
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/pick_up_paper_box/20260314_155543_385/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/pick_up_paper_box/20260314_155543_385/pressure_grids.npz",
+    "shape": [
+      75,
+      21,
+      21
+    ],
+    "frames": 75
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/cut_foam_with_kitchen_knife/20260410_200949_949/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/cut_foam_with_kitchen_knife/20260410_200949_949/pressure_grids.npz",
+    "shape": [
+      3405,
+      21,
+      21
+    ],
+    "frames": 3405
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/use_multimeter_rotate_knob/20260314_160120_269/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/use_multimeter_rotate_knob/20260314_160120_269/pressure_grids.npz",
+    "shape": [
+      77,
+      21,
+      21
+    ],
+    "frames": 77
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/use_hex_key/20260319_113829_213/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/use_hex_key/20260319_113829_213/pressure_grids.npz",
+    "shape": [
+      171,
+      21,
+      21
+    ],
+    "frames": 171
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/squeeze_pliers/20260313_234646_485/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/squeeze_pliers/20260313_234646_485/pressure_grids.npz",
+    "shape": [
+      209,
+      21,
+      21
+    ],
+    "frames": 209
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/use_soldering_iron/20260319_111849_324/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/use_soldering_iron/20260319_111849_324/pressure_grids.npz",
+    "shape": [
+      344,
+      21,
+      21
+    ],
+    "frames": 344
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/prepare_solution/20260320_174513_623/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/prepare_solution/20260320_174513_623/pressure_grids.npz",
+    "shape": [
+      3447,
+      21,
+      21
+    ],
+    "frames": 3447
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/use_heat_gun/20260319_112233_980/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/use_heat_gun/20260319_112233_980/pressure_grids.npz",
+    "shape": [
+      297,
+      21,
+      21
+    ],
+    "frames": 297
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/use_multimeter_rotate_knob/20260314_160039_349/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/use_multimeter_rotate_knob/20260314_160039_349/pressure_grids.npz",
+    "shape": [
+      80,
+      21,
+      21
+    ],
+    "frames": 80
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/squeeze_pliers/20260319_155401_514/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/squeeze_pliers/20260319_155401_514/pressure_grids.npz",
+    "shape": [
+      433,
+      21,
+      21
+    ],
+    "frames": 433
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/pick_up_tape/20260319_162722_649/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/pick_up_tape/20260319_162722_649/pressure_grids.npz",
+    "shape": [
+      336,
+      21,
+      21
+    ],
+    "frames": 336
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/pick_up_paper_box/20260314_155707_563/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/pick_up_paper_box/20260314_155707_563/pressure_grids.npz",
+    "shape": [
+      55,
+      21,
+      21
+    ],
+    "frames": 55
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/squeeze_pliers/20260313_235616_749/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/squeeze_pliers/20260313_235616_749/pressure_grids.npz",
+    "shape": [
+      153,
+      21,
+      21
+    ],
+    "frames": 153
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/pick_up_paper_box_2/20260316_224243_117/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/pick_up_paper_box_2/20260316_224243_117/pressure_grids.npz",
+    "shape": [
+      93,
+      21,
+      21
+    ],
+    "frames": 93
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/push_utility_knife/20260319_155943_814/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/push_utility_knife/20260319_155943_814/pressure_grids.npz",
+    "shape": [
+      647,
+      21,
+      21
+    ],
+    "frames": 647
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/pick_up_paper_box/20260314_155753_023/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/pick_up_paper_box/20260314_155753_023/pressure_grids.npz",
+    "shape": [
+      71,
+      21,
+      21
+    ],
+    "frames": 71
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/squeeze_pliers/20260319_155624_119/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/squeeze_pliers/20260319_155624_119/pressure_grids.npz",
+    "shape": [
+      355,
+      21,
+      21
+    ],
+    "frames": 355
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/pick_up_paper_box/20260314_155846_678/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/pick_up_paper_box/20260314_155846_678/pressure_grids.npz",
+    "shape": [
+      79,
+      21,
+      21
+    ],
+    "frames": 79
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/prepare_solution/20260320_175215_051/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/prepare_solution/20260320_175215_051/pressure_grids.npz",
+    "shape": [
+      2367,
+      21,
+      21
+    ],
+    "frames": 2367
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/use_hex_key/20260319_113903_814/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/use_hex_key/20260319_113903_814/pressure_grids.npz",
+    "shape": [
+      99,
+      21,
+      21
+    ],
+    "frames": 99
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/use_needle_nose_pliers/20260319_113042_671/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/use_needle_nose_pliers/20260319_113042_671/pressure_grids.npz",
+    "shape": [
+      149,
+      21,
+      21
+    ],
+    "frames": 149
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/press_multimeter_button/20260314_160715_057/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/press_multimeter_button/20260314_160715_057/pressure_grids.npz",
+    "shape": [
+      75,
+      21,
+      21
+    ],
+    "frames": 75
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/use_scissors/20260319_111309_463/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/use_scissors/20260319_111309_463/pressure_grids.npz",
+    "shape": [
+      208,
+      21,
+      21
+    ],
+    "frames": 208
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/pick_up_file/20260321_085647_058/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/pick_up_file/20260321_085647_058/pressure_grids.npz",
+    "shape": [
+      248,
+      21,
+      21
+    ],
+    "frames": 248
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/pick_up_file/20260321_085854_865/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/pick_up_file/20260321_085854_865/pressure_grids.npz",
+    "shape": [
+      278,
+      21,
+      21
+    ],
+    "frames": 278
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/assemble_paper_box/20260319_205726_326/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/assemble_paper_box/20260319_205726_326/pressure_grids.npz",
+    "shape": [
+      654,
+      21,
+      21
+    ],
+    "frames": 654
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/use_soldering_iron/20260319_111835_078/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/use_soldering_iron/20260319_111835_078/pressure_grids.npz",
+    "shape": [
+      357,
+      21,
+      21
+    ],
+    "frames": 357
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/pick_up_peeler/20260321_094811_950/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/pick_up_peeler/20260321_094811_950/pressure_grids.npz",
+    "shape": [
+      348,
+      21,
+      21
+    ],
+    "frames": 348
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/pick_up_paper_box_2/20260316_224131_785/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/pick_up_paper_box_2/20260316_224131_785/pressure_grids.npz",
+    "shape": [
+      77,
+      21,
+      21
+    ],
+    "frames": 77
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/press_multimeter_button/20260314_160646_231/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/press_multimeter_button/20260314_160646_231/pressure_grids.npz",
+    "shape": [
+      60,
+      21,
+      21
+    ],
+    "frames": 60
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/prepare_solution/20260320_175013_420/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/prepare_solution/20260320_175013_420/pressure_grids.npz",
+    "shape": [
+      2827,
+      21,
+      21
+    ],
+    "frames": 2827
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/pick_up_saw/20260321_095149_656/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/pick_up_saw/20260321_095149_656/pressure_grids.npz",
+    "shape": [
+      418,
+      21,
+      21
+    ],
+    "frames": 418
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/pick_up_level/20260321_095508_625/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/pick_up_level/20260321_095508_625/pressure_grids.npz",
+    "shape": [
+      310,
+      21,
+      21
+    ],
+    "frames": 310
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/pick_up_paper_box_2/20260316_224354_250/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/pick_up_paper_box_2/20260316_224354_250/pressure_grids.npz",
+    "shape": [
+      81,
+      21,
+      21
+    ],
+    "frames": 81
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/swing_hammer_right_camera_static/20260409_112336_207/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/swing_hammer_right_camera_static/20260409_112336_207/pressure_grids.npz",
+    "shape": [
+      5902,
+      21,
+      21
+    ],
+    "frames": 5902
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/pick_up_peeler/20260321_094737_517/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/pick_up_peeler/20260321_094737_517/pressure_grids.npz",
+    "shape": [
+      343,
+      21,
+      21
+    ],
+    "frames": 343
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/click_multimeter_button_2/20260316_225511_934/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/click_multimeter_button_2/20260316_225511_934/pressure_grids.npz",
+    "shape": [
+      49,
+      21,
+      21
+    ],
+    "frames": 49
+  },
+  {
+    "id": "E04",
+    "path": "Workbench/squeeze_pliers/20260313_233939_889/pressure_grids.npz",
+    "url": "https://hf-mirror.com/datasets/zhouzhoujy/EgoTouch/resolve/main/Workbench/squeeze_pliers/20260313_233939_889/pressure_grids.npz",
+    "shape": [
+      202,
+      21,
+      21
+    ],
+    "frames": 202
+  }
+]

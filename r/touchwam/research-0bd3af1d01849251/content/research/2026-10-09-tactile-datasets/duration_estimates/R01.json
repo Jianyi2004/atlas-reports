@@ -1,0 +1,33 @@
+{
+  "id": "R01",
+  "best_hours": 29.359212962962964,
+  "low_hours": 14.679606481481482,
+  "high_hours": 58.71842592592593,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "可访问FoTa镜像中的VisGel完整版触觉序列范围；未恢复原同步场景RGB，不能把完整及下采样版本重复计入。",
+  "method_zh": "FoTa预处理清单报告原始3,170,795帧；假定原始30fps，小时数=N/(fps×3600)，15–60fps作为敏感性范围。",
+  "assumptions_zh": [
+    "未找到原始保存帧率，30fps是估算参数，不是已核实的采样率。",
+    "FoTa接触筛选后726,740张图不是连续全视频，不能用它代表原始录制时长。",
+    "同一帧的视觉和触觉只计一次。",
+    "镜像成员名如seen_2_rec_02592_frame0204.jpg；作者预处理保留原录制目录及frame编号，完整与下采样版本同源，按完整版计一次。"
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/alanzjl/t3/blob/main/dataset_preproc/README.md",
+      "evidence": "3,170,795 original tactile images; downsampled to726,740。"
+    },
+    {
+      "url": "https://github.com/YunzhuLi/VisGel",
+      "evidence": "原始seen/unseen数据下载脚本；论文约12,000次触碰、3M帧。"
+    },
+    {
+      "url": "https://github.com/alanzjl/t3/blob/main/dataset_preproc/preprocess_visgel_images.py",
+      "evidence": "预处理保留seen/unseen、rec目录及frame原编号；当前镜像ZIP目录已核对318个完整版分片。"
+    }
+  ],
+  "availability": "mirror",
+  "availability_note_zh": "原始下载主机本次403；公开FoTa镜像ZIP含visgel完整版318个tar及visgel_downsampled 74个tar。完整分片保留序列ID与原帧号，可重组触觉顺序；没有核实物理帧率或每段无缺帧。",
+  "checked_at": "2026-10-19"
+}

@@ -1,0 +1,36 @@
+{
+  "frames": 746,
+  "duration_seconds": 25.00020980834961,
+  "video_timestamp_delta_max_abs_seconds": 0.016363029266356577,
+  "activity": "Peel a cucumber",
+  "activity_start_stop_relative_video_seconds": [
+    951.653,
+    1009.462
+  ],
+  "selected_source_video_seconds": [
+    956.0264420509338,
+    980.9944748878479
+  ],
+  "manual_rgb_frames_seconds": [
+    1,
+    5,
+    10,
+    15
+  ],
+  "left": {
+    "raw_pressure_frames": 147,
+    "sample_age_max_seconds": 0.20704197883605957,
+    "sample_age_median_seconds": 0.08810615539550781,
+    "pressure_min": 503.0,
+    "pressure_max": 724.0,
+    "median_pressure_hz": 5.972265295167144
+  },
+  "right": {
+    "raw_pressure_frames": 147,
+    "sample_age_max_seconds": 0.2075955867767334,
+    "sample_age_median_seconds": 0.08514773845672607,
+    "pressure_min": 535.0,
+    "pressure_max": 1023.0,
+    "median_pressure_hz": 6.007985715953455
+  }
+}

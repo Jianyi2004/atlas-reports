@@ -1,0 +1,61 @@
+{
+  "id": "E09",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "name": "X001/episode_000001",
+    "source_url": "https://huggingface.co/datasets/chuqiaoLyu/Xspark-HumanTouch",
+    "download_url": "https://huggingface.co/datasets/chuqiaoLyu/Xspark-HumanTouch/resolve/main/X001/videos/chunk-000/observation.images.cam_head/episode_000001.mp4",
+    "local_raw_paths": [
+      "updates/humantouch_20261019/episode_000001.parquet",
+      "trajectory_work/E09/head.mp4"
+    ],
+    "complete_episode": true,
+    "frames": 1597,
+    "fps": 60,
+    "duration_seconds": 26.616666666666667,
+    "duration_method": "1597帧 / 60Hz；MP4也为1597帧",
+    "modalities": [
+      "ego RGB",
+      "双手原始触觉"
+    ],
+    "sync": "同一episode，视频帧号和Parquet frame_index完全对应。",
+    "sha256": {
+      "updates/humantouch_20261019/episode_000001.parquet": "fcb0fa8789872a72989d310a1449feaa25e3bc531a16a749313b5604b97d3eb7",
+      "trajectory_work/E09/head.mp4": "cd4008fe3191672112510d6981d0e40cbed02258e675e08fcf464b8b5772159a"
+    },
+    "downloaded_bytes": 53539082
+  },
+  "media": {
+    "html": "trajectories/E09/index.html",
+    "video": "trajectories/E09/preview.mp4",
+    "poster": "trajectories/E09/poster.webp",
+    "caption_zh": "HumanTouch X001/episode_000001：已下载完整1597帧、26.617秒的头戴RGB与双手触觉，60Hz按episode帧号对齐。预览降采样为10fps；每手460维原始响应按23×20存储顺序展平显示，不是手掌空间形状，也不把所有原始通道视为有效触点或牛顿值。",
+    "preview_seconds": 26.7
+  },
+  "duration": {
+    "released_hours": 100,
+    "paper_hours": 1000,
+    "metadata_hours": 132.7539722222,
+    "basis": "official_reported",
+    "scope_zh": "首版官方约100小时；meta推算132.754小时；论文1000小时",
+    "explanation_zh": "十个任务meta.total_frames/60总和为132.754小时，但文件数量与meta episodes不一致，未审计全量同步有效时长，因此发布规模沿用官方约100小时。",
+    "sources": [
+      {
+        "url": "https://xsparkai.com/sparklab/humantouch/",
+        "evidence": "initial release ~100 hours / 10 canonical tasks"
+      },
+      {
+        "url": "https://huggingface.co/datasets/chuqiaoLyu/Xspark-HumanTouch/blob/main/X001/meta/info.json",
+        "evidence": "各X001–X010 meta.total_frames / 60，总计132.753972小时"
+      }
+    ]
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "method": "MP4帧数/可播放性检查与八项poster拼图人工核查"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "R04",
+  "best_hours": 13.733796296296296,
+  "low_hours": 7.083333333333333,
+  "high_hours": 21.25,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "Eagle Shoal全部2,550次试验；其中1,650次有视觉视频。",
+  "method_zh": "2,550×已下载trial的RGB时长349/18=19.3889s；以平均每trial10–30s给出范围。",
+  "assumptions_zh": [
+    "只审计了一条视频，不能证明全库平均时长。",
+    "假定900条无视频试验的触觉记录时长与有视频试验同量级；触觉400帧没有独立时间戳验证。",
+    "视频、深度、触觉为同一次试验，不累加模态。"
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/tsinghua-rll/Visual-Tactile_Dataset/blob/master/dataset/README.md",
+      "evidence": "2,550 sets；only1,650有video。"
+    },
+    {
+      "url": "https://github.com/tsinghua-rll/Visual-Tactile_Dataset",
+      "evidence": "已下载dataset/Cheez/100_432/right/0，RGB349帧/18fps。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "公开下载入口已核查，已有真实样本下载。",
+  "alternative_hours": {
+    "estimated_paired_visual_tactile": 8.886574074074074
+  },
+  "checked_at": "2026-10-19"
+}

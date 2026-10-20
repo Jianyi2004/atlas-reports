@@ -1,0 +1,38 @@
+[
+  {
+    "key": "head_left",
+    "status": 200,
+    "bytes": 18717439,
+    "source_path": "videos/chunk-000/observation.images.head_left/episode_000000.mp4"
+  },
+  {
+    "key": "head_right",
+    "status": 200,
+    "bytes": 18088409,
+    "source_path": "videos/chunk-000/observation.images.head_right/episode_000000.mp4"
+  },
+  {
+    "key": "wrist_left",
+    "status": 200,
+    "bytes": 21356250,
+    "source_path": "videos/chunk-000/observation.images.wrist_left/episode_000000.mp4"
+  },
+  {
+    "key": "wrist_right",
+    "status": 200,
+    "bytes": 19963284,
+    "source_path": "videos/chunk-000/observation.images.wrist_right/episode_000000.mp4"
+  },
+  {
+    "key": "tactile_deform",
+    "status": 200,
+    "bytes": 826141,
+    "source_path": "videos/chunk-000/observation.images.tactile_deform/episode_000000.mp4"
+  },
+  {
+    "key": "tactile_raw",
+    "status": 200,
+    "bytes": 113863650,
+    "source_path": "videos/chunk-000/observation.images.tactile_raw/episode_000000.mp4"
+  }
+]

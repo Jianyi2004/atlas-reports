@@ -1,0 +1,24 @@
+{
+  "id": "U05",
+  "best_hours": 1000,
+  "low_hours": 1000,
+  "high_hours": 1000,
+  "kind": "reported",
+  "confidence": "medium",
+  "scope_zh": "作者首批发布声明；当前匿名文件接口403",
+  "method_zh": "直接引用官方首批1,000小时；不是实测值。当前可直接获取统计贡献为0，另列待权限量。",
+  "assumptions_zh": [
+    "已采1,209小时与未来10,000小时目标均不计入首批公开量。",
+    "区间相同表示作者给出单一发布数字，不意味着1,000小时经过逐轨迹审计。"
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/dmrobot-admin/Daimon-Infinity",
+      "evidence": "作者README首批1000h；实际ModelScope文件接口403「无权访问该数据集」。"
+    }
+  ],
+  "availability": "gated",
+  "availability_note_zh": "当前未取得文件访问权限，不计直接可取总量。",
+  "checked_at": "2026-10-19",
+  "source_total_hours": 1209
+}

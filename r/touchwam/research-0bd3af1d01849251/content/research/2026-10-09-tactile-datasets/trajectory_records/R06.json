@@ -1,0 +1,67 @@
+{
+  "id": "R06",
+  "checked_at": "2026-10-19",
+  "status": "static_sample",
+  "sample": {
+    "name": "FoundationTactile/ycbsight_real/val/data-000000.tar::004_sugar_box_gelsight_30_1630695247053154.jpg",
+    "source_url": "https://huggingface.co/datasets/alanz-mit/FoundationTactile",
+    "download_url": "https://hf-mirror.com/datasets/alanz-mit/FoundationTactile/resolve/main/dataset/FoTa_dataset.zip",
+    "local_raw_paths": [
+      "trajectory_work/A01/ycbsight-val.tar",
+      "trajectory_work/A01/raw/004_sugar_box_gelsight_30_1630695247053154.jpg",
+      "trajectory_work/A01/raw/004_sugar_box_gelsight_30_1630695247053154.json"
+    ],
+    "downloaded_bytes": 3573760,
+    "sha256": {
+      "trajectory_work/A01/ycbsight-val.tar": "7a98206de2aa955e87ac54ac7da40bb37a9e5d0a5965f95eca5e696d7021a7cc",
+      "trajectory_work/A01/raw/004_sugar_box_gelsight_30_1630695247053154.jpg": "1d55ffcb7e462a62c63aec5e16efb819a4f46db918c552ff7d8b00e8d0b6180f",
+      "trajectory_work/A01/raw/004_sugar_box_gelsight_30_1630695247053154.json": "500a671de789a45ebe65784fcc1e4d4f1eb9b31c366169513567b1a650861d09"
+    },
+    "complete_episode": false,
+    "frames": 1,
+    "modalities": [
+      "GelSight tactile image",
+      "published pose/object labels"
+    ],
+    "sync": "同名JPEG和JSON组成同一样本，无场景RGB。"
+  },
+  "media": {
+    "html": "trajectories/A01/index.html",
+    "poster": "trajectories/A01/poster.webp",
+    "caption_zh": "FoTa公开转换包中的YCB-Sight真实GelSight静态样本（004_sugar_box）与同名位姿JSON；实际原始Drive下载超时。本样本没有场景RGB，也不能当作完整连续轨迹。"
+  },
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "完整发布数据",
+    "explanation_zh": "未取得可汇总的完整时间戳或官方总小时数；试验/图像数量不能直接换算时长。",
+    "sources": [
+      {
+        "url": "https://github.com/Robo-Touch/YCB-Sight",
+        "evidence": "官方列30个仿真物体、6个真实物体；主计数只纳入真实部分。"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://drive.usercontent.google.com/download?id=1ZfwuXom_ngccnyox-ud4b-pOa1zMw-Wr&export=download",
+      "status": null,
+      "detail": "作者真实部分002_master_chef_can（约0.97GB）Google Drive下载端连接超时；没有用可用的仿真图冒充真实序列。"
+    },
+    {
+      "url": "https://hf-mirror.com/datasets/alanz-mit/FoundationTactile/resolve/main/dataset/FoTa_dataset.zip",
+      "status": 206,
+      "detail": "解析分卷ZIP central-directory并解压真实验证tar(3,573,760字节)，读取JPEG/JSON。"
+    }
+  ],
+  "blockers": [
+    "原始Drive暂不可达；公开派生样本仅保留单张GelSight及位姿，无RGB、无连续时间轴。"
+  ],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "validation": "原始schema/数组范围已读取；实际配对关系按数据字段核对；海报人工检查；视频通过ffprobe。"
+  },
+  "reuses": [
+    "A01/FoTa中的ycbsight_real真实样本；原始采集按R06计一次，附件路径复用以避免重复下载。"
+  ]
+}

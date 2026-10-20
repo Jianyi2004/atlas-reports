@@ -1,0 +1,22 @@
+{
+  "id": "F01",
+  "best_hours": 13.016666666666667,
+  "low_hours": 13.016666666666667,
+  "high_hours": 13.016666666666667,
+  "kind": "reported",
+  "confidence": "high",
+  "scope_zh": "REASSEMBLE公开示范全部；单列力/力矩扩展类别。",
+  "method_zh": "官方报告781分钟，即13.016667小时。",
+  "assumptions_zh": [
+    "同步视觉、机器人状态、六维力/力矩只计一份轨迹时间。"
+  ],
+  "sources": [
+    {
+      "url": "https://researchdata.tuwien.ac.at/records/0ewrv-8cb44",
+      "evidence": "发布记录报告4,551 demonstrations、781 minutes。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方公开数据入口可匿名访问。",
+  "checked_at": "2026-10-19"
+}

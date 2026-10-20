@@ -1,0 +1,28 @@
+{
+  "id": "R05",
+  "best_hours": 12.777777777777779,
+  "low_hours": 6.644444444444445,
+  "high_hours": 20.444444444444443,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "PoseIt公开入口所指1,840次抓取的完整四阶段轨迹。",
+  "method_zh": "1,840×假定每次25s；按每次13–40s给出规划范围。论文只明确抓前1s及姿态后1s等待，其余运动时长未报告。",
+  "assumptions_zh": [
+    "25s是基于抓取、姿态调整、摇晃、回撤四阶段的规划假设，未从文件实测。",
+    "假定明确的2s等待之外，四阶段机器人动作合计23s（11–38s）。",
+    "原始文件未下载成功，数值不证明当前可用录制量。"
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2209.05022",
+      "evidence": "1,840 datapoints/26objects/16poses；采集1s before grasp、1s after pose，含四阶段。"
+    },
+    {
+      "url": "https://github.com/Robo-Touch/PoseIt",
+      "evidence": "公开GoogleDrive数据入口。"
+    }
+  ],
+  "availability": "official_entry",
+  "availability_note_zh": "作者公开Drive入口存在；本环境及4090连接失败，未发现必须申请的证据。",
+  "checked_at": "2026-10-19"
+}

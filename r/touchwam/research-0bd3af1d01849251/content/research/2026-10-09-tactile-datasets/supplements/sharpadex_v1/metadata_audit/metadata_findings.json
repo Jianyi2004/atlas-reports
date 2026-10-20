@@ -1,0 +1,158 @@
+{
+  "readme_task_count": 59,
+  "per_task_mismatches": [],
+  "all_495_metadata_same_commit": true,
+  "same_schema_all_seasons": true,
+  "mean_episode_seconds": 37.2459697168282,
+  "task_hours_min": 0.19605555555555557,
+  "task_hours_median": 4.226972222222222,
+  "task_hours_max": 21.090287037037037,
+  "top10_tasks_by_hours": [
+    {
+      "task": "iron_garment",
+      "seasons": 33,
+      "episodes": 517,
+      "frames": 2277751,
+      "hours": 21.090287037037037
+    },
+    {
+      "task": "deal_playing_cards",
+      "seasons": 23,
+      "episodes": 1088,
+      "frames": 2074644,
+      "hours": 19.209666666666667
+    },
+    {
+      "task": "place_coffee_filter_in_dripper",
+      "seasons": 21,
+      "episodes": 784,
+      "frames": 1786030,
+      "hours": 16.537314814814813
+    },
+    {
+      "task": "pack_blueberries_in_bag",
+      "seasons": 17,
+      "episodes": 485,
+      "frames": 1533417,
+      "hours": 14.198305555555555
+    },
+    {
+      "task": "play_tic_tac_toe",
+      "seasons": 16,
+      "episodes": 521,
+      "frames": 1317513,
+      "hours": 12.199194444444444
+    },
+    {
+      "task": "fold_and_close_box",
+      "seasons": 10,
+      "episodes": 697,
+      "frames": 1233919,
+      "hours": 11.425175925925926
+    },
+    {
+      "task": "reposition_and_stack_blocks",
+      "seasons": 15,
+      "episodes": 1007,
+      "frames": 1069334,
+      "hours": 9.901240740740741
+    },
+    {
+      "task": "assemble_gears_on_base",
+      "seasons": 11,
+      "episodes": 1488,
+      "frames": 983123,
+      "hours": 9.102990740740742
+    },
+    {
+      "task": "hang_garment_on_hanger",
+      "seasons": 15,
+      "episodes": 521,
+      "frames": 979299,
+      "hours": 9.067583333333333
+    },
+    {
+      "task": "hammer_nails",
+      "seasons": 4,
+      "episodes": 1071,
+      "frames": 861668,
+      "hours": 7.978407407407407
+    }
+  ],
+  "smallest5_tasks_by_hours": [
+    {
+      "task": "organize_objects_in_drawer",
+      "seasons": 5,
+      "episodes": 95,
+      "frames": 115637,
+      "hours": 1.070712962962963
+    },
+    {
+      "task": "turn_book_pages",
+      "seasons": 7,
+      "episodes": 65,
+      "frames": 87056,
+      "hours": 0.806074074074074
+    },
+    {
+      "task": "collect_toys_into_basket",
+      "seasons": 5,
+      "episodes": 84,
+      "frames": 86296,
+      "hours": 0.799037037037037
+    },
+    {
+      "task": "place_ball_in_box",
+      "seasons": 3,
+      "episodes": 115,
+      "frames": 40672,
+      "hours": 0.37659259259259253
+    },
+    {
+      "task": "pry_nails_from_board",
+      "seasons": 3,
+      "episodes": 24,
+      "frames": 21174,
+      "hours": 0.19605555555555557
+    }
+  ],
+  "metadata_policy_fields": {
+    "chunks_size": {
+      "1000": 495
+    },
+    "data_files_size_in_mb": {
+      "100": 495
+    },
+    "video_files_size_in_mb": {
+      "200": 495
+    },
+    "total_tasks": {
+      "1": 447,
+      "2": 47,
+      "3": 1
+    },
+    "data_path": {
+      "data/chunk-{chunk_index:03d}/file-{file_index:03d}.parquet": 495
+    },
+    "video_path": {
+      "videos/{video_key}/chunk-{chunk_index:03d}/file-{file_index:03d}.mp4": 495
+    }
+  },
+  "train_split_mismatches": [],
+  "metadata_json_bytes_downloaded": 7821060,
+  "used_storage_bytes_repo_api": 7694665428461,
+  "used_storage_decimal_tb": 7.694665428461,
+  "used_storage_tib": 6.998257439100598,
+  "storage_caveat_zh": "API usedStorage为仓库存储指标，含v2.1/v3.0导出、预览资产及可能的历史存储对象，不能当作单一导出的下载大小；meta的100/200MB是切分目标配置，不能相加估算实际文件大小。",
+  "season_name_date_range": {
+    "earliest": "2026_03_10_11_17_29",
+    "latest": "2026_07_07_13_53_22",
+    "source": "仅season命名中的日期，不是逐帧采集时间审计"
+  },
+  "limits_zh": [
+    "仅以meta/info.json的total_frames/total_episodes核验公开规模；未逐行读取全部数据Parquet、未解码全库视频。",
+    "所有495个info均真实HTTP200可读，但不能据此保证每个大文件均可用、每帧同步质量或触觉非零有效率。",
+    "299.964556小时是30Hz发布帧时间，不是独立视频绝对时间戳总和；不乘6路视频，不把v2.1与v3.0相加。",
+    "语言217642段、89.3%覆盖及零填充维度的实际数值不在此次info元数据审计验证范围内。"
+  ]
+}

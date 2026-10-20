@@ -1,0 +1,28 @@
+{
+  "id": "P09",
+  "best_hours": 3.28,
+  "low_hours": 3.27,
+  "high_hours": 3.29,
+  "kind": "reported",
+  "confidence": "medium",
+  "scope_zh": "GelSLAM公开140条tracking与15条reconstruction扫描；使用可下载重编码镜像统计。",
+  "method_zh": "镜像卡列tracking 0.81小时、reconstruction 2.47小时，总3.28小时。两项均按0.01小时公布，范围仅反映相加舍入误差。",
+  "assumptions_zh": [
+    "原版ZIP索引确认恰有140+15=155条gelsight.avi，与镜像条目数吻合。",
+    "镜像将AVI转成25FPS MP4；未逐个重新解码155条视频核对是否保持全部帧。",
+    "原作者的平均约21秒仅针对tracking；不能遗漏1–30分钟每条的reconstruction扫描。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/yxma/tactile-video-pretrain",
+      "evidence": "Composition表：gelslam_tracking 140 clips、0.81h；gelslam_recon 15 clips、2.47h；均25FPS。"
+    },
+    {
+      "url": "https://huggingface.co/datasets/joehjhuang/GelSLAM_dataset",
+      "evidence": "官方140 tracking episodes+15 reconstruction scans；重建视频时长1–30分钟。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "原作者归档及第三方重编码镜像均已公开；本次原始样本已成功读到，后续批量元数据请求遇429，故总量采用镜像报告。",
+  "checked_at": "2026-10-19"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "P08",
+  "best_hours": 0.238,
+  "low_hours": 0.23683333333333334,
+  "high_hours": 0.23916666666666667,
+  "kind": "reported",
+  "confidence": "high",
+  "scope_zh": "TactileTracking / NormalFlow全部84次试验。",
+  "method_zh": "84 trials×平均10.2秒=0.238小时；范围仅反映均值保留一位小数的舍入。",
+  "assumptions_zh": [
+    "假设10.2秒是按0.1秒四舍五入后的全体平均值。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/joehjhuang/TactileTracking",
+      "evidence": "README：84 trials，mean duration 10.2 seconds。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方公开数据入口可匿名访问。",
+  "checked_at": "2026-10-19"
+}

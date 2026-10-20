@@ -1,0 +1,29 @@
+{
+  "id": "R07",
+  "best_hours": 9.433179,
+  "low_hours": 4.7165895,
+  "high_hours": 18.866358,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "RH20T触觉配置（Cfg7），按917条触觉轨迹估计，不含RH20T其他无触觉配置。",
+  "method_zh": "已审计Dish_on_rack的20条合计0.20574h；全触觉子集估计0.20574/20×917。跨任务均值设为审计任务的0.5–2倍。",
+  "assumptions_zh": [
+    "917条/55任务来自OmniVTA比较表的RH20T*触觉范围。",
+    "一项任务不能代表55任务时长分布，因此范围为敏感性分析，不是统计置信区间。"
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2603.19201",
+      "evidence": "TableI：RH20T*55tasks,917trajectories,uSkin。"
+    },
+    {
+      "url": "https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset/tree/main/RH20TCfg7Tactile",
+      "evidence": "公开转换包Dish_on_rack20条逐episode时间戳合计740.664s。"
+    }
+  ],
+  "availability": "mirror",
+  "availability_note_zh": "官方RH20T及FTP公开转换版；已下载完整样例。",
+  "checked_at": "2026-10-19",
+  "release_scope_verified": false,
+  "coverage_condition_zh": "公开归档及真实样例存在，但全库数量仍使用论文规模或任务表外推；尚未确认全部计入的帧/示范均已发布。"
+}

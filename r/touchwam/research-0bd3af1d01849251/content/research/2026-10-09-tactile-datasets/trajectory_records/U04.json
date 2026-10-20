@@ -1,0 +1,56 @@
+{
+  "id": "U04",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "name": "Articulated_Object_Manipulation_dataset.zarr.zip / episode0",
+    "source_url": "https://huggingface.co/datasets/chuanyune/ViTaMIn_dataset",
+    "download_url": "https://hf-mirror.com/datasets/chuanyune/ViTaMIn_dataset/resolve/main/Articulated_Object_Manipulation_dataset.zarr.zip",
+    "local_raw_paths": [
+      "trajectory_work/U04/raw/episode0.npz"
+    ],
+    "complete_episode": true,
+    "frames": 283,
+    "modalities": [
+      "wrist RGB",
+      "camera0_left_tactile",
+      "camera0_right_tactile",
+      "robot state"
+    ],
+    "sync": "处理后Zarr相同索引；原始时间同步精度和处理后FPS未确认。",
+    "notes": "当前所取任务meta显示75条episode、22848帧；这不是整个来源的全量计时。",
+    "downloaded_bytes": 81639653,
+    "sha256": {
+      "trajectory_work/U04/raw/episode0.npz": "bf6c3c1b24d9068875b1d286990d40973bf3f381a12fbf5c44a90737b74f2ef9"
+    }
+  },
+  "media": {
+    "html": "trajectories/U04/index.html",
+    "video": "trajectories/U04/preview.mp4",
+    "poster": "trajectories/U04/poster.webp",
+    "caption_zh": "完整读取ViTaMIn选定任务的第0条episode（283帧），按Zarr同一索引并排显示RGB与触觉；公开处理数组没有提供可核实的逐帧时间戳/FPS。预览每1帧取1帧、10个展示帧/秒，仅为帧序浏览，播放秒数不能当交互秒数。",
+    "preview_seconds": 28.3
+  },
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "公开数据集总时长",
+    "explanation_zh": "未找到可核实的总时长；样例长度不外推全库。",
+    "sources": []
+  },
+  "evidence": [
+    {
+      "url": "https://huggingface.co/datasets/chuanyune/ViTaMIn_dataset",
+      "status": 206,
+      "detail": "实际Range提取并解码JPEG-XL chunks，episode_ends确定完整序列边界；未以缺失chunk的fill_value当观测。"
+    }
+  ],
+  "blockers": [],
+  "reuses": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  },
+  "audit_files": [
+    "trajectory_audits/U04/extracted.json"
+  ]
+}

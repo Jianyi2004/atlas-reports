@@ -1,0 +1,635 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SharpaDex v1.0 技术核查</title><style>body{font-family:system-ui,-apple-system,"Noto Sans CJK SC",sans-serif;color:#182d3b;background:#f3f6fa;margin:0;line-height:1.85}main{max-width:1100px;margin:30px auto;background:white;padding:36px;border:1px solid #d7e0e9;border-radius:12px}h1{font-size:29px}h2{font-size:23px;border-top:1px solid #d7e0e9;padding-top:26px;margin-top:40px}a{color:#087a96;overflow-wrap:anywhere}table{width:100%;border-collapse:collapse;font-size:14px}td,th{padding:10px;border:1px solid #d7e0e9;text-align:left;vertical-align:top}th{background:#edf4fa}img,video{max-width:100%;height:auto}code{font-size:.9em;overflow-wrap:anywhere;background:#f3f6fa}pre{white-space:pre-wrap}li{margin:9px 0}.table-scroll{overflow-x:auto}strong{font-weight:650}@media(max-width:700px){main{margin:10px;padding:16px}h1{font-size:24px}table{min-width:650px}}</style><main><h1 id="sharpadex-v10300">SharpaDex v1.0：约300小时双臂灵巧操作数据技术核查</h1>
+<p>核查日期：2026-10-20。固定仓库版本：<code>c8032fd891e3f6f19b0d4886793579c1dce5eea7</code>。本次读取全部495份LeRobot v3.0元数据，完整下载一条六路视频轨迹，并另抽查两任务的Parquet和语言标注。官方地址：<a href="https://huggingface.co/datasets/Sharpa-Robotics/SharpaDex-v1.0">SharpaDex-v1.0</a>。</p>
+<p><strong>结论：应列为TouchWAM真机触觉世界模型的优先训练候选。</strong> 它同时提供场景视觉、空间触觉图像、60维触觉信号、机器人状态与动作、阶段语言，能够构建动作条件下的视觉—触觉预测样本。其约300小时是实际发布元数据支持的规模，不是从少量样例时长外推的结果。上一版报告的Sharpa North-FTP-1条目不足以代表这个官方发布集合。</p>
+<h2 id="1">1. 实际核实的规模</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align: right;">结果</th>
+<th>证据级别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>根目录任务类别</td>
+<td style="text-align: right;">59</td>
+<td>非递归目录枚举；逐任务与官方表一致</td>
+</tr>
+<tr>
+<td>采集season</td>
+<td style="text-align: right;">495</td>
+<td>完整目录枚举</td>
+</tr>
+<tr>
+<td>轨迹episode</td>
+<td style="text-align: right;">28,993</td>
+<td>495份<code>info.json</code>求和</td>
+</tr>
+<tr>
+<td>帧数</td>
+<td style="text-align: right;">32,396,172</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>导出帧率</td>
+<td style="text-align: right;">全部30 FPS</td>
+<td>全495份一致</td>
+</tr>
+<tr>
+<td><strong>累计导出时长</strong></td>
+<td style="text-align: right;"><strong>299.964556小时</strong></td>
+<td><code>32,396,172 / 30 / 3600</code></td>
+</tr>
+<tr>
+<td>平均轨迹长度</td>
+<td style="text-align: right;">37.246秒</td>
+<td>全库帧数／轨迹数／30；不是中位数</td>
+</tr>
+<tr>
+<td>Schema</td>
+<td style="text-align: right;">19个字段，其中6路视频</td>
+<td>全495份shape、names、video info一致</td>
+</tr>
+<tr>
+<td>访问方式</td>
+<td style="text-align: right;">公开、非门控；样例文件可匿名取得</td>
+<td>API <code>private=false,gated=false</code>及实际HTTP 200</td>
+</tr>
+</tbody>
+</table></div>
+<p>两个LeRobot导出<code>v3.0</code>和<code>v2.1</code>是同一批示范，<strong>只计一次</strong>。六路视频和十个指尖也不能分别累加小时。这里核实的是发布元数据的导出时长，含非接触和等待帧；没有将全库视频逐一下载解码，也没有测净接触时长。</p>
+<p>初始HF信息接口恰好返回100,000个文件名，存在截断，不能据此推断后半任务缺失。本次改用根目录及任务目录逐层枚举，再读取全部495份info。所有info的响应commit均与本报告固定版本一致。59个任务的season、episode、frame数与README逐项完全吻合。</p>
+<p>“59任务”指根目录类别，不能累加每个season的<code>total_tasks</code>：其中447个为1、47个为2、1个为3；部分lookup文本还有重复。详见<a href="metadata_audit/metadata_audit_report.md">元数据核查报告</a>、<a href="metadata_audit/audit_totals.json">全量统计JSON</a>、<a href="metadata_audit/task_statistics.csv">逐任务CSV</a>。</p>
+<h2 id="2">2. 数据具体包含什么</h2>
+<p>采集平台为真实双臂系统：每臂7自由度、每手22自由度，另有7个躯干／motor通道。操作由人类遥操作完成，<strong>归入机器人真机触觉，不属于人类ego数据</strong>。</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>模态</th>
+<th>实际字段／形状</th>
+<th>对世界模型的用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>场景视觉</td>
+<td>双头部＋双腕部，4路480×480 RGB视频</td>
+<td>物体状态、抓取与遮挡视角</td>
+</tr>
+<tr>
+<td>触觉原图</td>
+<td><code>observation.images.tactile_raw</code>，480×1600×3</td>
+<td>指尖纹理／标记形变的空间表征</td>
+</tr>
+<tr>
+<td>形变视频</td>
+<td><code>observation.images.tactile_deform</code>，480×1200×3</td>
+<td>已处理的接触形变表征；不是已核实物理单位的深度真值</td>
+</tr>
+<tr>
+<td>数值触觉</td>
+<td><code>observation.tactile</code>，60维float32</td>
+<td>左右各5指，每指<code>fx,fy,fz,tx,ty,tz</code></td>
+</tr>
+<tr>
+<td>关节状态与动作</td>
+<td><code>observation.state</code>／<code>action</code>，各65维float32</td>
+<td>动作条件状态预测；schema对应左右臂、手及7个motor通道</td>
+</tr>
+<tr>
+<td>关节力矩</td>
+<td><code>observation.state.joint_torque</code>，65维</td>
+<td>部分机械受力辅助信号；最后7维恒零，个别任务其他维也可能恒零</td>
+</tr>
+<tr>
+<td>TCP状态</td>
+<td>24维<code>observation.state.tcp</code></td>
+<td>左右各6维pose＋6维force槽；两组force槽全零，不能用于受力监督</td>
+</tr>
+<tr>
+<td>TCP观察／命令</td>
+<td><code>observation.state.tcp_pose</code>与<code>action.tcp_pose</code>，各12维</td>
+<td>两臂各6个分量；命令和观察是分开的实际字段</td>
+</tr>
+<tr>
+<td>时间与索引</td>
+<td>timestamp、frame/episode/task/subtask index</td>
+<td>导出帧级关联与语言定位</td>
+</tr>
+</tbody>
+</table></div>
+<p>60维触觉在schema中有逐指逐轴名称；但单位、标定、传感器坐标系未充分说明。本次未把其数值直接解释为N或N·m。TCP的<code>rotation_type=null</code>，单位、参考坐标系和旋转表示未充分声明；不能只因向量宽度为6就猜欧拉角。</p>
+<p>样例原触觉图呈2×5拼接，图像具有真实接触形变。每个图块与解剖手指名称的映射尚未独立核实；训练前应确认映射，不能凭图块位置给其命名。两种触觉视频是同一采集的不同表示。</p>
+<p>来源：<a href="https://huggingface.co/datasets/Sharpa-Robotics/SharpaDex-v1.0#feature-schema">官方特征与触觉说明</a>、<a href="https://huggingface.co/datasets/Sharpa-Robotics/SharpaDex-v1.0/blob/c8032fd891e3f6f19b0d4886793579c1dce5eea7/clean_plate_with_eraser/season_POC22027_2026_04_17_11_01_59_train/lerobot_v2.1/meta/info.json">实际样例info</a>、<a href="https://huggingface.co/datasets/Sharpa-Robotics/SharpaDex-v1.0/blob/c8032fd891e3f6f19b0d4886793579c1dce5eea7/clean_plate_with_eraser/season_POC22027_2026_04_17_11_01_59_train/lerobot_v2.1/meta/modality.json">modality元数据</a>。</p>
+<h2 id="3">3. 实际轨迹与可视化</h2>
+<p>已下载<code>clean_plate_with_eraser</code>的一个完整episode：<strong>1,250帧、41.667秒</strong>。四路视觉＋触觉原图＋形变视频全部完整解码，各有1,250帧、30FPS，容器时长均为41.666667秒。Parquet timestamp从0到41.633335秒，frame_index为0–1249，数据无NaN/Inf。</p>
+<p>操作过程为左手持盘、右手持擦子清洁盘面。可视化把四路视觉、两路触觉图像和左右手五指<code>fz</code>曲线放在同一时间轴上；数值使用原始存储值，不虚构单位或触觉插值。下方预览以10FPS显示原30FPS轨迹，保留1倍时间速度，约41.7秒。</p>
+<video controls="" preload="none" src="visualization/preview.mp4" style="width:100%;border-radius:10px" data-atlas-poster="visualization/poster.jpg"></video>
+<p><img alt="同一帧的四路视觉、触觉原图、形变图和数值曲线" src="visualization/poster.jpg"/></p>
+<p><a href="visualization/preview.mp4">单独打开预览视频</a> · <a href="video_audit.json">视频解码检查</a> · <a href="numeric_audit.json">数值检查</a> · <a href="render_sample.py.txt">可复现绘图脚本文本（下载后去掉.txt）</a></p>
+<p><strong>导出层的帧数／时间网格一致，不能独立证明原始硬件没有延迟。</strong> 当前公开示例未包含可用于逐传感器时钟误差审计的完整原始时戳；因此不声明毫秒级物理同步精度。</p>
+<h2 id="4">4. 三条真实样例的质量检查</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>任务</th>
+<th style="text-align: right;">帧数</th>
+<th style="text-align: right;">原始时长</th>
+<th>六路视频检查</th>
+<th>数值检查</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>clean_plate_with_eraser</td>
+<td style="text-align: right;">1,250</td>
+<td style="text-align: right;">41.667秒</td>
+<td>全部完整解码</td>
+<td>全字段无NaN/Inf；60维触觉均变化</td>
+</tr>
+<tr>
+<td>hammer_nails</td>
+<td style="text-align: right;">703</td>
+<td style="text-align: right;">23.433秒</td>
+<td>本轮未下载</td>
+<td>全字段无null/NaN/Inf；60维触觉均变化</td>
+</tr>
+<tr>
+<td>insert_plug_into_socket</td>
+<td style="text-align: right;">335</td>
+<td style="text-align: right;">11.167秒</td>
+<td>本轮未下载</td>
+<td>全字段无null/NaN/Inf；60维触觉均变化</td>
+</tr>
+</tbody>
+</table></div>
+<p>三条样例的joint action和TCP action均不等于相应observation，支持它们作为独立命令字段使用；这项检查本身不证明命令与物理执行零延迟。以下问题需要在训练预处理中明确处理：</p>
+<ul>
+<li>三条样例的触觉首帧均为60维全零；相邻触觉行完全重复的次数分别为10、4、2。原因可能与初始化或对齐有关，不能仅凭重复就判为传感器掉帧，也不能把首帧当作已证实的无接触真值。</li>
+<li>TCP的12个force/torque槽位全零；关节力矩的7个motor槽位全零。锤钉样例另有部分左手力矩及左手动作恒零，与仅用右手的标注相符，不能直接判定故障。恒零／不活动维应有mask。</li>
+<li>样例语言区间<code>end_step</code>包含端点。锤钉与插插头的细粒度覆盖分别为90.75%、79.10%；尾部没有局部段时，<code>subtask_index</code>可回退到全局描述，不能把它误读成额外局部技能。</li>
+<li>相同lookup文本可有不同索引；全库skill或task计数不能只数lookup行。三条便利样例不代表全库质量或失败率。</li>
+</ul>
+<p><a href="quality_spotchecks/conclusion_zh.md">两条独立抽查结论</a>与<a href="quality_spotchecks/audit_summary.json">详细统计</a>保留帧位置、端点核查及下载SHA256。</p>
+<h2 id="5">5. 语言标注与任务分布</h2>
+<p>作者报告全部28,993个episode有全局语言，217,642个细粒度段，覆盖28,920,254帧（89.3%），有45个非空skill标签。全局描述含Task、Instruction、Scene、Success；局部段对应pick/place/wipe等操作阶段。<strong>这些语言全库数字本轮引用官方说明，没有重新读取全库每份annotations独立重算。</strong></p>
+<p>1,061条场景描述由已有文本与视觉抽查补充，标注元数据保留来源，部分episode没有独立instruction/success/SOP字段。不能把这些描述统一声称为完整人工逐帧标注。</p>
+<p>任务分布明显不均衡：熨衣约21.090小时、发牌19.210小时；拔钉仅0.196小时、24条示范。时长前10任务合计130.710小时，占全库约43.6%。做接触动力学训练时应按任务、接触阶段及手指使用情况采样，避免长任务的等待帧主导训练。</p>
+<h2 id="6-sharpa-north-ftp-1">6. 与原报告Sharpa North-FTP-1的关系</h2>
+<p>原R16使用FTP中约4,000条Sharpa示范的说明，并按单任务样例估时长约25.24小时；保存帧率和全量发布覆盖均未确认。<strong>不能把这项估计当作SharpaDex的规模。</strong></p>
+<p>新库实际annotation来源路径含<code>North/SharpaOpenData</code>，与旧库同属Sharpa North采集家族。新库495个season目录日期为2026-03-10至07-07，未发现旧FTP已核实的02-09 tube样例；但我们只掌握旧库部分来源标识，仍不足以证明整体互斥或严格包含。</p>
+<p>建议在总报告中以本库作为该家族的官方主入口，保守地暂不额外累计旧R16。跨库去重应使用<code>source_uid</code>、原始采集目录和动作序列；新库导出episode已经可能重编号，不能仅凭<code>episode_000000</code>匹配。完整论证见<a href="relation_notes.md">关系核查笔记</a>。</p>
+<p><strong>对上一版时长统计的影响（2026-10-20已同步到Atlas主报告）：</strong> 本轮以SharpaDex作为该家族主入口，且不额外加旧R16，机器人“公开范围主估计”已由343.815更新为643.779小时，五类主估计已由666.111更新为966.076小时。旧R16约25.238小时已从“全量覆盖待确认”栏撤出额外加和；这不是认定新库已包含全部旧轨迹。</p>
+<h2 id="7-touchwam">7. 面向TouchWAM的使用建议</h2>
+<ol>
+<li><strong>先做动作条件的视触觉预测。</strong> 以视觉、逐指触觉特征、60维数值触觉和关节状态为观察，以真实命令action为条件预测后续接触状态；它比只有视频或无动作的触觉图像库更贴合这个训练目标。具体收益仍需实验验证。</li>
+<li><strong>分别处理触觉图像和数值信号。</strong> 确认图块映射后，把2×5触觉图按传感器拆分编码，避免将1600像素宽的全图直接缩到256而损失细节。形变视频不当作物理深度真值；force与torque分别统计归一化。</li>
+<li><strong>首轮优先关节动作表示。</strong> TCP单位／坐标／旋转约定未确认前，不做跨数据集几何变换。对恒零槽位、初始化帧与未标注阶段显式mask，并区分缺失、占位零和实际近零接触。</li>
+<li><strong>按season划分训练和验证。</strong> 使用<code>task/season/episode</code>和源UID组成唯一标识，不随机拆相邻帧；另留出任务或任务家族测泛化。仓库组织为多season根目录，不能把仓库顶层直接视为单个LeRobot root。</li>
+<li><strong>只下载一个导出。</strong> 新项目优先v3.0；v2.1适合逐episode取样或旧管线。API <code>usedStorage</code>约7.695 TB是仓库存储口径，含两导出且可能含历史对象，不能当单版下载量。meta中的100/200MB是切分目标大小，不是归档实际体积。</li>
+</ol>
+<p>本次清盘样例六路视频约192.8MB，不能据这一条轨迹线性外推整个版本存储量。批量训练应按实际所需相机／触觉流选择下载，随后盘点下载体积与吞吐。</p>
+<h2 id="8">8. 许可、来源与核查边界</h2>
+<p>许可为<a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>，明确限非商业用途；它是公开可下载数据，不能写成无限制商用开源。使用时按许可署名、附许可链接并说明修改。</p>
+<ul>
+<li><a href="https://huggingface.co/datasets/Sharpa-Robotics/SharpaDex-v1.0">官方README／数据入口</a>：发布规模、任务、模态、语言与许可。</li>
+<li><a href="https://huggingface.co/datasets/Sharpa-Robotics/SharpaDex-v1.0/tree/c8032fd891e3f6f19b0d4886793579c1dce5eea7">固定版本完整入口</a>：本次核查版本。</li>
+<li><a href="https://huggingface.co/datasets/Sharpa-Robotics/SharpaDex-v1.0/blob/c8032fd891e3f6f19b0d4886793579c1dce5eea7/clean_plate_with_eraser/season_POC22027_2026_04_17_11_01_59_train/lerobot_v2.1/meta/info.json">实际样例info</a>、<a href="https://huggingface.co/datasets/Sharpa-Robotics/SharpaDex-v1.0/blob/c8032fd891e3f6f19b0d4886793579c1dce5eea7/clean_plate_with_eraser/season_POC22027_2026_04_17_11_01_59_train/lerobot_v2.1/meta/annotations.jsonl">annotations</a>、<a href="https://huggingface.co/datasets/Sharpa-Robotics/SharpaDex-v1.0/blob/c8032fd891e3f6f19b0d4886793579c1dce5eea7/clean_plate_with_eraser/season_POC22027_2026_04_17_11_01_59_train/lerobot_v2.1/data/chunk-000/episode_000000.parquet">Parquet</a>。</li>
+<li><a href="metadata_audit/audit_metadata.py.txt">元数据审计脚本文本（下载后去掉.txt）</a>、<a href="metadata_audit/season_metadata_summary.json">495份逐批次汇总</a>、<a href="metadata_audit/metadata_findings.json">元数据补充发现</a>。</li>
+<li><a href="sample_download.json">下载记录</a>、<a href="video_download.json">视频下载记录</a>、<a href="quality_spotchecks/download_manifest.json">独立质量复核下载记录</a>。</li>
+</ul>
+<p>当前网络无法直连HF，实际请求经hf-mirror取得，来源链接仍指官方仓库；495份info响应commit已逐一核对。全库元数据审计、三条数值抽查、一条完整六视频解码是本次实际完成范围，不等同于28993条视频全量完整性、物理标定、硬件同步精度或任务成功率审计。</p>
+<h2 id="59">附表：全部59任务的元数据时长</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>任务</th>
+<th style="text-align: right;">Seasons</th>
+<th style="text-align: right;">Episodes</th>
+<th style="text-align: right;">Frames</th>
+<th style="text-align: right;">小时</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>iron_garment</code></td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">517</td>
+<td style="text-align: right;">2,277,751</td>
+<td style="text-align: right;">21.090</td>
+</tr>
+<tr>
+<td><code>deal_playing_cards</code></td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">1,088</td>
+<td style="text-align: right;">2,074,644</td>
+<td style="text-align: right;">19.210</td>
+</tr>
+<tr>
+<td><code>place_coffee_filter_in_dripper</code></td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">784</td>
+<td style="text-align: right;">1,786,030</td>
+<td style="text-align: right;">16.537</td>
+</tr>
+<tr>
+<td><code>pack_blueberries_in_bag</code></td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">485</td>
+<td style="text-align: right;">1,533,417</td>
+<td style="text-align: right;">14.198</td>
+</tr>
+<tr>
+<td><code>play_tic_tac_toe</code></td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">521</td>
+<td style="text-align: right;">1,317,513</td>
+<td style="text-align: right;">12.199</td>
+</tr>
+<tr>
+<td><code>fold_and_close_box</code></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">697</td>
+<td style="text-align: right;">1,233,919</td>
+<td style="text-align: right;">11.425</td>
+</tr>
+<tr>
+<td><code>reposition_and_stack_blocks</code></td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">1,007</td>
+<td style="text-align: right;">1,069,334</td>
+<td style="text-align: right;">9.901</td>
+</tr>
+<tr>
+<td><code>assemble_gears_on_base</code></td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">1,488</td>
+<td style="text-align: right;">983,123</td>
+<td style="text-align: right;">9.103</td>
+</tr>
+<tr>
+<td><code>hang_garment_on_hanger</code></td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">521</td>
+<td style="text-align: right;">979,299</td>
+<td style="text-align: right;">9.068</td>
+</tr>
+<tr>
+<td><code>hammer_nails</code></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1,071</td>
+<td style="text-align: right;">861,668</td>
+<td style="text-align: right;">7.978</td>
+</tr>
+<tr>
+<td><code>fit_trash_bag_into_bin</code></td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">656</td>
+<td style="text-align: right;">852,443</td>
+<td style="text-align: right;">7.893</td>
+</tr>
+<tr>
+<td><code>insert_batteries_into_charger</code></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">458</td>
+<td style="text-align: right;">841,645</td>
+<td style="text-align: right;">7.793</td>
+</tr>
+<tr>
+<td><code>transfer_salt_between_cups_with_spoon</code></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1,483</td>
+<td style="text-align: right;">831,390</td>
+<td style="text-align: right;">7.698</td>
+</tr>
+<tr>
+<td><code>form_kraft_paper_box</code></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">455</td>
+<td style="text-align: right;">775,252</td>
+<td style="text-align: right;">7.178</td>
+</tr>
+<tr>
+<td><code>nest_cups</code></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">464</td>
+<td style="text-align: right;">763,601</td>
+<td style="text-align: right;">7.070</td>
+</tr>
+<tr>
+<td><code>clean_garment_with_lint_roller</code></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">810</td>
+<td style="text-align: right;">737,849</td>
+<td style="text-align: right;">6.832</td>
+</tr>
+<tr>
+<td><code>transfer_liquid_with_dropper</code></td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">360</td>
+<td style="text-align: right;">655,829</td>
+<td style="text-align: right;">6.072</td>
+</tr>
+<tr>
+<td><code>pack_object_in_storage_bag</code></td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">311</td>
+<td style="text-align: right;">644,006</td>
+<td style="text-align: right;">5.963</td>
+</tr>
+<tr>
+<td><code>secure_coiled_cable_with_velcro_tie</code></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">473</td>
+<td style="text-align: right;">632,425</td>
+<td style="text-align: right;">5.856</td>
+</tr>
+<tr>
+<td><code>collect_waste_into_bin</code></td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">508</td>
+<td style="text-align: right;">621,140</td>
+<td style="text-align: right;">5.751</td>
+</tr>
+<tr>
+<td><code>staple_paper</code></td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">695</td>
+<td style="text-align: right;">605,253</td>
+<td style="text-align: right;">5.604</td>
+</tr>
+<tr>
+<td><code>fold_towel</code></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">459</td>
+<td style="text-align: right;">547,201</td>
+<td style="text-align: right;">5.067</td>
+</tr>
+<tr>
+<td><code>stack_napkins_in_holder</code></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">497</td>
+<td style="text-align: right;">545,816</td>
+<td style="text-align: right;">5.054</td>
+</tr>
+<tr>
+<td><code>sweep_waste_into_dustpan</code></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">609</td>
+<td style="text-align: right;">516,260</td>
+<td style="text-align: right;">4.780</td>
+</tr>
+<tr>
+<td><code>insert_socket_module_into_board</code></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">957</td>
+<td style="text-align: right;">512,619</td>
+<td style="text-align: right;">4.746</td>
+</tr>
+<tr>
+<td><code>rotate_bottle_cap</code></td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">583</td>
+<td style="text-align: right;">497,695</td>
+<td style="text-align: right;">4.608</td>
+</tr>
+<tr>
+<td><code>scoop_salt_from_jar_into_cup</code></td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">424</td>
+<td style="text-align: right;">485,424</td>
+<td style="text-align: right;">4.495</td>
+</tr>
+<tr>
+<td><code>close_kraft_paper_box</code></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">485</td>
+<td style="text-align: right;">468,006</td>
+<td style="text-align: right;">4.333</td>
+</tr>
+<tr>
+<td><code>sort_utensils</code></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">419</td>
+<td style="text-align: right;">460,851</td>
+<td style="text-align: right;">4.267</td>
+</tr>
+<tr>
+<td><code>insert_batteries_into_device</code></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">516</td>
+<td style="text-align: right;">456,513</td>
+<td style="text-align: right;">4.227</td>
+</tr>
+<tr>
+<td><code>place_pens_in_holder</code></td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">399</td>
+<td style="text-align: right;">427,274</td>
+<td style="text-align: right;">3.956</td>
+</tr>
+<tr>
+<td><code>empty_dustpan_into_bin</code></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">488</td>
+<td style="text-align: right;">379,585</td>
+<td style="text-align: right;">3.515</td>
+</tr>
+<tr>
+<td><code>unscrew_bottle_cap</code></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">445</td>
+<td style="text-align: right;">351,637</td>
+<td style="text-align: right;">3.256</td>
+</tr>
+<tr>
+<td><code>scrub_cup_interior</code></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">481</td>
+<td style="text-align: right;">314,401</td>
+<td style="text-align: right;">2.911</td>
+</tr>
+<tr>
+<td><code>place_knife_and_fork_on_plate</code></td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">461</td>
+<td style="text-align: right;">314,324</td>
+<td style="text-align: right;">2.910</td>
+</tr>
+<tr>
+<td><code>place_fruits_in_basket</code></td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">416</td>
+<td style="text-align: right;">286,988</td>
+<td style="text-align: right;">2.657</td>
+</tr>
+<tr>
+<td><code>place_ball_in_cup_then_cup_in_box</code></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">456</td>
+<td style="text-align: right;">252,933</td>
+<td style="text-align: right;">2.342</td>
+</tr>
+<tr>
+<td><code>clean_knife_with_cloth</code></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">292</td>
+<td style="text-align: right;">246,287</td>
+<td style="text-align: right;">2.280</td>
+</tr>
+<tr>
+<td><code>tomato_boxed_lunch_packaging</code></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">97</td>
+<td style="text-align: right;">243,325</td>
+<td style="text-align: right;">2.253</td>
+</tr>
+<tr>
+<td><code>transfer_pills_between_cups</code></td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">479</td>
+<td style="text-align: right;">239,561</td>
+<td style="text-align: right;">2.218</td>
+</tr>
+<tr>
+<td><code>insert_knife_into_cutlery_bin</code></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">495</td>
+<td style="text-align: right;">232,113</td>
+<td style="text-align: right;">2.149</td>
+</tr>
+<tr>
+<td><code>seal_box_with_tape</code></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">115</td>
+<td style="text-align: right;">208,648</td>
+<td style="text-align: right;">1.932</td>
+</tr>
+<tr>
+<td><code>clean_plate_with_eraser</code></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">343</td>
+<td style="text-align: right;">190,467</td>
+<td style="text-align: right;">1.764</td>
+</tr>
+<tr>
+<td><code>cover_ball_with_cup</code></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">488</td>
+<td style="text-align: right;">188,956</td>
+<td style="text-align: right;">1.750</td>
+</tr>
+<tr>
+<td><code>stack_two_plates</code></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">491</td>
+<td style="text-align: right;">185,481</td>
+<td style="text-align: right;">1.717</td>
+</tr>
+<tr>
+<td><code>insert_plug_into_socket</code></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">416</td>
+<td style="text-align: right;">183,726</td>
+<td style="text-align: right;">1.701</td>
+</tr>
+<tr>
+<td><code>reorient_and_relocate_carton</code></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">347</td>
+<td style="text-align: right;">181,309</td>
+<td style="text-align: right;">1.679</td>
+</tr>
+<tr>
+<td><code>grind_medicine_with_mortar_and_pestle</code></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">131</td>
+<td style="text-align: right;">176,595</td>
+<td style="text-align: right;">1.635</td>
+</tr>
+<tr>
+<td><code>relocate_tennis_ball</code></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">450</td>
+<td style="text-align: right;">157,112</td>
+<td style="text-align: right;">1.455</td>
+</tr>
+<tr>
+<td><code>reorient_cup_upright</code></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">420</td>
+<td style="text-align: right;">151,573</td>
+<td style="text-align: right;">1.403</td>
+</tr>
+<tr>
+<td><code>place_cup_on_plate</code></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">429</td>
+<td style="text-align: right;">149,882</td>
+<td style="text-align: right;">1.388</td>
+</tr>
+<tr>
+<td><code>remove_block_from_box</code></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">388</td>
+<td style="text-align: right;">142,321</td>
+<td style="text-align: right;">1.318</td>
+</tr>
+<tr>
+<td><code>tighten_bottle_cap</code></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">131</td>
+<td style="text-align: right;">139,693</td>
+<td style="text-align: right;">1.293</td>
+</tr>
+<tr>
+<td><code>place_books_on_shelf</code></td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">151</td>
+<td style="text-align: right;">133,230</td>
+<td style="text-align: right;">1.234</td>
+</tr>
+<tr>
+<td><code>organize_objects_in_drawer</code></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">115,637</td>
+<td style="text-align: right;">1.071</td>
+</tr>
+<tr>
+<td><code>turn_book_pages</code></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">87,056</td>
+<td style="text-align: right;">0.806</td>
+</tr>
+<tr>
+<td><code>collect_toys_into_basket</code></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">86,296</td>
+<td style="text-align: right;">0.799</td>
+</tr>
+<tr>
+<td><code>place_ball_in_box</code></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">115</td>
+<td style="text-align: right;">40,672</td>
+<td style="text-align: right;">0.377</td>
+</tr>
+<tr>
+<td><code>pry_nails_from_board</code></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">21,174</td>
+<td style="text-align: right;">0.196</td>
+</tr>
+</tbody>
+</table></div></main></html><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

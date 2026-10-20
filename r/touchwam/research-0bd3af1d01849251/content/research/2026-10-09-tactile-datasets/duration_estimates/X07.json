@@ -1,0 +1,24 @@
+{
+  "id": "X07",
+  "best_hours": 0.08764331242666666,
+  "low_hours": 0.04597664576,
+  "high_hours": 0.12930997909333333,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "公开两条MCAP：LEGO与Nailing；候选来源独立性仍未确认",
+  "method_zh": "LEGO消息时间跨度实算15.515925秒；Nailing官方manifest记录9,000 RGB帧，以30fps估计300秒；合计0.087643h，按20–60fps敏感性范围。",
+  "assumptions_zh": [
+    "Nailing尚未逐消息核验帧率，30fps是假设。",
+    "同一记录多视频、多只手不重复相加。",
+    "与FusionX是否重叠未排除，主统计外单列。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/zhicao/egoforce",
+      "evidence": "两条录制manifest：432与9,000 RGB帧；LEGO完整MCAP已解码。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "候选库可读；与H04同源关系未定，不新增主统计。",
+  "checked_at": "2026-10-19"
+}

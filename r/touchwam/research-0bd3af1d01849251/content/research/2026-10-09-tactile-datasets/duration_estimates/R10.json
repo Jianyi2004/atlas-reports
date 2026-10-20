@@ -1,0 +1,59 @@
+{
+  "id": "R10",
+  "best_hours": 0.8082222222222222,
+  "low_hours": 0.4729777777777778,
+  "high_hours": 1.2495333333333332,
+  "kind": "estimated",
+  "confidence": "medium",
+  "scope_zh": "HF公开380个processed HDF5 episode：mango179、watercup100、wipe101；rawZIP为副本不另加。",
+  "method_zh": "分任务读取episode0/50/99共9个HDF5的ee_poses.shape，均值按10Hz换算后乘各任务真实文件数。范围采用各任务样本最短/最长时长外推，再放宽20%。",
+  "assumptions_zh": [
+    "10Hz来自OmniVTA TableI对VLA-Touch的采样频率描述；本地HDF5自身无fps/时间戳字段。",
+    "9条非随机系统抽样，范围不是统计置信区间，其他episode可能更长。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/AllenBi21/VLA-Touch",
+      "evidence": "完整仓库文件树380个HDF5；9个HDF5远程元数据已读。"
+    },
+    {
+      "url": "https://arxiv.org/html/2603.19201",
+      "evidence": "TableI VLA-Touch3tasks，10Hz。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "公开下载入口已核查，已有真实样本下载。",
+  "sample_groups": {
+    "mango": {
+      "count": 179,
+      "sample_frames": [
+        79,
+        47,
+        84
+      ],
+      "mean": 70
+    },
+    "watercup": {
+      "count": 100,
+      "sample_frames": [
+        73,
+        57,
+        66
+      ],
+      "mean": 65.33333333333333
+    },
+    "wipe": {
+      "count": 101,
+      "sample_frames": [
+        77,
+        150,
+        71
+      ],
+      "mean": 99.33333333333333
+    }
+  },
+  "audit_files": [
+    "duration_estimates/work_robot/R10_samples.json"
+  ],
+  "checked_at": "2026-10-19"
+}

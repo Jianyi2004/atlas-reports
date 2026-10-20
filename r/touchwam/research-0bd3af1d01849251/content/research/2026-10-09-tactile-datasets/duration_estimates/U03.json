@@ -1,0 +1,37 @@
+{
+  "id": "U03",
+  "best_hours": 2.771818930041152,
+  "low_hours": 0.5846805555555555,
+  "high_hours": 6.15,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "7个候选含触觉公开任务；排除已证实不含tactile_combined的pick_cube及未列出的put_ball",
+  "method_zh": "已核实open_bottle 270条/126,291帧，以其平均467.744帧外推论文7任务1,280条；按GoPro60Hz得2.772h。下界只算已核实open_bottle约0.585h，上界用这7任务含重置的369分钟=6.15h作为规划上限。",
+  "assumptions_zh": [
+    "其他6归档触觉完整性及任务时长分布未逐条确认，外推具有任务偏倚。",
+    "60Hz来自作者采集配置QR命名Tp60及GoPro逐帧生成管线，仍需原视频时钟验证。",
+    "论文480K触觉帧/5h属于另一表征采集集，当前8个任务ZIP未证实包含该全量，不额外相加。",
+    "论文表2时间明确包含环境重置，6.15h仅为相关论文任务的敏感性上限，不能当可训练轨迹时长。"
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2509.14688",
+      "evidence": "表2：7任务demos=139+270+163+170+135+202+201=1,280；采集分钟=60+79+56+47+31+70+26=369，含重置。"
+    },
+    {
+      "url": "https://huggingface.co/datasets/silicx/exUMI",
+      "evidence": "8任务ZIP目录；实读open_bottle 126,291帧/270条，pick_cube无触觉。"
+    },
+    {
+      "url": "https://github.com/silicx/exUMI/blob/main/DATA_COLLECTION.md",
+      "evidence": "GoPro配置QR文件含Tp60；引用逐帧处理脚本。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "主值是当前任务release的规划估计，非论文表征5小时。",
+  "checked_at": "2026-10-19",
+  "lower_bound_hours": 0.5846805555555555,
+  "source_total_hours": 5,
+  "release_scope_verified": false,
+  "coverage_condition_zh": "公开归档及真实样例存在，但全库数量仍使用论文规模或任务表外推；尚未确认全部计入的帧/示范均已发布。"
+}

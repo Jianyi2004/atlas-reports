@@ -1,0 +1,149 @@
+{
+  "revision": "c8032fd891e3f6f19b0d4886793579c1dce5eea7",
+  "results": [
+    {
+      "task": "hammer_nails",
+      "repository_path": "hammer_nails/season_POC22048_2026_05_20_16_40_10_train/lerobot_v2.1/data/chunk-000/episode_000000.parquet",
+      "local_path": "/data_all/intern10/workspace/TouchWAM/research/sharpadex_v1_audit_20261020/quality_spotchecks/hammer_nails/data/chunk-000/episode_000000.parquet",
+      "url": "https://hf-mirror.com/datasets/Sharpa-Robotics/SharpaDex-v1.0/resolve/c8032fd891e3f6f19b0d4886793579c1dce5eea7/hammer_nails/season_POC22048_2026_05_20_16_40_10_train/lerobot_v2.1/data/chunk-000/episode_000000.parquet",
+      "status": 200,
+      "bytes": 777014,
+      "sha256": "c021afb455c33eadd8f7febea8a33a20a552cee2fed9a4606feea7e15f966b9a"
+    },
+    {
+      "task": "hammer_nails",
+      "repository_path": "hammer_nails/season_POC22048_2026_05_20_16_40_10_train/lerobot_v2.1/meta/info.json",
+      "local_path": "/data_all/intern10/workspace/TouchWAM/research/sharpadex_v1_audit_20261020/quality_spotchecks/hammer_nails/meta/info.json",
+      "url": "https://hf-mirror.com/datasets/Sharpa-Robotics/SharpaDex-v1.0/resolve/c8032fd891e3f6f19b0d4886793579c1dce5eea7/hammer_nails/season_POC22048_2026_05_20_16_40_10_train/lerobot_v2.1/meta/info.json",
+      "status": 200,
+      "bytes": 15795,
+      "sha256": "d299d74c52ee5c8c64b305837c068ac86204113095db344298dad56cd347c786"
+    },
+    {
+      "task": "hammer_nails",
+      "repository_path": "hammer_nails/season_POC22048_2026_05_20_16_40_10_train/lerobot_v2.1/meta/annotations.jsonl",
+      "local_path": "/data_all/intern10/workspace/TouchWAM/research/sharpadex_v1_audit_20261020/quality_spotchecks/hammer_nails/meta/annotations.jsonl",
+      "url": "https://hf-mirror.com/datasets/Sharpa-Robotics/SharpaDex-v1.0/resolve/c8032fd891e3f6f19b0d4886793579c1dce5eea7/hammer_nails/season_POC22048_2026_05_20_16_40_10_train/lerobot_v2.1/meta/annotations.jsonl",
+      "status": 200,
+      "bytes": 234335,
+      "sha256": "12cbd4e51ebc3dca591e06987e921a8bf437f539f599c7bb3d1e84d73bdfe7ff"
+    },
+    {
+      "task": "hammer_nails",
+      "repository_path": "hammer_nails/season_POC22048_2026_05_20_16_40_10_train/lerobot_v2.1/meta/subtasks.jsonl",
+      "local_path": "/data_all/intern10/workspace/TouchWAM/research/sharpadex_v1_audit_20261020/quality_spotchecks/hammer_nails/meta/subtasks.jsonl",
+      "url": "https://hf-mirror.com/datasets/Sharpa-Robotics/SharpaDex-v1.0/resolve/c8032fd891e3f6f19b0d4886793579c1dce5eea7/hammer_nails/season_POC22048_2026_05_20_16_40_10_train/lerobot_v2.1/meta/subtasks.jsonl",
+      "status": 200,
+      "bytes": 2979,
+      "sha256": "0e9c42dcc67fe8654ada9fb2502cf7c261e05150b5846e40a84f2e3bd0d323a0"
+    },
+    {
+      "task": "hammer_nails",
+      "repository_path": "hammer_nails/season_POC22048_2026_05_20_16_40_10_train/lerobot_v2.1/meta/tasks.jsonl",
+      "local_path": "/data_all/intern10/workspace/TouchWAM/research/sharpadex_v1_audit_20261020/quality_spotchecks/hammer_nails/meta/tasks.jsonl",
+      "url": "https://hf-mirror.com/datasets/Sharpa-Robotics/SharpaDex-v1.0/resolve/c8032fd891e3f6f19b0d4886793579c1dce5eea7/hammer_nails/season_POC22048_2026_05_20_16_40_10_train/lerobot_v2.1/meta/tasks.jsonl",
+      "status": 200,
+      "bytes": 1084,
+      "sha256": "8d4bf76f4bee362a56a7a76badff5a93a5e45ba8b275b7727eb356a8a661c6a1"
+    },
+    {
+      "task": "hammer_nails",
+      "repository_path": "hammer_nails/season_POC22048_2026_05_20_16_40_10_train/lerobot_v2.1/meta/episodes.jsonl",
+      "local_path": "/data_all/intern10/workspace/TouchWAM/research/sharpadex_v1_audit_20261020/quality_spotchecks/hammer_nails/meta/episodes.jsonl",
+      "url": "https://hf-mirror.com/datasets/Sharpa-Robotics/SharpaDex-v1.0/resolve/c8032fd891e3f6f19b0d4886793579c1dce5eea7/hammer_nails/season_POC22048_2026_05_20_16_40_10_train/lerobot_v2.1/meta/episodes.jsonl",
+      "status": 200,
+      "bytes": 38342,
+      "sha256": "51c0febf0a160448b20b17b4138cd96c92f0647f00fab0536eb7579d6912d368"
+    },
+    {
+      "task": "hammer_nails",
+      "repository_path": "hammer_nails/season_POC22048_2026_05_20_16_40_10_train/lerobot_v2.1/meta/modality.json",
+      "local_path": "/data_all/intern10/workspace/TouchWAM/research/sharpadex_v1_audit_20261020/quality_spotchecks/hammer_nails/meta/modality.json",
+      "url": "https://hf-mirror.com/datasets/Sharpa-Robotics/SharpaDex-v1.0/resolve/c8032fd891e3f6f19b0d4886793579c1dce5eea7/hammer_nails/season_POC22048_2026_05_20_16_40_10_train/lerobot_v2.1/meta/modality.json",
+      "status": 200,
+      "bytes": 1370,
+      "sha256": "5fcbedab7f7159b10ec42827bdcfcf4faa348a6ec65db002910ae78a18900ec3"
+    },
+    {
+      "task": "hammer_nails",
+      "repository_path": "hammer_nails/season_POC22048_2026_05_20_16_40_10_train/lerobot_v2.1/meta/v40_validation.json",
+      "local_path": "/data_all/intern10/workspace/TouchWAM/research/sharpadex_v1_audit_20261020/quality_spotchecks/hammer_nails/meta/v40_validation.json",
+      "url": "https://hf-mirror.com/datasets/Sharpa-Robotics/SharpaDex-v1.0/resolve/c8032fd891e3f6f19b0d4886793579c1dce5eea7/hammer_nails/season_POC22048_2026_05_20_16_40_10_train/lerobot_v2.1/meta/v40_validation.json",
+      "status": 200,
+      "bytes": 492,
+      "sha256": "03a4fc364e645abd107a5ac6a0ab7c4516b907ccdeb52b00dd8c6dd5d09f14dd"
+    },
+    {
+      "task": "insert_plug_into_socket",
+      "repository_path": "insert_plug_into_socket/season_POC22007_2026_03_18_13_58_40_train/lerobot_v2.1/data/chunk-000/episode_000000.parquet",
+      "local_path": "/data_all/intern10/workspace/TouchWAM/research/sharpadex_v1_audit_20261020/quality_spotchecks/insert_plug_into_socket/data/chunk-000/episode_000000.parquet",
+      "url": "https://hf-mirror.com/datasets/Sharpa-Robotics/SharpaDex-v1.0/resolve/c8032fd891e3f6f19b0d4886793579c1dce5eea7/insert_plug_into_socket/season_POC22007_2026_03_18_13_58_40_train/lerobot_v2.1/data/chunk-000/episode_000000.parquet",
+      "status": 200,
+      "bytes": 388428,
+      "sha256": "53ee83684258190737f6c4b922f7bf9a981ea041479d56aa03836fceb1bd79b4"
+    },
+    {
+      "task": "insert_plug_into_socket",
+      "repository_path": "insert_plug_into_socket/season_POC22007_2026_03_18_13_58_40_train/lerobot_v2.1/meta/info.json",
+      "local_path": "/data_all/intern10/workspace/TouchWAM/research/sharpadex_v1_audit_20261020/quality_spotchecks/insert_plug_into_socket/meta/info.json",
+      "url": "https://hf-mirror.com/datasets/Sharpa-Robotics/SharpaDex-v1.0/resolve/c8032fd891e3f6f19b0d4886793579c1dce5eea7/insert_plug_into_socket/season_POC22007_2026_03_18_13_58_40_train/lerobot_v2.1/meta/info.json",
+      "status": 200,
+      "bytes": 15797,
+      "sha256": "e4d0615ed8f99c68c738b3d7c694e18cf51622709649abe1daafa020ff6e98d8"
+    },
+    {
+      "task": "insert_plug_into_socket",
+      "repository_path": "insert_plug_into_socket/season_POC22007_2026_03_18_13_58_40_train/lerobot_v2.1/meta/annotations.jsonl",
+      "local_path": "/data_all/intern10/workspace/TouchWAM/research/sharpadex_v1_audit_20261020/quality_spotchecks/insert_plug_into_socket/meta/annotations.jsonl",
+      "url": "https://hf-mirror.com/datasets/Sharpa-Robotics/SharpaDex-v1.0/resolve/c8032fd891e3f6f19b0d4886793579c1dce5eea7/insert_plug_into_socket/season_POC22007_2026_03_18_13_58_40_train/lerobot_v2.1/meta/annotations.jsonl",
+      "status": 200,
+      "bytes": 336281,
+      "sha256": "c7054731e627a2d8346546fa44f401d65cfb578f60c42a109c4eafd21f0cb0ef"
+    },
+    {
+      "task": "insert_plug_into_socket",
+      "repository_path": "insert_plug_into_socket/season_POC22007_2026_03_18_13_58_40_train/lerobot_v2.1/meta/subtasks.jsonl",
+      "local_path": "/data_all/intern10/workspace/TouchWAM/research/sharpadex_v1_audit_20261020/quality_spotchecks/insert_plug_into_socket/meta/subtasks.jsonl",
+      "url": "https://hf-mirror.com/datasets/Sharpa-Robotics/SharpaDex-v1.0/resolve/c8032fd891e3f6f19b0d4886793579c1dce5eea7/insert_plug_into_socket/season_POC22007_2026_03_18_13_58_40_train/lerobot_v2.1/meta/subtasks.jsonl",
+      "status": 200,
+      "bytes": 794,
+      "sha256": "1b21096020d7dfd9d34898ae561f583660cecb51b83890f5cbfde31c5e314af2"
+    },
+    {
+      "task": "insert_plug_into_socket",
+      "repository_path": "insert_plug_into_socket/season_POC22007_2026_03_18_13_58_40_train/lerobot_v2.1/meta/tasks.jsonl",
+      "local_path": "/data_all/intern10/workspace/TouchWAM/research/sharpadex_v1_audit_20261020/quality_spotchecks/insert_plug_into_socket/meta/tasks.jsonl",
+      "url": "https://hf-mirror.com/datasets/Sharpa-Robotics/SharpaDex-v1.0/resolve/c8032fd891e3f6f19b0d4886793579c1dce5eea7/insert_plug_into_socket/season_POC22007_2026_03_18_13_58_40_train/lerobot_v2.1/meta/tasks.jsonl",
+      "status": 200,
+      "bytes": 383,
+      "sha256": "d37b282affe723a262538bc23f7eeacacd5afb25114dc966019efb37d488795c"
+    },
+    {
+      "task": "insert_plug_into_socket",
+      "repository_path": "insert_plug_into_socket/season_POC22007_2026_03_18_13_58_40_train/lerobot_v2.1/meta/episodes.jsonl",
+      "local_path": "/data_all/intern10/workspace/TouchWAM/research/sharpadex_v1_audit_20261020/quality_spotchecks/insert_plug_into_socket/meta/episodes.jsonl",
+      "url": "https://hf-mirror.com/datasets/Sharpa-Robotics/SharpaDex-v1.0/resolve/c8032fd891e3f6f19b0d4886793579c1dce5eea7/insert_plug_into_socket/season_POC22007_2026_03_18_13_58_40_train/lerobot_v2.1/meta/episodes.jsonl",
+      "status": 200,
+      "bytes": 44550,
+      "sha256": "08912ac94fd41a2ae530f50e942e680bc7ddda9ebd2f7a420f50e2da5f816873"
+    },
+    {
+      "task": "insert_plug_into_socket",
+      "repository_path": "insert_plug_into_socket/season_POC22007_2026_03_18_13_58_40_train/lerobot_v2.1/meta/modality.json",
+      "local_path": "/data_all/intern10/workspace/TouchWAM/research/sharpadex_v1_audit_20261020/quality_spotchecks/insert_plug_into_socket/meta/modality.json",
+      "url": "https://hf-mirror.com/datasets/Sharpa-Robotics/SharpaDex-v1.0/resolve/c8032fd891e3f6f19b0d4886793579c1dce5eea7/insert_plug_into_socket/season_POC22007_2026_03_18_13_58_40_train/lerobot_v2.1/meta/modality.json",
+      "status": 200,
+      "bytes": 1370,
+      "sha256": "5fcbedab7f7159b10ec42827bdcfcf4faa348a6ec65db002910ae78a18900ec3"
+    },
+    {
+      "task": "insert_plug_into_socket",
+      "repository_path": "insert_plug_into_socket/season_POC22007_2026_03_18_13_58_40_train/lerobot_v2.1/meta/v40_validation.json",
+      "local_path": "/data_all/intern10/workspace/TouchWAM/research/sharpadex_v1_audit_20261020/quality_spotchecks/insert_plug_into_socket/meta/v40_validation.json",
+      "url": "https://hf-mirror.com/datasets/Sharpa-Robotics/SharpaDex-v1.0/resolve/c8032fd891e3f6f19b0d4886793579c1dce5eea7/insert_plug_into_socket/season_POC22007_2026_03_18_13_58_40_train/lerobot_v2.1/meta/v40_validation.json",
+      "status": 200,
+      "bytes": 494,
+      "sha256": "3feb4d411227c1735e09b63e26708a372f7851bf54b5063ac22dc2a05056355b"
+    }
+  ]
+}

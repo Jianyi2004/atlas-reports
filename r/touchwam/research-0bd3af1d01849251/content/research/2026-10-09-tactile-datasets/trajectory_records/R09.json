@@ -1,0 +1,64 @@
+{
+  "id": "R09",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "source_url": "https://github.com/ZhengtongXu/UniT",
+    "local_raw_paths": [
+      "trajectory_work/R09/episode0.npz"
+    ],
+    "downloaded_bytes": 54556037,
+    "sha256": {
+      "trajectory_work/R09/episode0.npz": "101dfdc74bf2f75768b6ddf6f60e1a78a911910e7a4bdce42fb6a931d64d80cd"
+    },
+    "name": "FTP Unit/allenkey_insertion.zarr / episode0",
+    "download_url": "https://www.modelscope.cn/api/v1/datasets/Eureka1064/FTP-1-Dataset/repo?Revision=master&FilePath=Unit%2FUnit.tar",
+    "complete_episode": true,
+    "frames": 196,
+    "fps": 10,
+    "duration_seconds": 19.0,
+    "duration_method": "integer-second timestamp span; <1s quantization uncertainty",
+    "modalities": [
+      "scene RGB",
+      "GelSight Mini"
+    ],
+    "sync": "matching stored frame; integer timestamps10frames per interior second"
+  },
+  "media": {
+    "html": "trajectories/R09/index.html",
+    "video": "trajectories/R09/preview.mp4",
+    "poster": "trajectories/R09/poster.webp",
+    "caption_zh": "FTP公开转换包UniT allenkey_insertion第0条完整episode，196帧。左camera_main_rgb，右GelSight Mini；同索引配对。整数秒timestamp跨度19秒、内部完整秒均有10帧，按10fps浏览19.6秒；实际首尾时间存在小于1秒的量化误差。",
+    "preview_seconds": 19.6
+  },
+  "duration": {
+    "basis": "metadata_sum",
+    "scope_zh": "FTP-UniT中allenkey_insertion单任务170条，近似时长",
+    "explanation_zh": "读取该任务170条全部整数秒timestamps，首末跨度合计约3851秒（1.070小时）；逐条时间量化误差<1秒，总量保守误差<170秒。不是UniT全部任务总时长。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset/tree/main/Unit",
+        "evidence": "170episodes; sum integer timestamp spans=3851.0s; no double-count Unit_Bimanual"
+      }
+    ],
+    "metadata_hours": 1.0697222222222222
+  },
+  "evidence": [],
+  "blockers": [],
+  "reuses": [
+    "FTP格式转换，归属于UniT原始采集来源"
+  ],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "video_probe": {
+      "width": 960,
+      "height": 420,
+      "duration": "19.600000",
+      "nb_frames": "196"
+    }
+  },
+  "audit_files": [
+    "trajectory_audits/R09/duration_audit.json"
+  ]
+}

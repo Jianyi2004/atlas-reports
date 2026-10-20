@@ -1,0 +1,4642 @@
+[
+  {
+    "url": "https://data.csail.mit.edu/ActionNet/wearable_data/2022-06-07_experiment_S00/2022-06-07_17-18-17_actionNet-wearables_S00/2022-06-07_17-18-46_streamLog_actionNet-wearables_S00.hdf5",
+    "subject": "S00",
+    "streams": {
+      "tactile-glove-left/tactile_data": {
+        "n": 10011,
+        "first": 1654636726.342004,
+        "last": 1654638499.5775898
+      },
+      "tactile-glove-right/tactile_data": {
+        "n": 10062,
+        "first": 1654636726.3330352,
+        "last": 1654638499.656326
+      },
+      "eye-tracking-video-world/frame_timestamp": {
+        "n": 52718,
+        "first": 1654636717.1524518,
+        "last": 1654638501.5919428
+      }
+    },
+    "tactile_overlap_seconds": 1773.2355856895447,
+    "rgb_tactile_overlap_seconds": 1773.2355856895447,
+    "activities": {
+      "time_s": [],
+      "labels": []
+    },
+    "range_bytes": 425985,
+    "labeled_activity_overlap_seconds": 0
+  },
+  {
+    "url": "https://data.csail.mit.edu/ActionNet/wearable_data/2022-06-07_experiment_S00/2022-06-07_18-10-55_actionNet-wearables_S00/2022-06-07_18-11-37_streamLog_actionNet-wearables_S00.hdf5",
+    "subject": "S00",
+    "streams": {
+      "tactile-glove-left/tactile_data": {
+        "n": 22615,
+        "first": 1654639897.7586246,
+        "last": 1654643708.5254169
+      },
+      "tactile-glove-right/tactile_data": {
+        "n": 22741,
+        "first": 1654639897.753641,
+        "last": 1654643708.555328
+      },
+      "eye-tracking-video-world/frame_timestamp": {
+        "n": 113495,
+        "first": 1654639888.4656634,
+        "last": 1654643711.3877306
+      }
+    },
+    "tactile_overlap_seconds": 3810.7667922973633,
+    "rgb_tactile_overlap_seconds": 3810.7667922973633,
+    "activities": {
+      "time_s": [
+        1654640077.7037506,
+        1654640151.759367,
+        1654640179.3290482,
+        1654640233.443093,
+        1654640253.8010108,
+        1654640297.9366932,
+        1654640311.8043122,
+        1654640351.3525302,
+        1654640434.5905204,
+        1654640468.641637,
+        1654640476.7903843,
+        1654640513.0112438,
+        1654640564.731818,
+        1654640590.1657734,
+        1654640606.4762187,
+        1654640641.7663822,
+        1654640684.3250496,
+        1654640739.777351,
+        1654640749.6981738,
+        1654640804.4663675,
+        1654640817.4569204,
+        1654640859.958774,
+        1654640902.386591,
+        1654640940.106438,
+        1654640945.5045304,
+        1654640985.8386333,
+        1654640994.6860437,
+        1654641020.3133373,
+        1654641065.8540416,
+        1654641097.0267909,
+        1654641151.805584,
+        1654641183.0281537,
+        1654641204.4873862,
+        1654641238.7547767,
+        1654641253.1994932,
+        1654641290.5276492,
+        1654641350.0654795,
+        1654641393.8206472,
+        1654641488.6156201,
+        1654641517.254837,
+        1654641522.415578,
+        1654641544.4310482,
+        1654641549.1233554,
+        1654641568.708347,
+        1654641590.9758692,
+        1654641604.584727,
+        1654641608.1069472,
+        1654641621.8958352,
+        1654641627.1163764,
+        1654641640.1477864,
+        1654641689.6282995,
+        1654641700.9374757,
+        1654641705.995559,
+        1654641727.4976459,
+        1654641732.8477523,
+        1654641750.8156595,
+        1654641882.5909495,
+        1654641892.6931636,
+        1654641916.2730336,
+        1654641925.574919,
+        1654641931.269872,
+        1654641938.6581624,
+        1654641942.5391824,
+        1654641950.4367685,
+        1654641955.1270816,
+        1654641963.926652,
+        1654642041.5042212,
+        1654642099.5165768,
+        1654642120.7765179,
+        1654642132.6149244,
+        1654642137.2793288,
+        1654642146.5127783,
+        1654642150.4197118,
+        1654642160.5269089,
+        1654642166.3873072,
+        1654642185.4535406,
+        1654642203.5709484,
+        1654642213.6063838,
+        1654642217.7206259,
+        1654642225.7697134,
+        1654642230.0583613,
+        1654642240.0419705,
+        1654642256.487972,
+        1654642270.951069,
+        1654642273.421806,
+        1654642281.4619162,
+        1654642284.3422818,
+        1654642294.5062897,
+        1654642309.3757567,
+        1654642320.1716497,
+        1654642324.0935516,
+        1654642336.3914218,
+        1654642338.4176443,
+        1654642349.2862942,
+        1654642455.968693,
+        1654642565.7746258,
+        1654642596.1091712,
+        1654642702.6260016,
+        1654642725.7875383,
+        1654642780.2148852,
+        1654642793.4017813,
+        1654642968.4077778,
+        1654642980.4077778,
+        1654643147.1077778
+      ],
+      "labels": [
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Open a jar of almond butter",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Open a jar of almond butter",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Open a jar of almond butter",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Open a jar of almond butter",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Open a jar of almond butter",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Open a jar of almond butter",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Start",
+          "Bad",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Stop",
+          "Bad",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from cabinets: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from cabinets: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Set table: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Set table: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Stack on table: 3 each large/small plates, bowls",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Stack on table: 3 each large/small plates, bowls",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Load dishwasher: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Load dishwasher: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Unload dishwasher: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Unload dishwasher: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ]
+      ]
+    },
+    "range_bytes": 655361,
+    "labeled_activity_overlap_seconds": 1797.3483424186707
+  },
+  {
+    "url": "https://data.csail.mit.edu/ActionNet/wearable_data/2022-06-13_experiment_S01_recordingStopped/2022-06-13_18-13-12_actionNet-wearables_S01/2022-06-13_18-14-59_streamLog_actionNet-wearables_S01.hdf5",
+    "subject": "S01",
+    "streams": {
+      "tactile-glove-left/tactile_data": {
+        "n": 8590,
+        "first": 1655158500.1000867,
+        "last": 1655160289.8707716
+      },
+      "tactile-glove-right/tactile_data": {
+        "n": 5726,
+        "first": 1655158500.0861323,
+        "last": 1655159765.3762414
+      }
+    },
+    "tactile_overlap_seconds": 1265.276154756546,
+    "rgb_tactile_overlap_seconds": 0,
+    "activities": {
+      "time_s": [
+        1655159743.067979,
+        1655159868.1096008,
+        1655159895.668517,
+        1655159931.7527351,
+        1655159937.1859775,
+        1655159976.202065
+      ],
+      "labels": [
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ]
+      ]
+    },
+    "range_bytes": 524289,
+    "labeled_activity_overlap_seconds": 0
+  },
+  {
+    "url": "https://data.csail.mit.edu/ActionNet/wearable_data/2022-06-13_experiment_S02/2022-06-13_21-39-50_actionNet-wearables_S02/2022-06-13_21-40-16_streamLog_actionNet-wearables_S02.hdf5",
+    "subject": "S02",
+    "streams": {
+      "tactile-glove-left/tactile_data": {
+        "n": 1792,
+        "first": 1655170817.1386302,
+        "last": 1655171167.176997
+      },
+      "tactile-glove-right/tactile_data": {
+        "n": 1812,
+        "first": 1655170817.1087325,
+        "last": 1655171167.2467763
+      },
+      "eye-tracking-video-world/frame_timestamp": {
+        "n": 10503,
+        "first": 1655170807.8258884,
+        "last": 1655171173.6383204
+      }
+    },
+    "tactile_overlap_seconds": 350.0383667945862,
+    "rgb_tactile_overlap_seconds": 350.0383667945862,
+    "activities": {
+      "time_s": [],
+      "labels": []
+    },
+    "range_bytes": 393217,
+    "labeled_activity_overlap_seconds": 0
+  },
+  {
+    "url": "https://data.csail.mit.edu/ActionNet/wearable_data/2022-06-13_experiment_S02/2022-06-13_21-47-57_actionNet-wearables_S02/2022-06-13_21-48-24_streamLog_actionNet-wearables_S02.hdf5",
+    "subject": "S02",
+    "streams": {
+      "tactile-glove-left/tactile_data": {
+        "n": 15946,
+        "first": 1655171304.330932,
+        "last": 1655173962.919047
+      },
+      "tactile-glove-right/tactile_data": {
+        "n": 15953,
+        "first": 1655171304.36492,
+        "last": 1655173963.0147293
+      },
+      "eye-tracking-video-world/frame_timestamp": {
+        "n": 79584,
+        "first": 1655171295.001334,
+        "last": 1655173967.161258
+      }
+    },
+    "tactile_overlap_seconds": 2658.554127216339,
+    "rgb_tactile_overlap_seconds": 2658.554127216339,
+    "activities": {
+      "time_s": [
+        1655172120.8584478,
+        1655172203.5928516,
+        1655172246.654605,
+        1655172304.4630013,
+        1655172317.4455593,
+        1655172359.296522,
+        1655172364.9959562,
+        1655172413.2285662,
+        1655172437.7206144,
+        1655172494.16974,
+        1655172507.668572,
+        1655172561.6260297,
+        1655172568.167235,
+        1655172608.8503034,
+        1655172617.716182,
+        1655172650.975892,
+        1655172667.8524268,
+        1655172712.3605015,
+        1655172730.764922,
+        1655172789.911504,
+        1655172823.049893,
+        1655172882.0615103,
+        1655172893.2585728,
+        1655172958.8864202,
+        1655172967.4664338,
+        1655173022.4721742,
+        1655173073.1422412,
+        1655173099.8786464,
+        1655173127.3054476,
+        1655173149.474264,
+        1655173154.1326766,
+        1655173170.147091,
+        1655173174.3500392,
+        1655173193.6853428,
+        1655173203.6021647,
+        1655173225.756047,
+        1655173241.33305,
+        1655173334.2006142,
+        1655173350.2309754,
+        1655173369.193526,
+        1655173374.9203672,
+        1655173391.66633,
+        1655173396.9865272,
+        1655173415.9281485,
+        1655173423.7630193,
+        1655173446.310574,
+        1655173457.9815216,
+        1655173504.3852549,
+        1655173582.5627298,
+        1655173608.0055935,
+        1655173612.7038774,
+        1655173629.6561508,
+        1655173633.6886563,
+        1655173645.6466446,
+        1655173666.5013754,
+        1655173681.9795845,
+        1655173686.0519588,
+        1655173698.6408348,
+        1655173702.571686,
+        1655173714.7120597,
+        1655173728.3304996,
+        1655173755.3600519
+      ],
+      "labels": [
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ]
+      ]
+    },
+    "range_bytes": 655361,
+    "labeled_activity_overlap_seconds": 1142.7435417175293
+  },
+  {
+    "url": "https://data.csail.mit.edu/ActionNet/wearable_data/2022-06-13_experiment_S02/2022-06-13_22-34-45_actionNet-wearables_S02/2022-06-13_22-35-11_streamLog_actionNet-wearables_S02.hdf5",
+    "subject": "S02",
+    "streams": {
+      "tactile-glove-left/tactile_data": {
+        "n": 7754,
+        "first": 1655174111.7307632,
+        "last": 1655175374.1378973
+      },
+      "tactile-glove-right/tactile_data": {
+        "n": 7770,
+        "first": 1655174111.7277732,
+        "last": 1655175374.2275972
+      },
+      "eye-tracking-video-world/frame_timestamp": {
+        "n": 37929,
+        "first": 1655174102.4759228,
+        "last": 1655175376.8775578
+      }
+    },
+    "tactile_overlap_seconds": 1262.4071340560913,
+    "rgb_tactile_overlap_seconds": 1262.4071340560913,
+    "activities": {
+      "time_s": [
+        1655174205.6721923,
+        1655174218.251098,
+        1655174222.426986,
+        1655174234.1966026,
+        1655174237.6620052,
+        1655174250.0186596,
+        1655174267.660786,
+        1655174376.2165902,
+        1655174387.5706036,
+        1655174397.068822,
+        1655174400.369777,
+        1655174404.855777,
+        1655174408.2006288,
+        1655174413.3713298,
+        1655174416.729103,
+        1655174423.2433133,
+        1655174426.4894514,
+        1655174432.439552,
+        1655174502.5414934,
+        1655174558.861084,
+        1655174567.990536,
+        1655174602.9675014,
+        1655174639.0019386,
+        1655174649.1051478,
+        1655174653.2104108,
+        1655174662.4445133,
+        1655174665.4175653,
+        1655174675.5068092,
+        1655174687.2844086,
+        1655174692.3364964,
+        1655174694.7524085,
+        1655174700.084566,
+        1655174703.7288914,
+        1655174714.360317,
+        1655174725.941565,
+        1655174739.0726283,
+        1655174741.8333957,
+        1655174749.5754893,
+        1655174752.3242936,
+        1655174762.1255028,
+        1655174771.0944922,
+        1655174781.5973473,
+        1655174784.1169217,
+        1655174790.6719828,
+        1655174793.0480323,
+        1655174802.275158,
+        1655174873.6722713,
+        1655175037.3490894,
+        1655175053.845915,
+        1655175165.9548526,
+        1655175194.4116266,
+        1655175205.4955397
+      ],
+      "labels": [
+        [
+          "Open a jar of almond butter",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Open a jar of almond butter",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Open a jar of almond butter",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Open a jar of almond butter",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Open a jar of almond butter",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Open a jar of almond butter",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from cabinets: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from cabinets: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Set table: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Set table: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Stack on table: 3 each large/small plates, bowls",
+          "Start",
+          "Bad",
+          ""
+        ],
+        [
+          "Stack on table: 3 each large/small plates, bowls",
+          "Stop",
+          "Bad",
+          ""
+        ]
+      ]
+    },
+    "range_bytes": 688129,
+    "labeled_activity_overlap_seconds": 662.4480702877045
+  },
+  {
+    "url": "https://data.csail.mit.edu/ActionNet/wearable_data/2022-06-13_experiment_S02/2022-06-13_23-22-21_actionNet-wearables_S02/2022-06-13_23-22-44_streamLog_actionNet-wearables_S02.hdf5",
+    "subject": "S02",
+    "streams": {
+      "tactile-glove-left/tactile_data": {
+        "n": 5485,
+        "first": 1655176964.4807174,
+        "last": 1655177879.3524594
+      },
+      "tactile-glove-right/tactile_data": {
+        "n": 5507,
+        "first": 1655176964.4692268,
+        "last": 1655177879.5382679
+      },
+      "eye-tracking-video-world/frame_timestamp": {
+        "n": 27600,
+        "first": 1655176955.218863,
+        "last": 1655177884.593133
+      }
+    },
+    "tactile_overlap_seconds": 914.8717420101166,
+    "rgb_tactile_overlap_seconds": 914.8717420101166,
+    "activities": {
+      "time_s": [
+        1655177042.286318,
+        1655177141.051562,
+        1655177146.3398447,
+        1655177231.360614,
+        1655177237.8788204,
+        1655177270.6632988,
+        1655177282.0312977,
+        1655177420.2960937,
+        1655177448.1325848,
+        1655177586.1244824
+      ],
+      "labels": [
+        [
+          "Get items from cabinets: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from cabinets: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Set table: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Set table: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Stack on table: 3 each large/small plates, bowls",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Stack on table: 3 each large/small plates, bowls",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Load dishwasher: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Load dishwasher: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Unload dishwasher: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Unload dishwasher: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ]
+      ]
+    },
+    "range_bytes": 655361,
+    "labeled_activity_overlap_seconds": 492.82718539237976
+  },
+  {
+    "url": "https://data.csail.mit.edu/ActionNet/wearable_data/2022-06-14_experiment_S03/2022-06-14_13-11-44_actionNet-wearables_S03/2022-06-14_13-12-07_streamLog_actionNet-wearables_S03.hdf5",
+    "subject": "S03",
+    "streams": {
+      "tactile-glove-left/tactile_data": {
+        "n": 13525,
+        "first": 1655226728.1990175,
+        "last": 1655229049.425192
+      },
+      "tactile-glove-right/tactile_data": {
+        "n": 13597,
+        "first": 1655226728.1980183,
+        "last": 1655229049.4336836
+      }
+    },
+    "tactile_overlap_seconds": 2321.226174592972,
+    "rgb_tactile_overlap_seconds": 0,
+    "activities": {
+      "time_s": [
+        1655227278.3437204,
+        1655227340.0771646,
+        1655227356.390914,
+        1655227417.6587565,
+        1655227421.752066,
+        1655227489.1962183,
+        1655227490.942375,
+        1655227551.9147928,
+        1655227599.672099,
+        1655227634.3379354,
+        1655227654.5966845,
+        1655227782.4805572,
+        1655227788.5781624,
+        1655227803.030983,
+        1655227808.2814226,
+        1655228028.336378,
+        1655228031.7860026,
+        1655228066.0151927,
+        1655228070.899717,
+        1655228172.900369,
+        1655228179.0359676,
+        1655228205.788985,
+        1655228226.618746,
+        1655228261.0427804,
+        1655228292.7572346,
+        1655228356.2186441,
+        1655228359.1208498,
+        1655228399.8999226,
+        1655228402.6086667,
+        1655228440.5025818,
+        1655228451.0429163,
+        1655228467.7231877,
+        1655228477.5788276,
+        1655228545.270882,
+        1655228547.8771644,
+        1655228556.2692852,
+        1655228561.6880589,
+        1655228612.1688142,
+        1655228616.0776224,
+        1655228623.2588935,
+        1655228628.3169425,
+        1655228663.80063,
+        1655228670.303389,
+        1655228675.5249252,
+        1655228693.149974,
+        1655228736.1700857,
+        1655228741.8630443,
+        1655228753.1923137,
+        1655228772.0826228,
+        1655228818.814244,
+        1655228826.268438,
+        1655228832.5125532,
+        1655228858.1895413,
+        1655228903.163002,
+        1655228913.6225834,
+        1655228919.8956015,
+        1655228926.7200556,
+        1655228964.6544187
+      ],
+      "labels": [
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Start",
+          "Good",
+          "Dicing rather than slicing"
+        ],
+        [
+          "Slice a cucumber",
+          "Stop",
+          "Good",
+          "Dicing rather than slicing"
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Stop",
+          "Good",
+          ""
+        ]
+      ]
+    },
+    "range_bytes": 491521,
+    "labeled_activity_overlap_seconds": 0
+  },
+  {
+    "url": "https://data.csail.mit.edu/ActionNet/wearable_data/2022-06-14_experiment_S03/2022-06-14_13-52-21_actionNet-wearables_S03/2022-06-14_13-52-57_streamLog_actionNet-wearables_S03.hdf5",
+    "subject": "S03",
+    "streams": {
+      "tactile-glove-left/tactile_data": {
+        "n": 12433,
+        "first": 1655229177.5698886,
+        "last": 1655231225.7729125
+      },
+      "tactile-glove-right/tactile_data": {
+        "n": 12503,
+        "first": 1655229177.5668986,
+        "last": 1655231225.8386924
+      },
+      "eye-tracking-video-world/frame_timestamp": {
+        "n": 60994,
+        "first": 1655229168.2069175,
+        "last": 1655231226.0446405
+      }
+    },
+    "tactile_overlap_seconds": 2048.2030239105225,
+    "rgb_tactile_overlap_seconds": 2048.2030239105225,
+    "activities": {
+      "time_s": [
+        1655229266.4213138,
+        1655229341.2880924,
+        1655229361.2617211,
+        1655229397.561558,
+        1655229400.061558,
+        1655229428.061558,
+        1655229429.061558,
+        1655229474.8360057,
+        1655229498.280635,
+        1655229535.280635,
+        1655229537.280635,
+        1655229568.6631668,
+        1655229571.808647,
+        1655229598.2578332,
+        1655229630.4056127,
+        1655229640.114273,
+        1655229643.7688134,
+        1655229652.7463512,
+        1655229656.1009357,
+        1655229667.4558377,
+        1655229685.4764874,
+        1655229708.8551924,
+        1655229712.0096052,
+        1655229718.950071,
+        1655229725.5134518,
+        1655229746.2656972,
+        1655229751.283037,
+        1655229789.9991314,
+        1655229838.482347,
+        1655229848.039144,
+        1655229850.0463777,
+        1655229857.5902777,
+        1655229859.6300101,
+        1655229866.9280503,
+        1655229868.3457005,
+        1655229874.7054653,
+        1655229876.1756835,
+        1655229884.3954942,
+        1655229944.7344947,
+        1655229979.9249854,
+        1655229988.7179255,
+        1655230025.6908278,
+        1655230035.5537975,
+        1655230052.0986087,
+        1655230057.0565474,
+        1655230071.6768298,
+        1655230074.3379369,
+        1655230089.3032496,
+        1655230097.9104636,
+        1655230113.0745385,
+        1655230115.3187451,
+        1655230130.0023699,
+        1655230132.0498593,
+        1655230146.158691,
+        1655230155.263378,
+        1655230156.585955,
+        1655230161.1064765,
+        1655230166.4545298,
+        1655230172.1441982,
+        1655230183.689876,
+        1655230186.8542912,
+        1655230200.6247911,
+        1655230204.2240415,
+        1655230217.8974006,
+        1655230224.8944108,
+        1655230238.8830452,
+        1655230243.645337,
+        1655230261.255303,
+        1655230263.9933941,
+        1655230280.439737,
+        1655230294.4436524,
+        1655230332.956544,
+        1655230358.5850198,
+        1655230468.0277004,
+        1655230489.9653292,
+        1655230597.7413177,
+        1655230617.5520897,
+        1655230654.3394613,
+        1655230665.865331,
+        1655230776.6738405,
+        1655230797.636273,
+        1655230929.0463243
+      ],
+      "labels": [
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Open/close a jar of almond butter",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Open/close a jar of almond butter",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Open/close a jar of almond butter",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Open/close a jar of almond butter",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Open/close a jar of almond butter",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Open/close a jar of almond butter",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Start",
+          "Bad",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Stop",
+          "Bad",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Start",
+          "Bad",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Stop",
+          "Bad",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from cabinets: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from cabinets: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Set table: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Set table: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Stack on table: 3 each large/small plates, bowls",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Stack on table: 3 each large/small plates, bowls",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Load dishwasher: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Load dishwasher: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Unload dishwasher: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Unload dishwasher: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ]
+      ]
+    },
+    "range_bytes": 720897,
+    "labeled_activity_overlap_seconds": 1229.2726392745972
+  },
+  {
+    "url": "https://data.csail.mit.edu/ActionNet/wearable_data/2022-06-14_experiment_S04/2022-06-14_16-38-18_actionNet-wearables_S04/2022-06-14_16-38-43_streamLog_actionNet-wearables_S04.hdf5",
+    "subject": "S04",
+    "streams": {
+      "tactile-glove-left/tactile_data": {
+        "n": 22010,
+        "first": 1655239123.262078,
+        "last": 1655242779.9203029
+      },
+      "tactile-glove-right/tactile_data": {
+        "n": 22063,
+        "first": 1655239123.2650788,
+        "last": 1655242779.9713035
+      },
+      "eye-tracking-video-world/frame_timestamp": {
+        "n": 108770,
+        "first": 1655239114.118433,
+        "last": 1655242780.166429
+      }
+    },
+    "tactile_overlap_seconds": 3656.655224084854,
+    "rgb_tactile_overlap_seconds": 3656.655224084854,
+    "activities": {
+      "time_s": [
+        1655239974.4190562,
+        1655240050.672438,
+        1655240064.7424195,
+        1655240113.000587,
+        1655240130.5155582,
+        1655240167.0672355,
+        1655240178.033217,
+        1655240224.2411423,
+        1655240238.6261187,
+        1655240280.5300515,
+        1655240291.1040342,
+        1655240339.637956,
+        1655240357.3761659,
+        1655240403.3490918,
+        1655240415.361072,
+        1655240453.9095972,
+        1655240472.547567,
+        1655240517.533495,
+        1655240527.616489,
+        1655240597.7961988,
+        1655240612.3951712,
+        1655240683.7820547,
+        1655240692.130042,
+        1655240733.019976,
+        1655240737.6749737,
+        1655240797.6148765,
+        1655240810.9788678,
+        1655240831.8038332,
+        1655240839.6758137,
+        1655240869.1197622,
+        1655240871.636758,
+        1655240899.847712,
+        1655240901.69771,
+        1655240926.072642,
+        1655240931.3116324,
+        1655240951.0856042,
+        1655240963.7986012,
+        1655241022.3225067,
+        1655241036.5794837,
+        1655241048.2354655,
+        1655241062.3204412,
+        1655241077.1414182,
+        1655241083.028409,
+        1655241104.017378,
+        1655241111.4973614,
+        1655241138.972317,
+        1655241157.9392865,
+        1655241223.7351806,
+        1655241238.963155,
+        1655241254.0251312,
+        1655241257.470128,
+        1655241274.8121004,
+        1655241276.7890766,
+        1655241291.7510514,
+        1655241314.8120139,
+        1655241328.480993,
+        1655241330.9300375,
+        1655241345.6170127,
+        1655241347.6220107,
+        1655241362.9779847,
+        1655241374.993973,
+        1655241392.1669452,
+        1655241401.9299293,
+        1655241413.856917,
+        1655241417.675906,
+        1655241426.1302578,
+        1655241428.1692567,
+        1655241443.9012303,
+        1655241449.7782762,
+        1655241523.121072,
+        1655241531.7860587,
+        1655241535.783052,
+        1655241537.812427,
+        1655241542.7114139,
+        1655241546.3694067,
+        1655241550.1124,
+        1655241552.8744028,
+        1655241558.957393,
+        1655241562.8453865,
+        1655241571.0923736,
+        1655241629.185808,
+        1655241710.6156802,
+        1655241723.2336562,
+        1655241726.3526504,
+        1655241728.2436485,
+        1655241735.976636,
+        1655241738.2096314,
+        1655241742.8626244,
+        1655241749.113619,
+        1655241751.85361,
+        1655241756.2926059,
+        1655241763.8915908,
+        1655241765.9576406,
+        1655241772.5776293,
+        1655241779.2806182,
+        1655241785.4676082,
+        1655241787.7926044,
+        1655241791.9395986,
+        1655241794.0065951,
+        1655241799.1035857,
+        1655241807.3150826,
+        1655241811.8460743,
+        1655241814.2160707,
+        1655241820.190061,
+        1655241822.267057,
+        1655241828.6530464,
+        1655241837.5940337,
+        1655241869.2680285,
+        1655241895.1439884,
+        1655242006.7733104,
+        1655242026.4012787,
+        1655242116.5211327,
+        1655242143.2680888,
+        1655242189.1492567,
+        1655242198.730242,
+        1655242307.3723474,
+        1655242320.9783256,
+        1655242499.9007058
+      ],
+      "labels": [
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Open/close a jar of almond butter",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Open/close a jar of almond butter",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Open/close a jar of almond butter",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Open/close a jar of almond butter",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Open/close a jar of almond butter",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Open/close a jar of almond butter",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from cabinets: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from cabinets: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Set table: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Set table: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Stack on table: 3 each large/small plates, bowls",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Stack on table: 3 each large/small plates, bowls",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Load dishwasher: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Load dishwasher: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Unload dishwasher: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Unload dishwasher: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ]
+      ]
+    },
+    "range_bytes": 786433,
+    "labeled_activity_overlap_seconds": 1949.262736082077
+  },
+  {
+    "url": "https://data.csail.mit.edu/ActionNet/wearable_data/2022-06-14_experiment_S05/2022-06-14_20-36-27_actionNet-wearables_S05/2022-06-14_20-36-54_streamLog_actionNet-wearables_S05.hdf5",
+    "subject": "S05",
+    "streams": {
+      "tactile-glove-left/tactile_data": {
+        "n": 2186,
+        "first": 1655253414.0985606,
+        "last": 1655253796.5346599
+      },
+      "tactile-glove-right/tactile_data": {
+        "n": 2196,
+        "first": 1655253414.094561,
+        "last": 1655253796.5416594
+      },
+      "eye-tracking-video-world/frame_timestamp": {
+        "n": 11741,
+        "first": 1655253405.0175147,
+        "last": 1655253800.9063437
+      }
+    },
+    "tactile_overlap_seconds": 382.4360992908478,
+    "rgb_tactile_overlap_seconds": 382.4360992908478,
+    "activities": {
+      "time_s": [],
+      "labels": []
+    },
+    "range_bytes": 458753,
+    "labeled_activity_overlap_seconds": 0
+  },
+  {
+    "url": "https://data.csail.mit.edu/ActionNet/wearable_data/2022-06-14_experiment_S05/2022-06-14_20-45-43_actionNet-wearables_S05/2022-06-14_20-46-12_streamLog_actionNet-wearables_S05.hdf5",
+    "subject": "S05",
+    "streams": {
+      "tactile-glove-left/tactile_data": {
+        "n": 22057,
+        "first": 1655253972.5520387,
+        "last": 1655257575.089903
+      },
+      "tactile-glove-right/tactile_data": {
+        "n": 22118,
+        "first": 1655253972.54658,
+        "last": 1655257575.1739068
+      },
+      "eye-tracking-video-world/frame_timestamp": {
+        "n": 107247,
+        "first": 1655253963.3666763,
+        "last": 1655257575.3784332
+      }
+    },
+    "tactile_overlap_seconds": 3602.53786444664,
+    "rgb_tactile_overlap_seconds": 3602.53786444664,
+    "activities": {
+      "time_s": [
+        1655254522.5161474,
+        1655254591.7251048,
+        1655254609.5678456,
+        1655254660.9810092,
+        1655254662.7817435,
+        1655254694.32767,
+        1655254696.9676654,
+        1655254733.6501174,
+        1655254762.903786,
+        1655254810.6241262,
+        1655254833.3428938,
+        1655254859.4050796,
+        1655254862.0380747,
+        1655254876.8131115,
+        1655254879.3651307,
+        1655254895.2287564,
+        1655254906.7390783,
+        1655254957.7171118,
+        1655254963.122101,
+        1655255006.9720304,
+        1655255011.4658933,
+        1655255069.2761285,
+        1655255072.5111194,
+        1655255124.9470606,
+        1655255126.9710104,
+        1655255180.2386675,
+        1655255187.6786969,
+        1655255209.1816573,
+        1655255259.6435087,
+        1655255290.497619,
+        1655255292.0581186,
+        1655255315.4599276,
+        1655255316.9934332,
+        1655255328.3361132,
+        1655255337.185799,
+        1655255362.7234542,
+        1655255377.1975937,
+        1655255416.529183,
+        1655255429.3551195,
+        1655255448.4041035,
+        1655255449.9932845,
+        1655255461.4110854,
+        1655255463.1960816,
+        1655255477.7350616,
+        1655255489.0111222,
+        1655255509.810716,
+        1655255524.3212268,
+        1655255585.343058,
+        1655255609.6291068,
+        1655255631.2531173,
+        1655255632.9130971,
+        1655255651.3207028,
+        1655255652.9641333,
+        1655255665.6396325,
+        1655255688.5694664,
+        1655255709.037457,
+        1655255711.1202283,
+        1655255729.8931286,
+        1655255732.8571231,
+        1655255750.1334372,
+        1655255773.1832366,
+        1655255802.70412,
+        1655255813.2573643,
+        1655255834.204148,
+        1655255839.4160545,
+        1655255856.2861333,
+        1655255859.7250664,
+        1655255878.4752243,
+        1655255892.158071,
+        1655255924.7028215,
+        1655255926.604115,
+        1655255972.7779138,
+        1655255980.5617049,
+        1655255986.3378775,
+        1655255987.7848742,
+        1655255993.814919,
+        1655255996.553125,
+        1655256002.0671,
+        1655256004.0020962,
+        1655256009.5158436,
+        1655256011.2622414,
+        1655256018.7079403,
+        1655256083.899113,
+        1655256173.9656906,
+        1655256183.5294478,
+        1655256194.1281178,
+        1655256199.2841063,
+        1655256213.3625402,
+        1655256215.41905,
+        1655256230.2416706,
+        1655256243.100475,
+        1655256257.0584152,
+        1655256259.7494085,
+        1655256273.5700374,
+        1655256277.1813645,
+        1655256303.9983094,
+        1655256314.133451,
+        1655256324.601103,
+        1655256327.2931707,
+        1655256336.8888412,
+        1655256338.8591118,
+        1655256349.3881123,
+        1655256357.197048,
+        1655256370.125928,
+        1655256372.2368655,
+        1655256381.1065192,
+        1655256383.3421412,
+        1655256393.5860488,
+        1655256402.3622425,
+        1655256439.152229,
+        1655256472.7870872,
+        1655256600.2073364,
+        1655256622.334176,
+        1655256787.034364,
+        1655256824.2091208,
+        1655256857.2589195,
+        1655256868.2380574,
+        1655257024.02486,
+        1655257043.02486,
+        1655257208.02486
+      ],
+      "labels": [
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a cucumber",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Peel a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice a potato",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Slice bread",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread almond butter on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Spread jelly on a bread slice",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clear cutting board",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Open/close a jar of almond butter",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Open/close a jar of almond butter",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Open/close a jar of almond butter",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Open/close a jar of almond butter",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Open/close a jar of almond butter",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Open/close a jar of almond butter",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Pour water from a pitcher into a glass",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a plate with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a sponge",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Clean a pan with a towel",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get/replace items from refrigerator/cabinets/drawers",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from cabinets: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Get items from cabinets: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Set table: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Set table: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Stack on table: 3 each large/small plates, bowls",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Stack on table: 3 each large/small plates, bowls",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Load dishwasher: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Load dishwasher: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ],
+        [
+          "Unload dishwasher: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Start",
+          "Good",
+          ""
+        ],
+        [
+          "Unload dishwasher: 3 each large/small plates, bowls, mugs, glasses, sets of utensils",
+          "Stop",
+          "Good",
+          ""
+        ]
+      ]
+    },
+    "range_bytes": 819201,
+    "labeled_activity_overlap_seconds": 2064.2654967308044
+  }
+]

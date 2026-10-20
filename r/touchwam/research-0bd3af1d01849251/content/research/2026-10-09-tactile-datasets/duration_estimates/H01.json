@@ -1,0 +1,69 @@
+{
+  "id": "H01",
+  "best_hours": 6.9057080394029615,
+  "low_hours": 6.9057080394029615,
+  "high_hours": 6.914331171347035,
+  "kind": "metadata",
+  "confidence": "high",
+  "scope_zh": "STAG四个官方子集classification、blindfolded、weights、handposes的发布录制总时长。",
+  "method_zh": "已下载四个lite.zip，按各metadata.mat的(batchId,recordingId)分组求max(ts)−min(ts)再相加。177592帧、221条记录，合计6.905708小时；为每条补一个中位采样间隔后6.914331小时。",
+  "assumptions_zh": [
+    "每个子集内部按录制去重；压力lite版与带图像完整版是同一来源，不重复计时。",
+    "统计录制跨度，包含动作前后静止时段，不等于接触有效时长。",
+    "此前5.276384h只含classification，现已补齐其他三个发布子集。"
+  ],
+  "sources": [
+    {
+      "url": "https://stag.csail.mit.edu/",
+      "evidence": "官方提供4套完整版/lite下载入口"
+    },
+    {
+      "url": "https://stag.csail.mit.edu/datasets/classification_lite.zip",
+      "evidence": "classification=5.276384h、135187帧"
+    },
+    {
+      "url": "https://stag.csail.mit.edu/datasets/blindfolded_lite.zip",
+      "evidence": "blindfolded=0.257232h、6686帧"
+    },
+    {
+      "url": "https://stag.csail.mit.edu/datasets/weights_lite.zip",
+      "evidence": "weights=0.454337h、11682帧"
+    },
+    {
+      "url": "https://stag.csail.mit.edu/datasets/handposes_lite.zip",
+      "evidence": "handposes=0.917755h、24037帧"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "全部四个公开压力lite归档已下载解包，分类子集配对RGB样本已读。",
+  "checked_at": "2026-10-19",
+  "subsets": [
+    {
+      "subset": "classification",
+      "frames": 135187,
+      "recordings": 82,
+      "span_seconds": 18994.982449769974
+    },
+    {
+      "subset": "blindfolded",
+      "frames": 6686,
+      "recordings": 105,
+      "span_seconds": 926.0349671840668
+    },
+    {
+      "subset": "weights",
+      "frames": 11682,
+      "recordings": 27,
+      "span_seconds": 1635.6125514507294
+    },
+    {
+      "subset": "handposes",
+      "frames": 24037,
+      "recordings": 7,
+      "span_seconds": 3303.9189734458923
+    }
+  ],
+  "audit_files": [
+    "duration_estimates/evidence/H01_all_durations.json"
+  ]
+}

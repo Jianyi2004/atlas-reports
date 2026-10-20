@@ -1,0 +1,62 @@
+{
+  "id": "P03",
+  "checked_at": "2026-10-19",
+  "status": "tactile_only",
+  "sample": {
+    "name": "HTT · force/gsmini/p1_static/0_press_1",
+    "source_url": "https://huggingface.co/datasets/AllenBi21/HTT-dataset",
+    "local_raw_paths": [
+      "trajectory_work/P03/sample.npz"
+    ],
+    "downloaded_bytes": 10810071,
+    "sha256": {
+      "trajectory_work/P03/sample.npz": "e13205679226d16cd1e4a9736d6603037a3dac5f45b0f33fb5ddc81aa53f9709"
+    },
+    "complete_episode": true,
+    "frames": 249,
+    "fps": null,
+    "duration_seconds": null,
+    "modalities": [
+      "GelSight Mini tactile RGB",
+      "ATI 6D wrench"
+    ],
+    "sync": "tactile_img与6d_force均249条，按同一行同步。",
+    "notes": "tactile_img与6d_force均249条，按同一行同步。"
+  },
+  "media": {
+    "html": "trajectories/P03/index.html",
+    "poster": "trajectories/P03/poster.webp",
+    "video": "trajectories/P03/preview.mp4",
+    "caption_zh": "完整读取0_press_1触觉按压试验（249帧）。左为GelSight Mini内部触觉图像，右为同帧6维ATI力/力矩字段；它不含外部场景RGB。文件无时间戳，10fps仅为可视化播放速度。",
+    "preview_seconds": 24.9
+  },
+  "duration": {
+    "released_hours": null,
+    "paper_hours": null,
+    "metadata_hours": null,
+    "basis": "unknown",
+    "scope_zh": "全库",
+    "explanation_zh": "1.59M为跨传感器/任务帧实例，包含重复sliding任务；本次NPZ无FPS和时间戳，不能从总帧数可靠换算唯一交互小时。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/AllenBi21/HTT-dataset",
+        "evidence": "1.59M为跨传感器/任务帧实例，包含重复sliding任务；本次NPZ无FPS和时间戳，不能从总帧数可靠换算唯一交互小时。"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://huggingface.co/datasets/AllenBi21/HTT-dataset",
+      "status": 200,
+      "detail": "已下载并实际解读所列原始文件。"
+    }
+  ],
+  "blockers": [
+    "源数据无外部场景RGB。"
+  ],
+  "reuses": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  }
+}

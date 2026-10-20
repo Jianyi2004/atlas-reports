@@ -1,0 +1,53 @@
+{
+  "id": "H06",
+  "checked_at": "2026-10-19",
+  "status": "tactile_only",
+  "sample": {
+    "name": "dataset/man0/stroking_man0.npy / sample[0]",
+    "source_url": "https://huggingface.co/datasets/Tachintech/Tactile_Gesture_Language",
+    "download_url": "https://huggingface.co/datasets/Tachintech/Tactile_Gesture_Language/resolve/main/dataset/man0/stroking_man0.npy",
+    "local_raw_paths": [
+      "trajectory_work/H06/sample.npy"
+    ],
+    "complete_episode": true,
+    "frames": 200,
+    "fps": null,
+    "duration_seconds": null,
+    "duration_method": "无时间戳/FPS；仅200帧序列",
+    "modalities": [
+      "32x32触觉"
+    ],
+    "sync": "无RGB；保留原始帧顺序，演示10帧/秒并非实测采样率",
+    "sha256": {
+      "trajectory_work/H06/sample.npy": "c37fceeeda508b2c60e1da510b3f1cb1db0dd5d7a1069c65a693bc2981458dbe"
+    },
+    "downloaded_bytes": 72089728
+  },
+  "media": {
+    "html": "trajectories/H06/index.html",
+    "video": "trajectories/H06/preview.mp4",
+    "poster": "trajectories/H06/poster.webp",
+    "caption_zh": "Tactile Gesture Language：实际下载man0/stroking_man0.npy（44×200×32×32），展示其中第0条完整200帧抚摸序列。原数据未提供RGB与时间戳/采样率，故只有真实触觉热图；以每秒10帧的演示速度播放，20秒是播放器时长，不代表真实采集时长。",
+    "preview_seconds": 20.0
+  },
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "总时长未知，不能从帧数推算秒",
+    "explanation_zh": "数据卡/加载器未标采样率；每样本200帧不足以推断真实接触时长。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/Tachintech/Tactile_Gesture_Language/blob/main/README.md",
+        "evidence": "10 participants /10 gestures/32x32; no FPS or timestamps"
+      }
+    ]
+  },
+  "evidence": [],
+  "blockers": [
+    "发布数据未包含视觉，无法形成视觉—触觉双模态轨迹；未公布FPS，不能给实测秒数。"
+  ],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "method": "MP4帧数/可播放性检查与八项poster拼图人工核查"
+  }
+}

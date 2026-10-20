@@ -1,0 +1,62 @@
+{
+  "id": "R17",
+  "checked_at": "2026-10-19",
+  "status": "tactile_only",
+  "sample": {
+    "source_url": "https://huggingface.co/datasets/TimSchneider42/tactile-mnist-touch-real-seq-t256-320x240",
+    "local_raw_paths": [
+      "trajectory_work/R17/sample.parquet"
+    ],
+    "downloaded_bytes": 33219820,
+    "sha256": {
+      "trajectory_work/R17/sample.parquet": "f27ba0970a38781eed48d16c8ed57ea7545e055cb78a1e825a971d1420fd3292"
+    },
+    "name": "2023-09-29_10-00-57_3-1 / touch0",
+    "download_url": "https://hf-mirror.com/datasets/TimSchneider42/tactile-mnist-touch-real-seq-t256-320x240/resolve/main/data/test-00007-of-00008.parquet",
+    "complete_episode": true,
+    "frames": 54,
+    "fps": 24.0,
+    "duration_seconds": 2.25,
+    "duration_method": "MP4 frame count/container fps",
+    "modalities": [
+      "real optical tactile"
+    ],
+    "notes": "one full256touch record downloaded; preview only first complete touch"
+  },
+  "media": {
+    "html": "trajectories/R17/index.html",
+    "video": "trajectories/R17/preview.mp4",
+    "poster": "trajectories/R17/poster.webp",
+    "caption_zh": "下载并保存一个完整256次触碰记录（id=2023-09-29_10-00-57_3-1，数字7），包含256个真实GelSight视频。播放器展示第0次完整触碰，54帧、容器24.000fps；原库未提供外部RGB。256次触碰起始时间跨度1045.834秒包含移动间隔，不能当作有效接触时长。",
+    "preview_seconds": 2.25
+  },
+  "duration": {
+    "metadata_hours": 120.90309075777779,
+    "active_contact_hours": 10.713059491111125,
+    "basis": "metadata_sum",
+    "scope_zh": "该真实序列版本全部48个公开Parquet分片，600个唯一记录",
+    "explanation_zh": "读取48个分片全部时间字段，600个唯一ID、153,600次触碰。按每视频真实帧数取time_stamp_rel_seq最后有效帧减首帧，累计120.903小时；touch_end_time_rel-start累计有效接触10.713小时。前者含接近/退离，后者仅接触窗口；不含跨触碰移动间隔，不能与单帧/其它分辨率副本重复相加。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/TimSchneider42/tactile-mnist-touch-real-seq-t256-320x240/tree/main/data",
+        "evidence": "all48shards: unique rows=600, contacts=153600; sum(actual video timestamp spans)=435251.126728s; sum(contact windows)=38567.014168s"
+      }
+    ]
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "validation": "原始schema/数组范围已读取；实际配对关系按数据字段核对；海报人工检查；视频通过ffprobe。",
+    "video_probe": {
+      "width": 960,
+      "height": 420,
+      "duration": "2.250000",
+      "nb_frames": "54"
+    }
+  },
+  "audit_files": [
+    "trajectory_audits/R17/duration_audit.json"
+  ]
+}

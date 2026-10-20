@@ -1,0 +1,34 @@
+{
+  "id": "H03",
+  "best_hours": 4.84075,
+  "low_hours": 3.971509027777777,
+  "high_hours": 5.731206481481481,
+  "kind": "estimated",
+  "confidence": "medium",
+  "scope_zh": "PX OmniSharing当前公开1000个HDF5的同步observation时间轴总时长估计。",
+  "method_zh": "10个part各100文件，固定种子20261019每part均匀随机抽3份，共30份，HTTP Range实际读aligned_timestamp首末值（毫秒）。Σ100×part样本平均跨度/3600=4.840750小时；分层bootstrap20000次约95%经验区间3.971509–5.731206小时。",
+  "assumptions_zh": [
+    "按真实毫秒时间戳计算，未采用内嵌MP4的25fps替代实际约30Hz同步时钟。",
+    "只有每part3条，且part不等于任务类别；任务时长长尾和part内组成会导致采样偏差，真实总量可能在区间外。",
+    "不包含商业全库；多相机/双手不重复计时。",
+    "区间只度量此次分层重采样波动，不包括数据丢帧、文件坏损等系统误差。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/paxini/Omnisharing_DB_SampleData",
+      "evidence": "公开目录1000个HDF5，10个part各100"
+    },
+    {
+      "url": "https://huggingface.co/datasets/paxini/Omnisharing_DB_SampleData/resolve/main/data/part_01/episode_1227_213409_93_110056_glove.hdf5",
+      "evidence": "随机抽样实际读取dataset/observation/aligned_timestamp，示例跨度9634ms；30条时长见审计表"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "30个公开HDF5已实际Range读取，另一个完整样例已下载。",
+  "checked_at": "2026-10-19",
+  "audit_files": [
+    "duration_estimates/evidence/H03_sample_plan.json",
+    "duration_estimates/evidence/H03_sample_durations.json",
+    "duration_estimates/evidence/H03_estimator.json"
+  ]
+}

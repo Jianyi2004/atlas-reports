@@ -1,0 +1,28 @@
+{
+  "id": "R23",
+  "best_hours": 0.042472222222222224,
+  "low_hours": 0.021236111111111112,
+  "high_hours": 0.12741666666666665,
+  "kind": "static_equivalent",
+  "confidence": "medium",
+  "scope_zh": "SSVTP4,587组静态视觉触觉对应对，TVL官方镜像。",
+  "method_zh": "仅作静态训练帧量等价：4,587/(30×3600)；10–60fps给出范围。",
+  "assumptions_zh": [
+    "非同时采集，机器人先拍视觉，再移动到接触点；没有连续轨迹时间轴。",
+    "不将视觉与触觉各计一次，不与TVL或FoTa汇编再次相加。",
+    "该数值不是录制时长。"
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/2402.13232",
+      "evidence": "上游SSVTP4,587image-touchpairs及先视觉后接触协议。"
+    },
+    {
+      "url": "https://huggingface.co/datasets/mlfu7/Touch-Vision-Language-Dataset",
+      "evidence": "ssvtp目录已实际提取同ID视觉、DIGIT、标签。"
+    }
+  ],
+  "availability": "mirror",
+  "availability_note_zh": "TVL官方再发布，原始来源家族SSVTP计一次。",
+  "checked_at": "2026-10-19"
+}

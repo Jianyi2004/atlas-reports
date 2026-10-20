@@ -1,0 +1,325 @@
+{
+  "rows": 1250,
+  "columns": [
+    "observation.state",
+    "observation.state.joint_torque",
+    "observation.state.tcp",
+    "action",
+    "observation.state.tcp_pose",
+    "action.tcp_pose",
+    "subtask_index",
+    "observation.tactile",
+    "timestamp",
+    "frame_index",
+    "episode_index",
+    "index",
+    "task_index"
+  ],
+  "arrays": {
+    "observation.state": {
+      "shape": [
+        1250,
+        65
+      ],
+      "dtype": "float64",
+      "finite_fraction": 1.0,
+      "min": -2.158839464187622,
+      "max": 1.663771390914917,
+      "zero_columns": [
+        61,
+        62,
+        63
+      ],
+      "constant_columns": [
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64
+      ]
+    },
+    "observation.state.joint_torque": {
+      "shape": [
+        1250,
+        65
+      ],
+      "dtype": "float64",
+      "finite_fraction": 1.0,
+      "min": -42.19049835205078,
+      "max": 42.04050064086914,
+      "zero_columns": [
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64
+      ],
+      "constant_columns": [
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64
+      ]
+    },
+    "observation.state.tcp": {
+      "shape": [
+        1250,
+        24
+      ],
+      "dtype": "float64",
+      "finite_fraction": 1.0,
+      "min": -2.1486620903015137,
+      "max": 2.6234121322631836,
+      "zero_columns": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "constant_columns": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    "action": {
+      "shape": [
+        1250,
+        65
+      ],
+      "dtype": "float64",
+      "finite_fraction": 1.0,
+      "min": -2.158823251724243,
+      "max": 1.7453292608261108,
+      "zero_columns": [],
+      "constant_columns": []
+    },
+    "observation.state.tcp_pose": {
+      "shape": [
+        1250,
+        12
+      ],
+      "dtype": "float64",
+      "finite_fraction": 1.0,
+      "min": -2.1486620903015137,
+      "max": 2.6234121322631836,
+      "zero_columns": [],
+      "constant_columns": []
+    },
+    "action.tcp_pose": {
+      "shape": [
+        1250,
+        12
+      ],
+      "dtype": "float64",
+      "finite_fraction": 1.0,
+      "min": -2.2883524894714355,
+      "max": 2.660635471343994,
+      "zero_columns": [],
+      "constant_columns": []
+    },
+    "subtask_index": {
+      "shape": [
+        1250
+      ],
+      "dtype": "int64",
+      "finite_fraction": 1.0,
+      "min": 0.0,
+      "max": 4.0
+    },
+    "observation.tactile": {
+      "shape": [
+        1250,
+        60
+      ],
+      "dtype": "float64",
+      "finite_fraction": 1.0,
+      "min": -14.068733215332031,
+      "max": 49.56615447998047,
+      "zero_columns": [],
+      "constant_columns": []
+    },
+    "timestamp": {
+      "shape": [
+        1250
+      ],
+      "dtype": "float64",
+      "finite_fraction": 1.0,
+      "min": 0.0,
+      "max": 41.63333511352539
+    },
+    "frame_index": {
+      "shape": [
+        1250
+      ],
+      "dtype": "int64",
+      "finite_fraction": 1.0,
+      "min": 0.0,
+      "max": 1249.0
+    },
+    "episode_index": {
+      "shape": [
+        1250
+      ],
+      "dtype": "int64",
+      "finite_fraction": 1.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "index": {
+      "shape": [
+        1250
+      ],
+      "dtype": "int64",
+      "finite_fraction": 1.0,
+      "min": 0.0,
+      "max": 1249.0
+    },
+    "task_index": {
+      "shape": [
+        1250
+      ],
+      "dtype": "int64",
+      "finite_fraction": 1.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "action_vs_observation": {
+    "equal_fraction": 0.031323076923076926,
+    "max_abs_diff": 0.9829646348953247,
+    "mean_abs_diff": 0.031823822535433206
+  },
+  "action.tcp_pose_vs_observation": {
+    "equal_fraction": 0.0,
+    "max_abs_diff": 0.4084455966949463,
+    "mean_abs_diff": 0.021337384034401476
+  },
+  "timing": {
+    "first": 0.0,
+    "last": 41.63333511352539,
+    "step_min": 0.03333282470703125,
+    "step_max": 0.033336639404296875,
+    "n_over_30": 41.666666666666664
+  },
+  "annotation_episode_0": {
+    "source_uid": "4b4ce4d1b52e1551",
+    "num_frames": 1250,
+    "annotation_status": "loaded",
+    "has_annotation": true,
+    "global_task": "Task: ClearPlate | Instruction: Pick up the plate from the table with the left hand. Pick up the blackboard eraser with the right hand. Use the blackboard eraser to wipe away the dirty marks on the plate while the left hand holds the plate. Finally, place the plate and the blackboard eraser back on the table. | Scene: A plate with dirty marks and a blackboard eraser are placed on the table. The robot needs to hold the plate with the left hand, wipe the dirty marks with the blackboard eraser using the right hand, and then place both objects back on the table. | Success: The dirty marks on the plate are removed, and both the plate and the blackboard eraser are placed stably on the table.",
+    "tags": {
+      "task_name": "ClearPlate",
+      "task_instruction": "Pick up the plate from the table with the left hand. Pick up the blackboard eraser with the right hand. Use the blackboard eraser to wipe away the dirty marks on the plate while the left hand holds the plate. Finally, place the plate and the blackboard eraser back on the table.",
+      "scene_description": "A plate with dirty marks and a blackboard eraser are placed on the table. The robot needs to hold the plate with the left hand, wipe the dirty marks with the blackboard eraser using the right hand, and then place both objects back on the table.",
+      "success_criteria": "The dirty marks on the plate are removed, and both the plate and the blackboard eraser are placed stably on the table.",
+      "score": "S",
+      "SOP": "V1.1"
+    },
+    "segments": [
+      {
+        "label": "subtasks",
+        "start_step": 0,
+        "end_step": 656,
+        "id": "subtask-001",
+        "text": "Pick up the plate from the table with the left hand. | Skill: pick",
+        "task_skill": "pick",
+        "atomic_action": []
+      },
+      {
+        "label": "subtasks",
+        "start_step": 657,
+        "end_step": 728,
+        "id": "subtask-002",
+        "text": "Pick up the blackboard eraser from the table with the right hand. | Skill: pick",
+        "task_skill": "pick",
+        "atomic_action": []
+      },
+      {
+        "label": "subtasks",
+        "start_step": 729,
+        "end_step": 1022,
+        "id": "subtask-003",
+        "text": "Wipe away the dirty marks on the plate with the blackboard eraser using the right hand while the left hand holds the plate. | Skill: wipe",
+        "task_skill": "wipe",
+        "atomic_action": []
+      },
+      {
+        "label": "subtasks",
+        "start_step": 1023,
+        "end_step": 1142,
+        "id": "subtask-004",
+        "text": "Place the plate and the blackboard eraser back on the table. | Skill: place",
+        "task_skill": "place",
+        "atomic_action": []
+      }
+    ],
+    "language_segments": [
+      {
+        "label": "subtasks",
+        "start_step": 0,
+        "end_step": 656,
+        "id": "subtask-001",
+        "text": "Pick up the plate from the table with the left hand. | Skill: pick",
+        "task_skill": "pick",
+        "atomic_action": []
+      },
+      {
+        "label": "subtasks",
+        "start_step": 657,
+        "end_step": 728,
+        "id": "subtask-002",
+        "text": "Pick up the blackboard eraser from the table with the right hand. | Skill: pick",
+        "task_skill": "pick",
+        "atomic_action": []
+      },
+      {
+        "label": "subtasks",
+        "start_step": 729,
+        "end_step": 1022,
+        "id": "subtask-003",
+        "text": "Wipe away the dirty marks on the plate with the blackboard eraser using the right hand while the left hand holds the plate. | Skill: wipe",
+        "task_skill": "wipe",
+        "atomic_action": []
+      },
+      {
+        "label": "subtasks",
+        "start_step": 1023,
+        "end_step": 1142,
+        "id": "subtask-004",
+        "text": "Place the plate and the blackboard eraser back on the table. | Skill: place",
+        "task_skill": "place",
+        "atomic_action": []
+      }
+    ],
+    "anno_path": "/mnt/netdata/Team/Academic/Data/North/SharpaOpenData/ClearPlate/season_POC22027_2026_04_17_11_01_59_train/POC22027_2026_04_17_11_03_13_train/anno.json",
+    "v40_original_language_cache": "/vepfs-cnsh6242fe0f918b/Team/Academic/Data/North/SharpaOpenData_lerobot/clean_plate_with_eraser/season_POC22027_2026_04_17_11_01_59_train/lerobot_v2.1/meta/annotation_cache.jsonl",
+    "v40_original_episode_index": 1,
+    "v40_language_source": "previous_published_lerobot",
+    "episode_index": 0
+  }
+}

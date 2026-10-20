@@ -1,0 +1,43 @@
+{
+  "id": "C02",
+  "checked_at": "2026-10-19",
+  "status": "blocked",
+  "sample": {
+    "source_url": "https://huggingface.co/datasets/BAAI/ToucHD-Force",
+    "download_url": "https://hf-mirror.com/datasets/BAAI/ToucHD-Force/resolve/main/all_data_direction.json"
+  },
+  "media": {},
+  "duration": {
+    "released_hours": null,
+    "paper_hours": null,
+    "metadata_hours": null,
+    "basis": "unknown",
+    "scope_zh": "全库",
+    "explanation_zh": "全套2,426,174是含Sim的contact samples；Force/Mani时间戳文件受门控，不能从接触对数可靠计算真实交互小时。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/BAAI/ToucHD-Force",
+        "evidence": "722,436touch-force pairs;gated auto"
+      },
+      {
+        "url": "https://huggingface.co/datasets/BAAI/ToucHD-Mani",
+        "evidence": "约585K samples；门控"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://hf-mirror.com/datasets/BAAI/ToucHD-Force/resolve/main/all_data_direction.json?download=true",
+      "status": 403,
+      "detail": "匿名读取Force实际数据返回403；现有Hub审计gated=auto。"
+    }
+  ],
+  "blockers": [
+    "官方HF需同意条款并填写联系方式/单位等；匿名请求403。本次未接受新条款、未使用凭据。"
+  ],
+  "reuses": [],
+  "review": {
+    "raw_read": false,
+    "render_checked": false
+  }
+}

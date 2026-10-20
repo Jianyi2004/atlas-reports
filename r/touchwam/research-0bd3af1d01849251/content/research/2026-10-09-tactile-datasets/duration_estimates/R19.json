@@ -1,0 +1,27 @@
+{
+  "id": "R19",
+  "best_hours": 6.9853110238436065,
+  "low_hours": 5.588248819074885,
+  "high_hours": 8.382373228612327,
+  "kind": "estimated",
+  "confidence": "medium",
+  "scope_zh": "iCub当前可见19种材料的56个带skin_events录制流：19slide、19touch、18touch_raw2。",
+  "method_zh": "各模式完整读取bathTowel对应encoder流，得到764.5705/84.1830/470.4638s；其余同模式按encoder文本字节数比例外推。每种模式只计一次时间，不再叠加forearm/events通道。",
+  "assumptions_zh": [
+    "论文23材料不等于当前公开目录19材料；只对实际有skin_events文件的流求和。",
+    "编码器固定列数/约50Hz使文本字节率可作粗代理，但数字长度和采样抖动会改变字节率；±20%敏感性范围。",
+    "主值是完整记录跨度，包含多次触摸间的等待，不等于有效接触时长。"
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/clear-nus/TactileLearning",
+      "evidence": "README23种材料；当前完整GitHub树实际19材质目录，touch_raw说明每流10次触摸。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "公开下载入口已核查，已有真实样本下载。",
+  "audit_files": [
+    "duration_estimates/work_robot/R19_audit.json"
+  ],
+  "checked_at": "2026-10-19"
+}

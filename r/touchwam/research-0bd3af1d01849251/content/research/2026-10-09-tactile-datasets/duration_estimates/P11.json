@@ -1,0 +1,28 @@
+{
+  "id": "P11",
+  "best_hours": 0.49669444444444444,
+  "low_hours": 0.24834722222222222,
+  "high_hours": 0.9933888888888889,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "AnyTouch发布的PhysiCLeAR/Octopi处理版镜像：476个连续帧文件夹、53,643张图。",
+  "method_zh": "完整octopi.zip中央目录计数53,643张JPEG；假设30Hz得0.496694小时，15–60Hz得0.248347–0.993389小时。",
+  "assumptions_zh": [
+    "原始论文报告74物体408个视频，镜像476文件夹不可强行认作同样408条；数值只代表该可下载镜像。",
+    "已下载样本含按序编号的126帧，但未核实该镜像所有文件夹的原始/抽帧FPS。",
+    "论文用于模型训练的top30%显著帧与5帧输入策略不应再乘为全时长；本次以发布的全部处理图像作序列估计。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/xxuan01/TacQuad/tree/main",
+      "evidence": "octopi.zip完整索引实核476文件夹、53,643帧；样本physiclear_paper_towel_5含126帧。"
+    },
+    {
+      "url": "https://arxiv.org/html/2405.02794",
+      "evidence": "原PhysiCLeAR：74 objects、408 videos；Table A9平均112.30帧、范围50–126帧。"
+    }
+  ],
+  "availability": "mirror",
+  "availability_note_zh": "可匿名下载AnyTouch提供的处理版；原项目Drive入口存在，本次连接超时。",
+  "checked_at": "2026-10-19"
+}

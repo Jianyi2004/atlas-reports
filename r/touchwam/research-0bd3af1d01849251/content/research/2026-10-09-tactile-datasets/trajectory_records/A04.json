@@ -1,0 +1,49 @@
+{
+  "id": "A04",
+  "checked_at": "2026-10-19",
+  "status": "blocked",
+  "sample": {
+    "source_url": "https://cocacola-lab.github.io/Touch100k/",
+    "download_url": "https://drive.google.com/drive/folders/1QOvbkIZtpJpz4Ry_Zg3ouXX-zLJNqu9m?usp=sharing"
+  },
+  "media": {},
+  "duration": {
+    "released_hours": null,
+    "paper_hours": null,
+    "metadata_hours": null,
+    "basis": "unknown",
+    "scope_zh": "派生标注/汇编，不独立叠加上游时长",
+    "explanation_zh": "约100K指触觉—语言—视觉配对样本，不是100K条连续轨迹；未获得原始时间戳或可去重总交互时长。",
+    "sources": [
+      {
+        "url": "https://cocacola-lab.github.io/Touch100k/",
+        "evidence": "Touch100k touch-language-vision dataset;公开入口为Drive目录。"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://drive.google.com/drive/folders/1QOvbkIZtpJpz4Ry_Zg3ouXX-zLJNqu9m?usp=sharing",
+      "status": null,
+      "detail": "官方数据目录链接；本机连接超时20秒。"
+    },
+    {
+      "url": "https://api.github.com/repos/cocacola-lab/TLV-Link/git/trees/main?recursive=1",
+      "status": 200,
+      "detail": "实际读取代码仓库树；只有展示SVG/代码/模型配置，未找到真实样例数据文件。"
+    },
+    {
+      "url": "https://hf-mirror.com/api/datasets?search=Touch100k&limit=20",
+      "status": 200,
+      "detail": "检索结果为空，未发现可核实官方镜像。"
+    }
+  ],
+  "blockers": [
+    "官方GoogleDrive目录无法从当前网络读取，未取得实际数据；论文图与data_present.svg不作为真实轨迹。"
+  ],
+  "reuses": [],
+  "review": {
+    "raw_read": false,
+    "render_checked": false
+  }
+}

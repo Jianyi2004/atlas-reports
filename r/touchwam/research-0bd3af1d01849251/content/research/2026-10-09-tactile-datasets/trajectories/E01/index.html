@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ActionSense | grasp cucumber + operate peeler</title><style>body{margin:0;background:#101820;color:#e5eef8;font:16px/1.7 system-ui;padding:20px;max-width:1160px}video{width:100%;max-height:80vh;background:black}a{color:#64d5cc}h1{font-size:22px}</style><h1>ActionSense | grasp cucumber + operate peeler</h1><video controls preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video><p>ActionSense真实双手物体操作：S02在官方标注“Peel a cucumber”时段内，左手握持黄瓜、右手握削皮器反复削皮。展示原始视频约956–981秒的连续25秒片段；已人工检查1、5、10、15秒处，均能看到手与物体接触。RGB与双手32×32原始触觉来自同一录制，依据HDF5 time_s逐帧匹配最近已采集触觉值；触觉约6Hz、RGB约30Hz，不做虚构触觉插值。MP4帧时间间隔与HDF5视频时钟的最大差为0.0164秒；触觉值最多滞后左手0.207秒/右手0.208秒。此为长录制内的操作片段，不是整项任务。</p><p><a href="https://action-sense.csail.mit.edu/data.html" target="_blank">原始数据来源</a> · <a href="preview.mp4" download>下载可视化 MP4</a></p></html><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

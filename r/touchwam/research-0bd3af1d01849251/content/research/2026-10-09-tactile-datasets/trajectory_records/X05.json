@@ -1,0 +1,50 @@
+{
+  "id": "X05",
+  "checked_at": "2026-10-19",
+  "status": "static_sample",
+  "sample": {
+    "name": "block_data: c_0.png + touch_raw/train/t_0.png",
+    "source_url": "https://github.com/armlabstanford/touch-gs-data",
+    "download_url": "https://cdn.jsdelivr.net/gh/armlabstanford/touch-gs-data@main/",
+    "local_raw_paths": [
+      "trajectory_work/X05/raw/discover5.png",
+      "trajectory_work/X05/raw/discover6.png"
+    ],
+    "complete_episode": false,
+    "frames": 1,
+    "modalities": [
+      "scene RGB",
+      "raw tactile image"
+    ],
+    "sync": "同场景，不宣称时间同步。",
+    "notes": "从官方数据仓库下载block场景的RGB c_0.png和原始触觉t_0.png。两者属于同一重建场景，文件数字相同并不证明同步；因此作为静态样本展示，不伪装成时间轨迹。",
+    "downloaded_bytes": 1293675,
+    "sha256": {
+      "trajectory_work/X05/raw/discover5.png": "ebb55c2236779e276c4f234311d02dd2c8ff15dc764b8f801f0f301b1ae354f0",
+      "trajectory_work/X05/raw/discover6.png": "027b8f76b0484dc5aeb1e7830957dd147436a07e239feefff8164f4065618805"
+    }
+  },
+  "media": {
+    "html": "trajectories/X05/index.html",
+    "poster": "trajectories/X05/poster.webp",
+    "caption_zh": "从官方数据仓库下载block场景的RGB c_0.png和原始触觉t_0.png。两者属于同一重建场景，文件数字相同并不证明同步；因此作为静态样本展示，不伪装成时间轨迹。"
+  },
+  "duration": {
+    "basis": "not_temporal",
+    "scope_zh": "三维重建场景的静态视图/触点",
+    "explanation_zh": "仓库发布多视图图像、触觉图及相机参数，没有可核实连续采集时长。",
+    "sources": [
+      {
+        "url": "https://github.com/armlabstanford/touch-gs-data",
+        "evidence": "实际图像文件、变换JSON目录"
+      }
+    ]
+  },
+  "evidence": [],
+  "blockers": [],
+  "reuses": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  }
+}

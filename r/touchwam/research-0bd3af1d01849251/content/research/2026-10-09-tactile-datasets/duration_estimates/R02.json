@@ -1,0 +1,31 @@
+{
+  "id": "R02",
+  "best_hours": 0.2233148148148148,
+  "low_hours": 0.1116574074074074,
+  "high_hours": 0.6699444444444445,
+  "kind": "static_equivalent",
+  "confidence": "medium",
+  "scope_zh": "FoTa公开Calandra17静态触觉图像子集24,118张。",
+  "method_zh": "仅作训练帧量等价：24,118/(30×3600)；10–60fps给出等价范围。",
+  "assumptions_zh": [
+    "这些是阶段快照/双指图像，未把不同手指图像当作增加的物理采集时间。",
+    "本条数字是传感器图像帧量等价，不是实际录制小时数。",
+    "原论文9,269次×约60秒=154.483h是机器人执行时间，不能替代公开静态数据时长。"
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/alanzjl/t3/blob/main/dataset_preproc/README.md",
+      "evidence": "Calandra corl17镜像24,118 images。"
+    },
+    {
+      "url": "https://sites.google.com/view/the-feeling-of-success/",
+      "evidence": "论文：9,269 grasps,106 objects；每trial约60s，模型使用3个阶段快照。"
+    }
+  ],
+  "availability": "mirror",
+  "availability_note_zh": "已实际下载FoTa静态镜像；原始Drive未在本次环境取得。",
+  "alternative_hours": {
+    "robot_execution_hours_not_recorded_data": 154.48333333333332
+  },
+  "checked_at": "2026-10-19"
+}

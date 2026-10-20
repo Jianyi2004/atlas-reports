@@ -1,0 +1,22 @@
+{
+  "id": "P06",
+  "best_hours": 0.8333333333333334,
+  "low_hours": 0.8333333333333334,
+  "high_hours": 0.8333333333333334,
+  "kind": "reported",
+  "confidence": "high",
+  "scope_zh": "YCB-Slide官方50条真实轨迹；不含仿真。",
+  "method_zh": "官方50条轨迹，每条60秒，合计3,000秒=0.833333小时。",
+  "assumptions_zh": [
+    "使用官方完整轨迹协议；未通过全量视频时间戳复核。"
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/rpl-cmu/YCB-Slide",
+      "evidence": "README报告50 real trajectories、60 seconds each、30 Hz。"
+    }
+  ],
+  "availability": "official_entry",
+  "availability_note_zh": "作者已提供Google Drive归档；本次本机与4090下载都超时，未将网络失败视作未发布。",
+  "checked_at": "2026-10-19"
+}

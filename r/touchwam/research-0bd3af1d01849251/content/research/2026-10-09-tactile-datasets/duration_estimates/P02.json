@@ -1,0 +1,29 @@
+{
+  "id": "P02",
+  "best_hours": 1.0358148148148147,
+  "low_hours": 0.5179074074074074,
+  "high_hours": 2.0716296296296295,
+  "kind": "estimated",
+  "confidence": "medium",
+  "scope_zh": "TacQuad完整原始归档中四类传感器各次采集的RGB时间轴；含未接触阶段。",
+  "method_zh": "ZIP索引核得img_digit 29,842、img_gelsight 29,824、img_duragel 29,704、img_tac3d 22,498，共111,868帧。以已下载完整片段时间戳约30Hz外推；15–60Hz作敏感性范围。",
+  "assumptions_zh": [
+    "同一物理采集的RGB和触觉不重复加和；传感器在同物体同位置的不同采集分别计入。",
+    "接触帧17,524+55,082不是全录制长度，故使用原始RGB时间轴；test_tac3d派生图不再累加。",
+    "本次仅一个完整240帧片段核验时间戳，全库675个RGB CSV未全部读到，其他采集可能有不同采样率。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/xxuan01/TacQuad",
+      "evidence": "完整tacquad.zip中央目录逐流计数111,868帧；data_fine/nail/digit.csv与img_digit.csv已下载。"
+    },
+    {
+      "url": "https://github.com/GeWu-Lab/AnyTouch",
+      "evidence": "TacQuad细粒度同地点同速度采集；粗粒度手持采集不保证跨传感器时间对齐。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方公开数据入口可匿名访问。",
+  "frame_count": 111868,
+  "checked_at": "2026-10-19"
+}

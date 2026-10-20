@@ -1,0 +1,69 @@
+{
+  "id": "P08",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "name": "NormalFlow · hammer0",
+    "source_url": "https://huggingface.co/datasets/joehjhuang/TactileTracking",
+    "local_raw_paths": [
+      "trajectory_work/P08/webcam.avi",
+      "trajectory_work/P08/gelsight.avi",
+      "trajectory_work/P08/true_start_T_currs.npy"
+    ],
+    "downloaded_bytes": 44772804,
+    "sha256": {
+      "trajectory_work/P08/webcam.avi": "1eff97233ea3d36fda204cd3892b35873af22da4dc54c0a85e1e9a52a37d6e87",
+      "trajectory_work/P08/gelsight.avi": "163c32ef1388c69dc756c55cb9f6a8effff42ab2e946406c9dae615d269471f5",
+      "trajectory_work/P08/true_start_T_currs.npy": "f05bcda58db480446396f49c286c8f50c4a14264e2bba3bf3457ed8a46bef021"
+    },
+    "complete_episode": true,
+    "frames": 116,
+    "fps": 8.472,
+    "duration_seconds": 13.692162417374883,
+    "modalities": [
+      "scene webcam RGB",
+      "GelSight tactile RGB",
+      "6DoF sensor pose"
+    ],
+    "sync": "同一trial双AVI帧数与容器FPS完全一致，按帧号同步；未提供独立硬件同步误差。",
+    "notes": "同一trial双AVI帧数与容器FPS完全一致，按帧号同步；未提供独立硬件同步误差。",
+    "download_url": "https://hf-mirror.com/datasets/joehjhuang/TactileTracking/resolve/main/dataset.zip"
+  },
+  "media": {
+    "html": "trajectories/P08/index.html",
+    "poster": "trajectories/P08/poster.webp",
+    "video": "trajectories/P08/preview.mp4",
+    "caption_zh": "完整下载hammer0试验的外部webcam、GelSight触觉视频和6DoF位姿。两个原始AVI均116帧、8.472fps、13.692秒；按同序号并排播放，无插帧。",
+    "preview_seconds": 13.692162417374883
+  },
+  "duration": {
+    "released_hours": 0.238,
+    "paper_hours": null,
+    "metadata_hours": null,
+    "basis": "official_reported",
+    "scope_zh": "全部84次跟踪试验，按官方平均时长估计",
+    "explanation_zh": "84次×平均10.2秒≈856.8秒=14.28分钟≈0.238小时；平均值经四舍五入，因此是近似值。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/joehjhuang/TactileTracking",
+        "evidence": "84 tracking trials; average 10.2 seconds"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://huggingface.co/datasets/joehjhuang/TactileTracking",
+      "status": 200,
+      "detail": "已下载并实际解读所列原始文件。"
+    }
+  ],
+  "blockers": [],
+  "reuses": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  },
+  "audit_files": [
+    "trajectory_audits/P08/extracted.json"
+  ]
+}

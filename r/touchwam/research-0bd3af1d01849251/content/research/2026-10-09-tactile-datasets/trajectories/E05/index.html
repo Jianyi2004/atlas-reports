@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>EgoTactile | gloved hand / Apple</title><style>body{margin:0;background:#101820;color:#e5eef8;font:16px/1.7 system-ui;padding:20px;max-width:1160px}video{width:100%;max-height:80vh;background:black}a{color:#64d5cc}h1{font-size:22px}</style><h1>EgoTactile | gloved hand / Apple</h1><video controls preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video><p>EgoTactile gloved_hand/p001/Apple/repeat0000：完整399帧、26.6秒配对样例。视频15fps，按JSON frame_id对应；触觉显示实际存储的RH.sensor_256按16×16展平值，不把256存储项称为256有效触点（数据卡162位置）。使用戴手套子集；预览10fps。JSON相机时间跨度26.864秒与恒帧率视频26.6秒略异，展示采用发布帧号配对。</p><p><a href="https://huggingface.co/datasets/HustleHard/EgoTactile" target="_blank">原始数据来源</a> · <a href="preview.mp4" download>下载可视化 MP4</a></p></html><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

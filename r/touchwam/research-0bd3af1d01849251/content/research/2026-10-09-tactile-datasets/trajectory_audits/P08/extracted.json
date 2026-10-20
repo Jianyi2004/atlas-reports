@@ -1,0 +1,17 @@
+[
+  {
+    "member": "normalflow_dataset/hammer0/gelsight.avi",
+    "bytes": 11932540,
+    "sha256": "163c32ef1388c69dc756c55cb9f6a8effff42ab2e946406c9dae615d269471f5"
+  },
+  {
+    "member": "normalflow_dataset/hammer0/webcam.avi",
+    "bytes": 32825288,
+    "sha256": "1eff97233ea3d36fda204cd3892b35873af22da4dc54c0a85e1e9a52a37d6e87"
+  },
+  {
+    "member": "normalflow_dataset/hammer0/true_start_T_currs.npy",
+    "bytes": 14976,
+    "sha256": "f05bcda58db480446396f49c286c8f50c4a14264e2bba3bf3457ed8a46bef021"
+  }
+]

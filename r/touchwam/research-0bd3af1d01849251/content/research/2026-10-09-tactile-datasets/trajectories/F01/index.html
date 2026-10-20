@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>F01 实际数据样例</title><style>body{background:#0b1423;color:#e7edf7;font:16px system-ui;margin:16px}video{width:100%;max-height:80vh}p{line-height:1.7}</style><h1>F01 · 实际数据样例</h1><video controls playsinline preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video><p>完整读取一个HDF5录制（含分段标注），解码hama1 RGB并按各自timestamps最近邻匹配measured_force/torque。展示腕部六维力／力矩；它属于力觉扩展，不是指尖触觉阵列。预览每3帧取1帧。</p></html><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

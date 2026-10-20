@@ -1,0 +1,74 @@
+{
+  "id": "R01",
+  "checked_at": "2026-10-19",
+  "status": "static_sample",
+  "sample": {
+    "source_url": "https://huggingface.co/datasets/alanz-mit/FoundationTactile",
+    "local_raw_paths": [
+      "trajectory_work/A01/for_visgel/seen_2_rec_02592_frame0204.jpg",
+      "trajectory_work/A01/for_visgel/seen_7_rec_07993_frame0210.jpg",
+      "trajectory_work/A01/for_visgel/unseen_1_rec_01085_frame0091.jpg",
+      "trajectory_work/A01/for_visgel/seen_2_rec_02592_frame0204.json",
+      "trajectory_work/A01/for_visgel/seen_7_rec_07993_frame0210.json",
+      "trajectory_work/A01/for_visgel/unseen_1_rec_01085_frame0091.json"
+    ],
+    "downloaded_bytes": 192302,
+    "sha256": {
+      "trajectory_work/A01/for_visgel/seen_2_rec_02592_frame0204.jpg": "265379594eea2934d54d368781c56d3632fb42011540c3f5fb4f4626d44ba8b0",
+      "trajectory_work/A01/for_visgel/seen_7_rec_07993_frame0210.jpg": "a9a1c37211f6fc468853111b08de3e808de6fd509412b3237e36f26fff5c055c",
+      "trajectory_work/A01/for_visgel/unseen_1_rec_01085_frame0091.jpg": "c2aed33e5c0b74c0235b16dff6e56f6e0bff8b986f2c97c334f314309f1c142f",
+      "trajectory_work/A01/for_visgel/seen_2_rec_02592_frame0204.json": "8b4f4aa02806a1acdbdcb9d48ff2db6ca831b5dec8a6b28be78a2b47f2191efd",
+      "trajectory_work/A01/for_visgel/seen_7_rec_07993_frame0210.json": "d24bde54bb32177fa47570eca79f9b6d3856ef85be09a6d6030f9c19b095899d",
+      "trajectory_work/A01/for_visgel/unseen_1_rec_01085_frame0091.json": "a6e0b62684c412f7a4045daa6bc5eca75863029dbe471f457767548cdb0d8fac"
+    },
+    "name": "FoundationTactile/visgel/val/data-000317.tar / first3 decoded samples",
+    "download_url": "https://hf-mirror.com/datasets/alanz-mit/FoundationTactile/resolve/main/dataset/FoTa_dataset.z19",
+    "complete_episode": false,
+    "frames": 3,
+    "modalities": [
+      "optical tactile stills",
+      "JSON labels"
+    ],
+    "sync": "3 independent static samples; no matched RGB",
+    "notes": "ZIP成员前4MiB解压前缀取完整JPEG/JSON，不是完整tar。"
+  },
+  "media": {
+    "html": "trajectories/R01/index.html",
+    "poster": "trajectories/R01/poster.webp",
+    "caption_zh": "实际从FoTa公开转换包提取3张VisGel真实触觉样本及同名JSON。这3张是不同记录的静态样本，不构成一条连续轨迹；转换包未包含匹配场景RGB，未补造视觉。"
+  },
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "完整发布数据",
+    "explanation_zh": "原论文Table1：12000次触碰、每次250帧，共300万视觉—触觉配对帧；论文未给可核对的记录FPS，故不能据此可靠换算小时数。FoTa抽样图不保留完整时间轴。",
+    "sources": [
+      {
+        "url": "https://openaccess.thecvf.com/content_CVPR_2019/papers/Li_Connecting_Touch_and_Vision_via_Cross-Modal_Prediction_CVPR_2019_paper.pdf",
+        "evidence": "12,000 touches on195objects; each touch250frames; Table1 total3,000,000pairedframes; no captureFPS identified"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://visgel.csail.mit.edu/files/vision2touch/demo.zip",
+      "status": 403,
+      "detail": "作者脚本所指演示数据ZIP实际返回HTTP403；未取得原始配对序列。原始seen/unseen全库约411GB，未用论文demo代替样本。"
+    },
+    {
+      "url": "https://hf-mirror.com/datasets/alanz-mit/FoundationTactile/resolve/main/dataset/FoTa_dataset.z19",
+      "status": 206,
+      "detail": "FoundationTactile/visgel/val/data-000317.tar;3 JPEG/JSON successfully decoded"
+    }
+  ],
+  "blockers": [
+    "作者脚本所指演示数据ZIP实际返回HTTP403；未取得原始配对序列。原始seen/unseen全库约411GB，未用论文demo代替样本。",
+    "FoTa派生WDS仅提供静态触觉及标签，本次仍未获得原始完整RGB+触觉轨迹。"
+  ],
+  "reuses": [
+    "A01/FoTa转换包中的visgel上游来源；只计原始采集来源一次"
+  ],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  }
+}

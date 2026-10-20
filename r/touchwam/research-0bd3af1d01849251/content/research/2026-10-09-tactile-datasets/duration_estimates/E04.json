@@ -1,0 +1,39 @@
+{
+  "id": "E04",
+  "best_hours": 15.080688194444443,
+  "low_hours": 12.037938478009258,
+  "high_hours": 18.71773111111111,
+  "kind": "estimated",
+  "confidence": "medium",
+  "scope_zh": "EgoTouch当前公开1933个pressure_grids.npz与chest.mp4配套目录的总时长估计。",
+  "method_zh": "公开目录分Home1145/Office191/Outdoor157/Retail127/Workbench313条；固定种子20261019在每场景均匀随机抽40条，共200条，实际Range解码NPZ内数组shape。估计Σ(场景条数×场景样本平均帧数)/30/3600=15.080688小时；场景内bootstrap20000次给出约95%经验区间12.037938–18.717731小时。",
+  "assumptions_zh": [
+    "处理规格30fps；未逐条验证chest视频帧数与NPZ完全一致。",
+    "随机抽样按发布目录分层，不按任务、时长或参与者再分层；长尾时长、场景内部组成和后续补传可能造成偏差。",
+    "bootstrap仅反映此次样本内抽样波动，不覆盖FPS或发布文件质量错误。",
+    "不使用所有三路相机和可视化视频重复计时；旧约2M帧/30fps=18.5185h作者口径另留。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/zhouzhoujy/EgoTouch/tree/main",
+      "evidence": "完整API目录有1933个pressure_grids.npz及1933个chest.mp4"
+    },
+    {
+      "url": "https://github.com/Jianyi2004/TouchAnything",
+      "evidence": "数据处理FPS=30；旧README约2M frames"
+    },
+    {
+      "url": "https://huggingface.co/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/arrange_pillow/20260412_101243_753/pressure_grids.npz",
+      "evidence": "Range读取ZIP内NPY头示例shape=(3235,21,21)；200条头部全部成功读取"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方公开库，当前快照目录计数；200/1933序列已实际读元数据。",
+  "checked_at": "2026-10-19",
+  "source_nominal_hours": 18.51851851851852,
+  "audit_files": [
+    "duration_estimates/evidence/E04_sample_plan.json",
+    "duration_estimates/evidence/E04_audited_counts.json",
+    "duration_estimates/evidence/E04_estimator.json"
+  ]
+}

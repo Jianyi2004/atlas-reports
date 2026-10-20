@@ -1,0 +1,2450 @@
+[
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj1/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj2/meta/info.json",
+    "frames": 27120,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj3/meta/info.json",
+    "frames": 32554,
+    "fps": 30,
+    "episodes": 11
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj4/meta/info.json",
+    "frames": 4872,
+    "fps": 30,
+    "episodes": 2
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj5/meta/info.json",
+    "frames": 6438,
+    "fps": 30,
+    "episodes": 3
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj6/meta/info.json",
+    "frames": 27276,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj7/meta/info.json",
+    "frames": 26703,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj8/meta/info.json",
+    "frames": 27495,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj9/meta/info.json",
+    "frames": 26643,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj10/meta/info.json",
+    "frames": 27497,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj11/meta/info.json",
+    "frames": 27696,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj12/meta/info.json",
+    "frames": 27141,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj13/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj14/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj15/meta/info.json",
+    "frames": 27130,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj16/meta/info.json",
+    "frames": 27138,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj17/meta/info.json",
+    "frames": 27155,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj18/meta/info.json",
+    "frames": 27171,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj19/meta/info.json",
+    "frames": 13368,
+    "fps": 30,
+    "episodes": 5
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj20/meta/info.json",
+    "frames": 11912,
+    "fps": 30,
+    "episodes": 4
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj21/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj22/meta/info.json",
+    "frames": 27103,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj23/meta/info.json",
+    "frames": 26978,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj24/meta/info.json",
+    "frames": 4841,
+    "fps": 30,
+    "episodes": 2
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj25/meta/info.json",
+    "frames": 27118,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj26/meta/info.json",
+    "frames": 27130,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj27/meta/info.json",
+    "frames": 27128,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj28/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj29/meta/info.json",
+    "frames": 27132,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj30/meta/info.json",
+    "frames": 27127,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj31/meta/info.json",
+    "frames": 27123,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj32/meta/info.json",
+    "frames": 22759,
+    "fps": 30,
+    "episodes": 8
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj33/meta/info.json",
+    "frames": 2165,
+    "fps": 30,
+    "episodes": 1
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj34/meta/info.json",
+    "frames": 27117,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj35/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj36/meta/info.json",
+    "frames": 27129,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj37/meta/info.json",
+    "frames": 27102,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj38/meta/info.json",
+    "frames": 27101,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj39/meta/info.json",
+    "frames": 27117,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj40/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj41/meta/info.json",
+    "frames": 27131,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj42/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj43/meta/info.json",
+    "frames": 27150,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj44/meta/info.json",
+    "frames": 27119,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj45/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj46/meta/info.json",
+    "frames": 27152,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj47/meta/info.json",
+    "frames": 27145,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj48/meta/info.json",
+    "frames": 16636,
+    "fps": 30,
+    "episodes": 6
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj49/meta/info.json",
+    "frames": 27107,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj50/meta/info.json",
+    "frames": 27126,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj51/meta/info.json",
+    "frames": 27127,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj52/meta/info.json",
+    "frames": 27123,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj53/meta/info.json",
+    "frames": 2596,
+    "fps": 30,
+    "episodes": 1
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj54/meta/info.json",
+    "frames": 26994,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj55/meta/info.json",
+    "frames": 27162,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj56/meta/info.json",
+    "frames": 21817,
+    "fps": 30,
+    "episodes": 8
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj57/meta/info.json",
+    "frames": 27147,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj58/meta/info.json",
+    "frames": 26837,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj59/meta/info.json",
+    "frames": 27163,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj60/meta/info.json",
+    "frames": 27175,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj61/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj62/meta/info.json",
+    "frames": 27133,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj63/meta/info.json",
+    "frames": 27137,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj64/meta/info.json",
+    "frames": 27158,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj65/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj66/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj67/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj68/meta/info.json",
+    "frames": 27039,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj69/meta/info.json",
+    "frames": 27184,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj70/meta/info.json",
+    "frames": 27170,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj71/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj72/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj73/meta/info.json",
+    "frames": 27128,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj74/meta/info.json",
+    "frames": 27136,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj75/meta/info.json",
+    "frames": 6000,
+    "fps": 30,
+    "episodes": 2
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj76/meta/info.json",
+    "frames": 13626,
+    "fps": 30,
+    "episodes": 5
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj77/meta/info.json",
+    "frames": 27168,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj78/meta/info.json",
+    "frames": 27041,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj79/meta/info.json",
+    "frames": 27145,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj80/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj81/meta/info.json",
+    "frames": 26806,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj82/meta/info.json",
+    "frames": 27137,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj83/meta/info.json",
+    "frames": 27172,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj84/meta/info.json",
+    "frames": 27105,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj85/meta/info.json",
+    "frames": 16516,
+    "fps": 30,
+    "episodes": 6
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj86/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj87/meta/info.json",
+    "frames": 27117,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj88/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj89/meta/info.json",
+    "frames": 27142,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj90/meta/info.json",
+    "frames": 27132,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj91/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj92/meta/info.json",
+    "frames": 27154,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj93/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj94/meta/info.json",
+    "frames": 15149,
+    "fps": 30,
+    "episodes": 6
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj95/meta/info.json",
+    "frames": 27162,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj96/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj97/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj98/meta/info.json",
+    "frames": 27167,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj99/meta/info.json",
+    "frames": 27136,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj100/meta/info.json",
+    "frames": 27130,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj101/meta/info.json",
+    "frames": 8479,
+    "fps": 30,
+    "episodes": 3
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj102/meta/info.json",
+    "frames": 27177,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj103/meta/info.json",
+    "frames": 27180,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj104/meta/info.json",
+    "frames": 26586,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj105/meta/info.json",
+    "frames": 27103,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj106/meta/info.json",
+    "frames": 27116,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj107/meta/info.json",
+    "frames": 5109,
+    "fps": 30,
+    "episodes": 2
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj108/meta/info.json",
+    "frames": 27105,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj109/meta/info.json",
+    "frames": 27120,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj110/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj111/meta/info.json",
+    "frames": 27158,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj112/meta/info.json",
+    "frames": 27139,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj113/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj114/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj115/meta/info.json",
+    "frames": 27177,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj116/meta/info.json",
+    "frames": 27143,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj117/meta/info.json",
+    "frames": 27137,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj118/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj119/meta/info.json",
+    "frames": 27153,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj120/meta/info.json",
+    "frames": 27142,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj121/meta/info.json",
+    "frames": 27142,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj122/meta/info.json",
+    "frames": 27187,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj123/meta/info.json",
+    "frames": 19643,
+    "fps": 30,
+    "episodes": 7
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_obj124/meta/info.json",
+    "frames": 10703,
+    "fps": 30,
+    "episodes": 4
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj1/meta/info.json",
+    "frames": 27029,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj2/meta/info.json",
+    "frames": 10718,
+    "fps": 30,
+    "episodes": 4
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj3/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj4/meta/info.json",
+    "frames": 27192,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj5/meta/info.json",
+    "frames": 27184,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj6/meta/info.json",
+    "frames": 22333,
+    "fps": 30,
+    "episodes": 8
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj7/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj8/meta/info.json",
+    "frames": 27038,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj9/meta/info.json",
+    "frames": 27159,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj10/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj11/meta/info.json",
+    "frames": 27175,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj12/meta/info.json",
+    "frames": 27186,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj13/meta/info.json",
+    "frames": 27158,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj14/meta/info.json",
+    "frames": 27010,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj15/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj16/meta/info.json",
+    "frames": 27147,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj17/meta/info.json",
+    "frames": 27262,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj18/meta/info.json",
+    "frames": 27228,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj19/meta/info.json",
+    "frames": 27085,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj20/meta/info.json",
+    "frames": 27073,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj21/meta/info.json",
+    "frames": 27234,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj22/meta/info.json",
+    "frames": 27225,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj23/meta/info.json",
+    "frames": 27209,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj24/meta/info.json",
+    "frames": 27299,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj25/meta/info.json",
+    "frames": 27173,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj26/meta/info.json",
+    "frames": 27059,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj27/meta/info.json",
+    "frames": 27167,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj28/meta/info.json",
+    "frames": 27165,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj29/meta/info.json",
+    "frames": 27033,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj30/meta/info.json",
+    "frames": 27169,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj31/meta/info.json",
+    "frames": 27172,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj32/meta/info.json",
+    "frames": 27243,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj33/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj34/meta/info.json",
+    "frames": 27280,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj35/meta/info.json",
+    "frames": 27081,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj36/meta/info.json",
+    "frames": 27181,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj37/meta/info.json",
+    "frames": 27194,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj38/meta/info.json",
+    "frames": 27204,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj39/meta/info.json",
+    "frames": 27190,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj40/meta/info.json",
+    "frames": 27226,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj41/meta/info.json",
+    "frames": 27167,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj42/meta/info.json",
+    "frames": 27200,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj43/meta/info.json",
+    "frames": 27175,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj44/meta/info.json",
+    "frames": 27161,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj45/meta/info.json",
+    "frames": 27197,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj46/meta/info.json",
+    "frames": 27003,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj47/meta/info.json",
+    "frames": 27179,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj48/meta/info.json",
+    "frames": 1917,
+    "fps": 30,
+    "episodes": 1
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj49/meta/info.json",
+    "frames": 27014,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj50/meta/info.json",
+    "frames": 27024,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj51/meta/info.json",
+    "frames": 27198,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj52/meta/info.json",
+    "frames": 27237,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj53/meta/info.json",
+    "frames": 27027,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj54/meta/info.json",
+    "frames": 27042,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj55/meta/info.json",
+    "frames": 27221,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj56/meta/info.json",
+    "frames": 27068,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj57/meta/info.json",
+    "frames": 27235,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj58/meta/info.json",
+    "frames": 27166,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj59/meta/info.json",
+    "frames": 27030,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj60/meta/info.json",
+    "frames": 27214,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj61/meta/info.json",
+    "frames": 27182,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj62/meta/info.json",
+    "frames": 27185,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj63/meta/info.json",
+    "frames": 27149,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj64/meta/info.json",
+    "frames": 27173,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj65/meta/info.json",
+    "frames": 27181,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj66/meta/info.json",
+    "frames": 27177,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj67/meta/info.json",
+    "frames": 19382,
+    "fps": 30,
+    "episodes": 7
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj68/meta/info.json",
+    "frames": 27278,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj69/meta/info.json",
+    "frames": 27223,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj70/meta/info.json",
+    "frames": 27000,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj71/meta/info.json",
+    "frames": 27218,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj72/meta/info.json",
+    "frames": 16144,
+    "fps": 30,
+    "episodes": 6
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj73/meta/info.json",
+    "frames": 27240,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj74/meta/info.json",
+    "frames": 27193,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj75/meta/info.json",
+    "frames": 27209,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj76/meta/info.json",
+    "frames": 27122,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj77/meta/info.json",
+    "frames": 27210,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj78/meta/info.json",
+    "frames": 27219,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj79/meta/info.json",
+    "frames": 27233,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj80/meta/info.json",
+    "frames": 27244,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj81/meta/info.json",
+    "frames": 27242,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj82/meta/info.json",
+    "frames": 27221,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj83/meta/info.json",
+    "frames": 27181,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/gs_mini/gs_mini_wo_marker_obj84/meta/info.json",
+    "frames": 27174,
+    "fps": 30,
+    "episodes": 10
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj1/meta/info.json",
+    "frames": 17069,
+    "fps": 30,
+    "episodes": 6
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj2/meta/info.json",
+    "frames": 16983,
+    "fps": 30,
+    "episodes": 6
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj3/meta/info.json",
+    "frames": 17040,
+    "fps": 30,
+    "episodes": 6
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj4/meta/info.json",
+    "frames": 17023,
+    "fps": 30,
+    "episodes": 6
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj5/meta/info.json",
+    "frames": 16967,
+    "fps": 30,
+    "episodes": 6
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj6/meta/info.json",
+    "frames": 17002,
+    "fps": 30,
+    "episodes": 6
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj7/meta/info.json",
+    "frames": 33000,
+    "fps": 30,
+    "episodes": 11
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj8/meta/info.json",
+    "frames": 25620,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj9/meta/info.json",
+    "frames": 25681,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj10/meta/info.json",
+    "frames": 25126,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj11/meta/info.json",
+    "frames": 364,
+    "fps": 30,
+    "episodes": 1
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj12/meta/info.json",
+    "frames": 21001,
+    "fps": 30,
+    "episodes": 8
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj13/meta/info.json",
+    "frames": 3001,
+    "fps": 30,
+    "episodes": 2
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj14/meta/info.json",
+    "frames": 1622,
+    "fps": 30,
+    "episodes": 1
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj15/meta/info.json",
+    "frames": 25868,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj16/meta/info.json",
+    "frames": 25683,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj17/meta/info.json",
+    "frames": 25699,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj18/meta/info.json",
+    "frames": 25697,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj19/meta/info.json",
+    "frames": 25684,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj20/meta/info.json",
+    "frames": 25715,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj21/meta/info.json",
+    "frames": 25586,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj22/meta/info.json",
+    "frames": 25354,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj23/meta/info.json",
+    "frames": 25111,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj24/meta/info.json",
+    "frames": 25283,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj25/meta/info.json",
+    "frames": 25625,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj26/meta/info.json",
+    "frames": 25708,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj27/meta/info.json",
+    "frames": 25216,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj28/meta/info.json",
+    "frames": 25600,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj29/meta/info.json",
+    "frames": 25052,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj30/meta/info.json",
+    "frames": 25101,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj31/meta/info.json",
+    "frames": 25273,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj32/meta/info.json",
+    "frames": 648,
+    "fps": 30,
+    "episodes": 1
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj33/meta/info.json",
+    "frames": 13161,
+    "fps": 30,
+    "episodes": 5
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj34/meta/info.json",
+    "frames": 4757,
+    "fps": 30,
+    "episodes": 2
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj35/meta/info.json",
+    "frames": 25503,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj36/meta/info.json",
+    "frames": 25549,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj37/meta/info.json",
+    "frames": 24990,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj38/meta/info.json",
+    "frames": 25740,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj39/meta/info.json",
+    "frames": 25171,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj40/meta/info.json",
+    "frames": 25646,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj41/meta/info.json",
+    "frames": 25640,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj42/meta/info.json",
+    "frames": 25237,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj43/meta/info.json",
+    "frames": 25619,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj44/meta/info.json",
+    "frames": 25700,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj45/meta/info.json",
+    "frames": 2554,
+    "fps": 30,
+    "episodes": 1
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj46/meta/info.json",
+    "frames": 25633,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj47/meta/info.json",
+    "frames": 25637,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj48/meta/info.json",
+    "frames": 25651,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj49/meta/info.json",
+    "frames": 25707,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj50/meta/info.json",
+    "frames": 25580,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj51/meta/info.json",
+    "frames": 25645,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj52/meta/info.json",
+    "frames": 25344,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj53/meta/info.json",
+    "frames": 25263,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj54/meta/info.json",
+    "frames": 25041,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj55/meta/info.json",
+    "frames": 25657,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj56/meta/info.json",
+    "frames": 25660,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj57/meta/info.json",
+    "frames": 25709,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj58/meta/info.json",
+    "frames": 25794,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj59/meta/info.json",
+    "frames": 25138,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj60/meta/info.json",
+    "frames": 24916,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj61/meta/info.json",
+    "frames": 14641,
+    "fps": 30,
+    "episodes": 5
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj62/meta/info.json",
+    "frames": 25626,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj63/meta/info.json",
+    "frames": 25489,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj64/meta/info.json",
+    "frames": 25651,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj65/meta/info.json",
+    "frames": 25363,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj66/meta/info.json",
+    "frames": 25085,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj67/meta/info.json",
+    "frames": 25629,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj68/meta/info.json",
+    "frames": 25691,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj69/meta/info.json",
+    "frames": 25656,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj70/meta/info.json",
+    "frames": 25647,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj71/meta/info.json",
+    "frames": 24452,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj72/meta/info.json",
+    "frames": 25712,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj73/meta/info.json",
+    "frames": 25319,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj74/meta/info.json",
+    "frames": 25635,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj75/meta/info.json",
+    "frames": 25641,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj76/meta/info.json",
+    "frames": 25503,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj77/meta/info.json",
+    "frames": 21000,
+    "fps": 30,
+    "episodes": 7
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj78/meta/info.json",
+    "frames": 10250,
+    "fps": 30,
+    "episodes": 4
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj79/meta/info.json",
+    "frames": 899,
+    "fps": 30,
+    "episodes": 1
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj80/meta/info.json",
+    "frames": 17041,
+    "fps": 30,
+    "episodes": 6
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj81/meta/info.json",
+    "frames": 21223,
+    "fps": 30,
+    "episodes": 8
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj82/meta/info.json",
+    "frames": 9526,
+    "fps": 30,
+    "episodes": 4
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj83/meta/info.json",
+    "frames": 18000,
+    "fps": 30,
+    "episodes": 6
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_no_mark_obj84/meta/info.json",
+    "frames": 21000,
+    "fps": 30,
+    "episodes": 7
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj1/meta/info.json",
+    "frames": 25453,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj2/meta/info.json",
+    "frames": 25489,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj3/meta/info.json",
+    "frames": 25126,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj4/meta/info.json",
+    "frames": 25551,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj5/meta/info.json",
+    "frames": 25592,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj6/meta/info.json",
+    "frames": 24000,
+    "fps": 30,
+    "episodes": 8
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj7/meta/info.json",
+    "frames": 25443,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj8/meta/info.json",
+    "frames": 25220,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj9/meta/info.json",
+    "frames": 24827,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj10/meta/info.json",
+    "frames": 25432,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj11/meta/info.json",
+    "frames": 25550,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj12/meta/info.json",
+    "frames": 25543,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj13/meta/info.json",
+    "frames": 25124,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj14/meta/info.json",
+    "frames": 24990,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj15/meta/info.json",
+    "frames": 25608,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj16/meta/info.json",
+    "frames": 25583,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj17/meta/info.json",
+    "frames": 25514,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj18/meta/info.json",
+    "frames": 25587,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj19/meta/info.json",
+    "frames": 25504,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj20/meta/info.json",
+    "frames": 25489,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj21/meta/info.json",
+    "frames": 25636,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj22/meta/info.json",
+    "frames": 25508,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj23/meta/info.json",
+    "frames": 25642,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj24/meta/info.json",
+    "frames": 25624,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj25/meta/info.json",
+    "frames": 25512,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj26/meta/info.json",
+    "frames": 25515,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj27/meta/info.json",
+    "frames": 25521,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj28/meta/info.json",
+    "frames": 24995,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj29/meta/info.json",
+    "frames": 25635,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj30/meta/info.json",
+    "frames": 25491,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj31/meta/info.json",
+    "frames": 25350,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj32/meta/info.json",
+    "frames": 5307,
+    "fps": 30,
+    "episodes": 2
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj33/meta/info.json",
+    "frames": 25541,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj34/meta/info.json",
+    "frames": 25591,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj35/meta/info.json",
+    "frames": 25462,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj36/meta/info.json",
+    "frames": 25637,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj37/meta/info.json",
+    "frames": 25501,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj38/meta/info.json",
+    "frames": 25540,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj39/meta/info.json",
+    "frames": 25531,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj40/meta/info.json",
+    "frames": 25590,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj41/meta/info.json",
+    "frames": 25472,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj42/meta/info.json",
+    "frames": 25546,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj43/meta/info.json",
+    "frames": 25630,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj44/meta/info.json",
+    "frames": 25605,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj45/meta/info.json",
+    "frames": 25559,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj46/meta/info.json",
+    "frames": 25522,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj47/meta/info.json",
+    "frames": 25480,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj48/meta/info.json",
+    "frames": 25505,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj49/meta/info.json",
+    "frames": 23336,
+    "fps": 30,
+    "episodes": 8
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj50/meta/info.json",
+    "frames": 25500,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj51/meta/info.json",
+    "frames": 25543,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj52/meta/info.json",
+    "frames": 21156,
+    "fps": 30,
+    "episodes": 8
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj53/meta/info.json",
+    "frames": 25920,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj54/meta/info.json",
+    "frames": 25934,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj55/meta/info.json",
+    "frames": 25886,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj56/meta/info.json",
+    "frames": 25867,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj57/meta/info.json",
+    "frames": 25775,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj58/meta/info.json",
+    "frames": 25825,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj59/meta/info.json",
+    "frames": 25746,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj60/meta/info.json",
+    "frames": 25878,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj61/meta/info.json",
+    "frames": 25781,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj62/meta/info.json",
+    "frames": 25857,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj63/meta/info.json",
+    "frames": 25620,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj64/meta/info.json",
+    "frames": 25857,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj65/meta/info.json",
+    "frames": 25723,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj66/meta/info.json",
+    "frames": 5861,
+    "fps": 30,
+    "episodes": 2
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj67/meta/info.json",
+    "frames": 25672,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj68/meta/info.json",
+    "frames": 25775,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj69/meta/info.json",
+    "frames": 25865,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj70/meta/info.json",
+    "frames": 25775,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj71/meta/info.json",
+    "frames": 25399,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj72/meta/info.json",
+    "frames": 25838,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj73/meta/info.json",
+    "frames": 25666,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_6*6_mark_obj74/meta/info.json",
+    "frames": 25311,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_7*7_mark_obj1/meta/info.json",
+    "frames": 25729,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_7*7_mark_obj2/meta/info.json",
+    "frames": 25729,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_7*7_mark_obj3/meta/info.json",
+    "frames": 24000,
+    "fps": 30,
+    "episodes": 8
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_7*7_mark_obj4/meta/info.json",
+    "frames": 25688,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_7*7_mark_obj5/meta/info.json",
+    "frames": 25776,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_7*7_mark_obj6/meta/info.json",
+    "frames": 25732,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_7*7_mark_obj7/meta/info.json",
+    "frames": 25753,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_7*7_mark_obj8/meta/info.json",
+    "frames": 25712,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_7*7_mark_obj9/meta/info.json",
+    "frames": 25812,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_7*7_mark_obj10/meta/info.json",
+    "frames": 25737,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj1/meta/info.json",
+    "frames": 25468,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj2/meta/info.json",
+    "frames": 25642,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj3/meta/info.json",
+    "frames": 25688,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj4/meta/info.json",
+    "frames": 25726,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj5/meta/info.json",
+    "frames": 25668,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj6/meta/info.json",
+    "frames": 25676,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj7/meta/info.json",
+    "frames": 25794,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj8/meta/info.json",
+    "frames": 25878,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj9/meta/info.json",
+    "frames": 25797,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj10/meta/info.json",
+    "frames": 25705,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj11/meta/info.json",
+    "frames": 25776,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj12/meta/info.json",
+    "frames": 25801,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj13/meta/info.json",
+    "frames": 25737,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj14/meta/info.json",
+    "frames": 25779,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj15/meta/info.json",
+    "frames": 25722,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj16/meta/info.json",
+    "frames": 25649,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj17/meta/info.json",
+    "frames": 25758,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj18/meta/info.json",
+    "frames": 25784,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj19/meta/info.json",
+    "frames": 25739,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj20/meta/info.json",
+    "frames": 25697,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj21/meta/info.json",
+    "frames": 25768,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj22/meta/info.json",
+    "frames": 25762,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj23/meta/info.json",
+    "frames": 25834,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj24/meta/info.json",
+    "frames": 25680,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj25/meta/info.json",
+    "frames": 25764,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj26/meta/info.json",
+    "frames": 25708,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj27/meta/info.json",
+    "frames": 25808,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj28/meta/info.json",
+    "frames": 25795,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj29/meta/info.json",
+    "frames": 25711,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj30/meta/info.json",
+    "frames": 25812,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj31/meta/info.json",
+    "frames": 25769,
+    "fps": 30,
+    "episodes": 9
+  },
+  {
+    "path": "taf_dataset/custom_designed/custom_designed_8*8_mark_obj32/meta/info.json",
+    "frames": 15829,
+    "fps": 30,
+    "episodes": 6
+  }
+]

@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>F02 实际数据样例</title><style>body{background:#0b1423;color:#e7edf7;font:16px system-ui;margin:16px}video{width:100%;max-height:80vh}p{line-height:1.7}</style><h1>F02 · 实际数据样例</h1><video controls playsinline preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video><p>实际读取FTP公开MotionTrans包中“按压红色骰子使其转动”的完整第0条episode：89帧，原始时间戳跨度4.400秒。左为机器人场景RGB，右为同一记录行的6维Inspire手力反馈转档值（可能经对齐插值，不是原始整数寄存器转储）。已追溯代码：fingertorque/thumbtorque来自gripper0_gripper_force，驱动读取forceAct寄存器，FTP显式标type=state；不把它当接触压力阵列，也不把这些转档状态值称为N或N·m。保持F扩展类。</p></html><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

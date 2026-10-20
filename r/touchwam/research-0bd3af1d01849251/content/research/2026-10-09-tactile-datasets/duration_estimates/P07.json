@@ -1,0 +1,37 @@
+{
+  "id": "P07",
+  "best_hours": 26.822041666666667,
+  "low_hours": 22.620043209876545,
+  "high_hours": 31.099819444444442,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "Sparsh公开原创DIGIT/GelSight力滑移库全部图像shards（含无接触），加论文49K姿态样本覆盖估算。",
+  "method_zh": "DIGIT API列39个图像PKL/12 batches；GelSight列39个处理后图像PKL/10 batches。已读DIGIT首shard=50,000帧、flat/batch_1总189,561帧。假定其余每个非末shard50K、未知末shard主值25K（1–50K范围），得DIGIT约1,664,561帧、GelSight约1,700,000帧。分别除论文原生60/25FPS；姿态49K按60Hz主值，合计约26.822h。",
+  "assumptions_zh": [
+    "50K上限/分块方式只实读验证一个图像shard；外推到全部两种传感器shards是核心假设，若分块规则不同，本范围也会失效。",
+    "范围是未知末shard1–50K的条件情景，非统计置信区间；不意味着全量帧数已经实测。",
+    "GelSight org_dataset_*与dataset_*为同源版本，计处理版一次；force/slip复用同批轨迹，按图像一次计。",
+    "论文T3的49K可能是单指展开样本或同步时间点；姿态低值按3指共享49K/3，高值按49K个时间点、30Hz，主值假设49K个60Hz时间点。",
+    "公开包保留大量无接触帧，因此不能把论文用于T1/T2评测的75K/125K标注样本直接作为全库大小。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/facebook/digit-force-estimation",
+      "evidence": "官方API：39图像PKL、12 batches；本次实读flat/batch_1第一PKL50,000图像，标签in_contact长189,561。"
+    },
+    {
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation",
+      "evidence": "官方API：39个dataset_gelsight_*.pkl、10 batches；org_dataset_gelsight_*为另一版本，未重复计。"
+    },
+    {
+      "url": "https://arxiv.org/html/2410.24090",
+      "evidence": "§5 T1：DIGIT60fps、GelSight25fps；Table3 T3 pose49K samples。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方公开数据入口可匿名访问。",
+  "measured_subset_hours": 0.8775972222222223,
+  "estimated_frames_digit": 1664561,
+  "estimated_frames_gelsight": 1700000,
+  "checked_at": "2026-10-19"
+}

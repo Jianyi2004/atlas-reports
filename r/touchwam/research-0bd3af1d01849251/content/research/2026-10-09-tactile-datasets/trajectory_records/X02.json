@@ -1,0 +1,67 @@
+{
+  "id": "X02",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "name": "aether_v1/1763700794737.zarr",
+    "source_url": "https://huggingface.co/datasets/wkzhang/EgoTac-SC",
+    "download_url": "https://hf-mirror.com/datasets/wkzhang/EgoTac-SC/resolve/main/aether_v1/aether_v1-part-0001.zip",
+    "local_raw_paths": [
+      "trajectory_work/X02/selected-complete-episode.npz"
+    ],
+    "complete_episode": true,
+    "frames": 219,
+    "fps": null,
+    "duration_seconds": 7.233,
+    "duration_method": "(timestamps[-1]-timestamps[0])/1000，原值为Unix毫秒",
+    "modalities": [
+      "ego RGB224×224",
+      "left/right finger tactile5×12",
+      "left/right palm tactile72",
+      "timestamps"
+    ],
+    "sync": "同一Zarr行配对；相机与公共timestamp的差值约0.03–46ms；原始RGB与触觉均完整219帧。",
+    "notes": "下载了整条记录的视觉/触觉与时间戳；未下载其他MANO/pose派生模态。未证明SC与FTP三域对应关系。",
+    "downloaded_bytes": 18986192,
+    "sha256": {
+      "trajectory_work/X02/selected-complete-episode.npz": "cc6b44ac4ca95592b911b05105861f63a40b87b30d27da9543ff5b209f7d8dd6"
+    }
+  },
+  "media": {
+    "html": "trajectories/X02/index.html",
+    "video": "trajectories/X02/preview.mp4",
+    "poster": "trajectories/X02/poster.webp",
+    "caption_zh": "实际下载EgoTac-SC中1763700794737的一条完整219帧记录，时间戳首末跨度7.233秒。左为原始ego_cam_rgb（未用重着色视频），中/右为双手原始finger与palm触觉通道，整段统一色标；手掌72通道仅排成6×12格方便观察，不是手掌几何布局。按同一记录行展示，画面列出相机与公共时间戳差值（约0.03–46ms）；触觉值单位未提供，不能称为N或Pa。SC与FTP三个来源的对应关系仍未核实，保持X类待核实。",
+    "preview_seconds": 7.266178899082568
+  },
+  "duration": {
+    "metadata_hours": 0.46134741536458335,
+    "basis": "metadata_sum",
+    "scope_zh": "仅aether_v1-part-0001.zip中40条录制；全库857条总时长未知",
+    "explanation_zh": "逐条读取首个ZIP全部40个Zarr的timestamps，均为Unix毫秒且严格递增；Σ末帧减首帧=1660.850695秒≈0.461347小时（约27.68分钟），40条记录时间区间无相互重叠。仅核验40/857条，不能把此值当全库时长；也不外推45个ZIP。",
+    "sources": [
+      {
+        "url": "https://hf-mirror.com/datasets/wkzhang/EgoTac-SC/resolve/main/aether_v1/aether_v1-part-0001.zip",
+        "evidence": "实际审计40条timestamps数组，详见trajectory_work/X02/duration-audit.json；毫秒单位按13位Unixepoch与约33ms步长确认。"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://hf-mirror.com/datasets/wkzhang/EgoTac-SC/resolve/main/aether_v1/aether_v1-part-0001.zip",
+      "status": 206,
+      "detail": "ZIP Range提取、Zarr Blosc解码；episode_ends=[219]；所选7项数组全部完整读取。"
+    }
+  ],
+  "blockers": [
+    "与EgoTac-Open/Kitchen/Hotel的对应关系及独立采集来源身份尚未核实。"
+  ],
+  "reuses": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  },
+  "audit_files": [
+    "trajectory_audits/X02/duration-audit.json"
+  ]
+}

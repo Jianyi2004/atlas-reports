@@ -1,0 +1,24 @@
+{
+  "id": "X06",
+  "best_hours": 0.032527777777777774,
+  "low_hours": 0.016263888888888887,
+  "high_hours": 0.09758333333333334,
+  "kind": "static_equivalent",
+  "confidence": "low",
+  "scope_zh": "公开HUST-Tac.zip按内容去重后3,513张触觉图",
+  "method_zh": "3,946个PNG文件按SHA-256去重3,513内容；以30fps算0.032528等效小时，10–60fps敏感性范围0.016264–0.097583h。",
+  "assumptions_zh": [
+    "静态分类数据没有真实时间轴；这里只给帧预算等效时长，不计连续录制。"
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/HUSTOROP/Hust-Tac-Dataset",
+      "evidence": "实际ZIP枚举3,946 PNG，3,513个唯一SHA-256；README称3,949与文件不完全一致。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "可直接取得静态图；连续轨迹总量贡献0。",
+  "checked_at": "2026-10-19",
+  "equivalent_frames": 3513,
+  "equivalent_fps": 30
+}

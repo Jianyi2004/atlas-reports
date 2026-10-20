@@ -1,0 +1,55 @@
+{
+  "id": "U02",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "name": "fluid_transfer.zarr.zip / episode0",
+    "source_url": "https://huggingface.co/datasets/binghaohuang-robot/touch_in_the_wild-dataset",
+    "download_url": "https://hf-mirror.com/datasets/binghaohuang-robot/touch_in_the_wild-dataset/resolve/main/four_tasks/fluid_transfer/fluid_transfer.zarr.zip",
+    "local_raw_paths": [
+      "trajectory_work/U02/raw/episode0.npz"
+    ],
+    "complete_episode": true,
+    "frames": 1242,
+    "modalities": [
+      "wrist RGB",
+      "camera0_tactile",
+      "robot state"
+    ],
+    "sync": "处理后Zarr相同索引；原始时间同步精度和处理后FPS未确认。",
+    "notes": "当前所取任务meta显示186条episode、252508帧；这不是整个来源的全量计时。 发布的12×64处理数组范围为0–1，本样例多数通道为0、非零主要集中前4列；传感器空间映射和处理方法未核实，不能把整张网格当作均匀有效压力面。",
+    "downloaded_bytes": 136238419,
+    "sha256": {
+      "trajectory_work/U02/raw/episode0.npz": "948d937ee76e7f4249cc9e12c1f83304941e9567e55a3a9ba57394b038a91a48"
+    }
+  },
+  "media": {
+    "html": "trajectories/U02/index.html",
+    "video": "trajectories/U02/preview.mp4",
+    "poster": "trajectories/U02/poster.webp",
+    "caption_zh": "完整读取Touch in the Wild选定任务的第0条episode（1242帧），按Zarr同一索引并排显示RGB与触觉；公开处理数组没有提供可核实的逐帧时间戳/FPS。预览每3帧取1帧、10个展示帧/秒，仅为帧序浏览，播放秒数不能当交互秒数。 触觉为12×64已发布处理数组（本例0–1，多数通道为0），色标按本条全程最小/最大值固定，不推断N/Pa。 网格按存储顺序展示，不代表已经核实的物理压力面。",
+    "preview_seconds": 41.4
+  },
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "公开数据集总时长",
+    "explanation_zh": "未找到可核实的总时长；样例长度不外推全库。",
+    "sources": []
+  },
+  "evidence": [
+    {
+      "url": "https://huggingface.co/datasets/binghaohuang-robot/touch_in_the_wild-dataset",
+      "status": 206,
+      "detail": "实际Range提取并解码JPEG-XL chunks，episode_ends确定完整序列边界；未以缺失chunk的fill_value当观测。"
+    }
+  ],
+  "blockers": [],
+  "reuses": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  },
+  "audit_files": [
+    "trajectory_audits/U02/extracted.json"
+  ]
+}

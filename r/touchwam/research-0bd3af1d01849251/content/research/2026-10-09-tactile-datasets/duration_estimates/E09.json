@@ -1,0 +1,29 @@
+{
+  "id": "E09",
+  "best_hours": 100.0,
+  "low_hours": 100.0,
+  "high_hours": 100.0,
+  "kind": "reported",
+  "confidence": "high",
+  "scope_zh": "HumanTouch官方首版约100小时、10任务的公开release规模。",
+  "method_zh": "保守沿用作者明确公布的initial release ~100 hours；不把论文1000小时、未来发布量或尚未全量核验的132.754小时meta推算代替公开主值。",
+  "assumptions_zh": [
+    "100小时为作者的近似发布规模，low=high=100仅表示没有虚构误差范围，不表示实测到小时或完整同步有效100小时。",
+    "各X001–X010 meta.total_frames/60合计132.753972h，但episode文件数量与meta不一致，作为替代元数据口径单列。"
+  ],
+  "sources": [
+    {
+      "url": "https://xsparkai.com/sparklab/humantouch/",
+      "evidence": "initial release ~100 hours / 10 canonical tasks"
+    },
+    {
+      "url": "https://huggingface.co/datasets/chuqiaoLyu/Xspark-HumanTouch/blob/main/X001/meta/info.json",
+      "evidence": "各X001–X010 meta.total_frames / 60，总计132.753972小时"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方HF公开可读，已下载完整1597帧样本；全库尚未逐文件审计。",
+  "checked_at": "2026-10-19",
+  "source_total_hours": 1000,
+  "source_metadata_hours": 132.7539722222
+}

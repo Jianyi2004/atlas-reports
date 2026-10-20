@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>EgoPressure | left index high pressure</title><style>body{margin:0;background:#101820;color:#e5eef8;font:16px/1.7 system-ui;padding:20px;max-width:1160px}video{width:100%;max-height:80vh;background:black}a{color:#64d5cc}h1{font-size:22px}</style><h1>EgoPressure | left index high pressure</h1><video controls preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video><p>EgoPressure p_001_index_press_high_x5_left：已下载完整413帧、13.767秒的cam-d第一视角JPEG与Sensel压力数据，按公共frame编号1–413逐帧匹配，30Hz。右侧为pressure.parquet/force原始105×185网格；未额外将数值转换为牛顿。首个校准样本压力全零，故展示实际高压食指接触任务。</p><p><a href="https://huggingface.co/datasets/eth-siplab/EgoPressure" target="_blank">原始数据来源</a> · <a href="preview.mp4" download>下载可视化 MP4</a></p></html><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

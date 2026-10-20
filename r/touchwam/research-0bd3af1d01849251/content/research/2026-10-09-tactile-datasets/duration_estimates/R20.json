@@ -1,0 +1,30 @@
+{
+  "id": "R20",
+  "best_hours": 7.745537084660834,
+  "low_hours": 7.745537084660834,
+  "high_hours": 7.745537084660834,
+  "kind": "metadata",
+  "confidence": "high",
+  "scope_zh": "Doro/Jaco OptoForce原始训练2,000条+real-life测试120条；增强版不重复计。",
+  "method_zh": "两个完整CSV共2,120个header的stamp end−stamp start(ns)用Decimal计算后求和=7.745537h。",
+  "assumptions_zh": [
+    "每条50个数值是重采样点，不是50Hz。",
+    "训练与测试按不同原始header时间区间计；未加入Data augmentation的副本。"
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/philipmaus/Tactile_Object_Classification/blob/main/000_training_data.csv",
+      "evidence": "2,000条原始训练，7.310921h。"
+    },
+    {
+      "url": "https://github.com/philipmaus/Tactile_Object_Classification/blob/main/000_real_life_data.csv",
+      "evidence": "120条真实测试，0.434616h。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "公开下载入口已核查，已有真实样本下载。",
+  "audit_files": [
+    "duration_estimates/work_robot/R20_audit.json"
+  ],
+  "checked_at": "2026-10-19"
+}

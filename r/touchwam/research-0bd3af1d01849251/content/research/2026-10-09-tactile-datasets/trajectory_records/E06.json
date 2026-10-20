@@ -1,0 +1,58 @@
+{
+  "id": "E06",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "name": "episode_000000",
+    "source_url": "https://huggingface.co/datasets/OpenGraphLabs-Research/ego-tactile-manipulation",
+    "download_url": "https://huggingface.co/datasets/OpenGraphLabs-Research/ego-tactile-manipulation/resolve/main/videos/observation.images.ego/chunk-000/file-000.mp4",
+    "local_raw_paths": [
+      "trajectory_work/E06/data.parquet",
+      "trajectory_work/E06/rgb.mp4",
+      "trajectory_work/E06/episodes.parquet"
+    ],
+    "complete_episode": true,
+    "frames": 4369,
+    "fps": 30,
+    "duration_seconds": 145.63333333333333,
+    "duration_method": "4369帧/30fps，完整下载；可视化裁前45秒",
+    "modalities": [
+      "ego RGB",
+      "双手160触觉通道"
+    ],
+    "sync": "episode metadata视频0–145.633秒对应episode0帧号",
+    "sha256": {
+      "trajectory_work/E06/data.parquet": "292765bbc2537e3a66785ba57aeb12aa04f48d2ae1afce81818a13f0929e4dc9",
+      "trajectory_work/E06/rgb.mp4": "b1b293e37b87a110df11671f4447761e5544c3ee718b29ec53ce6b800acbed12",
+      "trajectory_work/E06/episodes.parquet": "0b97f2d80d1b586035096cabbce485730b3a67c5e0a1b9583b3316573a7517f5"
+    },
+    "downloaded_bytes": 193750701
+  },
+  "media": {
+    "html": "trajectories/E06/index.html",
+    "video": "trajectories/E06/preview.mp4",
+    "poster": "trajectories/E06/poster.webp",
+    "caption_zh": "OpenGraph episode 0：已下载完整4369帧、145.633秒的ego RGB与双手160通道压力，30Hz。报告播放前45秒，降采样10fps；每手按五指4×4传感器依次横向排列（4×20），保持每指网格，未人为画成手掌。视频与Parquet通过LeRobot episode metadata对齐。",
+    "preview_seconds": 45.0
+  },
+  "duration": {
+    "released_hours": 1.28,
+    "metadata_hours": 1.2836018518518517,
+    "basis": "metadata_sum",
+    "scope_zh": "1.28360小时（官网四舍五入1.28小时）",
+    "explanation_zh": "138,629帧/30Hz，不将90Hz原始压力或双手重复相加。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/OpenGraphLabs-Research/ego-tactile-manipulation/blob/main/meta/info.json",
+        "evidence": "138629 frames /30fps,72episodes"
+      }
+    ]
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "method": "MP4帧数/可播放性检查与八项poster拼图人工核查"
+  }
+}

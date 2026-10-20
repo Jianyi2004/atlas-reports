@@ -1,0 +1,57 @@
+{
+  "id": "R18",
+  "checked_at": "2026-10-19",
+  "status": "tactile_only",
+  "sample": {
+    "source_url": "https://github.com/ARQ-CRISP/slip_detection_dataset_2021",
+    "local_raw_paths": [
+      "trajectory_work/R18/brush.h5"
+    ],
+    "downloaded_bytes": 41105856,
+    "sha256": {
+      "trajectory_work/R18/brush.h5": "a2aef56bf4cfc5e2d17ae09772295cb207c733e3a73059913939ba5a7a1e2139"
+    },
+    "name": "GGCNN2/brush/Pose1/Exp1",
+    "download_url": "https://github.com/ARQ-CRISP/slip_detection_dataset_2021/raw/refs/heads/main/data/slipDataset_brush_tactile.h5",
+    "complete_episode": true,
+    "frames": 635,
+    "duration_seconds": 3.522143602371216,
+    "duration_method": "tactile_timestamps ms span",
+    "modalities": [
+      "uSkin18x3",
+      "slip labels"
+    ]
+  },
+  "media": {
+    "html": "trajectories/R18/index.html",
+    "video": "trajectories/R18/preview.mp4",
+    "poster": "trajectories/R18/poster.webp",
+    "caption_zh": "完整brush抓取试验635帧，展示18个uSkin通道Z读数；单位为原始传感器响应。原HDF5不含RGB，只发布触觉和事件标签。 红色游标按原时间推进；无对应RGB，未用项目图片冒充同步视觉。",
+    "preview_seconds": 3.522143602371216
+  },
+  "duration": {
+    "basis": "file_audit",
+    "scope_zh": "brush物体的30条试验，非3物体全库",
+    "explanation_zh": "完整brush.h5读取30条试验时间戳，合计231.539秒（0.064小时）。其余两物体未按文件汇总，不外推。",
+    "sources": [
+      {
+        "url": "https://github.com/ARQ-CRISP/slip_detection_dataset_2021/tree/main/data",
+        "evidence": "brush: 30 experiment timestamp spans sum=231.53903102874756 seconds"
+      }
+    ],
+    "metadata_hours": 0.06431639750798543
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "validation": "原始schema/数组范围已读取；实际配对关系按数据字段核对；海报人工检查；视频通过ffprobe。",
+    "video_probe": {
+      "width": 960,
+      "height": 420,
+      "duration": "3.522144",
+      "nb_frames": "212"
+    }
+  }
+}

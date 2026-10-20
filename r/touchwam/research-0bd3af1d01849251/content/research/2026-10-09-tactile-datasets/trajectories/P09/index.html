@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GelSLAM · tracking / hammer0</title><style>body{font:16px system-ui;background:#101926;color:#eaf1fc;margin:0;padding:20px;max-width:1100px}video,img{max-width:100%;width:100%;border-radius:8px}p{line-height:1.7}input{width:50%}button{padding:8px}</style><h2>GelSLAM · tracking / hammer0</h2><p>完整下载GelSLAM tracking/hammer0（647帧、25fps、25.88秒）。左为原始GelSight视频；右为同帧动捕相对位姿的平移分量。发布归档中未找到外部webcam流，右侧不是场景视频。</p><video controls preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video></html><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

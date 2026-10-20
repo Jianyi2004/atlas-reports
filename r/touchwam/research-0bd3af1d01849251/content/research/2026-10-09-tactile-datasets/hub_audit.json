@@ -3491,5 +3491,20 @@
         "size": 4884
       }
     ]
+  },
+  {
+    "repo": "chuqiaoLyu/Xspark-HumanTouch",
+    "metadata_status": 200,
+    "gated": false,
+    "sha": "81822a10cac5def2638db546eaeced581d71a8b5",
+    "license": "CC-BY-NC-4.0",
+    "license_source": "https://www.modelscope.cn/datasets/chuqiaoLyu/Xspark-HumanTouch",
+    "checked_at": "2026-10-19",
+    "file_count": 88085,
+    "sample_files": [
+      "X001/data/chunk-000/episode_000001.parquet",
+      "X001/meta/info.json"
+    ],
+    "detailed_audit": "humantouch_audit.json"
   }
 ]

@@ -1,0 +1,39 @@
+{
+  "id": "P06",
+  "checked_at": "2026-10-19",
+  "status": "blocked",
+  "sample": {
+    "source_url": "https://github.com/rpl-cmu/YCB-Slide",
+    "download_url": "https://drive.usercontent.google.com/download?id=1lgvUTAwj767dKUwIiEqlIpbkjvrfVVFq&export=download&confirm=t"
+  },
+  "media": {},
+  "duration": {
+    "released_hours": 0.8333333333333334,
+    "paper_hours": null,
+    "metadata_hours": null,
+    "basis": "official_reported",
+    "scope_zh": "真实Real子集50条交互，不含仿真",
+    "explanation_zh": "官方明确50条真实轨迹、每条60秒、30Hz，因此约3,000秒=50分钟≈0.833小时。",
+    "sources": [
+      {
+        "url": "https://github.com/rpl-cmu/YCB-Slide",
+        "evidence": "record60secs trajectories at30Hz;five logs per-object;50 sliding interactions"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://drive.usercontent.google.com/download?id=1lgvUTAwj767dKUwIiEqlIpbkjvrfVVFq&export=download&confirm=t",
+      "status": null,
+      "detail": "本机30秒连接超时；4090二次核验TLS握手15秒超时。HF检索ycb-slide无结果。"
+    }
+  ],
+  "blockers": [
+    "官方真实数据仅提供GoogleDrive对象归档；本机与4090下载连接超时，未取得实际轨迹；不以项目演示GIF替代。"
+  ],
+  "reuses": [],
+  "review": {
+    "raw_read": false,
+    "render_checked": false
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "E07",
+  "best_hours": 3.374920317232609,
+  "low_hours": 3.3745727276802064,
+  "high_hours": 3.7456097202830843,
+  "kind": "metadata",
+  "confidence": "medium",
+  "scope_zh": "Touch and Go公开转换副本中实际同时存在RGB与GelSight文件的39条记录。",
+  "method_zh": "逐核对完整仓库18591条siblings及touchandgo子树175项，无分页遗漏；138条索引中仅39条具备两个视频文件。对这39条逐求time_scene/time_tactile交集并加中位末帧间隔=3.374920小时；仅首末交集3.374573小时，下界；视频容器名义时长合计3.745610小时作为另一时钟口径上界。",
+  "assumptions_zh": [
+    "来源是非作者公开转换副本，未独立审核从官方原视频到转换时间戳的过程。",
+    "原先138条duration_s之和14.607414h包含未发布文件，不能当可获取完整配对时长；完整索引真实时钟约13.1619h也不能全部计入当前可取量。",
+    "同源数据也出现在A05聚合库，跨库汇总必须去重。",
+    "另有15条仅触觉视频可取得，按其metadata时钟含末帧约2.076667小时；全部54条可取触觉合计5.451587小时。另14条只有RGB，不计触觉量。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/api/datasets/yxma/tactile-video-pretrain",
+      "evidence": "完整API 18591 siblings；touchandgo107文件，68目录中的39目录有双模态"
+    },
+    {
+      "url": "https://huggingface.co/datasets/yxma/tactile-video-pretrain/blob/main/tactile_rgb/train-00000-of-00001.parquet",
+      "evidence": "138条source=touchandgo；读取逐帧time_scene/time_tactile，39条配对可用"
+    },
+    {
+      "url": "https://touch-and-go.github.io/",
+      "evidence": "原始官方项目/Drive入口；当前网络未取全量"
+    }
+  ],
+  "availability": "mirror",
+  "availability_note_zh": "已确认实际文件存在的公开转换子集；原Drive全量未下载。",
+  "checked_at": "2026-10-19",
+  "source_index_nominal_hours": 14.607414486755927,
+  "source_index_clock_hours": 13.161901741623879,
+  "tactile_only_or_paired_available_hours": 5.451586947904692,
+  "reuses": [
+    "A05"
+  ],
+  "audit_files": [
+    "duration_estimates/evidence/E07_all_clock_spans.json",
+    "duration_estimates/evidence/A05_full_repository_files.json",
+    "duration_estimates/evidence/E07_tree.txt"
+  ],
+  "additional_tactile_only_episodes": 15,
+  "additional_tactile_only_hours": 2.076666630672084,
+  "all_tactile_hours": 5.451586947904692
+}

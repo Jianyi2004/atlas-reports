@@ -1,0 +1,54 @@
+{
+  "id": "E02",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "name": "p_001/p_001_index_press_high_x5_left",
+    "source_url": "https://huggingface.co/datasets/eth-siplab/EgoPressure",
+    "download_url": "https://huggingface.co/datasets/eth-siplab/EgoPressure/resolve/main/data/p_001/p_001_index_press_high_x5_left/pressure.parquet",
+    "local_raw_paths": [
+      "trajectory_work/E02/press-pressure.parquet",
+      "trajectory_work/E02/press-rgb.parquet"
+    ],
+    "complete_episode": true,
+    "frames": 413,
+    "fps": 30,
+    "duration_seconds": 13.766666666666667,
+    "duration_method": "413配对frame /30Hz",
+    "modalities": [
+      "cam-d ego RGB",
+      "105x185触觉压力网格"
+    ],
+    "sync": "两Parquet的frame数组逐项相同，按30Hz公共帧号播放",
+    "sha256": {
+      "trajectory_work/E02/press-pressure.parquet": "b5bd03af00bf3b107f6eab5cabc8db5a0d0267814c1d1873d54ba9705e22d545",
+      "trajectory_work/E02/press-rgb.parquet": "f39f2da3e299912fa08c072a968c8677698cdfe0d3dc94260edc1b579f05f3b5"
+    },
+    "downloaded_bytes": 107481459
+  },
+  "media": {
+    "html": "trajectories/E02/index.html",
+    "video": "trajectories/E02/preview.mp4",
+    "poster": "trajectories/E02/poster.webp",
+    "caption_zh": "EgoPressure p_001_index_press_high_x5_left：已下载完整413帧、13.767秒的cam-d第一视角JPEG与Sensel压力数据，按公共frame编号1–413逐帧匹配，30Hz。右侧为pressure.parquet/force原始105×185网格；未额外将数值转换为牛顿。首个校准样本压力全零，故展示实际高压食指接触任务。",
+    "preview_seconds": 13.8
+  },
+  "duration": {
+    "metadata_hours": 5.833333333333333,
+    "basis": "official_reported",
+    "scope_zh": "约5.83小时（由官方约630K单路帧/30Hz推算）",
+    "explanation_zh": "官网每路约630K帧、8个同步相机。只计算单路时间，不能用约5M多相机帧除30Hz；含校准及无接触序列，非全部接触有效时长。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/eth-siplab/EgoPressure/blob/main/README.md",
+        "evidence": "≈630K per camera;8 synchronized views;30Hz"
+      }
+    ]
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  }
+}

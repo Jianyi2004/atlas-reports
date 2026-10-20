@@ -1,0 +1,60 @@
+{
+  "id": "P10",
+  "checked_at": "2026-10-19",
+  "status": "static_sample",
+  "sample": {
+    "name": "depth_reconstruction/quantitative_real_gan/*_real.png",
+    "source_url": "https://github.com/RVSATHU/GelSight-Sim2Real",
+    "download_url": "https://api.github.com/repos/RVSATHU/GelSight-Sim2Real/contents/depth_reconstruction/quantitative_real_gan/sphere_0.5_real.png?ref=master",
+    "local_raw_paths": [
+      "trajectory_work/P10/background_real.png",
+      "trajectory_work/P10/sphere_0.5_real.png"
+    ],
+    "downloaded_bytes": 224559,
+    "sha256": {
+      "trajectory_work/P10/background_real.png": "2b7426848bed12e8caa0b7d77e8473904149ab89bcf3cf3c6fa38a735bdf4e94",
+      "trajectory_work/P10/sphere_0.5_real.png": "fbafa20b322815e3f059fbc237b698bacec87f729921db751b8d471f6f0d0b7c"
+    },
+    "complete_episode": false,
+    "frames": 1,
+    "modalities": [
+      "real optical tactile"
+    ],
+    "notes": "作者同论文公开的定量重建输入样本；并非已下载完整训练A域。"
+  },
+  "media": {
+    "html": "trajectories/P10/index.html",
+    "poster": "trajectories/P10/poster.webp",
+    "caption_zh": "下载作者GitHub仓库中的真实背景background_real.png和真实球接触sphere_0.5_real.png，来自深度重建定量试验输入；*_real为实测图，未用GAN输出冒充真实触觉。该数据为静态样本，不是轨迹，也没有外部RGB。完整A域Drive归档本次连接超时。"
+  },
+  "duration": {
+    "released_hours": null,
+    "paper_hours": null,
+    "metadata_hours": null,
+    "basis": "not_temporal",
+    "scope_zh": "全库",
+    "explanation_zh": "发布协议为每物体1,200张真实/仿真静态触觉图，CycleGAN不要求配对连续序列；不存在可直接定义的轨迹总时长。",
+    "sources": [
+      {
+        "url": "https://github.com/RVSATHU/GelSight-Sim2Real",
+        "evidence": "发布协议为每物体1,200张真实/仿真静态触觉图，CycleGAN不要求配对连续序列；不存在可直接定义的轨迹总时长。"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://api.github.com/repos/RVSATHU/GelSight-Sim2Real/contents/depth_reconstruction/quantitative_real_gan/sphere_0.5_real.png?ref=master",
+      "status": 200,
+      "detail": "通过GitHub contents API读取真实PNG字节。"
+    }
+  ],
+  "blockers": [
+    "原始A域Drive归档连接超时。",
+    "静态样本，无场景RGB或轨迹。"
+  ],
+  "reuses": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "best_hours": 15.080688194444443,
+  "low_hours": 12.037938478009258,
+  "high_hours": 18.71773111111111,
+  "groups": {
+    "Home": {
+      "population": 1145,
+      "sample_n": 40,
+      "mean_frames": 645.125,
+      "min_frames": 75,
+      "max_frames": 5019
+    },
+    "Office": {
+      "population": 191,
+      "sample_n": 40,
+      "mean_frames": 449.3,
+      "min_frames": 49,
+      "max_frames": 2111
+    },
+    "Outdoor": {
+      "population": 157,
+      "sample_n": 40,
+      "mean_frames": 1502.325,
+      "min_frames": 117,
+      "max_frames": 9496
+    },
+    "Retail": {
+      "population": 127,
+      "sample_n": 40,
+      "mean_frames": 2537.425,
+      "min_frames": 136,
+      "max_frames": 9674
+    },
+    "Workbench": {
+      "population": 313,
+      "sample_n": 40,
+      "mean_frames": 786.3,
+      "min_frames": 49,
+      "max_frames": 5902
+    }
+  },
+  "fps_assumption": 30,
+  "bootstrap_replicates": 20000
+}

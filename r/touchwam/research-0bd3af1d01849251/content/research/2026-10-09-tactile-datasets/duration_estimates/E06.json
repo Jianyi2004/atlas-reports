@@ -1,0 +1,22 @@
+{
+  "id": "E06",
+  "best_hours": 1.2836018518518517,
+  "low_hours": 1.2829351851851851,
+  "high_hours": 1.2836018518518517,
+  "kind": "metadata",
+  "confidence": "high",
+  "scope_zh": "OpenGraph当前72条发布episode的同步RGB—触觉时间轴。",
+  "method_zh": "meta.total_frames=138629、fps=30：138629/30/3600=1.283602小时；按每段只计首末间隔的下界(138629−72)/30/3600=1.282935小时。",
+  "assumptions_zh": [
+    "只计一个同步时间轴，不把双手、图像流或90Hz原始压力重复加时。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/OpenGraphLabs-Research/ego-tactile-manipulation/blob/main/meta/info.json",
+      "evidence": "138629 frames /30fps,72episodes"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方公开HF元数据；完整episode0已实际下载。",
+  "checked_at": "2026-10-19"
+}

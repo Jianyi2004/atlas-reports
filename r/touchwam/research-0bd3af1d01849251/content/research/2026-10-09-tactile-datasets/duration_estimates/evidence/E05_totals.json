@@ -1,0 +1,21 @@
+{
+  "episodes": 767,
+  "frames": 314100,
+  "nominal_seconds": 20940.0,
+  "timestamp_span_seconds": 21191.86991095543,
+  "plus_one_frame_seconds": 21243.003244288764,
+  "subsets": {
+    "gloved_hand": {
+      "episodes": 692,
+      "frames": 281185,
+      "hours_at_15fps": 5.20712962962963,
+      "timestamp_span_hours": 5.269172825482157
+    },
+    "bare_hand": {
+      "episodes": 75,
+      "frames": 32915,
+      "hours_at_15fps": 0.6095370370370371,
+      "timestamp_span_hours": 0.617457705338796
+    }
+  }
+}

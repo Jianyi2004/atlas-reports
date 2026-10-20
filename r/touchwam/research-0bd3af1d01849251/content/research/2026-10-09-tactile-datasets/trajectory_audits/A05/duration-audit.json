@@ -1,0 +1,14 @@
+{
+  "freetacman": {
+    "streams": 11965,
+    "stream_hours": 29.708092592631775,
+    "unique_rgb_files": 6337,
+    "unique_interaction_hours": 15.697101851871444
+  },
+  "touchandgo": {
+    "streams": 138,
+    "stream_hours": 14.607414486755927,
+    "unique_rgb_files": 138,
+    "unique_interaction_hours": 14.607414486755927
+  }
+}

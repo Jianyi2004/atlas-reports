@@ -1,0 +1,58 @@
+{
+  "id": "H05",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "name": "episode 0 in chunk-000/file-0000",
+    "source_url": "https://huggingface.co/datasets/Tachintech/Fixed_Viewpoint_Tactile_Dataset",
+    "download_url": "https://huggingface.co/datasets/Tachintech/Fixed_Viewpoint_Tactile_Dataset/resolve/main/videos/observation.images.color/chunk-000/file-0000.mp4",
+    "local_raw_paths": [
+      "media_work/h05-raw.bin",
+      "trajectory_work/H05/rgb.mp4",
+      "trajectory_work/H05/episodes.parquet"
+    ],
+    "complete_episode": true,
+    "frames": 474,
+    "fps": 20,
+    "duration_seconds": 23.7,
+    "duration_method": "meta.length474 / 20fps",
+    "modalities": [
+      "固定RGB",
+      "20路触觉，展示4路"
+    ],
+    "sync": "LeRobot v3 meta视频from/to_timestamp与episode_index匹配",
+    "sha256": {
+      "media_work/h05-raw.bin": "703f1da213301d109c2987ee299f505bfd2f9dce14e1a8ffe2bb1872243cfbf5",
+      "trajectory_work/H05/rgb.mp4": "7b1ab45ee3f58b45bcb847571c137322471a3763074a47e767c9c49c5c6a1505",
+      "trajectory_work/H05/episodes.parquet": "3a339a168e2dffb98502ed698b6349fd49b4d787aea1c364233dc2f080586c8f"
+    },
+    "downloaded_bytes": 13638811
+  },
+  "media": {
+    "html": "trajectories/H05/index.html",
+    "video": "trajectories/H05/preview.mp4",
+    "poster": "trajectories/H05/poster.webp",
+    "caption_zh": "Tachin固定视角 episode 0：完整474帧、23.7秒，20Hz；从含3条episode的首个Parquet/MP4中按meta划定0–23.7秒。左侧真实固定机位RGB，右侧选择0/2/3/19号传感器并按官方tactile_2d_shapes还原网格；各传感器固定独立色标，无牛顿单位换算。预览10fps。",
+    "preview_seconds": 23.7
+  },
+  "duration": {
+    "released_hours": 0.8216388888888889,
+    "metadata_hours": 0.8216388888888889,
+    "basis": "metadata_sum",
+    "scope_zh": "0.82164小时（49.298分钟）",
+    "explanation_zh": "官方59,158帧 /20fps；160条episode，单一交互时间不乘RGB/深度路数。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/Tachintech/Fixed_Viewpoint_Tactile_Dataset/blob/main/meta/info.json",
+        "evidence": "total_frames=59158,fps=20,total_episodes=160"
+      }
+    ]
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "method": "MP4帧数/可播放性检查与八项poster拼图人工核查"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "E04",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "name": "Home/arrange_pillow/20260412_101136_379",
+    "source_url": "https://huggingface.co/datasets/zhouzhoujy/EgoTouch",
+    "download_url": "https://huggingface.co/datasets/zhouzhoujy/EgoTouch/resolve/main/Home/arrange_pillow/20260412_101136_379/pressure_grids.npz",
+    "local_raw_paths": [
+      "trajectory_work/E04/pressure.npz",
+      "trajectory_work/E04/pressure.json",
+      "trajectory_work/E04/rgb.mp4"
+    ],
+    "complete_episode": true,
+    "frames": 1652,
+    "fps": 30,
+    "duration_seconds": 55.06666666666667,
+    "duration_method": "视频/NPZ均1652帧，30fps",
+    "modalities": [
+      "chest RGB",
+      "双手处理压力网格"
+    ],
+    "sync": "同目录同1652帧；30fps帧索引对齐。",
+    "sha256": {
+      "trajectory_work/E04/pressure.npz": "d7bcacd5b80677473f50b988024ad0aad288ba9850fa82783bd1f95a2e2d4271",
+      "trajectory_work/E04/pressure.json": "03142e979adc50119c21cf8e42f16106064538249f6fb28f612303728db5ba40",
+      "trajectory_work/E04/rgb.mp4": "951d4d9aa46144a2b09eac2def5a10301904ab623d147389326cd04b8b83d252"
+    },
+    "downloaded_bytes": 16145243
+  },
+  "media": {
+    "html": "trajectories/E04/index.html",
+    "video": "trajectories/E04/preview.mp4",
+    "poster": "trajectories/E04/poster.webp",
+    "caption_zh": "EgoTouch Home/arrange_pillow/20260412_101136_379：完整1652帧、55.067秒chest视频和双手21×21处理压力网格，按30fps等长逐帧对齐。展示的是pressure_grids.npz中处理后的网格（含基线校正/归一化），不是标定牛顿力，也不等同原始传感器几何；预览10fps。",
+    "preview_seconds": 55.1
+  },
+  "duration": {
+    "metadata_hours": 18.51851851851852,
+    "basis": "metadata_sum",
+    "scope_zh": "约18.5小时（仅按作者约2M帧/30fps粗估）",
+    "explanation_zh": "作者README约2M帧与30FPS处理规格给出约18.5小时名义等效时长，仍在上传且未逐episode审计，不能当成已验证完整发布时长。",
+    "sources": [
+      {
+        "url": "https://github.com/Jianyi2004/TouchAnything",
+        "evidence": "~2M frames; processed FPS=30"
+      }
+    ]
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "method": "MP4帧数/可播放性检查与八项poster拼图人工核查"
+  }
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "path": "将坚果袋倒入分装罐/D-WHEEL/s1888e53166341c3a0b3cf8fe082cea0.h5",
+    "bytes": 1343338016,
+    "timestamps": [
+      {
+        "name": "timestamp",
+        "shape": [
+          926
+        ],
+        "first": 0,
+        "last": 30833333025
+      }
+    ],
+    "read_bytes": 898592,
+    "id": "R15"
+  },
+  {
+    "path": "桌面垃圾/D-WHEEL/s1c9f03bf3e74bbca5da9ae7a3fbda4a.h5",
+    "bytes": 1711856696,
+    "timestamps": [
+      {
+        "name": "timestamp",
+        "shape": [
+          1123
+        ],
+        "first": 0,
+        "last": 37399999626
+      }
+    ],
+    "read_bytes": 908344,
+    "id": "R15"
+  },
+  {
+    "path": "整理尖嘴钳与钳子入工具收纳格/D-WHEEL/s18cdfde67ac4e6a9e76af6a3006614e.h5",
+    "bytes": 2861134488,
+    "timestamps": [
+      {
+        "name": "timestamp",
+        "shape": [
+          1865
+        ],
+        "first": 0,
+        "last": 62133332712
+      }
+    ],
+    "read_bytes": 881304,
+    "id": "R15"
+  },
+  {
+    "path": "将一次性手套放入厨房储物架/QINGLOONG/s13430115504411fb01f8fd5d4cd6bf5.h5",
+    "bytes": 1515896952,
+    "timestamps": [
+      {
+        "name": "timestamp",
+        "shape": [
+          1351
+        ],
+        "first": 0,
+        "last": 44999999550
+      }
+    ],
+    "read_bytes": 1032312,
+    "id": "R15"
+  },
+  {
+    "path": "罐子装物品放到货架/QINGLOONG/s187acfa85154677aa54608f112c1ac6.h5",
+    "bytes": 1811992088,
+    "timestamps": [
+      {
+        "name": "timestamp",
+        "shape": [
+          1612
+        ],
+        "first": 0,
+        "last": 53699999463
+      }
+    ],
+    "read_bytes": 1035800,
+    "id": "R15"
+  },
+  {
+    "path": "气体包装物品放到货架/QINGLOONG/s116b4d4287245af97cee950244b72c6.h5",
+    "bytes": 2070631208,
+    "timestamps": [
+      {
+        "name": "timestamp",
+        "shape": [
+          1822
+        ],
+        "first": 0,
+        "last": 60699999393
+      }
+    ],
+    "read_bytes": 1200936,
+    "id": "R15"
+  },
+  {
+    "path": "路由器连接网线/PIKA/s1d0567eb3df4aafadf0ca31817d55e9.h5",
+    "bytes": 715419512,
+    "timestamps": [
+      {
+        "name": "timestamp",
+        "shape": [
+          611
+        ],
+        "first": 0,
+        "last": 20333333130
+      }
+    ],
+    "read_bytes": 720896,
+    "id": "R15"
+  },
+  {
+    "path": "路由器连接网线/PIKA/s19e0a0027c348d1b974cb81b0e176a9.h5",
+    "bytes": 802678184,
+    "timestamps": [
+      {
+        "name": "timestamp",
+        "shape": [
+          674
+        ],
+        "first": 0,
+        "last": 22433333109
+      }
+    ],
+    "read_bytes": 779688,
+    "id": "R15"
+  },
+  {
+    "path": "智能手表放入抽屉/PIKA/s1ec457ee2e3456794b597029b862abd.h5",
+    "bytes": 1131464328,
+    "timestamps": [
+      {
+        "name": "timestamp",
+        "shape": [
+          969
+        ],
+        "first": 0,
+        "last": 32266666344
+      }
+    ],
+    "read_bytes": 786432,
+    "id": "R15"
+  },
+  {
+    "id": "R13",
+    "error": "429 Client Error: Too Many Requests for url: https://hf-mirror.com/datasets/LejuRobotics/LET-Dex-Dataset/resolve/main/datasets/rosbag/tactile/real/Labelled/Clean-up_desktop_items-P4-Linker_Hand_L6/A10-A12-H-C-05-TQ_02_01-p4_353-dex_hand-20251218121227-v001.bag"
+  },
+  {
+    "id": "R13",
+    "error": "429 Client Error: Too Many Requests for url: https://hf-mirror.com/datasets/LejuRobotics/LET-Dex-Dataset/resolve/main/datasets/rosbag/tactile/real/Labelled/SF_Express_Parcel_Sorting-P4-Linker_Hand_L6/A10-A12-I-L-03-TQ_01_02-P4_338-dex_hand-20251219114820-v001.bag"
+  },
+  {
+    "id": "R13",
+    "error": "429 Client Error: Too Many Requests for url: https://hf-mirror.com/datasets/LejuRobotics/LET-Dex-Dataset/resolve/main/datasets/rosbag/tactile/real/Labelled/Smart_postal_packages-P4-Linker_Hand_L6/A10-A12-I-L-03-TQ_04_01-P4_338-dex_hand-20251219160321-v001.bag"
+  },
+  {
+    "id": "R13",
+    "error": "429 Client Error: Too Many Requests for url: https://hf-mirror.com/datasets/LejuRobotics/LET-Dex-Dataset/resolve/main/datasets/rosbag/tactile/real/Labelled/Smartandfast-forward-P4-Linker_Hand_L6/A10-A12-I-L-03-TQ_03_01-p4_353-dex_hand-20251219165149-v001.bag"
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "id": "H06",
+  "best_hours": 20.3537037037037,
+  "low_hours": 10.17685185185185,
+  "high_hours": 61.06111111111111,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "Tactile Gesture Language全部发布连续触觉序列的假设帧率录制时长估计，仅触觉。",
+  "method_zh": "实际Range读取10人×10手势共100个NPY头，shape均为(N,200,32,32)，总N=10991，合计2198200帧。中心假设30Hz：2198200/30/3600=20.353704小时；假设10–60Hz给出10.176852–61.061111小时。",
+  "assumptions_zh": [
+    "数据卡和官方加载器未公布FPS或时间戳；30Hz是统一规划换算假设，不是观测结果。",
+    "10–60Hz是显式宽敏感性范围，没有证据证明真实采样率必在范围内；并非统计置信区间。",
+    "假定每条200帧是等间隔连续采样且未被重采样/补零；若这些假设不成立，数值仅是该帧率下的播放尺度。",
+    "不把本报告10fps可视化速度当成原始采样率；数据没有发布RGB。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/Tachintech/Tactile_Gesture_Language",
+      "evidence": "公开10参与者×10手势；无FPS字段"
+    },
+    {
+      "url": "https://huggingface.co/api/datasets/Tachintech/Tactile_Gesture_Language/tree/main?recursive=true&limit=1000",
+      "evidence": "100个NPY文件，逐读NPY header，合计10991×200帧"
+    },
+    {
+      "url": "https://huggingface.co/datasets/Tachintech/Tactile_Gesture_Language/blob/main/load_sample.py",
+      "evidence": "官方加载器仅逐样本读取数组，没有时间戳或FPS"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "所有100个NPY头读取成功；完整抚摸文件及一条200帧样本已解码。",
+  "checked_at": "2026-10-19",
+  "assumed_fps": 30,
+  "fps_sensitivity_range": [
+    10,
+    60
+  ],
+  "frames": 2198200,
+  "audit_files": [
+    "duration_estimates/evidence/H06_frame_counts.json"
+  ]
+}

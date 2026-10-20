@@ -1,0 +1,22 @@
+{
+  "id": "H05",
+  "best_hours": 0.8216388888888889,
+  "low_hours": 0.8194166666666667,
+  "high_hours": 0.8216388888888889,
+  "kind": "metadata",
+  "confidence": "high",
+  "scope_zh": "Tachin固定视角公开160条episode的RGB/触觉共同时间轴。",
+  "method_zh": "meta.total_frames=59158、fps=20：59158/20/3600=0.821639小时；只计首末帧间隔时(59158−160)/20/3600=0.819417小时。",
+  "assumptions_zh": [
+    "单一同步时间，不乘RGB/深度/触觉模态数。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/Tachintech/Fixed_Viewpoint_Tactile_Dataset/blob/main/meta/info.json",
+      "evidence": "total_frames=59158,fps=20,total_episodes=160"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方公开HF元数据；完整episode0已下载。",
+  "checked_at": "2026-10-19"
+}

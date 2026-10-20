@@ -1,0 +1,28 @@
+{
+  "id": "X03",
+  "best_hours": 3.3333333333333335,
+  "low_hours": 1.1111111111111112,
+  "high_hours": 6.666666666666667,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "论文200条任务示范的采集规模估计；当前未证实发布原始数据",
+  "method_zh": "论文6任务demos=30+30+30+50+30+30=200；以每条60秒规划，范围20–120秒，即3.333h（1.111–6.667h）。",
+  "assumptions_zh": [
+    "每条20–120秒是本报告的任务级预算假设，不是论文测得均值。",
+    "未取得真实数据发布归档，当前可直接获取贡献为0。",
+    "不能使用Touch in the Wild或VT-Refine仿真数据代替该论文原始数据。"
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2410.24091v1",
+      "evidence": "表1四任务140示范，表3两任务60示范；采集10Hz。"
+    },
+    {
+      "url": "https://github.com/binghao-huang/3d-vitac-training-code",
+      "evidence": "README引导VT-Refine预训练，声明该实现运行在仿真；未取得原数据。"
+    }
+  ],
+  "availability": "unreleased",
+  "availability_note_zh": "估计的是论文采集量；不进入可获取总量。",
+  "checked_at": "2026-10-19"
+}

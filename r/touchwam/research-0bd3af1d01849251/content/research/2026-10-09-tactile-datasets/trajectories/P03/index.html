@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HTT · force/gsmini/p1_static/0_press_1</title><style>body{font:16px system-ui;background:#101926;color:#eaf1fc;margin:0;padding:20px;max-width:1100px}video,img{max-width:100%;width:100%;border-radius:8px}p{line-height:1.7}input{width:50%}button{padding:8px}</style><h2>HTT · force/gsmini/p1_static/0_press_1</h2><p>完整读取0_press_1触觉按压试验（249帧）。左为GelSight Mini内部触觉图像，右为同帧6维ATI力/力矩字段；它不含外部场景RGB。文件无时间戳，10fps仅为可视化播放速度。</p><video controls preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video></html><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

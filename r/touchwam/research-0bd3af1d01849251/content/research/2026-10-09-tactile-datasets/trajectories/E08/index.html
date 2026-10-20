@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>VTDexManip | 101000 PickUp</title><style>body{margin:0;background:#101820;color:#e5eef8;font:16px/1.7 system-ui;padding:20px;max-width:1160px}video{width:100%;max-height:80vh;background:black}a{color:#64d5cc}h1{font-size:22px}</style><h1>VTDexManip | 101000 PickUp</h1><video controls preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video><p>VTDexManip 101000 / PickUp：原OneDrive当前网络不可达；从非作者wuliwuling公开镜像（结构及索引吻合官方说明，未核验与官方OneDrive逐字节一致）流式读取sub1.tar.gz首条完整253张PNG，并配对tactile/101000.json的253×4×5连续触觉。PNG idx=0–252与JSON逐项对应；显示原始传感器读数，未二值化也未换算牛顿。原文件没有时间戳，官方visualize.py设30fps只证明演示速度，故本页以15帧/秒展示，16.87秒不是实测采集时长。</p><p><a href="https://huggingface.co/datasets/wuliwuling/VTDexmanip" target="_blank">原始数据来源</a> · <a href="preview.mp4" download>下载可视化 MP4</a></p></html><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

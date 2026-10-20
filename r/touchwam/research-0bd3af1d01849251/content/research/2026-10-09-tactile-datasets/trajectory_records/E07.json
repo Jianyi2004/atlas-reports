@@ -1,0 +1,75 @@
+{
+  "id": "E07",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "name": "touchandgo:20220318_233801 (yxma public converted copy)",
+    "source_url": "https://touch-and-go.github.io/",
+    "download_url": "https://huggingface.co/datasets/yxma/tactile-video-pretrain/resolve/main/videos/touchandgo/20220318_233801/scene.mp4",
+    "local_raw_paths": [
+      "trajectory_work/E07/paired_rgb_video.mp4",
+      "trajectory_work/E07/paired_tactile_video.mp4",
+      "trajectory_work/E07/chosen2.json"
+    ],
+    "complete_episode": true,
+    "frames": 136,
+    "fps": null,
+    "duration_seconds": 4.538933753967285,
+    "duration_method": "metadata time_scene跨度4.506836秒+中位帧间隔；容器5.005521秒另记",
+    "modalities": [
+      "RGB scene",
+      "GelSight optical tactile RGB"
+    ],
+    "sync": "转换副本同一clip_id，两个136帧视频，time_scene/time_tactile逐项相同；未独立审计转换前的原时钟",
+    "notes": "完整下载公开转换记录；不宣称原站全量可达。",
+    "sha256": {
+      "trajectory_work/E07/paired_rgb_video.mp4": "17f261cdb0a4a59493aa7ed2e5b7fe641011018b03e700d086c566b60b682e5d",
+      "trajectory_work/E07/paired_tactile_video.mp4": "ec83dadd3ef03515cc53e0cf9683a99097bc47c4464d2b4ef43e8e73d61033b0",
+      "trajectory_work/E07/chosen2.json": "f3e17c8fae32eeb6f4dd320cc023da0f33a38e37ad5424cee845cbd2fcebd60e"
+    },
+    "downloaded_bytes": 3554151
+  },
+  "media": {
+    "html": "trajectories/E07/index.html",
+    "video": "trajectories/E07/preview.mp4",
+    "poster": "trajectories/E07/poster.webp",
+    "caption_zh": "Touch and Go：官方Drive在当前网络不可达；已从公开转换副本yxma/tactile-video-pretrain下载20220318_233801的完整136帧RGB与GelSight视频，并读取配对time_scene/time_tactile。两视频同136帧，但容器27.17fps给出5.006秒，metadata实际时间跨度4.507秒；展示按metadata时钟重建约4.54秒。触觉侧是真实光学传感器图像，不是生成预测。该转换记录不代表已验证原官方全部采集数据。",
+    "preview_seconds": 4.6
+  },
+  "duration": {
+    "basis": "metadata_sum",
+    "scope_zh": "转换副本138条名义时长合计14.607小时，非官方有效时间审计",
+    "explanation_zh": "138行索引的duration_s名义合计14.607h包含未发布文件。本轮核查完整文件清单，只有39条双模态及15条仅触觉可取；配对时间戳口径3.374920h，另有仅触觉2.076667h，见下方统计记录。原索引值保留用于追溯，不进入分类总量。",
+    "sources": [
+      {
+        "url": "https://huggingface.co/datasets/yxma/tactile-video-pretrain/blob/main/tactile_rgb/train-00000-of-00001.parquet",
+        "evidence": "138 rows duration_s sum=52586.69215232134; sampled136frames time span4.506836s versus container5.005521s"
+      }
+    ],
+    "converted_nominal_hours": 14.607414486755927
+  },
+  "evidence": [
+    {
+      "url": "https://huggingface.co/datasets/yxma/tactile-video-pretrain/tree/main/videos/touchandgo/20220318_233801",
+      "status": 200,
+      "detail": "两个MP4都实际下载解码136帧"
+    },
+    {
+      "url": "https://huggingface.co/datasets/yxma/tactile-video-pretrain/resolve/main/videos/touchandgo/20220318_021533/scene.mp4",
+      "status": 404,
+      "detail": "第一候选RGB缺失，已改用完整配对条目"
+    }
+  ],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "method": "解码帧数和配对索引检查；可视化poster人工检查"
+  },
+  "reuses": [
+    "A05"
+  ],
+  "audit_files": [
+    "trajectory_audits/E07/source_duration.json"
+  ]
+}

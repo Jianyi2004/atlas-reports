@@ -1,0 +1,64 @@
+{
+  "id": "R03",
+  "checked_at": "2026-10-19",
+  "status": "static_sample",
+  "sample": {
+    "source_url": "https://huggingface.co/datasets/alanz-mit/FoundationTactile",
+    "local_raw_paths": [
+      "trajectory_work/A01/for_objectfolder_real/Glass_Green_0_49.jpg",
+      "trajectory_work/A01/for_objectfolder_real/Glass_Red_15_376.jpg",
+      "trajectory_work/A01/for_objectfolder_real/Sculpture_18_116.jpg",
+      "trajectory_work/A01/for_objectfolder_real/Glass_Green_0_49.json",
+      "trajectory_work/A01/for_objectfolder_real/Glass_Red_15_376.json",
+      "trajectory_work/A01/for_objectfolder_real/Sculpture_18_116.json"
+    ],
+    "downloaded_bytes": 15414,
+    "sha256": {
+      "trajectory_work/A01/for_objectfolder_real/Glass_Green_0_49.jpg": "366d117a78c31a37fb46834e49cb7de2a913b60d7c8f5671410612cba4d273d2",
+      "trajectory_work/A01/for_objectfolder_real/Glass_Red_15_376.jpg": "b79f999c22d439b16cf37e84fbeb19e63734fa2e9a48bb2df532935821da7ba0",
+      "trajectory_work/A01/for_objectfolder_real/Sculpture_18_116.jpg": "6fddcc5fd197795bc5ce90e7a43d8561ab5817c6fde11c6e3448e8ba8f58b801",
+      "trajectory_work/A01/for_objectfolder_real/Glass_Green_0_49.json": "6a13545a22ad101f168c5fffcc58ec236194c289151780311274dc9e4352d749",
+      "trajectory_work/A01/for_objectfolder_real/Glass_Red_15_376.json": "17d89f42cbd270f7d708bd11058b52ae05026e113cba6095e8481b7f368b2c84",
+      "trajectory_work/A01/for_objectfolder_real/Sculpture_18_116.json": "685586ceac59f2f186cd473f63b255d2f84632c8ae1d67dacae591f046aeff84"
+    },
+    "name": "FoundationTactile/objectfolder_real/val/data-000028.tar / first3 decoded samples",
+    "download_url": "https://hf-mirror.com/datasets/alanz-mit/FoundationTactile/resolve/main/dataset/FoTa_dataset.z01",
+    "complete_episode": false,
+    "frames": 3,
+    "modalities": [
+      "optical tactile stills",
+      "JSON labels"
+    ],
+    "sync": "3 independent static samples; no matched RGB",
+    "notes": "ZIP成员前4MiB解压前缀取完整JPEG/JSON，不是完整tar。"
+  },
+  "media": {
+    "html": "trajectories/R03/index.html",
+    "poster": "trajectories/R03/poster.webp",
+    "caption_zh": "实际从FoTa公开转换包提取3张ObjectFolder-Real真实触觉样本及同名JSON。这3张是不同记录的静态样本，不构成一条连续轨迹；转换包未包含匹配场景RGB，未补造视觉。"
+  },
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "完整发布数据",
+    "explanation_zh": "未找到可可靠汇总的总时长；不以样本数或文件体积推算。",
+    "sources": []
+  },
+  "evidence": [
+    {
+      "url": "https://hf-mirror.com/datasets/alanz-mit/FoundationTactile/resolve/main/dataset/FoTa_dataset.z01",
+      "status": 206,
+      "detail": "FoundationTactile/objectfolder_real/val/data-000028.tar;3 JPEG/JSON successfully decoded"
+    }
+  ],
+  "blockers": [
+    "原始Stanford gzip流只取得首接触cam_0的部分RGB，未下载到匹配触觉；不将不同来源图像强行配对。",
+    "FoTa派生WDS仅提供静态触觉及标签，本次仍未获得原始完整RGB+触觉轨迹。"
+  ],
+  "reuses": [
+    "A01/FoTa转换包中的objectfolder_real上游来源；只计原始采集来源一次"
+  ],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  }
+}

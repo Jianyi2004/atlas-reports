@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tachin | fixed viewpoint episode 0</title><style>body{margin:0;background:#101820;color:#e5eef8;font:16px/1.7 system-ui;padding:20px;max-width:1160px}video{width:100%;max-height:80vh;background:black}a{color:#64d5cc}h1{font-size:22px}</style><h1>Tachin | fixed viewpoint episode 0</h1><video controls preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video><p>Tachin固定视角 episode 0：完整474帧、23.7秒，20Hz；从含3条episode的首个Parquet/MP4中按meta划定0–23.7秒。左侧真实固定机位RGB，右侧选择0/2/3/19号传感器并按官方tactile_2d_shapes还原网格；各传感器固定独立色标，无牛顿单位换算。预览10fps。</p><p><a href="https://huggingface.co/datasets/Tachintech/Fixed_Viewpoint_Tactile_Dataset" target="_blank">原始数据来源</a> · <a href="preview.mp4" download>下载可视化 MP4</a></p></html><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

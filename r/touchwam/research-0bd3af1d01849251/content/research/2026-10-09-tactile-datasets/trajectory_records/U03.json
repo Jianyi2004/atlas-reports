@@ -1,0 +1,61 @@
+{
+  "id": "U03",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "name": "open_bottle.zarr.zip / episode0",
+    "source_url": "https://huggingface.co/datasets/silicx/exUMI",
+    "download_url": "https://hf-mirror.com/datasets/silicx/exUMI/resolve/main/open_bottle.zarr.zip",
+    "local_raw_paths": [
+      "trajectory_work/U03/raw/episode0.npz"
+    ],
+    "complete_episode": true,
+    "frames": 717,
+    "modalities": [
+      "wrist RGB",
+      "tactile_combined",
+      "robot state"
+    ],
+    "sync": "处理后Zarr相同索引；原始时间同步精度和处理后FPS未确认。",
+    "notes": "当前所取任务meta显示270条episode、126291帧；这不是整个来源的全量计时。",
+    "downloaded_bytes": 98058670,
+    "sha256": {
+      "trajectory_work/U03/raw/episode0.npz": "fd23bb279fe2d4c9ca38f296f211a6db1e8e2d69f421893e5eb831d7fa3b4f21"
+    }
+  },
+  "media": {
+    "html": "trajectories/U03/index.html",
+    "video": "trajectories/U03/preview.mp4",
+    "poster": "trajectories/U03/poster.webp",
+    "caption_zh": "完整读取exUMI选定任务的第0条episode（717帧），按Zarr同一索引并排显示RGB与触觉；公开处理数组没有提供可核实的逐帧时间戳/FPS。预览每2帧取1帧、10个展示帧/秒，仅为帧序浏览，播放秒数不能当交互秒数。",
+    "preview_seconds": 35.9
+  },
+  "duration": {
+    "paper_hours": 5,
+    "basis": "official_reported",
+    "scope_zh": "论文触觉表征采集约5小时；不等于当前所有任务Zarr",
+    "explanation_zh": "论文480K触觉帧/约5小时属于表征采集口径。当前open_bottle包含270条、126291帧，缺处理后采样率，不将论文或原始相机FPS直接用于任务时长换算。另发现pick_cube ZIP不含README所列tactile_combined，故改取实际有触觉的open_bottle。",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2509.14688",
+        "evidence": "representation dataset: 480K tactile frames, approximately five hours"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://huggingface.co/datasets/silicx/exUMI",
+      "status": 206,
+      "detail": "实际Range提取并解码JPEG-XL chunks，episode_ends确定完整序列边界；未以缺失chunk的fill_value当观测。"
+    }
+  ],
+  "blockers": [],
+  "reuses": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true
+  },
+  "audit_files": [
+    "trajectory_audits/U03/extracted.json"
+  ]
+}

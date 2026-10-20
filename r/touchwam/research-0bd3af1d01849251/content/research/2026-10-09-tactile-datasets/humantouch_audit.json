@@ -1,0 +1,113 @@
+{
+  "checked_date": "2026-10-19",
+  "dataset": "chuqiaoLyu/Xspark-HumanTouch",
+  "sha": "81822a10cac5def2638db546eaeced581d71a8b5",
+  "private": false,
+  "gated": false,
+  "last_modified": "2026-09-06T10:31:35.000Z",
+  "license": "CC-BY-NC-4.0",
+  "tasks": [
+    {
+      "task": "X001",
+      "total_episodes": 2217,
+      "total_frames": 3832214,
+      "fps": 60,
+      "parquet_files": 2217
+    },
+    {
+      "task": "X002",
+      "total_episodes": 3836,
+      "total_frames": 2733581,
+      "fps": 60,
+      "parquet_files": 3836
+    },
+    {
+      "task": "X003",
+      "total_episodes": 2054,
+      "total_frames": 2389801,
+      "fps": 60,
+      "parquet_files": 2054
+    },
+    {
+      "task": "X004",
+      "total_episodes": 1853,
+      "total_frames": 2677193,
+      "fps": 60,
+      "parquet_files": 1853
+    },
+    {
+      "task": "X005",
+      "total_episodes": 722,
+      "total_frames": 2333104,
+      "fps": 60,
+      "parquet_files": 723
+    },
+    {
+      "task": "X006",
+      "total_episodes": 1362,
+      "total_frames": 3420213,
+      "fps": 60,
+      "parquet_files": 1362
+    },
+    {
+      "task": "X007",
+      "total_episodes": 1313,
+      "total_frames": 2345109,
+      "fps": 60,
+      "parquet_files": 1313
+    },
+    {
+      "task": "X008",
+      "total_episodes": 744,
+      "total_frames": 2763774,
+      "fps": 60,
+      "parquet_files": 711
+    },
+    {
+      "task": "X009",
+      "total_episodes": 1897,
+      "total_frames": 3454211,
+      "fps": 60,
+      "parquet_files": 1897
+    },
+    {
+      "task": "X010",
+      "total_episodes": 1610,
+      "total_frames": 2725658,
+      "fps": 60,
+      "parquet_files": 1610
+    }
+  ],
+  "metadata_total_episodes": 17608,
+  "metadata_hours": 132.75397222222222,
+  "listed_parquets": 17576,
+  "listed_videos": 52826,
+  "note": "Metadata-derived duration is not an audit of complete valid synchronized episodes; official release card says approximately 100 hours. Do not equate with the paper’s 1000 hours.",
+  "sample": {
+    "url": "https://huggingface.co/datasets/chuqiaoLyu/Xspark-HumanTouch/resolve/main/X001/data/chunk-000/episode_000001.parquet",
+    "access_url": "https://hf-mirror.com/datasets/chuqiaoLyu/Xspark-HumanTouch/resolve/main/X001/data/chunk-000/episode_000001.parquet",
+    "status": 200,
+    "bytes": 6361520,
+    "sha256": "fcb0fa8789872a72989d310a1449feaa25e3bc531a16a749313b5604b97d3eb7",
+    "rows": 1597,
+    "raw_shapes": {
+      "left": [
+        1597,
+        460
+      ],
+      "right": [
+        1597,
+        460
+      ]
+    },
+    "patch_pressure_shape": [
+      1597,
+      12
+    ],
+    "timestamp_range": [
+      0.0,
+      26.600000381469727
+    ],
+    "action_columns": []
+  }
+}

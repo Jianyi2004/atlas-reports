@@ -1,0 +1,27 @@
+{
+  "id": "X02",
+  "best_hours": 9.884368374186197,
+  "low_hours": 3.6896729565565325,
+  "high_hours": 20.472545528313532,
+  "kind": "estimated",
+  "confidence": "low",
+  "scope_zh": "EgoTac-SC公开857条录制的外推；尚未核实与其他EgoTac来源的独立关系。",
+  "method_zh": "首个ZIP全部40条录制，Σ(t_last−t_first)=1,660.850695秒；40条平均41.521267秒×857=约9.884小时。范围用这40条时长的P10/P90（15.499/85.999秒）代表全库平均时长的敏感性情景。",
+  "assumptions_zh": [
+    "首ZIP并非随机抽样，范围不是置信区间，任务偏倚可能超出范围。",
+    "采用各条ego_cam_real_timestamp的毫秒时间戳，全部单调；40条之间没有时间区间重叠。",
+    "没有把SC直接认定为FTP的EgoTac-Open/Kitchen/Hotel；统计中保留待确认来源类别。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/wkzhang/EgoTac-SC",
+      "evidence": "卡片：857 Zarr recordings，45 ZIP archives；本地duration-audit.json已读取首ZIP全部40条时间戳，共49,524帧。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方公开数据入口可匿名访问。",
+  "measured_subset_hours": 0.46134741536458335,
+  "measured_subset_recordings": 40,
+  "total_recordings": 857,
+  "checked_at": "2026-10-19"
+}

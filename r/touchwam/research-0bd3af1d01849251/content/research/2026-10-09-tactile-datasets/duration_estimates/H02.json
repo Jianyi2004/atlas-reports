@@ -1,0 +1,23 @@
+{
+  "id": "H02",
+  "best_hours": 16.0,
+  "low_hours": 16.0,
+  "high_hours": 16.0,
+  "kind": "reported",
+  "confidence": "medium",
+  "scope_zh": "PressureVision官方公开数据的16小时录制；原15fps与小版3fps为同源版本。",
+  "method_zh": "采用官方README“36 participants ... four cameras ...16 hours”的报告值；不乘4路相机，不把15fps和3fps版本时长相加。",
+  "assumptions_zh": [
+    "作者未提供小时数误差范围，因此不杜撰区间；16–16是报告点值，并非独立精确审计。",
+    "当前网络Dropbox下载失败，仅能确认官方公开入口，未读取原始轨迹。"
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/facebookresearch/PressureVision",
+      "evidence": "36 participants recorded by4 cameras for16 hours; full15FPS/small3FPS"
+    }
+  ],
+  "availability": "official_entry",
+  "availability_note_zh": "官方GitHub提供Dropbox公开下载入口，但本机/4090本轮无法连接。",
+  "checked_at": "2026-10-19"
+}

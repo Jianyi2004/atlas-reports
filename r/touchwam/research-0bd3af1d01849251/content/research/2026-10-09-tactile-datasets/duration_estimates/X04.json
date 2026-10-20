@@ -1,0 +1,27 @@
+{
+  "id": "X04",
+  "best_hours": 0.3638749588888889,
+  "low_hours": 0.3638749588888889,
+  "high_hours": 0.3638749588888889,
+  "kind": "metadata",
+  "confidence": "high",
+  "scope_zh": "官方75条不同录制全部metadata；不含多传感器重复",
+  "method_zh": "对75个唯一录制stop_time-start_time求和=1309.949852秒，再除3600。",
+  "assumptions_zh": [
+    "每个录制只计一次，双Xela传感器不累计双倍小时。",
+    "这是录制窗口，不是阈值筛选后的净接触时间；无场景RGB。"
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/WillMandil001/Tactile_Grasp_and_Move_Dataset",
+      "evidence": "本轮读取全部75个meta_data.csv；唯一recording id=75。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方文件可读取，75条全量时长核算完成。",
+  "checked_at": "2026-10-19",
+  "lower_bound_hours": 0.3638749588888889,
+  "audit_files": [
+    "duration_audits/X04/audit.json"
+  ]
+}

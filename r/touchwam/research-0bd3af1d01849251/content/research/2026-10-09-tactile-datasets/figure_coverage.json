@@ -64,6 +64,14 @@
     "status": "已补图"
   },
   {
+    "id": "E09",
+    "name": "HumanTouch（Xspark-HumanTouch；Spark-0人类触觉预训练数据）",
+    "group": "E",
+    "main_counted": true,
+    "figures": 2,
+    "status": "已补图"
+  },
+  {
     "id": "R01",
     "name": "VisGel",
     "group": "R",

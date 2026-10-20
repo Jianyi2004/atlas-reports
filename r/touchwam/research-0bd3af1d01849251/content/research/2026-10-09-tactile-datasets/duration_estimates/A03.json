@@ -1,0 +1,59 @@
+{
+  "id": "A03",
+  "best_hours": 178.18173439893278,
+  "low_hours": 110.36913610575583,
+  "high_hours": 375.60987890082544,
+  "kind": "reuse",
+  "confidence": "low",
+  "scope_zh": "FTP公开15个一级目录可映射的10个上游数据家族“覆盖包络”；不是FTP自身已核实逐轨迹总时长。",
+  "method_zh": "按2026-10-19上游估计快照U01/F02/R08/R07/R09/R10/U04/R15/U03/旧R16各计一次，形成覆盖包络；Sharpa项固定为FTP旧发布25.237778h，不因R16主入口更新而替换成SharpaDex299.964556h。它不是FTP全量实测库存，新增独立小时固定0。",
+  "assumptions_zh": [
+    "FTP各目录不保证包含这些上游当前全部版本；部分上游可能只有子集，双臂新增配置也可能在上游主估计之外，所以覆盖包络不是精确FTP库存。",
+    "论文3,000小时/26来源属于训练语料范围，不是已公开15目录的总时长；保留为source_total_hours，绝不填入已开放小时。",
+    "该包同时包含触觉和力/state来源，继承上游分类，不整体当纯触觉小时。",
+    "2026-10-20新SharpaDex与FTP Sharpa的轨迹重叠未核实，不能声称FTP已包含新库全部300小时；本条保持历史上游快照。"
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/MJJJJ1064/FTP-1-Dataset",
+      "evidence": "README实际列15个一级来源目录：FreeTacMan、MotionTrans、RDP/RDP_Bimanual、RH20T三个配置、Unit/Unit_Bimanual、VLA_touch、ViTaMIn、两种VisuoTactile、exUMI、sharpa。"
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.13102",
+      "evidence": "论文约3,000小时/26来源，不能等同公开归档范围。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "官方公开数据入口可匿名访问。",
+  "reuses_ids": [
+    "U01",
+    "F02",
+    "R08",
+    "R07",
+    "R09",
+    "R10",
+    "U04",
+    "R15",
+    "U03",
+    "R16"
+  ],
+  "incremental_hours": 0,
+  "source_total_hours": 3000,
+  "coverage_measure": "upstream_envelope",
+  "upstream_hours_at_estimate": {
+    "U01": 15.697101851871444,
+    "F02": 4.628133492692593,
+    "R08": 1.0034953703703704,
+    "R07": 9.433179,
+    "R09": 4.21156045751634,
+    "R10": 0.8082222222222222,
+    "U04": 3.189148148148148,
+    "R15": 111.20129714829274,
+    "U03": 2.771818930041152,
+    "R16": 25.23777777777778
+  },
+  "checked_at": "2026-10-19",
+  "audit_files": [
+    "duration_estimates/history/R16-ftp-20261019.json"
+  ]
+}

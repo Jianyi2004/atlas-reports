@@ -1,0 +1,7 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>白虎-VTouch | 滴润滑油</title><style>body{background:#10202b;color:#eef6fb;font:16px system-ui;max-width:1100px;margin:25px auto;padding:16px}video,img{width:100%;height:auto}p{line-height:1.7}a{color:#86dcff}</style><h2>白虎-VTouch | 滴润滑油</h2><video controls preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video><p>从官方原始HDF5完整抽取709帧头部RGB与左夹爪左指触觉流，任务“使用润滑油瓶滴油至轴承”。metadata明确aligned_to_30_fps，timestamp为纳秒、跨度23.600秒；每2帧展示1帧。只下载选定两路与元数据，未下载其它相机/深度/关节字段。</p><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

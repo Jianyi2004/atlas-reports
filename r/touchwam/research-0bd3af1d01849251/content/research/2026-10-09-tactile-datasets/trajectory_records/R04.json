@@ -1,0 +1,62 @@
+{
+  "id": "R04",
+  "checked_at": "2026-10-19",
+  "status": "complete_trajectory",
+  "sample": {
+    "source_url": "https://github.com/tsinghua-rll/Visual-Tactile_Dataset",
+    "local_raw_paths": [
+      "trajectory_work/R04/front_rgb.mp4",
+      "trajectory_work/R04/tactile.txt",
+      "trajectory_work/R04/pos.txt",
+      "trajectory_work/R04/label.txt"
+    ],
+    "downloaded_bytes": 4197096,
+    "sha256": {
+      "trajectory_work/R04/front_rgb.mp4": "a14f41e2715908b38b2bc26928fa0ef80f3024b230b2348670ad599c0c71a8e4",
+      "trajectory_work/R04/tactile.txt": "99bd40a17d200423601ad580335ee3e23853e6f53fc95e331891e61255e28bc8",
+      "trajectory_work/R04/pos.txt": "1d7f01285bd8c28d98e4e29b080a67bea998b081cc2d76781f9d7a490c1d701c",
+      "trajectory_work/R04/label.txt": "f9264166f2b3ee7bd507b6ae433612776cfb4caf3b03d4c460ce309622f8bb98"
+    },
+    "name": "dataset/Cheez/100_432/right/0",
+    "complete_episode": true,
+    "frames": 400,
+    "duration_seconds": 19.38888888888889,
+    "duration_method": "RGB MP4 container only; tactile duration unknown",
+    "modalities": [
+      "front RGB video",
+      "16ch tactile"
+    ],
+    "sync": "same trial; no shared timestamps; no invented temporal alignment"
+  },
+  "media": {
+    "html": "trajectories/R04/index.html",
+    "video": "trajectories/R04/preview.mp4",
+    "poster": "trajectories/R04/poster.webp",
+    "caption_zh": "完整下载Cheez/100_432/right/0试验的front_rgb.mp4、tactile.txt、pos.txt及label.txt。左视频349帧、18fps；右为完整400×16原始触觉矩阵的静态热图。两流无共同时间戳且帧数不同，故不移动触觉游标、不声称逐帧同步。",
+    "preview_seconds": 19.38888888888889
+  },
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "完整发布数据",
+    "explanation_zh": "官方共2550组，其中1650组有视频；本次RGB样例19.389秒，但触觉采样率及全库视频总时长未核实，不外推。",
+    "sources": [
+      {
+        "url": "https://github.com/tsinghua-rll/Visual-Tactile_Dataset/blob/master/dataset/README.md",
+        "evidence": "2550 sets; only1650 have video data"
+      }
+    ]
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "validation": "原始schema/数组范围已读取；实际配对关系按数据字段核对；海报人工检查；视频通过ffprobe。",
+    "video_probe": {
+      "width": 960,
+      "height": 420,
+      "duration": "19.388889",
+      "nb_frames": "349"
+    }
+  }
+}

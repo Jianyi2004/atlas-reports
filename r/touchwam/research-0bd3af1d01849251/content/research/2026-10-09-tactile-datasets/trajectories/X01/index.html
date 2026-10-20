@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>X01 实际数据样例</title><style>body{background:#0b1423;color:#e7edf7;font:16px system-ui;margin:16px}video{width:100%;max-height:80vh}p{line-height:1.7}</style><h1>X01 · 实际数据样例</h1><video controls playsinline preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video><p>下载官方sample_data.zip中的完整xhand_reference_5_14/reference_episode（731帧RGB，约16.29秒），其中235帧的训练valid_indices为true。预览裁去开头约0.6秒无FSR覆盖的相机帧；三组FSR按capture_time最近邻匹配，误差逐帧显示，保留带符号原始单位。参考／校准录制不代表操作任务轨迹或全库规模。</p></html><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

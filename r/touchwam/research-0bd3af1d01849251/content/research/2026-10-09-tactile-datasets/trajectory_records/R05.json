@@ -1,0 +1,44 @@
+{
+  "id": "R05",
+  "checked_at": "2026-10-19",
+  "status": "blocked",
+  "sample": {
+    "source_url": "https://github.com/Robo-Touch/PoseIt",
+    "local_raw_paths": [],
+    "downloaded_bytes": 0,
+    "sha256": {},
+    "download_url": "https://drive.google.com/drive/folders/1CQiMPBEVvRMrDBSIRVeuwyuUOCOesfMc",
+    "complete_episode": false
+  },
+  "media": {},
+  "duration": {
+    "basis": "unknown",
+    "scope_zh": "完整发布数据",
+    "explanation_zh": "未取得可汇总的完整时间戳或官方总小时数；试验/图像数量不能直接换算时长。",
+    "sources": [
+      {
+        "url": "https://github.com/Robo-Touch/PoseIt",
+        "evidence": "1,840次抓取数据点、26物体、16种持握姿态。"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://drive.google.com/drive/folders/1CQiMPBEVvRMrDBSIRVeuwyuUOCOesfMc",
+      "status": null,
+      "detail": "作者公开Google Drive文件夹连接超时，未取得目录或单次抓取文件。保留官方1840次抓取规模，无法换算全库时长。"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1CQiMPBEVvRMrDBSIRVeuwyuUOCOesfMc",
+      "status": null,
+      "detail": "再次从Atlas所在4090主机访问，连接失败：[Errno101] Network is unreachable。未使用登录凭证。"
+    }
+  ],
+  "blockers": [
+    "作者公开Google Drive文件夹连接超时，未取得目录或单次抓取文件。保留官方1840次抓取规模，无法换算全库时长。"
+  ],
+  "review": {
+    "raw_read": false,
+    "render_checked": false
+  }
+}

@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>OpenTouch 同名候选样例（来源未证实） | demo_40</title><style>body{margin:0;background:#101820;color:#e5eef8;font:16px/1.7 system-ui;padding:20px;max-width:1160px}video{width:100%;max-height:80vh;background:black}a{color:#64d5cc}h1{font-size:22px}</style><h1>OpenTouch 同名候选样例（来源未证实） | demo_40</h1><video controls preload="none" src="preview.mp4" data-atlas-poster="poster.webp"></video><p>同名公开候选样例（来源关联尚未证实）：从opentouch-neurips2026/opentouch-sample取得eat_mcdonalds.hdf5中的完整demo_40（source_file=clip_011655_011804.hdf5）。实际解码150帧RGB、16×16右手压力及共享纳秒时间戳，约5秒。官方OpenTouch仍只指向Google Drive，尚未找到与此仓库的作者关联，因此不计入已核实数据集样例及完整序列覆盖。16×16为存储矩阵，不等于256有效触点；颜色为原字段数值，未推断物理压力或响应单调性。</p><p><a href="https://huggingface.co/datasets/opentouch-neurips2026/opentouch-sample" target="_blank">原始数据来源</a> · <a href="preview.mp4" download>下载可视化 MP4</a></p></html><script data-atlas-video-loading>
+(()=>{const videos=document.querySelectorAll('video[data-atlas-poster]');
+const show=v=>{v.poster=v.dataset.atlasPoster;delete v.dataset.atlasPoster;};
+if(!('IntersectionObserver' in window)){videos.forEach(show);return;}
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){show(entry.target);observer.unobserve(entry.target);}}},{rootMargin:'300px'});
+videos.forEach(v=>observer.observe(v));})();
+</script>

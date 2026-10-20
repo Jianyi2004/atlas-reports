@@ -1,0 +1,64 @@
+{
+  "id": "R15",
+  "best_hours": 111.20129714829274,
+  "low_hours": 77.84090800380491,
+  "high_hours": 144.56168629278056,
+  "kind": "estimated",
+  "confidence": "medium",
+  "scope_zh": "VTouch官方ModelScope全部9,246个HDF5，三平台合并一次。",
+  "method_zh": "四页官方API核实9,246条、17,249,459,503,388bytes；各平台在文件大小20/50/80百分位抽三条，共9条，读真实ns时间戳。按平台用总字节数×样本总秒数/样本总字节数外推后求和。",
+  "assumptions_zh": [
+    "同平台HDF5各模态的字节率假定近似稳定；不同平台分别标定，未以单条D-WHEEL代替全部平台。",
+    "±30%是压缩比与轨迹差异的规划范围，不是统计置信区间。",
+    "PIKA属手持采集，但按现有报告来源家族R15分类统计；不与FTP再相加。"
+  ],
+  "sources": [
+    {
+      "url": "https://www.modelscope.cn/datasets/OpenLoong-Community/visuo-tactile",
+      "evidence": "公开四页9,306个目录/文件条目中9,246HDF5；D-WHEEL6908、PIKA1441、QINGLOONG897。"
+    },
+    {
+      "url": "https://www.modelscope.cn/api/v1/datasets/174855/repo/tree?Revision=master&Root=/&Recursive=True&PageNumber=1&PageSize=3000",
+      "evidence": "完整分页索引及9个HDF5时间戳实读，采样30Hz。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "公开下载入口已核查，已有真实样本下载。",
+  "platform_estimates": {
+    "D-WHEEL": {
+      "episodes": 6908,
+      "total_bytes": 14342348301696,
+      "sample_seconds": [
+        30.833333025,
+        37.399999626,
+        62.133332712
+      ],
+      "estimated_hours": 87.78736021948251
+    },
+    "QINGLOONG": {
+      "episodes": 897,
+      "total_bytes": 1625943327928,
+      "sample_seconds": [
+        44.99999955,
+        53.699999463,
+        60.699999393
+      ],
+      "estimated_hours": 13.33572040597538
+    },
+    "PIKA": {
+      "episodes": 1441,
+      "total_bytes": 1281167873764,
+      "sample_seconds": [
+        20.33333313,
+        22.433333109,
+        32.266666344
+      ],
+      "estimated_hours": 10.07821652283485
+    }
+  },
+  "audit_files": [
+    "duration_estimates/work_robot/R15_full_index.json",
+    "duration_estimates/work_robot/large_samples.json"
+  ],
+  "checked_at": "2026-10-19"
+}

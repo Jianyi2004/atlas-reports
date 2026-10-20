@@ -1,0 +1,27 @@
+{
+  "id": "R06",
+  "best_hours": 0.0044444444444444444,
+  "low_hours": 0.0022222222222222222,
+  "high_hours": 0.013333333333333334,
+  "kind": "static_equivalent",
+  "confidence": "medium",
+  "scope_zh": "YCB-Sight Real的6物体、480张真实GelSight接触图（不包含1,800张仿真图）。",
+  "method_zh": "480/(30×3600)仅作静态训练帧量等价；10–60fps给出范围。",
+  "assumptions_zh": [
+    "这些是稀疏接触位置图，不能据此还原连续采集时间。",
+    "以可实际取得的FoTa真实图像发布范围计量。"
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/alanzjl/t3/blob/main/dataset_preproc/README.md",
+      "evidence": "480real images and1800sim images。"
+    },
+    {
+      "url": "https://github.com/Robo-Touch/YCB-Sight",
+      "evidence": "6真实物体；gelsight_<idx>_<timestamp>.jpg。"
+    }
+  ],
+  "availability": "mirror",
+  "availability_note_zh": "作者Drive网络未通；FoTa真实子集可下载且已取得样本。",
+  "checked_at": "2026-10-19"
+}

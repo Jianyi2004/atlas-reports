@@ -1,0 +1,55 @@
+{
+  "id": "R20",
+  "checked_at": "2026-10-19",
+  "status": "tactile_only",
+  "sample": {
+    "source_url": "https://github.com/philipmaus/Tactile_Object_Classification",
+    "local_raw_paths": [
+      "trajectory_work/R20/000_real_life_data.csv"
+    ],
+    "downloaded_bytes": 863999,
+    "sha256": {
+      "trajectory_work/R20/000_real_life_data.csv": "c26f96a8304a5a12568f85fa2970c78dd84006c907b07998daaf055f51039966"
+    },
+    "name": "000_real_life_data.csv / seq0",
+    "complete_episode": true,
+    "frames": 50,
+    "duration_seconds": 13.03985792,
+    "duration_method": "header stamp end-start; per-frame times interpolated",
+    "modalities": [
+      "3 OptoForce sensors"
+    ]
+  },
+  "media": {
+    "html": "trajectories/R20/index.html",
+    "video": "trajectories/R20/preview.mp4",
+    "poster": "trajectories/R20/poster.webp",
+    "caption_zh": "完整下载公开real-life测试文件（120个样本），展示seq0的50个时间步、3个OptoForce传感器xyz与模长。样本起止时间来自header；样本内部无逐帧时间戳，以等间隔插值仅作播放。 红色游标按header起止时长的插值时间推进；无对应RGB，未用项目图片冒充同步视觉。",
+    "preview_seconds": 13.03985792
+  },
+  "duration": {
+    "basis": "file_audit",
+    "scope_zh": "公开real-life测试文件120个样本，非全训练库",
+    "explanation_zh": "对120个header的stamp end-start求和：1564.618秒（0.435小时）；50为每样本重采样点数，不能当成50Hz。",
+    "sources": [
+      {
+        "url": "https://github.com/philipmaus/Tactile_Object_Classification/blob/main/000_real_life_data.csv",
+        "evidence": "120 header rows: sum((stamp end-stamp start)/1e9)"
+      }
+    ],
+    "metadata_hours": 0.43461605447111107
+  },
+  "evidence": [],
+  "blockers": [],
+  "review": {
+    "raw_read": true,
+    "render_checked": true,
+    "validation": "原始schema/数组范围已读取；实际配对关系按数据字段核对；海报人工检查；视频通过ffprobe。",
+    "video_probe": {
+      "width": 960,
+      "height": 420,
+      "duration": "13.039858",
+      "nb_frames": "50"
+    }
+  }
+}

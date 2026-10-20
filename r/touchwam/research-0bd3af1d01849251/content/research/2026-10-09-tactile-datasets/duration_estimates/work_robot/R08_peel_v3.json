@@ -1,0 +1,44 @@
+{
+  "peel_v3_downsample2_zarr/replay_buffer.zarr/data/action/.zarray": {
+    "chunks": [
+      10000,
+      4
+    ],
+    "compressor": {
+      "blocksize": 0,
+      "clevel": 3,
+      "cname": "zstd",
+      "id": "blosc",
+      "shuffle": 1
+    },
+    "dtype": "<f4",
+    "fill_value": 0.0,
+    "filters": null,
+    "order": "C",
+    "shape": [
+      12927,
+      4
+    ],
+    "zarr_format": 2
+  },
+  "peel_v3_downsample2_zarr/replay_buffer.zarr/meta/episode_ends/.zarray": {
+    "chunks": [
+      10000
+    ],
+    "compressor": {
+      "blocksize": 0,
+      "clevel": 3,
+      "cname": "zstd",
+      "id": "blosc",
+      "shuffle": 1
+    },
+    "dtype": "<i8",
+    "fill_value": 0,
+    "filters": null,
+    "order": "C",
+    "shape": [
+      60
+    ],
+    "zarr_format": 2
+  }
+}

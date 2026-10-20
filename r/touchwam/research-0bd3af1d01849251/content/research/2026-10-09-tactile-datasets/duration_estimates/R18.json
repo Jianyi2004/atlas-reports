@@ -1,0 +1,26 @@
+{
+  "id": "R18",
+  "best_hours": 0.3525336905320485,
+  "low_hours": 0.3525336905320485,
+  "high_hours": 0.3525336905320485,
+  "kind": "metadata",
+  "confidence": "high",
+  "scope_zh": "ARQ-CRISP三物体×30试验=90条的全部公开触觉记录。",
+  "method_zh": "完整三个HDF5逐试验对tactile_timestamps毫秒首尾差求和。",
+  "assumptions_zh": [
+    "三个物体brush/SpoolSolder/screwDriver各30条；每条只计一次，滑移标签不增加时间。",
+    "记录跨度包括试验内非滑移时段，不是仅滑移事件持续时间。"
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/ARQ-CRISP/slip_detection_dataset_2021/tree/main/data",
+      "evidence": "三原始HDF5均已下载审计；brush0.064316h、solder0.145260h、screwdriver0.142957h。"
+    }
+  ],
+  "availability": "direct",
+  "availability_note_zh": "公开下载入口已核查，已有真实样本下载。",
+  "audit_files": [
+    "duration_estimates/work_robot/R18_audit.json"
+  ],
+  "checked_at": "2026-10-19"
+}
