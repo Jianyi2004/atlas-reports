@@ -1,0 +1,16 @@
+{
+  "source": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/launch_records/touchwam_v2_joint_gpu_20261016_120450/train.log",
+  "sha256": "b503a9e812a0901d438aec8977c4afe05460b0a73f8ad85c9889723e4537b793",
+  "unique_progress_steps": 40001,
+  "final": {
+    "step": 40000,
+    "loss": 1.2954,
+    "video": 0.0454,
+    "action": 0.0012,
+    "tactile": 1.2488,
+    "contact": 0.7059,
+    "distance": 0.5429,
+    "lr": 1e-06
+  },
+  "method": "Last progress-bar snapshot per microstep across ranks; curves use 500-microstep bin means, not validation metrics."
+}

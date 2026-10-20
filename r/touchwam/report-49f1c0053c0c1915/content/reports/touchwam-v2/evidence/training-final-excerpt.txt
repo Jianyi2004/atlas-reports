@@ -1,0 +1,31 @@
+Training: 100%|██████████| 40000/40000 [39:01:28<00:00,  3.51s/step, loss=1.2954, video=0.0454, action=0.0012, tactile=1.2488, tactile_contact=0.7059, tactile_distance=0.5429, lr=1.00e-06, epoch=3]
+[checkpoint] Saving final step 40000 -> /data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/bench2dex_sharpa3_touchwam_v2_joint_gpuopt_4gpu_40k/2026-10-16_12-15-16/checkpoint_step_40000.safetensors
+[checkpoint] Saved final: /data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/bench2dex_sharpa3_touchwam_v2_joint_gpuopt_4gpu_40k/2026-10-16_12-15-16/checkpoint_step_40000.safetensors
+wandb: 
+wandb: Run history:
+wandb: performance/samples_per_sec ▆▂▁▄█▅▅▅▂▇▄▅▅▅▅▇▂▁▄█▂▂▁▅▂▂▅▂▅▄▄▂█▂▅▇▆▅▅▇
+wandb:   performance/steps_per_sec ▁▄▂▄▂▇▄▇▃▄▂▄█▄▁▄▄▃▄▂▂▂▄▄▆▅▁█▁▄▄▆▇▄▄▂▄▇▇▇
+wandb:             train/grad_norm ▁▁▁▁█▁▁▁▁▁▁▁▁▁▁▁▁▁▇▁▁▁▁▁▇▁▁▅▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                  train/loss ▅▇▇█▆▆▅▆▅▇▅▅▅▄▄▃▄▂▃▄▃▄▃▄▃▃▄▂▃▃▁▂▂▁▂▁▃▃▁▂
+wandb:           train/loss_action █▆▄█▅▄▄▃▃▃▂▃▂▂▂▂▂▂▂▂▂▂▂▂▂▃▁▂▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:          train/loss_tactile █▅▅▄▇▇▅█▆▄▅▄▄▅▄▃▃▄▅▄▄▄▄▃▄▂▂▁▃▂▃▂▃▁▃▂▁▁▃▂
+wandb:  train/loss_tactile_contact ██▇▆██▆▇▇▇▅▅▅▅▅▆▇▄▄▄▄▄▅▄▅▂▄▃▄▄▂▂▂▂▂▁▂▁▁▁
+wandb: train/loss_tactile_distance █▅▆▃▃▂▄▄▂▆▂▅█▃▅▄▆▂▃▁▃▃▂▂▄▂▃▂▂▂▄▄█▂▂▂▃▁▃▂
+wandb:            train/loss_video █▆▅▄▃▂▂▂▄▃▃▄▃▃▁▃▂▂▂▃▃▂▃▃▂▂▂▂▁▂▂▃▂▁▂▁▁▁▂▁
+wandb:                    train/lr ▃▄██▇▇▇▇▇▆▆▆▆▆▅▅▅▄▄▄▄▃▃▃▃▃▂▂▂▂▂▂▂▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: performance/samples_per_sec 6.32937
+wandb:   performance/steps_per_sec 0.39559
+wandb:             train/grad_norm 0
+wandb:                  train/loss 1.29543
+wandb:           train/loss_action 0.00121
+wandb:          train/loss_tactile 1.2488
+wandb:  train/loss_tactile_contact 0.70592
+wandb: train/loss_tactile_distance 0.54288
+wandb:            train/loss_video 0.04542
+wandb:                    train/lr 0.0
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /data_all/intern10/workspace/TouchWAM/OpenWAM/wandb/offline-run-20261016_121612-jumbaf7x
+wandb: Find logs at: ./wandb/offline-run-20261016_121612-jumbaf7x/logs

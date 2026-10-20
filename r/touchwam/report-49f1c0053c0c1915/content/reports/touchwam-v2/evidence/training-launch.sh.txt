@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd /data_all/intern10/workspace/TouchWAM/OpenWAM
+export CUDA_VISIBLE_DEVICES=0,1,2,3
+export NPROC_PER_NODE=4
+export NNODES=1
+export NODE_RANK=0
+export MASTER_ADDR=127.0.0.1
+export MASTER_PORT=29563
+export WANDB_MODE=offline
+export PYTHONUNBUFFERED=1
+export OMP_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+exec bash scripts/run_bench2dex_touchwam_v2_joint.sh training.finetune_ckpt_path=/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/bench2dex_sharpa3_touchwam_v2_4gpu_40k/2026-10-14_14-09-02/checkpoint_step_40000.safetensors training.offload_optimizer_device=none training.resume_ckpt_path=null training.handoff_ready_dir=null training.max_steps=40000 training.num_epochs=null training.batch_size=4 training.gradient_accumulation_steps=8 training.save_steps=2000 training.keep_last_k_ckpts=20 training.performance_log_steps=10 dataloader.tactile_cache_root=/data_all/intern10/workspace/TouchWAM/OpenWAM/assets/benchmark_data/bench2dex_sharpa3_tactile_v1 training.output_path=/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/bench2dex_sharpa3_touchwam_v2_joint_gpuopt_4gpu_40k project.wandb.run_name=touchwam_v2_joint_gpu_20261016_120450 project.output_dir=/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/launch_records/touchwam_v2_joint_gpu_20261016_120450/project hydra.run.dir=/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/launch_records/touchwam_v2_joint_gpu_20261016_120450/hydra

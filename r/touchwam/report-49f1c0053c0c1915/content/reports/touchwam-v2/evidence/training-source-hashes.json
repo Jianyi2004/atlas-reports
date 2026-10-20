@@ -1,0 +1,12 @@
+{
+  "scripts/train.py": "e4a8a0f213581c039ed1dce746f33183e602849453b73d35cfabc5beeb4efb0a",
+  "scripts/train.sh": "badaf7c480cbf01cc2b9c4f62850b4ef845e6bfb4080406a10620e3cc3ed694a",
+  "scripts/run_bench2dex_touchwam_v2_joint.sh": "38721b4206d1ef27f7fb4578bebfe917a03528c0be1dcdae7fbe90ab1fb34a09",
+  "configs/train.yaml": "3ad8d9bfd129dc1624c0188d6c72230b659ca32b08a47f46c43ac1eaa9556c3a",
+  "configs/train_touchwam_v2.yaml": "01d608df990e1a7032d964bb6c0f297c37d3f1857e8b2e5a1a19121f87ddb8c6",
+  "configs/train_touchwam_v2_joint_finetune.yaml": "472117924def8f254ce1ca876714dedaacb65d22298c0ee30fb6596dd66da4a9",
+  "configs/model/touchwam_v2.yaml": "a49c715aa8a3cc9e0d618321aa9b2e5667401c50f96b2b53bd3d231a650ec8fb",
+  "openwam/model/architectures/touchwam/v2.py": "f590be3e638b2a1675745be3e0b9529ec4561ed6a1aa4a1e2dbb15faaa027ae2",
+  "openwam/model/architectures/touchwam/modules_v2.py": "51dfea8895dbdc96e8f13235419aa3d1e47d4553a26b6bbc86e18872455b0d8b",
+  "openwam/train/openwam_trainer.py": "d27287c70f9d1eb596a04f9dd48b982e70af14cb7a27edba83d72a5ba755e98d"
+}

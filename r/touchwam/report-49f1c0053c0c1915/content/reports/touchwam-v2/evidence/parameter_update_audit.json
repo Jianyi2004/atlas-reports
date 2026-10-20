@@ -1,0 +1,95 @@
+{
+  "training_mode": "joint_finetune",
+  "optimizer_coverage_exact": true,
+  "trainable_numel": 6051677980,
+  "modules": {
+    "video_backbone.dit": {
+      "total": 4999787712,
+      "trainable": 4999787712
+    },
+    "video_backbone.vae": {
+      "total": 704688668,
+      "trainable": 0
+    },
+    "video_backbone.text_encoder": {
+      "total": 5680910336,
+      "trainable": 0
+    },
+    "proprio_encoder": {
+      "total": 331776,
+      "trainable": 331776
+    },
+    "action_backbone": {
+      "total": 1021035600,
+      "trainable": 1021035600
+    },
+    "touch_v2": {
+      "total": 30522892,
+      "trainable": 30522892
+    }
+  },
+  "optimizer_groups": [
+    {
+      "lr": 0.0001,
+      "numel": 6051677980
+    }
+  ],
+  "status": "verified",
+  "optimizer_step": 1,
+  "representatives": {
+    "video_backbone": {
+      "parameter": "video_backbone.dit.patch_embedding.weight",
+      "trainable": true,
+      "sample_numel": 65536,
+      "max_gradient_norm": 0.6302738189697266,
+      "gradient_finite": true,
+      "changed_elements": 79,
+      "max_abs_change": 1.1920928955078125e-07
+    },
+    "video_backbone.vae": {
+      "parameter": "video_backbone.vae.model.encoder.conv1.weight",
+      "trainable": false,
+      "sample_numel": 51840,
+      "max_gradient_norm": 0.0,
+      "gradient_finite": true,
+      "changed_elements": 0,
+      "max_abs_change": 0.0
+    },
+    "video_backbone.text_encoder": {
+      "parameter": "video_backbone.text_encoder.token_embedding.weight",
+      "trainable": false,
+      "sample_numel": 65536,
+      "max_gradient_norm": 0.0,
+      "gradient_finite": true,
+      "changed_elements": 0,
+      "max_abs_change": 0.0
+    },
+    "proprio_encoder": {
+      "parameter": "proprio_encoder.weight",
+      "trainable": true,
+      "sample_numel": 65536,
+      "max_gradient_norm": 0.13982224464416504,
+      "gradient_finite": true,
+      "changed_elements": 19,
+      "max_abs_change": 1.1920928955078125e-07
+    },
+    "action_backbone": {
+      "parameter": "action_backbone.action_encoder.weight",
+      "trainable": true,
+      "sample_numel": 65536,
+      "max_gradient_norm": 0.1519847810268402,
+      "gradient_finite": true,
+      "changed_elements": 32,
+      "max_abs_change": 1.1920928955078125e-07
+    },
+    "touch_v2": {
+      "parameter": "touch_v2.input_projection.0.weight",
+      "trainable": true,
+      "sample_numel": 65536,
+      "max_gradient_norm": 0.6485344767570496,
+      "gradient_finite": true,
+      "changed_elements": 49,
+      "max_abs_change": 1.1920928955078125e-07
+    }
+  }
+}

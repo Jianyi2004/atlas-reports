@@ -1,0 +1,33 @@
+{
+  "base_tensors": 2089,
+  "new_tensors": 363,
+  "base_parameters": 12406754092,
+  "new_parameters": 30522892,
+  "checkpoint": "/data_all/share/checkpoints/OpenWAM/OpenWAM-Alpha-Pretrain-Foundation-Model/checkpoint_step_154000.safetensors",
+  "model_version": "touchwam_v2",
+  "tactile_spec": {
+    "history": 4,
+    "map_size": 32,
+    "patch_size": 16,
+    "distance_scale_m": 0.015,
+    "width": 256,
+    "heads": 8,
+    "layers": 6,
+    "history_layers": 2,
+    "bridge_layers": [
+      4,
+      9,
+      14,
+      19,
+      24,
+      29
+    ],
+    "future_frames": 8,
+    "future_stride": 2,
+    "fps": 20,
+    "loss_weight": 1.0,
+    "contact_positive_weight": 5.0,
+    "distance_background_weight": 0.1
+  },
+  "verification": "All base tensor names/shapes checked against full-size meta model; weights not loaded"
+}

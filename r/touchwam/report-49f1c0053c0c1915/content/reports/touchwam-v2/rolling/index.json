@@ -1,0 +1,213 @@
+{
+  "schema": "touchwam-rolling-comparison-v1",
+  "records": [
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "episode": 1,
+      "outcome": "success",
+      "video": "26_canned_food_tray_line_arrangement_ep0001.mp4",
+      "poster": "26_canned_food_tray_line_arrangement_ep0001.jpg",
+      "fps": 5.0,
+      "frames": 178,
+      "duration_s": 35.6,
+      "first_time_s": 0,
+      "last_time_s": 35.4,
+      "last_recorded_time_s": 35.4,
+      "unsampled_tail_s": 0.0,
+      "plans": 45,
+      "used_plans": 45,
+      "checkpoint": {
+        "filename": "checkpoint_step_40000.safetensors",
+        "bytes": 24874853920,
+        "sha256": "55ff467387fb8f0d6b1de7e46f01d20d675b379b72ab334674dc4d5a3ee01dee"
+      },
+      "source": "/home/zjy/workspace/TouchWAM/OpenWAM/outputs/eval_touchwam_v2_joint_step40000_none50_20261018/predictions/evaluation/26_canned_food_tray_line_arrangement/episode_0001/attempt_01",
+      "timeline": "26_canned_food_tray_line_arrangement_ep0001.json"
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "episode": 2,
+      "outcome": "success",
+      "video": "26_canned_food_tray_line_arrangement_ep0002.mp4",
+      "poster": "26_canned_food_tray_line_arrangement_ep0002.jpg",
+      "fps": 5.0,
+      "frames": 171,
+      "duration_s": 34.2,
+      "first_time_s": 0,
+      "last_time_s": 34.0,
+      "last_recorded_time_s": 34.1,
+      "unsampled_tail_s": 0.1,
+      "plans": 43,
+      "used_plans": 43,
+      "checkpoint": {
+        "filename": "checkpoint_step_40000.safetensors",
+        "bytes": 24874853920,
+        "sha256": "55ff467387fb8f0d6b1de7e46f01d20d675b379b72ab334674dc4d5a3ee01dee"
+      },
+      "source": "/home/zjy/workspace/TouchWAM/OpenWAM/outputs/eval_touchwam_v2_joint_step40000_none50_20261018/predictions/evaluation/26_canned_food_tray_line_arrangement/episode_0002/attempt_01",
+      "timeline": "26_canned_food_tray_line_arrangement_ep0002.json"
+    },
+    {
+      "task": "26_canned_food_tray_line_arrangement",
+      "episode": 3,
+      "outcome": "failure",
+      "video": "26_canned_food_tray_line_arrangement_ep0003.mp4",
+      "poster": "26_canned_food_tray_line_arrangement_ep0003.jpg",
+      "fps": 5.0,
+      "frames": 218,
+      "duration_s": 43.6,
+      "first_time_s": 0,
+      "last_time_s": 43.4,
+      "last_recorded_time_s": 43.5,
+      "unsampled_tail_s": 0.1,
+      "plans": 55,
+      "used_plans": 55,
+      "checkpoint": {
+        "filename": "checkpoint_step_40000.safetensors",
+        "bytes": 24874853920,
+        "sha256": "55ff467387fb8f0d6b1de7e46f01d20d675b379b72ab334674dc4d5a3ee01dee"
+      },
+      "source": "/home/zjy/workspace/TouchWAM/OpenWAM/outputs/eval_touchwam_v2_joint_step40000_none50_20261018/predictions/evaluation/26_canned_food_tray_line_arrangement/episode_0003/attempt_01",
+      "timeline": "26_canned_food_tray_line_arrangement_ep0003.json"
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "episode": 1,
+      "outcome": "failure",
+      "video": "32_baking_tray_prep_with_tools_ep0001.mp4",
+      "poster": "32_baking_tray_prep_with_tools_ep0001.jpg",
+      "fps": 5.0,
+      "frames": 213,
+      "duration_s": 42.6,
+      "first_time_s": 0,
+      "last_time_s": 42.4,
+      "last_recorded_time_s": 42.55,
+      "unsampled_tail_s": 0.15,
+      "plans": 54,
+      "used_plans": 53,
+      "checkpoint": {
+        "filename": "checkpoint_step_40000.safetensors",
+        "bytes": 24874853920,
+        "sha256": "55ff467387fb8f0d6b1de7e46f01d20d675b379b72ab334674dc4d5a3ee01dee"
+      },
+      "source": "/home/zjy/workspace/TouchWAM/OpenWAM/outputs/eval_touchwam_v2_joint_step40000_none50_20261018/predictions/evaluation/32_baking_tray_prep_with_tools/episode_0001/attempt_01",
+      "timeline": "32_baking_tray_prep_with_tools_ep0001.json"
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "episode": 2,
+      "outcome": "failure",
+      "video": "32_baking_tray_prep_with_tools_ep0002.mp4",
+      "poster": "32_baking_tray_prep_with_tools_ep0002.jpg",
+      "fps": 5.0,
+      "frames": 213,
+      "duration_s": 42.6,
+      "first_time_s": 0,
+      "last_time_s": 42.4,
+      "last_recorded_time_s": 42.55,
+      "unsampled_tail_s": 0.15,
+      "plans": 54,
+      "used_plans": 53,
+      "checkpoint": {
+        "filename": "checkpoint_step_40000.safetensors",
+        "bytes": 24874853920,
+        "sha256": "55ff467387fb8f0d6b1de7e46f01d20d675b379b72ab334674dc4d5a3ee01dee"
+      },
+      "source": "/home/zjy/workspace/TouchWAM/OpenWAM/outputs/eval_touchwam_v2_joint_step40000_none50_20261018/predictions/evaluation/32_baking_tray_prep_with_tools/episode_0002/attempt_01",
+      "timeline": "32_baking_tray_prep_with_tools_ep0002.json"
+    },
+    {
+      "task": "32_baking_tray_prep_with_tools",
+      "episode": 3,
+      "outcome": "failure",
+      "video": "32_baking_tray_prep_with_tools_ep0003.mp4",
+      "poster": "32_baking_tray_prep_with_tools_ep0003.jpg",
+      "fps": 5.0,
+      "frames": 213,
+      "duration_s": 42.6,
+      "first_time_s": 0,
+      "last_time_s": 42.4,
+      "last_recorded_time_s": 42.55,
+      "unsampled_tail_s": 0.15,
+      "plans": 54,
+      "used_plans": 53,
+      "checkpoint": {
+        "filename": "checkpoint_step_40000.safetensors",
+        "bytes": 24874853920,
+        "sha256": "55ff467387fb8f0d6b1de7e46f01d20d675b379b72ab334674dc4d5a3ee01dee"
+      },
+      "source": "/home/zjy/workspace/TouchWAM/OpenWAM/outputs/eval_touchwam_v2_joint_step40000_none50_20261018/predictions/evaluation/32_baking_tray_prep_with_tools/episode_0003/attempt_01",
+      "timeline": "32_baking_tray_prep_with_tools_ep0003.json"
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "episode": 1,
+      "outcome": "failure",
+      "video": "73_jigsaw_puzzle_assembly_ep0001.mp4",
+      "poster": "73_jigsaw_puzzle_assembly_ep0001.jpg",
+      "fps": 5.0,
+      "frames": 304,
+      "duration_s": 60.8,
+      "first_time_s": 0,
+      "last_time_s": 60.6,
+      "last_recorded_time_s": 60.6,
+      "unsampled_tail_s": 0.0,
+      "plans": 76,
+      "used_plans": 76,
+      "checkpoint": {
+        "filename": "checkpoint_step_40000.safetensors",
+        "bytes": 24874853920,
+        "sha256": "55ff467387fb8f0d6b1de7e46f01d20d675b379b72ab334674dc4d5a3ee01dee"
+      },
+      "source": "/home/zjy/workspace/TouchWAM/OpenWAM/outputs/eval_touchwam_v2_joint_step40000_none50_20261018/predictions/evaluation/73_jigsaw_puzzle_assembly/episode_0001/attempt_01",
+      "timeline": "73_jigsaw_puzzle_assembly_ep0001.json"
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "episode": 2,
+      "outcome": "failure",
+      "video": "73_jigsaw_puzzle_assembly_ep0002.mp4",
+      "poster": "73_jigsaw_puzzle_assembly_ep0002.jpg",
+      "fps": 5.0,
+      "frames": 304,
+      "duration_s": 60.8,
+      "first_time_s": 0,
+      "last_time_s": 60.6,
+      "last_recorded_time_s": 60.6,
+      "unsampled_tail_s": 0.0,
+      "plans": 76,
+      "used_plans": 76,
+      "checkpoint": {
+        "filename": "checkpoint_step_40000.safetensors",
+        "bytes": 24874853920,
+        "sha256": "55ff467387fb8f0d6b1de7e46f01d20d675b379b72ab334674dc4d5a3ee01dee"
+      },
+      "source": "/home/zjy/workspace/TouchWAM/OpenWAM/outputs/eval_touchwam_v2_joint_step40000_none50_20261018/predictions/evaluation/73_jigsaw_puzzle_assembly/episode_0002/attempt_01",
+      "timeline": "73_jigsaw_puzzle_assembly_ep0002.json"
+    },
+    {
+      "task": "73_jigsaw_puzzle_assembly",
+      "episode": 3,
+      "outcome": "failure",
+      "video": "73_jigsaw_puzzle_assembly_ep0003.mp4",
+      "poster": "73_jigsaw_puzzle_assembly_ep0003.jpg",
+      "fps": 5.0,
+      "frames": 304,
+      "duration_s": 60.8,
+      "first_time_s": 0,
+      "last_time_s": 60.6,
+      "last_recorded_time_s": 60.6,
+      "unsampled_tail_s": 0.0,
+      "plans": 76,
+      "used_plans": 76,
+      "checkpoint": {
+        "filename": "checkpoint_step_40000.safetensors",
+        "bytes": 24874853920,
+        "sha256": "55ff467387fb8f0d6b1de7e46f01d20d675b379b72ab334674dc4d5a3ee01dee"
+      },
+      "source": "/home/zjy/workspace/TouchWAM/OpenWAM/outputs/eval_touchwam_v2_joint_step40000_none50_20261018/predictions/evaluation/73_jigsaw_puzzle_assembly/episode_0003/attempt_01",
+      "timeline": "73_jigsaw_puzzle_assembly_ep0003.json"
+    }
+  ],
+  "note": "Recorded joint samples only; executed 0.8 s prefixes, 5 fps on simulation time. Initial t=0 reconstruction; no resampling. Only episodes with recorded predictions are included."
+}

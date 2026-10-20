@@ -1,0 +1,21 @@
+{
+  "verified_local": "2026-10-16T12:19:38.570184+08:00",
+  "actual_output_dir": "/data_all/intern10/workspace/TouchWAM/OpenWAM/outputs/bench2dex_sharpa3_touchwam_v2_joint_gpuopt_4gpu_40k/2026-10-16_12-15-16",
+  "offload_optimizer_device": "none",
+  "min_step": 60,
+  "min_optimizer_step": 7,
+  "parameter_update_audit": "verified",
+  "cpu_adam_loaded": false,
+  "normalization_matches_source": true,
+  "all_logged_losses_finite": true,
+  "max_peak_allocated_gib": 51.52150297164917,
+  "max_reserved_gib": 68.5390625,
+  "speed_window": {
+    "start_step": 8,
+    "end_step": 48,
+    "seconds_per_microstep": 2.8,
+    "includes_optimizer_updates": true,
+    "method": "minimum elapsed progress-bar time across ranks at each step",
+    "short_startup_measurement": true
+  }
+}

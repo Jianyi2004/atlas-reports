@@ -1,0 +1,79 @@
+{
+  "schema": "openwam-sharpa3-suite-v1",
+  "checkpoint": "checkpoint_step_40000.safetensors",
+  "checkpoint_sha256": "55ff467387fb8f0d6b1de7e46f01d20d675b379b72ab334674dc4d5a3ee01dee",
+  "checkpoint_dir": "/media/zjy/My Passport/TouchWAM_eval_20261018/exports/bench2dex_sharpa3_touchwam_v2_joint_step40000_export_20261018",
+  "profiles": [
+    "none"
+  ],
+  "tasks": [
+    "26_canned_food_tray_line_arrangement",
+    "32_baking_tray_prep_with_tools",
+    "73_jigsaw_puzzle_assembly"
+  ],
+  "episodes_per_task_profile": 50,
+  "model_url": "ws://127.0.0.1:8854",
+  "record": true,
+  "budget": "official per-task expert physics steps x 1.5; policy 20Hz, physics 60Hz",
+  "scope": "Each task/profile reports its own SR; paper aggregate requires all four profiles.",
+  "episodes_per_turn": 1,
+  "arm_command_limits": {
+    "A1": [
+      -2.96705972839,
+      2.96705972839
+    ],
+    "A2": [
+      -3.66519142918489,
+      0.5235987755
+    ],
+    "A3": [
+      -2.96705972839,
+      2.96705972839
+    ],
+    "A4": [
+      -2.701857566833496,
+      2.09439510239
+    ],
+    "A5": [
+      -2.96705972839,
+      2.96705972839
+    ],
+    "A6": [
+      -2.09439510239,
+      2.09439510239
+    ],
+    "A7": [
+      -3.05432619099,
+      3.05432619099
+    ],
+    "multi_A1": [
+      -2.96705972839,
+      2.96705972839
+    ],
+    "multi_A2": [
+      -3.66519142918489,
+      0.5235987755
+    ],
+    "multi_A3": [
+      -2.96705972839,
+      2.96705972839
+    ],
+    "multi_A4": [
+      -2.5938501358032227,
+      2.09439510239
+    ],
+    "multi_A5": [
+      -2.96705972839,
+      2.96705972839
+    ],
+    "multi_A6": [
+      -2.09439510239,
+      2.09439510239
+    ],
+    "multi_A7": [
+      -3.05432619099,
+      3.05432619099
+    ]
+  },
+  "ik_adapter": "reconstruct_train_commands_then_clip_v1"
+}
